@@ -23,6 +23,7 @@ mods:
   - "sound-reloader":
   - "tumbleweed":
   - "laggoggles":
+  - "tickcentral":
   - "lonely-biome":
 
 files:
