@@ -1,0 +1,29 @@
+---
+name:  ttmb
+title: "Tribes That May Be"
+version: "0.0.1"
+
+authors:
+  - mcrewson
+
+minecraft: 1.12.2
+forge: 14.23.5.2854
+
+mods:
+  - "jei":
+  - "journeymap":
+  - "tinkers-construct":
+  - "mantle":
+  - "orelib":
+  - "ctm":
+  - "shadowfacts-forgelin":
+  - "better-records":
+  - "dynamic-surroundings":
+  - "immersive-engineering":
+  - "sound-reloader":
+  - "tumbleweed":
+  - "laggoggles":
+  - "lonely-biome":
+
+files:
+  - location: "src/"

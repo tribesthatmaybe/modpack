@@ -1,0 +1,2 @@
+git+https://gitlab.routh.io/minecraft/tools/packmaker.git
+jinja2-cli
