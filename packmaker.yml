@@ -25,6 +25,12 @@ mods:
   - "laggoggles":
   - "tickcentral":
   - "lonely-biome":
-
+  - "akashic-tome":
+  - "tellme":
+  - "better-questing":
+  - "lore-expansion":
+  - "reskillable":
+  - "localized-chat":
+  - "waystones":
 files:
   - location: "src/"

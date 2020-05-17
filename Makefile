@@ -14,3 +14,10 @@ container_shell: container_build
 		-v "$(shell pwd):/mnt" \
 		$(DOCKER_IMAGE):$(VERSION) \
 		bash
+
+build: container_build
+	docker run \
+		--rm \
+		-v "$(shell pwd):/mnt" \
+		$(DOCKER_IMAGE):$(VERSION) \
+		build
