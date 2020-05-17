@@ -41,5 +41,11 @@ mods:
   - "biometweaker":
   - "climate-control-geographicraft":
   - "realistic-terrain-generation":
+  - "mysticallib":
+  - "patchouli":
+  - "mystical-world":
+  - "better-animal-models":
+  - "placebo":
+  - "plants":
 files:
   - location: "src/"
