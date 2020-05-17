@@ -32,5 +32,6 @@ mods:
   - "reskillable":
   - "localized-chat":
   - "waystones":
+  - "autoreglib":
 files:
   - location: "src/"
