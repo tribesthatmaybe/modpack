@@ -1,0 +1,16 @@
+{
+  "key": {
+    "id": "gayte",
+    "category": "global"
+  },
+  "content": {
+    "title": "Gate Perimeter and Exodus",
+    "body": "The 'Gate' department is actually comprised of 3 teams — Gate, Perimeter and Exodus — each with separate but connected functions.\nWhen you sign up to work with our department you may volunteer with just one of those teams or all three. We are the first people to welcome participants into the city after they turn off the highway and drive onto the playa, and we are the last people to say goodbye as they return to the default world. We are one of the few Burning Man departments that operates 24 hours a day before, during, and after the event, and we work very closely with nearly every other department on playa."
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "autoAdd": true,
+  "defaultLore": false,
+  "trigger": null,
+  "action": null
+}

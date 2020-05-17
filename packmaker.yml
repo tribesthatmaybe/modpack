@@ -33,5 +33,12 @@ mods:
   - "localized-chat":
   - "waystones":
   - "autoreglib":
+  - "better-questing-standard-expansion":
+  - "the-one-probe":
+  - "betteranimalsplus":
+  - "biometweakercore":
+  - "biometweaker":
+  - "climate-control-geographicraft":
+  - "realistic-terrain-generation":
 files:
   - location: "src/"

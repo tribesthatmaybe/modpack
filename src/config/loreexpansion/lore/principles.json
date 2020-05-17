@@ -1,0 +1,16 @@
+{
+  "key": {
+    "id": "principles",
+    "category": "global"
+  },
+  "content": {
+    "title": "The Principles",
+    "body": "Radical Inclusion\nAnyone may be a part of Burning Man. We welcome and respect the stranger. No prerequisites exist for participation in our community.\nGifting\nBurning Man is devoted to acts of gift giving. The value of a gift is unconditional. Gifting does not contemplate a return or an exchange for something of equal value.\nDecommodification\nIn order to preserve the spirit of gifting, our community seeks to create social environments that are unmediated by commercial sponsorships, transactions, or advertising. We stand ready to protect our culture from such exploitation. We resist the substitution of consumption for participatory experience.\nRadical Self-reliance\nBurning Man encourages the individual to discover, exercise and rely on his or her inner resources.\n......"
+  },
+  "sortingIndex": 0,
+  "requirements": [],
+  "autoAdd": true,
+  "defaultLore": false,
+  "trigger": null,
+  "action": null
+}
