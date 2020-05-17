@@ -17,7 +17,7 @@ jobs:
       - name: build thing
         run: make build
       - name: upload artifact modpack i guess
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2-preview
         with:
           name: ttmb-modpack
           path: build/release/ttmb-0.0.1.zip
