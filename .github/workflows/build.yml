@@ -16,3 +16,8 @@ jobs:
         run: 'echo "twitch_token: ${{ secrets.CURSE_TOKEN }}" > config.yml'
       - name: build thing
         run: make build
+      - name: upload artifact modpack i guess
+        uses: actions/upload-artifact@v1
+        with:
+          name: ttmb-modpack
+          path: build/release/ttmb-0.0.1.zip
