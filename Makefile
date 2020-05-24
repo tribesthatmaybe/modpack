@@ -1,7 +1,8 @@
 .PHONY: container_build container_shell build server clean distclean
 
 DOCKER_IMAGE=tribesthatmaybe/modpack
-VERSION = $(shell cat version)
+VERSION=$(shell cat version)
+ARTIFACTS=$(shell pwd)/artifacts
 
 container_build:
 	docker build \
@@ -21,7 +22,8 @@ build: container_build
 		-v "$(shell pwd):/mnt" \
 		$(DOCKER_IMAGE):$(VERSION) \
 		build
-	cp build/release/ttmb-$(VERISON).zip artifacts/ttmb-$(VERSION).zip
+	mkdir -p artifacts
+	cp build/release/ttmb-$(VERSION).zip $(ARTIFACTS)/ttmb-$(VERSION).zip
 
 server: container_build
 	docker run \
@@ -29,7 +31,8 @@ server: container_build
 		-v "$(shell pwd):/mnt" \
 		$(DOCKER_IMAGE):$(VERSION) \
 		server
-	(cd build/server && zip -c artifacts/ttmb-server-$(VERSION).zip *)
+	mkdir -p artifacts
+	cd build/server && zip -r $(ARTIFACTS)/ttmb-server-$(VERSION).zip *
 
 clean:
 	rm -rf build/server build/release
