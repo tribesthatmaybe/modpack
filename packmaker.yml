@@ -4,7 +4,7 @@ title: "Tribes That May Be"
 version: "0.0.1"
 
 authors:
-  - mcrewson
+  - otakup0pe
 
 minecraft: 1.12.2
 forge: 14.23.5.2854
@@ -21,6 +21,7 @@ mods:
   - "dynamic-surroundings":
   - "immersive-engineering":
   - "sound-reloader":
+      client_only: true
   - "tumbleweed":
   - "laggoggles":
   - "tickcentral":
@@ -47,5 +48,17 @@ mods:
   - "better-animal-models":
   - "placebo":
   - "plants":
+  - "dimensionaldoors":
+  - "paintings":
+  - "chunk-animator":
+  - "traffic-control":
+  - "perfect-spawn":
+  - "tough-as-nails":
+  - "sound-filters":
+  - "coroutil":
+  - "weather-storms-tornadoes":
+  - "betterfps":
+  - "foamfix-optimization-mod":
+  - "no-recipe-book":
 files:
   - location: "src/"

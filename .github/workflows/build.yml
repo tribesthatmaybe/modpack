@@ -14,10 +14,17 @@ jobs:
           fetch-depth: 1
       - name: generate config
         run: 'echo "twitch_token: ${{ secrets.CURSE_TOKEN }}" > config.yml'
-      - name: build thing
+      - name: build client thing
         run: make build
+      - name: build server thing
+        run: make server
       - name: upload artifact modpack i guess
         uses: actions/upload-artifact@v2
         with:
           name: ttmb-0.0.1
-          path: build/release/ttmb-0.0.1.zip
+          path: artifacts/ttmb-0.0.1.zip
+      - name: upload server modpack i guess
+        uses: actions/upload-artifact@v2
+        with:
+          name: ttmb-0.0.1
+          path: artifacts/ttmb-server-0.0.1.zip

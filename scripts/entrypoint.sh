@@ -33,11 +33,22 @@ if [ ! -e /tmp/locales-tho ] ; then
     touch /tmp/locales-tho
 fi
 
+if [ -d "/packmaker" ] && [ -e "/packmaker/setup.py" ] ; then
+    echo "packmaker override!"
+    cd /packmaker
+    python3 setup.py install
+fi
+
 if [ "$ACTION" == "build" ] ; then
     cd /mnt
     packmaker updatedb
     packmaker --config /usr/local/etc/packmaker.conf lock
     packmaker --config /usr/local/etc/packmaker.conf build-curseforge
+elif [ "$ACTION" == "server" ] ; then
+    cd /mnt
+    packmaker updatedb
+    packmaker --config /usr/local/etc/packmaker.conf lock
+    packmaker --config /usr/local/etc/packmaker.conf build-server
 elif [ "$ACTION" == "shell" ] ; then
     cd /mnt
     echo "time to mod"

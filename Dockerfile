@@ -9,7 +9,7 @@ COPY requirements.txt /usr/local/share/ttmb/
 RUN pip3 install -r /usr/local/share/ttmb/requirements.txt
 
 COPY scripts/entrypoint.sh /usr/local/bin/ttmb-entrypoint
-RUN chmod +x /usr/local/bin/ttmb-entrypoint
+RUN chmod +x /usr/local/bin/ttmb-entrypoint && mkdir /packmaker
 
 COPY templates/curseforge.conf.j2 /usr/local/share/ttmb/
 

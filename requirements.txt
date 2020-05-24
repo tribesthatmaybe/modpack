@@ -1,2 +1,6 @@
-git+https://gitlab.routh.io/minecraft/tools/packmaker.git
+packmaker
 jinja2-cli
+#### pyyaml and requests are needed by packmaker
+#### and sometimes we install that locally only
+#requests
+#pyyaml
