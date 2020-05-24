@@ -26,5 +26,5 @@ jobs:
       - name: upload server modpack i guess
         uses: actions/upload-artifact@v2
         with:
-          name: ttmb-0.0.1
+          name: ttmb-server-0.0.1
           path: artifacts/ttmb-server-0.0.1.zip
