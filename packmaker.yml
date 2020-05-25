@@ -25,7 +25,6 @@ mods:
   - "tumbleweed":
   - "laggoggles":
   - "tickcentral":
-  - "lonely-biome":
   - "akashic-tome":
   - "tellme":
   - "better-questing":
@@ -48,7 +47,6 @@ mods:
   - "better-animal-models":
   - "placebo":
   - "plants":
-  - "dimensionaldoors":
   - "paintings":
   - "chunk-animator":
   - "traffic-control":
@@ -60,5 +58,8 @@ mods:
   - "betterfps":
   - "foamfix-optimization-mod":
   - "no-recipe-book":
+  - "just-enough-dimensions":
+  - "mystcraft":
+  - "drugs-and-psychedelics":
 files:
   - location: "src/"

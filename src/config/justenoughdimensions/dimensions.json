@@ -1,0 +1,24 @@
+{
+  "config_version": {
+    "id": "__default",
+    "version": 0
+  },
+  "dimensions": [
+    {
+      "dim": 1001,
+      "biome": "minecraft:desert",
+      "dimensiontype": {
+        "name": "Block Rock Desert",
+        "suffix": "_dim1001",
+        "keeploaded": true,
+        "worldprovider": "WorldProviderSurfaceJED"
+      },
+      "worldinfo_onetime": {
+        "generatorName": "default"
+      },
+      "jed": {
+        "CanRespawnHere": true
+      }
+    }
+  ]
+}
