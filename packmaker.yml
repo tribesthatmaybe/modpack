@@ -113,5 +113,21 @@ mods:
   - "forgeendertech":
   - "craftdumper":
   - "custom-starter-gear":
+  - "bibliocraft":
+  - "ivtoolkit":
+  - "in-control":
+  - "recurrent-complex":
+  - "pams-harvestcraft":
+  - "cooking-for-blockheads":
+  - "applecore":
+  - "hungertweaker":
+  - "actually-additions":
+  - "the-spice-of-life":
+  - "corail-tombstone":
+  - "malisiscore":
+  - "malisisdoors":
+  - "super-firework":
+  - "placeable-items":
+  - "more-player-models":
 files:
   - location: "src/"
