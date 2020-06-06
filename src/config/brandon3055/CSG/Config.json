@@ -1,0 +1,16 @@
+{
+  "inventory": {
+    "0:9": "toughasnails:charcoal_filter,16",
+    "0:18": "minecraft:bucket",
+    "0:1": "loreexpansion:lore_journal",
+    "0:17": "drugz_mod:cigar",
+    "0:8": "cfm:item_kebab_cooked,16",
+    "0:27": "extrautils2:drum,1,0,{Fluid:{FluidName:\"purified_water\",Amount:16000}}",
+    "1:1": "toughasnails:jelled_slime_leggings,1,1",
+    "1:2": "toughasnails:jelled_slime_chestplate,1,1",
+    "1:3": "toughasnails:jelled_slime_helmet,1,1",
+    "0:16": "drugz_mod:wine",
+    "0:0": "toughasnails:canteen,1,2",
+    "1:0": "toughasnails:jelled_slime_boots,1,1"
+  }
+}

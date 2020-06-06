@@ -8,9 +8,11 @@
       "dim": 1001,
       "biome": "minecraft:desert",
       "dimensiontype": {
+        "id": 1001,
         "name": "Block Rock Desert",
         "suffix": "_dim1001",
         "keeploaded": true,
+        "require_exact_match": true,
         "worldprovider": "WorldProviderSurfaceJED"
       },
       "worldinfo_onetime": {

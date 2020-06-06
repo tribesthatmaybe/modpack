@@ -16,12 +16,13 @@ mods:
   - "mantle":
   - "orelib":
   - "ctm":
+      clientonly: true
   - "shadowfacts-forgelin":
   - "better-records":
   - "dynamic-surroundings":
   - "immersive-engineering":
   - "sound-reloader":
-      client_only: true
+      clientonly: true
   - "tumbleweed":
   - "laggoggles":
   - "tickcentral":
@@ -37,6 +38,7 @@ mods:
   - "better-questing-quest-book":
   - "the-one-probe":
   - "betteranimalsplus":
+      clientonly: true
   - "biometweakercore":
   - "biometweaker":
   - "climate-control-geographicraft":
@@ -53,13 +55,63 @@ mods:
   - "perfect-spawn":
   - "tough-as-nails":
   - "sound-filters":
+      clientonly: true
   - "coroutil":
   - "weather-storms-tornadoes":
   - "betterfps":
   - "foamfix-optimization-mod":
   - "no-recipe-book":
+      clientonly: true
   - "just-enough-dimensions":
   - "mystcraft":
   - "drugs-and-psychedelics":
+  - "baubles":
+  - "crafttweaker":
+  - "instantunify":
+  - "wanionlib":
+  - "unidict":
+  - "ftb-backup":
+  - "ftp-library":
+  - "ftp-utilities":
+  - "journeymap-tools":
+      clientonly: true
+  - "comforts":
+  - "bookshelf":
+  - "enchantment-descriptions":
+      clientonly: true
+  - "guide-api":
+  - "cyclic":
+  - "redstone-gauges-and-switches":
+  - "viescraft-airships":
+  - "iron-chests":
+  - "cucumber":
+  - "mystical-agriculture":
+  - "natures-compass":
+  - "chameleon":
+  - "storage-drawers":
+  - "engineers-decor":
+  - "serene-seasons":
+  - "controllable":
+      clientonly: true
+  - "mrcrayfish-furniture-mod":
+  - "obfuscate":
+  - "mrcrayfishs-vehicle-mod":
+  - "mrcrayfishs-gun-mod":
+  - "statues":
+  - "tool-belt":
+  - "blockcraftery":
+  - "chisel":
+  - "mcmultipart":
+  - "chisels-bits":
+  - "fairy-lights":
+  - "macaws-bridges":
+  - "librarianlib":
+  - "hooked":
+  - "sit":
+  - "wall-jump":
+  - "to-the-bat-poles":
+  - "forgeendertech":
+  - "craftdumper":
+  - "custom-starter-gear":
 files:
   - location: "src/"
