@@ -15,9 +15,9 @@ jobs:
       - name: generate config
         run: 'echo "twitch_token: ${{ secrets.CURSE_TOKEN }}" > config.yml'
       - name: build client thing
-        run: make build
+        run: make github_client
       - name: build server thing
-        run: make server
+        run: make github_server
       - name: upload artifact modpack i guess
         uses: actions/upload-artifact@v2
         with:
