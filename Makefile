@@ -26,7 +26,7 @@ build: container_build
 	cp build/release/ttmb-$(VERSION).zip $(ARTIFACTS)/ttmb-$(VERSION).zip
 
 server: container_build
-	rm build/server/mods/* $(ARTIFACTS)/ttmb-server-$(VERSION).zip
+	rm -f build/server/mods/* $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
