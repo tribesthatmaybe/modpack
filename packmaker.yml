@@ -129,5 +129,10 @@ mods:
   - "super-firework":
   - "placeable-items":
   - "more-player-models":
+  - "opencomputers":
+  - "openscreens":
+  - "inventory-tweaks":
+  - "controlling":
+  - "mouse-tweaks":
 files:
   - location: "src/"
