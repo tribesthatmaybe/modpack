@@ -71,8 +71,8 @@ mods:
   - "wanionlib":
   - "unidict":
   - "ftb-backup":
-  - "ftp-library":
-  - "ftp-utilities":
+  - "ftb-library":
+  - "ftb-utilities":
   - "journeymap-tools":
       clientonly: true
   - "comforts":
@@ -134,5 +134,13 @@ mods:
   - "inventory-tweaks":
   - "controlling":
   - "mouse-tweaks":
+  - "quickteleports":
+  - "quark":
+  - "custom-main-menu":
+  - "discordintegration":
+      serveronly: true
+  - "extra-utilities":
+  - "resource-loader":
+  - "better-loading-screen":
 files:
   - location: "src/"
