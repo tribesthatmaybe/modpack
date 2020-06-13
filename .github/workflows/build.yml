@@ -9,8 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@mainline
+      - uses: actions/checkout@v2
         with:
+          ref: mainline
           fetch-depth: 1
       - name: generate config
         run: 'echo "twitch_token: ${{ secrets.CURSE_TOKEN }}" > config.yml'
