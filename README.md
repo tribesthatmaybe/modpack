@@ -4,7 +4,7 @@ You find yourself in an endless desert with some books and barely appropriate pr
 
 Have fun with that.
 
-![desert dust storm](https://github.com/tribesthatmaybe/modpack/blob/release/images/ttmb_dust.jpg)
+![desert dust storm](https://github.com/tribesthatmaybe/modpack/blob/mainline/images/ttmb_dust.jpg)
 
 # Launching the modpack
 
