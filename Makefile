@@ -3,6 +3,11 @@
 DOCKER_IMAGE=tribesthatmaybe/modpack
 VERSION=$(shell cat version)
 ARTIFACTS=$(shell pwd)/artifacts
+ifndef VIRTUAL_ENV
+CIENV = $(shell pwd)/.venv/bin/
+else
+CIENV = $(VIRTUAL_ENV)/bin/
+endif
 
 container_build:
 	docker build \
@@ -50,3 +55,11 @@ github_client: client
 github_server: server
 	mkdir -p artifacts/github/server
 	cd $(ARTIFACTS)/github/server && unzip $(ARTIFACTS)/ttmb-server-$(VERSION).zip
+
+env:
+	test -z $(VIRTUAL_ENV) && (test -d .venv || ( mkdir .venv && pip install virtualenv==$(PY_VENV_VER) && virtualenv .venv)) || true
+	test -d artifacts || ( mkdir artifacts ) || true
+	test -z $(VIRTUAL_ENV) && (.venv/bin/pip install -r requirements.txt --upgrade) || \
+		( pip install -r requirements.txt)
+
+loregen: env

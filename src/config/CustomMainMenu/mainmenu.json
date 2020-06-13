@@ -4,24 +4,13 @@
         "title":
         {
             "image" : "ttmb:textures/gui/ttmb_title.png",
-            "posX" : 0,
-            "posY" : 30,
-            "width" : 641,
-            "height" : 87,
-            "alignment" : "top_center"
-        },
-        
-        "edition":
-        {
-            "image" : "custommainmenu:textures/gui/edition.png",
-            "posX" : -49,
-            "posY" : 67,
-            "width" : 128,
-            "height" : 16,
+            "posX" : -200,
+            "posY" : 10,
+            "width" : 400,
+            "height" : 45,
             "alignment" : "top_center"
         }
     },
-    
     "buttons":
     {
         "singleplayer":

@@ -1,12 +1,14 @@
 {
   "inventory": {
-    "0:9": "toughasnails:charcoal_filter,16",
-    "0:18": "minecraft:bucket",
-    "0:1": "loreexpansion:lore_journal",
-    "0:17": "drugz_mod:cigar",
-    "0:8": "cfm:item_kebab_cooked,16",
+    "0:35": "harvestcraft:vegetablesoupitem,16",
+    "0:0": "toughasnails:canteen,1,2",
+    "0:10": "comforts:sleeping_bag",
+    "0:9": "fairylights:light,6,15",
+    "0:34": "harvestcraft:peanutbutterbananasandwichitem,16",
     "0:27": "extrautils2:drum,1,0,{Fluid:{FluidName:\"purified_water\",Amount:16000}}",
-    "0:16": "drugz_mod:wine",
-    "0:0": "toughasnails:canteen,1,2"
+    "0:33": "harvestcraft:crackersitem,16",
+    "0:2": "questbook:itemquestbook",
+    "0:28": "toughasnails:charcoal_filter,16",
+    "0:1": "loreexpansion:lore_journal"
   }
 }

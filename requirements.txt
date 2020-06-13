@@ -1,6 +1,4 @@
 packmaker
 jinja2-cli
-#### pyyaml and requests are needed by packmaker
-#### and sometimes we install that locally only
-#requests
-#pyyaml
+fire
+pyyaml

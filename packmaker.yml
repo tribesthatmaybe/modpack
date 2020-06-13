@@ -38,7 +38,6 @@ mods:
   - "better-questing-quest-book":
   - "the-one-probe":
   - "betteranimalsplus":
-      clientonly: true
   - "biometweakercore":
   - "biometweaker":
   - "climate-control-geographicraft":
@@ -64,7 +63,6 @@ mods:
       clientonly: true
   - "just-enough-dimensions":
   - "mystcraft":
-  - "drugs-and-psychedelics":
   - "baubles":
   - "crafttweaker":
   - "instantunify":
@@ -126,7 +124,6 @@ mods:
   - "corail-tombstone":
   - "malisiscore":
   - "malisisdoors":
-  - "super-firework":
   - "placeable-items":
   - "more-player-models":
   - "opencomputers":
@@ -142,5 +139,12 @@ mods:
   - "extra-utilities":
   - "resource-loader":
   - "better-loading-screen":
+  - "geolosys":
+  - "mekanism":
+  - "base":
+  - "contenttweaker":
+  - "tinkers-tool-leveling":
+  - "constructs-armory":
+  - "simply-backpacks":
 files:
   - location: "src/"
