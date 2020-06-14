@@ -23,15 +23,15 @@ if [ $# -gt 0 ] ; then
     shift
 fi
 
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8
-
 if [ ! -e /tmp/locales-tho ] ; then
     locale-gen en_US.UTF-8
     DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
     touch /tmp/locales-tho
 fi
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
 
 if [ -d "/packmaker" ] && [ -e "/packmaker/setup.py" ] ; then
     echo "packmaker override!"
@@ -53,6 +53,7 @@ elif [ "$ACTION" == "shell" ] ; then
     cd /mnt
     echo "time to mod"
     bash
+    echo "dom ot emit"
 else
     problems "what u doin"
 fi
