@@ -19,7 +19,7 @@ container_shell: container_build
 		-it --rm \
 		-v "$(shell pwd):/mnt" \
 		$(DOCKER_IMAGE):$(VERSION) \
-		bash
+		shell
 
 client: container_build
 	docker run \
