@@ -5,6 +5,10 @@ ARG VERSION=0.0.0
 LABEL version="${VERSION}"
 RUN mkdir /usr/local/share/ttmb
 RUN apt-get update && apt-get install -y python3-pip git-core vim-common locales
+RUN locale-gen en_US.UTF-8
+RUN DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
+RUN touch /tmp/locales-tho
+
 COPY requirements.txt /usr/local/share/ttmb/
 RUN pip3 install -r /usr/local/share/ttmb/requirements.txt
 
