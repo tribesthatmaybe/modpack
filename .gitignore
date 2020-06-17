@@ -3,3 +3,4 @@ curseforge.db
 packmaker.lock
 config.yml
 artifacts/
+.venv/

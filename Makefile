@@ -46,7 +46,7 @@ clean:
 	rm -rf build/server build/release
 
 distclean: clean
-	rm -rf build curseforge.db packmaker.lock config.yml
+	rm -rf build curseforge.db packmaker.lock config.yml .venv
 
 github_client: client
 	mkdir -p artifacts/github/client
@@ -57,9 +57,12 @@ github_server: server
 	cd $(ARTIFACTS)/github/server && unzip $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 
 env:
-	test -z $(VIRTUAL_ENV) && (test -d .venv || ( mkdir .venv && pip install virtualenv==$(PY_VENV_VER) && virtualenv .venv)) || true
+	test -z $(VIRTUAL_ENV) && (test -d .venv || ( mkdir .venv && pip install virtualenv  && virtualenv -p python3 .venv)) || true
 	test -d artifacts || ( mkdir artifacts ) || true
 	test -z $(VIRTUAL_ENV) && (.venv/bin/pip install -r requirements.txt --upgrade) || \
 		( pip install -r requirements.txt)
 
 loregen: env
+	.venv/bin/activate
+	./scripts/loregen.py
+

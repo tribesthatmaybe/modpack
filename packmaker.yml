@@ -5,6 +5,7 @@ version: "0.0.1"
 
 authors:
   - otakup0pe
+  - devesine
 
 minecraft: 1.12.2
 forge: 14.23.5.2854
@@ -146,5 +147,13 @@ mods:
   - "tinkers-tool-leveling":
   - "constructs-armory":
   - "simply-backpacks":
+  - "pams-brewcraft":
+  - "creativecore":
+  - "onlinepictureframe":
+  - "architecturecraft-tridev":
+  - "exchangers":
+  - "gunpowderlib":
+  - "botania":
+      version: "Botania r1.10-363.jar"
 files:
   - location: "src/"
