@@ -5,7 +5,6 @@ version: "0.0.1"
 
 authors:
   - otakup0pe
-  - devesine
 
 minecraft: 1.12.2
 forge: 14.23.5.2854
@@ -66,7 +65,6 @@ mods:
   - "mystcraft":
   - "baubles":
   - "crafttweaker":
-  - "instantunify":
   - "wanionlib":
   - "unidict":
   - "ftb-backup":
@@ -147,6 +145,7 @@ mods:
   - "tinkers-tool-leveling":
   - "constructs-armory":
   - "simply-backpacks":
+  - "toast-control":
   - "pams-brewcraft":
   - "creativecore":
   - "onlinepictureframe":
@@ -154,6 +153,8 @@ mods:
   - "exchangers":
   - "gunpowderlib":
   - "botania":
-      version: "Botania r1.10-363.jar"
+     version: "Botania r1.10-363.jar"
+# it can be handly to disably instantunify when testing ore related things
+  - "instantunify":
 files:
   - location: "src/"
