@@ -14,6 +14,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "toughasnails:canteen",
             "Count:3": 1,
             "Damage:2": 0,
@@ -33,6 +36,9 @@
         "0:10": {
           "partialMatch:1": 1,
           "item:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "toughasnails:canteen",
             "Count:3": 1,
             "Damage:2": 2,
@@ -61,6 +67,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "forge:bucketfilled",
               "Count:3": 1,
               "tag:10": {
@@ -95,6 +104,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "forge:bucketfilled",
             "Count:3": 1,
             "tag:10": {
@@ -124,6 +136,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "toughasnails:canteen",
               "Count:3": 1,
               "Damage:2": 0,
@@ -139,6 +154,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "harvestcraft:starfruitjellysandwichitem",
               "Count:3": 2,
               "Damage:2": 0,
@@ -163,6 +181,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:water_bucket",
             "Count:3": 1,
             "Damage:2": 0,
@@ -200,6 +221,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "toughasnails:charcoal_filter",
               "Count:3": 2,
               "Damage:2": 0,
@@ -222,6 +246,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "harvestcraft:crispyricepuffbarsitem",
             "Count:3": 1,
             "Damage:2": 0,
@@ -241,6 +268,9 @@
         "0:10": {
           "partialMatch:1": 0,
           "item:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "harvestcraft:crispyricepuffbarsitem",
             "Count:3": 1,
             "Damage:2": 0,
@@ -269,6 +299,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "harvestcraft:orangejuiceitem",
               "Count:3": 2,
               "Damage:2": 0,
@@ -297,6 +330,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "trafficcontrol:cone",
             "Count:3": 1,
             "Damage:2": 0,
@@ -322,12 +358,18 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "trafficcontrol:cone",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "trafficcontrol:channelizer",
               "Count:3": 1,
               "Damage:2": 0,
@@ -343,6 +385,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "loreexpansion:lore_scrap",
               "Count:3": 1,
               "tag:10": {
@@ -377,6 +422,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "extrautils2:lawsword",
             "Count:3": 1,
             "Damage:2": 0,
@@ -405,6 +453,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:potion",
               "Count:3": 2,
               "tag:10": {
@@ -439,6 +490,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:rabbit_hide",
             "Count:3": 1,
             "Damage:2": 0,
@@ -464,6 +518,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:cooked_rabbit",
               "Count:3": 1,
               "Damage:2": 0,
@@ -479,12 +536,18 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "harvestcraft:eggrollitem",
               "Count:3": 4,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:rabbit_stew",
               "Count:3": 2,
               "Damage:2": 0,
@@ -513,6 +576,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:stone_sword",
             "Count:3": 1,
             "Damage:2": 0,
@@ -538,6 +604,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:stone_sword",
               "Count:3": 1,
               "Damage:2": 0,
@@ -553,6 +622,9 @@
           "index:3": 0,
           "choices:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "conarm:helmet",
               "Count:3": 1,
               "tag:10": {
@@ -599,6 +671,9 @@
               "OreDict:8": ""
             },
             "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:chainmail_chestplate",
               "Count:3": 1,
               "Damage:2": 0,
@@ -621,6 +696,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:nether_star",
             "Count:3": 1,
             "Damage:2": 0,
@@ -652,6 +730,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "toolbelt:belt",
             "Count:3": 1,
             "Damage:2": 0,
@@ -677,6 +758,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "toolbelt:belt",
               "Count:3": 1,
               "Damage:2": 0,
@@ -692,6 +776,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "toolbelt:pouch",
               "Count:3": 1,
               "Damage:2": 0,
@@ -709,10 +796,7 @@
     },
     "10:10": {
       "questID:3": 10,
-      "preRequisites:11": [
-        12,
-        13
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -723,6 +807,9 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:log",
             "Count:3": 1,
             "Damage:2": 0,
@@ -748,6 +835,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:log",
               "Count:3": 6,
               "Damage:2": 0,
@@ -763,12 +853,18 @@
           "index:3": 0,
           "choices:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "immersiveengineering:wooden_device0",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "ironchest:wood_copper_chest_upgrade",
               "Count:3": 1,
               "Damage:2": 0,
@@ -786,7 +882,9 @@
     },
     "11:10": {
       "questID:3": 11,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        12
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -797,6 +895,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "tconstruct:tooltables",
             "Count:3": 1,
             "Damage:2": 0,
@@ -822,6 +923,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "tconstruct:tooltables",
               "Count:3": 1,
               "Damage:2": 0,
@@ -837,6 +941,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:painting",
               "Count:3": 1,
               "Damage:2": 0,
@@ -855,7 +962,7 @@
     "12:10": {
       "questID:3": 12,
       "preRequisites:11": [
-        11
+        10
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -867,6 +974,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:stick",
             "Count:3": 1,
             "Damage:2": 0,
@@ -892,12 +1002,18 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "plants2:planks",
               "Count:3": 16,
               "Damage:2": 2,
               "OreDict:8": "plankWood"
             },
             "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:stick",
               "Count:3": 16,
               "Damage:2": 0,
@@ -913,6 +1029,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:crafting_table",
               "Count:3": 1,
               "Damage:2": 0,
@@ -924,7 +1043,10 @@
     },
     "13:10": {
       "questID:3": 13,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        10,
+        16
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -935,6 +1057,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:coal",
             "Count:3": 1,
             "Damage:2": 1,
@@ -960,6 +1085,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:coal",
               "Count:3": 2,
               "Damage:2": 1,
@@ -975,6 +1103,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:coal",
               "Count:3": 6,
               "Damage:2": 1,
@@ -997,6 +1128,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "tombstone:decorative_grave_simple",
             "Count:3": 1,
             "Damage:2": 0,
@@ -1041,6 +1175,9 @@
           "visibility:8": "ALWAYS",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:cobblestone",
             "Count:3": 1,
             "Damage:2": 0,
@@ -1066,6 +1203,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:cobblestone",
               "Count:3": 8,
               "Damage:2": 0,
@@ -1092,8 +1232,7 @@
     "16:10": {
       "questID:3": 16,
       "preRequisites:11": [
-        15,
-        13
+        15
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1105,6 +1244,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:furnace",
             "Count:3": 1,
             "Damage:2": 0,
@@ -1130,6 +1272,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:furnace",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1145,12 +1290,18 @@
           "index:3": 0,
           "choices:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "immersiveengineering:material",
               "Count:3": 8,
               "Damage:2": 6,
               "OreDict:8": ""
             },
             "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "mysticalagriculture:coal",
               "Count:3": 4,
               "Damage:2": 1,
@@ -1176,6 +1327,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:torch",
             "Count:3": 1,
             "Damage:2": 0,
@@ -1201,6 +1355,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:torch",
               "Count:3": 5,
               "Damage:2": 0,
@@ -1216,18 +1373,27 @@
           "index:3": 0,
           "choices:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "cyclicmagic:ender_torch",
               "Count:3": 16,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "cfm:lamp_off",
               "Count:3": 4,
               "Damage:2": 15,
               "OreDict:8": ""
             },
             "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "immersiveengineering:metal_decoration2",
               "Count:3": 4,
               "Damage:2": 4,
@@ -1262,7 +1428,8 @@
               "Parent:10": {
                 "Filter:9": {},
                 "Inventory:9": {}
-              }
+              },
+              "customnpcs:itemscripteddata:10": {}
             },
             "id:8": "simplybackpacks:commonbackpack",
             "Count:3": 1,
@@ -1303,7 +1470,8 @@
                 "Parent:10": {
                   "Filter:9": {},
                   "Inventory:9": {}
-                }
+                },
+                "customnpcs:itemscripteddata:10": {}
               },
               "id:8": "simplybackpacks:commonbackpack",
               "Count:3": 1,
@@ -1330,6 +1498,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "immersiveengineering:wooden_device0",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1354,6 +1525,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "immersiveengineering:wooden_device0",
             "Count:3": 1,
             "Damage:2": 0,
@@ -1379,6 +1553,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "immersiveengineering:wooden_device0",
               "Count:3": 4,
               "Damage:2": 0,
@@ -1405,6 +1582,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "tconstruct:hammer",
             "Count:3": 1,
             "tag:10": {
@@ -1483,6 +1663,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "immersiveengineering:tool",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1507,6 +1690,9 @@
           "visibility:8": "COMPLETED",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "betterrecords:record",
             "Count:3": 1,
             "Damage:2": 0,
@@ -1532,6 +1718,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:record",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1547,12 +1736,18 @@
           "index:3": 0,
           "choices:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:strobelight",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:laser",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1581,6 +1776,9 @@
           "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:record_11",
             "Count:3": 1,
             "Damage:2": 0,
@@ -1606,6 +1804,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "minecraft:record_stal",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1621,6 +1822,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:record",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1652,6 +1856,9 @@
           "visibility:8": "CHAIN",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "betterrecords:speaker",
             "Count:3": 1,
             "Damage:2": 2,
@@ -1677,6 +1884,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:speaker",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1692,6 +1902,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:frequencycrystal",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1723,6 +1936,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:record_far",
             "Count:3": 1,
             "Damage:2": 0,
@@ -1748,6 +1964,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:recordplayer",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1763,6 +1982,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:wire",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1787,6 +2009,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "betterrecords:radio",
             "Count:3": 1,
             "Damage:2": 0,
@@ -1812,6 +2037,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:radio",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1827,12 +2055,18 @@
           "index:3": 0,
           "choices:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "engineersdecor:thin_steel_pole",
               "Count:3": 4,
               "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "engineersdecor:thin_steel_pole_head",
               "Count:3": 2,
               "Damage:2": 0,
@@ -1855,6 +2089,9 @@
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "betterrecords:record",
             "Count:3": 1,
             "Damage:2": 0,
@@ -1880,6 +2117,9 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:recordetcher",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1895,6 +2135,9 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:record",
               "Count:3": 2,
               "Damage:2": 0,
@@ -1978,6 +2221,9 @@
           "visibility:8": "ALWAYS",
           "name:8": "Survival",
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "toughasnails:purified_water_bottle",
             "Count:3": 1,
             "Damage:2": 0,
@@ -2055,6 +2301,9 @@
           "visibility:8": "ALWAYS",
           "name:8": "Block Rock Desert",
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "chisel:sandstoneyellow",
             "Count:3": 1,
             "Damage:2": 2,
@@ -2125,6 +2374,9 @@
           "visibility:8": "NORMAL",
           "name:8": "Welcome to Blocks",
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:grass",
             "Count:3": 1,
             "Damage:2": 0,
@@ -2167,6 +2419,9 @@
           "visibility:8": "UNLOCKED",
           "name:8": "Let the music play",
           "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
             "id:8": "minecraft:record_blocks",
             "Count:3": 1,
             "Damage:2": 0,

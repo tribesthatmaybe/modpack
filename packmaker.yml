@@ -154,6 +154,9 @@ mods:
   - "gunpowderlib":
   - "botania":
      version: "Botania r1.10-363.jar"
+  - "applied-energistics-2":
+  - "custom-npcs":
+  - "better-than-llamas":
 # it can be handly to disably instantunify when testing ore related things
   - "instantunify":
 files:
