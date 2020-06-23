@@ -31,7 +31,6 @@ mods:
   - "better-questing":
   - "lore-expansion":
   - "reskillable":
-  - "localized-chat":
   - "waystones":
   - "autoreglib":
   - "better-questing-standard-expansion":
@@ -88,8 +87,6 @@ mods:
   - "storage-drawers":
   - "engineers-decor":
   - "serene-seasons":
-  - "controllable":
-      clientonly: true
   - "mrcrayfish-furniture-mod":
   - "obfuscate":
   - "mrcrayfishs-vehicle-mod":
@@ -157,7 +154,15 @@ mods:
   - "applied-energistics-2":
   - "custom-npcs":
   - "better-than-llamas":
+  - "chunkpregenerator":
+  - "better-builders-wands":
 # it can be handly to disably instantunify when testing ore related things
   - "instantunify":
+# https://github.com/MrCrayfish/Controllable/issues/93
+#  - "controllable":
+#      clientonly: true
+# localized chat has a bug with customnpc
+# https://github.com/tribesthatmaybe/modpack/issues/12
+#  - "localized-chat":
 files:
   - location: "src/"
