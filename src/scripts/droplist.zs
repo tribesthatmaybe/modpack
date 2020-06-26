@@ -38,11 +38,6 @@ val MystiWidgets = [
                     <mysticalagriculture:intermedium_fishing_rod>,
                     <mysticalagriculture:superium_fishing_rod>,
                     <mysticalagriculture:supremium_fishing_rod>,
-                    <mysticalagriculture:watering_can:0>,
-                    <mysticalagriculture:watering_can:1>,
-                    <mysticalagriculture:watering_can:2>,
-                    <mysticalagriculture:watering_can:3>,
-                    <mysticalagriculture:watering_can:4>,
                     # weapons
                     <mysticalagriculture:inferium_arrow>,
                     <mysticalagriculture:prudentium_arrow>,
@@ -124,14 +119,6 @@ val MystiWidgets = [
                     <mysticalagriculture:charm:18>,
                     <mysticalagriculture:charm:19>,
                     <mysticalagriculture:charm:20>,
-                    # furnaces
-                    <mysticalagriculture:inferium_furnace:0>,
-                    <mysticalagriculture:prudentium_furnace:0>,
-                    <mysticalagriculture:intermedium_furnace:0>,
-                    <mysticalagriculture:intermedium_furnace:0>,
-                    <mysticalagriculture:superium_furnace:0>,
-                    <mysticalagriculture:supremium_furnace:0>,
-                    <mysticalagriculture:ultimate_furnace:0>,
                     # tinkering table
                     <mysticalagriculture:tinkering_table:0>,
                     <mysticalagriculture:tinkering_table:1>,

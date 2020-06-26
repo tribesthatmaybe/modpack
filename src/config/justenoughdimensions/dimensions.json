@@ -19,7 +19,8 @@
         "generatorName": "default"
       },
       "jed": {
-        "CanRespawnHere": true
+        "CanRespawnHere": true,
+        "CloudRenderer": "DummyRenderer"
       }
     }
   ]

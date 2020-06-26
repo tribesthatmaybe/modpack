@@ -1,7 +1,7 @@
 {
   "General": {
-    "Max Ammo": 100,
-    "Reload Speed": 4,
+    "Max Ammo": 200,
+    "Reload Speed": 6,
     "Projectile Count": 1,
     "Always Spread": true,
     "Spread": 3.0

@@ -4,7 +4,7 @@
     "Reload Speed": 2,
     "Projectile Count": 1,
     "Always Spread": false,
-    "Spread": 0.0
+    "Spread": 0.8
   },
   "Projectile": {
     "Damage": 6.0,
