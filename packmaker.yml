@@ -159,6 +159,11 @@ mods:
   - "appleskin":
   - "a-lib":
   - "alchemistry":
+  - "randompatches":
+  - "copy-paste":
+  - "openmodslib":
+  - "openblocks":
+  - "animal-bikes":
 # it can be handly to disably instantunify when testing ore related things
   - "instantunify":
 # https://github.com/MrCrayfish/Controllable/issues/93
