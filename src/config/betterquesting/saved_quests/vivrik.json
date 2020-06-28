@@ -3,96 +3,8 @@
   "questDatabase:9": {
     "0:10": {
       "questID:3": 0,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "toughasnails:canteen",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Piss Clear",
-          "desc:8": "It is important to always stay hydrated. As the saying goes, if you ain\u0027t pissin\u0027 clear you ain\u0027t hydrated.\n\nYou probably have enough safe water in your canteen for now. Be careful to conserve your water, you don\u0027t yet know where you will find more...."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "item:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "toughasnails:canteen",
-            "Count:3": 1,
-            "Damage:2": 2,
-            "OreDict:8": ""
-          },
-          "requiredUses:3": 2,
-          "ignoreNbt:1": 1,
-          "index:3": 0,
-          "block:10": {
-            "blockID:8": "minecraft:air",
-            "nbt:10": {},
-            "amount:3": 1,
-            "oreDict:8": "",
-            "meta:3": -1
-          },
-          "onHit:1": 0,
-          "onInteract:1": 1,
-          "allowOffHand:1": 1,
-          "taskID:8": "bq_standard:interact_item",
-          "allowMainHand:1": 1
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "forge:bucketfilled",
-              "Count:3": 1,
-              "tag:10": {
-                "FluidName:8": "purified_water",
-                "Amount:3": 1000
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "1:10": {
-          "amount:3": 100,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 0,
-          "index:3": 1
-        }
-      }
-    },
-    "1:10": {
-      "questID:3": 1,
       "preRequisites:11": [
-        0
+        61
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -107,12 +19,8 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "forge:bucketfilled",
+            "id:8": "toughasnails:charcoal_filter",
             "Count:3": 1,
-            "tag:10": {
-              "FluidName:8": "purified_water",
-              "Amount:3": 1000
-            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -122,13 +30,13 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Refill!",
-          "desc:8": "You are probably going to drink a lot from your canteen. Fortunately, it\u0027s easy to refill! Just place it in a crafting window with a bucket of purified water.\n\nYour canteen can hold three buckets of water, and each bucket of water restores three thirst."
+          "name:8": "DIY Portable Microbe Removal",
+          "desc:8": "I know I\u0027ve been super nice and have given you all the water purification supplies you\u0027ve needed up to this point, but it stops now!\n\nNot the niceness, \u0027cause we\u0027re friends.\n\nIt\u0027s about time you made your own charcoal filters though.\n\nFor this, you\u0027ll also need to make some paper from sugar cane.\n\nIf you haven\u0027t found some already, you should be able to find it growing on the bank of a body of water.\n\n§nTask 1§r: Make paper.\n§nTask 2§r: Make a charcoal filter."
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
+          "partialMatch:1": 0,
           "allowSmelt:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
@@ -139,7 +47,16 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "toughasnails:canteen",
+              "id:8": "minecraft:paper",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "toughasnails:charcoal_filter",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -150,26 +67,17 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "harvestcraft:starfruitjellysandwichitem",
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
+          "amount:3": 2,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
         }
       }
     },
-    "2:10": {
-      "questID:3": 2,
+    "1:10": {
+      "questID:3": 1,
       "preRequisites:11": [
-        0
+        25
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -184,7 +92,7 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "minecraft:water_bucket",
+            "id:8": "toolbelt:pouch",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -195,135 +103,42 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "I\u0027m Damp",
-          "desc:8": "The water is a nice find in this desert. You can fill your canteen with it, but be sure to purify it with some charcoal filters before you drink it.\n\nNobody wants to be sick out here."
+          "name:8": "Moar Pockets!!!",
+          "desc:8": "The title pretty much says it all.\n\nThis is how you upgrade your tool belt.\n\n§nTask 1§r: Make a belt pouch."
         }
       },
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
+          "allowSmelt:1": 0,
           "ignoreNBT:1": 0,
-          "index:3": 1,
-          "consume:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:water_bucket",
+              "id:8": "toolbelt:pouch",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
           },
-          "taskID:8": "bq_standard:retrieval"
+          "taskID:8": "bq_standard:crafting"
         }
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "toughasnails:charcoal_filter",
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "3:10": {
-      "questID:3": 3,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "harvestcraft:crispyricepuffbarsitem",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "A Crispy Treat",
-          "desc:8": "It\u0027s kind of stale but still tasty in that way snacks can be. You can\u0027t live on these things alone, and be careful as they can make you thirsty."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "item:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "harvestcraft:crispyricepuffbarsitem",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "requiredUses:3": 1,
-          "ignoreNbt:1": 0,
-          "index:3": 0,
-          "block:10": {
-            "blockID:8": "minecraft:air",
-            "nbt:10": {},
-            "amount:3": 1,
-            "oreDict:8": "",
-            "meta:3": -1
-          },
-          "onHit:1": 0,
-          "onInteract:1": 1,
-          "allowOffHand:1": 0,
-          "taskID:8": "bq_standard:interact_item",
-          "allowMainHand:1": 1
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "harvestcraft:orangejuiceitem",
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "1:10": {
-          "amount:3": 100,
+          "amount:3": 2,
           "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 0,
-          "index:3": 1
+          "isLevels:1": 1,
+          "index:3": 0
         }
       }
     },
-    "4:10": {
+    "2:10": {
       "questID:3": 4,
       "preRequisites:11": [],
       "properties:10": {
@@ -415,281 +230,7 @@
         }
       }
     },
-    "5:10": {
-      "questID:3": 5,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "extrautils2:lawsword",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Overly exciting",
-          "desc:8": "Zombies and Skeletons and Wraiths Oh My"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "advancement_id:8": "minecraft:adventure/kill_a_mob",
-          "index:3": 0,
-          "taskID:8": "bq_standard:advancement"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:potion",
-              "Count:3": 2,
-              "tag:10": {
-                "Potion:8": "minecraft:strong_healing"
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "1:10": {
-          "amount:3": 30,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 0,
-          "index:3": 1
-        }
-      }
-    },
-    "6:10": {
-      "questID:3": 6,
-      "preRequisites:11": [
-        5,
-        3
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:rabbit_hide",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "A bit gamey",
-          "desc:8": "Lots of rabbits out in this desert. You can cook the raw rabbit in a furnace. Makes it a little more edible.\n\nYou can also use it to tame some carnivores. Did you just hear a coyote?"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "allowSmelt:1": 1,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "allowCraft:1": 0,
-          "allowAnvil:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:cooked_rabbit",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:crafting"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "harvestcraft:eggrollitem",
-              "Count:3": 4,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:rabbit_stew",
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "1:10": {
-          "amount:3": 10,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 0,
-          "index:3": 1
-        }
-      }
-    },
-    "7:10": {
-      "questID:3": 7,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:stone_sword",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "A pointy stick",
-          "desc:8": "You may find it easier to find edible meat and fend off the creepy monsters at night with a sword.\n\nIf you are unsure how to make a sword, take a look at the welcome to blocks questline."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 1,
-          "allowSmelt:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:stone_sword",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:crafting"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:choice",
-          "index:3": 0,
-          "choices:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "conarm:helmet",
-              "Count:3": 1,
-              "tag:10": {
-                "StatsOriginal:10": {
-                  "Toughness:5": 0.0,
-                  "FreeModifiers:3": 3,
-                  "Durability:3": 253,
-                  "Defense:5": 8.0
-                },
-                "Stats:10": {
-                  "Toughness:5": 0.0,
-                  "FreeModifiers:3": 3,
-                  "Durability:3": 253,
-                  "Defense:5": 8.0
-                },
-                "TinkerData:10": {
-                  "Materials:9": {
-                    "0:8": "copper",
-                    "1:8": "copper",
-                    "2:8": "copper"
-                  },
-                  "Modifiers:9": {
-                    "0:8": "leveling_armor"
-                  }
-                },
-                "Modifiers:9": {
-                  "0:10": {
-                    "identifier:8": "ambitious_armor",
-                    "color:3": -1204473,
-                    "level:3": 1
-                  },
-                  "1:10": {
-                    "identifier:8": "leveling_armor",
-                    "color:3": 16777215,
-                    "level:3": 1
-                  }
-                },
-                "Traits:9": {
-                  "0:8": "ambitious_armor",
-                  "1:8": "leveling_armor"
-                }
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:chainmail_chestplate",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "8:10": {
+    "3:10": {
       "questID:3": 8,
       "preRequisites:11": [
         60,
@@ -754,403 +295,7 @@
         }
       }
     },
-    "9:10": {
-      "questID:3": 9,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "toolbelt:belt",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "No shortage of pouches.",
-          "desc:8": "There are a lot of tools and widgets to juggle as we stumble through autonomous zone to autonomous zone. A great way to  hold them is with a toolbelt! As common in the Block Rock Desert as throughout the multiverse. As much a fashion statement as they are practical.\n\nYou can craft one with leather, iron, and string. Out of the box, they can hold two items. Using an anvil you cand slap more tool pouches on to your belt and hold up to nine things!\n\nTo add something to your toolbelt, have the item you want to place into your toolbelt selected in your hotbar and press \"R\" (default key). You will then be presented with a selection wheel and if the toolbelt is not full, select insert. To remove something from your toolbelt, have an empty slot on your hotbar selected, and again press \"R\". Select the item you wish to extract."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "allowSmelt:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "toolbelt:belt",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:crafting"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "toolbelt:pouch",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "1:10": {
-          "amount:3": 20,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 0,
-          "index:3": 1
-        }
-      }
-    },
-    "10:10": {
-      "questID:3": 10,
-      "preRequisites:11": [
-        12,
-        13
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:log",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Punch a Tree",
-          "desc:8": "That is how Minecraft generally starts. You punch a tree until you get a log of some kind. And then you make things with it. And then before you know it you are being chased through a darkened desert by coyotes."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:log",
-              "Count:3": 6,
-              "Damage:2": 0,
-              "OreDict:8": "logWood"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:choice",
-          "index:3": 0,
-          "choices:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "immersiveengineering:wooden_device0",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "ironchest:wood_copper_chest_upgrade",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "1:10": {
-          "amount:3": 10,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 0,
-          "index:3": 1
-        }
-      }
-    },
-    "11:10": {
-      "questID:3": 11,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "tconstruct:tooltables",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Craft a Table",
-          "desc:8": " While there are some things which can be crafted in a 2x2 such as torches or refilling your canteen, most will need a 3x3 crafting grid.\n\nSome things will need a fancy crafting table, but we aren\u0027t there yet."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "allowSmelt:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "tconstruct:tooltables",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:crafting"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:painting",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "1:10": {
-          "amount:3": 20,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 0,
-          "index:3": 1
-        }
-      }
-    },
-    "12:10": {
-      "questID:3": 12,
-      "preRequisites:11": [
-        11
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:stick",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Break it down",
-          "desc:8": "There is a lot of crafting in Minecraft. If you play your blocks right, there may even be more crafting than mining.\n\nYour inventory (accessible by with \"e\" by default) has a small 2x2 crafting grid. Let\u0027s use this to break your logs down into some planks and sticks. You can create four species specified wooden planks by placing a log anywhere in your crafting grid. You can then make plain wooden stick by placing two planks on top of each other in the crafting grid."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "allowSmelt:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "plants2:planks",
-              "Count:3": 16,
-              "Damage:2": 2,
-              "OreDict:8": "plankWood"
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:stick",
-              "Count:3": 16,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:crafting"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:crafting_table",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "13:10": {
-      "questID:3": 13,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:coal",
-            "Count:3": 1,
-            "Damage:2": 1,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Smells like industry",
-          "desc:8": "Some words about charcoal and pollution I guess"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "allowSmelt:1": 1,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "allowCraft:1": 0,
-          "allowAnvil:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:coal",
-              "Count:3": 2,
-              "Damage:2": 1,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:crafting"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:coal",
-              "Count:3": 6,
-              "Damage:2": 1,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "14:10": {
+    "4:10": {
       "questID:3": 14,
       "preRequisites:11": [],
       "properties:10": {
@@ -1197,408 +342,7 @@
         }
       }
     },
-    "15:10": {
-      "questID:3": 15,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:cobblestone",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Get the Get the Rocks",
-          "desc:8": "Usually there is a lot of mining in Minecraft. Even in this multiverse you need to do some mining before we can get to fully automated luxury queer block socialism. It will take a bit of work to get all the way there, and you will need to improve your skills to use all the neccesary tools.\n\nAs you gain experience, make sure to check the skills tab under your inventory (default key \"e\") to always keep learning and improving."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:cobblestone",
-              "Count:3": 8,
-              "Damage:2": 0,
-              "OreDict:8": "cobblestone"
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "amount:3": 1,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
-          "index:3": 0
-        }
-      }
-    },
-    "16:10": {
-      "questID:3": 16,
-      "preRequisites:11": [
-        15,
-        13
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:furnace",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Smeltin\u0027",
-          "desc:8": "You put your smelts in here. Add some words about using JEI here"
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "allowSmelt:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:furnace",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:crafting"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:choice",
-          "index:3": 0,
-          "choices:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "immersiveengineering:material",
-              "Count:3": 8,
-              "Damage:2": 6,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "mysticalagriculture:coal",
-              "Count:3": 4,
-              "Damage:2": 1,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "17:10": {
-      "questID:3": 17,
-      "preRequisites:11": [
-        13,
-        12
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:torch",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Light it Up",
-          "desc:8": "The string lights you brought will only light up so much. For now, you can use charcoal on top of a stick to make a simple and effective torch. As you progress, you will be able to make a wide variety of light producing items."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "allowSmelt:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:torch",
-              "Count:3": 5,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:crafting"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:choice",
-          "index:3": 0,
-          "choices:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "cyclicmagic:ender_torch",
-              "Count:3": 16,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "cfm:lamp_off",
-              "Count:3": 4,
-              "Damage:2": 15,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "immersiveengineering:metal_decoration2",
-              "Count:3": 4,
-              "Damage:2": 4,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "1:10": {
-          "amount:3": 10,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 0,
-          "index:3": 1
-        }
-      }
-    },
-    "18:10": {
-      "questID:3": 18,
-      "preRequisites:11": [
-        9
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "Parent:10": {
-                "Filter:9": {},
-                "Inventory:9": {}
-              },
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "simplybackpacks:commonbackpack",
-            "Count:3": 1,
-            "tag:10": {
-              "inv:10": {
-                "Size:3": 18,
-                "Items:9": {}
-              },
-              "filter:10": {
-                "Size:3": 16,
-                "Items:9": {}
-              }
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Wander all day, party all night",
-          "desc:8": "It takes a lot of supplies and preparation to have a good time. You are going to need more than your pockets and your tool belt. The simple backpack can be upgrade as you gain access to more advanced materials. Always make sure to empty it before you upgrade!\n\nTo put it on, bring up your inventory (default key \"e\"). Click on the baubles icon (a little ring in the upper right of your avatar display). Shift-click the backpack and you will now be wearing it (assuming nothing was already in the back slot)."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "allowSmelt:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "Parent:10": {
-                  "Filter:9": {},
-                  "Inventory:9": {}
-                },
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "simplybackpacks:commonbackpack",
-              "Count:3": 1,
-              "tag:10": {
-                "inv:10": {
-                  "Size:3": 18,
-                  "Items:9": {}
-                },
-                "filter:10": {
-                  "Size:3": 16,
-                  "Items:9": {}
-                }
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:crafting"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "immersiveengineering:wooden_device0",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "19:10": {
-      "questID:3": 19,
-      "preRequisites:11": [
-        9
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "immersiveengineering:wooden_device0",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Crates and Chests and Bins and Boxes",
-          "desc:8": "There is so much stuff. Just so much. The storage crate is a great means of just bringing a bunch of shit with you. You can place it like a normal chest, but it can also be picked up again by whacking it with an axe. And it does not lose it\u0027s contents."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 1,
-          "index:3": 0,
-          "consume:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "immersiveengineering:wooden_device0",
-              "Count:3": 4,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
-      "rewards:9": {}
-    },
-    "20:10": {
+    "5:10": {
       "questID:3": 20,
       "preRequisites:11": [
         4
@@ -1708,7 +452,7 @@
       },
       "rewards:9": {}
     },
-    "21:10": {
+    "6:10": {
       "questID:3": 21,
       "preRequisites:11": [],
       "properties:10": {
@@ -1788,7 +532,7 @@
         }
       }
     },
-    "22:10": {
+    "7:10": {
       "questID:3": 22,
       "preRequisites:11": [
         61
@@ -1892,7 +636,7 @@
         }
       }
     },
-    "23:10": {
+    "8:10": {
       "questID:3": 23,
       "preRequisites:11": [
         8,
@@ -1994,7 +738,7 @@
         }
       }
     },
-    "24:10": {
+    "9:10": {
       "questID:3": 24,
       "preRequisites:11": [],
       "properties:10": {
@@ -2122,7 +866,7 @@
         }
       }
     },
-    "25:10": {
+    "10:10": {
       "questID:3": 25,
       "preRequisites:11": [
         8
@@ -2186,7 +930,7 @@
         }
       }
     },
-    "26:10": {
+    "11:10": {
       "questID:3": 26,
       "preRequisites:11": [
         23
@@ -2216,7 +960,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Time For Adventure!!",
-          "desc:8": "This is the kickoff for splitting quest lines and can be adjusted as necessary."
+          "desc:8": "You\u0027ve officially proven yourself ready to venture out into the world and make a home for yourself.\n\nIn an effort to facilitate that, I\u0027ve provided you with some magical fruit.\n\nOnce you eat the fruit, you\u0027ll be able to fly for a limited time.\n\nThis is your only warning; your ability to fly will eventually and unceremoniously wear off.\n\nBe wise about how you use this boon and don\u0027t fly too high.\n\n*\nTo enable/disable §3creative flight§r, double-tap the §3§5space bar§r."
         }
       },
       "tasks:9": {},
@@ -2229,8 +973,8 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "quark:glowshroom",
-              "Count:3": 1,
+              "id:8": "cyclicmagic:glowing_chorus",
+              "Count:3": 3,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -2238,7 +982,7 @@
         }
       }
     },
-    "27:10": {
+    "12:10": {
       "questID:3": 47,
       "preRequisites:11": [
         49
@@ -2311,7 +1055,7 @@
         }
       }
     },
-    "28:10": {
+    "13:10": {
       "questID:3": 48,
       "preRequisites:11": [
         47
@@ -2393,7 +1137,7 @@
         }
       }
     },
-    "29:10": {
+    "14:10": {
       "questID:3": 49,
       "preRequisites:11": [],
       "properties:10": {
@@ -2464,7 +1208,7 @@
         }
       }
     },
-    "30:10": {
+    "15:10": {
       "questID:3": 50,
       "preRequisites:11": [],
       "properties:10": {
@@ -2492,7 +1236,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "You Made It!! Now, Press ~ .",
-          "desc:8": "You\u0027re finally here! It\u0027s true.\n\nBut where\u0027s everyone else?\n\nWell, at least you\u0027ve got me, your trusty quest book.\n\nIn case it isn\u0027t obvious, your current priority is survival.\n\nFirst, try to remember what color the sleeping bag your brought with you is, airhead.\n\nNext, exit my interface and take stock of your inventory.\n\nAlso, be sure to take a look at the quest \"Such A User...\" for some helpful info and a free goody."
+          "desc:8": "You\u0027re finally here! It\u0027s true.\n\nBut where\u0027s everyone else?\n\nWell, at least you\u0027ve got me, your trusty quest book.\n\nIn case it isn\u0027t obvious, your current priority is survival.\n\nFirst, try to remember what color your sleeping bag is and §5l-click§r §\"\"§2Claim§r\".\n\nNext, exit my interface and take stock of your inventory.\n\nAlso, be sure to take a look at the quest \"Such A User...\" for some helpful info and a free goody."
         }
       },
       "tasks:9": {},
@@ -2649,7 +1393,7 @@
         }
       }
     },
-    "31:10": {
+    "16:10": {
       "questID:3": 51,
       "preRequisites:11": [
         50
@@ -2738,7 +1482,7 @@
         }
       }
     },
-    "32:10": {
+    "17:10": {
       "questID:3": 52,
       "preRequisites:11": [
         50
@@ -2849,7 +1593,7 @@
         }
       }
     },
-    "33:10": {
+    "18:10": {
       "questID:3": 54,
       "preRequisites:11": [
         51
@@ -2867,9 +1611,9 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "toughasnails:charcoal_filter",
+            "id:8": "toughasnails:canteen",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 2,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -2928,7 +1672,7 @@
         }
       }
     },
-    "34:10": {
+    "19:10": {
       "questID:3": 55,
       "preRequisites:11": [
         52
@@ -3001,7 +1745,7 @@
         }
       }
     },
-    "35:10": {
+    "20:10": {
       "questID:3": 56,
       "preRequisites:11": [
         55
@@ -3154,7 +1898,7 @@
         }
       }
     },
-    "36:10": {
+    "21:10": {
       "questID:3": 58,
       "preRequisites:11": [
         55
@@ -3253,7 +1997,7 @@
         }
       }
     },
-    "37:10": {
+    "22:10": {
       "questID:3": 59,
       "preRequisites:11": [
         50
@@ -3283,7 +2027,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Such a User...",
-          "desc:8": "Being in a new environment can be challenging, as most of us are likely aware.\n\nIn an effort to mitigate frustration from UI troubles, listed below are some excerpts from my most helpful, less snarky pages that should serve you well.\n\nCaveat; If I were to attempt to explain every possible interaction available to you, I wouldn\u0027t have any room in my pages for the §ofun§r quests, so this should be seen as a relatively brief primer and starter guide.\n\nWhen in doubt, I recommend checking your controls, tooltips, or the quest you\u0027re working on if it requires a specific action.\n\n§1Quest Book§r\nFirst and foremost, while you can access the amazingly helpful knowledge I contain by using my physical form, I can also be accessed via hotkey (§1§d§5~§  §rby§r default), even if you lose me!\n\nNext, while I try to be as succinct as possible and present everything on one page, you may need to §3scroll§r or use the §2arrows§r at the bottom of my pages to see an entry in full.\nI apologize. I\u0027m not as thin as I once was, as I\u0027m now thick with knowledge!\nAnyway, let\u0027s test the functions I mentioned on this entry.\n\n§1Just Enough Items (JEI)\n§rLet\u0027s move on to what will surely be your next best friend after me, the §5§rJEI interface§r.\nThis is the interface on the right (by default) when your inventory is open.\nIts §2search bar§r allows you find just about anything in this multiverse.\nThen, with a simple §5l-§r or §5r-click§r on item in question you can both determine how to craft it and what you can craft with it!\n\n§mDon\u0027t say anything, but I love the JEI interface. \u003c3§r\n*cough*\n\nAlright, back to everything else.\n\n§1General Controls§r\nYou can exit almost any interface with §l§5esc§r.\n\nAlmost all other controls can be found, edited, and completely made a mess of via the \"§l§2Controls§l§r\" option in the main menu. Careful.\n\nUnfortunately, as far as I can currently tell from the vast knowledge in my pages, the dreaded §cNarrator§r can\u0027t be vacated from §l§5ctrl§r+§l§5b§r.\nHe\u0027s supes annoying, but shouldn\u0027t bug you if you don\u0027t poke him.\n\n§WWhile we\u0027re on the topic of being unobtrusive, you can §3sneak/crouch§r by holding the assigned hotkey (§5shift§r by default) while you move.\n\n§3Sneaking§r can even prevent you from walking off the edge of the block you\u0027re on (of your own volition). Just be careful not to get hit by something, as it can easily push you over the edge to your demise.\n\nNow, let\u0027s talk about how to §3sprint§r! You can do so by holding down the assigned hotkey (§5ctrl§r by default) while you move.\n\nJust bear in mind that if you\u0027re too hungry or thirsty, §3sprinting§r won\u0027t be an option.\n\nWait! What good is all this sneaking and sprinting knowledge if you don\u0027t know how to move around in the first place?!\nYour movements are mapped to §5w§r, §5a§r, §5s§r, §5d§r by default, essentially creating a left-handed set of arrow keys.\n\nAaand finally, certain items and machines have alternate functions when §5l-§r or §5r-clicking§r while holding §5shift§r or §5ctrl§r regardless of whether you\u0027re moving or not.\n\nNow that you\u0027re likely feeling a little lost, let\u0027s talk about getting found.\n\n§1Journey Map§r\nYou\u0027ve got a map!\nYeah, you\u0027ve got a minimap at the top right (default), but you can look at a larger version via hotkey (§1§5j§r by default).\nThrough this§r interface you can set and remove waypoints, see other nearby (or not-so-nearby players), and view details of the areas you\u0027ve discovered.\n\nThis probably all seems like a lot, but I promise you\u0027ll get the hang of it as you fiddle around and explore this bizarre, cuboid reality.\nJust remember, it\u0027s all about having a good time§m and avoiding unintended injuries, fatal mishaps, and unexpected creeper explosions§r.\n\nThis is it, your last tip! I\u0027ll try to simplify your quests by clearly labeling what you need to do to finish it at the bottom of each entry.\nSee below;\n\n§nTask 1§r: Check the first box.\n§nTask 2§r: Check the second box."
+          "desc:8": "Being in a new environment can be challenging, as most of us are likely aware.\n\nIn an effort to mitigate frustration from UI troubles, listed below are some excerpts from my most helpful, less snarky pages that should serve you well.\n\nCaveat; If I were to attempt to explain every possible interaction available to you, I wouldn\u0027t have any room in my pages for the §ofun§r quests, so this should be seen as a relatively brief primer and starter guide.\n\nWhen in doubt, I recommend checking your controls, tooltips, or the quest you\u0027re working on if it requires a specific action.\n\n§1Quest Book§r\nFirst and foremost, while you can access the amazingly helpful knowledge I contain by using my physical form, I can also be accessed via hotkey (§1§d§5~§  §rby§r default), even if you lose me!\n\nNext, while I try to be as succinct as possible and present everything on one page, you may need to §3scroll§r or use the §2arrows§r at the bottom of my pages to see an entry in full.\nI apologize. I\u0027m not as thin as I once was, as I\u0027m now thick with knowledge!\nAnyway, let\u0027s test the functions I mentioned on this entry.\n\n§1Just Enough Items (JEI)\n§rLet\u0027s move on to what will surely be your next best friend after me, the §5§rJEI interface§r.\nThis is the interface on the right (by default) when your inventory is open.\nIts §2search bar§r allows you find just about anything in this multiverse.\nThen, with a simple §5l-§r or §5r-click§r on item in question you can both determine how to craft it and what you can craft with it!\n\n§mDon\u0027t say anything, but I love the JEI interface. \u003c3§r\n*cough*\n\nAlright, back to everything else.\n\n§1General Controls§r\nYou can exit almost any interface with §l§5esc§r.\n\nAlmost all other controls can be found, edited, and completely made a mess of via the \"§l§2Controls§l§r\" option in the main menu. Careful.\n\nUnfortunately, as far as I can currently tell from the vast knowledge in my pages, the dreaded §cNarrator§r can\u0027t be vacated from §l§5ctrl§r+§l§5b§r.\nHe\u0027s supes annoying, but shouldn\u0027t bug you if you don\u0027t poke him.\n\n§WWhile we\u0027re on the topic of being unobtrusive, you can §3sneak/crouch§r by holding the assigned hotkey (§5shift§r by default) while you move.\n\n§3Sneaking§r can even prevent you from walking off the edge of the block you\u0027re on (of your own volition). Just be careful not to get hit by something, as it can easily push you over the edge to your demise.\n\nNow, let\u0027s talk about how to §3sprint§r! You can do so by holding down the assigned hotkey (§5ctrl§r by default) while you move.\n\nJust bear in mind that if you\u0027re too hungry or thirsty, §3sprinting§r won\u0027t be an option.\n\nWait! What good is all this sneaking and sprinting knowledge if you don\u0027t know how to move around in the first place?!\nYour movements are mapped to §5w§r, §5a§r, §5s§r, §5d§r by default, essentially creating a left-handed set of arrow keys.\n\nAaand finally, certain items and machines have alternate functions when §5l-§r or §5r-clicking§r while holding §5shift§r or §5ctrl§r regardless of whether you\u0027re moving or not.\n\nFor example, you can §3equip§r and §3unequip§r items and gear by §5shift§r + §3§5l-clicking§r on them in your inventory. \n\nNow that you\u0027re likely feeling a little lost, let\u0027s talk about getting found.\n\n§1Journey Map§r\nYou\u0027ve got a map!\nYeah, you\u0027ve got a minimap at the top right (default), but you can look at a larger version via hotkey (§1§5j§r by default).\nThrough this§r interface you can set and remove waypoints, see other nearby (or not-so-nearby players), and view details of the areas you\u0027ve discovered.\n\nThis probably all seems like a lot, but I promise you\u0027ll get the hang of it as you fiddle around and explore this bizarre, cuboid reality.\nJust remember, it\u0027s all about having a good time§m and avoiding unintended injuries, fatal mishaps, and unexpected creeper explosions§r.\n\nThis is it, your last tip! I\u0027ll try to simplify your quests by clearly labeling what you need to do to finish it at the bottom of each entry.\nSee below;\n\n§nTask 1§r: Check the first box.\n§nTask 2§r: Check the second box."
         }
       },
       "tasks:9": {
@@ -3356,7 +2100,7 @@
         }
       }
     },
-    "38:10": {
+    "23:10": {
       "questID:3": 60,
       "preRequisites:11": [
         56
@@ -3386,7 +2130,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Kill or Be Killed",
-          "desc:8": "Over the course of your adventures, you\u0027re bound to come across many not-so-friendly entities.\n\nIt\u0027s truly a kill or be killed environment out here.\n\nTime to show your mettle and reap the rewards.\n\n§nTask 1§r: Kill some husks.\n§nTask 2§r: Collect some rotten flesh."
+          "desc:8": "Over the course of your adventures, you\u0027re bound to come across many not-so-friendly entities.\n\nIt\u0027s truly a kill or be killed environment out here.\n\nTime to show your mettle and reap the rewards.\n\n§nTask 1§r: Kill a husk.\n§nTask 2§r: Collect some rotten flesh.\n\n*While the first task is to kill a husk, both husks and zombies, as well as a couple other unfriendlies, drop rotten flesh."
         }
       },
       "tasks:9": {
@@ -3553,7 +2297,7 @@
         }
       }
     },
-    "39:10": {
+    "24:10": {
       "questID:3": 61,
       "preRequisites:11": [
         58
@@ -3635,7 +2379,7 @@
         }
       }
     },
-    "40:10": {
+    "25:10": {
       "questID:3": 62,
       "preRequisites:11": [
         56,
@@ -3749,7 +2493,7 @@
           "desc:8": "How to survive in this multiverse."
         }
       },
-      "order:3": 0
+      "order:3": 1
     },
     "1:10": {
       "quests:9": {
@@ -3794,7 +2538,7 @@
           "desc:8": "It is a little dusty in here."
         }
       },
-      "order:3": 1
+      "order:3": 2
     },
     "2:10": {
       "quests:9": {
@@ -3845,117 +2589,131 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
+          "x:3": -216,
+          "y:3": -216,
+          "id:3": 0,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": -336,
+          "y:3": -108,
+          "id:3": 1,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
           "x:3": -288,
           "y:3": -180,
           "id:3": 8,
           "sizeY:3": 24
         },
-        "1:10": {
+        "3:10": {
           "sizeX:3": 24,
           "x:3": -240,
           "y:3": -180,
           "id:3": 22,
           "sizeY:3": 24
         },
-        "2:10": {
+        "4:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -144,
           "id:3": 23,
           "sizeY:3": 24
         },
-        "3:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -192,
           "y:3": -180,
           "id:3": 24,
           "sizeY:3": 24
         },
-        "4:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -144,
           "id:3": 25,
           "sizeY:3": 24
         },
-        "5:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -96,
           "id:3": 26,
           "sizeY:3": 24
         },
-        "6:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": -360,
           "y:3": -360,
           "id:3": 50,
           "sizeY:3": 24
         },
-        "7:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": -324,
           "id:3": 51,
           "sizeY:3": 24
         },
-        "8:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": -324,
           "id:3": 52,
           "sizeY:3": 24
         },
-        "9:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": -408,
           "y:3": -288,
           "id:3": 54,
           "sizeY:3": 24
         },
-        "10:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -288,
           "id:3": 55,
           "sizeY:3": 24
         },
-        "11:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": -252,
           "id:3": 56,
           "sizeY:3": 24
         },
-        "12:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": -288,
           "y:3": -252,
           "id:3": 58,
           "sizeY:3": 24
         },
-        "13:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": -360,
           "y:3": -396,
           "id:3": 59,
           "sizeY:3": 24
         },
-        "14:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -216,
           "id:3": 60,
           "sizeY:3": 24
         },
-        "15:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -216,
           "id:3": 61,
           "sizeY:3": 24
         },
-        "16:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": -180,
@@ -3982,7 +2740,7 @@
           "desc:8": "Well, you finally made it to the desert. But why?\n\nIf you haven\u0027t already started questioning why you made such a horrible decision, you will shortly...\n\nNaaah. While this won\u0027t necessarily be \"easy\", it should absolutely be fun.\n\nWhat is in store for you has been crafted to provide an experience akin to an artistic orgy in the desert.\n\nA pack for newbies and more experienced players alike, Tribes That May Be is here to help you create art, machines, and community in a desert survival environment.\n\nWelcome. Now get down in the dust and roll around a bit so you don\u0027t look so out of place."
         }
       },
-      "order:3": 4
+      "order:3": 0
     }
   },
   "questSettings:10": {
