@@ -690,6 +690,71 @@
       }
     },
     "8:10": {
+      "questID:3": 8,
+      "preRequisites:11": [
+        60,
+        61
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:leather",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "*Exo-Dermis",
+          "desc:8": "Alright, class! Today we\u0027re learning how to make leather!\n\n§nTask 1§r: Make the leather.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:leather",
+              "Count:3": 7,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
+    },
+    "9:10": {
       "questID:3": 9,
       "preRequisites:11": [],
       "properties:10": {
@@ -766,7 +831,7 @@
         }
       }
     },
-    "9:10": {
+    "10:10": {
       "questID:3": 10,
       "preRequisites:11": [
         12,
@@ -855,7 +920,7 @@
         }
       }
     },
-    "10:10": {
+    "11:10": {
       "questID:3": 11,
       "preRequisites:11": [],
       "properties:10": {
@@ -932,7 +997,7 @@
         }
       }
     },
-    "11:10": {
+    "12:10": {
       "questID:3": 12,
       "preRequisites:11": [
         11
@@ -1014,7 +1079,7 @@
         }
       }
     },
-    "12:10": {
+    "13:10": {
       "questID:3": 13,
       "preRequisites:11": [],
       "properties:10": {
@@ -1085,7 +1150,7 @@
         }
       }
     },
-    "13:10": {
+    "14:10": {
       "questID:3": 14,
       "preRequisites:11": [],
       "properties:10": {
@@ -1132,7 +1197,7 @@
         }
       }
     },
-    "14:10": {
+    "15:10": {
       "questID:3": 15,
       "preRequisites:11": [],
       "properties:10": {
@@ -1194,7 +1259,7 @@
         }
       }
     },
-    "15:10": {
+    "16:10": {
       "questID:3": 16,
       "preRequisites:11": [
         15,
@@ -1277,7 +1342,7 @@
         }
       }
     },
-    "16:10": {
+    "17:10": {
       "questID:3": 17,
       "preRequisites:11": [
         13,
@@ -1375,7 +1440,7 @@
         }
       }
     },
-    "17:10": {
+    "18:10": {
       "questID:3": 18,
       "preRequisites:11": [
         9
@@ -1476,7 +1541,7 @@
         }
       }
     },
-    "18:10": {
+    "19:10": {
       "questID:3": 19,
       "preRequisites:11": [
         9
@@ -1533,7 +1598,7 @@
       },
       "rewards:9": {}
     },
-    "19:10": {
+    "20:10": {
       "questID:3": 20,
       "preRequisites:11": [
         4
@@ -1643,7 +1708,7 @@
       },
       "rewards:9": {}
     },
-    "20:10": {
+    "21:10": {
       "questID:3": 21,
       "preRequisites:11": [],
       "properties:10": {
@@ -1723,7 +1788,457 @@
         }
       }
     },
-    "21:10": {
+    "22:10": {
+      "questID:3": 22,
+      "preRequisites:11": [
+        61
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "forge:bucketfilled",
+            "Count:3": 1,
+            "tag:10": {
+              "FluidName:8": "purified_water",
+              "Amount:3": 1000
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Water You Doing?",
+          "desc:8": "Now that you\u0027ve got a bucket, I\u0027ve got a trick to teach you.\n\nYou can use it to purify even §omore§r water.\n\nBut! Now that said pure water is in a bucket, you can fill an external vessel with it to prepare for longer treks across the dusty, dusty wasteland...\n\n§nTask 1§r: Fill your bucket with water.\n§nTask 2§r: Purify the water in your bucket by heating it in your furnace.\n\nTips!\nYou can not only put your purified water in a storage vessel with your bucket, but also take it out the same way.\nThis will help you refill your canteen on the go."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:water_bucket",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "allowCraft:1": 0,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "forge:bucketfilled",
+              "Count:3": 1,
+              "tag:10": {
+                "FluidName:8": "purified_water",
+                "Amount:3": 1000
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mekanism:machineblock2",
+              "Count:3": 1,
+              "tag:10": {
+                "tier:3": 0
+              },
+              "Damage:2": 11,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "23:10": {
+      "questID:3": 23,
+      "preRequisites:11": [
+        8,
+        22
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "Parent:10": {
+                "Filter:9": {},
+                "Inventory:9": {}
+              },
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "simplybackpacks:commonbackpack",
+            "Count:3": 1,
+            "tag:10": {
+              "inv:10": {
+                "Size:3": 18,
+                "Items:9": {}
+              },
+              "filter:10": {
+                "Size:3": 16,
+                "Items:9": {}
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "*Closing Tiiime!",
+          "desc:8": "Alright, the time for hand holding is just about over.\n\nFrom now on, the quests are going to get pared down to only the essentials.\n\nBeing that it\u0027s almost time to leave in search of a suitable home and the fact that you\u0027ve gotten this far, I\u0027m sure you can manage.\n\nBut how are you supposed to get where you\u0027re going with all the possessions you\u0027ve surely gathered by now?\n\nWell, unless you want to practice extreme minimalism and discard everything you own, you\u0027re going to need a backpack.\n\n§\n§n§n§r§nTask 1§r: Make yourself a backpack.\n\n*The crate you receive as a reward for this quest will keep its contents when picked up, making it perfect for travel.\n\n*Will incorporate some of duplicate quest text;\n\nIt takes a lot of supplies and preparation to have a good time. You are going to need more than your pockets and your tool belt. The simple backpack can be upgrade as you gain access to more advanced materials. Always make sure to empty it before you upgrade!\n\nTo put it on, bring up your inventory (default key \"e\"). Click on the baubles icon (a little ring in the upper right of your avatar display). Shift-click the backpack and you will now be wearing it (assuming nothing was already in the back slot)."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Filter:9": {},
+                  "Inventory:9": {}
+                },
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "simplybackpacks:commonbackpack",
+              "Count:3": 1,
+              "tag:10": {
+                "inv:10": {
+                  "Size:3": 18,
+                  "Items:9": {}
+                },
+                "filter:10": {
+                  "Size:3": 16,
+                  "Items:9": {}
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:wooden_device0",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "24:10": {
+      "questID:3": 24,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "COMPLETED",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:spawn_egg",
+            "Count:3": 1,
+            "tag:10": {
+              "EntityTag:10": {
+                "id:8": "betteranimalsplus:hirschgeist"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Every day is hump day when you\u0027re a camel. \u003c3",
+          "desc:8": "Heyyy! Look at you, all prepared and stuff.\n\nI knew you were smart.\n\nHere\u0027s a little validation;"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mekanism:machineblock2",
+              "Count:3": 1,
+              "tag:10": {
+                "tier:3": 0,
+                "display:10": {
+                  "Name:8": "Basic Fluid Tank"
+                },
+                "mekData:10": {
+                  "security:3": 0,
+                  "ownerUUID:8": "1630dad8-2f68-4eec-b363-54fe2366b225",
+                  "fluidTank:10": {
+                    "FluidName:8": "purified_water",
+                    "Amount:3": 14000
+                  },
+                  "Items:9": {}
+                }
+              },
+              "Damage:2": 11,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 10,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "forge:bucketfilled",
+              "Count:3": 1,
+              "tag:10": {
+                "FluidName:8": "purified_water",
+                "Amount:3": 1000
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "toughasnails:charcoal_filter",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:coal_block",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:torch",
+              "Count:3": 20,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "25:10": {
+      "questID:3": 25,
+      "preRequisites:11": [
+        8
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "toolbelt:belt",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "*Too Many Pockets? Never!",
+          "desc:8": "If you\u0027re feeling like you could use a another pocket or two to put something nifty in, a tool belt could be the answer.\n\nSo... uh... make one.\n\n§nTask 1§r: Make a tool belt.\n\n*You can upgrade this as you progress, so don\u0027t dismiss it so readily based on its currently limited capacity.\n\nCopied text;\nThere are a lot of tools and widgets to juggle as we stumble through autonomous zone to autonomous zone. A great way to  hold them is with a toolbelt! As common in the Block Rock Desert as throughout the multiverse. As much a fashion statement as they are practical.\n\nYou can craft one with leather, iron, and string. Out of the box, they can hold two items. Using an anvil you cand slap more tool pouches on to your belt and hold up to nine things!\n\nTo add something to your toolbelt, have the item you want to place into your toolbelt selected in your hotbar and press \"R\" (default key). You will then be presented with a selection wheel and if the toolbelt is not full, select insert. To remove something from your toolbelt, have an empty slot on your hotbar selected, and again press \"R\". Select the item you wish to extract."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "toolbelt:belt",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 2,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
+    },
+    "26:10": {
+      "questID:3": 26,
+      "preRequisites:11": [
+        23
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:compass",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Time For Adventure!!",
+          "desc:8": "This is the kickoff for splitting quest lines and can be adjusted as necessary."
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "quark:glowshroom",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "27:10": {
       "questID:3": 47,
       "preRequisites:11": [
         49
@@ -1796,7 +2311,7 @@
         }
       }
     },
-    "22:10": {
+    "28:10": {
       "questID:3": 48,
       "preRequisites:11": [
         47
@@ -1878,7 +2393,7 @@
         }
       }
     },
-    "23:10": {
+    "29:10": {
       "questID:3": 49,
       "preRequisites:11": [],
       "properties:10": {
@@ -1949,7 +2464,7 @@
         }
       }
     },
-    "24:10": {
+    "30:10": {
       "questID:3": 50,
       "preRequisites:11": [],
       "properties:10": {
@@ -2134,7 +2649,7 @@
         }
       }
     },
-    "25:10": {
+    "31:10": {
       "questID:3": 51,
       "preRequisites:11": [
         50
@@ -2209,18 +2724,21 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "toughasnails:charcoal_filter",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
-        },
-        "1:10": {
-          "amount:3": 1,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
-          "index:3": 1
         }
       }
     },
-    "26:10": {
+    "32:10": {
       "questID:3": 52,
       "preRequisites:11": [
         50
@@ -2260,13 +2778,13 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:log",
+              "id:8": "plants2:log_0",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": "logWood"
@@ -2313,63 +2831,6 @@
           "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {}
-    },
-    "27:10": {
-      "questID:3": 53,
-      "preRequisites:11": [
-        51
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "appliedenergistics2:dummy_fluid_item",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Refill!",
-          "desc:8": "You should probably find a water source and use it to fill your canteen.\n\nYou can do this by §9crouch§ring + §9r-click§ring on a water block with your canteen in hand.\n\nIf it\u0027s an emergency situation, you can drink straight from standing water by doing the same thing with an empty hand, but you probably shouldn\u0027t do too much of that...\n\n§nTask 1§r: Fill your water from a standing water source."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "autoConsume:1": 0,
-          "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 2,
-          "consume:1": 1,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "toughasnails:canteen",
-              "Count:3": 1,
-              "Damage:2": 1,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:retrieval"
-        }
-      },
       "rewards:9": {
         "0:10": {
           "rewardID:8": "bq_standard:item",
@@ -2379,19 +2840,19 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "toughasnails:charcoal_filter",
-              "Count:3": 16,
-              "Damage:2": 0,
+              "id:8": "chisel:planks-birch",
+              "Count:3": 3,
+              "Damage:2": 9,
               "OreDict:8": ""
             }
           }
         }
       }
     },
-    "28:10": {
+    "33:10": {
       "questID:3": 54,
       "preRequisites:11": [
-        53
+        51
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2417,8 +2878,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Be Gone, Malicious Microbes!",
-          "desc:8": "This quest will show you how to purify the water in your canteen with those handy charcoal filters you got.\n\nAll you need to do is combine your newly-filled canteen and a charcoal filter in a crafting grid to get some pure, tasty, H20.\n\n§nTask 1§r: Purify a full canteen of water."
+          "name:8": "Refill \u0026 Refine",
+          "desc:8": "You should probably find a water source and use it to fill your canteen.\n\nYou can do this by §9crouch§ring + §9r-click§ring on a water block with your canteen in hand.\n\nIf it\u0027s an emergency situation, you can drink straight from standing water by doing the same thing with an empty hand, but you probably shouldn\u0027t do too much of that...\n\nBut fret not, thirsty wanderer, you can purify the water in a canteen with the handy charcoal filters you got.\n\nAll you need to do is combine your full canteen and a charcoal filter in a §2crafting grid§r to get some pure, tasty, H20.\n\n§nTask 1§r: Refill your canteen and purify the water inside."
         }
       },
       "tasks:9": {
@@ -2426,7 +2887,7 @@
           "partialMatch:1": 0,
           "allowSmelt:1": 0,
           "ignoreNBT:1": 0,
-          "index:3": 1,
+          "index:3": 0,
           "allowCraft:1": 1,
           "allowAnvil:1": 0,
           "requiredItems:9": {
@@ -2452,19 +2913,22 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "mekanism:machineblock2",
-              "Count:3": 1,
-              "tag:10": {
-                "tier:3": 0
-              },
-              "Damage:2": 11,
+              "id:8": "toughasnails:charcoal_filter",
+              "Count:3": 16,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
+        },
+        "1:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 1
         }
       }
     },
-    "29:10": {
+    "34:10": {
       "questID:3": 55,
       "preRequisites:11": [
         52
@@ -2494,7 +2958,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Tool Time! Hur Hur Hur!!",
-          "desc:8": "There is a lot of mining and crafting in Minecraft (never would\u0027ve guessed from the name, right?).\n\nEven in this particular Minecraft multiverse you\u0027ll need to do a significant amount of both before we can get to fully-automated, luxury, queer-block socialism.\n\nIt will take a bit of work to get there, and as you progress you will need to improve not only your tools, but the skills necessary to use them as well.\n\n§nTask 1§r: Make sticks.\n§nTask 2§r: Make your first pickaxe!\n\n*As you gain experience, make sure to check the skills tab of your inventory to allocate the experience you\u0027ll be getting."
+          "desc:8": "There is a lot of mining and crafting in Minecraft (never would\u0027ve guessed from the name, right?).\n\nEven in this particular Minecraft multiverse you\u0027ll need to do a significant amount of both before we can get to fully-automated, luxury, queer-block socialism.\n\nIt will take a bit of work to get there, and as you progress you will need to improve not only your tools, but the skills necessary to use them as well.\n\n§\n§n§r§nTask 1§r: Make your first pickaxe!\n\n*As you gain experience, make sure to check the skills tab of your inventory to allocate the experience you\u0027ll be getting."
         }
       },
       "tasks:9": {
@@ -2507,15 +2971,6 @@
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:stick",
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
@@ -2546,7 +3001,7 @@
         }
       }
     },
-    "30:10": {
+    "35:10": {
       "questID:3": 56,
       "preRequisites:11": [
         55
@@ -2556,7 +3011,7 @@
           "issilent:1": 0,
           "snd_complete:8": "minecraft:entity.player.levelup",
           "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
+          "tasklogic:8": "OR",
           "repeattime:3": -1,
           "visibility:8": "NORMAL",
           "simultaneous:1": 0,
@@ -2570,18 +3025,18 @@
             "OreDict:8": ""
           },
           "globalshare:1": 0,
-          "questlogic:8": "OR",
+          "questlogic:8": "AND",
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Armaments!",
-          "desc:8": "That trusty knife of yours is great and all, but let\u0027s be real... you should probably find a way to better defend yourself.\n\nIt\u0027s about time you armed yourself with §mknowledge!§r some sort of weapon."
+          "desc:8": "That trusty knife of yours is great and all, but let\u0027s be real... you should probably find a way to better defend yourself.\n\nIt\u0027s about time you armed yourself with §mknowledge!§r some sort of weapon.\n\nTo the right, you\u0027ll see a few different options for weapons that should be easily craftable with the resources you currently have at your disposal.\n\nYou should probably have a helmet too, now that you\u0027re thinking of running around swinging a weapon at things that can fight back...\n\nI\u0027ve got you covered. \u003c3\n\n§nTask 1§r: Craft one of the listed weapons.\n\nQuick Tip;\nAn axe will not only help defend yourself, but it can also help you get wood faster if you whack some trees with it."
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
+          "partialMatch:1": 0,
           "allowSmelt:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
@@ -2592,25 +3047,87 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:wooden_sword",
+              "id:8": "minecraft:wooden_axe",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            },
-            "1:10": {
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        },
+        "1:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:stone_sword",
+              "id:8": "cyclicmagic:sandstone_axe",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
-            },
-            "2:10": {
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        },
+        "2:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 2,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:stone_axe",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        },
+        "3:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 3,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
               "id:8": "cyclicmagic:sandstone_sword",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        },
+        "4:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 4,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:stone_sword",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -2637,7 +3154,7 @@
         }
       }
     },
-    "31:10": {
+    "36:10": {
       "questID:3": 58,
       "preRequisites:11": [
         55
@@ -2667,7 +3184,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Get G-get G-get Rocks!",
-          "desc:8": "This task should be pretty straightforward.\n\nGo get stone.\n\n§l§r§lQuick Tip:\n§rIf you mine down far enough, you\u0027ll find \"bedrock\". Bedrock looks like the icon for this quest. You can\u0027t mine bedrock.\nDon\u0027t let your eyes deceive you while diligently swinging away at it with your pickaxe. It\u0027s not going to work. I promise, on my honor as real news."
+          "desc:8": "Two things;\n\n§nTask 1§r: Mine blocks.\n§nTask 2§r: Make a furnace.\n\n§l§r§lQuick Tip:\n§rIf you mine down far enough, you\u0027ll find \"bedrock\". Bedrock looks like the icon for this quest. You can\u0027t mine bedrock.\nDon\u0027t let your eyes deceive you while diligently swinging away at it with your pickaxe. It\u0027s not going to work. I promise, on my honor as real news."
         }
       },
       "tasks:9": {
@@ -2676,7 +3193,7 @@
           "autoConsume:1": 0,
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
-          "index:3": 1,
+          "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
@@ -2685,11 +3202,31 @@
               },
               "id:8": "minecraft:cobblestone",
               "Count:3": 8,
-              "Damage:2": 32767,
-              "OreDict:8": "materialStoneTool"
+              "Damage:2": 0,
+              "OreDict:8": "cobblestone"
             }
           },
           "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:furnace",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
         }
       },
       "rewards:9": {
@@ -2716,7 +3253,7 @@
         }
       }
     },
-    "32:10": {
+    "37:10": {
       "questID:3": 59,
       "preRequisites:11": [
         50
@@ -2746,7 +3283,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Such a User...",
-          "desc:8": "Being in a new environment can be challenging, as most of us are likely aware.\n\nIn an effort to mitigate frustration from UI troubles, listed below are some excerpts from my most helpful, less snarky pages that should serve you well.\n\n§1Quest Book§r\nFirst and foremost, while you can access the amazingly helpful knowledge I contain by using my physical form, I can also be accessed via hotkey (§1§d§5~§  §rby§r default), even if you lose me!\n\nNext, while I try to be as succinct as possible and present everything on one page, you may need to §3scroll§r or use the §2arrows§r at the bottom of my pages to see an entry in full.\nI apologize. I\u0027m not as thin as I once was, as I\u0027m now thick with knowledge!\nAnyway, let\u0027s test the functions I mentioned on this entry.\n\n§1Just Enough Items (JEI)\n§rLet\u0027s move on to what will surely be your next best friend after me, the §5§rJEI interface§r.\nThis is the interface on the right (by default) when your inventory is open. It allows you to search for just about anything in this multiverse and both determine how to craft it as well as what you can craft with it!\n\n§mDon\u0027t say anything, but I love the JEI interface. \u003c3§r\n*cough*\n\nAlright, back to everything else.\n\n§1General Controls§r\nYou can exit almost any interface with §l§5esc§r .\n\nAlmost all other controls can be found, edited, and completely made a mess of via the \"§l§2Controls§l§r\" option in the main menu. Careful.\n\nUnfortunately, as far as I can currently tell from the vast knowledge in my pages, the dreaded §cNarrator§r can\u0027t be vacated from §l§5ctrl§r+§l§5b§r.\nHe\u0027s supes annoying, but shouldn\u0027t bug you if you don\u0027t poke him.\n\n§WWhile we\u0027re on the topic of being unobtrusive, you can §3sneak/crouch§r by holding the assigned hotkey (§5shift§r by default) while you move.\n\n§3Sneaking§r can even prevent you from walking off the edge of the block you\u0027re on (of your own volition). Just be careful not to get hit by something, as it can easily push you over the edge to your demise.\n\nNow, let\u0027s talk about how to §3sprint§r! You can do so by holding down the assigned hotkey (§5ctrl§r by default) while you move.\n\nJust bear in mind that if you\u0027re too hungry or thirsty, §3sprinting§r won\u0027t be an option.\n\n§1Journey Map§r\nYou\u0027ve got a map!\nYeah, you\u0027ve got the minimap at the top right, but you can look at a larger version via hotkey (§1§5j§r by default).\nThrough this§r interface you can set and remove waypoints, see other nearby (or not-so-nearby players\u0027 locations), and view details of the areas you\u0027ve discovered.\n\n§nTask 1§r: Check the first box.\n§nTask 2§r: Check the second box."
+          "desc:8": "Being in a new environment can be challenging, as most of us are likely aware.\n\nIn an effort to mitigate frustration from UI troubles, listed below are some excerpts from my most helpful, less snarky pages that should serve you well.\n\nCaveat; If I were to attempt to explain every possible interaction available to you, I wouldn\u0027t have any room in my pages for the §ofun§r quests, so this should be seen as a relatively brief primer and starter guide.\n\nWhen in doubt, I recommend checking your controls, tooltips, or the quest you\u0027re working on if it requires a specific action.\n\n§1Quest Book§r\nFirst and foremost, while you can access the amazingly helpful knowledge I contain by using my physical form, I can also be accessed via hotkey (§1§d§5~§  §rby§r default), even if you lose me!\n\nNext, while I try to be as succinct as possible and present everything on one page, you may need to §3scroll§r or use the §2arrows§r at the bottom of my pages to see an entry in full.\nI apologize. I\u0027m not as thin as I once was, as I\u0027m now thick with knowledge!\nAnyway, let\u0027s test the functions I mentioned on this entry.\n\n§1Just Enough Items (JEI)\n§rLet\u0027s move on to what will surely be your next best friend after me, the §5§rJEI interface§r.\nThis is the interface on the right (by default) when your inventory is open.\nIts §2search bar§r allows you find just about anything in this multiverse.\nThen, with a simple §5l-§r or §5r-click§r on item in question you can both determine how to craft it and what you can craft with it!\n\n§mDon\u0027t say anything, but I love the JEI interface. \u003c3§r\n*cough*\n\nAlright, back to everything else.\n\n§1General Controls§r\nYou can exit almost any interface with §l§5esc§r.\n\nAlmost all other controls can be found, edited, and completely made a mess of via the \"§l§2Controls§l§r\" option in the main menu. Careful.\n\nUnfortunately, as far as I can currently tell from the vast knowledge in my pages, the dreaded §cNarrator§r can\u0027t be vacated from §l§5ctrl§r+§l§5b§r.\nHe\u0027s supes annoying, but shouldn\u0027t bug you if you don\u0027t poke him.\n\n§WWhile we\u0027re on the topic of being unobtrusive, you can §3sneak/crouch§r by holding the assigned hotkey (§5shift§r by default) while you move.\n\n§3Sneaking§r can even prevent you from walking off the edge of the block you\u0027re on (of your own volition). Just be careful not to get hit by something, as it can easily push you over the edge to your demise.\n\nNow, let\u0027s talk about how to §3sprint§r! You can do so by holding down the assigned hotkey (§5ctrl§r by default) while you move.\n\nJust bear in mind that if you\u0027re too hungry or thirsty, §3sprinting§r won\u0027t be an option.\n\nWait! What good is all this sneaking and sprinting knowledge if you don\u0027t know how to move around in the first place?!\nYour movements are mapped to §5w§r, §5a§r, §5s§r, §5d§r by default, essentially creating a left-handed set of arrow keys.\n\nAaand finally, certain items and machines have alternate functions when §5l-§r or §5r-clicking§r while holding §5shift§r or §5ctrl§r regardless of whether you\u0027re moving or not.\n\nNow that you\u0027re likely feeling a little lost, let\u0027s talk about getting found.\n\n§1Journey Map§r\nYou\u0027ve got a map!\nYeah, you\u0027ve got a minimap at the top right (default), but you can look at a larger version via hotkey (§1§5j§r by default).\nThrough this§r interface you can set and remove waypoints, see other nearby (or not-so-nearby players), and view details of the areas you\u0027ve discovered.\n\nThis probably all seems like a lot, but I promise you\u0027ll get the hang of it as you fiddle around and explore this bizarre, cuboid reality.\nJust remember, it\u0027s all about having a good time§m and avoiding unintended injuries, fatal mishaps, and unexpected creeper explosions§r.\n\nThis is it, your last tip! I\u0027ll try to simplify your quests by clearly labeling what you need to do to finish it at the bottom of each entry.\nSee below;\n\n§nTask 1§r: Check the first box.\n§nTask 2§r: Check the second box."
         }
       },
       "tasks:9": {
@@ -2819,7 +3356,7 @@
         }
       }
     },
-    "33:10": {
+    "38:10": {
       "questID:3": 60,
       "preRequisites:11": [
         56
@@ -2849,19 +3386,174 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Kill or Be Killed",
-          "desc:8": "Over the course of your adventures, you\u0027re bound to come across many not-so-friendly entities.\n\nIt\u0027s truly a kill or be killed environment out here.\n\nTime to show your mettle.\n\n§nTask 1§r: Kill a hostile mob."
+          "desc:8": "Over the course of your adventures, you\u0027re bound to come across many not-so-friendly entities.\n\nIt\u0027s truly a kill or be killed environment out here.\n\nTime to show your mettle and reap the rewards.\n\n§nTask 1§r: Kill some husks.\n§nTask 2§r: Collect some rotten flesh."
         }
       },
       "tasks:9": {
         "0:10": {
-          "advancement_id:8": "minecraft:adventure/kill_a_mob",
+          "ignoreNBT:1": 1,
           "index:3": 0,
-          "taskID:8": "bq_standard:advancement"
+          "targetNBT:10": {
+            "HurtByTimestamp:3": 0,
+            "ForgeData:10": {},
+            "Attributes:9": {
+              "0:10": {
+                "Base:6": 20.0,
+                "Name:8": "generic.maxHealth"
+              },
+              "1:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              "2:10": {
+                "Base:6": 0.23000000417232513,
+                "Name:8": "generic.movementSpeed"
+              },
+              "3:10": {
+                "Base:6": 2.0,
+                "Name:8": "generic.armor"
+              },
+              "4:10": {
+                "Base:6": 0.0,
+                "Name:8": "generic.armorToughness"
+              },
+              "5:10": {
+                "Base:6": 1.0,
+                "Name:8": "forge.swimSpeed"
+              },
+              "6:10": {
+                "Base:6": 35.0,
+                "Name:8": "generic.followRange"
+              },
+              "7:10": {
+                "Base:6": 3.0,
+                "Name:8": "generic.attackDamage"
+              },
+              "8:10": {
+                "Base:6": 0.03118298000273763,
+                "Name:8": "zombie.spawnReinforcements"
+              }
+            },
+            "Invulnerable:1": 0,
+            "FallFlying:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "ForgeCaps:10": {
+              "tinkertoolleveling:entityxp:9": {},
+              "dsurround:data:10": {
+                "a:1": 0,
+                "f:1": 0
+              },
+              "dsurround:entityfx:10": {},
+              "dsurround:speech:10": {}
+            },
+            "HandDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085
+            },
+            "PersistenceRequired:1": 0,
+            "id:8": "minecraft:husk",
+            "Motion:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "Leashed:1": 0,
+            "UUIDLeast:4": -8558360233900170206,
+            "Health:5": 20.0,
+            "LeftHanded:1": 0,
+            "Air:2": 300,
+            "OnGround:1": 0,
+            "Dimension:3": 1001,
+            "Rotation:9": {
+              "0:5": 3.1804566,
+              "1:5": 0.0
+            },
+            "UpdateBlocked:1": 0,
+            "HandItems:9": {
+              "0:10": {},
+              "1:10": {}
+            },
+            "ArmorDropChances:9": {
+              "0:5": 0.085,
+              "1:5": 0.085,
+              "2:5": 0.085,
+              "3:5": 0.085
+            },
+            "UUIDMost:4": 1971310619858258150,
+            "Pos:9": {
+              "0:6": 0.0,
+              "1:6": 0.0,
+              "2:6": 0.0
+            },
+            "CanBreakDoors:1": 0,
+            "Fire:2": -1,
+            "ArmorItems:9": {
+              "0:10": {},
+              "1:10": {},
+              "2:10": {},
+              "3:10": {}
+            },
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0
+          },
+          "damageType:8": "",
+          "required:3": 1,
+          "taskID:8": "bq_standard:hunt",
+          "target:8": "minecraft:husk",
+          "subtypes:1": 1
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:rotten_flesh",
+              "Count:3": 7,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:potion",
+              "Count:3": 2,
+              "tag:10": {
+                "Potion:8": "minecraft:healing"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
-    "34:10": {
+    "39:10": {
       "questID:3": 61,
       "preRequisites:11": [
         58
@@ -2890,47 +3582,64 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Furnace",
-          "desc:8": "Make a furnace and charcoal."
+          "name:8": "Fire It Up!",
+          "desc:8": "Congratulations! Your furnace is your first piece of significant \"technology\"!\n\nThere are a few different things you can do with a your fancy, new fire box. Let\u0027s try a couple now.\n\n§nTask 1§r: Make some charcoal.\n§nTask 2§r: Cook some food.\n\n*\nThere are many things that can fuel your furnace, some of which you may not want to put in there (tools, valuable items, etc.).\nDifferent things have different burn rates, which you can see by holding §5shift§r while hovering over the thing in question with your cursor."
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
+          "partialMatch:1": 0,
           "allowSmelt:1": 1,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "allowCraft:1": 1,
+          "allowCraft:1": 0,
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:furnace",
+              "id:8": "minecraft:coal",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 1,
               "OreDict:8": ""
             },
             "1:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:coal",
-              "Count:3": 2,
-              "Damage:2": 1,
+              "id:8": "minecraft:cooked_rabbit",
+              "Count:3": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:bucket",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
-    "35:10": {
+    "40:10": {
       "questID:3": 62,
       "preRequisites:11": [
-        56
+        56,
+        8
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3016,55 +3725,6 @@
         "0:10": {
           "sizeX:3": 24,
           "x:3": 0,
-          "y:3": 0,
-          "id:3": 0,
-          "sizeY:3": 24
-        },
-        "1:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": -32,
-          "id:3": 1,
-          "sizeY:3": 24
-        },
-        "2:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 12,
-          "id:3": 2,
-          "sizeY:3": 24
-        },
-        "3:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 60,
-          "id:3": 3,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 108,
-          "id:3": 5,
-          "sizeY:3": 24
-        },
-        "5:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": 84,
-          "id:3": 6,
-          "sizeY:3": 24
-        },
-        "6:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 156,
-          "id:3": 7,
-          "sizeY:3": 24
-        },
-        "7:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
           "y:3": 204,
           "id:3": 14,
           "sizeY:3": 24
@@ -3102,33 +3762,12 @@
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": -108,
-          "id:3": 9,
-          "sizeY:3": 24
-        },
-        "2:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": -168,
-          "id:3": 18,
-          "sizeY:3": 24
-        },
-        "3:10": {
-          "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": -108,
-          "id:3": 19,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
           "x:3": -12,
           "y:3": -48,
           "id:3": 20,
           "sizeY:3": 24
         },
-        "5:10": {
+        "2:10": {
           "sizeX:3": 24,
           "x:3": -72,
           "y:3": 12,
@@ -3158,79 +3797,6 @@
       "order:3": 1
     },
     "2:10": {
-      "quests:9": {
-        "0:10": {
-          "sizeX:3": 24,
-          "x:3": -180,
-          "y:3": -144,
-          "id:3": 10,
-          "sizeY:3": 24
-        },
-        "1:10": {
-          "sizeX:3": 24,
-          "x:3": -108,
-          "y:3": -192,
-          "id:3": 11,
-          "sizeY:3": 24
-        },
-        "2:10": {
-          "sizeX:3": 24,
-          "x:3": -144,
-          "y:3": -168,
-          "id:3": 12,
-          "sizeY:3": 24
-        },
-        "3:10": {
-          "sizeX:3": 24,
-          "x:3": -144,
-          "y:3": -120,
-          "id:3": 13,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": -180,
-          "y:3": -84,
-          "id:3": 15,
-          "sizeY:3": 24
-        },
-        "5:10": {
-          "sizeX:3": 24,
-          "x:3": -144,
-          "y:3": -84,
-          "id:3": 16,
-          "sizeY:3": 24
-        },
-        "6:10": {
-          "sizeX:3": 24,
-          "x:3": -108,
-          "y:3": -144,
-          "id:3": 17,
-          "sizeY:3": 24
-        }
-      },
-      "lineID:3": 2,
-      "properties:10": {
-        "betterquesting:10": {
-          "visibility:8": "NORMAL",
-          "name:8": "Welcome to Blocks",
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:grass",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "bg_image:8": "",
-          "bg_size:3": 256,
-          "desc:8": "Everything you ever wanted to know about Minecraft but probably didn\u0027t know to ask."
-        }
-      },
-      "order:3": 2
-    },
-    "3:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -3275,89 +3841,124 @@
       },
       "order:3": 3
     },
-    "4:10": {
+    "3:10": {
       "quests:9": {
         "0:10": {
+          "sizeX:3": 24,
+          "x:3": -288,
+          "y:3": -180,
+          "id:3": 8,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": -240,
+          "y:3": -180,
+          "id:3": 22,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -264,
+          "y:3": -144,
+          "id:3": 23,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": -180,
+          "id:3": 24,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -312,
+          "y:3": -144,
+          "id:3": 25,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": -264,
+          "y:3": -96,
+          "id:3": 26,
+          "sizeY:3": 24
+        },
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -360,
           "y:3": -360,
           "id:3": 50,
           "sizeY:3": 24
         },
-        "1:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": -324,
           "id:3": 51,
           "sizeY:3": 24
         },
-        "2:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": -324,
           "id:3": 52,
           "sizeY:3": 24
         },
-        "3:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": -408,
           "y:3": -288,
-          "id:3": 53,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": -432,
-          "y:3": -252,
           "id:3": 54,
           "sizeY:3": 24
         },
-        "5:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -288,
           "id:3": 55,
           "sizeY:3": 24
         },
-        "6:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": -252,
           "id:3": 56,
           "sizeY:3": 24
         },
-        "7:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": -288,
           "y:3": -252,
           "id:3": 58,
           "sizeY:3": 24
         },
-        "8:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": -360,
           "y:3": -396,
           "id:3": 59,
           "sizeY:3": 24
         },
-        "9:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -216,
           "id:3": 60,
           "sizeY:3": 24
         },
-        "10:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -216,
           "id:3": 61,
           "sizeY:3": 24
         },
-        "11:10": {
+        "16:10": {
           "sizeX:3": 24,
-          "x:3": -360,
-          "y:3": -216,
+          "x:3": -384,
+          "y:3": -180,
           "id:3": 62,
           "sizeY:3": 24
         }

@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+// some things get removed because too many things
 
 // we want mystical agriculture for the post scarcity vibes
 val MystiWidgets = [
@@ -160,9 +161,22 @@ var NailsTho = [
     <toughasnails:jelled_slime_helmet>,
     <toughasnails:jelled_slime_chestplate>,
     <toughasnails:jelled_slime_leggings>,
-    <toughasnails:jelled_slime_boots>
+    <toughasnails:jelled_slime_boots>,
+    <toughasnails:jelled_slime>,
+    <toughasnails:ice_cube>,
+    <toughasnails:magma_shard>
 ] as IItemStack[];
 for widget in NailsTho {
+  recipes.remove(widget);
+  mods.jei.JEI.removeAndHide(widget);
+}
+
+// too many tools
+var tooManyTools = [
+
+] as IItemStack[];
+
+for widget in tooManyTools {
   recipes.remove(widget);
   mods.jei.JEI.removeAndHide(widget);
 }
