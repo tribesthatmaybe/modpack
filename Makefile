@@ -1,4 +1,4 @@
-.PHONY: container_build container_shell build server clean distclean client github_client github_server
+.PHONY: container_build container_shell build server clean distclean client github_client github_server loregen
 
 DOCKER_IMAGE=tribesthatmaybe/modpack
 VERSION=$(shell cat version)
@@ -21,7 +21,7 @@ container_shell: container_build
 		$(DOCKER_IMAGE):$(VERSION) \
 		shell
 
-client: container_build
+client: container_build lore
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
@@ -30,7 +30,7 @@ client: container_build
 	mkdir -p artifacts
 	cp build/release/ttmb-$(VERSION).zip $(ARTIFACTS)/ttmb-$(VERSION).zip
 
-server: container_build
+server: container_build lore
 	rm -f build/server/mods/* $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 	docker run \
 		--rm \
@@ -56,13 +56,11 @@ github_server: server
 	mkdir -p artifacts/github/server
 	cd $(ARTIFACTS)/github/server && unzip $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 
-env:
-	test -z $(VIRTUAL_ENV) && (test -d .venv || ( mkdir .venv && pip install virtualenv  && virtualenv -p python3 .venv)) || true
-	test -d artifacts || ( mkdir artifacts ) || true
-	test -z $(VIRTUAL_ENV) && (.venv/bin/pip install -r requirements.txt --upgrade) || \
-		( pip install -r requirements.txt)
-
-loregen: env
-	.venv/bin/activate
-	./scripts/loregen.py
-
+loregen: container_build
+	rm -rf src/config/loreexpansion/lore/*.json
+	cp lore/static/*.json src/config/loreexpansion/lore/
+	docker run \
+		--rm \
+		-v "$(shell pwd):/mnt" \
+		$(DOCKER_IMAGE):$(VERSION) \
+		loregen

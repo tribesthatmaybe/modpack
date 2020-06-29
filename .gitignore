@@ -4,3 +4,4 @@ packmaker.lock
 config.yml
 artifacts/
 .venv/
+src/config/loreexpansion/lore/*.json

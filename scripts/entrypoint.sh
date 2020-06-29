@@ -49,6 +49,9 @@ elif [ "$ACTION" == "server" ] ; then
     packmaker updatedb
     packmaker --config /usr/local/etc/packmaker.conf lock
     packmaker --config /usr/local/etc/packmaker.conf build-server
+elif [ "$ACTION" == "loregen" ] ; then
+    cd /mnt
+    ./scripts/loregen.py
 elif [ "$ACTION" == "shell" ] ; then
     cd /mnt
     echo "time to mod"
