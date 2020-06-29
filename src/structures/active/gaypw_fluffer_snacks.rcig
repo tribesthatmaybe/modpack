@@ -1,0 +1,136 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "gaypw",
+  "items": [
+    {
+      "weight": 1.9013646841049194,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "harvestcraft:popcornitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.9013646841049194,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "harvestcraft:crispyricepuffbarsitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.290178656578064,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "harvestcraft:potatochipsitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.290178656578064,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "harvestcraft:grilledcheeseitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:potion",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Potion": {
+              "nbtType": "string",
+              "nbt": "minecraft:strong_healing"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.2900550961494446,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "harvestcraft:creeperwingsitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0950840711593628,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "harvestcraft:grapefruitsodaitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0950840711593628,
+      "min": 1,
+      "max": 16,
+      "item": {
+        "id": "harvestcraft:coffeeitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.9013646841049194,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "harvestcraft:sesamesnapsitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.290178656578064,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "harvestcraft:breakfastburritoitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "harvestcraft:beanburritoitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.290178656578064,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "harvestcraft:dandelionteaitem",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}
