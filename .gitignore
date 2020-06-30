@@ -6,3 +6,4 @@ artifacts/
 .venv/
 src/config/loreexpansion/lore/*.json
 src/structures/active/lore_*.rcig
+packmaker.yml

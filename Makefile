@@ -1,7 +1,8 @@
 .PHONY: container_build container_shell build server clean distclean client github_client github_server loregen
 
 DOCKER_IMAGE=tribesthatmaybe/modpack
-VERSION=$(shell cat version)
+CONTAINER_VERSION=0.0.1
+VERSION=$(shell docker run -v $(shell pwd):/mnt otakup0pe/avakas show /mnt --pre-build 2> /dev/null)
 ARTIFACTS=$(shell pwd)/artifacts
 ifndef VIRTUAL_ENV
 CIENV = $(shell pwd)/.venv/bin/
@@ -12,20 +13,20 @@ endif
 container_build:
 	docker build \
 		--label VERSION=$(VERSION) \
-		--tag $(DOCKER_IMAGE):$(VERSION) \
+		--tag $(DOCKER_IMAGE):$(CONTAINER_VERSION) \
 		.
 container_shell: container_build
 	docker run \
 		-it --rm \
 		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE):$(VERSION) \
+		$(DOCKER_IMAGE):$(CONTAINER_VERSION) \
 		shell
 
 client: container_build loregen
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE):$(VERSION) \
+		$(DOCKER_IMAGE):$(CONTAINER_VERSION) \
 		build
 	mkdir -p artifacts
 	cp build/release/ttmb-$(VERSION).zip $(ARTIFACTS)/ttmb-$(VERSION).zip
@@ -35,7 +36,7 @@ server: container_build loregen
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE):$(VERSION) \
+		$(DOCKER_IMAGE):$(CONTAINER_VERSION) \
 		server
 	mkdir -p artifacts
 	cd build/server && zip -r $(ARTIFACTS)/ttmb-server-$(VERSION).zip *
@@ -62,5 +63,5 @@ loregen: container_build
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE):$(VERSION) \
+		$(DOCKER_IMAGE):$(CONTAINER_VERSION) \
 		loregen

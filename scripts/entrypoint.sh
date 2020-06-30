@@ -41,11 +41,13 @@ fi
 
 if [ "$ACTION" == "build" ] ; then
     cd /mnt
+    ttmb-render-packmaker
     packmaker updatedb
     packmaker --config /usr/local/etc/packmaker.conf lock
     packmaker --config /usr/local/etc/packmaker.conf build-curseforge
 elif [ "$ACTION" == "server" ] ; then
     cd /mnt
+    ttmb-render-packmaker
     packmaker updatedb
     packmaker --config /usr/local/etc/packmaker.conf lock
     packmaker --config /usr/local/etc/packmaker.conf build-server
