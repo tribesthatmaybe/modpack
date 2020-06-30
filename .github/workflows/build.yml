@@ -22,10 +22,8 @@ jobs:
       - name: upload artifact modpack i guess
         uses: actions/upload-artifact@v2
         with:
-          name: ttmb-client
           path: artifacts/github/client
       - name: upload server modpack i guess
         uses: actions/upload-artifact@v2
         with:
-          name: ttmb-server
           path: artifacts/github/server
