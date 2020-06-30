@@ -19,11 +19,15 @@ jobs:
         run: make github_client
       - name: build server thing
         run: make github_server
+      - name: set version for artifact upload
+        run: echo ::set-env name=version::$(docker run -v $(shell pwd):/mnt otakup0pe/avakas show /mnt --pre-build 2>/dev/null)
       - name: upload artifact modpack i guess
         uses: actions/upload-artifact@v2
         with:
+          name: ttmb-client-${{env.version}}
           path: artifacts/github/client
       - name: upload server modpack i guess
         uses: actions/upload-artifact@v2
         with:
+          name: ttmb-server-${{env.version}}
           path: artifacts/github/server
