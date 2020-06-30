@@ -57,7 +57,7 @@ github_server: server
 	cd $(ARTIFACTS)/github/server && unzip $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 
 loregen: container_build
-	rm -rf src/config/loreexpansion/lore/*.json
+	rm -rf src/config/loreexpansion/lore/*.json src/structures/active/lore_*.rcig
 	cp lore/static/*.json src/config/loreexpansion/lore/
 	docker run \
 		--rm \
