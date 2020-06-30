@@ -15,3 +15,11 @@ The current version of the modpack installed on the ttmbdev server is [this](htt
 # Modifying the modpack
 
 ![confused bloke](https://i.imgur.com/aSqWoNb.png)
+
+# Building the modpack locally
+
+You've got gumption, kid. I like that.
+
+ 1. Follow the instructions in [config.yml.sample](./config.yml.sample) to get a Twitch token for testing
+ 2. Create a YAML file named `config.yml` with the content `twitch_token: "<token>"`
+ 3. `make build`
