@@ -21,7 +21,7 @@ container_shell: container_build
 		$(DOCKER_IMAGE):$(VERSION) \
 		shell
 
-client: container_build lore
+client: container_build loregen
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
@@ -30,7 +30,7 @@ client: container_build lore
 	mkdir -p artifacts
 	cp build/release/ttmb-$(VERSION).zip $(ARTIFACTS)/ttmb-$(VERSION).zip
 
-server: container_build lore
+server: container_build loregen
 	rm -f build/server/mods/* $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 	docker run \
 		--rm \
