@@ -21,7 +21,7 @@ container_shell: container_build
 		$(DOCKER_IMAGE):$(VERSION) \
 		shell
 
-client: container_build overrides loregen
+client: container_build loregen
 	rm -rf build/curseforge/overrides
 	docker run \
 		--rm \
