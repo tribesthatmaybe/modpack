@@ -1,7 +1,6 @@
 .PHONY: container_build container_shell build server clean distclean client github_client github_server loregen
 
 DOCKER_IMAGE=tribesthatmaybe/modpack
-CONTAINER_VERSION=0.0.1
 VERSION=$(shell docker run -v $(shell pwd):/mnt otakup0pe/avakas show /mnt --pre-build 2> /dev/null)
 ARTIFACTS=$(shell pwd)/artifacts
 ifndef VIRTUAL_ENV
@@ -13,30 +12,33 @@ endif
 container_build:
 	docker build \
 		--label VERSION=$(VERSION) \
-		--tag $(DOCKER_IMAGE):$(CONTAINER_VERSION) \
+		--tag $(DOCKER_IMAGE):$(VERSION) \
 		.
 container_shell: container_build
 	docker run \
 		-it --rm \
 		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE):$(CONTAINER_VERSION) \
+		$(DOCKER_IMAGE):$(VERSION) \
 		shell
 
-client: container_build loregen
+overrides:
+	rm -rf build/curseforge/overrides
+
+client: container_build overrides loregen
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE):$(CONTAINER_VERSION) \
+		$(DOCKER_IMAGE):$(VERSION) \
 		build
 	mkdir -p artifacts
 	cp build/release/ttmb-$(VERSION).zip $(ARTIFACTS)/ttmb-$(VERSION).zip
 
-server: container_build loregen
+server: container_build overrides loregen
 	rm -f build/server/mods/* $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE):$(CONTAINER_VERSION) \
+		$(DOCKER_IMAGE):$(VERSION) \
 		server
 	mkdir -p artifacts
 	cd build/server && zip -r $(ARTIFACTS)/ttmb-server-$(VERSION).zip *
@@ -45,6 +47,7 @@ build: client server
 
 clean:
 	rm -rf build/server build/release
+	rm -f src/config/loreexpansion/lore/*.json src/structures/active/lore_*.rcig
 
 distclean: clean
 	rm -rf build curseforge.db packmaker.lock config.yml .venv
@@ -63,5 +66,5 @@ loregen: container_build
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE):$(CONTAINER_VERSION) \
+		$(DOCKER_IMAGE):$(VERSION) \
 		loregen
