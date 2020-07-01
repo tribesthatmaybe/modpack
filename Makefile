@@ -21,10 +21,8 @@ container_shell: container_build
 		$(DOCKER_IMAGE):$(VERSION) \
 		shell
 
-overrides:
-	rm -rf build/curseforge/overrides
-
 client: container_build overrides loregen
+	rm -rf build/curseforge/overrides
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
@@ -33,7 +31,7 @@ client: container_build overrides loregen
 	mkdir -p artifacts
 	cp build/release/ttmb-$(VERSION).zip $(ARTIFACTS)/ttmb-$(VERSION).zip
 
-server: container_build overrides loregen
+server: container_build loregen
 	rm -f build/server/mods/* $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 	docker run \
 		--rm \
