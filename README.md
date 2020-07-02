@@ -10,7 +10,7 @@ Have fun with that.
 
 It is recommended that people use [MultiMC](https://multimc.org/) to run this modpack. It also works with the Twitch launcher if you use a custom profile.
 
-The current version of the modpack installed on the ttmbdev server is [this](https://github.com/tribesthatmaybe/modpack/actions/runs/150147934) one. You should be able to download the `ttmb-0.0.1` artifact and import it as a custom profile into Twitch or add it as a new instance in MultiMC. If you want to try connecting, the server host is `ttmbdev.spmc.co`. If you find bugs, please report them [here](https://github.com/tribesthatmaybe/modpack/issues).
+The current version of the modpack installed on the ttmbdev server is [this](https://github.com/tribesthatmaybe/modpack/actions/runs/154559356) one. You should be able to download the versioned `ttmb-client` artifact and import it as a custom profile into Twitch or add it as a new instance in MultiMC. If you want to try connecting, the server host is `ttmbdev.spmc.co`. If you find bugs, please report them [here](https://github.com/tribesthatmaybe/modpack/issues).
 
 # Modifying the modpack
 
