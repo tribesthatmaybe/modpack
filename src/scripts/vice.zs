@@ -1,3 +1,45 @@
+/*
+Copyright (c) 2020 Jonathan Freedman <jonafree@gmail.com>
+
+The MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Tribes That May Be Vice Framework
+
+This set of zenscript is meant to be used to produce a variety of progressive
+intoxification effects based on consumption of items.
+
+It currently supports
+
+* multiple (potion) effects with varying and increasing durations
+* ability to just "keep going" with increasing durations
+
+Planned future work includes
+
+* handle cross-intoxicant effects - as of now new intoxication will override old
+* remove the ability for milk to sober the player up
+* add ability for other things to sober the player up
+* some op level commands for managing sobriety level
+* some randomness thrown in on a per-player basis
+*/
+
 import crafttweaker.item.IItemStack;
 import crafttweaker.potions.IPotionEffect;
 import crafttweaker.potions.IPotion;
@@ -7,12 +49,20 @@ import mods.hungertweaker.events.FoodEatenEvent;
 import crafttweaker.event.PlayerTickEvent;
 import crafttweaker.event.PlayerRespawnEvent;
 
-// cocktails can have consequences
-val genericConsumables =
-[
-  <brewcraft:totalvodkaitem>,
-  <brewcraft:handmadevodkaitem>
-] as IItemStack[];
+
+/*
+the ttmbViceEffect class represents how the thing will affect the player
+
+var fooEffect = ttmbViceEffect(name, min_level, max_level, potion, duration_multiplier)
+fooEffect.effectMultiplier(effect_multiplier)
+
+name is a simple friendly name used for debugging
+min_level is the first level of intoxication at which the effect will take place
+max_level is the highest level of intoxication at which the effect will take place
+potion is the potion to extract an effect from
+duration_multiplier is applied when determining how long the effect will last
+effect_multiplier is applied to the potion itself. this is optional.
+*/
 
 zenClass ttmbViceEffect {
     var name as string;
@@ -37,11 +87,29 @@ zenClass ttmbViceEffect {
 
 }
 
+/*
+the ttmbVice class manages the intoxication itself. it supports progressive levels
+of intoxication based on continued consumption. intoxication effects will max out
+at whatever the higest level of included effects is unless you invoke the keepGoing() method
+
+var foo = ttmbVice(name, consumables, duration)
+foo.keepGoing()
+
+name is a simple friendly name used for debugging and tracking intoxication via player tag
+consumables is a list of IItemStack of things which will cause the intoxication. these must be food.
+duration is the base level of duration for effects
+
+intoxication is progressive. the duration for each effect is multiplied by the
+current level of intoxication and also the duration modifier for the effect. the intoxication
+level is reset when the player respawns after death.
+*/
+
 zenClass ttmbVice {
     var viceName as string = "";
     var viceConsumables as IItemStack[] = [];
     var viceDuration as int = 0;
     var viceEffects as ttmbViceEffect[] = [];
+    var keep_going as bool = false;
 
     // friendly name for logs
     // list of itemstack consumables
@@ -66,6 +134,10 @@ zenClass ttmbVice {
             this.playerRespawnHandler(event);
         });
         logger.logInfo("lets get rekt with " + viceName + ". loaded " + viceConsumables.length as string + " items, base duration " + viceDuration as string);
+    }
+
+    function keepGoing() {
+        keep_going = true;
     }
 
     function getTag(player as IPlayer) as string[] {
@@ -118,9 +190,15 @@ zenClass ttmbVice {
     function levelEffects(p_level as int) as ttmbViceEffect[] {
         var level = p_level as int;
         var deez_effects = [] as ttmbViceEffect[];
+        var this_max = 0 as int;
+        for effect in viceEffects {
+            if (effect.max_level > this_max ) {
+               this_max = effect.max_level;
+            }
+        }
         for effect in viceEffects {
             logger.logInfo("Checking " + effect.name + " level " + level as string + " (" + effect.min_level as string + ":" + effect.max_level as string + ")");
-            if (level >= effect.min_level && level <= effect.max_level) {
+            if (level >= effect.min_level && (level <= effect.max_level || (keep_going && effect.max_level == this_max))) {
                deez_effects += effect;
             }
         }
@@ -212,18 +290,53 @@ zenClass ttmbVice {
     }
 }
 
+
+
+// cocktails can have consequences
+val hardLiquor =
+[
+    <brewcraft:totalvodkaitem>,
+    <brewcraft:handmadevodkaitem>,
+    <brewcraft:cherryvodkaitem>,
+    <brewcraft:beachrumitem>,
+    <brewcraft:coconutrumitem>,
+    <brewcraft:spicedrumitem>,
+    <brewcraft:uglyavocadoginitem>
+] as IItemStack[];
+// marathon not a sprint
+val refreshingBooze = [
+    <brewcraft:hardapplecideritem>,
+    <brewcraft:honeymeaditem>,
+    <brewcraft:pinkmoscatoitem>,
+    <brewcraft:pmaxrieslingitem>,
+    <brewcraft:rennalgolditem>,
+    <brewcraft:riverchardonnayitem>,
+    <brewcraft:sakeitem>,
+    <brewcraft:savannazinfandelitem>,
+    <brewcraft:swampmerlotitem>,
+    <brewcraft:tiagapinotnoiritem>
+] as IItemStack[];
+
 var effectBuzzedStrength = ttmbViceEffect("buzzed_strength", 1, 2, <potion:minecraft:strength>, 1.0);
 var effectBuzzedLuck = ttmbViceEffect("buzzed_luck", 1, 1, <potion:minecraft:luck>, 0.5);
 var effectDrunkSlow = ttmbViceEffect("drunk_slow", 2, 5, <potion:minecraft:slowness>, 1.0);
-var effectDrunkStumble = ttmbViceEffect("drunk_stumble", 3, 5, <potion:potioncore:perplexity>, 0.5);
-var effectDrunkBlackout = ttmbViceEffect("drunk_blackout", 4, 5, <potion:minecraft:blindness>, 1.0);
+var effectDrunkStumble = ttmbViceEffect("drunk_stumble", 3, 5, <potion:potioncore:perplexity>, 1.0);
+var effectDrunkBlackout = ttmbViceEffect("drunk_blackout", 4, 5, <potion:minecraft:blindness>, 0.5);
 var effectAlcoholPoisoning = ttmbViceEffect("ded_drunk", 5, 5, <potion:minecraft:instant_damage>, 1.0);
 effectAlcoholPoisoning.effectMultiplier(10);
 
-var genericBooze = ttmbVice("booze_tho", genericConsumables, 1200);
-genericBooze.addEffect(effectBuzzedStrength);
-genericBooze.addEffect(effectBuzzedLuck);
-genericBooze.addEffect(effectDrunkSlow);
-genericBooze.addEffect(effectDrunkStumble);
-genericBooze.addEffect(effectDrunkBlackout);
-genericBooze.addEffect(effectAlcoholPoisoning);
+var hardBooze = ttmbVice("hard_booze", hardLiquor, 2400);
+hardBooze.addEffect(effectBuzzedStrength);
+hardBooze.addEffect(effectBuzzedLuck);
+hardBooze.addEffect(effectDrunkSlow);
+hardBooze.addEffect(effectDrunkStumble);
+hardBooze.addEffect(effectDrunkBlackout);
+hardBooze.addEffect(effectAlcoholPoisoning);
+
+var softBooze = ttmbVice("soft_booze", refreshingBooze, 1200);
+softBooze.addEffect(effectBuzzedStrength);
+softBooze.addEffect(effectBuzzedLuck);
+softBooze.addEffect(effectDrunkSlow);
+softBooze.addEffect(effectDrunkStumble);
+softBooze.addEffect(effectDrunkBlackout);
+softBooze.keepGoing();

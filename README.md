@@ -1,3 +1,5 @@
+![make-modpack](https://github.com/tribesthatmaybe/modpack/workflows/make-modpack/badge.svg)
+
 # Tribes That May Be
 
 You find yourself in an endless desert with some books and barely appropriate provisions.
