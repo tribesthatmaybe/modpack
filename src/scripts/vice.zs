@@ -301,7 +301,12 @@ val hardLiquor =
     <brewcraft:beachrumitem>,
     <brewcraft:coconutrumitem>,
     <brewcraft:spicedrumitem>,
-    <brewcraft:uglyavocadoginitem>
+    <brewcraft:uglyavocadoginitem>,
+    <brewcraft:blackholewhiskeyitem>,
+    <brewcraft:borgiaabsintheitem>,
+    <brewcraft:goldschlageritem>,
+    <brewcraft:malortitem>,
+    <brewcraft:pointthreeryeitem>
 ] as IItemStack[];
 // marathon not a sprint
 val refreshingBooze = [
@@ -314,7 +319,13 @@ val refreshingBooze = [
     <brewcraft:sakeitem>,
     <brewcraft:savannazinfandelitem>,
     <brewcraft:swampmerlotitem>,
-    <brewcraft:tiagapinotnoiritem>
+    <brewcraft:tiagapinotnoiritem>,
+    <brewcraft:redbeeritem>,
+    <brewcraft:bluebeeritem>
+] as IItemStack[];
+// have fun with it
+val spicyBooze = [
+    <brewcraft:ghostpepperabsintheitem>
 ] as IItemStack[];
 
 var effectBuzzedStrength = ttmbViceEffect("buzzed_strength", 1, 2, <potion:minecraft:strength>, 1.0);
