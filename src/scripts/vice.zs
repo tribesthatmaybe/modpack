@@ -157,13 +157,13 @@ zenClass ttmbVice {
     function addTag(player as IPlayer, duration as long, start as long, count as int) {
         var tag_tho = "ttmb_rekt_" + viceName + ":" + duration as string + ":" + start as string + ":" + count as string;
         player.addTag(tag_tho);
-        logger.logInfo(player.name + " added tag " + tag_tho);
+        //logger.logInfo(player.name + " added tag " + tag_tho);
     }
 
     function removeTag(player as IPlayer, duration as long, start as long, count as int) {
         var tag_tho = "ttmb_rekt_" + viceName + ":" + duration as string + ":" + start as string + ":" + count as string;
         player.removeTag(tag_tho);
-        logger.logInfo(player.name + " removed tag " + tag_tho);
+        //logger.logInfo(player.name + " removed tag " + tag_tho);
     }
 
     function tagDuration(rekt_tag as string[]) as long {
@@ -197,7 +197,7 @@ zenClass ttmbVice {
             }
         }
         for effect in viceEffects {
-            logger.logInfo("Checking " + effect.name + " level " + level as string + " (" + effect.min_level as string + ":" + effect.max_level as string + ")");
+            //logger.logInfo("Checking " + effect.name + " level " + level as string + " (" + effect.min_level as string + ":" + effect.max_level as string + ")");
             if (level >= effect.min_level && (level <= effect.max_level || (keep_going && effect.max_level == this_max))) {
                deez_effects += effect;
             }
@@ -216,7 +216,6 @@ zenClass ttmbVice {
            return;
         }
         if ( ! ourVice(event.food) ) {
-           logger.logInfo(event.food.name + " is not recognized by " + viceName);
            return;
         }
         var now = event.player.world.getWorldInfo().worldTotalTime as long;
@@ -237,7 +236,7 @@ zenClass ttmbVice {
             event.player.clearActivePotions();
         }
         for effect in my_effects {
-            logger.logInfo("math for " + effect.name + " " + viceDuration as string + ", " + rekt_level as string + "," + effect.duration_multiplier as string);
+            //logger.logInfo("math for " + effect.name + " " + viceDuration as string + ", " + rekt_level as string + "," + effect.duration_multiplier as string);
             // Always try to have the right hand side the larger data type. A ZS quirk
             var this_duration = (effect.duration_multiplier * (viceDuration * rekt_level)) as long;
             var this_effect = effect.potion.makePotionEffect(this_duration, effect.effect_multiplier);
@@ -245,7 +244,7 @@ zenClass ttmbVice {
                 rekt_duration = this_duration;
             }
             event.player.addPotionEffect(this_effect);
-            logger.logInfo(event.player.name + " gained new effect " + effect.name + " for " + this_duration as string + " ticks");
+            //logger.logInfo(event.player.name + " gained new effect " + effect.name + " for " + this_duration as string + " ticks");
         }
         if ( my_effects.length > 0 ) {
             if ( rekt_tag_bits.length > 0 ) {
@@ -269,10 +268,10 @@ zenClass ttmbVice {
         var rekt_duration = tagDuration(rekt_tag_bits);
         var rekt_delta = ( now - rekt_start ) as long;
         if (rekt_delta >= rekt_duration) {
-            logger.logInfo(event.player.name + " no longer rekt on " + viceName + " after " + rekt_duration as string + " ticks");
+            //logger.logInfo(event.player.name + " no longer rekt on " + viceName + " after " + rekt_duration as string + " ticks");
             removeTag(event.player, rekt_duration, rekt_start, tagLevel(rekt_tag_bits));
         } else {
-            logger.logInfo(event.player.name + " rekt on " + viceName + " for another " + (rekt_duration - rekt_delta) as string + " ticks");
+            //logger.logInfo(event.player.name + " rekt on " + viceName + " for another " + (rekt_duration - rekt_delta) as string + " ticks");
         }
     }
 
@@ -351,3 +350,15 @@ softBooze.addEffect(effectDrunkSlow);
 softBooze.addEffect(effectDrunkStumble);
 softBooze.addEffect(effectDrunkBlackout);
 softBooze.keepGoing();
+
+var effectDrowning = ttmbViceEffect("breathtaking", 1, 3, <potion:potioncore:drown>, 0.4);
+var effectFire = ttmbViceEffect("toasty", 1, 3, <potion:potioncore:fire>, 0.25);
+var effectResist = ttmbViceEffect("anti_burn", 1, 1, <potion:minecraft:fire_resistance>, 4.0);
+var effectLessResist = ttmbViceEffect("less_anti_burn", 2, 2, <potion:minecraft:fire_resistance>, 0.40);
+var effectPoof = ttmbViceEffect("boom", 3, 3, <potion:potioncore:explode>, 0.01);
+var ghostBooze = ttmbVice("ghost_pepper", spicyBooze, 700);
+ghostBooze.addEffect(effectFire);
+ghostBooze.addEffect(effectPoof);
+ghostBooze.addEffect(effectResist);
+ghostBooze.addEffect(effectLessResist);
+ghostBooze.addEffect(effectDrowning);
