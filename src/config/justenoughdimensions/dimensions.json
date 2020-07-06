@@ -16,7 +16,10 @@
         "worldprovider": "WorldProviderSurfaceJED"
       },
       "worldinfo_onetime": {
-        "generatorName": "default"
+        "generatorName": "default",
+        "GameRules": {
+          "spawnRadius": "0"
+        }
       },
       "jed": {
         "CanRespawnHere": true,
