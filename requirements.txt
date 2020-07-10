@@ -3,3 +3,7 @@ jinja2-cli
 fire
 pyyaml
 avakas
+mcipc
+ipython
+multicraft-api
+ipdb

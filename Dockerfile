@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 MAINTAINER 'ttmb dev <info@tribesthatmay.be>'
 ARG VERSION=0.0.0

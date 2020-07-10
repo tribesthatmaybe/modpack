@@ -1,0 +1,11 @@
+---
+user: ""          # multicraft username 
+server: ""        # multicraft server id
+host: ""          # multicraft server ip
+ftp_password: ""  # what it says on the tin
+api_key: ""       # multicraft api key
+base_path: ""     # base path to find the repo
+server_path: ""   # base path for server artifact
+api_host: ""      # multicraft api/panel host
+rcon_port: ""     # minecraft rcon port
+rcon_key: ""      # minecraft rcon password
