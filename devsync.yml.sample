@@ -1,5 +1,5 @@
 ---
-user: ""          # multicraft username 
+user: ""          # multicraft username
 server: ""        # multicraft server id
 host: ""          # multicraft server ip
 ftp_password: ""  # what it says on the tin
