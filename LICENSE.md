@@ -4,7 +4,7 @@ Each individual mod included in this modpack has their own license. All included
 
 Various pieces of embedded content within the Tribes That May Be modpack are trademarked [The Burning Man Project](https://burningman.org/network/about-us/press-media/trademarks-images-faq/). This includes, but is not exclusive to, the [ten principles](https://burningman.org/culture/philosophical-center/10-principles/).
 
-All imagery, written text, embeded audio files, are licensed as CC-NC-SA.
+All custom included imagery, written text, embeded audio files, are licensed as CC-NC-SA.
 
 Other pieces of visual and audio content may be embedded within Tribes That May Be experiences due to the ability to link external resources from within the playable environment. The Tribes That May Be crew does not have control over all these pieces of content.
 
