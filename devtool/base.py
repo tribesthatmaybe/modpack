@@ -79,7 +79,6 @@ class BaseWidget(object):
         for remote_file in remote_files:
             if clean and \
                (remote_file not in local_files):
-                import ipdb ; ipdb.set_trace()
                 LOG.warning("removing unrecognized remote file %s" % remote_file)
                 self.ftp_rm(remote_file)
 
