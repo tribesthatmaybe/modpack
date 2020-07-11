@@ -3,7 +3,7 @@
 | Mod | License | Source |
 | --- | ------- | ------ |
 | [Just Enough Items](https://www.curseforge.com/minecraft/mc-mods/jei) | MIT | [github](https://github.com/mezz/JustEnoughItems) |
-| [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap) | All Rights Reserved | |
+| [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap) | [All Rights Reserved](https://journeymap.info/Modpack_FAQ) | |
 | [tinkers construct](https://github.com/SlimeKnights/TinkersConstruct) | MIT | [github](https://github.com/SlimeKnights/TinkersConstruct) |
 | [mantle](https://www.curseforge.com/minecraft/mc-mods/mantle) | MIT | [github](https://github.com/SlimeKnights/Mantle) |
 | [orelib](https://www.curseforge.com/minecraft/mc-mods/orelib) | MIT | [github](https://github.com/OreCruncher/OreLib) |
@@ -56,7 +56,7 @@
 | [ftb-backups](https://www.curseforge.com/minecraft/mc-mods/ftb-backups) | LGPL | [github](https://github.com/FTBTeam/FTB-Utilities-Backups) |
 | [ftb-library](https://www.curseforge.com/minecraft/mc-mods/ftb-library) | LGPL | [github](https://github.com/FTBTeam/FTB-Library) |
 | [ftb-utilities](https://www.curseforge.com/minecraft/mc-mods/ftb-utilities) | LGPL | [github](https://github.com/FTBTeam/FTB-Utilities) |
-| [journeymap-tools](https://www.curseforge.com/minecraft/mc-mods/journeymap-tools) | All Rights | |
+| [journeymap-tools](https://www.curseforge.com/minecraft/mc-mods/journeymap-tools) | [All Rights Reserved](https://journeymap.info/Modpack_FAQ) | |
 | [comforts](https://www.curseforge.com/minecraft/mc-mods/comforts) | GPL | [github](https://github.com/TheIllusiveC4/Comforts) |
 | [bookshelf](https://www.curseforge.com/minecraft/mc-mods/bookshelf) | LGPL | [github](https://github.com/Darkhax-Minecraft/Bookshelf) |
 | [enchantment-descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) | LGPL | [github](https://github.com/Darkhax-Minecraft/Enchantment-Descriptions) |
