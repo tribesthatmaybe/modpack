@@ -66,3 +66,10 @@ loregen: container_build
 		-v "$(shell pwd):/mnt" \
 		$(DOCKER_IMAGE):$(VERSION) \
 		loregen
+
+devsync:
+	docker run \
+		--rm \
+		-v "$(shell pwd):/mnt" \
+		$(DOCKER_IMAGE):$(VERSION) \
+		devsync

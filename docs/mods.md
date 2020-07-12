@@ -146,6 +146,7 @@
 | [animal bikes](https://www.curseforge.com/minecraft/mc-mods/animal-bikes) | All Rights | |
 | [clumps](https://www.curseforge.com/minecraft/mc-mods/clumps) | MIT | [github](https://github.com/jaredlll08/Clumps) |
 | [ai improvements](https://www.curseforge.com/minecraft/mc-mods/ai-improvements) | MIT | [github](https://github.com/BuiltBrokenModding/AI-Improvements) |
+| [fantasticlib](https://www.curseforge.com/minecraft/mc-mods/fantastic-lib) | MIT | [github](https://github.com/Laike-Endaril/Fantastic-Lib) |
 | [controlled burn](https://www.curseforge.com/minecraft/mc-mods/controlled-burn) | MIT | [github](https://github.com/Laike-Endaril/Controlled-Burn) |
 | [bountifulbaubles](https://www.curseforge.com/minecraft/mc-mods/bountifulbaubles) | Custom but chill | [github](https://github.com/CursedFlames/BountifulBaubles) |
 | [gotta go fast](https://www.curseforge.com/minecraft/mc-mods/gotta-go-fast) | MIT | [github](https://github.com/thiakil/GottaGoFast) |
@@ -172,3 +173,5 @@
 | [corpse complex](https://www.curseforge.com/minecraft/mc-mods/corpse-complex) | LGPL | [github](https://github.com/TheIllusiveC4/CorpseRun) |
 | [tomb many graves](https://www.curseforge.com/minecraft/mc-mods/tomb-many-graves-2) | GPL | [github](https://github.com/M4thG33k/TombManyGraves2) |
 | [instantunify](https://www.curseforge.com/minecraft/mc-mods/instantunify) | MIT | [github](https://github.com/MrRiegel/Yunifier) |
+| [world primer](https://www.curseforge.com/minecraft/mc-mods/world-primer) | LGPL | [github](https://github.com/maruohon/worldprimer) |
+| [cosmetic armor reworked](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-reworked/) | MIT | [github](https://github.com/zlainsama/CosmeticArmorReworked) |

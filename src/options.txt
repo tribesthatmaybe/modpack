@@ -9,12 +9,12 @@ guiScale:2
 particles:0
 bobView:true
 anaglyph3d:false
-maxFps:60 
+maxFps:120
 fboEnable:true
-difficulty:1
+difficulty:2
 fancyGraphics:true
 ao:2
-renderClouds:true
+renderClouds:false
 resourcePacks:[]
 incompatibleResourcePacks:[]
 lastServer:ttmbdev.spmc.co
@@ -51,7 +51,7 @@ realmsNotifications:true
 enableWeakAttacks:false
 autoJump:false
 narrator:0
-tutorialStep:movement
+tutorialStep:none
 key_key.attack:-100
 key_key.use:-99
 key_key.forward:17
@@ -64,15 +64,15 @@ key_key.sprint:29
 key_key.drop:16
 key_key.inventory:18
 key_key.chat:20
-key_key.playerlist:15
-key_key.pickItem:-98
+key_key.playerlist:0
+key_key.pickItem:0
 key_key.command:53
 key_key.screenshot:60
 key_key.togglePerspective:63
 key_key.smoothCamera:0
 key_key.fullscreen:87
 key_key.spectatorOutlines:0
-key_key.swapHands:33
+key_key.swapHands:0
 key_key.saveToolbarActivator:0
 key_key.loadToolbarActivator:0
 key_key.advancements:0
@@ -85,14 +85,13 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
+key_keybind.baublesinventory:0
+key_key.staff_mode.desc:0
+key_key.use_cage.desc:0
+key_key.configurator_mode.desc:0
+key_key.configurator_filter.desc:0
+key_key.configurator_path.desc:0
 key_quark.keybind.toggleAutojump:0
-key_quark.keybind.dropoff:0
-key_quark.keybind.changeHotbar:44
-key_quark.keybind.chestSort:0
-key_quark.keybind.chestDropoff:0
-key_quark.keybind.chestMerge:0
-key_quark.keybind.chestRestock:0
-key_quark.keybind.chestExtract:0
 key_quark.keybind.lockBuilding:0
 key_quark.emote.no:0
 key_quark.emote.yes:0
@@ -112,16 +111,29 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
-key_keybind.baublesinventory:0
+key_quark.keybind.dropoff:0
+key_quark.keybind.changeHotbar:44
+key_quark.keybind.chestSort:0
+key_quark.keybind.chestDropoff:0
+key_quark.keybind.chestMerge:0
+key_quark.keybind.chestRestock:0
+key_quark.keybind.chestExtract:0
+key_key.toggle_shaders:0
 key_key.betterquesting.quests:41
 key_key.conarm.toggle_helm.desc:0
 key_key.conarm.toggle_chest.desc:0
 key_key.conarm.toggle_leg.desc:0
+key_cos.key.opencosarmorinventory:0
+key_Scene1 start/pause:0
+key_Scene2 start/pause:0
+key_Scene3 start/pause:0
+key_Scene reset:0
+key_Quest Log:0
 key_key.exchanger_range_switch:51
 key_key.exchanger_mode_switch:39
 key_key.exchanger_force_drop_items:52
 key_key.exchanger_directional_placement:40
-key_key.xu2.searchforitems:20
+key_key.xu2.searchforitems:0
 key_key.ftbutilities.nbt:0
 key_key.ftbutilities.trash:211
 key_key.fart.desc:0
@@ -130,14 +142,18 @@ key_key.reload:19:ALT
 key_key.unload:22:ALT
 key_key.hooked.fire:46
 key_key.loreexpansion.openJournal:38
-key_CharacterScreen:88
-key_MPM 1:44
+key_CharacterScreen:0
+key_MPM 1:0
 key_MPM 2:0
 key_MPM 3:0
 key_MPM 4:0
 key_MPM 5:0
-key_MPM Camera:56
+key_MPM Camera:0
+key_openblocks.keybind.vario_switch:0
+key_openblocks.keybind.vario_vol_up:0
+key_openblocks.keybind.vario_vol_down:0
 key_Reload Default Sound Device:66
+key_key.toastcontrol.clear:0
 key_key.vehicle.horn:35
 key_key.vehicle.cycle_seats:0
 key_vc.key.moveForward:17
@@ -149,6 +165,12 @@ key_vc.key.moveDown:45
 key_vc.key.openInventory:37
 key_vc.key.dropbomb:0
 key_walljump.key.walljump:42
+key_key.open_wct.desc:0
+key_key.cycle_magnet_mode.desc:0
+key_key.dismount:42
+key_key.narrator:0
+key_key.toggleLiquids:0
+key_key.toggleVisible:0
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0
@@ -160,9 +182,9 @@ key_key.jei.previousPage:201
 key_key.jei.nextPage:209
 key_key.jei.bookmark:30
 key_key.jei.toggleBookmarkOverlay:0
-key_tombstone.message.knowledge_of_death:0
-key_key.toggleLiquids:0
-key_key.toggleVisible:0
+key_key.toggle_focus.desc:15
+key_bbw.key.mode:50
+key_bbw.key.fluidmode:0
 key_nei.options.keys.gui.botania_corporea_request:0
 key_mod.chiselsandbits.chiselmode.single:0
 key_mod.chiselsandbits.chiselmode.snap2:0
@@ -192,6 +214,7 @@ key_mod.chiselsandbits.other.offgrid:0
 key_mod.chiselsandbits.other.undo:0
 key_mod.chiselsandbits.other.redo:0
 key_mod.chiselsandbits.other.add_to_clipboard:0
+key_Options Gui:0
 key_key.keyExtraInvo:0
 key_key.keyWheel:0
 key_key.keyExtraCraftin:0
@@ -199,8 +222,10 @@ key_mekanism.key.mode:50
 key_mekanism.key.armorMode:50:ALT
 key_mekanism.key.feetMode:50:SHIFT
 key_mekanism.key.voice:22
-key_key.immersiveengineering.magnetEquip:31
+key_key.immersiveengineering.magnetEquip:0
 key_key.immersiveengineering.chemthrowerSwitch:0
+key_key.integrateddynamics.logic_programmer_focus_search:0
+key_key.integrateddynamics.logic_programmer_open_rename:0
 key_invtweaks.key.sort:0
 key_key.clipboardPaste:0
 key_key.simplybackpacks.backpackpickup.desc:0
@@ -209,6 +234,7 @@ key_key.toolbelt.open:19
 key_key.toolbelt.cycle.left:0
 key_key.toolbelt.cycle.right:0
 key_key.toolbelt.slot:47
+key_key.control:0
 key_key.journeymap.zoom_in:13
 key_key.journeymap.zoom_out:12
 key_key.journeymap.minimap_type:26
@@ -226,7 +252,7 @@ key_key.journeymap.fullscreen.south:208
 key_key.journeymap.fullscreen.east:205
 key_key.journeymap.fullscreen.west:203
 key_Profile GUI:67
-key_Open Skill GUI:21
+key_Open Skill GUI:0
 soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:1.0

@@ -143,7 +143,24 @@ for widget in MystiWidgets {
 var NarrativeTho = [
     <betterquesting:extra_life>,
     <betterquesting:extra_life:1>,
-    <betterquesting:extra_life:2>
+    <betterquesting:extra_life:2>,
+    <animalbikes:pigbike>,
+    <animalbikes:wolfbike>,
+    <animalbikes:cowbike>,
+    <animalbikes:sheepbike>,
+    <animalbikes:chickenbike>,
+    <animalbikes:squidbike>,
+    <animalbikes:enderbike>,
+    <animalbikes:dragonbike>,
+    <animalbikes:notchbike>,
+    <animalbikes:ghastbike>,
+    <animalbikes:bunnybike>,
+    <animalbikes:snowgolembike>,
+    <animalbikes:silverfishbike>,
+    <animalbikes:batbike>,
+    <animalbikes:ocelotbike>,
+    <animalbikes:slimebike>,
+    <animalbikes:witherbike>
 ] as IItemStack[];
 for widget in NarrativeTho {
   mods.jei.JEI.removeAndHide(widget);

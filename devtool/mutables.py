@@ -11,14 +11,14 @@ class QuestWidget(BaseWidget):
 
     def quest(self, action, save=None):
         quest_name = save
-        quest_path = 'betterquesting/'
+        quest_path = 'config/betterquesting/'
         if not save:
             quest_path += 'DefaultQuests.json'
             quest_name = 'default'
         else:
             quest_path += "saved_quests/%s.json" % quest_name
 
-        quest_source = "config/%s" % quest_path
+        quest_source = quest_path
         if action == 'download':
             if not self.ftp_exists(quest_source):
                 LOG.error("Quest '%s' not found on server" % quest_name)

@@ -28,7 +28,6 @@ mods:
   - "laggoggles":
   - "tickcentral":
   - "akashic-tome":
-  - "tellme":
   - "better-questing":
   - "lore-expansion":
   - "reskillable":
@@ -47,12 +46,12 @@ mods:
   - "patchouli":
   - "mystical-world":
   - "better-animal-models":
+      clientonly: true
   - "placebo":
   - "plants":
   - "paintings":
   - "chunk-animator":
   - "traffic-control":
-  - "perfect-spawn":
   - "tough-as-nails":
   - "sound-filters":
       clientonly: true
@@ -168,7 +167,9 @@ mods:
   - "animal-bikes":
   - "clumps":
   - "ai-improvements":
+  - "fantastic-lib":
   - "controlled-burn":
+  - "cosmetic-armor-reworked":
   - "gotta-go-fast":
   - "bountifulbaubles":
   - "mo-villages":
@@ -192,9 +193,13 @@ mods:
   - "project-red-lighting":
   - "project-red-compat":
   - "corpse-complex":
-  - "tomb-many-graves-2":
+  - "world-primer":
+  - "gravestone-mod-graves":
 # it can be handly to disably instantunify when testing ore related things
   - "instantunify":
+{% if dev_mode_tho|default(True) %}
+  - "tellme":
+{% endif %}
 # https://github.com/MrCrayfish/Controllable/issues/93
 #  - "controllable":
 #      clientonly: true

@@ -19,8 +19,10 @@
       "worldinfo_onetime": {
         "generatorName": "default",
         "GameRules": {
-          "spawnRadius": "0"
-        }
+          "spawnRadius": "1"
+        },
+        "SpawnX": 0,
+        "SpawnZ": 0
       },
       "jed": {
         "CanRespawnHere": true,

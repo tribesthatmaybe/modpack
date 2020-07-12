@@ -59,6 +59,11 @@ elif [ "$ACTION" == "shell" ] ; then
     echo "time to mod"
     bash
     echo "dom ot emit"
+elif [ "$ACTION" == "devsync" ] ; then
+    /mnt/devtool/devtool.py control stop
+    sleep 10
+    /mnt/devtool/devtool.py sync
+    /mnt/devtool/devtool.py control start
 else
     problems "what u doin"
 fi
