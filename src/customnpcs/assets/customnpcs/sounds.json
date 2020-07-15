@@ -1,10 +1,10 @@
 {
   "radio.start_tx": {
     "category": "player",
-    "sounds": [{"name": "radio/start_tx", "stream": false}]
+    "sounds": [{"name": "customnpcs:radio/start_tx", "stream": false}]
   },
   "radio.end_tx": {
     "category": "player",
-    "sounds": [{"name":"radio/end_tx", "stream":false}]
+    "sounds": [{"name":"customnpcs:radio/end_tx", "stream": false}]
   }
 }
