@@ -40,6 +40,9 @@ class BaseWidget(object):
     def ftp_mkdir(self, path):
         self.ftp_plz().mkd(path)
 
+    def ftp_rmdir(self, path):
+        self.ftp_plz().rmd(path)
+
     def ftp_rm(self, path):
         if not self.ftp_exists(path):
             return
@@ -62,6 +65,22 @@ class BaseWidget(object):
                 files_tho += self.ftp_walk(filepath)
 
         return files_tho
+
+    def ftp_walk_dir(self, path='/'):
+        dirs_tho = []
+        for dir_deets in self.ftp_plz().mlsd(path):
+            dirname = dir_deets[0]
+            dirtype = dir_deets[1]['type']
+            if path != '/':
+                dirpath = "%s/%s" % (path, dirname)
+            else:
+                dirpath = dirname
+
+            if dirtype == 'dir':
+                dirs_tho += self.ftp_walk_dir(dirpath)
+                dirs_tho.append(dirpath)
+
+        return dirs_tho
 
     def walk_path(self, path):
         files_tho = []

@@ -42,5 +42,8 @@ class DevWidget(object):
     def sync(self):
         sync.SyncWidget().sync()
 
+    def nuke(self):
+        sync.SyncWidget().nuke()
+
 if __name__ == '__main__':
     fire.Fire(DevWidget)

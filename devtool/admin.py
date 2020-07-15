@@ -47,6 +47,14 @@ class AdminWidget(object):
         elif action == 'restart':
             self.mcapi("restartServer", self.config.server)
             LOG.info("restarting server")
+        elif action == 'status':
+            status_response = self.mcapi("getServerStatus", self.config.server)
+            LOG.info("server is %s" % status_response['data']['status'])
+        elif action == 'online':
+            status_response = self.mcapi("getServerStatus", self.config.server)
+            LOG.info("players online  %s of %s" % (
+                status_response['data']['onlinePlayers'],
+                status_response['data']['maxPlayers']))
         else:
             LOG.error("unknown action")
             sys.exit(1)

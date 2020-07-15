@@ -45,6 +45,7 @@
 | [coroutil](https://www.curseforge.com/minecraft/mc-mods/coroutil) | All rights | [github](https://github.com/Corosauce/CoroUtil) |
 | [weather, storms, tornadoes](https://www.curseforge.com/minecraft/mc-mods/weather-storms-tornadoes)) | All Rights but chill | [github](https://github.com/Corosauce/weather2) |
 | [betterfps](https://www.curseforge.com/minecraft/mc-mods/betterfps) | LGPL | [github](https://github.com/Guichaguri/BetterFps) |
+| [phosphor](https://www.curseforge.com/minecraft/mc-mods/phosphor-forge) | LGPL | [github](https://github.com/jellysquid3/phosphor-forge) |
 | [foamfix](https://www.curseforge.com/minecraft/mc-mods/foamfix-optimization-mod) | GPL | [github](https://github.com/asiekierka/FoamFix) |
 | [no-recipe-book](https://www.curseforge.com/minecraft/mc-mods/no-recipe-book) | All rights | |
 | [just enough dimensions](https://www.curseforge.com/minecraft/mc-mods/just-enough-dimensions) | LGPL | [github](https://github.com/maruohon/justenoughdimensions) |

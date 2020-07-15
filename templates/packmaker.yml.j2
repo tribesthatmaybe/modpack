@@ -58,6 +58,7 @@ mods:
   - "coroutil":
   - "weather-storms-tornadoes":
   - "betterfps":
+  - "phosphor-forge":
   - "foamfix-optimization-mod":
   - "no-recipe-book":
       clientonly: true
@@ -128,8 +129,6 @@ mods:
   - "quickteleports":
   - "quark":
   - "custom-main-menu":
-  - "discordintegration":
-      serveronly: true
   - "extra-utilities":
   - "resource-loader":
   - "better-loading-screen":
@@ -197,12 +196,12 @@ mods:
   - "instantunify":
 {% if dev_mode_tho|default(True) %}
   - "tellme":
+  - "discordintegration":
+      serveronly: true
 {% endif %}
 # https://github.com/MrCrayfish/Controllable/issues/93
 #  - "controllable":
 #      clientonly: true
-# localized chat has a bug with customnpc
-# https://github.com/tribesthatmaybe/modpack/issues/12
-#  - "localized-chat":
+  - "localized-chat":
 files:
   - location: "src/"
