@@ -42,6 +42,10 @@ class Config(object):
         self.rcon_key = config_obj['rcon_key']
 
         self.server_path = config_obj['server_path']
+        self.artifact_path = config_obj['artifact_path']
+
+        self.curse_token = config_obj['curse_token']
+        self.curse_project = config_obj['curse_project']
 
     def base_path(self, suffix=None, base=None):
         real_base = self._base_path

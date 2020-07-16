@@ -7,6 +7,7 @@ import mutables
 import user
 import admin
 import sync
+import curse
 from config import Config
 
 LOG = logging.getLogger(__name__)
@@ -44,6 +45,9 @@ class DevWidget(object):
 
     def nuke(self):
         sync.SyncWidget().nuke()
+
+    def upload(self, version):
+        curse.CurseAPI().upload(version)
 
 if __name__ == '__main__':
     fire.Fire(DevWidget)
