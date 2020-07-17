@@ -35,7 +35,7 @@ class DevTool(object):
 
     def quest(self, action, save=None):
         """quest manipulation
-        
+
         This command is used to copy quests to/from the dev server.
 
         Args:

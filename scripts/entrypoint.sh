@@ -114,6 +114,13 @@ elif [ "$ACTION" == "devsync" ] ; then
     echo "Updating server!"
     /mnt/devtool/devtool.py sync "$VERSION"
     /mnt/devtool/devtool.py control start
+elif [ "$ACTION" == "upload" ] ; then
+    echo "Uploading??????"
+    VERSION="$1"
+    if [ -z "$VERSION" ] ; then
+        problems "must specify version"
+    fi
+    /mnt/devtool/devtool.py upload "$VERSION"
 else
     problems "what u doin"
 fi

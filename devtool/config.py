@@ -58,7 +58,7 @@ class Config(object):
 
         self.rcon_port = int(config_obj['rcon_port'])
         self.rcon_key = config_obj['rcon_key']
-        
+
         # multimc config (used by admin)
         if 'api_host' not in config_obj:
             raise Exception('multicraft base not defined')
