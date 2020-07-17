@@ -29,7 +29,7 @@ client: container_build loregen
 		$(DOCKER_IMAGE):$(VERSION) \
 		build
 	mkdir -p artifacts
-	cp build/release/ttmb-$(VERSION).zip $(ARTIFACTS)/ttmb-$(VERSION).zip
+	cp build/release/ttmb-$(VERSION).zip $(ARTIFACTS)/ttmb-client-$(VERSION).zip
 
 server: container_build loregen
 	rm -f build/server/mods/* $(ARTIFACTS)/ttmb-server-$(VERSION).zip
@@ -52,7 +52,7 @@ distclean: clean
 
 github_client: client
 	mkdir -p artifacts/github/client
-	cd $(ARTIFACTS)/github/client && unzip $(ARTIFACTS)/ttmb-$(VERSION).zip
+	cd $(ARTIFACTS)/github/client && unzip $(ARTIFACTS)/ttmb-client-$(VERSION).zip
 
 github_server: server
 	mkdir -p artifacts/github/server
@@ -67,9 +67,16 @@ loregen: container_build
 		$(DOCKER_IMAGE):$(VERSION) \
 		loregen
 
-devsync:
+devsync: container_build
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
 		$(DOCKER_IMAGE):$(VERSION) \
-		devsync
+		devsync $(VERSION)
+
+upload: container_build
+	docker run \
+		--rm \
+		-v "$(shell pwd):/mnt" \
+		$(DOCKER_IMAGE):$(VERSION) \
+		upload $(VERSION)

@@ -60,9 +60,59 @@ elif [ "$ACTION" == "shell" ] ; then
     bash
     echo "dom ot emit"
 elif [ "$ACTION" == "devsync" ] ; then
-    /mnt/devtool/devtool.py control stop
-    sleep 10
-    /mnt/devtool/devtool.py sync
+    VERSION="$1"
+    if [ -z "$VERSION" ] ; then
+        problems "must specify version"
+    fi
+    START="$(date +%s)"
+    OFFLINE_THO=""
+    if ! /mnt/devtool/devtool.py control status &> /dev/null ; then
+        OFFLINE_THO=1
+    else
+        /mnt/devtool/devtool.py chat "log off now; updating to ${VERSION}"
+    fi
+    READY="$OFFLINE_THO"
+    while [ -z "$READY" ] ; do
+        if ! /mnt/devtool/devtool.py user list | grep -q online ; then
+            echo "No users online."
+            READY=1
+        else
+            NOW="$(date +%s)"
+            if [ $((NOW - START)) -gt 60 ] ; then
+                while read -r userlist ; do
+                    if ! grep 'online' <<< "$userlist" ; then
+                        continue
+                    fi
+                    USER="$(cut -f 2 -d ' ' <<< "$userlist")"
+                    /mnt/devtool/devtool.py user kick "$USER" "you had your chance"
+                done < <(/mnt/devtool/devtool.py user list)
+                READY=1
+            else
+                echo "Waiting for users to log off...."
+                sleep 5
+            fi
+        fi
+    done
+    if [ -z "$OFFLINE_THO" ] ; then
+        /mnt/devtool/devtool.py control stop
+    fi
+    START="$(date +%s)"
+    READY="$OFFLINE_THO"
+    while [ -z "$READY" ] ; do
+        if ! /mnt/devtool/devtool.py control status &> /dev/null ; then
+            READY=1
+        else
+            NOW="$(date +%s)"
+            if [ $((NOW - START)) -gt 30 ] ; then
+                problems "Gave up waiting for server to stop!"
+            else
+                echo "Waiting for server to stop....."
+                sleep 5
+            fi
+        fi
+    done
+    echo "Updating server!"
+    /mnt/devtool/devtool.py sync "$VERSION"
     /mnt/devtool/devtool.py control start
 else
     problems "what u doin"

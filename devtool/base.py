@@ -90,9 +90,9 @@ class BaseWidget(object):
 
         return files_tho
 
-    def ftp_sync(self, path, clean=False, overwrite=False, base_path=None):
-        source_files = self.walk_path(self.config.base_path(path, base=base_path))
-        local_files = [os.path.relpath(x, self.config.base_path(base=base_path)) for x in source_files]
+    def ftp_sync(self, path, base_path, clean=False, overwrite=False):
+        source_files = self.walk_path("%s/%s" % (base_path, path))
+        local_files = [os.path.relpath(x, base_path) for x in source_files]
         remote_files = self.ftp_walk(path)
 
         for remote_file in remote_files:
@@ -103,14 +103,19 @@ class BaseWidget(object):
 
         legit_remote_dirs = []
         for source_file in source_files:
-            remote_file = os.path.relpath(source_file, self.config.base_path(base=base_path))
+            remote_file = os.path.relpath(source_file, base_path)
             remote_dir = os.path.dirname(remote_file)
             if not remote_dir in legit_remote_dirs:
-                if not self.ftp_exists(remote_dir):
-                    self.ftp_mkdir(remote_dir)
-                    LOG.info("creating missing remote dir %s" % remote_dir)
+                if remote_dir == '':
+                    continue
+                remote_dir_build = ''
+                for remote_dir_bit in remote_dir.split('/'):
+                    remote_dir_build += "/%s" % remote_dir_bit
+                    if not self.ftp_exists(remote_dir_build):
+                        self.ftp_mkdir(remote_dir_build)
+                        LOG.info("creating missing remote dir %s" % remote_dir_build)
 
-                legit_remote_dirs.append(remote_dir)
+                    legit_remote_dirs.append(remote_dir_build)
 
             if overwrite or \
                not self.ftp_exists(remote_file):

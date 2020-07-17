@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO)
 class CurseAPI(object):
     def __init__(self):
         self.config = Config()
-    
+
     def headers(self):
         return {
             'X-Api-Token': self.config.curse_token
@@ -46,7 +46,7 @@ class CurseAPI(object):
                              headers=headers)
 
         if resp.status_code != 200:
-            raise Exception("Unable to upload %s" % filename)
+            raise Exception("Unable to upload %s - %s" % (filename, resp.status_code))
 
         return resp.json()['id']
 
@@ -60,24 +60,32 @@ class CurseAPI(object):
 
         return self.upload_blob("%s/ttmb-client-%s.zip" % (self.config.artifact_path, version), meta)
 
-    def upload_server(self, parent_id, version):
+    def upload_server(self, parent_id, changelog, release, version):
         meta = {
-            'parentFileId': parent_id
+            'parentFileId': parent_id,
+            'changelogType': 'markdown',
+            'changelog': changelog,
+            'releaseType': release
         }
         return self.upload_blob("%s/ttmb-server-%s.zip" % (self.config.artifact_path, version), meta)
-        
-        
-    def upload(self, version, p_changelog=None, p_release=None):
-        changelog = 'dev build for testing only'
-        release = 'alpha'
 
-        if p_changelog:
-            changelog = p_changelog
-        if p_release:
-            if p_release != 'alpha' and p_release != 'beta' and p_release != 'release':
-                raise Exception("invalid release type %s" % p_release)
-            release = p_release
 
-        client_file_id = self.upload_client(changelog, release, version)
-        server_file_id = self.upload_server(client_file_id, version)
+    def upload(self, version, changelog=None, release=None, client_id=None):
+        p_changelog = 'dev build for testing only'
+        p_release = 'alpha'
+
+        if changelog:
+            p_changelog = changelog
+        if release:
+            if release != 'alpha' and release != 'beta' and release != 'release':
+                raise Exception("invalid release type %s" % release)
+            p_release = release
+
+        client_file_id = None
+        if not client_id:
+            client_file_id = self.upload_client(p_changelog, p_release, version)
+        else:
+            client_file_id = client_id
+
+        server_file_id = self.upload_server(client_file_id, p_changelog, p_release, version)
         LOG.info("Uploaded client (%s) and server (%s) to curseforge" % (client_file_id, server_file_id))
