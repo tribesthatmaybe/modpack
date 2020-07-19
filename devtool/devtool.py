@@ -97,7 +97,7 @@ class DevTool(object):
         """
         admin.AdminWidget().control(action)
 
-    def sync(self, version, clean=False, local=False):
+    def sync(self, version, clean=False, local=False, only=None):
         """sync with server
 
         Args:
@@ -105,7 +105,7 @@ class DevTool(object):
             clean (bool): Whether or not to remove unrecognized mutable files
             local (bool): Whether or not to deploy mutables from source instead of artifact
         """
-        sync.SyncWidget().sync(version, clean, local)
+        sync.SyncWidget().sync(version, clean, local, only)
 
     def nuke(self):
         """nuke it from orbit

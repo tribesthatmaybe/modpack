@@ -160,7 +160,8 @@ var NarrativeTho = [
     <animalbikes:batbike>,
     <animalbikes:ocelotbike>,
     <animalbikes:slimebike>,
-    <animalbikes:witherbike>
+    <animalbikes:witherbike>,
+    <cyclicmagic:mattock>
 ] as IItemStack[];
 for widget in NarrativeTho {
   mods.jei.JEI.removeAndHide(widget);

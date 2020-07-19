@@ -11,14 +11,16 @@ class SyncWidget(BaseWidget):
     def __init__(self):
         super(SyncWidget, self).__init__()
 
-    def sync_server(self, mutables_base, immutables_base, clean):
-        self.ftp_sync("config", mutables_base, clean, overwrite=True)
-        self.ftp_sync("structures", mutables_base, clean, overwrite=True)
-        self.ftp_sync("scripts", mutables_base, clean=True, overwrite=True)
-        self.ftp_sync("mods", immutables_base, clean=True)
-        self.ftp_sync("libraries", immutables_base, clean=True)
+    def sync_server(self, mutables_base, immutables_base, clean, only):
+        if not only or only == 'config':
+            self.ftp_sync("config", mutables_base, clean, overwrite=True)
+        if not only:
+            self.ftp_sync("structures", mutables_base, clean, overwrite=True)
+            self.ftp_sync("scripts", mutables_base, clean=True, overwrite=True)
+            self.ftp_sync("mods", immutables_base, clean=True)
+            self.ftp_sync("libraries", immutables_base, clean=True)
 
-    def sync(self, version, clean, local):
+    def sync(self, version, clean, local, only):
         artifact = "%s/ttmb-server-%s.zip" % (self.config.artifact_path, version)
         with TemporaryDirectory() as stagedir:
             with ZipFile(artifact, 'r') as artifact_zip:
@@ -26,11 +28,11 @@ class SyncWidget(BaseWidget):
                 if not local:
                     self.sync_server(stagedir,
                                      stagedir,
-                                     clean)
+                                     clean, only)
                 else:
                     self.sync_server(self.config.repo_path(),
                                      stagedir,
-                                     clean)
+                                     clean, only)
 
     def nuke(self):
         for remote_file in self.ftp_walk("world"):
