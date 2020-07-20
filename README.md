@@ -1,4 +1,4 @@
-![make-modpack](https://github.com/tribesthatmaybe/modpack/workflows/make-modpack/badge.svg) ![downloads](https://cf.way2muchnoise.eu/395107.svg) ![versions](https://cf.way2muchnoise.eu/versions/395107.svg)
+![make-modpack](https://github.com/tribesthatmaybe/modpack/workflows/make-modpack/badge.svg) ![downloads](http://cf.way2muchnoise.eu/395107.svg) ![versions](http://cf.way2muchnoise.eu/versions/395107.svg)
 
 # Tribes That May Be
 
