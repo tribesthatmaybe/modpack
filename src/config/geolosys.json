@@ -2,31 +2,31 @@
   "ores": [
     {
       "blocks": [
-        "immersiveengineering:ore:0",
-        70,
+        "geolosys:ore_sample:2",
+        90,
         "mysticalagriculture:inferium_ore:0",
-        30
+        10
       ],
       "samples": [
         "geolosys:ore_sample:2",
         100
       ],
       "yMin": 8,
-      "yMax": 100,
-      "chance": 9,
+      "yMax": 50,
+      "chance": 8,
       "size": 96,
       "dimBlacklist": [
         -1,
         1
       ],
-      "density": 0.8
+      "density": 1.0
     },
     {
       "blocks": [
         "geolosys:ore_vanilla:0",
-        80,
+        95,
         "mysticalagriculture:inferium_ore:0",
-        20
+        5
       ],
       "samples": [
         "geolosys:ore_sample_vanilla:0",
@@ -34,13 +34,13 @@
       ],
       "yMin": 8,
       "yMax": 120,
-      "chance": 8,
+      "chance": 15,
       "size": 128,
       "dimBlacklist": [
         -1,
         1
       ],
-      "density": 0.6
+      "density": 1.0
     },
     {
       "blocks": [
@@ -52,7 +52,7 @@
         100
       ],
       "yMin": 5,
-      "yMax": 12,
+      "yMax": 32,
       "chance": 7,
       "size": 40,
       "dimBlacklist": [
@@ -64,9 +64,9 @@
     {
       "blocks": [
         "geolosys:ore_vanilla:2",
-        70,
+        90,
         "mysticalagriculture:prosperity_ore:0",
-        30
+        10
       ],
       "samples": [
         "geolosys:ore_sample_vanilla:2",
@@ -80,7 +80,7 @@
         -1,
         1
       ],
-      "density": 0.8
+      "density": 1.0
     },
     {
       "blocks": [
@@ -93,26 +93,20 @@
       ],
       "yMin": 10,
       "yMax": 24,
-      "chance": 5,
+      "chance": 7,
       "size": 32,
       "dimBlacklist": [
         -1,
         1
       ],
-      "density": 1.0,
-      "biomes": [
-        "minecraft:desert",
-        "minecraft:mutated_desert",
-        "minecraft:desert_hills"
-      ],
-      "isWhitelist": true
+      "density": 1.0
     },
     {
       "blocks": [
         "geolosys:ore_vanilla:4",
-        70,
+        90,
         "mysticalagriculture:prosperity_ore:0",
-        30
+        10
       ],
       "samples": [
         "geolosys:ore_sample_vanilla:4",
@@ -120,13 +114,13 @@
       ],
       "yMin": 6,
       "yMax": 45,
-      "chance": 7,
+      "chance": 8,
       "size": 96,
       "dimBlacklist": [
         -1,
         1
       ],
-      "density": 0.7
+      "density": 1.0
     },
     {
       "blocks": [
@@ -142,12 +136,12 @@
       "yMin": 2,
       "yMax": 20,
       "chance": 4,
-      "size": 40,
+      "size": 20,
       "dimBlacklist": [
         -1,
         1
       ],
-      "density": 0.7
+      "density": 1.0
     },
     {
       "blocks": [
@@ -160,27 +154,20 @@
       ],
       "yMin": 4,
       "yMax": 32,
-      "chance": 3,
-      "size": 16,
+      "chance": 4,
+      "size": 20,
       "dimBlacklist": [
         -1,
         1
       ],
-      "density": 1.0,
-      "biomes": [
-        "minecraft:ice_mountains",
-        "minecraft:extreme_hills_with_trees",
-        "minecraft:mutated_extreme_hills",
-        "minecraft:mutated_extreme_hills_with_trees",
-        "minecraft:extreme_hills",
-        "minecraft:smaller_extreme_hills"
-      ],
-      "isWhitelist": true
+      "density": 1.0
     },
     {
       "blocks": [
         "geolosys:ore:0",
-        100
+        90,
+        "mysticalagriculture:inferium_ore:0",
+        10
       ],
       "samples": [
         "geolosys:ore_sample:0",
@@ -188,8 +175,8 @@
       ],
       "yMin": 32,
       "yMax": 60,
-      "chance": 6,
-      "size": 24,
+      "chance": 10,
+      "size": 48,
       "dimBlacklist": [
         -1,
         1
@@ -207,37 +194,28 @@
       ],
       "yMin": 6,
       "yMax": 32,
-      "chance": 4,
+      "chance": 12,
       "size": 80,
       "dimBlacklist": [
         -1,
         1
       ],
-      "density": 1.0,
-      "biomes": [
-        "minecraft:swampland",
-        "minecraft:mutated_swampland",
-        "minecraft:mushroom_island",
-        "minecraft:mushroom_island_shore"
-      ],
-      "isWhitelist": true
+      "density": 1.0
     },
     {
       "blocks": [
         "geolosys:ore:2",
-        40,
-        "geolosys:ore:3",
-        60
+        70,
+        "mysticalagriculture:inferium_ore:0",
+        30
       ],
       "samples": [
-        "geolosys:ore_sample:2",
-        40,
         "geolosys:ore_sample:3",
-        60
+        100
       ],
       "yMin": 12,
-      "yMax": 44,
-      "chance": 4,
+      "yMax": 100,
+      "chance": 12,
       "size": 80,
       "dimBlacklist": [
         -1,
@@ -256,19 +234,13 @@
       ],
       "yMin": 44,
       "yMax": 68,
-      "chance": 6,
-      "size": 24,
+      "chance": 10,
+      "size": 32,
       "dimBlacklist": [
         -1,
         1
       ],
-      "density": 1.0,
-      "biomes": [
-        "minecraft:ocean",
-        "minecraft:frozen_ocean",
-        "minecraft:deep_ocean"
-      ],
-      "isWhitelist": true
+      "density": 1.0
     },
     {
       "blocks": [
@@ -283,17 +255,13 @@
       ],
       "yMin": 8,
       "yMax": 43,
-      "chance": 2,
+      "chance": 8,
       "size": 80,
       "dimBlacklist": [
         -1,
         1
       ],
-      "density": 1.0,
-      "biomes": [
-        "minecraft:river"
-      ],
-      "isWhitelist": true
+      "density": 1.0
     },
     {
       "blocks": [
@@ -312,14 +280,7 @@
         -1,
         1
       ],
-      "density": 1.0,
-      "biomes": [
-        "minecraft:mutated_plains",
-        "minecraft:plains",
-        "minecraft:ice_flats",
-        "minecraft:mutated_ice_flats"
-      ],
-      "isWhitelist": true
+      "density": 1.0
     },
     {
       "blocks": [
@@ -332,54 +293,34 @@
       ],
       "yMin": 45,
       "yMax": 70,
-      "chance": 4,
+      "chance": 6,
       "size": 64,
       "dimBlacklist": [
         -1,
         1
       ],
-      "density": 1.0,
-      "biomes": [
-        "minecraft:jungle",
-        "minecraft:jungle_hills",
-        "minecraft:jungle_edge",
-        "minecraft:mutated_jungle",
-        "minecraft:mutated_jungle_edge",
-        "minecraft:beaches",
-        "minecraft:savanna",
-        "minecraft:savanna_rock",
-        "minecraft:mutated_savanna",
-        "minecraft:mutated_savanna_rock"
-      ],
-      "isWhitelist": true
+      "density": 1.0
     },
     {
       "blocks": [
         "geolosys:ore:8",
-        100
+        50,
+        "mekanism:oreblock:0",
+        50
       ],
       "samples": [
         "geolosys:ore_sample:8",
         100
       ],
       "yMin": 3,
-      "yMax": 25,
-      "chance": 4,
+      "yMax": 35,
+      "chance": 7,
       "size": 32,
       "dimBlacklist": [
         -1,
         1
       ],
-      "density": 1.0,
-      "biomes": [
-        "minecraft:ice_mountains",
-        "minecraft:extreme_hills_with_trees",
-        "minecraft:mutated_extreme_hills",
-        "minecraft:mutated_extreme_hills_with_trees",
-        "minecraft:extreme_hills",
-        "minecraft:smaller_extreme_hills"
-      ],
-      "isWhitelist": true
+      "density": 1.0
     },
     {
       "blocks": [
@@ -421,9 +362,9 @@
         "geolosys:ore_sample:10",
         100
       ],
-      "yMin": 37,
-      "yMax": 46,
-      "chance": 5,
+      "yMin": 25,
+      "yMax": 55,
+      "chance": 8,
       "size": 24,
       "dimBlacklist": [
         -1,
@@ -432,38 +373,39 @@
       "density": 1.0
     }
   ],
-  "stones": [{
-    "block": "minecraft:stone:1",
-    "size": 40,
-    "chance": 10,
-    "yMin": 2,
-    "yMax": 70,
-    "dimBlacklist": [
-      -1,
-      1
-    ]
-  },
-             {
-               "block": "minecraft:stone:3",
-               "size": 40,
-               "chance": 10,
-               "yMin": 2,
-               "yMax": 70,
-               "dimBlacklist": [
-                 -1,
-                 1
-               ]
-             },
-             {
-               "block": "minecraft:stone:5",
-               "size": 40,
-               "chance": 10,
-               "yMin": 2,
-               "yMax": 70,
-               "dimBlacklist": [
-                 -1,
-                 1
-               ]
-             }
-            ]
+  "stones": [
+    {
+      "block": "minecraft:stone:1",
+      "size": 40,
+      "chance": 10,
+      "yMin": 2,
+      "yMax": 70,
+      "dimBlacklist": [
+        -1,
+        1
+      ]
+    },
+    {
+      "block": "minecraft:stone:3",
+      "size": 40,
+      "chance": 10,
+      "yMin": 2,
+      "yMax": 70,
+      "dimBlacklist": [
+        -1,
+        1
+      ]
+    },
+    {
+      "block": "minecraft:stone:5",
+      "size": 40,
+      "chance": 10,
+      "yMin": 2,
+      "yMax": 70,
+      "dimBlacklist": [
+        -1,
+        1
+      ]
+    }
+  ]
 }

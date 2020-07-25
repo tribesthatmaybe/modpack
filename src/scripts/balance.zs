@@ -94,3 +94,10 @@ recipes.addShaped(<cgm:scope:1>, [[null, null, null],
 recipes.addShaped(<cgm:scope:2>, [[null, null, null],
                                  [<alchemistry:ingot:88>, <immersiveengineering:toolupgrade:8>, <tconstruct:seared_glass>],
                                  [null, <immersiveengineering:material:9>, null]]);
+
+//// booms
+// efln
+recipes.addShaped(<tconstruct:throwball:1> * 4, [
+                                           [<minecraft:gunpowder>, <immersiveengineering:material:2>, <minecraft:gunpowder>],
+                                           [<immersiveengineering:material:2>, <immersiveengineering:wooden_device0:4>, <immersiveengineering:material:2>],
+                                           [<minecraft:gunpowder>, <immersiveengineering:material:2>, <minecraft:gunpowder>]]);

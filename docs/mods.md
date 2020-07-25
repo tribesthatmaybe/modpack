@@ -21,6 +21,8 @@
 | [better questing](https://www.curseforge.com/minecraft/mc-mods/better-questing) | MIT | [github](https://github.com/Funwayguy/BetterQuesting/) |
 | [lore expansion](https://www.curseforge.com/minecraft/mc-mods/lore-expansion) | MIT | [github](https://github.com/TehNut/LoreExpansion) |
 | [reskillable](https://www.curseforge.com/minecraft/mc-mods/reskillable) | CC-NCSA | [github](https://github.com/Coders-After-Dark/Reskillable) |
+| [compatskills](https://www.curseforge.com/minecraft/mc-mods/compatskills) | MIT | [github](https://github.com/Coders-After-Dark/CompatSkills) |
+| [extraskills](https://www.curseforge.com/minecraft/mc-mods/extraskills/) | GPL3 | [github](https://github.com/thebrightspark/ExtraSkills) |
 | [waystones](https://www.curseforge.com/minecraft/mc-mods/waystones) | MIT | [github](https://github.com/Coders-After-Dark/Reskillable) |
 | [autoreglib](https://www.curseforge.com/minecraft/mc-mods/autoreglib) | custom but chill | [github](https://github.com/Vazkii/AutoRegLib) |
 | [better questing - standard expansion](https://www.curseforge.com/minecraft/mc-mods/better-questing-standard-expansion) | MIT | [github](https://github.com/Funwayguy/StandardQuestingPack) |
@@ -52,6 +54,8 @@
 | [mystcraft](https://www.curseforge.com/minecraft/mc-mods/mystcraft) | All Rights | |
 | [baubles](https://www.curseforge.com/minecraft/mc-mods/baubles) | CC-NCSA | [github](https://github.com/Azanor/Baubles) |
 | [craft tweaker](https://www.curseforge.com/minecraft/mc-mods/crafttweaker) | MIT | [github](https://github.com/CraftTweaker/CraftTweaker) |
+| [mtlib](https://www.curseforge.com/minecraft/mc-mods/mtlib) | MIT | [github](https://github.com/jaredlll08/MTLib/) |
+| [modtweaker](https://www.curseforge.com/minecraft/mc-mods/modtweaker) | MIT | [github](https://github.com/jaredlll08/ModTweaker) |
 | [wanionlib](https://www.curseforge.com/minecraft/mc-mods/wanionlib) | MPL | [github](https://github.com/WanionCane/WanionLib) |
 | [unidict](https://www.curseforge.com/minecraft/mc-mods/unidict) | MPL | [github](https://github.com/WanionCane/UniDict) |
 | [ftb-backups](https://www.curseforge.com/minecraft/mc-mods/ftb-backups) | LGPL | [github](https://github.com/FTBTeam/FTB-Utilities-Backups) |
@@ -176,3 +180,6 @@
 | [instantunify](https://www.curseforge.com/minecraft/mc-mods/instantunify) | MIT | [github](https://github.com/MrRiegel/Yunifier) |
 | [world primer](https://www.curseforge.com/minecraft/mc-mods/world-primer) | LGPL | [github](https://github.com/maruohon/worldprimer) |
 | [cosmetic armor reworked](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-reworked/) | MIT | [github](https://github.com/zlainsama/CosmeticArmorReworked) |
+| [albedo](https://www.curseforge.com/minecraft/mc-mods/albedo/) | MIT | [github](https://github.com/MysticMods/Albedo) |
+| [albedo-torches](https://www.curseforge.com/minecraft/mc-mods/albedo-torches) | MIT | [github](https://github.com/Tamaized/AlbedoTorches) |
+| [weissalbedo](https://www.curseforge.com/minecraft/mc-mods/weissalbedo) | All Rights | [bitbucket](https://bitbucket.org/weissmoon/weissalbedo/src/master/) |
