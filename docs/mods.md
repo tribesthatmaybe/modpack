@@ -155,7 +155,6 @@
 | [controlled burn](https://www.curseforge.com/minecraft/mc-mods/controlled-burn) | MIT | [github](https://github.com/Laike-Endaril/Controlled-Burn) |
 | [bountifulbaubles](https://www.curseforge.com/minecraft/mc-mods/bountifulbaubles) | Custom but chill | [github](https://github.com/CursedFlames/BountifulBaubles) |
 | [gotta go fast](https://www.curseforge.com/minecraft/mc-mods/gotta-go-fast) | MIT | [github](https://github.com/thiakil/GottaGoFast) |
-| [mo villages](https://www.curseforge.com/minecraft/mc-mods/mo-villages) | CC-NCSA | |
 | [potion core](https://www.curseforge.com/minecraft/mc-mods/potion-core) | All Rights | |
 | [cyclops core](https://www.curseforge.com/minecraft/mc-mods/cyclops-core) | MIT | [github](https://github.com/CyclopsMC/CyclopsCore) |
 | [common capabilities](https://www.curseforge.com/minecraft/mc-mods/common-capabilities) | MIT | [github](https://github.com/CyclopsMC/CommonCapabilities) |
@@ -183,3 +182,5 @@
 | [albedo](https://www.curseforge.com/minecraft/mc-mods/albedo/) | MIT | [github](https://github.com/MysticMods/Albedo) |
 | [albedo-torches](https://www.curseforge.com/minecraft/mc-mods/albedo-torches) | MIT | [github](https://github.com/Tamaized/AlbedoTorches) |
 | [weissalbedo](https://www.curseforge.com/minecraft/mc-mods/weissalbedo) | All Rights | [bitbucket](https://bitbucket.org/weissmoon/weissalbedo/src/master/) |
+| [dropt](https://www.curseforge.com/minecraft/mc-mods/dropt) | Apache | [github](https://github.com/codetaylor/dropt) |
+| [athenaeum](https://www.curseforge.com/minecraft/mc-mods/athenaeum) | Apache | [github](https://github.com/codetaylor/athenaeum) |

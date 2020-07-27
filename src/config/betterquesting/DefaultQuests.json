@@ -3097,6 +3097,14 @@
               "OreDict:8": ""
             }
           }
+        },
+        "1:10": {
+          "score:8": "GreeterStation",
+          "rewardID:8": "bq_standard:scoreboard",
+          "index:3": 1,
+          "type:8": "dummy",
+          "value:3": 1,
+          "relative:1": 1
         }
       }
     },

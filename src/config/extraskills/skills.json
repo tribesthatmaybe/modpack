@@ -3,5 +3,10 @@
     "name": "automation",
     "localName": "Automation",
     "background": "brick_block"
+  },
+  {
+    "name": "tech",
+    "localName": "Technology",
+    "background": "iron_block"
   }
 ]
