@@ -107,14 +107,14 @@ class DevTool(object):
         """
         sync.SyncWidget().sync(version, clean, local, only)
 
-    def nuke(self):
+    def nuke(self, keep_claimed=False):
         """nuke it from orbit
 
         This command will erase all the world / player / user data from the server.
         If you haven't saved a backup then all will be erased.
         Remember kids, feelings and emotions are moop, and may not be recycled.
         """
-        sync.SyncWidget().nuke()
+        sync.SyncWidget().nuke(keep_claimed)
 
     def upload(self, version, client_id=None):
         """upload to curseforge

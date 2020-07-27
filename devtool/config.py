@@ -6,6 +6,13 @@ from ftplib import FTP
 
 LOG = logging.getLogger(__name__)
 
+DIMENSION_DIRS = {
+    -1: 'DIM-1/region',
+    0: 'region',
+    1: 'region',
+    1001: 'DIM1001/region'
+}
+
 class Config(object):
     """Config object
 

@@ -2,6 +2,7 @@ import logging
 import os
 import sys
 from ftplib import FTP
+from ftplib import error_perm
 from config import Config
 
 LOG = logging.getLogger(__name__)
@@ -27,7 +28,13 @@ class BaseWidget(object):
     def ftp_exists(self, path):
         ftp_base = os.path.basename(path)
         ftp_dir = os.path.dirname(path)
-        return ftp_base in self.ftp_ls(ftp_dir)
+        ftp_files = []
+        try:
+            ftp_files = self.ftp_ls(ftp_dir)
+        except error_perm:
+            return False
+
+        return ftp_base in ftp_files
 
     def ftp_get(self, source, dest):
         with open(dest, 'wb') as fh:
