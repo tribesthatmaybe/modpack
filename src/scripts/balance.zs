@@ -101,3 +101,7 @@ recipes.addShaped(<tconstruct:throwball:1> * 4, [
                                            [<minecraft:gunpowder>, <immersiveengineering:material:2>, <minecraft:gunpowder>],
                                            [<immersiveengineering:material:2>, <immersiveengineering:wooden_device0:4>, <immersiveengineering:material:2>],
                                            [<minecraft:gunpowder>, <immersiveengineering:material:2>, <minecraft:gunpowder>]]);
+
+//// recycle
+// people gonna end up with extra lore
+recipes.addShapeless(<minecraft:paper>, [<loreexpansion:lore_scrap>]);
