@@ -3124,6 +3124,105 @@
       }
     },
     "38:10": {
+      "questID:3": 38,
+      "preRequisites:11": [
+        59
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "loreexpansion:lore_journal",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Dear Journal....",
+          "desc:8": "We\u0027ve talked about the questbook and how helpful it is to your adventure but what other books are there?\n\nYou may have noticed that you started out with a Journal. Throughout your time in the multiverse you will find bits and pieces of lore. As you collect these they will end up in your journal and you can read them.\n\nSome lore will be part of the story, some lore will be the stories of others, and some will be informative and help you learn about difference pieces of the Tribes That May Be experience."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "radicalselfreliance",
+                  "category:8": "The Principles"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "immediacy",
+                  "category:8": "The Principles"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "walljump",
+                  "category:8": "Gameplay"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "39:10": {
       "questID:3": 47,
       "preRequisites:11": [
         49
@@ -3196,7 +3295,7 @@
         }
       }
     },
-    "39:10": {
+    "40:10": {
       "questID:3": 48,
       "preRequisites:11": [
         47
@@ -3278,7 +3377,7 @@
         }
       }
     },
-    "40:10": {
+    "41:10": {
       "questID:3": 49,
       "preRequisites:11": [
         21
@@ -3351,7 +3450,7 @@
         }
       }
     },
-    "41:10": {
+    "42:10": {
       "questID:3": 50,
       "preRequisites:11": [],
       "properties:10": {
@@ -3544,7 +3643,7 @@
         }
       }
     },
-    "42:10": {
+    "43:10": {
       "questID:3": 51,
       "preRequisites:11": [
         50
@@ -3633,7 +3732,7 @@
         }
       }
     },
-    "43:10": {
+    "44:10": {
       "questID:3": 52,
       "preRequisites:11": [
         50
@@ -3744,7 +3843,7 @@
         }
       }
     },
-    "44:10": {
+    "45:10": {
       "questID:3": 54,
       "preRequisites:11": [
         51
@@ -3823,7 +3922,7 @@
         }
       }
     },
-    "45:10": {
+    "46:10": {
       "questID:3": 55,
       "preRequisites:11": [
         52
@@ -3905,7 +4004,7 @@
         }
       }
     },
-    "46:10": {
+    "47:10": {
       "questID:3": 56,
       "preRequisites:11": [
         55
@@ -4069,7 +4168,7 @@
         }
       }
     },
-    "47:10": {
+    "48:10": {
       "questID:3": 58,
       "preRequisites:11": [
         55
@@ -4168,7 +4267,7 @@
         }
       }
     },
-    "48:10": {
+    "49:10": {
       "questID:3": 59,
       "preRequisites:11": [
         50
@@ -4271,7 +4370,7 @@
         }
       }
     },
-    "49:10": {
+    "50:10": {
       "questID:3": 60,
       "preRequisites:11": [
         56
@@ -4468,7 +4567,7 @@
         }
       }
     },
-    "50:10": {
+    "51:10": {
       "questID:3": 61,
       "preRequisites:11": [
         58
@@ -4550,7 +4649,7 @@
         }
       }
     },
-    "51:10": {
+    "52:10": {
       "questID:3": 62,
       "preRequisites:11": [
         56,
@@ -4941,8 +5040,8 @@
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -420,
-          "y:3": -360,
+          "x:3": -300,
+          "y:3": -324,
           "id:3": 2,
           "sizeY:3": 24
         },
@@ -5025,75 +5124,82 @@
         },
         "14:10": {
           "sizeX:3": 24,
+          "x:3": -408,
+          "y:3": -396,
+          "id:3": 38,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
           "x:3": -360,
           "y:3": -360,
           "id:3": 50,
           "sizeY:3": 24
         },
-        "15:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": -324,
           "id:3": 51,
           "sizeY:3": 24
         },
-        "16:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": -324,
           "id:3": 52,
           "sizeY:3": 24
         },
-        "17:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -408,
           "y:3": -288,
           "id:3": 54,
           "sizeY:3": 24
         },
-        "18:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -288,
           "id:3": 55,
           "sizeY:3": 24
         },
-        "19:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": -252,
           "id:3": 56,
           "sizeY:3": 24
         },
-        "20:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": -288,
           "y:3": -252,
           "id:3": 58,
           "sizeY:3": 24
         },
-        "21:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": -360,
           "y:3": -396,
           "id:3": 59,
           "sizeY:3": 24
         },
-        "22:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -216,
           "id:3": 60,
           "sizeY:3": 24
         },
-        "23:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -216,
           "id:3": 61,
           "sizeY:3": 24
         },
-        "24:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": -180,
