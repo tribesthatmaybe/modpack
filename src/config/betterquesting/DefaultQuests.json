@@ -531,7 +531,7 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "we are all matter out of place",
+          "name:8": "we are all matter out of place AA",
           "desc:8": "It happens in the multiverse. Something goes wrong, and you die. In this particular corner of the multiverse the penalty isn\u0027t that bad. So long as you can find your tombstone...\n\nYou should see a new beacon visible on the horizon. You can also see the beacon on your JourneyMap (opens with \"j\" by default). Go there and you should see a tombstone nearby. In most case the tombstone will appear however it may be very difficult to get to. Like if you ended up in a lava ocean, or fell out the bottom of the world.\n\nIf you right click the tombstone it will tell you who it belongs to. To retrieve your items, destroy the tombstone. It is quicker with a pickaxe. Note that your items may end up scattered about when you destroy the tombstone. If you died somewhere hazardous (like in a lava ocean) you should ensure there is ample enclosed space to help keep your items safe. You will end up with your tombstone as a memento of what happened.\n\nTry to not become moop again.\n"
         }
       },
@@ -937,7 +937,18 @@
           "taskID:8": "bq_standard:checkbox"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "Break Fourth Wall",
+          "viaPlayer:1": 0,
+          "index:3": 0,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "scoreboard players tag @s add fourth_wall\n"
+        }
+      }
     },
     "12:10": {
       "questID:3": 12,
@@ -1069,7 +1080,9 @@
     },
     "14:10": {
       "questID:3": 14,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        42
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -1083,12 +1096,8 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "betterquesting:placeholder",
+            "id:8": "cfm:bedside_cabinet_dark_oak",
             "Count:3": 1,
-            "tag:10": {
-              "orig_meta:3": 0,
-              "orig_id:8": "tombstone:decorative_grave_simple"
-            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -1098,25 +1107,33 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "we are all matter out of place",
-          "desc:8": "It happens in the multiverse. Something goes wrong, and you die. In this particular corner of the multiverse the penalty isn\u0027t that bad. So long as you can find your tombstone...\n\nYou should have a key in your hand. Hold on to it! You will need it to retrieve your inventory from your tombstone. Bring up your map (default key \"j\") and look around to find the little colorful dot marking your place of death. You should also see a beacon when you are in the normal display as well. Go find your tombstone - it should be in a safe place relatively close to your place of death.\n\nRight click on your tombstone with the key, and try to not get fucked up again."
+          "name:8": "A Place For Personal Things",
+          "desc:8": "There is no shortage of furniture for storing your things. But some of the furniture is classier than others.\n\nThe nightstand is one of those.\n\nYou don\u0027t have to put it next to your bed, but why wouldn\u0027t you?\n\nIt\u0027s classier that way."
         }
       },
       "tasks:9": {
         "0:10": {
-          "advancement_id:8": "tombstone:tutorial/first_grave",
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
           "index:3": 0,
-          "taskID:8": "bq_standard:advancement"
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:bedside_cabinet_dark_oak",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {
-        "0:10": {
-          "amount:3": 1,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
-          "index:3": 0
-        }
-      }
+      "rewards:9": {}
     },
     "15:10": {
       "questID:3": 15,
@@ -1251,7 +1268,8 @@
     "16:10": {
       "questID:3": 16,
       "preRequisites:11": [
-        12
+        12,
+        36
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1424,7 +1442,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Sound Waves",
-          "desc:8": "some words about\n\n* speaker sizes\n* wiring speakers together\n* using wire cutters on speakers"
+          "desc:8": "There are three different sizes of speakers that you can build. Let\u0027s start with the smallest. You are going to need some nether quartz and a diamond for this, but don\u0027t worry - these can both be found in the Block Rock Desert.\n\nOnce you have created your speaker you can attach it to a record player or a radio with speaker wire. To do so, select the speaker wire. You can then right click on the source block (radio or record player) and then right click on the speaker. Note that the speaker wires don\u0027t go very far - only about 7 blocks.\n\nYou can remove speaker wire by using wire cutters on the speaker or source block."
         }
       },
       "tasks:9": {
@@ -2517,7 +2535,8 @@
     "30:10": {
       "questID:3": 30,
       "preRequisites:11": [
-        55
+        55,
+        36
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2725,30 +2744,24 @@
       },
       "tasks:9": {
         "0:10": {
-          "item:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:air",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "fileName:8": "",
-          "wildcardOptimization:1": 0,
-          "length:3": 0,
-          "width:3": 0,
-          "name:8": "New Multiblock Name",
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
           "index:3": 0,
-          "block:10": {
-            "blockID:8": "minecraft:air",
-            "nbt:10": {},
-            "amount:3": 1,
-            "oreDict:8": "",
-            "meta:3": -1
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:book",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
           },
-          "taskID:8": "bq_msi:multiblock",
-          "height:3": 0
+          "taskID:8": "bq_standard:crafting"
         }
       },
       "rewards:9": {}
@@ -3223,6 +3236,542 @@
       }
     },
     "39:10": {
+      "questID:3": 39,
+      "preRequisites:11": [
+        18
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:record_mellohi",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Lasers are Cool",
+          "desc:8": "It ain\u0027t a real party without some blinky lights. You can attach the strobe light, laser, and laser cluster to a source block (such as a radio or record player) using speaker wire."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "betterrecords:laser",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "betterrecords:strobelight",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "betterrecords:lasercluster",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:redbeeritem",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:bluebeeritem",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "40:10": {
+      "questID:3": 40,
+      "preRequisites:11": [
+        47
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "bibliocraft:discrack",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Stacks of Vinyl",
+          "desc:8": "Once you get locked into a serious vinyl collection the tendency is to take it as far as you can.\n\nThe Disc Holder can be used to hold all kinds of records, along with frequency crystals.\n\nIt looks a lot classier than a milk crate."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "bibliocraft:discrack",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "41:10": {
+      "questID:3": 41,
+      "preRequisites:11": [
+        47
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:stereo",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "78s are coming back in style",
+          "desc:8": "The Tribes That May Be multiverse has a bunch of tracks included from it\u0027s various mods. You can collect them all because you are a completionist, or you can make an old school stereo and listen in that way.\n\nTo use the stereo, place it in world. Right click to turn it on and cycle between the tracks. Shift right click to turn it off."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:stereo",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 30,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "42:10": {
+      "questID:3": 42,
+      "preRequisites:11": [
+        6
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:modern_bed_bottom",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Good Nights Sleep",
+          "desc:8": "The sleeping bag is OK but it\u0027s not quite the same as a proper bed. A normal bed will set a home location for you, so you end up going back there when you die. Without a bed, you will end up back in D-Lot when you die, and nobody wants that.\n\nCraft a bed, place it somewhere you want to wake up in. After either a restfull nights sleep, or death. Both are inevitable.\n\nYou can also place two beds side by side, if that fits your lifestyle and/or aesthetic."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:bed",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "bed"
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "43:10": {
+      "questID:3": 43,
+      "preRequisites:11": [
+        42
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "comforts:hammock",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Sleep The Day Away",
+          "desc:8": "The only thing better than a good nights sleep is spending the day in a hammock.\n\nTo hang a hammock you need two rope \u0026 nails. And some hammock cloth. And some trees.\n\nYou can place the role and nail into the trees. Make sure there is a straight line between them (along the N/S or E/W axis). Once you\u0027ve done that, right click with the hammock cloth on one of the nails. The max distance is about five blocks.\n\nSweet day dreams."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "comforts:rope",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "comforts:hammock",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:redbeeritem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:bluebeeritem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "44:10": {
+      "questID:3": 44,
+      "preRequisites:11": [
+        43
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:couch_jeb",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Relax in style",
+          "desc:8": "Another way to spend the day or night is in a comfortable couch. You can place multiple couch pieces side by side to make sweet sectionals.\n\nYou can make different colors of couch by dying your wool prior to making the couch."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:couch",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "bibliocraft:lampiron",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:lamp_off",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "45:10": {
+      "questID:3": 45,
+      "preRequisites:11": [
+        44
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:coffee_table_dark_oak",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Keep it Classy",
+          "desc:8": "A nice coffee table helps bring the room together. You can place items on the coffee table, like books."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:coffee_table_dark_oak",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "actuallyadditions:item_booklet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "patchouli:guide_book",
+              "Count:3": 1,
+              "tag:10": {
+                "patchouli:book:8": "alchemistry:alchemistry_book"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "46:10": {
       "questID:3": 47,
       "preRequisites:11": [
         49
@@ -3252,7 +3801,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Spin those tunes",
-          "desc:8": "To start using the records you have found, you are going to need a record player."
+          "desc:8": "To start using the records you have found, you are going to need a record player. The record player has a small speaker built-in but if you are going to throw a serious party then you will want to build some larger speakers."
         }
       },
       "tasks:9": {
@@ -3295,7 +3844,7 @@
         }
       }
     },
-    "40:10": {
+    "47:10": {
       "questID:3": 48,
       "preRequisites:11": [
         47
@@ -3324,8 +3873,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Break the fourth wall",
-          "desc:8": "While it\u0027s fun to shuffle around records in a block world, streaming in outside sources can also be nice. The Better Records Radio can be used with tuned frequency crystals to bring mp3 streams into minecraft.\n\nShift right click on the radio with an empty hand to open/close. When the radio is open, right click with a tuned frequency crystal to start the music. Right click on the radio open radio with a frequency crystal and an empty hand will cause the crystal to be ejected."
+          "name:8": "Radio Wanted - Live or Not",
+          "desc:8": "While it\u0027s fun to shuffle around records in a block world, streaming in outside sources can also be nice. The Better Records Radio can be used with tuned frequency crystals to bring mp3 streams into minecraft.\n\nYou will need at least three frequency crystals - one for the Frequency Tuner, one for the Radio, and one to tune to a radio station.\n\nTo use the frequency tuner, place it in world and right click on it. You can then specify a name and a URL to an icecast2 stream. Once those are in place, put the crystal in the tuning slot and click \"Tune\". Note that only icecast2 streams are supported.\n\nOnce you have a tuned crystal, you can place it in the radio. Shift right click on the radio with an empty hand to open/close. When the radio is open, right click with a tuned frequency crystal to start the music. Right click on the radio open radio with a frequency crystal and an empty hand will cause the crystal to be ejected."
         }
       },
       "tasks:9": {
@@ -3341,6 +3890,24 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
+              "id:8": "betterrecords:frequencycrystal",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "betterrecords:frequencytuner",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:radio",
               "Count:3": 1,
               "Damage:2": 0,
@@ -3352,32 +3919,14 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:choice",
-          "index:3": 0,
-          "choices:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "engineersdecor:thin_steel_pole",
-              "Count:3": 4,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "engineersdecor:thin_steel_pole_head",
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
         }
       }
     },
-    "41:10": {
+    "48:10": {
       "questID:3": 49,
       "preRequisites:11": [
         21
@@ -3450,7 +3999,7 @@
         }
       }
     },
-    "42:10": {
+    "49:10": {
       "questID:3": 50,
       "preRequisites:11": [],
       "properties:10": {
@@ -3643,7 +4192,7 @@
         }
       }
     },
-    "43:10": {
+    "50:10": {
       "questID:3": 51,
       "preRequisites:11": [
         50
@@ -3732,7 +4281,7 @@
         }
       }
     },
-    "44:10": {
+    "51:10": {
       "questID:3": 52,
       "preRequisites:11": [
         50
@@ -3843,7 +4392,7 @@
         }
       }
     },
-    "45:10": {
+    "52:10": {
       "questID:3": 54,
       "preRequisites:11": [
         51
@@ -3922,7 +4471,7 @@
         }
       }
     },
-    "46:10": {
+    "53:10": {
       "questID:3": 55,
       "preRequisites:11": [
         52
@@ -4004,7 +4553,7 @@
         }
       }
     },
-    "47:10": {
+    "54:10": {
       "questID:3": 56,
       "preRequisites:11": [
         55
@@ -4168,7 +4717,7 @@
         }
       }
     },
-    "48:10": {
+    "55:10": {
       "questID:3": 58,
       "preRequisites:11": [
         55
@@ -4267,7 +4816,7 @@
         }
       }
     },
-    "49:10": {
+    "56:10": {
       "questID:3": 59,
       "preRequisites:11": [
         50
@@ -4370,7 +4919,7 @@
         }
       }
     },
-    "50:10": {
+    "57:10": {
       "questID:3": 60,
       "preRequisites:11": [
         56
@@ -4567,7 +5116,7 @@
         }
       }
     },
-    "51:10": {
+    "58:10": {
       "questID:3": 61,
       "preRequisites:11": [
         58
@@ -4649,7 +5198,7 @@
         }
       }
     },
-    "52:10": {
+    "59:10": {
       "questID:3": 62,
       "preRequisites:11": [
         56,
@@ -4974,6 +5523,65 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -144,
+          "id:3": 14,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -108,
+          "id:3": 42,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -72,
+          "id:3": 43,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -72,
+          "id:3": 44,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -72,
+          "id:3": 45,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 4,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "UNLOCKED",
+          "name:8": "Death is not the end",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:bed",
+            "Count:3": 1,
+            "Damage:2": 15,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "There are may ways to perish and to be comfortable in this multiverse."
+        }
+      },
+      "order:3": 6
+    },
+    "5:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
           "x:3": -132,
           "y:3": -60,
           "id:3": 18,
@@ -4981,19 +5589,40 @@
         },
         "1:10": {
           "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -96,
+          "id:3": 39,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -60,
+          "id:3": 40,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -132,
+          "id:3": 41,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
           "x:3": -180,
           "y:3": -96,
           "id:3": 47,
           "sizeY:3": 24
         },
-        "2:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -132,
           "id:3": 48,
           "sizeY:3": 24
         },
-        "3:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -240,
           "y:3": -96,
@@ -5017,12 +5646,12 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Everything you ever wanted to know about music mods in minecraft but didn\u0027t know to ask."
+          "desc:8": "It ain\u0027t a real party without some sweet tunes. This quest line will take you through all the different steps you need to go through to listen to the built in chip tunes, or pipe in music from external sources."
         }
       },
       "order:3": 2
     },
-    "5:10": {
+    "6:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
