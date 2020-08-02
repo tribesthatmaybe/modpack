@@ -2563,7 +2563,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "A Real Workshop",
-          "desc:8": "Let\u0027s start making some fancier tools. Almost every hand tool, or weapon, you will want to use will be created using Tinkers Construct. It involves a few pieces of creafting equipment. You have already made the crafting station.\n\nCraft a stencil table and a part builder. These are pre-requisites for the smeltery.\n\nFor your reward you can choose between a pattern chest and a part chest. These are purpose built storage items for the little fiddly bits you will end up with as part of a Tinkers workshop.\n\n"
+          "desc:8": "Let\u0027s start making some fancier tools. Almost every hand tool, or weapon, you will want to use will be created using Tinkers Construct. It involves a few pieces of creafting equipment. You have already made the crafting station. You will probably want to read the manual - Materials and You - to get a better handle on how Tinkers Construct works.\n\nCraft a stencil table and a part builder. You can use these for making custom tools, and you will want them as you get into the smeltery to make fancyier custom tools.\n\nFor your reward you can choose between a pattern chest and a part chest. These are purpose built storage items for the little fiddly bits you will end up with as part of a Tinkers workshop.\n\n"
         }
       },
       "tasks:9": {
@@ -2611,6 +2611,15 @@
                 }
               },
               "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:book",
+              "Count:3": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -2739,12 +2748,12 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Built to Last",
-          "desc:8": "Some words about the smeltery."
+          "desc:8": "The Smeltery is going to be your friend. You will use it to make other friends - tools, weapons, and armore that you can upgrade, repair, and name. Before you go too far down this path make sure to read the manual - Materials and You.\n\nYou should have enough material to make a 3x3x2 smeltery with two drains, one tank, a casting table, and a casting basin.\n\nYou should construct it somewhere safe."
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 1,
+          "partialMatch:1": 0,
           "allowSmelt:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
@@ -2755,7 +2764,25 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "tconstruct:book",
+              "id:8": "tconstruct:smeltery_controller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:seared_tank",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:smeltery_io",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -2764,7 +2791,38 @@
           "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:cast",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:sword_blade"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:cast",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:hammer_head"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "33:10": {
       "questID:3": 33,
@@ -3772,6 +3830,97 @@
       }
     },
     "46:10": {
+      "questID:3": 46,
+      "preRequisites:11": [
+        29
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "harvestcraft:fruitsaladitem",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Tasty and Nutritious",
+          "desc:8": "You may have noticed all the dry gardens all over this desert. Chances are you\u0027ve broken some and gotten some things from them. You can use these things, along with various kitchen implements, to craft real food.\n\nMake some fruit salad and make some garden soup.\n\nEnjoy your fruit salad and savor your garden soup."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:gardensoupitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:fruitsaladitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:baconcheeseburgeritem",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:onionhamburgeritem",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "47:10": {
       "questID:3": 47,
       "preRequisites:11": [
         49
@@ -3844,7 +3993,7 @@
         }
       }
     },
-    "47:10": {
+    "48:10": {
       "questID:3": 48,
       "preRequisites:11": [
         47
@@ -3926,7 +4075,7 @@
         }
       }
     },
-    "48:10": {
+    "49:10": {
       "questID:3": 49,
       "preRequisites:11": [
         21
@@ -3999,7 +4148,7 @@
         }
       }
     },
-    "49:10": {
+    "50:10": {
       "questID:3": 50,
       "preRequisites:11": [],
       "properties:10": {
@@ -4192,7 +4341,7 @@
         }
       }
     },
-    "50:10": {
+    "51:10": {
       "questID:3": 51,
       "preRequisites:11": [
         50
@@ -4281,7 +4430,7 @@
         }
       }
     },
-    "51:10": {
+    "52:10": {
       "questID:3": 52,
       "preRequisites:11": [
         50
@@ -4392,7 +4541,64 @@
         }
       }
     },
-    "52:10": {
+    "53:10": {
+      "questID:3": 53,
+      "preRequisites:11": [
+        37
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "storagedrawers:tape",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Easy Moves It",
+          "desc:8": "Moving a drawer full of thousands of pieces of cobblestone, or pieces of flesh, or beer, or whatever you keep in your drawers - it sounds terrible.\n\nYou should make some packing tape. You can seal up a set of storage drawers by right clicking on it with the tape. You can then safely break the drawers with an axe and move it."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "storagedrawers:tape",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "54:10": {
       "questID:3": 54,
       "preRequisites:11": [
         51
@@ -4471,7 +4677,7 @@
         }
       }
     },
-    "53:10": {
+    "55:10": {
       "questID:3": 55,
       "preRequisites:11": [
         52
@@ -4553,7 +4759,7 @@
         }
       }
     },
-    "54:10": {
+    "56:10": {
       "questID:3": 56,
       "preRequisites:11": [
         55
@@ -4717,7 +4923,80 @@
         }
       }
     },
-    "55:10": {
+    "57:10": {
+      "questID:3": 57,
+      "preRequisites:11": [
+        37
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "storagedrawers:upgrade_template",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "More Things",
+          "desc:8": "You will eventually fill up your drawers. Fortunately they can be upgraded for more storage, or more features.\n\nLet\u0027s start with more storage.\n\nCraft a basic storage upgrade."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "storagedrawers:upgrade_storage",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "storagedrawers:upgrade_template",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "58:10": {
       "questID:3": 58,
       "preRequisites:11": [
         55
@@ -4816,7 +5095,7 @@
         }
       }
     },
-    "56:10": {
+    "59:10": {
       "questID:3": 59,
       "preRequisites:11": [
         50
@@ -4919,7 +5198,7 @@
         }
       }
     },
-    "57:10": {
+    "60:10": {
       "questID:3": 60,
       "preRequisites:11": [
         56
@@ -5116,7 +5395,7 @@
         }
       }
     },
-    "58:10": {
+    "61:10": {
       "questID:3": 61,
       "preRequisites:11": [
         58
@@ -5198,7 +5477,7 @@
         }
       }
     },
-    "59:10": {
+    "62:10": {
       "questID:3": 62,
       "preRequisites:11": [
         56,
@@ -5420,6 +5699,13 @@
           "y:3": -120,
           "id:3": 35,
           "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": -12,
+          "id:3": 46,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 1,
@@ -5495,6 +5781,20 @@
           "x:3": -168,
           "y:3": -108,
           "id:3": 37,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -72,
+          "id:3": 53,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -108,
+          "id:3": 57,
           "sizeY:3": 24
         }
       },
