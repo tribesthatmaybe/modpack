@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - "mainline"
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+"
   pull_request:
     branches:
       - "mainline"
@@ -45,8 +47,33 @@ jobs:
         with:
           name: "ttmb-server-${{env.version}}"
           path: "artifacts/github/server"
-  deploy:
+  maybe_bump:
     if: github.ref == 'refs/heads/mainline'
+    runs-on: "ubuntu-latest"
+    needs: "build"
+    steps:
+      - uses: "actions/checkout@v2"
+        with:
+          fetch-depth: 0
+      - name: "Set up Python"
+        uses: "actions/setup-python@v2"
+        with:
+          python-version: "3.8"
+      - name: "install avakas"
+        run: "pip install avakas"
+      - name: "Maybe bump version"
+        run: |
+            git config user.email noreply@tribesthatmay.be
+            git config user.name "An Automaton"
+            git remote set-url origin "$(git config --get remote.origin.url | sed 's#http.*com/#git@github.com:#g')"
+            eval `ssh-agent -t 300 -s`
+            ssh-add - <<< "${{secrets.DEPLOY_KEY}}"
+            mkdir -p ~/.ssh/
+            ssh-keyscan github.com >> ~/.ssh/known_hosts
+            ./avakas bump . auto --branch=mainline
+            ssh-agent -k
+  deploy:
+    if: startsWith(github.ref, 'refs/tags')
     needs: "build"
     runs-on: ubuntu-latest
     env:
@@ -79,3 +106,47 @@ jobs:
         run: |
           ./scripts/render-devsync.sh
           ./scripts/deploy ${{needs.build.outputs.version}}
+  upload:
+    if: startsWith(github.ref, 'refs/tags')
+    runs-on: "ubuntu-latest"
+    needs: "build"
+    env:
+      STICKYPISTON_USER: "${{secrets.STICKYPISTON_USER}}"
+      STICKYPISTON_SERVER: "${{secrets.STICKYPISTON_SERVER}}"
+      STICKYPISTON_HOST: "${{secrets.STICKYPISTON_HOST}}"
+      FTP_PASSWORD: "${{secrets.FTP_PASSWORD}}"
+      MULTICRAFT_API_KEY: "${{secrets.MULTICRAFT_API_KEY}}"
+      MULTICRAFT_API_HOST: "${{secrets.MULTICRAFT_API_HOST}}"
+      RCON_PORT: "${{secrets.RCON_PORT}}"
+      RCON_PASSWORD: "${{secrets.RCON_PASSWORD}}"
+      CURSEFORGE_TOKEN: "${{secrets.CURSEFORGE_TOKEN}}"
+      GITHUB_TOKEN: "${{secrets.GITHUB_TOKEN}}"
+    steps:
+      - uses: "actions/checkout@v2"
+        with:
+          ref: "mainline"
+          fetch-depth: 1
+      - name: "fetch server artifact"
+        uses: "actions/download-artifact@v2"
+        with:
+          name: "ttmb-server-${{needs.build.outputs.version}}"
+          path: "server-artifact"
+      - name: "fetch client artifact"
+        uses: "actions/download-artifact@v2"
+        with:
+          name: "ttmb-client-${{needs.build.outputs.version}}"
+          path: "client-artifact"
+      - name: "recompress server artifact because reasons"
+        run: |
+          mkdir -p artifacts
+          cd server-artifact
+          zip -r ../artifacts/ttmb-server-${{needs.build.outputs.version}}.zip *
+      - name: "recompress client artifact because reasons"
+        run: |
+          mkdir -p artifacts
+          cd client-artifact
+          zip -r ../artifacts/ttmb-client-${{needs.build.outputs.version}}.zip *
+      - name: "upload to curseforge"
+        run: |
+          ./scripts/render-devsync.sh
+          ./scripts/upload ${{needs.build.outputs.version}}
