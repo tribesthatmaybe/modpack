@@ -6,16 +6,18 @@ problems() {
     exit 1
 }
 
-if [ ! -e "/usr/local/etc/ttmb/packmaker.conf" ] ; then
-    if [ ! -e "/mnt/config.yml" ] ; then
-        problems "Unable to find config"
-    fi
+gen_config() {
+    if [ ! -e "/usr/local/etc/ttmb/packmaker.conf" ] ; then
+        if [ ! -e "/mnt/config.yml" ] ; then
+            problems "Unable to find config"
+        fi
 
-    jinja2 \
-        -o /usr/local/etc/packmaker.conf \
-        /usr/local/share/ttmb/curseforge.conf.j2 \
-        /mnt/config.yml
-fi
+        jinja2 \
+            -o /usr/local/etc/packmaker.conf \
+            /usr/local/share/ttmb/curseforge.conf.j2 \
+            /mnt/config.yml
+    fi
+}
 
 ACTION="shell"
 if [ $# -gt 0 ] ; then
@@ -40,12 +42,14 @@ if [ -d "/packmaker" ] && [ -e "/packmaker/setup.py" ] ; then
 fi
 
 if [ "$ACTION" == "build" ] ; then
+    gen_config
     cd /mnt
     ttmb-render-packmaker
     packmaker updatedb
     packmaker --config /usr/local/etc/packmaker.conf lock
     packmaker --config /usr/local/etc/packmaker.conf build-curseforge
 elif [ "$ACTION" == "server" ] ; then
+    gen_config
     cd /mnt
     ttmb-render-packmaker
     packmaker updatedb
