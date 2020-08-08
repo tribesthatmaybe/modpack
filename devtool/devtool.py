@@ -116,7 +116,7 @@ class DevTool(object):
         """
         sync.SyncWidget().nuke(keep_claimed)
 
-    def upload(self, version, client_id=None):
+    def upload(self, version, client_id=None, release='alpha'):
         """upload to curseforge
 
         Upload the client and server artifacts to curseforge.
@@ -129,7 +129,12 @@ class DevTool(object):
                 If this is provided then only the server artifat will be uploaded
                 and will be associated with the given file id.
         """
-        curse.CurseAPI().upload(version, client_id=client_id)
+        if release not in ('alpha', 'beta', 'release'):
+            raise Exception('release must be one of alpha, beta, release')
+
+        curse.CurseAPI().upload(version,
+                                client_id=client_id,
+                                release=release)
 
 if __name__ == '__main__':
     fire.Fire(DevTool)

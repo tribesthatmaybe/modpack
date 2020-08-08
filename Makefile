@@ -10,9 +10,7 @@ endif
 DOCKER_IMAGE=tribesthatmaybe/modpack:honk
 
 versiongen:
-	docker run -v $(shell pwd):/mnt otakup0pe/avakas show /mnt \
-		--pre-build --pre-build-prefix=alpha --pre-build-date --build \
-		2> /dev/null 1> $(shell pwd)/.version
+	./scripts/versiongen.sh
 
 container_build:
 	docker build \
