@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+set -e
+SCRIPTDIR=$( cd "${0%/*}" && pwd)
+ROOTDIR="${SCRIPTDIR%/*}"
+DOCKER_IMAGE="tribesthatmaybe/modpack:honk"
+
+usage() {
+    echo "${0} <version>"
+    exit 1
+}
+
+problems() {
+    echo "Error: ${*}"
+    exit 1
+}
+
+if [ $# != 1 ] ; then
+    usage
+fi
+
+VERSION="$1"
+shift
+
+RELEASE="release"
+RELEASE_FILE="${ROOTDIR}/release"
+if [ -e "$RELEASE_FILE" ] ; then
+    RELEASE="$(cat "$RELEASE_FILE")"
+fi
+
+if ! docker inspect "$DOCKER_IMAGE" &> /dev/null ; then
+    make -C "$ROOTDIR" container_build
+fi
+
+docker run \
+       --rm \
+       -v "${ROOTDIR}:/mnt" \
+       "tribesthatmaybe/modpack:honk" \
+       upload "$VERSION" "$RELEASE"
