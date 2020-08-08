@@ -31,3 +31,7 @@ jobs:
         with:
           name: ttmb-server-${{env.version}}
           path: artifacts/github/server
+      - name: "deploy to dev server"
+        run: |
+          ./scripts/render-devsync.sh
+          ./scripts/deploy ${{env.version}}
