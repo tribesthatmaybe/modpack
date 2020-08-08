@@ -23,7 +23,9 @@ jobs:
       - name: "build server thing"
         run: "make github_server"
       - name: "set version for artifact upload"
-        run: "echo ::set-env name=version::$(cat $(pwd)/.version)"
+        run: |
+          echo ::set-env name=version::$(cat $(pwd)/.version)
+          echo ::set-output name=version::$(cat $(pwd)/.version)
       - name: "upload artifact modpack i guess"
         uses: "actions/upload-artifact@v2"
         with:
@@ -57,13 +59,13 @@ jobs:
       - name: "fetch server artifact"
         uses: "actions/download-artifact@v2"
         with:
-          name: "ttmb-server-${{jobs.build.env.version}}"
+          name: "ttmb-server-${{env.INPUT_version}}"
           path: "server-artifact"
       - name: "recompress server artifact because reasons"
         run: |
           mkdir -p artifacts
           cd server-artifact
-          zip -r ../artifacts/ttmb-server-${{jobs.build.env.version}}.zip
+          zip -r ../artifacts/ttmb-server-${{env.INPUT_version}}.zip
       - name: "deploy to dev server"
         run: |
           ./scripts/render-devsync.sh
