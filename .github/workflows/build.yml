@@ -74,7 +74,7 @@ jobs:
         run: |
           mkdir -p artifacts
           cd server-artifact
-          zip -r ../artifacts/ttmb-server-${{needs.build.outputs.version}}.zip
+          zip -r ../artifacts/ttmb-server-${{needs.build.outputs.version}}.zip *
       - name: "deploy to dev server"
         run: |
           ./scripts/render-devsync.sh
