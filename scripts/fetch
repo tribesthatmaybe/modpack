@@ -23,6 +23,9 @@ CLIENT_URL="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-client")
 SERVER_NAME="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-server")).name' <<< "$JOB_RESPONSE")"
 SERVER_URL="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-server")).archive_download_url' <<< "$JOB_RESPONSE")"
 
+echo "Found client artifact ${CLIENT_NAME} at ${CLIENT_URL}"
+echo "Found server artifact ${SERVER_NAME} at ${SERVER_URL}"
+
 curl -s -L -H "Authorization: token ${GITHUB_TOKEN}" \
      -o "${ROOTDIR}/artifacts/${CLIENT_NAME}.zip" \
      "$CLIENT_URL"
