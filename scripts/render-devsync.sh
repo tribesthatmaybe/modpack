@@ -25,5 +25,5 @@ jinja2 -o "${ROOTDIR}/devsync.yml" \
        -D "api_host=${MULTICRAFT_API_HOST}" \
        -D "rcon_port=${RCON_PORT}" \
        -D "rcon_password=${RCON_PASSWORD}" \
-       -D "curseforge_token${CURSEFORGE_TOKEN}" \
+       -D "curseforge_token=${CURSEFORGE_TOKEN}" \
        "${ROOTDIR}/templates/devsync.yml.j2"
