@@ -36,7 +36,7 @@ jobs:
           path: "artifacts/github/server"
   deploy:
     if: github.ref == 'refs/heads/mainline'
-    needs: "test"
+    needs: "build"
     runs-on: ubuntu-latest
     env:
       STICKYPISTON_USER: "${{secrets.STICKYPISTON_USER}}"
