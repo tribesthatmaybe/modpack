@@ -57,7 +57,7 @@ class AdminWidget(object):
             if a_status == 'online':
                 sys.exit(0)
             else:
-                sys.exit(1)
+                sys.exit(2)
         elif action == 'online':
             status_response = self.mcapi("getServerStatus", self.config.server)
             print("players online  %s of %s" % (

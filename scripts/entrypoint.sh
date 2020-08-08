@@ -66,7 +66,8 @@ elif [ "$ACTION" == "devsync" ] ; then
     fi
     START="$(date +%s)"
     OFFLINE_THO=""
-    if ! /mnt/devtool/devtool.py control status 2> /dev/null | grep 'server is online' &> /dev/null ; then
+    STATUS=$(/mnt/devtool/devtool.py control status || true)
+    if [ "$STATUS" != 'server is online' ] ; then
         echo "Server is already offline"
         OFFLINE_THO=1
     else
@@ -100,7 +101,7 @@ elif [ "$ACTION" == "devsync" ] ; then
     START="$(date +%s)"
     READY="$OFFLINE_THO"
     while [ -z "$READY" ] ; do
-        if ! /mnt/devtool/devtool.py control status 2> /dev/null | grep 'server is online' &> /dev/null ; then
+        if [ "$(/mnt/devtool/devtool.py control status || true)" != "server is online" ] ; then
             READY=1
         else
             NOW="$(date +%s)"
