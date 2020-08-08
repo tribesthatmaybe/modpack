@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -e
+SCRIPTDIR=$( cd "${0%/*}" && pwd)
+ROOTDIR="${SCRIPTDIR%/*}"
+DOCKER_IMAGE="tribesthatmaybe/modpack:honk"
+
+problems() {
+    echo "Error: ${*}"
+    exit 1
+}
+
+if [ -z "$GITHUB_RUN_ID" ] || [ -z "$GITHUB_TOKEN" ] ; then
+    problems "This must be run within Github Actions"
+fi
+
+mkdir -p "${ROOTDIR}/artifacts"
+
+API_BASE="https://api.github.com/repos/tribesthatmaybe/modpack/actions/runs/"
+JOB_URL="${API_BASE}/${GITHUB_RUN_ID}/artifacts"
+
+JOB_RESPONSE="$(curl -s "$JOB_URL")"
+CLIENT_NAME="$(jq '.artifacts | .[] | select(.name | startswith("ttmb-client")).name' <<< "$JOB_RESPONSE")"
+CLIENT_URL="$(jq '.artifacts | .[] | select(.name | startswith("ttmb-client")).archive_download_url' <<< "$JOB_RESPONSE")"
+SERVER_NAME="$(jq '.artifacts | .[] | select(.name | startswith("ttmb-server")).name' <<< "$JOB_RESPONSE")"
+SERVER_URL="$(jq '.artifacts | .[] | select(.name | startswith("ttmb-server")).archive_download_url' <<< "$JOB_RESPONSE")"
+
+curl -s -L -H "Authorization: token ${GITHUB_TOKEN}" \
+     -o "${ROOTDIR}/artifacts/${CLIENT_NAME}" \
+     "$CLIENT_URL"
+curl -s -L -H "Authorization: token ${GITHUB_TOKEN}" \
+     -o "${ROOTDIR}/artifacts/${SERVER_NAME}" \
+     "$SERVER_URL"

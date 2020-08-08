@@ -1,12 +1,42 @@
-name: make-modpack
+name: "make-modpack"
 
 on:
   push:
     branches:
-      - mainline
+      - "mainline"
+  pull_request:
+    branches:
+      - "mainline"
 
 jobs:
   build:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v2"
+        with:
+          ref: "mainline"
+          fetch-depth: 1
+      - name: "generate config"
+        run: 'echo "twitch_token: ${{ secrets.CURSE_TOKEN }}" > config.yml'
+      - name: "build client thing"
+        run: "make github_client"
+      - name: "build server thing"
+        run: "make github_server"
+      - name: "set version for artifact upload"
+        run: "echo ::set-env name=version::$(cat $(pwd)/.version)"
+      - name: "upload artifact modpack i guess"
+        uses: "actions/upload-artifact@v2"
+        with:
+          name: "ttmb-client-${{env.version}}"
+          path: "artifacts/github/client"
+      - name: "upload server modpack i guess"
+        uses: "actions/upload-artifact@v2"
+        with:
+          name: "ttmb-server-${{env.version}}"
+          path: "artifacts/github/server"
+  deploy:
+    if: github.ref == 'refs/heads/mainline'
+    needs: "test"
     runs-on: ubuntu-latest
     env:
       STICKYPISTON_USER: "${{secrets.STICKYPISTON_USER}}"
@@ -23,24 +53,8 @@ jobs:
         with:
           ref: mainline
           fetch-depth: 1
-      - name: generate config
-        run: 'echo "twitch_token: ${{ secrets.CURSE_TOKEN }}" > config.yml'
-      - name: build client thing
-        run: make github_client
-      - name: build server thing
-        run: make github_server
-      - name: set version for artifact upload
-        run: echo ::set-env name=version::$(cat $(pwd)/.version)
-      - name: upload artifact modpack i guess
-        uses: actions/upload-artifact@v2
-        with:
-          name: ttmb-client-${{env.version}}
-          path: artifacts/github/client
-      - name: upload server modpack i guess
-        uses: actions/upload-artifact@v2
-        with:
-          name: ttmb-server-${{env.version}}
-          path: artifacts/github/server
+      - name: "fetch artifacts"
+        run: "./scripts/fetch"
       - name: "deploy to dev server"
         run: |
           ./scripts/render-devsync.sh
