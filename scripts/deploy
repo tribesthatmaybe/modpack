@@ -2,10 +2,10 @@
 set -e
 SCRIPTDIR=$( cd "${0%/*}" && pwd)
 ROOTDIR="${SCRIPTDIR%/*}"
+DOCKER_IMAGE="tribesthatmaybe/modpack:honk"
 
 usage() {
     echo "${0} <version>"
-    echo "       -p path     alternate location of artifacts"
     exit 1
 }
 
@@ -27,7 +27,9 @@ if [ ! -e "$ARTIFACT" ] ; then
     problems "${ARTIFACT} does not exist (bad version?)"
 fi
 
-make -C "$ROOTDIR" container_build
+if ! docker inspect "$DOCKER_IMAGE" &> /dev/null ; then
+    make -C "$ROOTDIR" container_build
+fi
 docker run \
        --rm \
        -v "${ROOTDIR}:/mnt" \

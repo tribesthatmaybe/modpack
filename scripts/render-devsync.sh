@@ -21,8 +21,8 @@ jinja2 -o "${ROOTDIR}/devsync.yml" \
        -D "stickypiston_server=${STICKYPISTON_SERVER}" \
        -D "stickypiston_host=${STICKYPISTON_HOST}" \
        -D "ftp_password=${FTP_PASSWORD}" \
-       -D "api_key=${MULTICRAFT_API_KEY}" \
-       -D "api_host=${MULTICRAFT_API_HOST}" \
+       -D "multicraft_api_key=${MULTICRAFT_API_KEY}" \
+       -D "multicraft_api_host=${MULTICRAFT_API_HOST}" \
        -D "rcon_port=${RCON_PORT}" \
        -D "rcon_password=${RCON_PASSWORD}" \
        -D "curseforge_token=${CURSEFORGE_TOKEN}" \

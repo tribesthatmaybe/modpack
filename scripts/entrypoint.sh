@@ -66,7 +66,8 @@ elif [ "$ACTION" == "devsync" ] ; then
     fi
     START="$(date +%s)"
     OFFLINE_THO=""
-    if ! /mnt/devtool/devtool.py control status &> /dev/null ; then
+    if ! /mnt/devtool/devtool.py control status 2> /dev/null | grep 'server is online' &> /dev/null ; then
+        echo "Server is already offline"
         OFFLINE_THO=1
     else
         /mnt/devtool/devtool.py chat "log off now; updating to ${VERSION}"
@@ -99,7 +100,7 @@ elif [ "$ACTION" == "devsync" ] ; then
     START="$(date +%s)"
     READY="$OFFLINE_THO"
     while [ -z "$READY" ] ; do
-        if ! /mnt/devtool/devtool.py control status &> /dev/null ; then
+        if ! /mnt/devtool/devtool.py control status 2> /dev/null | grep 'server is online' &> /dev/null ; then
             READY=1
         else
             NOW="$(date +%s)"
@@ -116,11 +117,16 @@ elif [ "$ACTION" == "devsync" ] ; then
     /mnt/devtool/devtool.py control start
 elif [ "$ACTION" == "upload" ] ; then
     echo "Uploading??????"
+    if [ "$#" != 2 ] ; then
+        problems "must specify version and release"
+    fi
     VERSION="$1"
+    RELEASE="$2"
+    shift 2
     if [ -z "$VERSION" ] ; then
         problems "must specify version"
     fi
-    /mnt/devtool/devtool.py upload "$VERSION"
+    /mnt/devtool/devtool.py upload "$VERSION" --release "$RELEASE"
 else
     problems "what u doin"
 fi
