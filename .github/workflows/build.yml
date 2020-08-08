@@ -50,12 +50,20 @@ jobs:
       CURSEFORGE_TOKEN: "${{secrets.CURSEFORGE_TOKEN}}"
       GITHUB_TOKEN: "${{secrets.GITHUB_TOKEN}}"
     steps:
-      - uses: actions/checkout@v2
+      - uses: "actions/checkout@v2"
         with:
-          ref: mainline
+          ref: "mainline"
           fetch-depth: 1
-      - name: "fetch artifacts"
-        run: "./scripts/fetch"
+      - name: "fetch server artifact"
+        uses: "actions/download-artifact@v2"
+        with:
+          name: "ttmb-server-${{jobs.build.env.version}}"
+          path: "server-artifact"
+      - name: "recompress server artifact because reasons"
+        run: |
+          mkdir -p artifacts
+          cd server-artifact
+          zip -r ../artifacts/ttmb-server-${{jobs.build.env.version}}.zip
       - name: "deploy to dev server"
         run: |
           ./scripts/render-devsync.sh
