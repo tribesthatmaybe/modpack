@@ -1,7 +1,7 @@
 .PHONY: container_build container_shell build server clean distclean client github_client github_server loregen
 
 DOCKER_IMAGE=tribesthatmaybe/modpack
-VERSION=$(shell docker run -v $(shell pwd):/mnt otakup0pe/avakas show /mnt --pre-build 2> /dev/null)
+VERSION=$(shell docker run -v $(shell pwd):/mnt otakup0pe/avakas show /mnt --pre-build --pre-build-prefix=alpha --pre-build-date --build 2> /dev/null)
 ARTIFACTS=$(shell pwd)/artifacts
 ifndef VIRTUAL_ENV
 CIENV = $(shell pwd)/.venv/bin/
