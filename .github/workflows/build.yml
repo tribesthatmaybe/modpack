@@ -11,27 +11,36 @@ on:
 jobs:
   build:
     runs-on: "ubuntu-latest"
+    outputs:
+      version: ${{steps.version_meta.outputs.version}}
     steps:
-      - uses: "actions/checkout@v2"
+      - id: "checkout"
+        uses: "actions/checkout@v2"
         with:
           ref: "mainline"
           fetch-depth: 1
       - name: "generate config"
+        id: "configgen"
         run: 'echo "twitch_token: ${{ secrets.CURSE_TOKEN }}" > config.yml'
       - name: "build client thing"
+        id: "client_build"
         run: "make github_client"
       - name: "build server thing"
+        id: "server_build"
         run: "make github_server"
       - name: "set version for artifact upload"
+        id: "version_meta"
         run: |
           echo ::set-env name=version::$(cat $(pwd)/.version)
           echo ::set-output name=version::$(cat $(pwd)/.version)
       - name: "upload artifact modpack i guess"
+        id: "client_upload"
         uses: "actions/upload-artifact@v2"
         with:
           name: "ttmb-client-${{env.version}}"
           path: "artifacts/github/client"
       - name: "upload server modpack i guess"
+        id: "server_upload"
         uses: "actions/upload-artifact@v2"
         with:
           name: "ttmb-server-${{env.version}}"
@@ -59,14 +68,14 @@ jobs:
       - name: "fetch server artifact"
         uses: "actions/download-artifact@v2"
         with:
-          name: "ttmb-server-${{env.INPUT_version}}"
+          name: "ttmb-server-${{needs.build.outputs.version}}"
           path: "server-artifact"
       - name: "recompress server artifact because reasons"
         run: |
           mkdir -p artifacts
           cd server-artifact
-          zip -r ../artifacts/ttmb-server-${{env.INPUT_version}}.zip
+          zip -r ../artifacts/ttmb-server-${{needs.build.outputs.version}}.zip
       - name: "deploy to dev server"
         run: |
           ./scripts/render-devsync.sh
-          ./scripts/deploy ${{env.version}}
+          ./scripts/deploy ${{needs.build.outputs.version}}
