@@ -12,6 +12,10 @@ problems() {
 if ! command -v jinja2-cli &> /dev/null ; then
     pip install jinja2-cli
 fi
+
+if [ -n "$CI" ] ; then
+    export PATH="${HOME}/.local/bin/:${PATH}"
+fi
 jinja2 -o "${ROOTDIR}/devsync.yml" \
        -D "stickypiston_user=${STICKYPISTON_USER}" \
        -D "stickypiston_server=${STICKYPISTON_SERVER}" \
