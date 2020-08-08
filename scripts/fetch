@@ -17,7 +17,21 @@ mkdir -p "${ROOTDIR}/artifacts"
 API_BASE="https://api.github.com/repos/tribesthatmaybe/modpack/actions/runs/"
 JOB_URL="${API_BASE}${GITHUB_RUN_ID}/artifacts"
 
-JOB_RESPONSE="$(curl -s "$JOB_URL")"
+START="$(date +%s)"
+ARTIFACT_COUNT="0"
+while [ "$ARTIFACT_COUNT" == "0" ] ; do
+    JOB_RESPONSE="$(curl -s "$JOB_URL")"
+    ARTIFACT_COUNT="$(jq -r '.total_count' <<<  "$JOB_RESPONSE")"
+    if [ "$ARTIFACT_COUNT" == "0" ] ; then
+        NOW="$(date +%s)"
+        if [ $((NOW - START)) -gt 90 ] ; then
+            problems "No artifacts found"
+        else
+            sleep 5
+        fi
+    fi
+done
+
 CLIENT_NAME="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-client")).name' <<< "$JOB_RESPONSE")"
 CLIENT_URL="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-client")).archive_download_url' <<< "$JOB_RESPONSE")"
 SERVER_NAME="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-server")).name' <<< "$JOB_RESPONSE")"
