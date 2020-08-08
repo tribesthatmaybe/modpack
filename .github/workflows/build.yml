@@ -20,7 +20,7 @@ jobs:
       - name: build server thing
         run: make github_server
       - name: set version for artifact upload
-        run: echo ::set-env name=version::$(docker run -v $(pwd):/mnt otakup0pe/avakas show /mnt --pre-build --pre-build-prefix=alpha --pre-build-date --build 2>/dev/null)
+        run: echo ::set-env name=version::$(cat $(pwd)/.version)
       - name: upload artifact modpack i guess
         uses: actions/upload-artifact@v2
         with:
