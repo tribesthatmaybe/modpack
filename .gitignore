@@ -9,3 +9,4 @@ src/structures/active/lore_*.rcig
 packmaker.yml
 devsync.yml
 devtool/__pycache__/
+.version

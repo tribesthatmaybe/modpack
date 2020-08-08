@@ -1,6 +1,5 @@
-.PHONY: container_build container_shell build server clean distclean client github_client github_server loregen
+.PHONY: container_build container_shell build server clean distclean client github_client github_server loregen versiongen
 
-VERSION=$(shell docker run -v $(shell pwd):/mnt otakup0pe/avakas show /mnt --pre-build --pre-build-prefix=alpha --pre-build-date --build 2> /dev/null)
 ARTIFACTS=$(shell pwd)/artifacts
 ifndef VIRTUAL_ENV
 CIENV = $(shell pwd)/.venv/bin/
@@ -9,9 +8,14 @@ CIENV = $(VIRTUAL_ENV)/bin/
 endif
 
 DOCKER_IMAGE=tribesthatmaybe/modpack:honk
+
+versiongen:
+	docker run -v $(shell pwd):/mnt otakup0pe/avakas show /mnt \
+		--pre-build --pre-build-prefix=alpha --pre-build-date --build \
+		2> /dev/null 1> $(shell pwd)/.version
+
 container_build:
 	docker build \
-		--label VERSION=$(VERSION) \
 		--tag $(DOCKER_IMAGE) \
 		.
 container_shell: container_build
@@ -21,7 +25,7 @@ container_shell: container_build
 		$(DOCKER_IMAGE) \
 		shell
 
-client: container_build loregen
+client: container_build versiongen loregen
 	rm -rf build/curseforge/overrides
 	docker run \
 		--rm \
@@ -29,9 +33,10 @@ client: container_build loregen
 		$(DOCKER_IMAGE) \
 		build
 	mkdir -p artifacts
-	cp build/release/ttmb-$(VERSION).zip $(ARTIFACTS)/ttmb-client-$(VERSION).zip
+	VERSION=$$(cat $(shell pwd)/.version) ; \
+	cp build/release/ttmb-$${VERSION}.zip $(ARTIFACTS)/ttmb-client-$${VERSION}.zip
 
-server: container_build loregen
+server: container_build versiongen loregen
 	rm -f build/server/mods/* $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 	docker run \
 		--rm \
@@ -39,12 +44,13 @@ server: container_build loregen
 		$(DOCKER_IMAGE) \
 		server
 	mkdir -p artifacts
-	cd build/server && zip -r $(ARTIFACTS)/ttmb-server-$(VERSION).zip *
+	VERSION=$$(cat $(shell pwd)/.version) ; \
+	cd build/server && zip -r $(ARTIFACTS)/ttmb-server-$${VERSION}.zip *
 
 build: client server
 
 clean:
-	rm -rf build/server build/release
+	rm -rf build/server build/release .version
 	rm -f src/config/loreexpansion/lore/*.json src/structures/active/lore_*.rcig
 
 distclean: clean
@@ -52,11 +58,13 @@ distclean: clean
 
 github_client: client
 	mkdir -p artifacts/github/client
-	cd $(ARTIFACTS)/github/client && unzip $(ARTIFACTS)/ttmb-client-$(VERSION).zip
+	VERSION=$$(cat $(shell pwd)/.version) ; \
+	cd $(ARTIFACTS)/github/client && unzip $(ARTIFACTS)/ttmb-client-$${VERSION}.zip
 
 github_server: server
 	mkdir -p artifacts/github/server
-	cd $(ARTIFACTS)/github/server && unzip $(ARTIFACTS)/ttmb-server-$(VERSION).zip
+	VERSION=$$(cat $(shell pwd)/.version) ; \
+	cd $(ARTIFACTS)/github/server && unzip $(ARTIFACTS)/ttmb-server-$${VERSION}.zip
 
 loregen: container_build
 	rm -rf src/config/loreexpansion/lore/*.json src/structures/active/lore_*.rcig
@@ -66,17 +74,3 @@ loregen: container_build
 		-v "$(shell pwd):/mnt" \
 		$(DOCKER_IMAGE) \
 		loregen
-
-devsync: container_build
-	docker run \
-		--rm \
-		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE) \
-		devsync $(VERSION)
-
-upload: container_build
-	docker run \
-		--rm \
-		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE) \
-		upload $(VERSION)
