@@ -23,6 +23,12 @@ CLIENT_URL="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-client")
 SERVER_NAME="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-server")).name' <<< "$JOB_RESPONSE")"
 SERVER_URL="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-server")).archive_download_url' <<< "$JOB_RESPONSE")"
 
+echo "$JOB_RESPONSE"
+
+if [ -z "$CLIENT_NAME" ] || [ -z "$CLIENT_URL" ] || \
+       [ -z "$SERVER_NAME" ] || [ -z "$SERVER_URL" ] ; then
+    problems "Unable to parse artifacts lookup"
+fi
 echo "Found client artifact ${CLIENT_NAME} at ${CLIENT_URL}"
 echo "Found server artifact ${SERVER_NAME} at ${SERVER_URL}"
 
