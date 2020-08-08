@@ -10,7 +10,7 @@ problems() {
 }
 
 if ! command -v jinja2-cli &> /dev/null ; then
-    problems "jinja2-cli must be installed"
+    pip install jinja2-cli
 fi
 jinja2 -o "${ROOTDIR}/devsync.yml" \
        -D "stickypiston_user=${STICKYPISTON_USER}" \
