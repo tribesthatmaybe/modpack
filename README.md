@@ -20,6 +20,10 @@ Adding and removing mods is done by editing the [packmaker](https://packmaker.re
 
 Configuration for mods can be done by modifying (or creating) files in the [config](tree/mainline/src/config) directory. By using the [copy paste](https://www.curseforge.com/minecraft/mc-mods/copy-paste) mod it is possible to ensure that files will appear in new worlds as well. We use this for [customnpcs](http://www.kodevelopment.nl/minecraft/customnpcs) clones.
 
+## Release Management
+
+Throw some words in here about auto bumping.
+
 # Building the modpack locally
 
 You've got gumption, kid. I like that.
