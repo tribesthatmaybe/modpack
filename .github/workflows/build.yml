@@ -59,10 +59,9 @@ jobs:
         uses: "actions/setup-python@v2"
         with:
           python-version: "3.8"
-      - name: "install avakas"
-        run: "pip install avakas"
       - name: "Maybe bump version"
         run: |
+            run pip install avakas
             git config user.email noreply@tribesthatmay.be
             git config user.name "An Automaton"
             git remote set-url origin "$(git config --get remote.origin.url | sed 's#http.*com/#git@github.com:#g')"
