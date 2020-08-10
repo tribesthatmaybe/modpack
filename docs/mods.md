@@ -184,3 +184,7 @@
 | [weissalbedo](https://www.curseforge.com/minecraft/mc-mods/weissalbedo) | All Rights | [bitbucket](https://bitbucket.org/weissmoon/weissalbedo/src/master/) |
 | [dropt](https://www.curseforge.com/minecraft/mc-mods/dropt) | Apache | [github](https://github.com/codetaylor/dropt) |
 | [athenaeum](https://www.curseforge.com/minecraft/mc-mods/athenaeum) | Apache | [github](https://github.com/codetaylor/athenaeum) |
+| [tinkers-jei](https://www.curseforge.com/minecraft/mc-mods/tinkers-jei) | MIT | [github](https://github.com/PssbleTrngle/TinkersJEI) |
+| [manatweaks](https://www.curseforge.com/minecraft/mc-mods/manatweaks) | MIT | None ???? |
+| [tinkers reforged](https://www.curseforge.com/minecraft/mc-mods/tinkers-reforged) | All Rights | [github](https://github.com/Mrthomas20121-Mods/Tinkers-Reforged) |
+| [crafttweaker-utils](https://www.curseforge.com/minecraft/mc-mods/crafttweaker-utils) | GPL | [github](https://github.com/BrisingrAerowing/CraftTweakerUtils) |

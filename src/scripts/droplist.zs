@@ -182,19 +182,255 @@ var NailsTho = [
     <toughasnails:jelled_slime_boots>,
     <toughasnails:jelled_slime>,
     <toughasnails:ice_cube>,
-    <toughasnails:magma_shard>
+    <toughasnails:magma_shard>,
+    <toughasnails:campfire>
 ] as IItemStack[];
 for widget in NailsTho {
   recipes.remove(widget);
   mods.jei.JEI.removeAndHide(widget);
 }
 
-// too many tools
+//// too many tools
 var tooManyTools = [
-
+    <microblockcbe:saw_stone>,     // these cause blocks which can corrupt the world
+    <microblockcbe:saw_diamond>,   // when you light them on fire. and we will
+    <microblockcbe:saw_iron>,      // always light blocks on fire.
+    <botania:manasteelpick>,
+    <botania:elementiumpick>,
+    <botania:glasspick>,
+    <cyclicmagic:netherbrick_pickaxe>,
+    <immersiveengineering:pickaxe_steel>,
+    <mysticalworld:copper_pickaxe>,
+    <mysticalworld:silver_pickaxe>,
+    <mysticalworld:amethyst_pickaxe>,
+    <plants2:crystal_pickaxe>,
+    <plants2:dark_crystal_pickaxe>,
+    <botania:manasteelshovel>,
+    <botania:elementiumshovel>,
+    <cyclicmagic:netherbrick_spade>,
+    <immersiveengineering:shovel_steel>,
+    <mysticalworld:copper_shovel>,
+    <mysticalworld:silver_shovel>,
+    <mysticalworld:amethyst_shovel>,
+    <plants2:crystal_shovel>,
+    <plants2:dark_crystal_shovel>,
+    <cyclicmagic:netherbrick_hoe>,
+    <immersiveengineering:hoe_steel>,
+    <mysticalworld:copper_hoe>,
+    <mysticalworld:silver_hoe>,
+    <mysticalworld:amethyst_hoe>,
+    <plants2:crystal_hoe>,
+    <plants2:dark_crystal_hoe>,
+    <botania:elementiumaxe>,
+    <botania:manasteelaxe>,
+    <cyclicmagic:netherbrick_axe>,
+    <immersiveengineering:axe_steel>,
+    <mysticalworld:copper_axe>,
+    <mysticalworld:silver_axe>,
+    <mysticalworld:amethyst_axe>,
+    <plants2:crystal_axe>,
+    <plants2:dark_crystal_axe>,
+    <cyclicmagic:tool_harvest_crops>,
+    <cyclicmagic:tool_harvest_weeds>,
+    <plants2:dark_crystal_sword>,
+    <plants2:crystal_sword>,
+    <botania:manasteelsword>
 ] as IItemStack[];
 
 for widget in tooManyTools {
+  logger.logInfo("dropping " + widget.name);
   recipes.remove(widget);
   mods.jei.JEI.removeAndHide(widget);
+}
+
+//// too many potions
+// not using tough as nails temperature mechanic
+var tooManyPotions = [
+    "toughasnails:cold_resistance_type",
+    "toughasnails:long_cold_resistance_type",
+    "toughasnails:heat_resistance_type",
+    "toughasnails:long_heat_resistance_type"
+] as string[];
+
+for potion in tooManyPotions {
+  var p_potion = <minecraft:potion>.withTag({Potion: potion});
+  var p_lingering = <minecraft:lingering_potion>.withTag({Potion: potion});
+  var p_splash = <minecraft:splash_potion>.withTag({Potion: potion});
+  mods.jei.JEI.removeAndHide(p_potion);
+  mods.jei.JEI.removeAndHide(p_lingering);
+  mods.jei.JEI.removeAndHide(p_splash);
+}
+// cold resistance
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "awkward"}), <toughasnails:ice_cube>);
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "cold_resistance_type"}), <minecraft:redstone>);
+// heat resistance
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "awkward"}), <toughasnails:magma_shard>);
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "heat_resistance_type"}), <minecraft:redstone>);
+// lingering cold resistance
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "cold_resistance_type"}), <minecraft:dragon_breath>);
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "cold_resistance_type"}), <minecraft:dragon_breath>);
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "cold_resistance_type"}), <toughasnails:ice_cube>);
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "cold_resistance_type"}), <minecraft:redstone>);
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "long_cold_resistance_type"}), <minecraft:dragon_breath>);
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "long_cold_resistance_type"}), <minecraft:dragon_breath>);
+// lingering heat resistance
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "heat_resistance_type"}), <minecraft:dragon_breath>);
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "heat_resistance_type"}), <minecraft:dragon_breath>);
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "heat_resistance_type"}), <toughasnails:magma_shard>);
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "heat_resistance_type"}), <minecraft:redstone>);
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "long_heat_resistance_type"}), <minecraft:dragon_breath>);
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "long_heat_resistance_type"}), <minecraft:dragon_breath>);
+// splash cold resistance
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "cold_resistance_type"}), <minecraft:gunpowder>);
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "cold_resistance_type"}), <minecraft:gunpowder>);
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "awkward"}), <toughasnails:ice_cube>);
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "cold_resistance_type"}), <minecraft:redstone>);
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "long_cold_resistance_type"}), <minecraft:gunpowder>);
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "cold_resistance_type"}), <minecraft:gunpowder>);
+// splash heat resistance
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "heat_resistance_type"}), <minecraft:gunpowder>);
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "heat_resistance_type"}), <minecraft:gunpowder>);
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "awkward"}), <toughasnails:magma_shard>);
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "heat_resistance_type"}), <minecraft:redstone>);
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "long_heat_resistance_type"}), <minecraft:gunpowder>);
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "heat_resistance_type"}), <minecraft:gunpowder>);
+
+// potioncore for effects only
+var potionCoreTho = [
+    "saturation",
+    "strong_saturation",
+    "wither",
+    "strong_wither",
+    "long_wither",
+    "hunger",
+    "strong_hunger",
+    "long_hunger",
+    "blindness",
+    "strong_blindness",
+    "long_blindness",
+    "nausea",
+    "long_nausea",
+    "levitation",
+    "strong_levitation",
+    "long_levitation",
+    "absorption",
+    "strong_absorption",
+    "long_absorption",
+    "glowing",
+    "long_glowing",
+    "health_boost",
+    "strong_health_boost",
+    "long_health_boost",
+    "unluck",
+    "love",
+    "repair",
+    "strong_repair",
+    "long_repair",
+    "flight",
+    "long_flight",
+    "extension",
+    "strong_extension",
+    "long_extension",
+    "recoil",
+    "strong_recoil",
+    "long_recoil",
+    "broken_magic_shield",
+    "strong_broken_magic_shield",
+    "long_broken_magic_shield",
+    "iron_skin",
+    "strong_iron_skin",
+    "long_iron_skin",
+    "purity",
+    "long_purity",
+    "reach",
+    "strong_reach",
+    "long_reach",
+    "diamond_skin",
+    "strong_diamond_skin",
+    "long_diamond_skin",
+    "teleport",
+    "strong_teleport",
+    "teleport_surface",
+    "magic_focus",
+    "strong_magic_focus",
+    "long_magic_focus",
+    "step_up",
+    "cure",
+    "long_step_up",
+    "strong_step_up",
+    "drown",
+    "long_drown",
+    "teleport_spawn",
+    "disorganization",
+    "climb",
+    "long_climb",
+    "perplexity",
+    "long_perplexity",
+    "rust",
+    "strong_rust",
+    "long_rust",
+    "vulnerable",
+    "long_vulnerable",
+    "strong_vulnerable",
+    "explode",
+    "strong_explode",
+    "solid_core",
+    "long_solid_core",
+    "strong_solid_core",
+    "fire",
+    "strong_fire",
+    "lightning",
+    "magic_inhibition",
+    "strong_magic_inhibition",
+    "long_magic_inhibition",
+    "chance",
+    "strong_chance",
+    "invert",
+    "weight",
+    "strong_weight",
+    "long_weight",
+    "launch",
+    "strong_launch",
+    "dispel",
+    "revival",
+    "strong_revival",
+    "long_revival",
+    "klutz",
+    "long_klutz",
+    "strong_klutz",
+    "bless",
+    "strong_bless",
+    "broken_armor",
+    "strong_broken_armor",
+    "long_broken_armor",
+    "magic_shield",
+    "strong_magic_shield",
+    "long_magic_shield",
+    "slow_fall",
+    "strong_slow_fall",
+    "long_slow_fall",
+    "antidote",
+    "long_antidote",
+    "spin",
+    "strong_spin",
+    "long_spin",
+    "curse",
+    "strong_curse",
+    "burst",
+    "strong_burst",
+    "archery",
+    "strong_archery",
+    "long_archery"
+] as string[];
+
+for potion in potionCoreTho {
+  var n_potion = "potioncore:" + potion;
+  var p_potion = <minecraft:potion>.withTag({Potion: n_potion});
+  var p_lingering = <minecraft:lingering_potion>.withTag({Potion: n_potion});
+  var p_splash = <minecraft:splash_potion>.withTag({Potion: n_potion});
+  var p_arrow = <minecraft:tipped_arrow>.withTag({Potion: n_potion});
+  mods.jei.JEI.removeAndHide(p_potion);
+  mods.jei.JEI.removeAndHide(p_lingering);
+  mods.jei.JEI.removeAndHide(p_splash);
+  mods.jei.JEI.removeAndHide(p_arrow);
 }
