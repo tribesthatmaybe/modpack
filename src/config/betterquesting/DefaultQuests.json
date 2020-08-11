@@ -5559,6 +5559,718 @@
           }
         }
       }
+    },
+    "63:10": {
+      "questID:3": 63,
+      "preRequisites:11": [
+        45
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "bibliocraft:table",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Place For Things",
+          "desc:8": "Tables can be used to keep all kinds of things on it. They can also be used for the pure aesthetic of having tables. There are a variety of tables which can be made in this shard of the multiverse, so pick the one you like, and put something on it. Many tables can be placed next to each other to create larger tables. In case you have friends over, and they want to place things on the table.\n\nPeople tend to have tables in places where they hang out."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:table_dark_oak",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:table_outdoor",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:modern_table",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "engineersdecor:steel_table",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "64:10": {
+      "questID:3": 64,
+      "preRequisites:11": [
+        43
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:grill",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "I just want to grill.",
+          "desc:8": "Everything may be terrible but at least you can grill up some decent eats.\n\nYou can cook a variety of meats on this grill. Great for entertaining."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:grill",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:bluebeeritem",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:redbeeritem",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:riverchardonnayitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:swampmerlotitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "65:10": {
+      "questID:3": 65,
+      "preRequisites:11": [
+        63
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:tv",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "The revolution will not be televised",
+          "desc:8": "You can use this TV to display looped animated GIFs.\n\nTo set the GIFs, right click it with an empty hand. You can also turn it on and off from this display.\n\nYou can right click with the remote in the direction of the TV to change the channel. Shift right click to turn it off/on."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:tv",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:tv_remote",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "66:10": {
+      "questID:3": 66,
+      "preRequisites:11": [
+        45
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "quark:paper_wall",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Divide the Room",
+          "desc:8": "Sometimes walls are too much. Sometimes you just need a little visual barrier between parts of your home.\n\nThe paper wall can be used for this. Lightweight, easy to make with what can be found in the Block Rock Desert, and (most importantly) classy as all get out."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "quark:paper_wall",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "quark:paper_lantern",
+              "Count:3": 2,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "67:10": {
+      "questID:3": 67,
+      "preRequisites:11": [
+        14
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "quark:colored_flowerpot_white",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Smell the roses",
+          "desc:8": "Flower pots are nice. You can put flowers in them and add a splash of color to your home, or your container."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "quark:colored_flowerpot_white",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "plants2:cosmetic_1",
+              "Count:3": 1,
+              "Damage:2": 13,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:red_flower",
+              "Count:3": 1,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "plants2:cosmetic_0",
+              "Count:3": 1,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "68:10": {
+      "questID:3": 68,
+      "preRequisites:11": [
+        14
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "quark:colored_item_frame",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Place to Display Things",
+          "desc:8": "You can put things you would like to show off in the item frame.  You can dye the frame if you would like.\n\nYou can place an item in the frame by holding the item in your hand and right clicking on the placed frame. You can then rotate the item by right clicking it. If you would like to get the item back then punch it.\n\nPunching an empty frame will knock if off the wall. If you find yourself doing this often you may wish to speak to a therapist.\n\nThe reward for this quest is a painting. Upon placing it on the wall you get to choose the art."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:item_frame",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:painting",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "69:10": {
+      "questID:3": 69,
+      "preRequisites:11": [
+        42
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "chisel:carpet_purple",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Really ties the room together",
+          "desc:8": "Rugs can really tie the room together. Carpets are a decent simulacrum in this simulacrum of spectacles.\n\nYou can create carpet out of any color of wool. Once you get the right chisel, you can create patterened carpet too.\n\nThe reward is a door mat. Place it outside of your home. Upon doing so you will be prompted to write a welcome message."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:carpet",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:door_mat",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:door_mat",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:door_mat",
+              "Count:3": 1,
+              "Damage:2": 15,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "70:10": {
+      "questID:3": 70,
+      "preRequisites:11": [
+        69
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "fairylights:pennant_bunting",
+            "Count:3": 1,
+            "tag:10": {
+              "pattern:9": {
+                "0:10": {
+                  "color:1": 1
+                }
+              },
+              "text:10": {
+                "styling:7": [],
+                "value:8": ""
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "All the pretty flags, all the pretty lights",
+          "desc:8": "The fairy lights mod gives you a bunch of pretty things you can make. Craft individual penant flags, bunting, tinsel, or lights. You can then combine them into a string.  You can even mix and match different colors of the same type.\n\n\nYou can then string them together using two iron ingots and a piece of string. The iron ingots go in the upper right and left of a crafting table. The string goes in the middle. Place up to six bits (lights, penant flags, etc) in the lower six slots. This will give you a single string of flags/lights/whatever that can stretch for up to 32 blocks.\n\nTo place the strings, right click on a block (most work for this purpose). You can then right click on a second block to complete the placement. \n\nYou can turn the lights on/off by right clicking on them with an empty hand.\n\nYou can tighten the slack of the string by right clicking them with a stick. You can increase the slack by right clicking with a piece of string."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:pennant",
+              "Count:3": 3,
+              "Damage:2": 15,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:pennant",
+              "Count:3": 3,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:pennant",
+              "Count:3": 3,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:light",
+              "Count:3": 6,
+              "Damage:2": 142,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:light",
+              "Count:3": 6,
+              "Damage:2": 94,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:light",
+              "Count:3": 6,
+              "Damage:2": 238,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -5855,6 +6567,62 @@
           "y:3": -72,
           "id:3": 45,
           "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -36,
+          "id:3": 63,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -36,
+          "id:3": 64,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": -36,
+          "id:3": 65,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": -72,
+          "id:3": 66,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -144,
+          "id:3": 67,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -144,
+          "id:3": 68,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -108,
+          "id:3": 69,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -36,
+          "id:3": 70,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 4,
@@ -5873,7 +6641,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "There are may ways to perish and to be comfortable in this multiverse."
+          "desc:8": "There are may ways to perish and to be comfortable in this multiverse.\n\nIt\u0027s important to find pleasure in the simple things."
         }
       },
       "order:3": 6
