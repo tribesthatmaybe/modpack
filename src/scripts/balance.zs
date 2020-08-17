@@ -1,20 +1,30 @@
 import crafttweaker.item.IItemStack;
 // some things get removed for game balance reasons
 
-
-// we may want these in creative but
-// not allow them to be built
+//// too much storage
+// we prefer iron chest remixes, storage drawers, ae2
+// if we need these in creative need to /give them
 val tooMuchStorage = [
    <actuallyadditions:block_giant_chest>,
    <actuallyadditions:block_giant_chest_medium>,
    <actuallyadditions:block_giant_chest_large>,
    <extrautils2:drum:1>,
    <extrautils2:drum:2>,
-   <extrautils2:drum:3>
+   <extrautils2:drum:3>,
+   <mekanism:basicblock:6>.withTag({tier:0}),
+   <mekanism:basicblock:6>.withTag({tier:1}),
+   <mekanism:basicblock:6>.withTag({tier:2}),
+   <mekanism:basicblock:6>.withTag({tier:3}),
+   <mekanism:basicblock:6>.withTag({tier:4})
 ] as IItemStack[];
 
+for widget in tooMuchStorage {
+  recipes.remove(widget);
+  mods.jei.JEI.removeAndHide(widget);
+}
+
 // do not want these at all
-val unncesaryStorage = [
+val unncesaryThings = [
    <vehicle:fuel_drum>,
    <vehicle:industrial_fuel_drum>,
    <actuallyadditions:item_chest_to_crate_upgrade>,
@@ -23,14 +33,32 @@ val unncesaryStorage = [
    <cgm:workbench>,         // these are created differently,
    <cgm:handgun>,           // just use the revolver lol
    <cgm:rifle>,             // just use the railgun lol
-   <cgm:advanced_ammo>      // only used by rifle
+   <cgm:advanced_ammo>,     // only used by rifle
+   <cfm:counter:*>,         // prefer cooking for blockheads
+   <cfm:counter_sink:*>,
+   <cfm:counter_drawer:*>,
+   <cfm:cabinet_kitchen:*>,
+   <cfm:oven>,
+   <cfm:microwave>,
+   <cfm:toaster>,
+   <cfm:item_bread_slice>,
+   <cfm:chopping_board>,
+   <cfm:item_toast>,
+   <cfm:item_knife>,
+   <cfm:item_cool_pack>,
+   <cfm:dishwasher>,        // kinda op tho
+   <cfm:washing_machine>,
+   <cfm:fairy_light>,       // got a whole mod for this
+   <cfm:bin>,               // prefer extra utils trash
+   <cyclicmagic:trash>,
+   <cfm:crate:*>,           // dupe
+   <cfm:computer>,          // op kinda
+   <cfm:printer>,           // def op
+   <cfm:electric_fence>,    // just use ie tho
+   <toughasnails:fruit_juice:*>   // use pams
 ] as IItemStack[];
 
-for widget in tooMuchStorage {
-  recipes.remove(widget);
-}
-
-for widget in unncesaryStorage {
+for widget in unncesaryThings {
   recipes.remove(widget);
   mods.jei.JEI.removeAndHide(widget);
 }
