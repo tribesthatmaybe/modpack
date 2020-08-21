@@ -21,9 +21,20 @@ def loot_entry(lore_id, category):
             'count': 1,
             'tag': {
                 'nbtType': 'compound',
-                'lore': {
-                    'id': lore_id,
-                    'category': category
+                'nbt': {
+                    'lore': {
+                        'nbtType': 'compound',
+                        'nbt': {
+                            'id': {
+                                'nbtType': 'string',
+                                'nbt': lore_id.replace(' ', '').lower()
+                            },
+                            'category': {
+                                'nbtType': 'string',
+                                'nbt': category
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -1,6 +1,8 @@
-// need to be explicit about some of the plants based items
-// this is especially important with black kauri wood as it
-// is the only native block rock desert tree
+import mods.appliedenergistics2.Grinder;
+
+//// need to be explicit about some of the plants based items
+//// this is especially important with black kauri wood as it
+//// is the only native block rock desert tree
 
 // vanilla dark oak stuff
 recipes.addShaped(<minecraft:dark_oak_fence_gate>, [[null, null, null],[<minecraft:stick>, <plants2:planks:2>, <minecraft:stick>], [<minecraft:stick>, <plants2:planks:2>, <minecraft:stick>]]);
@@ -30,7 +32,6 @@ recipes.addShaped(<cfm:cabinet_dark_oak>, [[<plants2:planks:2>, <plants2:planks:
 recipes.addShaped(<cfm:chair_dark_oak>, [[<plants2:planks:2>, null, null],[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>], [<plants2:planks:2>, null, <plants2:planks:2>]]);
 recipes.addShaped(<cfm:desk_cabinet_dark_oak>, [[<plants2:log_0>, <plants2:log_0>, <plants2:log_0>],[<plants2:planks:2>, <minecraft:chest>, <plants2:planks:2>], [<plants2:planks:2>, null, <plants2:planks:2>]]);
 recipes.addShaped(<cfm:desk_dark_oak>, [[<plants2:log_0>, <plants2:log_0>, <plants2:log_0>],[<plants2:planks:2>, null, <plants2:planks:2>], [<plants2:planks:2>, null, <plants2:planks:2>]]);
-recipes.addShaped(<cfm:crate_dark_oak>, [[<plants2:log_0>, <plants2:planks:2>, <plants2:log_0>],[<plants2:planks:2>, null, <plants2:planks:2>], [<plants2:log_0>, <plants2:planks:2>, <plants2:log_0>]]);
 recipes.addShaped(<cfm:door_bell_dark_oak>, [[<minecraft:noteblock>, <minecraft:stone_button>, null],[<plants2:log_0>, null, null], [null, null, null]]);
 recipes.addShaped(<cfm:mail_box_dark_oak>, [[<plants2:log_0>, <minecraft:book>, <plants2:log_0>],[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>], [null, <plants2:planks:2>, null]]);
 recipes.addShaped(<cfm:bedside_cabinet_dark_oak>, [[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],[<plants2:planks:2>, <minecraft:chest>, <plants2:planks:2>], [<plants2:planks:2>, <minecraft:chest>, <plants2:planks:2>]]);
@@ -44,3 +45,78 @@ recipes.addShaped(<cfm:upgraded_gate_dark_oak> * 2, [[<minecraft:dark_oak_fence_
 // storage drawers stuff
 // use this to build a framing table and then just build framed drawers
 recipes.addShaped(<storagedrawers:trim:5>, [[<minecraft:stick>, <plants2:planks:2>, <minecraft:stick>],[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>], [<minecraft:stick>, <plants2:planks:2>, <minecraft:stick>]]);
+
+//// some more geolosys immersion / aesthetic stuff
+// limonite is like shitty hematite
+recipes.addShapeless(<mysticalworld:iron_dust_tiny> * 4, [<immersiveengineering:tool>, <geolosys:ore:1>]);
+mods.immersiveengineering.Crusher.addRecipe(<mysticalworld:iron_dust_tiny> * 4,
+                                            <geolosys:ore:1>, 2048,
+                                            <mysticalworld:iron_dust_tiny> * 2, 0.25);
+mods.appliedenergistics2.Grinder.addRecipe(<mysticalworld:iron_dust_tiny> * 4,
+                                            <geolosys:ore:1>, 4,
+                                            <mysticalworld:iron_dust_tiny>, 0.05);
+mods.actuallyadditions.Crusher.addRecipe(<mysticalworld:iron_dust_tiny> * 4,
+                                         <geolosys:ore:1>,
+                                         <mysticalworld:iron_dust_tiny> * 2, 0.25);
+mods.mekanism.crusher.addRecipe(<geolosys:ore:1>, <mysticalworld:iron_dust_tiny> * 4);
+
+// malachite
+recipes.addShapeless(<mekanism:dust:3>, [<immersiveengineering:tool>, <geolosys:ore:2>]);
+mods.appliedenergistics2.Grinder.addRecipe(<mekanism:dust:3>,
+                                            <geolosys:ore:2>, 4,
+                                            <mysticalworld:copper_dust_tiny>, 0.05);
+mods.actuallyadditions.Crusher.addRecipe(<mekanism:dust:3>,
+                                         <geolosys:ore:2>,
+                                         <mysticalworld:copper_dust_tiny> * 2, 0.25);
+mods.mekanism.crusher.addRecipe(<geolosys:ore:2>, <mekanism:dust:3>);
+
+// azurite
+recipes.addShapeless(<mysticalworld:copper_dust_tiny> * 4, [<immersiveengineering:tool>, <geolosys:ore:3>]);
+mods.appliedenergistics2.Grinder.addRecipe(<mysticalworld:copper_dust_tiny> * 4,
+                                            <geolosys:ore:3>, 4,
+                                            <mysticalworld:copper_dust_tiny>, 0.05);
+mods.actuallyadditions.Crusher.addRecipe(<mysticalworld:copper_dust_tiny> * 4,
+                                         <geolosys:ore:3>,
+                                         <mysticalworld:copper_dust_tiny> * 2, 0.25);
+mods.mekanism.crusher.addRecipe(<geolosys:ore:3>, <mysticalworld:copper_dust_tiny> * 4);
+
+// cassiterite
+recipes.addShapeless(<mekanism:dust:4>, [<immersiveengineering:tool>, <geolosys:ore:4>]);
+mods.appliedenergistics2.Grinder.addRecipe(<mekanism:dust:4>,
+                                            <geolosys:ore:4>, 4,
+                                            <mekanism:nugget:6>, 0.05);
+mods.actuallyadditions.Crusher.addRecipe(<mekanism:dust:4>,
+                                         <geolosys:ore:4>,
+                                         <mekanism:nugget:6> * 2, 0.25);
+mods.mekanism.crusher.addRecipe(<geolosys:ore:4>, <mekanism:dust:4>);
+
+// teallite
+recipes.addShapeless(<mekanism:dust:6>, [<immersiveengineering:tool>, <geolosys:ore:5>]);
+mods.appliedenergistics2.Grinder.addRecipe(<mekanism:dust:6>,
+                                            <geolosys:ore:5>, 4,
+                                            <mekanism:dust:4>, 0.5);
+mods.actuallyadditions.Crusher.addRecipe(<mekanism:dust:6>,
+                                         <geolosys:ore:5>,
+                                            <mekanism:dust:4>, 0.5);
+mods.mekanism.crusher.addRecipe(<geolosys:ore:5>, <mekanism:dust:6>);
+
+// galena
+recipes.addShapeless(<mekanism:dust:5>, [<immersiveengineering:tool>, <geolosys:ore:6>]);
+mods.appliedenergistics2.Grinder.addRecipe(<mekanism:dust:5>,
+                                            <geolosys:ore:6>, 4,
+                                            <mekanism:dust:6>, 0.8);
+mods.actuallyadditions.Crusher.addRecipe(<mekanism:dust:5>,
+                                         <geolosys:ore:6>,
+                                            <mekanism:dust:6>, 0.8);
+mods.mekanism.crusher.addRecipe(<geolosys:ore:6>, <mekanism:dust:5>);
+
+// bauxite
+recipes.addShapeless(<immersiveengineering:metal:10>, [<immersiveengineering:tool>, <geolosys:ore:7>]);
+mods.appliedenergistics2.Grinder.addRecipe(<immersiveengineering:metal:10>,
+                                            <geolosys:ore:7>, 4,
+                                            <immersiveengineering:metal:21> * 2, 0.25);
+mods.actuallyadditions.Crusher.addRecipe(<immersiveengineering:metal:10>,
+                                         <geolosys:ore:7>,
+                                            <immersiveengineering:metal:21> * 2, 0.25);
+mods.mekanism.crusher.addRecipe(<geolosys:ore:7>, <immersiveengineering:metal:10>);
+

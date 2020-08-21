@@ -7,7 +7,7 @@ saturation:0.0
 renderDistance:12
 guiScale:2
 particles:0
-bobView:true
+bobView:false
 anaglyph3d:false
 maxFps:120
 fboEnable:true
@@ -229,7 +229,7 @@ key_key.integrateddynamics.logic_programmer_open_rename:0
 key_invtweaks.key.sort:0
 key_key.clipboardPaste:0
 key_key.simplybackpacks.backpackpickup.desc:0
-key_key.simplybackpacks.backpackopen.desc:0
+key_key.simplybackpacks.backpackopen.desc:48
 key_key.toolbelt.open:19
 key_key.toolbelt.cycle.left:0
 key_key.toolbelt.cycle.right:0

@@ -20,6 +20,9 @@ class AdminWidget(object):
 
         return [x['line'] for x in response['data']]
 
+    def chat(self, message):
+        self.remote.rcon("say %s" % message)
+
     def logs(self):
         for log_line in self.fetch_logs():
             LOG.info(log_line)
@@ -49,10 +52,15 @@ class AdminWidget(object):
             LOG.info("restarting server")
         elif action == 'status':
             status_response = self.mcapi("getServerStatus", self.config.server)
-            LOG.info("server is %s" % status_response['data']['status'])
+            a_status = status_response['data']['status']
+            print("server is %s" % a_status)
+            if a_status == 'online':
+                sys.exit(0)
+            else:
+                sys.exit(2)
         elif action == 'online':
             status_response = self.mcapi("getServerStatus", self.config.server)
-            LOG.info("players online  %s of %s" % (
+            print("players online  %s of %s" % (
                 status_response['data']['onlinePlayers'],
                 status_response['data']['maxPlayers']))
         else:

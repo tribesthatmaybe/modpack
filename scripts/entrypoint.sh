@@ -6,16 +6,18 @@ problems() {
     exit 1
 }
 
-if [ ! -e "/usr/local/etc/ttmb/packmaker.conf" ] ; then
-    if [ ! -e "/mnt/config.yml" ] ; then
-        problems "Unable to find config"
-    fi
+gen_config() {
+    if [ ! -e "/usr/local/etc/ttmb/packmaker.conf" ] ; then
+        if [ ! -e "/mnt/config.yml" ] ; then
+            problems "Unable to find config"
+        fi
 
-    jinja2 \
-        -o /usr/local/etc/packmaker.conf \
-        /usr/local/share/ttmb/curseforge.conf.j2 \
-        /mnt/config.yml
-fi
+        jinja2 \
+            -o /usr/local/etc/packmaker.conf \
+            /usr/local/share/ttmb/curseforge.conf.j2 \
+            /mnt/config.yml
+    fi
+}
 
 ACTION="shell"
 if [ $# -gt 0 ] ; then
@@ -40,12 +42,14 @@ if [ -d "/packmaker" ] && [ -e "/packmaker/setup.py" ] ; then
 fi
 
 if [ "$ACTION" == "build" ] ; then
+    gen_config
     cd /mnt
     ttmb-render-packmaker
     packmaker updatedb
     packmaker --config /usr/local/etc/packmaker.conf lock
     packmaker --config /usr/local/etc/packmaker.conf build-curseforge
 elif [ "$ACTION" == "server" ] ; then
+    gen_config
     cd /mnt
     ttmb-render-packmaker
     packmaker updatedb
@@ -60,10 +64,74 @@ elif [ "$ACTION" == "shell" ] ; then
     bash
     echo "dom ot emit"
 elif [ "$ACTION" == "devsync" ] ; then
-    /mnt/devtool/devtool.py control stop
-    sleep 10
-    /mnt/devtool/devtool.py sync
+    VERSION="$1"
+    if [ -z "$VERSION" ] ; then
+        problems "must specify version"
+    fi
+    START="$(date +%s)"
+    OFFLINE_THO=""
+    STATUS=$(/mnt/devtool/devtool.py control status || true)
+    if [ "$STATUS" != 'server is online' ] ; then
+        echo "Server is already offline"
+        OFFLINE_THO=1
+    else
+        /mnt/devtool/devtool.py chat "log off now; updating to ${VERSION}"
+    fi
+    READY="$OFFLINE_THO"
+    while [ -z "$READY" ] ; do
+        if ! /mnt/devtool/devtool.py user list | grep -q online ; then
+            echo "No users online."
+            READY=1
+        else
+            NOW="$(date +%s)"
+            if [ $((NOW - START)) -gt 60 ] ; then
+                while read -r userlist ; do
+                    if ! grep 'online' <<< "$userlist" ; then
+                        continue
+                    fi
+                    USER="$(cut -f 2 -d ' ' <<< "$userlist")"
+                    /mnt/devtool/devtool.py user kick "$USER" "you had your chance"
+                done < <(/mnt/devtool/devtool.py user list)
+                READY=1
+            else
+                echo "Waiting for users to log off...."
+                sleep 5
+            fi
+        fi
+    done
+    if [ -z "$OFFLINE_THO" ] ; then
+        /mnt/devtool/devtool.py control stop
+    fi
+    START="$(date +%s)"
+    READY="$OFFLINE_THO"
+    while [ -z "$READY" ] ; do
+        if [ "$(/mnt/devtool/devtool.py control status || true)" != "server is online" ] ; then
+            READY=1
+        else
+            NOW="$(date +%s)"
+            if [ $((NOW - START)) -gt 30 ] ; then
+                problems "Gave up waiting for server to stop!"
+            else
+                echo "Waiting for server to stop....."
+                sleep 5
+            fi
+        fi
+    done
+    echo "Updating server!"
+    /mnt/devtool/devtool.py sync "$VERSION"
     /mnt/devtool/devtool.py control start
+elif [ "$ACTION" == "upload" ] ; then
+    echo "Uploading??????"
+    if [ "$#" != 2 ] ; then
+        problems "must specify version and release"
+    fi
+    VERSION="$1"
+    RELEASE="$2"
+    shift 2
+    if [ -z "$VERSION" ] ; then
+        problems "must specify version"
+    fi
+    /mnt/devtool/devtool.py upload "$VERSION" --release "$RELEASE"
 else
     problems "what u doin"
 fi

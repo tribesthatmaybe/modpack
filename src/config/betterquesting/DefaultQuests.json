@@ -165,19 +165,19 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "A Way Home?",
-          "desc:8": "Some words about waystones and warp scrolls"
+          "name:8": "No Place Like.......",
+          "desc:8": "You found a waystone and tried to use it without even knowing what you were getting into. This sounds about right, for someone wandering through the Block Rock Desert.\n\nWaystones sometimes appear at villages, and sometimes in other places too. Once you get far enough along you can make them on your own. Travel past a certain distance (or between dimensions) will cost you XP. \n\nAs your reward you can choose between your own waystone (choose where you place it carefully!) or a warpscroll is a single use item which will allow you to go to any waystone you have activated. To use the warp scroll hold down right click until the memu pops up."
         }
       },
       "tasks:9": {
         "0:10": {
-          "partialMatch:1": 0,
+          "partialMatch:1": 1,
           "item:10": {
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
             "id:8": "minecraft:air",
-            "Count:3": 1,
+            "Count:3": 0,
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -224,12 +224,6 @@
               "OreDict:8": ""
             }
           }
-        },
-        "1:10": {
-          "amount:3": 1,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
-          "index:3": 1
         }
       }
     },
@@ -537,8 +531,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "we are all matter out of place",
-          "desc:8": "It happens in the multiverse. Something goes wrong, and you die. In this particular corner of the multiverse the penalty isn\u0027t that bad. So long as you can find your tombstone...\n\nYou should have a key in your hand. Hold on to it! You will need it to retrieve your inventory from your tombstone. Bring up your map (default key \"j\") and look around to find the little colorful dot marking your place of death. You should also see a beacon when you are in the normal display as well. Go find your tombstone - it should be in a safe place relatively close to your place of death.\n\nRight click on your tombstone with the key, and try to not to become moop.\n"
+          "name:8": "we are all matter out of place AA",
+          "desc:8": "It happens in the multiverse. Something goes wrong, and you die. In this particular corner of the multiverse the penalty isn\u0027t that bad. So long as you can find your tombstone...\n\nYou should see a new beacon visible on the horizon. You can also see the beacon on your JourneyMap (opens with \"j\" by default). Go there and you should see a tombstone nearby. In most case the tombstone will appear however it may be very difficult to get to. Like if you ended up in a lava ocean, or fell out the bottom of the world.\n\nIf you right click the tombstone it will tell you who it belongs to. To retrieve your items, destroy the tombstone. It is quicker with a pickaxe. Note that your items may end up scattered about when you destroy the tombstone. If you died somewhere hazardous (like in a lava ocean) you should ensure there is ample enclosed space to help keep your items safe. You will end up with your tombstone as a memento of what happened.\n\nTry to not become moop again.\n"
         }
       },
       "tasks:9": {
@@ -907,7 +901,7 @@
     "11:10": {
       "questID:3": 11,
       "preRequisites:11": [
-        20
+        59
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -922,9 +916,9 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "vehicle:hammer",
+            "id:8": "immersiveengineering:metal_decoration2",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 5,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -933,8 +927,60 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Needs More Hammer",
-          "desc:8": "Why stop with just one hammer? If you want to repair vehicles you find or make, you are going to need at least one more..."
+          "name:8": "The Fourth Wall",
+          "desc:8": "There is some content within the Tribes That May Be multiverse which crosses back and forth between realities.\n\nThings such as external tools and services which may be used to extend the Block Rock Desert experience, or resources which the player may (or may not) find valuable.\n\nWe aren\u0027t going to force these upon you.\n\nIf you would like these quests to be accessible then must explicitly consent.\n\nBut if you do, there is no going back."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "hideBlockIcon:1": 1,
+          "rewardID:8": "bq_standard:command",
+          "asScript:1": 1,
+          "description:8": "Break Fourth Wall",
+          "viaPlayer:1": 0,
+          "index:3": 0,
+          "title:8": "bq_standard.reward.command",
+          "command:8": "scoreboard players tag @s add fourth_wall\n"
+        }
+      }
+    },
+    "12:10": {
+      "questID:3": 12,
+      "preRequisites:11": [
+        0
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "chisel:bookshelf_acacia",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Portable Library",
+          "desc:8": "It ain\u0027t easy having a good time and one of the ways this manifests is by having to learn. Your trusty guidebook will get you only so far. The Tribes That May Be multiverse is full of guides, manuals, and books. While you can easily make book shelves to keep them on, we often want to keep some of these books close at hand.\n\nEnter the Akashik Tome. You can add (many but not all) books to it by combining them (one at a time) with your Akashik Tome in a crafting grid. Access the stored books by right clicking on empty space with the Akashik Tome in your hand.\n\nYou will be presented with a list of books in the tome. Select one and then yor tome will turn into that book. When you are done, left click on empty space with the book selected. To remove a particular book from the tome, select it, and then drop it (default \"q\" while crouching (default \"shift\")."
         }
       },
       "tasks:9": {
@@ -950,26 +996,8 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "vehicle:hammer",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:crafting"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:choice",
-          "index:3": 0,
-          "choices:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "vehicle:wrench",
-              "Count:3": 1,
+              "id:8": "minecraft:book",
+              "Count:3": 4,
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -977,62 +1005,16 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "ironchest:wood_copper_chest_upgrade",
+              "id:8": "quark:custom_bookshelf",
               "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "12:10": {
-      "questID:3": 12,
-      "preRequisites:11": [
-        20
-      ],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
+              "Damage:2": 4,
+              "OreDict:8": "bookshelf"
             },
-            "id:8": "architecturecraft:sawbench",
-            "Count:3": 1,
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "Finishing Hammer",
-          "desc:8": "There are plenty of ways of making realy pretty things in minecraft. ArchitectureCraft allows you to cut almost any block into a different shape than it normally is. You can use this to make columns, window frames, and pretty roofs. You can then use the Architects Hammer to reposition these blocks after they have been placed in the world."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "partialMatch:1": 0,
-          "allowSmelt:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 0,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
-          "requiredItems:9": {
-            "0:10": {
+            "2:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "architecturecraft:hammer",
+              "id:8": "akashictome:tome",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -1041,23 +1023,7 @@
           "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "architecturecraft:sawblade",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
+      "rewards:9": {}
     },
     "13:10": {
       "questID:3": 13,
@@ -1090,80 +1056,17 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Hell Station",
-          "desc:8": "Nobody expects to find a fuel depot in the middle of the desert and yet here we are."
+          "desc:8": "Some words about fuel generation and how hard it is I guess"
         }
       },
       "tasks:9": {
         "0:10": {
-          "name:8": "The Fuel Cache",
+          "name:8": "Fuel Cache",
           "index:3": 0,
           "dimension:3": 1001,
           "structure:8": "fuel_cache",
           "taskID:8": "bq_msi:location",
           "hideInfo:1": 0
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "vehicle:industrial_jerry_can",
-              "Count:3": 1,
-              "tag:10": {
-                "fuel:5": 0.0
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
-    },
-    "14:10": {
-      "questID:3": 14,
-      "preRequisites:11": [],
-      "properties:10": {
-        "betterquesting:10": {
-          "issilent:1": 0,
-          "snd_complete:8": "minecraft:entity.player.levelup",
-          "lockedprogress:1": 0,
-          "tasklogic:8": "AND",
-          "repeattime:3": -1,
-          "visibility:8": "NORMAL",
-          "simultaneous:1": 0,
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "betterquesting:placeholder",
-            "Count:3": 1,
-            "tag:10": {
-              "orig_meta:3": 0,
-              "orig_id:8": "tombstone:decorative_grave_simple"
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "globalshare:1": 0,
-          "questlogic:8": "AND",
-          "snd_update:8": "minecraft:entity.player.levelup",
-          "autoclaim:1": 0,
-          "repeat_relative:1": 1,
-          "ismain:1": 0,
-          "name:8": "we are all matter out of place",
-          "desc:8": "It happens in the multiverse. Something goes wrong, and you die. In this particular corner of the multiverse the penalty isn\u0027t that bad. So long as you can find your tombstone...\n\nYou should have a key in your hand. Hold on to it! You will need it to retrieve your inventory from your tombstone. Bring up your map (default key \"j\") and look around to find the little colorful dot marking your place of death. You should also see a beacon when you are in the normal display as well. Go find your tombstone - it should be in a safe place relatively close to your place of death.\n\nRight click on your tombstone with the key, and try to not get fucked up again."
-        }
-      },
-      "tasks:9": {
-        "0:10": {
-          "advancement_id:8": "tombstone:tutorial/first_grave",
-          "index:3": 0,
-          "taskID:8": "bq_standard:advancement"
         }
       },
       "rewards:9": {
@@ -1175,10 +1078,10 @@
         }
       }
     },
-    "15:10": {
-      "questID:3": 15,
+    "14:10": {
+      "questID:3": 14,
       "preRequisites:11": [
-        0
+        42
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1193,7 +1096,7 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "chisel:bookshelf_oak",
+            "id:8": "cfm:bedside_cabinet_dark_oak",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""
@@ -1204,8 +1107,122 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "A Portable Library",
-          "desc:8": "There are so many things you can craft, so many ways you can put them together. So many notes to take, and so many things to write down. Many of the items in the Tribes That May Be multiverse are explained by various books and manuals which can be found or crafted.\n\nYou are going to end up with a lot of books. The akashik tome can be used to consolidate books into one small book shaped package for easy transportation."
+          "name:8": "A Place For Personal Things",
+          "desc:8": "There is no shortage of furniture for storing your things. But some of the furniture is classier than others.\n\nThe nightstand is one of those.\n\nYou don\u0027t have to put it next to your bed, but why wouldn\u0027t you?\n\nIt\u0027s classier that way."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:bedside_cabinet_dark_oak",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "15:10": {
+      "questID:3": 15,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:hammer",
+            "Count:3": 1,
+            "tag:10": {
+              "StatsOriginal:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 7.0,
+                "FreeModifiers:3": 3,
+                "Durability:3": 1590,
+                "HarvestLevel:3": 3,
+                "Attack:5": 6.0
+              },
+              "Stats:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 7.0,
+                "FreeModifiers:3": 3,
+                "Durability:3": 1590,
+                "HarvestLevel:3": 3,
+                "Attack:5": 6.0
+              },
+              "Special:10": {
+                "Categories:9": {
+                  "0:8": "harvest",
+                  "1:8": "aoe",
+                  "2:8": "tool",
+                  "3:8": "weapon"
+                }
+              },
+              "TinkerData:10": {
+                "Materials:9": {
+                  "0:8": "steel",
+                  "1:8": "steel",
+                  "2:8": "steel",
+                  "3:8": "steel"
+                },
+                "Modifiers:9": {
+                  "0:8": "toolleveling"
+                }
+              },
+              "Modifiers:9": {
+                "0:10": {
+                  "identifier:8": "stiff",
+                  "color:3": -5789785,
+                  "level:3": 1
+                },
+                "1:10": {
+                  "identifier:8": "sharp",
+                  "color:3": -5789785,
+                  "level:3": 1
+                },
+                "2:10": {
+                  "identifier:8": "toolleveling",
+                  "color:3": 16777215,
+                  "level:3": 1
+                }
+              },
+              "Traits:9": {
+                "0:8": "stiff",
+                "1:8": "sharp",
+                "2:8": "toolleveling"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "When all you have is a hammer...",
+          "desc:8": "There are a lot of things you can do with a hammer. In this multiverse zone trip, the Immersive Engineering hammer is used to adjust blocks. You can use it to rotate supported blocks, and configure a variety of Immersive Engineering things such as flood lights and capacitors.\n\nCraft an Immersive Engineering hammer."
         }
       },
       "tasks:9": {
@@ -1221,25 +1238,7 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:book",
-              "Count:3": 4,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:bookshelf",
-              "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "akashictome:tome",
+              "id:8": "immersiveengineering:tool",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -1250,28 +1249,16 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:choice",
+          "rewardID:8": "bq_standard:item",
           "index:3": 0,
-          "choices:9": {
+          "rewards:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "solcarrot:food_book",
+              "id:8": "immersiveengineering:tool",
               "Count:3": 1,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "patchouli:guide_book",
-              "Count:3": 1,
-              "tag:10": {
-                "patchouli:book:8": "mysticalworld:world_guide"
-              },
-              "Damage:2": 0,
+              "Damage:2": 3,
               "OreDict:8": ""
             }
           }
@@ -1281,7 +1268,8 @@
     "16:10": {
       "questID:3": 16,
       "preRequisites:11": [
-        15
+        12,
+        36
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1338,7 +1326,8 @@
     "17:10": {
       "questID:3": 17,
       "preRequisites:11": [
-        11
+        19,
+        13
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -1347,7 +1336,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "UNLOCKED",
+          "visibility:8": "COMPLETED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -1359,7 +1348,7 @@
             "OreDict:8": ""
           },
           "globalshare:1": 0,
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
@@ -1453,7 +1442,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Sound Waves",
-          "desc:8": "some words about\n\n* speaker sizes\n* wiring speakers together\n* using wire cutters on speakers"
+          "desc:8": "There are three different sizes of speakers that you can build. Let\u0027s start with the smallest. You are going to need some nether quartz and a diamond for this, but don\u0027t worry - these can both be found in the Block Rock Desert.\n\nOnce you have created your speaker you can attach it to a record player or a radio with speaker wire. To do so, select the speaker wire. You can then right click on the source block (radio or record player) and then right click on the speaker. Note that the speaker wires don\u0027t go very far - only about 7 blocks.\n\nYou can remove speaker wire by using wire cutters on the speaker or source block."
         }
       },
       "tasks:9": {
@@ -1481,8 +1470,10 @@
       "rewards:9": {}
     },
     "19:10": {
-      "questID:3": 20,
-      "preRequisites:11": [],
+      "questID:3": 19,
+      "preRequisites:11": [
+        15
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -1501,34 +1492,34 @@
             "tag:10": {
               "StatsOriginal:10": {
                 "AttackSpeedMultiplier:5": 1.0,
-                "MiningSpeed:5": 0.5,
+                "MiningSpeed:5": 12.0,
                 "FreeModifiers:3": 3,
-                "Durability:3": 300,
+                "Durability:3": 75,
                 "HarvestLevel:3": 1,
-                "Attack:5": 11.1
+                "Attack:5": 3.0
               },
               "Stats:10": {
                 "AttackSpeedMultiplier:5": 1.0,
-                "MiningSpeed:5": 0.5,
+                "MiningSpeed:5": 12.0,
                 "FreeModifiers:3": 3,
-                "Durability:3": 300,
+                "Durability:3": 75,
                 "HarvestLevel:3": 1,
-                "Attack:5": 11.1
+                "Attack:5": 3.0
               },
               "Special:10": {
                 "Categories:9": {
-                  "0:8": "tool",
-                  "1:8": "harvest",
-                  "2:8": "weapon",
-                  "3:8": "aoe"
+                  "0:8": "harvest",
+                  "1:8": "aoe",
+                  "2:8": "tool",
+                  "3:8": "weapon"
                 }
               },
               "TinkerData:10": {
                 "Materials:9": {
-                  "0:8": "xu_demonic_metal",
-                  "1:8": "xu_demonic_metal",
-                  "2:8": "xu_demonic_metal",
-                  "3:8": "xu_demonic_metal"
+                  "0:8": "electrum",
+                  "1:8": "electrum",
+                  "2:8": "electrum",
+                  "3:8": "electrum"
                 },
                 "Modifiers:9": {
                   "0:8": "toolleveling"
@@ -1536,8 +1527,8 @@
               },
               "Modifiers:9": {
                 "0:10": {
-                  "identifier:8": "xu_whispering",
-                  "color:3": -6079744,
+                  "identifier:8": "shocking",
+                  "color:3": -1516727,
                   "level:3": 1
                 },
                 "1:10": {
@@ -1547,7 +1538,7 @@
                 }
               },
               "Traits:9": {
-                "0:8": "xu_whispering",
+                "0:8": "shocking",
                 "1:8": "toolleveling"
               }
             },
@@ -1560,29 +1551,53 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "When all you have is a hammer...",
-          "desc:8": "There are a lot of things you can do with a hammer. In this multiverse zone trip, the Immersive Engineering hammer is used to adjust blocks. You can use it to rotate supported blocks, and configure a variety of Immersive Engineering things such as flood lights and capacitors.\n\nCraft an Immersive Engineering hammer."
+          "name:8": "Needs More Hammer",
+          "desc:8": "Why stop with just one hammer? If you want to repair vehicles you find or make, you are going to need at least one more...\n\nCraft a hammer from the MrCrafyfish Vehicles mod."
         }
       },
       "tasks:9": {
         "0:10": {
-          "advancement_id:8": "immersiveengineering:main/craft_hammer",
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
           "index:3": 0,
-          "taskID:8": "bq_standard:advancement"
-        }
-      },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 0,
-          "rewards:9": {
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "immersiveengineering:tool",
+              "id:8": "vehicle:hammer",
               "Count:3": 1,
-              "Damage:2": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "vehicle:wrench",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "ironchest:wood_copper_chest_upgrade",
+              "Count:3": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -1590,6 +1605,86 @@
       }
     },
     "20:10": {
+      "questID:3": 20,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:clay",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Not Your Childhood Playdough",
+          "desc:8": "We are going to need clay. Probably a lot of clay, especially if you want to make your house out of brick. Which you do not need to really do.\n\nLots of things are made out of clay. Cooking utensils, flower pots, along with crafting equipment.\n\nFind some clay! You can usually find it underground."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:clay_ball",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:brick",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:materials",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "21:10": {
       "questID:3": 21,
       "preRequisites:11": [],
       "properties:10": {
@@ -1669,7 +1764,7 @@
         }
       }
     },
-    "21:10": {
+    "22:10": {
       "questID:3": 22,
       "preRequisites:11": [
         61
@@ -1773,7 +1868,7 @@
         }
       }
     },
-    "22:10": {
+    "23:10": {
       "questID:3": 23,
       "preRequisites:11": [
         8,
@@ -1875,7 +1970,7 @@
         }
       }
     },
-    "23:10": {
+    "24:10": {
       "questID:3": 24,
       "preRequisites:11": [],
       "properties:10": {
@@ -2003,7 +2098,7 @@
         }
       }
     },
-    "24:10": {
+    "25:10": {
       "questID:3": 25,
       "preRequisites:11": [
         8
@@ -2067,7 +2162,7 @@
         }
       }
     },
-    "25:10": {
+    "26:10": {
       "questID:3": 26,
       "preRequisites:11": [
         23
@@ -2119,7 +2214,1713 @@
         }
       }
     },
-    "26:10": {
+    "27:10": {
+      "questID:3": 27,
+      "preRequisites:11": [
+        15
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:hammer",
+            "Count:3": 1,
+            "tag:10": {
+              "StatsOriginal:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 2.0,
+                "FreeModifiers:3": 3,
+                "Durability:3": 150,
+                "HarvestLevel:3": 0,
+                "Attack:5": 2.0
+              },
+              "Stats:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 2.0,
+                "FreeModifiers:3": 3,
+                "Durability:3": 150,
+                "HarvestLevel:3": 0,
+                "Attack:5": 2.0
+              },
+              "Special:10": {
+                "Categories:9": {
+                  "0:8": "harvest",
+                  "1:8": "aoe",
+                  "2:8": "tool",
+                  "3:8": "weapon"
+                }
+              },
+              "TinkerData:10": {
+                "Materials:9": {
+                  "0:8": "wood",
+                  "1:8": "wood",
+                  "2:8": "wood",
+                  "3:8": "wood"
+                },
+                "Modifiers:9": {
+                  "0:8": "toolleveling"
+                }
+              },
+              "Modifiers:9": {
+                "0:10": {
+                  "identifier:8": "ecological",
+                  "color:3": -7444965,
+                  "level:3": 1
+                },
+                "1:10": {
+                  "identifier:8": "toolleveling",
+                  "color:3": 16777215,
+                  "level:3": 1
+                }
+              },
+              "Traits:9": {
+                "0:8": "ecological",
+                "1:8": "toolleveling"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Finishing Hammer",
+          "desc:8": "Architecturecraft is one of several mods included specifically to allow you to make things prettier. It allows for the shaping of almost any block into columns, window frames, roofing tiles, and other things.\n\nYou can use the Finishing Hammer to rotate these modified blocks after they have been placed."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "architecturecraft:hammer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "architecturecraft:sawblade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "28:10": {
+      "questID:3": 28,
+      "preRequisites:11": [
+        20
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:smeltery_io",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Smelt It All",
+          "desc:8": "Most hand tools are going to get made in the Smeltery. It\u0027s a piece of crafting equipment that is comprised of multiple blocks put together in a particular way.\n\nYou are going to need a lot of clay, sand, and gravel."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:clay_ball",
+              "Count:3": 84,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:sand",
+              "Count:3": 84,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:gravel",
+              "Count:3": 84,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:bucket",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "conarm:book",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "29:10": {
+      "questID:3": 29,
+      "preRequisites:11": [
+        20,
+        61
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "harvestcraft:cuttingboarditem",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Camp Kitchen",
+          "desc:8": "You didn\u0027t bring enough food to last in this endless desert and eating cooked rabbit will get boring quickly.\n\nTime to start the camp kitchen.\n\nCraft some cooking utensils.\n\nAs a reward you get either a tool rack for storing your kitchen tools, or a fruit basken to keep fruit in!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:cuttingboarditem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:potitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cookingforblockheads:tool_rack",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cookingforblockheads:fruit_basket",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "30:10": {
+      "questID:3": 30,
+      "preRequisites:11": [
+        55,
+        36
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:tooltables",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Real Workshop",
+          "desc:8": "Let\u0027s start making some fancier tools. Almost every hand tool, or weapon, you will want to use will be created using Tinkers Construct. It involves a few pieces of creafting equipment. You have already made the crafting station. You will probably want to read the manual - Materials and You - to get a better handle on how Tinkers Construct works.\n\nCraft a stencil table and a part builder. You can use these for making custom tools, and you will want them as you get into the smeltery to make fancyier custom tools.\n\nFor your reward you can choose between a pattern chest and a part chest. These are purpose built storage items for the little fiddly bits you will end up with as part of a Tinkers workshop.\n\n"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:tooltables",
+              "Count:3": 1,
+              "tag:10": {
+                "textureBlock:10": {
+                  "ForgeCaps:10": {
+                    "customnpcs:itemscripteddata:10": {}
+                  },
+                  "id:8": "plants2:planks",
+                  "Count:1": 1,
+                  "Damage:2": 2
+                }
+              },
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:tooltables",
+              "Count:3": 1,
+              "tag:10": {
+                "textureBlock:10": {
+                  "ForgeCaps:10": {
+                    "customnpcs:itemscripteddata:10": {}
+                  },
+                  "id:8": "plants2:log_0",
+                  "Count:1": 1,
+                  "Damage:2": 0
+                }
+              },
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:book",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:tooltables",
+              "Count:3": 1,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:tooltables",
+              "Count:3": 1,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "31:10": {
+      "questID:3": 31,
+      "preRequisites:11": [
+        16
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:writable_book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Write it down",
+          "desc:8": "The Big Book allows you to keep notes or write stories. You can write up to 256 pages and eight different tabbed sections. There is control over the text formatting as well. You can save and edit at any time.\n\nIf you ever decide that the book is finished then you can sign it and then mass produce it if you would like. Note that a signed book may not be edited any more, and you cannot undo signing."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "bibliocraft:bigbook",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
+    },
+    "32:10": {
+      "questID:3": 32,
+      "preRequisites:11": [
+        28,
+        30
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:faucet",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Built to Last",
+          "desc:8": "The Smeltery is going to be your friend. You will use it to make other friends - tools, weapons, and armore that you can upgrade, repair, and name. Before you go too far down this path make sure to read the manual - Materials and You.\n\nYou should have enough material to make a 3x3x2 smeltery with two drains, one tank, a casting table, and a casting basin.\n\nYou should construct it somewhere safe."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:smeltery_controller",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:seared_tank",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:smeltery_io",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:cast",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:sword_blade"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:cast",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:hammer_head"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "33:10": {
+      "questID:3": 33,
+      "preRequisites:11": [
+        52
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:ladder",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Go Vertical / Stay Horizontal",
+          "desc:8": "At this point you have probably discovered that you can jump and you can fall. You can\u0027t jump very far, but you can fall quite far, depending on local geography. There are several things you can do to change how this works.\n\nStairs are pretty handy for going between floors of your house, or down into the mines.\n\nLadders are quite functional however you do need to be a little agile to use make (if not use) them.\n\nAs a reward, you get a step ladder! You can\u0027t use it without being a little bit agile though. Under your inventory screen (e by default but we should know that by now) on the left hand side you will find the \"skiils\" tab. When you click this you have a skill selection screen. You will need to have a 2 in agility to use the step ladder. Note that you scroll up and down the skills screen with the mouse wheel (or track pad).\n\nThe step ladder is equally handy for hanging fairy lights as it is reaching the top of trees you are chopping down."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "plants2:black_kauri_stairs",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:ladder",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:ladder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 1
+        }
+      }
+    },
+    "34:10": {
+      "questID:3": 34,
+      "preRequisites:11": [
+        33
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "openblocks:rope_ladder",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Rescue Ladder",
+          "desc:8": "The step ladder is pretty neat but sometimes you need a bit of an extra reach. The rope ladder can be placed on the edge of a cliff, or at the top of a cavern, or along the side of a wall. It will drop down as far as it can (based on how much rope ladder you have in your inventory). You do need to be a bit more agile to use this than the step ladder.\n\nEqually as handy for rescuing people who have fallen down wells as it is for dropping into mystical caverns from the roof."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "openblocks:rope_ladder",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "35:10": {
+      "questID:3": 35,
+      "preRequisites:11": [
+        34
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "immersiveengineering:wooden_decoration",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Painters Helper",
+          "desc:8": "The step ladder gives you a bit of an extra step, and the rope ladder can help you get into places in a pinch.\n\nScaffolding is for building things. The basic scaffolding can be built off of itself, but will decay over time. It\u0027s pretty cheap to make so you can go all out.\n\nAs you progress into the realm of fully automated queer block utopia you will gain access to more permanent scaffolding made out of creosote treated wood and steel.\n\nBut for now, you can use the varios scaffoldings provided by the Cyclic mod in order to help you build things."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cyclicmagic:block_fragile",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "36:10": {
+      "questID:3": 36,
+      "preRequisites:11": [
+        26
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:chest",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Chest It",
+          "desc:8": "Well you\u0027ve found a place that is probably going to be your home for now. Time to start collecting things!\n\nThere is an amazing about of flexibility in terms of how you can store stuff but it generally all starts with a simple wooden chest.\n\nChests can be placed next to each other to double in size in an aesthetically pleasing way. You can make increasingly larger chests (and other things for storage) as you progress.\n\nAs a reward, you get an upgrade to expand the size of a single chest."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:chest",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "ironchest:wood_copper_chest_upgrade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "37:10": {
+      "questID:3": 37,
+      "preRequisites:11": [
+        36,
+        16
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "storagedrawers:basicdrawers",
+            "Count:3": 1,
+            "tag:10": {
+              "material:8": "oak"
+            },
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Shelf It",
+          "desc:8": "If you are the kind of logistics fetishist I think you are then some of the first todo items on your clipboard are related to sustainable storing the rapidly escalating amount of blocks you have collected. Storage Drawers are a great way of doing so and they can be expanded and make use of late game tech as well!\n\nThe framing table may be used with framed drawers to use any kind of wood for your drawers. You can actually mix and match the different kinds of wood as well to make patterns if you would like"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "storagedrawers:trim",
+              "Count:3": 5,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "storagedrawers:framingtable",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "storagedrawers:customdrawers",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "storagedrawers:customdrawers",
+              "Count:3": 4,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "38:10": {
+      "questID:3": 38,
+      "preRequisites:11": [
+        59
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "loreexpansion:lore_journal",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Dear Journal....",
+          "desc:8": "We\u0027ve talked about the questbook and how helpful it is to your adventure but what other books are there?\n\nYou may have noticed that you started out with a Journal. Throughout your time in the multiverse you will find bits and pieces of lore. As you collect these they will end up in your journal and you can read them.\n\nSome lore will be part of the story, some lore will be the stories of others, and some will be informative and help you learn about difference pieces of the Tribes That May Be experience."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "radicalselfreliance",
+                  "category:8": "The Principles"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "immediacy",
+                  "category:8": "The Principles"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "walljump",
+                  "category:8": "Gameplay"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "39:10": {
+      "questID:3": 39,
+      "preRequisites:11": [
+        18
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:record_mellohi",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Lasers are Cool",
+          "desc:8": "It ain\u0027t a real party without some blinky lights. You can attach the strobe light, laser, and laser cluster to a source block (such as a radio or record player) using speaker wire."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "betterrecords:laser",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "betterrecords:strobelight",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "betterrecords:lasercluster",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:redbeeritem",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:bluebeeritem",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "40:10": {
+      "questID:3": 40,
+      "preRequisites:11": [
+        47
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "bibliocraft:discrack",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Stacks of Vinyl",
+          "desc:8": "Once you get locked into a serious vinyl collection the tendency is to take it as far as you can.\n\nThe Disc Holder can be used to hold all kinds of records, along with frequency crystals.\n\nIt looks a lot classier than a milk crate."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "bibliocraft:discrack",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "41:10": {
+      "questID:3": 41,
+      "preRequisites:11": [
+        47
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:stereo",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "78s are coming back in style",
+          "desc:8": "The Tribes That May Be multiverse has a bunch of tracks included from it\u0027s various mods. You can collect them all because you are a completionist, or you can make an old school stereo and listen in that way.\n\nTo use the stereo, place it in world. Right click to turn it on and cycle between the tracks. Shift right click to turn it off."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:stereo",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 30,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "42:10": {
+      "questID:3": 42,
+      "preRequisites:11": [
+        6
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:modern_bed_bottom",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Good Nights Sleep",
+          "desc:8": "The sleeping bag is OK but it\u0027s not quite the same as a proper bed. A normal bed will set a home location for you, so you end up going back there when you die. Without a bed, you will end up back in D-Lot when you die, and nobody wants that.\n\nCraft a bed, place it somewhere you want to wake up in. After either a restfull nights sleep, or death. Both are inevitable.\n\nYou can also place two beds side by side, if that fits your lifestyle and/or aesthetic."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:bed",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": "bed"
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "43:10": {
+      "questID:3": 43,
+      "preRequisites:11": [
+        42
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "comforts:hammock",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Sleep The Day Away",
+          "desc:8": "The only thing better than a good nights sleep is spending the day in a hammock.\n\nTo hang a hammock you need two rope \u0026 nails. And some hammock cloth. And some trees.\n\nYou can place the role and nail into the trees. Make sure there is a straight line between them (along the N/S or E/W axis). Once you\u0027ve done that, right click with the hammock cloth on one of the nails. The max distance is about five blocks.\n\nSweet day dreams."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "comforts:rope",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "comforts:hammock",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:redbeeritem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:bluebeeritem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "44:10": {
+      "questID:3": 44,
+      "preRequisites:11": [
+        43
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:couch_jeb",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Relax in style",
+          "desc:8": "Another way to spend the day or night is in a comfortable couch. You can place multiple couch pieces side by side to make sweet sectionals.\n\nYou can make different colors of couch by dying your wool prior to making the couch."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:couch",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "bibliocraft:lampiron",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:lamp_off",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "45:10": {
+      "questID:3": 45,
+      "preRequisites:11": [
+        44
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:coffee_table_dark_oak",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Keep it Classy",
+          "desc:8": "A nice coffee table helps bring the room together. You can place items on the coffee table, like books."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:coffee_table_dark_oak",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "actuallyadditions:item_booklet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "patchouli:guide_book",
+              "Count:3": 1,
+              "tag:10": {
+                "patchouli:book:8": "alchemistry:alchemistry_book"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "46:10": {
+      "questID:3": 46,
+      "preRequisites:11": [
+        29
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "harvestcraft:fruitsaladitem",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Tasty and Nutritious",
+          "desc:8": "You may have noticed all the dry gardens all over this desert. Chances are you\u0027ve broken some and gotten some things from them. You can use these things, along with various kitchen implements, to craft real food.\n\nMake some fruit salad and make some garden soup.\n\nEnjoy your fruit salad and savor your garden soup."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:gardensoupitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:fruitsaladitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:baconcheeseburgeritem",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:onionhamburgeritem",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "47:10": {
       "questID:3": 47,
       "preRequisites:11": [
         49
@@ -2149,7 +3950,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Spin those tunes",
-          "desc:8": "To start using the records you have found, you are going to need a record player."
+          "desc:8": "To start using the records you have found, you are going to need a record player. The record player has a small speaker built-in but if you are going to throw a serious party then you will want to build some larger speakers."
         }
       },
       "tasks:9": {
@@ -2192,7 +3993,7 @@
         }
       }
     },
-    "27:10": {
+    "48:10": {
       "questID:3": 48,
       "preRequisites:11": [
         47
@@ -2221,8 +4022,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Break the fourth wall",
-          "desc:8": "While it\u0027s fun to shuffle around records in a block world, streaming in outside sources can also be nice. The Better Records Radio can be used with tuned frequency crystals to bring mp3 streams into minecraft.\n\nShift right click on the radio with an empty hand to open/close. When the radio is open, right click with a tuned frequency crystal to start the music. Right click on the radio open radio with a frequency crystal and an empty hand will cause the crystal to be ejected."
+          "name:8": "Radio Wanted - Live or Not",
+          "desc:8": "While it\u0027s fun to shuffle around records in a block world, streaming in outside sources can also be nice. The Better Records Radio can be used with tuned frequency crystals to bring mp3 streams into minecraft.\n\nYou will need at least three frequency crystals - one for the Frequency Tuner, one for the Radio, and one to tune to a radio station.\n\nTo use the frequency tuner, place it in world and right click on it. You can then specify a name and a URL to an icecast2 stream. Once those are in place, put the crystal in the tuning slot and click \"Tune\". Note that only icecast2 streams are supported.\n\nOnce you have a tuned crystal, you can place it in the radio. Shift right click on the radio with an empty hand to open/close. When the radio is open, right click with a tuned frequency crystal to start the music. Right click on the radio open radio with a frequency crystal and an empty hand will cause the crystal to be ejected."
         }
       },
       "tasks:9": {
@@ -2238,6 +4039,24 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
+              "id:8": "betterrecords:frequencycrystal",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "betterrecords:frequencytuner",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
               "id:8": "betterrecords:radio",
               "Count:3": 1,
               "Damage:2": 0,
@@ -2249,32 +4068,14 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:choice",
-          "index:3": 0,
-          "choices:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "engineersdecor:thin_steel_pole",
-              "Count:3": 4,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "engineersdecor:thin_steel_pole_head",
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
         }
       }
     },
-    "28:10": {
+    "49:10": {
       "questID:3": 49,
       "preRequisites:11": [
         21
@@ -2347,7 +4148,7 @@
         }
       }
     },
-    "29:10": {
+    "50:10": {
       "questID:3": 50,
       "preRequisites:11": [],
       "properties:10": {
@@ -2529,10 +4330,18 @@
               "OreDict:8": ""
             }
           }
+        },
+        "1:10": {
+          "score:8": "GreeterStation",
+          "rewardID:8": "bq_standard:scoreboard",
+          "index:3": 1,
+          "type:8": "dummy",
+          "value:3": 1,
+          "relative:1": 1
         }
       }
     },
-    "30:10": {
+    "51:10": {
       "questID:3": 51,
       "preRequisites:11": [
         50
@@ -2621,7 +4430,7 @@
         }
       }
     },
-    "31:10": {
+    "52:10": {
       "questID:3": 52,
       "preRequisites:11": [
         50
@@ -2732,7 +4541,64 @@
         }
       }
     },
-    "32:10": {
+    "53:10": {
+      "questID:3": 53,
+      "preRequisites:11": [
+        37
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "storagedrawers:tape",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Easy Moves It",
+          "desc:8": "Moving a drawer full of thousands of pieces of cobblestone, or pieces of flesh, or beer, or whatever you keep in your drawers - it sounds terrible.\n\nYou should make some packing tape. You can seal up a set of storage drawers by right clicking on it with the tape. You can then safely break the drawers with an axe and move it."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "storagedrawers:tape",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "54:10": {
       "questID:3": 54,
       "preRequisites:11": [
         51
@@ -2811,7 +4677,7 @@
         }
       }
     },
-    "33:10": {
+    "55:10": {
       "questID:3": 55,
       "preRequisites:11": [
         52
@@ -2893,7 +4759,7 @@
         }
       }
     },
-    "34:10": {
+    "56:10": {
       "questID:3": 56,
       "preRequisites:11": [
         55
@@ -3057,7 +4923,80 @@
         }
       }
     },
-    "35:10": {
+    "57:10": {
+      "questID:3": 57,
+      "preRequisites:11": [
+        37
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "storagedrawers:upgrade_template",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "More Things",
+          "desc:8": "You will eventually fill up your drawers. Fortunately they can be upgraded for more storage, or more features.\n\nLet\u0027s start with more storage.\n\nCraft a basic storage upgrade."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "storagedrawers:upgrade_storage",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "storagedrawers:upgrade_template",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "58:10": {
       "questID:3": 58,
       "preRequisites:11": [
         55
@@ -3156,7 +5095,7 @@
         }
       }
     },
-    "36:10": {
+    "59:10": {
       "questID:3": 59,
       "preRequisites:11": [
         50
@@ -3259,7 +5198,7 @@
         }
       }
     },
-    "37:10": {
+    "60:10": {
       "questID:3": 60,
       "preRequisites:11": [
         56
@@ -3456,7 +5395,7 @@
         }
       }
     },
-    "38:10": {
+    "61:10": {
       "questID:3": 61,
       "preRequisites:11": [
         58
@@ -3538,7 +5477,7 @@
         }
       }
     },
-    "39:10": {
+    "62:10": {
       "questID:3": 62,
       "preRequisites:11": [
         56,
@@ -3620,6 +5559,1039 @@
           }
         }
       }
+    },
+    "63:10": {
+      "questID:3": 63,
+      "preRequisites:11": [
+        45
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "bibliocraft:table",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Place For Things",
+          "desc:8": "Tables can be used to keep all kinds of things on it. They can also be used for the pure aesthetic of having tables. There are a variety of tables which can be made in this shard of the multiverse, so pick the one you like, and put something on it. Many tables can be placed next to each other to create larger tables. In case you have friends over, and they want to place things on the table.\n\nPeople tend to have tables in places where they hang out."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:table_dark_oak",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:table_outdoor",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:modern_table",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "engineersdecor:steel_table",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "64:10": {
+      "questID:3": 64,
+      "preRequisites:11": [
+        43
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:grill",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "I just want to grill.",
+          "desc:8": "Everything may be terrible but at least you can grill up some decent eats.\n\nYou can cook a variety of meats on this grill. Great for entertaining."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:grill",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:bluebeeritem",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:redbeeritem",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:riverchardonnayitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:swampmerlotitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "65:10": {
+      "questID:3": 65,
+      "preRequisites:11": [
+        63
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:tv",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "The revolution will not be televised",
+          "desc:8": "You can use this TV to display looped animated GIFs.\n\nTo set the GIFs, right click it with an empty hand. You can also turn it on and off from this display.\n\nYou can right click with the remote in the direction of the TV to change the channel. Shift right click to turn it off/on."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:tv",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:tv_remote",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "66:10": {
+      "questID:3": 66,
+      "preRequisites:11": [
+        45
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "quark:paper_wall",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Divide the Room",
+          "desc:8": "Sometimes walls are too much. Sometimes you just need a little visual barrier between parts of your home.\n\nThe paper wall can be used for this. Lightweight, easy to make with what can be found in the Block Rock Desert, and (most importantly) classy as all get out."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "quark:paper_wall",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "quark:paper_lantern",
+              "Count:3": 2,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "67:10": {
+      "questID:3": 67,
+      "preRequisites:11": [
+        14
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "quark:colored_flowerpot_white",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Smell the roses",
+          "desc:8": "Flower pots are nice. You can put flowers in them and add a splash of color to your home, or your container."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "quark:colored_flowerpot_white",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "plants2:cosmetic_1",
+              "Count:3": 1,
+              "Damage:2": 13,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:red_flower",
+              "Count:3": 1,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "plants2:cosmetic_0",
+              "Count:3": 1,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "68:10": {
+      "questID:3": 68,
+      "preRequisites:11": [
+        14
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "quark:colored_item_frame",
+            "Count:3": 1,
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Place to Display Things",
+          "desc:8": "You can put things you would like to show off in the item frame.  You can dye the frame if you would like.\n\nYou can place an item in the frame by holding the item in your hand and right clicking on the placed frame. You can then rotate the item by right clicking it. If you would like to get the item back then punch it.\n\nPunching an empty frame will knock if off the wall. If you find yourself doing this often you may wish to speak to a therapist.\n\nThe reward for this quest is a painting. Upon placing it on the wall you get to choose the art."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:item_frame",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:painting",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "69:10": {
+      "questID:3": 69,
+      "preRequisites:11": [
+        42
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "chisel:carpet_purple",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Really ties the room together",
+          "desc:8": "Rugs can really tie the room together. Carpets are a decent simulacrum in this simulacrum of spectacles.\n\nYou can create carpet out of any color of wool. Once you get the right chisel, you can create patterened carpet too.\n\nThe reward is a door mat. Place it outside of your home. Upon doing so you will be prompted to write a welcome message."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:carpet",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:door_mat",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:door_mat",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:door_mat",
+              "Count:3": 1,
+              "Damage:2": 15,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "70:10": {
+      "questID:3": 70,
+      "preRequisites:11": [
+        69
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "fairylights:pennant_bunting",
+            "Count:3": 1,
+            "tag:10": {
+              "pattern:9": {
+                "0:10": {
+                  "color:1": 1
+                }
+              },
+              "text:10": {
+                "styling:7": [],
+                "value:8": ""
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "All the pretty flags, all the pretty lights",
+          "desc:8": "The fairy lights mod gives you a bunch of pretty things you can make. Craft individual penant flags, bunting, tinsel, or lights. You can then combine them into a string.  You can even mix and match different colors of the same type.\n\n\nYou can then string them together using two iron ingots and a piece of string. The iron ingots go in the upper right and left of a crafting table. The string goes in the middle. Place up to six bits (lights, penant flags, etc) in the lower six slots. This will give you a single string of flags/lights/whatever that can stretch for up to 32 blocks.\n\nTo place the strings, right click on a block (most work for this purpose). You can then right click on a second block to complete the placement. \n\nYou can turn the lights on/off by right clicking on them with an empty hand.\n\nYou can tighten the slack of the string by right clicking them with a stick. You can increase the slack by right clicking with a piece of string."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:pennant",
+              "Count:3": 3,
+              "Damage:2": 15,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:pennant",
+              "Count:3": 3,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:pennant",
+              "Count:3": 3,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:light",
+              "Count:3": 6,
+              "Damage:2": 142,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:light",
+              "Count:3": 6,
+              "Damage:2": 94,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "fairylights:light",
+              "Count:3": 6,
+              "Damage:2": 238,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "71:10": {
+      "questID:3": 71,
+      "preRequisites:11": [
+        35
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "adpoles:iron_block",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "To the bat poles!",
+          "desc:8": "Great for fire houses and bat caves alike - the pole!\n\nYou can create these bat poles in batches of sixteen by stacking three blocks of the appropriate material on top of each other in a crafting grid. Right click to place the pole on a flat surface. You can then place more poles on top of it or you can right click on the already placed pole with another pole to extend the height. If you place a torch on top of your first pole, it will be raised as the pole grows to make for a neat beacon. If you break the bottom pole, the whole stack will shift down by one.\n\nIf you jump onto a pole (don\u0027t miss - especially if it goes down to bedrock!) you will grab on and slide down the pole. You will spin around in the direction your camera is facing. You can hop off the pole at any time by pressing the duck key (defaults to left shift). You can kinda climb back up but it\u0027s incredibly slow.\n\nRedstone poles are special. If you build them on top of a redstone block you will travel up not down. Note that while on the surface this may seem like a stripper pole remember that Minecraft is the least erotic game ever.\n\nThe other poles are just like iron poles but you will travel faster. Note that a single iron bar will act as an iron pole, just less classy."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "adpoles:iron_block",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "adpoles:redstone_block",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "72:10": {
+      "questID:3": 72,
+      "preRequisites:11": [
+        35
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "rsgauges:elevator_button",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Going up up up",
+          "desc:8": "Elevators make travelling up and down your rapidly expanding home much easier. These elevators come in multiple colors and in a rotating and non rotating variety. The rotating variety will always ensure you are pointing in a consistent direction when arriving on the floor.\n\nElevators have a max vertical range of 20 blocks and must be vertically aligned. There may be no more than four solid blocks between floors."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "openblocks:elevator",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "openblocks:elevator",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "openblocks:elevator_rotating",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "73:10": {
+      "questID:3": 73,
+      "preRequisites:11": [
+        46
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cookingforblockheads:oven",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Full Kitchen",
+          "desc:8": "The Cooking for Blockheads mod gives you all kinds of blocks you can use to make your kitchen more usable. The blocks, when placed together, are easily accessible. The key block is the Cooking Table. This block ends up connected to the other blocks and can make use of their functionality from it\u0027s interface\n\n* The fridge (can stack and can be dyed) is used to store ingredients. Shift right click to open and look at the contents like the indecisive punk you are.\n* The oven will cook food. You need to supply it with fuel.\n* The counters and cabinets can be used to store ingredients.\n* The tool rack can be used to store various cooking implements from Pam\u0027s Harvestcraft\n* The spice rack can be used to store spices\n* The sink will provide water to recipes, but needs to be plumbed in."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cookingforblockheads:cooking_table",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cookingforblockheads:counter",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cookingforblockheads:cabinet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cookingforblockheads:tool_rack",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cookingforblockheads:oven",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cookingforblockheads:fridge",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "74:10": {
+      "questID:3": 74,
+      "preRequisites:11": [
+        27
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "architecturecraft:sawbench",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Finishing Blocks",
+          "desc:8": "The Arhictects Sawmill is used to create specialty blocks. These blocks include columns, window frames, railings for stair cases, and for a some reason a sphere. You can use pretty much any block in this but note that flammable blocks sadly to not retair their flammability.\n\nThere is a limited set of speciality blocks available through the Blockcraftery mod. These block frames can be placed down and then have a block applied to them. The non-reinforced version is flammable."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "architecturecraft:sawbench",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
     }
   },
   "questLines:9": {
@@ -3673,43 +6645,134 @@
         "0:10": {
           "sizeX:3": 24,
           "x:3": -72,
-          "y:3": -108,
+          "y:3": -84,
           "id:3": 4,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -12,
+          "x:3": -72,
           "y:3": -12,
-          "id:3": 11,
+          "id:3": 13,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -12,
+          "x:3": -36,
           "y:3": -48,
-          "id:3": 12,
+          "id:3": 15,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": -48,
-          "id:3": 20,
+          "x:3": 0,
+          "y:3": -84,
+          "id:3": 19,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": -12,
+          "id:3": 20,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
           "x:3": -72,
-          "y:3": 12,
+          "y:3": -48,
           "id:3": 21,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": -48,
+          "id:3": 27,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 24,
+          "id:3": 28,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": -12,
+          "id:3": 29,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 24,
+          "id:3": 32,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": -120,
+          "id:3": 33,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": -120,
+          "id:3": 34,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": -120,
+          "id:3": 35,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": -12,
+          "id:3": 46,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": -84,
+          "id:3": 71,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": 108,
+          "y:3": -120,
+          "id:3": 72,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": -12,
+          "id:3": 73,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": -48,
+          "id:3": 74,
           "sizeY:3": 24
         }
       },
       "lineID:3": 1,
       "properties:10": {
         "betterquesting:10": {
-          "visibility:8": "ALWAYS",
+          "visibility:8": "NORMAL",
           "name:8": "Block Rock Desert",
           "icon:10": {
             "ForgeCaps:10": {
@@ -3730,13 +6793,6 @@
     "2:10": {
       "quests:9": {
         "0:10": {
-          "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": -156,
-          "id:3": 13,
-          "sizeY:3": 24
-        },
-        "1:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": -108,
@@ -3773,6 +6829,34 @@
           "y:3": -108,
           "id:3": 16,
           "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -144,
+          "id:3": 31,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -108,
+          "id:3": 37,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -72,
+          "id:3": 53,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -108,
+          "id:3": 57,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 3,
@@ -3800,6 +6884,121 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -144,
+          "id:3": 14,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -108,
+          "id:3": 42,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -72,
+          "id:3": 43,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -72,
+          "id:3": 44,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -72,
+          "id:3": 45,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -36,
+          "id:3": 63,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -36,
+          "id:3": 64,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": -36,
+          "id:3": 65,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": -72,
+          "id:3": 66,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -144,
+          "id:3": 67,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -144,
+          "id:3": 68,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -108,
+          "id:3": 69,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -36,
+          "id:3": 70,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 4,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "UNLOCKED",
+          "name:8": "Death is not the end",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:bed",
+            "Count:3": 1,
+            "Damage:2": 15,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "There are may ways to perish and to be comfortable in this multiverse.\n\nIt\u0027s important to find pleasure in the simple things."
+        }
+      },
+      "order:3": 6
+    },
+    "5:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
           "x:3": -132,
           "y:3": -60,
           "id:3": 18,
@@ -3807,19 +7006,40 @@
         },
         "1:10": {
           "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -96,
+          "id:3": 39,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -60,
+          "id:3": 40,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -132,
+          "id:3": 41,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
           "x:3": -180,
           "y:3": -96,
           "id:3": 47,
           "sizeY:3": 24
         },
-        "2:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -132,
           "id:3": 48,
           "sizeY:3": 24
         },
-        "3:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -240,
           "y:3": -96,
@@ -3843,12 +7063,12 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Everything you ever wanted to know about music mods in minecraft but didn\u0027t know to ask."
+          "desc:8": "It ain\u0027t a real party without some sweet tunes. This quest line will take you through all the different steps you need to go through to listen to the built in chip tunes, or pipe in music from external sources."
         }
       },
       "order:3": 2
     },
-    "5:10": {
+    "6:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -3867,7 +7087,7 @@
         "2:10": {
           "sizeX:3": 24,
           "x:3": -300,
-          "y:3": -396,
+          "y:3": -324,
           "id:3": 2,
           "sizeY:3": 24
         },
@@ -3887,117 +7107,145 @@
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": -216,
-          "id:3": 15,
+          "x:3": -300,
+          "y:3": -396,
+          "id:3": 11,
           "sizeY:3": 24
         },
         "6:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -216,
+          "id:3": 12,
+          "sizeY:3": 24
+        },
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -240,
           "y:3": -180,
           "id:3": 22,
           "sizeY:3": 24
         },
-        "7:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -144,
           "id:3": 23,
           "sizeY:3": 24
         },
-        "8:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": -192,
           "y:3": -180,
           "id:3": 24,
           "sizeY:3": 24
         },
-        "9:10": {
+        "10:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -144,
           "id:3": 25,
           "sizeY:3": 24
         },
-        "10:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -96,
           "id:3": 26,
           "sizeY:3": 24
         },
-        "11:10": {
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -264,
+          "y:3": -288,
+          "id:3": 30,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -96,
+          "id:3": 36,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": -408,
+          "y:3": -396,
+          "id:3": 38,
+          "sizeY:3": 24
+        },
+        "15:10": {
           "sizeX:3": 24,
           "x:3": -360,
           "y:3": -360,
           "id:3": 50,
           "sizeY:3": 24
         },
-        "12:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": -324,
           "id:3": 51,
           "sizeY:3": 24
         },
-        "13:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": -324,
           "id:3": 52,
           "sizeY:3": 24
         },
-        "14:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -408,
           "y:3": -288,
           "id:3": 54,
           "sizeY:3": 24
         },
-        "15:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -288,
           "id:3": 55,
           "sizeY:3": 24
         },
-        "16:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": -252,
           "id:3": 56,
           "sizeY:3": 24
         },
-        "17:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": -288,
           "y:3": -252,
           "id:3": 58,
           "sizeY:3": 24
         },
-        "18:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": -360,
           "y:3": -396,
           "id:3": 59,
           "sizeY:3": 24
         },
-        "19:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -216,
           "id:3": 60,
           "sizeY:3": 24
         },
-        "20:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -216,
           "id:3": 61,
           "sizeY:3": 24
         },
-        "21:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": -180,
@@ -4034,7 +7282,7 @@
       "home_anchor_y:5": 0.0,
       "livesmax:3": 10,
       "home_anchor_x:5": 0.5,
-      "editmode:1": 0,
+      "editmode:1": 1,
       "hardcore:1": 0,
       "home_image:8": "betterquesting:textures/gui/default_title.png",
       "party_enable:1": 1,

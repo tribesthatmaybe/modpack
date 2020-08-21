@@ -8,3 +8,4 @@ import crafttweaker.game.IGame;
 
 // hard to find dirt in the desert y'know
 recipes.addShaped(<minecraft:dirt> * 4, [[<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>],[<minecraft:rotten_flesh>, <ore:logWood>, <minecraft:rotten_flesh>], [<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>]]);
+

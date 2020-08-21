@@ -1,1 +1,33 @@
+# Bespoke / ttmb
 tile.contenttweaker.tan_sheetmetal.name=Tan Sheet Metal
+# BOTANIA MATERIALS
+########
+#
+# Fluids
+fluid.elementium=Molten Elementium
+fluid.manasteel=Molten Manasteel
+fluid.terrasteel=Molten Terrasteel
+#
+# Materials
+material.elementium.name=Elementium
+material.livingwood.name=Livingwood
+material.manasteel.name=Manasteel
+material.manastring.name=Manastring
+material.redstring.name=Red String
+material.terrasteel.name=Terrasteel
+#
+# Traits and modifiers
+modifier.mana.name=Mana
+modifier.mana.desc=Flower Powered!\nConsumes mana to restore and maintain durability.
+modifier.mana_armor.name=Mana
+modifier.mana_armor.desc=Flower Powered!\nConsumes mana to restore and maintain durability.\n2.5% mana discount for tools and rods
+modifier.pixielated.name=Pixielated
+modifier.pixielated.desc=Pretty in Pink!\nPixie reinforcements from Elementium armor are much stronger.
+modifier.pixielated_armor.name=Pixielated
+modifier.pixielated_armor.desc=Sweet as Pixie Dust...\nPixies sometimes appear to retaliate when you're hurt.
+modifier.solar.name=Solar
+modifier.solar.desc=Paneled?\nWhen the tool is at full durability and in sunlight, it (very slowly) generates mana in your inventory.
+modifier.terrestrial.name=Terrestrial
+modifier.terrestrial.desc=Regrowth?\nKilling things sometimes grows mystical flowers.
+modifier.terrestrial_armor.name=Terrestrial
+modifier.terrestrial_armor.desc=Deep magic!\nYou heal even when not well-fed, and mana is passively generated in your inventory.\n5% mana discount for tools and rods

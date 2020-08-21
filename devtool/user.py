@@ -22,18 +22,23 @@ class UserWidget(object):
             online = self.remote.rcon("list").split(':')[1].split(',')
             for _user_id, username in response['data']['Players'].items():
                 if username in online:
-                    LOG.info("User %s online" % username)
+                    print("User %s online" % username)
                 else:
-                    LOG.info("User %s" % username)
+                    print("User %s" % username)
         elif action == 'op':
             if not name:
                 LOG.error("must specify a username")
                 sys .exit(1)
-            self.rcon("op %s" % name)
+            self.remote.rcon("op %s" % name)
             LOG.info("op'd %s" % name)
         elif action == 'deop':
             if not name:
                 LOG.error("must specify a username")
                 sys .exit(1)
-            self.rcon("deop %s" % name)
+            self.remote.rcon("deop %s" % name)
             LOG.info("deop'd %s" % name)
+        else:
+            raise Exception('invalid action')
+
+    def kick(self, user, reason):
+        self.remote.rcon("kick %s %s" % (user, reason))

@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+set -e
+SCRIPTDIR=$( cd "${0%/*}" && pwd)
+ROOTDIR="${SCRIPTDIR%/*}"
+
+problems() {
+    echo "Error: ${*}"
+    exit 1
+}
+
+if [ -z "$GITHUB_RUN_ID" ] || [ -z "$GITHUB_TOKEN" ] ; then
+    problems "This must be run within Github Actions"
+fi
+
+mkdir -p "${ROOTDIR}/artifacts"
+
+API_BASE="https://api.github.com/repos/tribesthatmaybe/modpack/actions/runs/"
+JOB_URL="${API_BASE}${GITHUB_RUN_ID}/artifacts"
+
+START="$(date +%s)"
+ARTIFACT_COUNT="0"
+while [ "$ARTIFACT_COUNT" == "0" ] ; do
+    JOB_RESPONSE="$(curl -s "$JOB_URL")"
+    ARTIFACT_COUNT="$(jq -r '.total_count' <<<  "$JOB_RESPONSE")"
+    if [ "$ARTIFACT_COUNT" == "0" ] ; then
+        NOW="$(date +%s)"
+        if [ $((NOW - START)) -gt 90 ] ; then
+            problems "No artifacts found"
+        else
+            sleep 5
+        fi
+    fi
+done
+
+CLIENT_NAME="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-client")).name' <<< "$JOB_RESPONSE")"
+CLIENT_URL="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-client")).archive_download_url' <<< "$JOB_RESPONSE")"
+SERVER_NAME="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-server")).name' <<< "$JOB_RESPONSE")"
+SERVER_URL="$(jq -r '.artifacts | .[] | select(.name | startswith("ttmb-server")).archive_download_url' <<< "$JOB_RESPONSE")"
+
+echo "$JOB_RESPONSE"
+
+if [ -z "$CLIENT_NAME" ] || [ -z "$CLIENT_URL" ] || \
+       [ -z "$SERVER_NAME" ] || [ -z "$SERVER_URL" ] ; then
+    problems "Unable to parse artifacts lookup"
+fi
+echo "Found client artifact ${CLIENT_NAME} at ${CLIENT_URL}"
+echo "Found server artifact ${SERVER_NAME} at ${SERVER_URL}"
+
+curl -s -L -H "Authorization: token ${GITHUB_TOKEN}" \
+     -o "${ROOTDIR}/artifacts/${CLIENT_NAME}.zip" \
+     "$CLIENT_URL"
+curl -s -L -H "Authorization: token ${GITHUB_TOKEN}" \
+     -o "${ROOTDIR}/artifacts/${SERVER_NAME}.zip" \
+     "$SERVER_URL"
