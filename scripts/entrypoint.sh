@@ -6,14 +6,15 @@ problems() {
     exit 1
 }
 
+PACKMAKER_CONFIG="/tmp/packmaker.conf"
 gen_config() {
-    if [ ! -e "/usr/local/etc/ttmb/packmaker.conf" ] ; then
+    if [ ! -e "$PACKMAKER_CONFIG" ] ; then
         if [ ! -e "/mnt/config.yml" ] ; then
             problems "Unable to find config"
         fi
 
         jinja2 \
-            -o /usr/local/etc/packmaker.conf \
+            -o "$PACKMAKER_CONFIG" \
             /usr/local/share/ttmb/curseforge.conf.j2 \
             /mnt/config.yml
     fi
@@ -41,20 +42,28 @@ if [ -d "/packmaker" ] && [ -e "/packmaker/setup.py" ] ; then
     python3 setup.py install
 fi
 
-if [ "$ACTION" == "build" ] ; then
+
+if [ "$ACTION" == "update" ] ; then
     gen_config
     cd /mnt
     ttmb-render-packmaker
     packmaker updatedb
-    packmaker --config /usr/local/etc/packmaker.conf lock
-    packmaker --config /usr/local/etc/packmaker.conf build-curseforge
+    packmaker --config "$PACKMAKER_CONFIG" findupdates
+elif [ "$ACTION" == "lock" ] ; then
+    gen_config
+    cd /mnt
+    ttmb-render-packmaker
+    packmaker --config "$PACKMAKER_CONFIG" lock
+elif [ "$ACTION" == "build" ] ; then
+    gen_config
+    cd /mnt
+    ttmb-render-packmaker
+    packmaker --config "$PACKMAKER_CONFIG" build-curseforge
 elif [ "$ACTION" == "server" ] ; then
     gen_config
     cd /mnt
     ttmb-render-packmaker
-    packmaker updatedb
-    packmaker --config /usr/local/etc/packmaker.conf lock
-    packmaker --config /usr/local/etc/packmaker.conf build-server
+    packmaker --config "$PACKMAKER_CONFIG" build-server
 elif [ "$ACTION" == "loregen" ] ; then
     cd /mnt
     ./scripts/loregen.py

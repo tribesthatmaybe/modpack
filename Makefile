@@ -1,4 +1,4 @@
-.PHONY: container_build container_shell build server clean distclean client github_client github_server loregen versiongen
+.PHONY: container_build container_shell build server clean distclean client github_client github_server loregen versiongen update
 
 ARTIFACTS=$(shell pwd)/artifacts
 ifndef VIRTUAL_ENV
@@ -20,25 +20,44 @@ container_shell: container_build
 	docker run \
 		-it --rm \
 		-v "$(shell pwd):/mnt" \
+		-u "$(shell id -u):$(shell id -g)" \
 		$(DOCKER_IMAGE) \
 		shell
 
-client: container_build versiongen loregen
-	rm -rf build/curseforge/overrides
+update: container_build
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
+		-u "$(shell id -u):$(shell id -g)" \
+		$(DOCKER_IMAGE) \
+		update
+
+lock: container_build
+	docker run \
+		--rm \
+		-v "$(shell pwd):/mnt" \
+		-u "$(shell id -u):$(shell id -g)" \
+		$(DOCKER_IMAGE) \
+		lock
+
+client: container_build versiongen loregen lock
+	rm -rf build/curseforge
+	docker run \
+		--rm \
+		-v "$(shell pwd):/mnt" \
+		-u "$(shell id -u):$(shell id -g)" \
 		$(DOCKER_IMAGE) \
 		build
 	mkdir -p artifacts
 	VERSION=$$(cat $(shell pwd)/.version) ; \
 	cp build/release/ttmb-$${VERSION}.zip $(ARTIFACTS)/ttmb-client-$${VERSION}.zip
 
-server: container_build versiongen loregen
+server: container_build versiongen loregen lock
 	rm -f build/server/mods/* $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
+		-u "$(shell id -u):$(shell id -g)" \
 		$(DOCKER_IMAGE) \
 		server
 	mkdir -p artifacts
