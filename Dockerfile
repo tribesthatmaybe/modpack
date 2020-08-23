@@ -13,11 +13,12 @@ COPY requirements.txt /usr/local/share/ttmb/
 RUN pip3 install -r /usr/local/share/ttmb/requirements.txt
 
 COPY scripts/entrypoint.sh /usr/local/bin/ttmb-entrypoint
-RUN chmod +x /usr/local/bin/ttmb-entrypoint && mkdir /packmaker
+RUN chmod ugo+rx /usr/local/bin/ttmb-entrypoint && mkdir /packmaker
 
 COPY scripts/render-packmaker.sh /usr/local/bin/ttmb-render-packmaker
-RUN chmod +x /usr/local/bin/ttmb-render-packmaker
+RUN chmod ugo+rx /usr/local/bin/ttmb-render-packmaker
 
 COPY templates/curseforge.conf.j2 /usr/local/share/ttmb/
+RUN chmod ugo+r /usr/local/share/ttmb/curseforge.conf.j2
 
 ENTRYPOINT ["ttmb-entrypoint"]
