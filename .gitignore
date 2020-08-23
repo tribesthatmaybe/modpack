@@ -1,5 +1,4 @@
 build/
-curseforge.db
 config.yml
 artifacts/
 .venv/
