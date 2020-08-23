@@ -47,7 +47,7 @@ if [ "$ACTION" == "update" ] ; then
     gen_config
     cd /mnt
     ttmb-render-packmaker
-    packmaker updatedb
+    packmaker --config "$PACKMAKER_CONFIG" updatedb
     packmaker --config "$PACKMAKER_CONFIG" findupdates
 elif [ "$ACTION" == "lock" ] ; then
     gen_config
