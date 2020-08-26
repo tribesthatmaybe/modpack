@@ -39,3 +39,5 @@ This has only really been tested on a Windows Subsystem for Linux system. You wi
  1. Follow the instructions in [config.yml.sample](./config.yml.sample) to get a Twitch token for testing
  2. Create a YAML file named `config.yml` with the content `twitch_token: "<token>"`
  3. `make build`
+
+This will result in a uniquely versioned client and server artifact.
