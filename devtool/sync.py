@@ -45,6 +45,15 @@ class SyncWidget(BaseWidget):
 
         return None
 
+    def copy(self, source):
+        file_path = "%s/config/%s" % (self.config.repo_path(), source)
+        if not os.path.exists(file_path):
+            LOG.error("Config file %s not found" % file_path)
+            sys.exit(1)
+
+        self.ftp_put(file_path, "config/%s" % source)
+        LOG.info("Copied %s to server" % source)
+
     def nuke(self, keep_claimed):
         preserve_regions = {}
         if keep_claimed:
