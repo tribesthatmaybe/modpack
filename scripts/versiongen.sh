@@ -14,7 +14,7 @@ RELEASE=""
 if [ -e "$RELEASE_FILE" ] ; then
     RELEASE="$(cat "$RELEASE_FILE")"
 fi
-if ! git describe --tags --exact-match `git rev-parse HEAD` &> /dev/null ; then
+if ! git describe --tags --exact-match "$(git rev-parse HEAD)" &> /dev/null ; then
     docker run -v "${ROOTDIR}:/mnt" -e GITHUB_RUN_ID -e GITHUB_RUN_NUMBER \
            otakup0pe/avakas show /mnt \
 	       --pre-build --pre-build-prefix="$RELEASE" --pre-build-date --build \
