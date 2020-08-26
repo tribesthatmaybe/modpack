@@ -104,8 +104,19 @@ class DevTool(object):
             version (str): The full version of the artifact to deploy
             clean (bool): Whether or not to remove unrecognized mutable files
             local (bool): Whether or not to deploy mutables from source instead of artifact
+            only (bool): Whether or not to only sync config
         """
         sync.SyncWidget().sync(version, clean, local, only)
+
+    def copy(self, source):
+        """copy a single local config file
+
+        This command will copy a single config file found locally.
+
+        Args:
+            source (str): The file name, relative to config dir
+        """
+        sync.SyncWidget().copy(source)
 
     def nuke(self, keep_claimed=False):
         """nuke it from orbit
