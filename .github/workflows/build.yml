@@ -25,7 +25,7 @@ jobs:
         id: "configgen"
         run: 'echo "twitch_token: ${{ secrets.CURSE_TOKEN }}" > config.yml'
       - name: "fetch tags"
-        if: github.ref == 'refs/heads/mainline'
+        if: startsWith(github.ref, 'refs/tags')
         run: |
           git fetch --unshallow --tags
       - name: "build client thing"
