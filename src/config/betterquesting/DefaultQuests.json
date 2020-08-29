@@ -608,7 +608,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "The Essencetials",
-          "desc:8": "* pre-reqs for water seed\n* pre-reqs for inferieum seed"
+          "desc:8": "It all starts with inferium essence. This. with the occasoinal prosperity shard, provides the basis of mystical agriculture. This mod allows you to create plants which produce their own form of resource-specific essence. These plants are tiered based on how complex the resource is. Water and dirt are easy to create, but to grow gold you will need a lot of inferium essence just to craft the seed itself. These crops are probably the easiest, if not quickest, path to full automated luxury queer block utopias.\n\nInferium may be found mixed in with hematite, malachite, and coal. Prosperity shards show up in veins of gold and quartz."
         }
       },
       "tasks:9": {
@@ -764,7 +764,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Essencetial Crops",
-          "desc:8": "* essence crafting basics\n* essence growth basics"
+          "desc:8": "Inferium essence can be found in Inferium Ore or grown from an Inferium Seed. These seeds are tiered, with each tier above one producing more essence per harvest. You can improve the growth rate using mystical fertilizer, and a little bit with the watering can, but sprinklers and normal bone meal based fertilizer have no effect."
         }
       },
       "tasks:9": {
@@ -798,9 +798,9 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "mysticalagriculture:crafting",
-              "Count:3": 1,
-              "Damage:2": 17,
+              "id:8": "mysticalagriculture:tier1_inferium_seeds",
+              "Count:3": 2,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -2535,7 +2535,6 @@
     "30:10": {
       "questID:3": 30,
       "preRequisites:11": [
-        55,
         36
       ],
       "properties:10": {
@@ -2785,6 +2784,15 @@
               "id:8": "tconstruct:smeltery_io",
               "Count:3": 1,
               "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:seared",
+              "Count:3": 30,
+              "Damage:2": 3,
               "OreDict:8": ""
             }
           },
@@ -3832,7 +3840,8 @@
     "46:10": {
       "questID:3": 46,
       "preRequisites:11": [
-        29
+        29,
+        77
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3859,7 +3868,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Tasty and Nutritious",
-          "desc:8": "You may have noticed all the dry gardens all over this desert. Chances are you\u0027ve broken some and gotten some things from them. You can use these things, along with various kitchen implements, to craft real food.\n\nMake some fruit salad and make some garden soup.\n\nEnjoy your fruit salad and savor your garden soup."
+          "desc:8": "You may have noticed all the dry gardens all over this desert. Chances are you\u0027ve broken some and gotten some things from them. You can use these things, along with various kitchen implements, to craft real food. Before you can do this quest, you need to have started a garden - look under the Post Scarcity quest line.\n\nMake some fruit salad and make some garden soup.\n\nEnjoy your fruit salad and savor your garden soup."
         }
       },
       "tasks:9": {
@@ -7212,7 +7221,8 @@
     "77:10": {
       "questID:3": 77,
       "preRequisites:11": [
-        7
+        22,
+        55
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -7239,7 +7249,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Hoe Time",
-          "desc:8": "Most plants, magical or otherwise, can only be planted in dirt that is both wet and also tilled. You are going to need some actual dirt (not just sand), a hoe, and a bucket of water.\n\nWhile you are at it, may as well try adn harvest some of those arid gardens that are everywhere. Might be something good in there."
+          "desc:8": "Most plants, magical or otherwise, can only be planted in dirt that is both wet and also tilled. You are going to need some actual dirt (not just sand), a hoe, and a bucket of water.\n\nWhile you are at it, may as well try and harvest some of those arid gardens that are everywhere. Might be something good in there.\n\nThe watering can you get as a reward may be filled by holding down the right mouse botton while looking at a water block. Right click over crowing crops to increase the speed at which they grow a little bit. Not quite as good as a sprinkler, but it\u0027s a start.\n\nAnd being in a garden just feels good."
         }
       },
       "tasks:9": {
@@ -7275,13 +7285,1677 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:dirt",
-              "Count:3": 8,
+              "id:8": "harvestcraft:cactusfruitseeditem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:cassavaseeditem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:agaveseeditem",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "extrautils2:wateringcan",
+              "Count:3": 1,
+              "Damage:2": 1000,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "78:10": {
+      "questID:3": 78,
+      "preRequisites:11": [
+        55
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "geolosys:pro_pick",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Desert Prospects",
+          "desc:8": "The Field Manual, which you received as a quest reward for making a pickaxe, contains information on how to find Ore in the Tribes That May Be multiverse. You may have noticed surface deposits of various ores - coal, limonite, and azurite are all common. There are less common ones as well - gold and cinabar as examples. When you find these surface deposits it means that somewhere below is a (likely quite large) deposit of ore.\n\nThe prospectors pick, although it needs a decent amount of iron, can make finding the ore deposits underground much easier. The Field Manual contains details on how to use it. A general mining strategy for someone who has a mining pick could be...\n\n1) Find a surface deposit\n2) Start digging down to bedrock. Use a staircase method, taking 90\u0027 turns periodically, try to stay near where you found the surface deposit.\n3) As you go down, right click on something with the prospectors pick. If it says that there are no deposits go back to your last 90\u0027 turn and go the other way.\n4) Keep checking JEI to see the Y level of where you can expect to find the ore. Once you get to that level, start branching out until you find the deposit. You shouldn\u0027t ever have to go more than a dozen or so blocks in any direction - assuming you stayed roughtly under the surface deposits."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "geolosys:pro_pick",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:minerstewitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:swampmerlotitem",
+              "Count:3": 3,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "79:10": {
+      "questID:3": 79,
+      "preRequisites:11": [
+        32
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:casting",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Metal Worker",
+          "desc:8": "Find a nice (permanent, it\u0027s a pain to move) place for your smeltery. The Materials and You book, which you should already have, contains information on how to build the smeltery and what the different pieces do. I\u0027d recommend taking a look through that book because the smeltery can be a bit confusing the first time.\n\nStart by creating a 3x3 bottom layer of smeltery bricks in your floor. Now, create the first layer of the walls. The walls should not be placed on top of the floor - you should end up with a 3x3x2 space within the smeltery. Place the tank on the bottom layer, the controller and a drain on the top layer.\n\nOnce you have created the casting table place it under the drain and place the faucet on to the drain.\n\nYou will need a metal bucket to transfer lava from the world (if you haven\u0027t found any on the surface there is plenty underground) to the tank."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:toolforge",
+              "Count:3": 1,
+              "tag:10": {
+                "textureBlock:10": {
+                  "ForgeCaps:10": {
+                    "customnpcs:itemscripteddata:10": {}
+                  },
+                  "id:8": "minecraft:iron_block",
+                  "Count:1": 1,
+                  "Damage:2": 0
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:casting",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:faucet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:cast",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:tool_rod"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:cast",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:binding"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "80:10": {
+      "questID:3": 80,
+      "preRequisites:11": [
+        16
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "ironchest:iron_chest",
+            "Count:3": 1,
+            "Damage:2": 2,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "The Bins Have It",
+          "desc:8": "There are a lot of things that end up in a lot of bins that you need to remember about. At least we can make the bins a bit larger, and keep more things in them. There are several layers of expanded bins which can be made by either crafting one of the bins surrounded by ingots, or by right clicking on an existing bin with an upgrade. You can craft the upgrades by surrounding a piece of planking with ingots.\n\nThe next thing we get into after larger bins is moving items between things!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "ironchest:iron_chest",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:conveyor",
+              "Count:3": 64,
+              "tag:10": {
+                "conveyorType:8": "immersiveengineering:covered"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:deluxecheeseburgeritem",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:redbeeritem",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "81:10": {
+      "questID:3": 81,
+      "preRequisites:11": [
+        77
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:farmland",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Dry Garden",
+          "desc:8": "Let\u0027s plant our first garden! You will need some dirt. 24 blocks of dirt is a good starting point. Make a 5x5 plot of dirt, with a single space empty in the middle. Fill this space with water - it should hydrate soil up to a radius about four blocks around. This is the baseline amount of water we can provide to a garden.\n\nUse the hoe on the dirt to turn it into farmland. This is done by §5right clicking§r the dirt. You can then plant seeds in this farmland - almost every kind of seed needs farmland to grow. Make sure to put a tall fence around your crops - tumbleweeds, monsters jumping, and other hazards can cause the farmland to turn back to dirt - which will cause you to lose crops.\n\nEarly game methods of increasing the growth rate are using bone meal (see JEI for how to make this) and the watering can.\n\nThere are only a handful of seeds that you can find in the Block Rock Desert so we\u0027ll let you choose from some luxuries in the quest rewards.\n\nWonder how far we will need to go to find more seeds...."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:dirt",
+              "Count:3": 24,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "item:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "harvestcraft:cactusfruitseeditem",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "requiredUses:3": 1,
+          "ignoreNbt:1": 0,
+          "index:3": 1,
+          "block:10": {
+            "blockID:8": "minecraft:farmland",
+            "nbt:10": {},
+            "amount:3": 1,
+            "oreDict:8": "",
+            "meta:3": -1
+          },
+          "onHit:1": 0,
+          "onInteract:1": 1,
+          "allowOffHand:1": 1,
+          "taskID:8": "bq_standard:interact_item",
+          "allowMainHand:1": 1
+        },
+        "2:10": {
+          "partialMatch:1": 1,
+          "item:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "harvestcraft:cassavaseeditem",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "requiredUses:3": 1,
+          "ignoreNbt:1": 0,
+          "index:3": 2,
+          "block:10": {
+            "blockID:8": "minecraft:farmland",
+            "nbt:10": {},
+            "amount:3": 1,
+            "oreDict:8": "",
+            "meta:3": -1
+          },
+          "onHit:1": 0,
+          "onInteract:1": 1,
+          "allowOffHand:1": 1,
+          "taskID:8": "bq_standard:interact_item",
+          "allowMainHand:1": 1
+        },
+        "3:10": {
+          "partialMatch:1": 1,
+          "item:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "harvestcraft:agaveseeditem",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "requiredUses:3": 1,
+          "ignoreNbt:1": 0,
+          "index:3": 3,
+          "block:10": {
+            "blockID:8": "minecraft:farmland",
+            "nbt:10": {},
+            "amount:3": 1,
+            "oreDict:8": "",
+            "meta:3": -1
+          },
+          "onHit:1": 0,
+          "onInteract:1": 1,
+          "allowOffHand:1": 1,
+          "taskID:8": "bq_standard:interact_item",
+          "allowMainHand:1": 1
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:dye",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:mustardseedsitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:tomatoseeditem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "82:10": {
+      "questID:3": 82,
+      "preRequisites:11": [
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mysticalagriculture:infusion_crystal",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Tiered Mystical Gardens",
+          "desc:8": "In order to grow fancier mystical seeds you will need to convert your Inferium Essence into more advanced kinds of essence. This is done by use of an infusion crystal. These have a limited number of uses and may not be recharged. To use, simply include it in a recipe that requires it in a crafting table.\n\nCraft an infusion crystal and then use it to craft a T2 Crafting Seed and T2 Inferium Seed"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:infusion_crystal",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 16,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 1,
+              "Damage:2": 18,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:tier2_inferium_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 1,
+              "Damage:2": 18,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:tier2_inferium_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:colasodaitem",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "83:10": {
+      "questID:3": 83,
+      "preRequisites:11": [
+        10,
+        82
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mysticalagriculture:fire_essence",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Essensial Flame",
+          "desc:8": "Fire Essence, a tier 2 crop, is used in crafting a variety of things which are not natively found in the Block Rock Desert. You will probably want to get a good crop of it going."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:fire_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:fire_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "84:10": {
+      "questID:3": 84,
+      "preRequisites:11": [
+        82
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mysticalagriculture:master_infusion_crystal",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Endless Infusions",
+          "desc:8": "Nothing is worse than digging around in a nearly empty cardboard box marked \"not drugs\" trying to find the infusion crystal that has more than one charge left.\n\nLet\u0027s make an infinite infusion crystal!\n\nYou will need a lot of essence."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:master_infusion_crystal",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "85:10": {
+      "questID:3": 85,
+      "preRequisites:11": [
+        81
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cyclicmagic:sprinkler",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Wet Garden",
+          "desc:8": "Using sprinkers can help speed up the growth rate of plants with a radius of about three blocks. It must be placed over a water block to function. It will not go through walls."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cyclicmagic:sprinkler",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "86:10": {
+      "questID:3": 86,
+      "preRequisites:11": [
+        82
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mysticalagriculture:growth_accelerator",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Accelerated Growth",
+          "desc:8": "Growth accelerators will look for things growing up to sixty four blocks above and give it a boost. There is a cumulative effect when you stack them."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:growth_accelerator",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:growth_accelerator",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "87:10": {
+      "questID:3": 87,
+      "preRequisites:11": [
+        46
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "harvestcraft:cactusfruitjuiceitem",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Stay Hydrated with Flavors",
+          "desc:8": "Drinking only water gets boring after a while. We need it to survive, but it\u0027s just so plain. You can tell you are severely dehydrated when water tastes really really good.\n\nMake some cactus fruit juice and use it to get some flavor into you as well as replenish your precious bodily fluids.\n\nThere are several food items which provide minimal to no basic nutrition but will keep you hydrated.\n\nThere are also some food items which make you more thirsty so watch out for that too."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:juiceritem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:cactusfruitjuiceitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:bluebeeritem",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:mangosmoothieitem",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:rootbeerfloatitem",
+              "Count:3": 6,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "88:10": {
+      "questID:3": 88,
+      "preRequisites:11": [
+        15
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "immersiveengineering:metal",
+            "Count:3": 1,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Coke Blasted",
+          "desc:8": "We are going to need steel. Lots of steel. The first step down this path of industry is creating enough Coke Bricks that you can make a Coke Oven.\n\nWe are looking for two products here - creosote, which is used to create treated wood - a common engineering component, and coal coke - which will go in our blast furnace to refine steel from iron.\n\nCreate 21 Coke Bricks."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:stone_decoration",
+              "Count:3": 21,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "engineersdecor:treated_wood_table",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "engineersdecor:steel_table",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "89:10": {
+      "questID:3": 89,
+      "preRequisites:11": [
+        90,
+        91
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:hammer",
+            "Count:3": 1,
+            "tag:10": {
+              "StatsOriginal:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 6.0,
+                "FreeModifiers:3": 3,
+                "Durability:3": 875,
+                "HarvestLevel:3": 0,
+                "Attack:5": 5.5
+              },
+              "Stats:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 6.0,
+                "FreeModifiers:3": 3,
+                "Durability:3": 875,
+                "HarvestLevel:3": 0,
+                "Attack:5": 5.5
+              },
+              "Special:10": {
+                "Categories:9": {
+                  "0:8": "tool",
+                  "1:8": "harvest",
+                  "2:8": "weapon",
+                  "3:8": "aoe"
+                }
+              },
+              "TinkerData:10": {
+                "Materials:9": {
+                  "0:8": "firewood",
+                  "1:8": "firewood",
+                  "2:8": "firewood",
+                  "3:8": "firewood"
+                },
+                "Modifiers:9": {
+                  "0:8": "toolleveling"
+                }
+              },
+              "Modifiers:9": {
+                "0:10": {
+                  "identifier:8": "autosmelt",
+                  "color:3": -3386624,
+                  "level:3": 1
+                },
+                "1:10": {
+                  "identifier:8": "toolleveling",
+                  "color:3": 16777215,
+                  "level:3": 1
+                }
+              },
+              "Traits:9": {
+                "0:8": "autosmelt",
+                "1:8": "toolleveling"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Make a Hammer",
+          "desc:8": "We are going to make a hammer today. The hammer mines out a 3x3 section of space and makes a decent weapon against skeletons.\n\n Before doing so, let\u0027s collect all the pieces we need.\n\n* A Tinkers Workshop including\n  * A built and working smeltery filled with lava and a casting table attached.\n* A Tough Tool Rod pattern\n* Casts for Tough Tool Binding, Hammer Head, and Large Plates\n\nThrow enough iron ore in the smeltery to craft all the parts. Fourteen blocks of iron ore should do it - the smeltery has a doubling effect on ore. Unlike plain furnaces, one piece of ore results in two ingots worth of material which can be used. It will take a few moments to melt the iron - different materials have different melting points.\n\nOnce the iron is melted, make the parts. Place the tough tool binding on your casting table and right click on the faucet. Repeat for the hammer head and the two large plates. You can create the tough tool rod in the part station.\n\nAny tool which incorporates parts from the smeltery needs to be assembled in the Tool Forge."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:tough_tool_rod",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "wood"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:large_plate",
+              "Count:3": 2,
+              "tag:10": {
+                "Material:8": "iron"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:hammer_head",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "iron"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:tough_binding",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "iron"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:cast",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:wide_guard"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:cast",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:bow_limb"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "90:10": {
+      "questID:3": 90,
+      "preRequisites:11": [
+        30
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:mattock",
+            "Count:3": 1,
+            "tag:10": {
+              "StatsOriginal:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "HarvestLevelAxe:3": 4,
+                "MiningSpeed:5": 7.07,
+                "FreeModifiers:3": 3,
+                "HarvestLevelShovel:3": 4,
+                "Durability:3": 25,
+                "HarvestLevel:3": 4,
+                "Attack:5": 7.2
+              },
+              "Stats:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "HarvestLevelAxe:3": 4,
+                "MiningSpeed:5": 7.07,
+                "FreeModifiers:3": 3,
+                "HarvestLevelShovel:3": 4,
+                "Durability:3": 25,
+                "HarvestLevel:3": 4,
+                "Attack:5": 7.2
+              },
+              "Special:10": {
+                "Categories:9": {
+                  "0:8": "tool",
+                  "1:8": "harvest",
+                  "2:8": "aoe"
+                }
+              },
+              "TinkerData:10": {
+                "Materials:9": {
+                  "0:8": "obsidian",
+                  "1:8": "obsidian",
+                  "2:8": "obsidian"
+                },
+                "Modifiers:9": {
+                  "0:8": "toolleveling"
+                }
+              },
+              "Modifiers:9": {
+                "0:10": {
+                  "identifier:8": "duritos",
+                  "color:3": -10478396,
+                  "level:3": 1
+                },
+                "1:10": {
+                  "identifier:8": "toolleveling",
+                  "color:3": 16777215,
+                  "level:3": 1
+                }
+              },
+              "Traits:9": {
+                "0:8": "duritos",
+                "1:8": "toolleveling"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Mattock Time",
+          "desc:8": "A mattock is a great versatile tool. You can use it to chop wood and deal with softer blocks such as dirt and sand.\n\nWe are going to make a mattock using our brand new Tinkers Workshop. We are going to use wood and flint for it, so you will need to find some gravel and chop down some trees. You will need four pieces of flint and two planks.\n\nMake the stencils for the shovel head, axe head, and tool rod using the Stencil Table. You can keep stencils in a Pattern Chest.\n\nThese stencils can be used in the Part Builder, along with the appropriate material, to make the individual parts. Make a flint axe head, a flint shovel head, and a wooden tool rod. Each material has it\u0027s own passive modifier effect. Wood has the \"Ecological\" effect which results in tools being repaired over time. Check out the Materials and You book for information on each type of material.\n\nTools may be repaired in the tool station by combining them with whichever material is most present in the tool. You can also craft Sharpening Kits which may be used to repair tools in the field."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:pattern",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:tool_rod"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:pattern",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:axe_head"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:pattern",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:shovel_head"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:tool_rod",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "wood"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:axe_head",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "flint"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:shovel_head",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "flint"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:sharpening_kit",
+              "Count:3": 4,
+              "tag:10": {
+                "Material:8": "flint"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "91:10": {
+      "questID:3": 91,
+      "preRequisites:11": [
+        79
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:clay_cast",
+            "Count:3": 1,
+            "tag:10": {
+              "PartType:8": "tconstruct:tough_binding"
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Our First Cast",
+          "desc:8": "In order to make parts on the casting table you need casts. Single use casts can be made out of clay. Multi use casts can be made out of aluminum. You can keep casts in Parts Chests but note you can\u0027t mix stencils/clay/normal casts in the same chest.\n\nThrow some clay in your smeltery. You will need four pieces for this.\n\nCraft a sharpening kit and large plate in your tool station, it doesn\u0027t matter what material it\u0027s made out of, but err on the cheap side, it will be consumed during this process.\n\nPlace the sharpening kit on the casting table by right clicking. Right click on the faucet you have installed on a drain above the casting basin. Some clay will come out and you will end up with a single-use cast of a repair kit. Now place the large plate on the casting basin and pour the rest of the clay in."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:clay_cast",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:sharpening_kit"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:clay_cast",
+              "Count:3": 1,
+              "tag:10": {
+                "PartType:8": "tconstruct:large_plate"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:cast_custom",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:cast_custom",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "92:10": {
+      "questID:3": 92,
+      "preRequisites:11": [
+        89
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:ingots",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "A Nice Blend",
+          "desc:8": "The smeltery can be used to combine materials and create alloys. The first alloy we will make is aluminum brass as it can be used to create casts which do not get consumed. It takes a 3:1 ratio of Aluminum (found in Bauxite deposits) and Copper (found in Malachite and Azurite deposits). Remember the doubling effect of the smeltery on ore when creating alloys.\n\nPut all the materials in to the smeltery and wait for them to melt. Once that has occured then you need to wait for the alloying to happen. Once that has occured you can use resulting alloy to cast things."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:ingots",
+              "Count:3": 2,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:coffeeitem",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "93:10": {
+      "questID:3": 93,
+      "preRequisites:11": [
+        30
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "actuallyadditions:item_crafter_on_a_stick",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Crafting on the Go",
+          "desc:8": "Sometimes you want to make a thing and you are far from your crafting table and you don\u0027t want to just make another crafting table and leave it where you are because leaving no trace is real.\n\nThe Crafting Table on a Stick is for you. It\u0027s like a crafting table, but on a stick, and you can keep it in your backpack or on your toolbelt."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "actuallyadditions:item_crafter_on_a_stick",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
         }
       },
       "rewards:9": {}
@@ -7316,6 +8990,48 @@
           "x:3": -60,
           "y:3": -144,
           "id:3": 77,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": -108,
+          "id:3": 81,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -72,
+          "id:3": 82,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": -72,
+          "id:3": 83,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -72,
+          "id:3": 84,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": -108,
+          "id:3": 85,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -36,
+          "id:3": 86,
           "sizeY:3": 24
         }
       },
@@ -7481,6 +9197,34 @@
           "y:3": -84,
           "id:3": 76,
           "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": 24,
+          "id:3": 79,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": -48,
+          "id:3": 87,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": -84,
+          "id:3": 88,
+          "sizeY:3": 24
+        },
+        "23:10": {
+          "sizeX:3": 24,
+          "x:3": 108,
+          "y:3": 24,
+          "id:3": 91,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 1,
@@ -7570,6 +9314,13 @@
           "x:3": -132,
           "y:3": -108,
           "id:3": 57,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -72,
+          "id:3": 80,
           "sizeY:3": 24
         }
       },
@@ -7713,6 +9464,97 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
+          "x:3": -252,
+          "y:3": -108,
+          "id:3": 89,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": -288,
+          "y:3": -108,
+          "id:3": 92,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 5,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "UNLOCKED",
+          "name:8": "This is my Hammer",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:hammer",
+            "Count:3": 1,
+            "tag:10": {
+              "StatsOriginal:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 7.07,
+                "FreeModifiers:3": 3,
+                "Durability:3": 62,
+                "HarvestLevel:3": 4,
+                "Attack:5": 4.2
+              },
+              "Stats:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 7.07,
+                "FreeModifiers:3": 3,
+                "Durability:3": 62,
+                "HarvestLevel:3": 4,
+                "Attack:5": 4.2
+              },
+              "Special:10": {
+                "Categories:9": {
+                  "0:8": "tool",
+                  "1:8": "harvest",
+                  "2:8": "weapon",
+                  "3:8": "aoe"
+                }
+              },
+              "TinkerData:10": {
+                "Materials:9": {
+                  "0:8": "obsidian",
+                  "1:8": "obsidian",
+                  "2:8": "obsidian",
+                  "3:8": "obsidian"
+                },
+                "Modifiers:9": {
+                  "0:8": "toolleveling"
+                }
+              },
+              "Modifiers:9": {
+                "0:10": {
+                  "identifier:8": "duritos",
+                  "color:3": -10478396,
+                  "level:3": 1
+                },
+                "1:10": {
+                  "identifier:8": "toolleveling",
+                  "color:3": 16777215,
+                  "level:3": 1
+                }
+              },
+              "Traits:9": {
+                "0:8": "duritos",
+                "1:8": "toolleveling"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "This is my tool. There are many like it, but this one is mine.\n\nMy tool is my best friend. It is my life.\n\nThe vast majority of the hand tools (weapons and armor included) you will make use if in Tribes That May Be will be created in your Tinkers Workshop. At this point you should have read the two Tinkers Books - \"Materials and You\" and the \"Armory Addendum\". These tools may be upgraded piece by piece, have modifiers placed on them (such as speed and durability boosts), and most importantly - be named.\n\nYou can repair them when they break so unless you end up in a particularly unfortunate set of circumstances involving lava they should be with you throughout your entire journey."
+        }
+      },
+      "order:3": 7
+    },
+    "6:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
           "x:3": -132,
           "y:3": -60,
           "id:3": 18,
@@ -7782,11 +9624,11 @@
       },
       "order:3": 2
     },
-    "6:10": {
+    "7:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -216,
+          "x:3": -228,
           "y:3": -216,
           "id:3": 0,
           "sizeY:3": 24
@@ -7828,7 +9670,7 @@
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": -168,
+          "x:3": -192,
           "y:3": -216,
           "id:3": 12,
           "sizeY:3": 24
@@ -7864,21 +9706,21 @@
         "11:10": {
           "sizeX:3": 24,
           "x:3": -264,
-          "y:3": -96,
+          "y:3": -108,
           "id:3": 26,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -264,
-          "y:3": -288,
+          "x:3": -192,
+          "y:3": -108,
           "id:3": 30,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -204,
-          "y:3": -96,
+          "x:3": -228,
+          "y:3": -108,
           "id:3": 36,
           "sizeY:3": 24
         },
@@ -7964,6 +9806,27 @@
           "x:3": -384,
           "y:3": -180,
           "id:3": 62,
+          "sizeY:3": 24
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "x:3": -360,
+          "y:3": -288,
+          "id:3": 78,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": -144,
+          "id:3": 90,
+          "sizeY:3": 24
+        },
+        "28:10": {
+          "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": -144,
+          "id:3": 93,
           "sizeY:3": 24
         }
       },
