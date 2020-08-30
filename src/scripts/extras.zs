@@ -13,6 +13,10 @@ recipes.addShaped(<minecraft:dark_oak_fence> * 3, [[null, null, null],[<plants2:
 
 // can use the paneller to make the rest of the bibliocraft (framed) stuff
 recipes.addShaped(<bibliocraft:furniturepaneler:5>, [[<minecraft:iron_ingot>, <bibliocraft:framingsaw>, <minecraft:iron_ingot>],[<plants2:black_kauri_slab>, <plants2:black_kauri_slab>, <plants2:black_kauri_slab>], [<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>]]);
+// except for the saw
+recipes.addShaped(<bibliocraft:framingsaw>, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, null],[null, <minecraft:iron_ingot>, <plants2:planks:2>], [null, null, <plants2:planks:2>]]);
+// and framing sheets
+recipes.addShapeless(<bibliocraft:framingsheet> * 2, [<plants2:planks:2>, <bibliocraft:framingsaw>]);
 
 // quark dark oak stuff
 recipes.addShaped(<chisel:bookshelf_darkoak>, [[<plants2:black_kauri_stairs>, null, <plants2:black_kauri_stairs>],[<minecraft:book>, <minecraft:book>, <minecraft:book>], [<plants2:black_kauri_stairs>, null, <plants2:black_kauri_stairs>]]);
@@ -45,6 +49,13 @@ recipes.addShaped(<cfm:upgraded_gate_dark_oak> * 2, [[<minecraft:dark_oak_fence_
 // storage drawers stuff
 // use this to build a framing table and then just build framed drawers
 recipes.addShaped(<storagedrawers:trim:5>, [[<minecraft:stick>, <plants2:planks:2>, <minecraft:stick>],[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>], [<minecraft:stick>, <plants2:planks:2>, <minecraft:stick>]]);
+// block rock desert friendly way of building storage upgrade
+recipes.addShaped(<storagedrawers:upgrade_template> * 2, [[<storagedrawers:trim:5>, <minecraft:stick>, <storagedrawers:trim:5>],[<minecraft:stick>, <minecraft:chest>, <minecraft:stick>], [<storagedrawers:trim:5>, <minecraft:stick>, <storagedrawers:trim:5>]]);
+// brd storage controller variant
+recipes.addShaped(<storagedrawers:controller>, [[<storagedrawers:trim:5>, <minecraft:stone>, <storagedrawers:trim:5>],[<minecraft:comparator>, <storagedrawers:trim:5>, <minecraft:comparator>], [<minecraft:stone>, <minecraft:diamond>, <minecraft:stone>]]);
+recipes.addShaped(<storagedrawers:controllerslave>, [[<storagedrawers:trim:5>, <minecraft:stone>, <storagedrawers:trim:5>],[<minecraft:comparator>, <storagedrawers:trim:5>, <minecraft:comparator>], [<minecraft:stone>, <minecraft:gold_ingot>, <minecraft:stone>]]);
+// brd compacting drawer variant
+recipes.addShaped(<storagedrawers:compdrawers>, [[<storagedrawers:trim:5>, <minecraft:stone>, <storagedrawers:trim:5>],[<minecraft:piston>, <storagedrawers:trim:5>, <minecraft:piston>], [<minecraft:stone>, <minecraft:iron_ingot>, <minecraft:stone>]]);
 
 //// some more geolosys immersion / aesthetic stuff
 // limonite is like shitty hematite

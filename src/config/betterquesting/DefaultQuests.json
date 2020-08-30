@@ -901,7 +901,7 @@
     "11:10": {
       "questID:3": 11,
       "preRequisites:11": [
-        59
+        50
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2192,7 +2192,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Time For Adventure!!",
-          "desc:8": "You\u0027ve officially proven yourself ready to venture out into the world and make a home for yourself.\n\nIn an effort to facilitate that, I\u0027ve provided you with some magical fruit.\n\nOnce you eat the fruit, you\u0027ll be able to fly for a limited time (indicated by a countdown timer at the top-right corner of your view).\n\nBe wise about how you use this boon and don\u0027t fly too high, lest you fall to your demise.\n\n*\nTo enable/disable §3creative flight§r, double-tap the §3§5space bar§r."
+          "desc:8": "You\u0027ve officially proven yourself ready to venture out into the world and make a home for yourself.\n\nIn an effort to facilitate that, I\u0027ve provided you with some magical fruit. Given it\u0027s very perculiar taste, you will need to have Magic skilled up to 2.\n\nOnce you eat the fruit, you\u0027ll be able to fly for a limited time (indicated by a countdown timer at the top-right corner of your view).\n\nBe wise about how you use this boon and don\u0027t fly too high, lest you fall to your demise.\n\n*\nTo enable/disable §3creative flight§r, double-tap the §3§5space bar§r."
         }
       },
       "tasks:9": {},
@@ -3205,7 +3205,7 @@
     "38:10": {
       "questID:3": 38,
       "preRequisites:11": [
-        59
+        50
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8291,9 +8291,9 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "immersiveengineering:metal",
+            "id:8": "immersiveengineering:stone_decoration",
             "Count:3": 1,
-            "Damage:2": 8,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -8959,6 +8959,326 @@
         }
       },
       "rewards:9": {}
+    },
+    "94:10": {
+      "questID:3": 94,
+      "preRequisites:11": [
+        88
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "forge:bucketfilled",
+            "Count:3": 1,
+            "tag:10": {
+              "FluidName:8": "creosote",
+              "Amount:3": 1000
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Secondary Products",
+          "desc:8": "Time to make your coke oven. This is a 3x3x3 structure with an (aesthetically appealing) front. Once you have assembled your 3x3x3 coke oven using the Coke Bricks the center block of the side you want to be the front with your Engineers Hammer.\n\nYou can empty it of creosote as it gets filled using buckets. Check out the \"I Can\u0027t Help My Shelf\" quest line to learn how to automate this."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:material",
+              "Count:3": 16,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "95:10": {
+      "questID:3": 95,
+      "preRequisites:11": [
+        88
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "engineersdecor:steel_double_t_support",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Just Blasted",
+          "desc:8": "Time to make some steel. You will need 21 Blast Furnace Bricks. You can eventually upgrade your blast furnace but for now the basic one will do.\n\nYou are going to need blaze rods.\n\nCertain traders will have them it for sale, and they show up as loot, and are occasionally dropped by ((some flower in brd)).\n\nAssemble the Blast Furnace the same way as the Coke Oven. It\u0027s a 3x3x3 cube, and then right click with the engineers hammer to assemble it. It must be fueled with Coal Coke and you can use it to convert iron ingots or blocks into steel ingots or blocks."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:stone_decoration",
+              "Count:3": 21,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mekanism:ingot",
+              "Count:3": 16,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "conarm:chestplate",
+              "Count:3": 1,
+              "tag:10": {
+                "StatsOriginal:10": {
+                  "Toughness:5": 4.5,
+                  "FreeModifiers:3": 3,
+                  "Durability:3": 419,
+                  "Defense:5": 18.4
+                },
+                "Stats:10": {
+                  "Toughness:5": 5.4,
+                  "FreeModifiers:3": 3,
+                  "Durability:3": 419,
+                  "Defense:5": 22.08
+                },
+                "TinkerData:10": {
+                  "Materials:9": {
+                    "0:8": "steel",
+                    "1:8": "steel",
+                    "2:8": "steel"
+                  },
+                  "Modifiers:9": {
+                    "0:8": "leveling_armor"
+                  }
+                },
+                "Modifiers:9": {
+                  "0:10": {
+                    "identifier:8": "steady_armor",
+                    "color:3": -5789785,
+                    "level:3": 1
+                  },
+                  "1:10": {
+                    "identifier:8": "indomitable_armor",
+                    "color:3": -5789785,
+                    "level:3": 1
+                  },
+                  "2:10": {
+                    "identifier:8": "leveling_armor",
+                    "color:3": 16777215,
+                    "level:3": 1
+                  }
+                },
+                "Traits:9": {
+                  "0:8": "steady_armor",
+                  "1:8": "indomitable_armor",
+                  "2:8": "leveling_armor"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:frypan",
+              "Count:3": 1,
+              "tag:10": {
+                "StatsOriginal:10": {
+                  "AttackSpeedMultiplier:5": 1.0,
+                  "MiningSpeed:5": 7.0,
+                  "FreeModifiers:3": 3,
+                  "Durability:3": 636,
+                  "HarvestLevel:3": 3,
+                  "Attack:5": 6.0
+                },
+                "Stats:10": {
+                  "AttackSpeedMultiplier:5": 1.0,
+                  "MiningSpeed:5": 7.0,
+                  "FreeModifiers:3": 3,
+                  "Durability:3": 636,
+                  "HarvestLevel:3": 3,
+                  "Attack:5": 6.0
+                },
+                "Special:10": {
+                  "Categories:9": {
+                    "0:8": "weapon",
+                    "1:8": "tool"
+                  }
+                },
+                "TinkerData:10": {
+                  "Materials:9": {
+                    "0:8": "steel",
+                    "1:8": "steel"
+                  },
+                  "Modifiers:9": {
+                    "0:8": "toolleveling"
+                  }
+                },
+                "Modifiers:9": {
+                  "0:10": {
+                    "identifier:8": "stiff",
+                    "color:3": -5789785,
+                    "level:3": 1
+                  },
+                  "1:10": {
+                    "identifier:8": "sharp",
+                    "color:3": -5789785,
+                    "level:3": 1
+                  },
+                  "2:10": {
+                    "identifier:8": "toolleveling",
+                    "color:3": 16777215,
+                    "level:3": 1
+                  }
+                },
+                "Traits:9": {
+                  "0:8": "stiff",
+                  "1:8": "sharp",
+                  "2:8": "toolleveling"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:lumberaxe",
+              "Count:3": 1,
+              "tag:10": {
+                "StatsOriginal:10": {
+                  "AttackSpeedMultiplier:5": 1.0,
+                  "MiningSpeed:5": 7.0,
+                  "FreeModifiers:3": 3,
+                  "Durability:3": 1318,
+                  "HarvestLevel:3": 3,
+                  "Attack:5": 8.0
+                },
+                "Stats:10": {
+                  "AttackSpeedMultiplier:5": 1.0,
+                  "MiningSpeed:5": 7.0,
+                  "FreeModifiers:3": 3,
+                  "Durability:3": 1318,
+                  "HarvestLevel:3": 3,
+                  "Attack:5": 8.0
+                },
+                "Special:10": {
+                  "Categories:9": {
+                    "0:8": "aoe",
+                    "1:8": "harvest",
+                    "2:8": "tool"
+                  }
+                },
+                "TinkerData:10": {
+                  "Materials:9": {
+                    "0:8": "steel",
+                    "1:8": "steel",
+                    "2:8": "steel",
+                    "3:8": "steel"
+                  },
+                  "Modifiers:9": {
+                    "0:8": "toolleveling"
+                  }
+                },
+                "Modifiers:9": {
+                  "0:10": {
+                    "identifier:8": "stiff",
+                    "color:3": -5789785,
+                    "level:3": 1
+                  },
+                  "1:10": {
+                    "identifier:8": "sharp",
+                    "color:3": -5789785,
+                    "level:3": 1
+                  },
+                  "2:10": {
+                    "identifier:8": "toolleveling",
+                    "color:3": 16777215,
+                    "level:3": 1
+                  }
+                },
+                "Traits:9": {
+                  "0:8": "stiff",
+                  "1:8": "sharp",
+                  "2:8": "toolleveling"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -9224,6 +9544,20 @@
           "x:3": 108,
           "y:3": 24,
           "id:3": 91,
+          "sizeY:3": 24
+        },
+        "24:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": -120,
+          "id:3": 94,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": -72,
+          "y:3": -120,
+          "id:3": 95,
           "sizeY:3": 24
         }
       },
@@ -9649,8 +9983,8 @@
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -300,
-          "y:3": -360,
+          "x:3": -420,
+          "y:3": -324,
           "id:3": 6,
           "sizeY:3": 24
         },
@@ -9663,8 +9997,8 @@
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -300,
-          "y:3": -396,
+          "x:3": -324,
+          "y:3": -360,
           "id:3": 11,
           "sizeY:3": 24
         },
@@ -9726,8 +10060,8 @@
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": -408,
-          "y:3": -396,
+          "x:3": -396,
+          "y:3": -360,
           "id:3": 38,
           "sizeY:3": 24
         },

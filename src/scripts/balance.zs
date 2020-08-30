@@ -51,7 +51,10 @@ val unncesaryThings = [
    <cfm:fairy_light>,       // got a whole mod for this
    <cfm:bin>,               // prefer extra utils trash
    <cyclicmagic:trash>,
-   <cfm:crate:*>,           // dupe
+   <cfm:crate_spruce:*>,
+   <cfm:crate_birch:*>,
+   <cfm:crate_jungle:*>,
+   <cfm:crate_dark_oak:*>,
    <cfm:computer>,          // op kinda
    <cfm:printer>,           // def op
    <cfm:electric_fence>,    // just use ie tho
