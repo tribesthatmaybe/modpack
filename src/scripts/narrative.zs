@@ -9,3 +9,5 @@ import crafttweaker.game.IGame;
 // hard to find dirt in the desert y'know
 recipes.addShaped(<minecraft:dirt> * 4, [[<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>],[<minecraft:rotten_flesh>, <ore:logWood>, <minecraft:rotten_flesh>], [<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>]]);
 
+// hard to find hops too
+recipes.addShaped(<brewcraft:hopsseeditem>, [[<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>],[<mysticalagriculture:nature_essence>, <mysticalagriculture:crafting:18>, <mysticalagriculture:nature_essence>], [<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>]]);

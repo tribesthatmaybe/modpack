@@ -50,7 +50,7 @@ class DevTool(object):
         This command is used to copy structures to/from the dev server.
 
         Args:
-            subtype (str): The rc data to work with. Can me "structure", "transform", or "inventory"
+            subtype (str): The rc data to work with. Can be "structure", "transform", or "inventory"
             action (str): The action to take. Can be "list","download"
             name (str): The name of the rc data.
         """
@@ -62,6 +62,32 @@ class DevTool(object):
             mutables.RecurrentWidget().inventory(action, location, name)
         else:
             LOG.error("invalid subtype")
+            sys.exit(1)
+
+    def npc(self, context, action, group=None, name=None):
+        """npc actions
+
+        This command is used to upload/download npc configuration
+        from the dev server. It supports clones, quests, and dialogs.
+
+        Args:
+            context (str): The type of data to work with. Can be "clone", "quest", or "dialog"
+            action (str): The action to take. Can be "list"
+            group (str): The grouping for the item. Matches the customnpc server clone tab or the quest/dialog groupings.
+            name (str): Name of the npc clone or the content piece.
+        """
+        if context == 'clone':
+            mutables.NPCWidget().clone(action, group, name)
+        elif context == 'dialog':
+            if group or name:
+                LOG.error("invalid args")
+            mutables.NPCWidget().dialog(action)
+        elif context == 'quest':
+            mutables.NPCWidget().quest(action)
+            if group or name:
+                LOG.error("invalid args")
+        else:
+            LOG.error("invalid context")
             sys.exit(1)
 
     def user(self, action, name=None, reason=None):

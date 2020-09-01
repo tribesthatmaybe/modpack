@@ -1,34 +1,44 @@
 {
     "DialogShowWheel": 0b,
-    "AvailabilityQuestId": -1,
+    "AvailabilityQuestId": 1,
     "Options": [
+        {
+            "OptionSlot": 0,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": -1,
+                "Title": "Talk",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            }
+        }
     ],
     "AvailabilityScoreboardType": 1,
     "DialogHideNPC": 0b,
     "AvailabilityFactionStance": 0,
     "AvailabilityScoreboard2Value": 1,
-    "DialogId": 4,
-    "AvailabilityQuest": 0,
+    "DialogId": 6,
+    "AvailabilityQuest": 1,
     "AvailabilityDialog4": 0,
     "AvailabilityScoreboardObjective": "",
     "AvailabilityDialog3": 0,
-    "AvailabilityQuest2": 0,
+    "AvailabilityQuest2": 1,
     "AvailabilityQuest3": 0,
     "AvailabilityScoreboard2Objective": "",
     "AvailabilityQuest4": 0,
     "ModRev": 18,
     "DecreaseFaction1Points": 0b,
-    "DialogQuest": 1,
+    "DialogQuest": 3,
     "AvailabilityDialog2": 0,
     "OptionFactions1": -1,
-    "AvailabilityDayTime": 1,
+    "AvailabilityDayTime": 0,
     "OptionFactions2": -1,
     "AvailabilityFaction2Id": -1,
     "OptionFaction1Points": 100,
     "AvailabilityScoreboardValue": 1,
     "DialogDisableEsc": 0b,
     "AvailabilityFaction": 0,
-    "DialogTitle": "Fuck you beer me",
+    "DialogTitle": "It's like rebar",
     "AvailabilityDialog": 0,
     "AvailabilityScoreboard2Type": 1,
     "AvailabilityFaction2": 0,
@@ -37,14 +47,10 @@
     "DialogCommand": "",
     "AvailabilityDialogId": -1,
     "OptionFaction2Points": 100,
-    "DialogText": "I've been out here for so long and look at you not dusty at all.
-
-The lest you could do is get me a beer,
-
-I like the blue beer.",
+    "DialogText": "Hey I've seen you around before right? I'm out of rebar and need to throw something together, can you get me some iron?",
     "AvailabilityQuest4Id": -1,
     "AvailabilityQuest3Id": -1,
-    "AvailabilityQuest2Id": -1,
+    "AvailabilityQuest2Id": 2,
     "AvailabilityDialog2Id": -1,
     "AvailabilityDialog3Id": -1,
     "AvailabilityDialog4Id": -1,
@@ -58,7 +64,7 @@ I like the blue beer.",
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1598771825808L,
+        "TimePast": 1598771909108L,
         "Time": 0L,
         "Subject": ""
     }

@@ -5,8 +5,8 @@
     "QuestRepeat": 1,
     "QuestCompletion": 0,
     "IgnoreNBT": 0b,
-    "Title": "Beer Me",
-    "Text": "Third Year Joe thinks he needs a blue beer so may as well get one for him, it's usually the easiest. He often has decent things in exchange.",
+    "Title": "More Cones",
+    "Text": "Third Year Joe always needs random shit, may as well find him some cones. They show up in supply caches not too infrequently.",
     "QuestFactionPoints": {
         "DecreaseFaction1Points": 0b,
         "OptionFaction2Points": 100,
@@ -15,7 +15,7 @@
         "OptionFaction1Points": 100,
         "DecreaseFaction2Points": 0b
     },
-    "RewardExp": 10,
+    "RewardExp": 0,
     "QuestCommand": "",
     "ModRev": 18,
     "Type": 0,
@@ -27,7 +27,7 @@
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1598771261309L,
+        "TimePast": 1598771796861L,
         "Time": 0L,
         "Subject": ""
     },
@@ -40,8 +40,8 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "cgm:basic_ammo",
-                "Count": 1b,
+                "id": "brewcraft:blackholewhiskeyitem",
+                "Count": 2b,
                 "Damage": 0s
             },
             {
@@ -50,8 +50,8 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "cgm:shell",
-                "Count": 1b,
+                "id": "brewcraft:pointthreeryeitem",
+                "Count": 2b,
                 "Damage": 0s
             },
             {
@@ -60,7 +60,7 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "harvestcraft:bbqpotatochipsitem",
+                "id": "cgm:grenade",
                 "Count": 1b,
                 "Damage": 0s
             },
@@ -70,8 +70,8 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "harvestcraft:breakfastburritoitem",
-                "Count": 1b,
+                "id": "minecraft:gold_ingot",
+                "Count": 2b,
                 "Damage": 0s
             }
         ]
@@ -84,13 +84,13 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "brewcraft:bluebeeritem",
-                "Count": 1b,
+                "id": "trafficcontrol:cone",
+                "Count": 16b,
                 "Damage": 0s
             }
         ]
     },
     "LeaveItems": 0b,
-    "CompleteText": "Thanks for that.",
+    "CompleteText": "Thanks for that. I'm going to throw them into the pile with the rest of them.",
     "NextQuestTitle": ""
 }

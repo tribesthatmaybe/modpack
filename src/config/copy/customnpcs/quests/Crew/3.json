@@ -2,11 +2,11 @@
     "CompleterNpc": "Third Year Joe",
     "NextQuestId": -1,
     "RandomReward": 1b,
-    "QuestRepeat": 1,
+    "QuestRepeat": 0,
     "QuestCompletion": 0,
     "IgnoreNBT": 0b,
-    "Title": "Beer Me",
-    "Text": "Third Year Joe thinks he needs a blue beer so may as well get one for him, it's usually the easiest. He often has decent things in exchange.",
+    "Title": "Get some Iron",
+    "Text": "Look if they say they need the building material they probably actually need it. There is always more ore where that came from out here.....",
     "QuestFactionPoints": {
         "DecreaseFaction1Points": 0b,
         "OptionFaction2Points": 100,
@@ -15,7 +15,7 @@
         "OptionFaction1Points": 100,
         "DecreaseFaction2Points": 0b
     },
-    "RewardExp": 10,
+    "RewardExp": 0,
     "QuestCommand": "",
     "ModRev": 18,
     "Type": 0,
@@ -27,7 +27,7 @@
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1598771261309L,
+        "TimePast": 1598771525457L,
         "Time": 0L,
         "Subject": ""
     },
@@ -40,8 +40,8 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "cgm:basic_ammo",
-                "Count": 1b,
+                "id": "harvestcraft:footlongitem",
+                "Count": 2b,
                 "Damage": 0s
             },
             {
@@ -50,8 +50,8 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "cgm:shell",
-                "Count": 1b,
+                "id": "harvestcraft:colasodaitem",
+                "Count": 2b,
                 "Damage": 0s
             },
             {
@@ -60,8 +60,8 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "harvestcraft:bbqpotatochipsitem",
-                "Count": 1b,
+                "id": "harvestcraft:brownieitem",
+                "Count": 2b,
                 "Damage": 0s
             },
             {
@@ -70,8 +70,8 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "harvestcraft:breakfastburritoitem",
-                "Count": 1b,
+                "id": "harvestcraft:chocolatemilkshakeitem",
+                "Count": 2b,
                 "Damage": 0s
             }
         ]
@@ -84,13 +84,13 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "brewcraft:bluebeeritem",
-                "Count": 1b,
+                "id": "minecraft:iron_ingot",
+                "Count": 16b,
                 "Damage": 0s
             }
         ]
     },
     "LeaveItems": 0b,
-    "CompleteText": "Thanks for that.",
+    "CompleteText": "Thanks for the Iron. I have no idea where I left my pick, so here we are.",
     "NextQuestTitle": ""
 }
