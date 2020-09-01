@@ -1,3 +1,4 @@
+import json
 import logging
 import os
 import sys
@@ -87,7 +88,6 @@ class RecurrentWidget(BaseWidget):
             LOG.error("Must specify a location (active/inactive)")
             sys.exit(1)
 
-        import ipdb ; ipdb.set_trace()
         if not self.ftp_exists(self.rc_base(location, thing)):
             LOG.error("reccom thing %s not found" % thing)
             sys.exit(1)
@@ -135,3 +135,75 @@ class RecurrentWidget(BaseWidget):
             LOG.info("Succesfully downloaded %s inventory generatir '%s'" % (location, name))
         else:
             raise Exception('invalid action')
+
+class NPCWidget(BaseWidget):
+    def __init__(self):
+        super(NPCWidget, self).__init__()
+
+    def npc_base(self, context, suffix=None):
+        npc_path = "world/customnpcs/%s" % context
+        if suffix:
+            return "%s/%s" % (npc_path, suffix)
+
+        return npc_path
+
+    def npc_path(self, suffix):
+        return self.config.repo_path("config/copy/customnpcs/%s" % suffix)
+
+    def list_things(self, context):
+        if not context:
+            LOG.error("Must specify context (clones/quest/dialogs)")
+            sys.exit(1)
+
+        npc_files = {}
+        for npc_thing in self.ftp_walk(self.npc_base(context)):
+            npc_file = os.path.basename(npc_thing)
+            npc_group = os.path.basename(os.path.dirname(npc_thing))
+            [npc_name, _ext] = npc_file.split(".")
+            if npc_group in npc_files:
+                npc_files[npc_group].append(npc_name)
+            else:
+                npc_files[npc_group] = [npc_name]
+
+        return npc_files
+
+    def fetch_things(self, context):
+        for fetch_path in self.ftp_walk(self.npc_base(context)):
+            fetch_file = os.path.basename(fetch_path)
+            fetch_name = os.path.splitext(fetch_file)[0]
+            fetch_group = os.path.basename(os.path.dirname(fetch_path))
+            dest_file = "%s/%s" % (self.npc_path("%s/%s" % (context, fetch_group)), fetch_file)
+            self.ftp_get(fetch_path, dest_file)
+            LOG.info("fetched %s" % fetch_path)
+
+    def clone(self, action, group, name):
+        if action == 'list':
+            for clone_group, clones in self.list_things('clones').items():
+                for clone in clones:
+                    LOG.info("Group %s Clone - %s" % (clone_group, clone))
+        elif action == 'download':
+            clone_suffix = "%s/%s.json" % (group, name)
+            clone_path = "%s/%s" % (self.npc_base('clones'), clone_suffix)
+            dest_path = "%s/%s" % (self.npc_path('clones'), clone_suffix)
+            dest_dir = os.path.dirname(dest_path)
+            if not os.path.exists(dest_dir):
+                os.mkdir(dest_dir, 0o750)
+
+            self.ftp_get(clone_path, dest_path)
+            LOG.info("fetched npc %s %s" % (group, name))
+
+    def dialog(self, action):
+        if action == 'list':
+            for dialog_group, dialogs in self.list_things('dialogs').items():
+                for dialog in dialogs:
+                    LOG.info("%s Dialog #%s" % (dialog_group, dialog))
+        elif action == 'download':
+            self.fetch_things('dialogs')
+
+    def quest(self, action):
+        if action == 'list':
+            for quest_group, quests in self.list_things('quests').items():
+                for quest in quests:
+                    LOG.info("%s Quest - %s" % (quest_group, quest))
+        elif action == 'download':
+            self.fetch_things('quests')

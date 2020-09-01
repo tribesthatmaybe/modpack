@@ -1,6 +1,7 @@
 import logging
 import os
 import sys
+from io import StringIO
 from ftplib import FTP
 from ftplib import error_perm
 from config import Config
@@ -39,6 +40,11 @@ class BaseWidget(object):
     def ftp_get(self, source, dest):
         with open(dest, 'wb') as fh:
             self.ftp_plz().retrbinary("RETR %s" % source, fh.write)
+
+    def ftp_cat(self, source):
+        lines = []
+        self.ftp_plz().retrlines("RETR %s" % source, lines.append)
+        return StringIO('\n'.join(lines))
 
     def ftp_put(self, source, dest):
         with open(source, 'rb') as fh:
