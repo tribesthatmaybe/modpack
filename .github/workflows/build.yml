@@ -15,6 +15,8 @@ jobs:
     runs-on: "ubuntu-latest"
     outputs:
       version: ${{steps.version_meta.outputs.version}}
+    env:
+      GITHUB_TOKEN: "${{secrets.GITHUB_TOKEN}}"
     steps:
       - id: "checkout"
         uses: "actions/checkout@v2"
@@ -38,6 +40,7 @@ jobs:
         id: "version_meta"
         run: |
           echo ::set-env name=version::$(cat $(pwd)/.version)
+          echo ::set-env name=container_version::$(cat $(pwd)/.version-container)
           echo ::set-output name=version::$(cat $(pwd)/.version)
       - name: "upload artifact modpack i guess"
         id: "client_upload"
@@ -51,6 +54,11 @@ jobs:
         with:
           name: "ttmb-server-${{env.version}}"
           path: "artifacts/github/server"
+      - name: "upload container on tagged builds"
+        if: startsWith(github.ref, 'refs/tags')
+        run: |
+          docker login ghcr.io --username phanatic --password-stdin <<< "$GITHUB_TOKEN"
+          docker push ghcr.io/tribesthatmaybe/workflow:${{env.container_version}}
   maybe_bump:
     if: github.ref == 'refs/heads/mainline'
     runs-on: "ubuntu-latest"

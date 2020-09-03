@@ -8,3 +8,4 @@ packmaker.yml
 devsync.yml
 devtool/__pycache__/
 .version
+.version-container
