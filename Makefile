@@ -14,14 +14,14 @@ versiongen:
 
 container_build: versiongen
 	docker build \
-		--tag $(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
+		--tag $(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		.
 container_shell: container_build
 	docker run \
 		-it --rm \
 		-v "$(shell pwd):/mnt" \
 		-u "$(shell id -u):$(shell id -g)" \
-		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		shell
 
 update: container_build
@@ -29,7 +29,7 @@ update: container_build
 		--rm \
 		-v "$(shell pwd):/mnt" \
 		-u "$(shell id -u):$(shell id -g)" \
-		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		update
 
 lock: container_build
@@ -37,7 +37,7 @@ lock: container_build
 		--rm \
 		-v "$(shell pwd):/mnt" \
 		-u "$(shell id -u):$(shell id -g)" \
-		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		lock
 
 client: container_build versiongen loregen lock
@@ -46,7 +46,7 @@ client: container_build versiongen loregen lock
 		--rm \
 		-v "$(shell pwd):/mnt" \
 		-u "$(shell id -u):$(shell id -g)" \
-		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		build
 	mkdir -p artifacts
 	VERSION=$$(cat $(shell pwd)/.version) ; \
@@ -58,7 +58,7 @@ server: container_build versiongen loregen lock
 		--rm \
 		-v "$(shell pwd):/mnt" \
 		-u "$(shell id -u):$(shell id -g)" \
-		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		server
 	mkdir -p artifacts
 	VERSION=$$(cat $(shell pwd)/.version) ; \
@@ -67,7 +67,7 @@ server: container_build versiongen loregen lock
 build: client server
 
 clean:
-	rm -rf build/server build/release .version
+	rm -rf build/server build/release .version .version-container
 	rm -f src/config/loreexpansion/lore/*.json src/structures/active/lore_*.rcig
 
 distclean: clean
@@ -89,5 +89,5 @@ loregen: container_build
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		loregen

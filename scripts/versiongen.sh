@@ -34,4 +34,4 @@ fi
 
 docker run -v "${ROOTDIR}:/mnt" \
        otakup0pe/avakas show /mnt \
-	   2> /dev/null 1> "${ROOTDIR}/.version-docker"
+	   2> /dev/null 1> "${ROOTDIR}/.version-container"
