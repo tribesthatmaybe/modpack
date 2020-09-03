@@ -26,8 +26,12 @@ else
 	           --pre-build --pre-build-prefix="$RELEASE" \
 			   2> /dev/null 1> "${ROOTDIR}/.version"
     else
-        docker run -v "${ROOTDIR}:/mnt"  -e GITHUB_RUN_ID -e GITHUB_RUN_NUMBER \
+        docker run -v "${ROOTDIR}:/mnt" \
                otakup0pe/avakas show /mnt \
 			   2> /dev/null 1> "${ROOTDIR}/.version"
     fi
 fi
+
+docker run -v "${ROOTDIR}:/mnt" \
+       otakup0pe/avakas show /mnt \
+	   2> /dev/null 1> "${ROOTDIR}/.version-docker"

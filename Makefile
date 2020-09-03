@@ -7,21 +7,21 @@ else
 CIENV = $(VIRTUAL_ENV)/bin/
 endif
 
-DOCKER_IMAGE=tribesthatmaybe/modpack:honk
+DOCKER_IMAGE="ghcr.io/tribesthatmaybe/workflow"
 
 versiongen:
 	./scripts/versiongen.sh
 
-container_build:
+container_build: versiongen
 	docker build \
-		--tag $(DOCKER_IMAGE) \
+		--tag $(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
 		.
 container_shell: container_build
 	docker run \
 		-it --rm \
 		-v "$(shell pwd):/mnt" \
 		-u "$(shell id -u):$(shell id -g)" \
-		$(DOCKER_IMAGE) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
 		shell
 
 update: container_build
@@ -29,7 +29,7 @@ update: container_build
 		--rm \
 		-v "$(shell pwd):/mnt" \
 		-u "$(shell id -u):$(shell id -g)" \
-		$(DOCKER_IMAGE) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
 		update
 
 lock: container_build
@@ -37,7 +37,7 @@ lock: container_build
 		--rm \
 		-v "$(shell pwd):/mnt" \
 		-u "$(shell id -u):$(shell id -g)" \
-		$(DOCKER_IMAGE) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
 		lock
 
 client: container_build versiongen loregen lock
@@ -46,7 +46,7 @@ client: container_build versiongen loregen lock
 		--rm \
 		-v "$(shell pwd):/mnt" \
 		-u "$(shell id -u):$(shell id -g)" \
-		$(DOCKER_IMAGE) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
 		build
 	mkdir -p artifacts
 	VERSION=$$(cat $(shell pwd)/.version) ; \
@@ -58,7 +58,7 @@ server: container_build versiongen loregen lock
 		--rm \
 		-v "$(shell pwd):/mnt" \
 		-u "$(shell id -u):$(shell id -g)" \
-		$(DOCKER_IMAGE) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version) \
 		server
 	mkdir -p artifacts
 	VERSION=$$(cat $(shell pwd)/.version) ; \
@@ -89,5 +89,5 @@ loregen: container_build
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
-		$(DOCKER_IMAGE) \
+		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-docker) \
 		loregen
