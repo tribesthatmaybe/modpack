@@ -67,7 +67,7 @@ server: container_build versiongen loregen lock
 build: client server
 
 clean:
-	rm -rf build/server build/release .version
+	rm -rf build/server build/release .version .version-container
 	rm -f src/config/loreexpansion/lore/*.json src/structures/active/lore_*.rcig
 
 distclean: clean
