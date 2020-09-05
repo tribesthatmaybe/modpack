@@ -21,7 +21,7 @@ CONTAINER_VERSION="$1"
 VERSION="$2"
 shift 2
 
-DOCKER_IMAGE="ghcr.io/tribedsthatmaybe/workflow:${CONTAINER_VERSION}"
+DOCKER_IMAGE="ghcr.io/tribesthatmaybe/workflow:${CONTAINER_VERSION}"
 ARTIFACT_PATH="${ROOTDIR}/artifacts"
 ARTIFACT="${ARTIFACT_PATH}/ttmb-server-${VERSION}.zip"
 if [ ! -e "$ARTIFACT" ] ; then
