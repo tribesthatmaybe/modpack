@@ -2,10 +2,9 @@
 set -e
 SCRIPTDIR=$( cd "${0%/*}" && pwd)
 ROOTDIR="${SCRIPTDIR%/*}"
-DOCKER_IMAGE="tribesthatmaybe/modpack:honk"
 
 usage() {
-    echo "${0} <version>"
+    echo "${0} <container_version> <artifact_version>"
     exit 1
 }
 
@@ -14,13 +13,15 @@ problems() {
     exit 1
 }
 
-if [ $# != 1 ] ; then
+if [ $# != 2 ] ; then
     usage
 fi
 
-VERSION="$1"
+CONTAINER_VERSION="$1"
+VERSION="$2"
 shift
 
+DOCKER_IMAGE="ghcr.io/tribedsthatmaybe/workflow:${CONTAINER_VERSION}"
 RELEASE="release"
 RELEASE_FILE="${ROOTDIR}/release"
 if [ -e "$RELEASE_FILE" ] ; then
@@ -34,5 +35,5 @@ fi
 docker run \
        --rm \
        -v "${ROOTDIR}:/mnt" \
-       "tribesthatmaybe/modpack:honk" \
+       "ghcr.io/tribedsthatmaybe/workflow:${CONTAINER_VERSION}" \
        upload "$VERSION" "$RELEASE"
