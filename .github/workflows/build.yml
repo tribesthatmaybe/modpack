@@ -15,6 +15,7 @@ jobs:
     runs-on: "ubuntu-latest"
     outputs:
       version: ${{steps.version_meta.outputs.version}}
+      container_version: ${{steps.version_meta.outputs.container_version}}
     env:
       CONTAINER_TOKEN: "${{secrets.CONTAINER_TOKEN}}"
     steps:
@@ -41,6 +42,7 @@ jobs:
           echo ::set-env name=version::$(cat $(pwd)/.version)
           echo ::set-env name=container_version::$(cat $(pwd)/.version-container)
           echo ::set-output name=version::$(cat $(pwd)/.version)
+          echo ::set-output name=container_version::$(cat $(pwd)/.version-container)
       - name: "upload artifact modpack i guess"
         id: "client_upload"
         uses: "actions/upload-artifact@v2"
@@ -114,6 +116,10 @@ jobs:
           mkdir -p artifacts
           cd server-artifact
           zip -r ../artifacts/ttmb-server-${{needs.build.outputs.version}}.zip *
+      - name: "pull workflow container"
+        run: |
+          docker login ghcr.io --username otakup0pe --password-stdin <<< "$CONTAINER_TOKEN"
+          docker pull ghcr.io/tribesthatmaybe/workflow:${{needs.build.outputs.version}}
       - name: "deploy to dev server"
         run: |
           ./scripts/render-devsync.sh
@@ -158,6 +164,10 @@ jobs:
           mkdir -p artifacts
           cd client-artifact
           zip -r ../artifacts/ttmb-client-${{needs.build.outputs.version}}.zip *
+      - name: "pull workflow container"
+        run: |
+          docker login ghcr.io --username otakup0pe --password-stdin <<< "$CONTAINER_TOKEN"
+          docker pull ghcr.io/tribesthatmaybe/workflow:${{needs.build.outputs.version}}
       - name: "upload to curseforge"
         run: |
           ./scripts/render-devsync.sh
