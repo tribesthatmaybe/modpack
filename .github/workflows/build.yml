@@ -101,6 +101,7 @@ jobs:
       RCON_PASSWORD: "${{secrets.RCON_PASSWORD}}"
       CURSEFORGE_TOKEN: "${{secrets.CURSEFORGE_TOKEN}}"
       GITHUB_TOKEN: "${{secrets.GITHUB_TOKEN}}"
+      CONTAINER_TOKEN: "${{secrets.CONTAINER_TOKEN}}"
     steps:
       - uses: "actions/checkout@v2"
         with:
@@ -139,6 +140,7 @@ jobs:
       RCON_PASSWORD: "${{secrets.RCON_PASSWORD}}"
       CURSEFORGE_TOKEN: "${{secrets.CURSEFORGE_TOKEN}}"
       GITHUB_TOKEN: "${{secrets.GITHUB_TOKEN}}"
+      CONTAINER_TOKEN: "${{secrets.CONTAINER_TOKEN}}"
     steps:
       - uses: "actions/checkout@v2"
         with:
