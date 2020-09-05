@@ -35,5 +35,5 @@ fi
 docker run \
        --rm \
        -v "${ROOTDIR}:/mnt" \
-       "ghcr.io/tribedsthatmaybe/workflow:${CONTAINER_VERSION}" \
+       "$DOCKER_IMAGE" \
        upload "$VERSION" "$RELEASE"
