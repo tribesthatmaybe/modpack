@@ -21,7 +21,7 @@ CONTAINER_VERSION="$1"
 VERSION="$2"
 shift
 
-DOCKER_IMAGE="ghcr.io/tribedsthatmaybe/workflow:${CONTAINER_VERSION}"
+DOCKER_IMAGE="ghcr.io/tribesthatmaybe/workflow:${CONTAINER_VERSION}"
 RELEASE="release"
 RELEASE_FILE="${ROOTDIR}/release"
 if [ -e "$RELEASE_FILE" ] ; then
@@ -35,5 +35,5 @@ fi
 docker run \
        --rm \
        -v "${ROOTDIR}:/mnt" \
-       "ghcr.io/tribedsthatmaybe/workflow:${CONTAINER_VERSION}" \
+       "$DOCKER_IMAGE" \
        upload "$VERSION" "$RELEASE"
