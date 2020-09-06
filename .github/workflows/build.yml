@@ -27,7 +27,7 @@ jobs:
         # Ubuntu latest does not have wget or unzip installed by default
         name: "Get dependencies"
         run: |
-          apt-get -y update
+          sudo apt-get -y update
           sudo apt-get -y install wget unzip
       - id: fetch_artifacts
         name: "fetch ARTifacts"
