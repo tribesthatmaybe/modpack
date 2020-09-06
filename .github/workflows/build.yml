@@ -28,7 +28,7 @@ jobs:
         name: "Get dependencies"
         run: |
           apt-get -y update
-          apt-get -y install wget unzip
+          sudo apt-get -y install wget unzip
       - id: fetch_artifacts
         name: "fetch ARTifacts"
         # Credit to https://gist.github.com/umohi/bfc7ad9a845fc10289c03d532e3d2c2f
