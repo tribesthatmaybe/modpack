@@ -23,12 +23,23 @@ jobs:
         uses: "actions/checkout@v2"
         with:
           fetch-depth: 1
+      - id: get_dependencies
+        # Ubuntu latest does not have wget or unzip installed by default
+        name: "Get dependencies"
+        run: |
+          apt-get -y update
+          apt-get -y install wget unzip
       - id: fetch_artifacts
         name: "fetch ARTifacts"
-        uses: "actions/download-artifact@v2"
-        with:
-          name: "textures-latest"
-          path: "src/resources"
+        # Credit to https://gist.github.com/umohi/bfc7ad9a845fc10289c03d532e3d2c2f
+        # want to pin to tags for releases, but currently no tags in art to
+        # which to pin.
+        run: |
+          artifact=textures-latest
+          list_asset_url=https://api.github.com/repos/tribesthatmaybe/art_source/actions/artifacts
+          asset_url=$(curl "${list_asset_url}" | jq ".artifacts[] | select(.name==\"${artifact}\") | .url" | sed 's/\"//g')/zip
+          wget -O textures-latest.zip  $asset_url/zip?access_token=${GITHUB_TOKEN}
+          unzip -od src/resources textures-latest.zip
       - name: "generate config"
         id: "configgen"
         run: 'echo "twitch_token: ${{ secrets.CURSE_TOKEN }}" > config.yml'
