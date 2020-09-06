@@ -18,6 +18,7 @@ jobs:
       container_version: ${{steps.version_meta.outputs.container_version}}
     env:
       CONTAINER_TOKEN: "${{secrets.CONTAINER_TOKEN}}"
+      ART_PAT: "${{secrets.ART_PAT}}"
     steps:
       - id: "checkout"
         uses: "actions/checkout@v2"
@@ -38,7 +39,7 @@ jobs:
           artifact=textures-latest
           list_asset_url=https://api.github.com/repos/tribesthatmaybe/art_source/actions/artifacts
           asset_url=$(curl "${list_asset_url}" | jq ".artifacts[] | select(.name==\"${artifact}\") | .url" | sed 's/\"//g')/zip
-          wget -O textures-latest.zip  $asset_url?access_token=${GITHUB_TOKEN}
+          wget -O textures-latest.zip  $asset_url?access_token=${ART_PAT}
           unzip -od src/resources textures-latest.zip
       - name: "generate config"
         id: "configgen"
