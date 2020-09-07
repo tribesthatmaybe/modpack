@@ -40,7 +40,10 @@ jobs:
           list_asset_url=https://api.github.com/repos/tribesthatmaybe/art_source/actions/artifacts
           asset_url=$(curl "${list_asset_url}" | jq ".artifacts[] | select(.name==\"${artifact}\") | .url" | sed 's/\"//g')/zip
           curl -s -L -H "Authorization: token ${ART_PAT}" -o textures-latest.zip $asset_url
+          unzip -od src/resources textures-latest.zip  || cat textures-latest.zip
+          # The above should fail eventually, but put the cat in to debug, so re-do the unzip so it fails if it does
           unzip -od src/resources textures-latest.zip
+
       - name: "generate config"
         id: "configgen"
         run: 'echo "twitch_token: ${{ secrets.CURSE_TOKEN }}" > config.yml'
