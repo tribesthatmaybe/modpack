@@ -14,6 +14,10 @@ val dropSnacks = [
     <actuallyadditions:item_food:4>,    # fries
     <actuallyadditions:item_food:5>,    # fry
     <actuallyadditions:item_food:0>,    # cheese
+    <actuallyadditions:item_food:1>,    # pumpkin stew
+    <actuallyadditions:item_food:10>,   # toats
+    <actuallyadditions:item_food:19>,   # chocolate toast
+    <actuallyadditions:item_food:20>,   # bacon
 ] as IItemStack[];
 
 for snack in dropSnacks {

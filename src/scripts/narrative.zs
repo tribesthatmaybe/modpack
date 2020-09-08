@@ -6,6 +6,9 @@ import crafttweaker.game.IGame;
 //game.setLocalization("item.weather2.sand_layer_placeable.name", "Playa Dust");
 //game.setLocalization("tile.weather2.sand_layer.name", "Playa Dust");
 
+// c'mon now it's 2020
+<storagedrawers:controllerslave>.displayName = "Drawer Interface";
+
 // hard to find dirt in the desert y'know
 recipes.addShaped(<minecraft:dirt> * 4, [[<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>],[<minecraft:rotten_flesh>, <ore:logWood>, <minecraft:rotten_flesh>], [<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>]]);
 

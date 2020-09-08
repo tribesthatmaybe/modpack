@@ -1,0 +1,10 @@
+---
+title: "Avatar Tweaking"
+category: "Gameplay"
+text: |
+  If you log in to https://minecraft.net/ you can change the skin your Minecraft character is using. You can find a bunch of loosely licensed user generated skins on https://www.minecraftskins.com/. You will need to restart Minecraft for this change to take effect but it will persist across all Minecraft worlds you visit.
+  You can also make quite a few changes that are local to a particular Tribes That May Be server. When you bring up your inventory screen ("e" by default) you should notice a few different tabs along the top and the left side of the window. One of the tabs on the top row should have an icon which is your avatars current head. Click on this to enter the avatar customization window.
+  From here you can select existing models, and create/modify/remove custom models. You can create a new model that is customized feature by feature, or simply assume the shape of any other entity in the game. You can either specify a new skin via a URL or select one of the skins which are already available in the game. There are plenty of quirks to watch out for with this mod
+  * You cannot rename models so make sure to enter a good name when creating new models
+  * The entity selector window can produce terrible noises. Turn down your sound.
+  * Armor and wearables do not scale with custom avatars.
