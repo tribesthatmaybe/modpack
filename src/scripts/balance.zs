@@ -132,7 +132,8 @@ recipes.addShaped(<tconstruct:throwball:1> * 4, [
                                            [<minecraft:gunpowder>, <immersiveengineering:material:2>, <minecraft:gunpowder>],
                                            [<immersiveengineering:material:2>, <immersiveengineering:wooden_device0:4>, <immersiveengineering:material:2>],
                                            [<minecraft:gunpowder>, <immersiveengineering:material:2>, <minecraft:gunpowder>]]);
-recipes.removeShaped(<tconstruct:throwball:1>, [[<minecraft:gunpowder>, <mekanism:otherdust:3>, null],[null, null, null], [null, null, null]]);
+recipes.removeShapeless(<tconstruct:throwball:1>);
+recipes.removeShapeless(<tconstruct:throwball:1>);
 
 //// recycle
 // people gonna end up with extra lore
