@@ -40,3 +40,17 @@ These clones are kinda a grab bag of miscreants, hippies, and long lost punks.
 
 * The Party Kids Brad, Chad, Kara, Karen are just party kids. They show up with the `test_party_kids` struccture.
 * The Tumbleweed Farmer is a Traveller who has been out in the desert for a long time. He will sell you things the Reverse Carinies would consider to be matter out of place.
+* Third Year Joe hasn't been in the Block Rock Desert as long as he thinks. Chill Reverse Carnie who can be found in villages and in the middle of nowhere.
+
+## Quest Helpers
+
+These clones are traders and plot elements.
+
+* Arnold runs a industry focused shop which can show up in villages and work camps.
+* Badger rolls around with a shotgun and and attitude.
+* Honf is a wandering merchant who likes oranges and will trade for assorted supplies.
+* Sunshine is a purveyor of supplies and vices who shows up in villages.
+
+## Antagonists
+
+* Jonesey is the anti-Badger.
