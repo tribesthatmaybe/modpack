@@ -29,16 +29,6 @@
     "MovingPatern": 0,
     "NpcLines": {
         "Lines": [
-            {
-                "Line": "The desert is moving on...",
-                "Song": "",
-                "Slot": 0
-            },
-            {
-                "Line": "I've given up on leaving this village.",
-                "Song": "",
-                "Slot": 1
-            }
         ]
     },
     "DefendFaction": 0b,
@@ -78,8 +68,18 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:blaze_rod",
-                "Count": 8b,
+                "id": "minecraft:dye",
+                "Count": 1b,
+                "Damage": 3s
+            },
+            {
+                "Slot": 1b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "harvestcraft:jicamaseeditem",
+                "Count": 1b,
                 "Damage": 0s
             },
             {
@@ -88,9 +88,19 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "mekanism:basicblock",
-                "Count": 2b,
-                "Damage": 5s
+                "id": "harvestcraft:spiceleafseeditem",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 4b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "harvestcraft:gingerseeditem",
+                "Count": 1b,
+                "Damage": 0s
             },
             {
                 "Slot": 6b,
@@ -98,11 +108,18 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "vehicle:jerry_can",
+                "id": "harvestcraft:tomatoseeditem",
                 "Count": 1b,
-                "tag": {
-                    "fuel": 5000.0f
+                "Damage": 0s
+            },
+            {
+                "Slot": 7b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
                 },
+                "id": "harvestcraft:cucumberseeditem",
+                "Count": 1b,
                 "Damage": 0s
             },
             {
@@ -111,8 +128,18 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:ender_pearl",
-                "Count": 2b,
+                "id": "brewcraft:hopsseeditem",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 10b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "harvestcraft:cornseeditem",
+                "Count": 1b,
                 "Damage": 0s
             },
             {
@@ -121,8 +148,8 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "immersiveengineering:treated_wood",
-                "Count": 16b,
+                "id": "harvestcraft:lettuceseeditem",
+                "Count": 1b,
                 "Damage": 0s
             },
             {
@@ -131,11 +158,8 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "immersiveengineering:blueprint",
+                "id": "harvestcraft:garlicseeditem",
                 "Count": 1b,
-                "tag": {
-                    "blueprint": "booms"
-                },
                 "Damage": 0s
             }
         ]
@@ -145,24 +169,34 @@
     "NpcInteractNPCLines": {
         "Lines": [
             {
-                "Line": "Good to see you again",
+                "Line": "Long nights and pleasant days.",
                 "Song": "",
                 "Slot": 0
             },
             {
-                "Line": "Long days and pleasant nights",
+                "Line": "Long days and pleasant nights.",
                 "Song": "",
                 "Slot": 1
             },
             {
-                "Line": "Been a while since I saw you",
+                "Line": "Lovely to see you again.",
                 "Song": "",
                 "Slot": 2
+            },
+            {
+                "Line": "Been a while.....",
+                "Song": "",
+                "Slot": 3
+            },
+            {
+                "Line": "Surprising amount of people recently.",
+                "Song": "",
+                "Slot": 4
             }
         ]
     },
     "HurtTime": 0s,
-    "WalkingRange": 15,
+    "WalkingRange": 5,
     "ShotCount": 1,
     "pDur": 5,
     "TraderIgnoreDamage": 0b,
@@ -173,7 +207,7 @@
     },
     "PotionImmune": 0b,
     "AvoidsSun": 0b,
-    "Texture": "customnpcs:textures/entity/humanmale/steve.png",
+    "Texture": "",
     "NpcJob": 0,
     "BurstCount": 1,
     "NpcAttackLines": {
@@ -225,23 +259,23 @@
     "TransformHasInv": 0b,
     "NpcInteractLines": {
         "Lines": [
-            {
-                "Line": "Names Arnold, how can I help you",
-                "Song": "",
-                "Slot": 0
-            },
-            {
-                "Line": "If I don't have it you probably don't nede it yet",
-                "Song": "",
-                "Slot": 1
-            }
         ]
     },
-    "HurtByTimestamp": 651,
+    "HurtByTimestamp": 5409,
     "TraderCurrency": {
         "NpcMiscInv": [
             {
                 "Slot": 0b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:emerald",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 1b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
                     }
@@ -256,9 +290,19 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "actuallyadditions:item_crystal",
+                "id": "minecraft:emerald",
                 "Count": 1b,
-                "Damage": 4s
+                "Damage": 0s
+            },
+            {
+                "Slot": 4b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:emerald",
+                "Count": 1b,
+                "Damage": 0s
             },
             {
                 "Slot": 6b,
@@ -266,9 +310,19 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "actuallyadditions:item_crystal",
-                "Count": 2b,
-                "Damage": 2s
+                "id": "minecraft:emerald",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 7b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:emerald",
+                "Count": 1b,
+                "Damage": 0s
             },
             {
                 "Slot": 9b,
@@ -276,9 +330,19 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "immersiveengineering:storage",
-                "Count": 2b,
-                "Damage": 1s
+                "id": "actuallyadditions:item_crystal",
+                "Count": 1b,
+                "Damage": 4s
+            },
+            {
+                "Slot": 10b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:emerald",
+                "Count": 1b,
+                "Damage": 0s
             },
             {
                 "Slot": 12b,
@@ -296,9 +360,9 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "actuallyadditions:item_crystal_empowered",
+                "id": "minecraft:emerald",
                 "Count": 1b,
-                "Damage": 3s
+                "Damage": 0s
             },
             {
                 "Slot": 18b,
@@ -306,8 +370,38 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:gold_block",
-                "Count": 2b,
+                "id": "minecraft:gold_ingot",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 19b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:gold_ingot",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 21b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:gold_ingot",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 22b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:gold_ingot",
+                "Count": 1b,
                 "Damage": 0s
             },
             {
@@ -316,7 +410,17 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:gold_block",
+                "id": "minecraft:gold_ingot",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 25b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:gold_ingot",
                 "Count": 1b,
                 "Damage": 0s
             },
@@ -326,7 +430,17 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:gold_block",
+                "id": "minecraft:gold_ingot",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 28b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:gold_ingot",
                 "Count": 1b,
                 "Damage": 0s
             },
@@ -336,9 +450,19 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "mekanism:basicblock",
+                "id": "minecraft:gold_ingot",
                 "Count": 1b,
-                "Damage": 12s
+                "Damage": 0s
+            },
+            {
+                "Slot": 33b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:gold_ingot",
+                "Count": 1b,
+                "Damage": 0s
             }
         ]
     },
@@ -409,13 +533,23 @@
     "NoFallDamage": 0b,
     "AbsorptionAmount": 0.0f,
     "TransformHasRole": 0b,
-    "Name": "Arnold",
+    "Name": "Vanessa",
     "FallDistance": 0.0f,
     "SkinColor": 16777215,
     "NpcIdleSound": "",
     "Weapons": [
     ],
     "NPCDialogOptions": [
+        {
+            "NPCDialog": {
+                "DialogCommand": "",
+                "Dialog": 10,
+                "Title": "Greeting",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            },
+            "DialogSlot": 0
+        }
     ],
     "AggroRange": 16,
     "DirectLOS": 1b,
@@ -458,7 +592,7 @@
             "PositionY": 1,
             "SkinColor": 11830381,
             "PlayerTexture": 0b,
-            "Color": 15066419,
+            "Color": 5013401,
             "BrowColor": 5982516,
             "BrowThickness": 4
         },
@@ -492,12 +626,12 @@
         }
     },
     "minDelay": 20,
-    "DoorInteract": 2,
+    "DoorInteract": 1,
     "MoveSpeed": 5,
     "TransformEditingModus": 0b,
     "UsingSkinUrl": 2b,
     "Leashed": 0b,
-    "SkinUrl": "https://www.minecraftskins.com/uploads/skins/2018/03/05/skin_20180305041731165208.png?v255",
+    "SkinUrl": "http://assets.tribesthatmay.be/images/skins/vanessa.png",
     "CanSwim": 1b,
     "TraderIgnoreNBT": 0b,
     "GroundSound": "minecraft:block.stone.break",
@@ -547,12 +681,12 @@
         }
     ],
     "FactionPoints": {
-        "DecreaseFaction1Points": 0b,
-        "OptionFaction2Points": 100,
-        "OptionFactions1": -1,
-        "OptionFactions2": -1,
+        "DecreaseFaction1Points": 1b,
+        "OptionFaction2Points": 50,
+        "OptionFactions1": 4,
+        "OptionFactions2": 0,
         "OptionFaction1Points": 100,
-        "DecreaseFaction2Points": 0b
+        "DecreaseFaction2Points": 1b
     },
     "pDamage": 4,
     "KilledTime": 0L,
@@ -583,7 +717,7 @@
         1.899999976158142d,
         0.30000001192092896d
     ],
-    "OnAttack": 0,
+    "OnAttack": 2,
     "TacticalRadius": 8,
     "FallFlying": 0b,
     "MaxExp": 0,
@@ -603,18 +737,18 @@
     "GlowTexture": "",
     "MaxFiringRange": 15,
     "pXlr8": 0b,
-    "MarkovGeneratorId": 0,
+    "MarkovGeneratorId": 7,
     "Scripts": [
     ],
     "Health": 20.0f,
     "pStick": 0b,
     "MovingPause": 1b,
     "NpcDeathSound": "minecraft:entity.player.hurt",
-    "FactionID": 0,
-    "Title": "Industry",
-    "TotalTicksAlive": 953554L,
+    "FactionID": 4,
+    "Title": "Merchant",
+    "TotalTicksAlive": 48930L,
     "Rotation": [
-        2.3828735f,
+        258.48065f,
         0.0f
     ],
     "ShowName": 1,

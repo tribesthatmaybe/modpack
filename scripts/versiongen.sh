@@ -25,6 +25,12 @@ else
                otakup0pe/avakas show /mnt \
 	           --pre-build --pre-build-prefix="$RELEASE" \
 			   2> /dev/null 1> "${ROOTDIR}/.version"
+    elif [ "$(git rev-parse --abbrev-ref HEAD)" != "mainline" ] ; then
+        # we might be on the latest tagged commit but in a dev branch
+        docker run -v "${ROOTDIR}:/mnt" -e GITHUB_RUN_ID -e GITHUB_RUN_NUMBER \
+               otakup0pe/avakas show /mnt \
+	           --pre-build --pre-build-prefix="$RELEASE" --pre-build-date --build \
+		       2> /dev/null 1> "${ROOTDIR}/.version"
     else
         docker run -v "${ROOTDIR}:/mnt" \
                otakup0pe/avakas show /mnt \

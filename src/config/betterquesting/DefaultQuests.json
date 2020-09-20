@@ -700,7 +700,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "*Exo-Dermis",
-          "desc:8": "Alright, class! Today we\u0027re learning how to make leather!\n\nCheck JEI for all the ways you can make leather but two early methods are combining four rabbit skins in a crafting table or putting rotten flesh in a furnace. If you don\u0027t remember what JEI is then go back and check the early §eSuch a User§r quest. It covers a lot of important game tools such as the map, JEI, and others!\n\n"
+          "desc:8": "Alright, class! Today we\u0027re learning how to make leather!\n\nCheck JEI for all the ways you can make leather but two early methods are combining four rabbit skins in a crafting table or putting rotten flesh in a furnace. If you don\u0027t remember what JEI is then go back and check the early §eSuch a User§r quest. It covers a lot of important game tools such as the map, JEI, and others!\n\nYour reward includes a new piece of gameplay lore on some of the possibilities you have for customizing your avatar."
         }
       },
       "tasks:9": {
@@ -731,6 +731,27 @@
           "rewardID:8": "bq_standard:xp",
           "isLevels:1": 1,
           "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "avatartweaking",
+                  "category:8": "Gameplay"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -1482,18 +1503,18 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:concrete",
-              "Count:3": 4,
-              "Damage:2": 8,
+              "id:8": "vehicle:electric_engine",
+              "Count:3": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:concrete",
-              "Count:3": 4,
-              "Damage:2": 14,
+              "id:8": "vehicle:small_engine",
+              "Count:3": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -2229,7 +2250,7 @@
         "0:10": {
           "partialMatch:1": 0,
           "allowSmelt:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "allowCraft:1": 1,
           "allowAnvil:1": 0,
@@ -2301,6 +2322,21 @@
               },
               "id:8": "cyclicmagic:glowing_chorus",
               "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "chunksandyou",
+                  "category:8": "Gameplay"
+                }
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -3326,7 +3362,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Dear Journal....",
-          "desc:8": "We\u0027ve talked about the questbook and how helpful it is to your adventure but what other books are there?\n\nYou may have noticed that you started out with a Journal. Throughout your time in the multiverse you will find bits and pieces of lore. As you collect these they will end up in your journal and you can read them.\n\nSome lore will be part of the story, some lore will be the stories of others, and some will be informative and help you learn about difference pieces of the Tribes That May Be experience."
+          "desc:8": "We\u0027ve talked about the questbook and how helpful it is to your adventure but what other books are there?\n\nYou may have noticed that you started out with a Journal. Throughout your time in the multiverse you will find bits and pieces of lore. As you collect these they will end up in your journal and you can read them.\n\nSome lore will be part of the story, some lore will be the stories of others, and some will be informative and help you learn about difference pieces of the Tribes That May Be experience.\n\nIf you are ever confused about where to head next, or how to do a think you are pretty sure you learned, then always remember to take a look at your journal if your trusty quest book doesn\u0027t have any clues."
         }
       },
       "tasks:9": {
@@ -4304,7 +4340,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "You Made It!! Now, Press ~ .",
-          "desc:8": "You\u0027re finally here! It\u0027s true.\n\nBut where\u0027s everyone else?\n\nWell, at least you\u0027ve got me, your trusty quest book.\n\nIn case it isn\u0027t obvious, your current priority is survival.\n\nFirst, try to remember what color your sleeping bag is and §5l-click§r §\"\"§2Claim§r\".\n\nNext, exit my interface and take stock of your inventory.\n\nAlso, be sure to take a look at the quest \"Such A User...\" for some helpful info and a free goody."
+          "desc:8": "You\u0027re finally here! It\u0027s true.\n\nBut where\u0027s everyone else?\n\nWell, at least you\u0027ve got me, your trusty quest book.\n\nIn case it isn\u0027t obvious, your current priority is survival.\n\nFirst, try to remember what color your sleeping bag is and §5l-click§r §\"\"§2Claim§r\".\n\nNext, exit my interface and take stock of your inventory.\n\nAlso, be sure to take a look at the quest \"Such A User...\" for some helpful info and a free goody.\n\nThe \"Dear Journal\" quest introduces your journal,  as invaluable a companion as me, your trusty quest book."
         }
       },
       "tasks:9": {},
@@ -4466,6 +4502,27 @@
           "type:8": "dummy",
           "value:3": 1,
           "relative:1": 1
+        },
+        "2:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 2,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "movingaround",
+                  "category:8": "Gameplay"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -7943,7 +8000,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Tiered Mystical Gardens",
-          "desc:8": "In order to grow fancier mystical seeds you will need to convert your Inferium Essence into more advanced kinds of essence. This is done by use of an infusion crystal. These have a limited number of uses and may not be recharged. To use, simply include it in a recipe that requires it in a crafting table.\n\nCraft an infusion crystal and then use it to craft a T2 Crafting Seed and T2 Inferium Seed"
+          "desc:8": "In order to craft, let alone grow, fancier mystical seeds you will need to convert your Inferium Essence into more advanced kinds of essence. This is done by use of an infusion crystal. These have a limited number of uses and may not be recharged. To use, simply include it in a recipe that requires it in a crafting table.\n\nCraft an infusion crystal and then use it to craft a T2 Crafting Seed and T2 Inferium Seed"
         }
       },
       "tasks:9": {
@@ -8160,7 +8217,32 @@
           "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "actuallyadditions:item_crystal",
+              "Count:3": 4,
+              "Damage:2": 4,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "actuallyadditions:item_crystal",
+              "Count:3": 4,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "85:10": {
       "questID:3": 85,
@@ -8192,7 +8274,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "A Wet Garden",
-          "desc:8": "Using sprinkers can help speed up the growth rate of plants with a radius of about three blocks. It must be placed over a water block to function. It will not go through walls."
+          "desc:8": "Using sprinkers can help speed up the growth rate of plants with a radius of about three blocks. It must be placed over a water block to function. It will not go through walls. Even crops which are being sufficiently watered will not grow if they are not in season.\n\nIn order to grow all crops even though you are in the desert and it\u0027s basically always summer, you are going to need some greenhouse glass. Here is some to get you started, but you are going to want more."
         }
       },
       "tasks:9": {
@@ -8217,7 +8299,23 @@
           "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "sereneseasons:greenhouse_glass",
+              "Count:3": 9,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "86:10": {
       "questID:3": 86,
@@ -8249,7 +8347,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Accelerated Growth",
-          "desc:8": "Growth accelerators will look for things growing up to sixty four blocks above and give it a boost. There is a cumulative effect when you stack them."
+          "desc:8": "Growth accelerators will look for things growing up to sixty four blocks above and give it a boost. There is a cumulative effect when you stack them. This can have an accelerating affect on your crop growth, and stacks with sprinklers."
         }
       },
       "tasks:9": {
@@ -9169,7 +9267,14 @@
           "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
     },
     "95:10": {
       "questID:3": 95,
@@ -10310,6 +10415,730 @@
           }
         }
       }
+    },
+    "105:10": {
+      "questID:3": 105,
+      "preRequisites:11": [
+        85
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "sereneseasons:greenhouse_glass",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Garden Building",
+          "desc:8": "You are going to want to grow most of your crops in a greenhouse. This is both to keep them protected from the elements (playa dust and tumbleweeds, let alone creepers, can interfere with your garden) but also to ensure that you can grow any crop any time of the year. You will want the greenhouse glass at least 3 blocks above your farmland. I don\u0027t think there is a max height.\n\nYou are going to need glass, which can be made by smelting sand. You are going to also need cyan dye, which can be made by combining green dye and lapis lazulli."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "sereneseasons:greenhouse_glass",
+              "Count:3": 15,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:lettuceseeditem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:garlicseeditem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:jicamaseeditem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "106:10": {
+      "questID:3": 106,
+      "preRequisites:11": [
+        85
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "sereneseasons:ss_icon",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "There is a Season for That",
+          "desc:8": "Not every crop can grow every time of the year. While you can make a proper green house in order to avoid this, you can also do seasonal planting. If you make a Season Clock you can know what part of the season you are in. Not the season itself.\n\nI don\u0027t know, it\u0027s confusing. You should just make a greenhouse."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "sereneseasons:season_clock",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:scythe_head",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "steel"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "107:10": {
+      "questID:3": 107,
+      "preRequisites:11": [
+        106,
+        105,
+        79
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:scythe",
+            "Count:3": 1,
+            "tag:10": {
+              "StatsOriginal:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 6.0,
+                "FreeModifiers:3": 3,
+                "Durability:3": 607,
+                "HarvestLevel:3": 2,
+                "Attack:5": 4.0
+              },
+              "Stats:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 6.0,
+                "FreeModifiers:3": 3,
+                "Durability:3": 607,
+                "HarvestLevel:3": 2,
+                "Attack:5": 4.0
+              },
+              "Special:10": {
+                "Categories:9": {
+                  "0:8": "tool",
+                  "1:8": "weapon",
+                  "2:8": "aoe",
+                  "3:8": "harvest"
+                }
+              },
+              "TinkerData:10": {
+                "Materials:9": {
+                  "0:8": "iron",
+                  "1:8": "iron",
+                  "2:8": "iron",
+                  "3:8": "iron"
+                },
+                "Modifiers:9": {
+                  "0:8": "toolleveling"
+                }
+              },
+              "Modifiers:9": {
+                "0:10": {
+                  "identifier:8": "magnetic",
+                  "color:3": -3487030,
+                  "level:3": 3,
+                  "magnetic1:1": 1,
+                  "magnetic2:1": 1
+                },
+                "1:10": {
+                  "identifier:8": "toolleveling",
+                  "color:3": 16777215,
+                  "level:3": 1
+                }
+              },
+              "Traits:9": {
+                "0:8": "magnetic1",
+                "1:8": "magnetic2",
+                "2:8": "toolleveling"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Farming Efficiency",
+          "desc:8": "The scythe is a much better tool than the hoe, or your hands, for harvesting crops. Right click with it on crops and it will harvest everything ready in a 3x3 area.\n\nYou can also use it as a non terrible weapon.\n\nCombine the tool rods, the binding, and the iron scythe head you already have in a tool forge to make a scythe."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:tough_tool_rod",
+              "Count:3": 2,
+              "tag:10": {
+                "Material:8": "wood"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:tough_binding",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "bone"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:growth_accelerator",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cyclicmagic:sprinkler",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "108:10": {
+      "questID:3": 108,
+      "preRequisites:11": [
+        83
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mysticalagriculture:iron_essence",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Iron for Ages",
+          "desc:8": "The third tier of resource seeds allows you to to start growing stuff like iron and glowstone. "
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:iron_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:iron_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "109:10": {
+      "questID:3": 109,
+      "preRequisites:11": [
+        108
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mysticalagriculture:gold_essence",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Gold for Now",
+          "desc:8": "The fourth level of resource growing nets you valuable resources such as gold, steel, and electrum."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:gold_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:gold_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "110:10": {
+      "questID:3": 110,
+      "preRequisites:11": [
+        89
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:crossbow",
+            "Count:3": 1,
+            "tag:10": {
+              "StatsOriginal:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 6.0,
+                "DrawSpeed:5": 0.5,
+                "FreeModifiers:3": 3,
+                "ProjectileBonusDamage:5": 10.5,
+                "Durability:3": 276,
+                "HarvestLevel:3": 2,
+                "Attack:5": 4.0,
+                "Range:5": 1.5
+              },
+              "Stats:10": {
+                "AttackSpeedMultiplier:5": 1.0,
+                "MiningSpeed:5": 6.0,
+                "DrawSpeed:5": 0.5,
+                "FreeModifiers:3": 3,
+                "ProjectileBonusDamage:5": 10.5,
+                "Durability:3": 276,
+                "HarvestLevel:3": 2,
+                "Attack:5": 4.0,
+                "Range:5": 1.5
+              },
+              "Special:10": {
+                "Categories:9": {
+                  "0:8": "launcher",
+                  "1:8": "tool"
+                }
+              },
+              "TinkerData:10": {
+                "Materials:9": {
+                  "0:8": "iron",
+                  "1:8": "iron",
+                  "2:8": "iron",
+                  "3:8": "string"
+                },
+                "Modifiers:9": {
+                  "0:8": "toolleveling"
+                }
+              },
+              "Modifiers:9": {
+                "0:10": {
+                  "identifier:8": "magnetic",
+                  "color:3": -3487030,
+                  "level:3": 3,
+                  "magnetic1:1": 1,
+                  "magnetic2:1": 1
+                },
+                "1:10": {
+                  "identifier:8": "toolleveling",
+                  "color:3": 16777215,
+                  "level:3": 1
+                }
+              },
+              "Traits:9": {
+                "0:8": "magnetic1",
+                "1:8": "magnetic2",
+                "2:8": "toolleveling"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Make a Crossbow",
+          "desc:8": "The crossbow is pretty rad and let\u0027s you reach out and tap your enemies without getting in range. Given the multitude of upgrades and modifiers you can make to your Tinkers items, it can be quite customizable too. The process for building the crossbow bolt isn\u0027t the most intuituve, so make sure to take a look at the bolt section of the Tools chapter in Materials and You.\n\nMake most of the pieces you\u0027ll need for the crossbow, and then select one of the fancy pieces as a quest reward."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 1,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:tough_tool_rod",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "iron"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:tough_binding",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "iron"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:bow_string",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "string"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:bolt",
+              "Count:3": 1,
+              "tag:10": {
+                "StatsOriginal:10": {
+                  "AttackSpeedMultiplier:5": 1.0,
+                  "Accuracy:5": 1.0,
+                  "MiningSpeed:5": 6.0,
+                  "FreeModifiers:3": 3,
+                  "Durability:3": 163,
+                  "HarvestLevel:3": 2,
+                  "Attack:5": 4.0
+                },
+                "Stats:10": {
+                  "AttackSpeedMultiplier:5": 1.0,
+                  "Accuracy:5": 1.0,
+                  "MiningSpeed:5": 6.0,
+                  "FreeModifiers:3": 3,
+                  "Durability:3": 163,
+                  "HarvestLevel:3": 2,
+                  "Attack:5": 4.0
+                },
+                "Special:10": {
+                  "Categories:9": {
+                    "0:8": "projectile",
+                    "1:8": "no_melee",
+                    "2:8": "tool"
+                  }
+                },
+                "TinkerData:10": {
+                  "Materials:9": {
+                    "0:8": "wood",
+                    "1:8": "iron",
+                    "2:8": "feather"
+                  },
+                  "Modifiers:9": {
+                    "0:8": "toolleveling"
+                  }
+                },
+                "Modifiers:9": {
+                  "0:10": {
+                    "identifier:8": "ecological",
+                    "color:3": -7444965,
+                    "level:3": 1
+                  },
+                  "1:10": {
+                    "identifier:8": "magnetic",
+                    "color:3": -3487030,
+                    "level:3": 2,
+                    "magnetic2:1": 1
+                  },
+                  "2:10": {
+                    "identifier:8": "toolleveling",
+                    "color:3": 16777215,
+                    "level:3": 1
+                  }
+                },
+                "Traits:9": {
+                  "0:8": "ecological",
+                  "1:8": "magnetic2",
+                  "2:8": "toolleveling"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:bow_limb",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "cobalt"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:bow_limb",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "lead"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:bow_limb",
+              "Count:3": 1,
+              "tag:10": {
+                "Material:8": "paper"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -10373,8 +11202,8 @@
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": -108,
+          "x:3": -60,
+          "y:3": -72,
           "id:3": 85,
           "sizeY:3": 24
         },
@@ -10383,6 +11212,41 @@
           "x:3": -168,
           "y:3": -36,
           "id:3": 86,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": -36,
+          "id:3": 105,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": -72,
+          "id:3": 106,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": -36,
+          "id:3": 107,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": -36,
+          "id:3": 108,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": 0,
+          "id:3": 109,
           "sizeY:3": 24
         }
       },
@@ -10896,6 +11760,13 @@
           "y:3": -72,
           "id:3": 103,
           "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -252,
+          "y:3": -72,
+          "id:3": 110,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 5,
@@ -11278,6 +12149,29 @@
         }
       },
       "order:3": 0
+    },
+    "8:10": {
+      "quests:9": {},
+      "lineID:3": 8,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "NORMAL",
+          "name:8": "Electrical Pun Goes Here",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mekanismgenerators:generator",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "We\u0027ve gotten by up until now with being able to extract sunk carbon in the least efficient way possible. If we are going to expand and ultimately end up at our fully automated anarchist queer block utopia then we are going to need to power ourselves through it. There are several ways of generating power with varying levels of power output and need to pay attention. It\u0027s possible to move power via wires, or via batteries.\n\nYou may find in some cases that you do not need full power infrastructure for smaller outposts, but if you do, the wires you create can be run throughout the realm without any worry about loaded chunks."
+        }
+      },
+      "order:3": 8
     }
   },
   "questSettings:10": {

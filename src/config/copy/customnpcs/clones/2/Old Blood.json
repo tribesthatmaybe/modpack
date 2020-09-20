@@ -145,7 +145,7 @@
             }
         ]
     },
-    "HurtByTimestamp": 4625,
+    "HurtByTimestamp": 9893,
     "pSpin": 0b,
     "NpcHurtSound": "minecraft:entity.player.hurt",
     "pTrail": 0,
@@ -361,12 +361,12 @@
         }
     ],
     "FactionPoints": {
-        "DecreaseFaction1Points": 0b,
-        "OptionFaction2Points": 100,
-        "OptionFactions1": -1,
-        "OptionFactions2": -1,
+        "DecreaseFaction1Points": 1b,
+        "OptionFaction2Points": 50,
+        "OptionFactions1": 0,
+        "OptionFactions2": 4,
         "OptionFaction1Points": 100,
-        "DecreaseFaction2Points": 0b
+        "DecreaseFaction2Points": 1b
     },
     "pDamage": 4,
     "KilledTime": 0L,
@@ -393,7 +393,7 @@
         -0.30000001192092896d,
         0.0d,
         -0.30000001192092896d,
-        0.30000001192092896d,
+        0.30000001192081527d,
         1.9900000095367432d,
         0.30000001192092896d
     ],
@@ -436,9 +436,9 @@
     "NpcDeathSound": "minecraft:entity.player.hurt",
     "FactionID": 0,
     "Title": "Gayte",
-    "TotalTicksAlive": 4934L,
+    "TotalTicksAlive": 15715L,
     "Rotation": [
-        359.87723f,
+        83.91028f,
         0.0f
     ],
     "ShowName": 1,
