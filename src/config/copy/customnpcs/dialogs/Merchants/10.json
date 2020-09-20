@@ -48,7 +48,7 @@
     "AvailabilityScoreboardValue": 1,
     "DialogDisableEsc": 0b,
     "AvailabilityFaction": 0,
-    "DialogTitle": "Vanessa Greeting",
+    "DialogTitle": "Vanessa Introduction",
     "AvailabilityDialog": 0,
     "AvailabilityScoreboard2Type": 1,
     "AvailabilityFaction2": 0,
@@ -74,7 +74,7 @@
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1600573387976L,
+        "TimePast": 1600632693494L,
         "Time": 0L,
         "Subject": ""
     }

@@ -785,7 +785,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Essencetial Crops",
-          "desc:8": "Inferium essence can be found in Inferium Ore or grown from an Inferium Seed. These seeds are tiered, with each tier above one producing more essence per harvest. You can improve the growth rate using mystical fertilizer, and a little bit with the watering can, but sprinklers and normal bone meal based fertilizer have no effect."
+          "desc:8": "Inferium essence can be found in Inferium Ore or grown from an Inferium Seed. These seeds are tiered, with each tier above one producing more essence per harvest. You can improve the growth rate using mystical fertilizer, and a little bit with the watering can, normal bone meal based fertilizer have no effect. The sprinkler does have an effect."
         }
       },
       "tasks:9": {
@@ -858,7 +858,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Precious Bodily Fluids",
-          "desc:8": "Make some water, grow some water."
+          "desc:8": "Make some water, grow some water.\n\nThe Mystical Agriculture crops all produce various forms of essence. You can then craft this essense into actual resources.\n\nFour water essense in the cardinal directions around a bucket will craft a bucket of water."
         }
       },
       "tasks:9": {
@@ -10671,7 +10671,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Farming Efficiency",
-          "desc:8": "The scythe is a much better tool than the hoe, or your hands, for harvesting crops. Right click with it on crops and it will harvest everything ready in a 3x3 area.\n\nYou can also use it as a non terrible weapon.\n\nCombine the tool rods, the binding, and the iron scythe head you already have in a tool forge to make a scythe."
+          "desc:8": "The scythe is a much better tool than the hoe, or your hands, for harvesting crops. Double right click with it on crops and it will harvest everything ready in a 3x3 area. Normal right click will harvest like normal.\n\nYou can also use it as a non terrible weapon and/or part of a death cosplay.\n\nCombine the tool rods, the binding, and the iron scythe head you already have in a tool forge to make a scythe."
         }
       },
       "tasks:9": {
@@ -10720,8 +10720,8 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "mysticalagriculture:growth_accelerator",
-              "Count:3": 4,
+              "id:8": "harvestcraft:parsnipseeditem",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -10729,7 +10729,16 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "cyclicmagic:sprinkler",
+              "id:8": "harvestcraft:turnipseeditem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:asparagusseeditem",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -11139,6 +11148,138 @@
           }
         }
       }
+    },
+    "111:10": {
+      "questID:3": 111,
+      "preRequisites:11": [
+        109
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mysticalagriculture:diamond_essence",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Diamonds Time",
+          "desc:8": "Diamonds are shiny, and used in a lot of crafting. The fourth level of resource growing gets you things like Diamonds and Emeralds."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:diamond_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:growth_accelerator",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cyclicmagic:sprinkler",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "112:10": {
+      "questID:3": 112,
+      "preRequisites:11": [
+        105
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "harvestcraft:garlicitem",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Variety Diets",
+          "desc:8": "There are only so many seeds you can find in the Block Rock Desert. You should try and find someone who sells seeds. At least one of these villages should have someone..."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "npcDialogID:3": 10,
+          "description:8": "Talk to an NPC",
+          "index:3": 0,
+          "taskID:8": "bq_npc_integration:npc_dialog"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 2,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
     }
   },
   "questLines:9": {
@@ -11146,56 +11287,56 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -132,
+          "x:3": -168,
           "y:3": -144,
           "id:3": 7,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -168,
+          "x:3": -132,
           "y:3": -108,
           "id:3": 9,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -96,
+          "x:3": -168,
           "y:3": -108,
           "id:3": 10,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -60,
+          "x:3": -132,
           "y:3": -144,
           "id:3": 77,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": -108,
+          "x:3": -96,
+          "y:3": -144,
           "id:3": 81,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -168,
+          "x:3": -132,
           "y:3": -72,
           "id:3": 82,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": -96,
+          "x:3": -168,
           "y:3": -72,
           "id:3": 83,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -204,
+          "x:3": -96,
           "y:3": -72,
           "id:3": 84,
           "sizeY:3": 24
@@ -11203,13 +11344,13 @@
         "8:10": {
           "sizeX:3": 24,
           "x:3": -60,
-          "y:3": -72,
+          "y:3": -144,
           "id:3": 85,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -168,
+          "x:3": -132,
           "y:3": -36,
           "id:3": 86,
           "sizeY:3": 24
@@ -11217,36 +11358,50 @@
         "10:10": {
           "sizeX:3": 24,
           "x:3": -60,
-          "y:3": -36,
+          "y:3": -108,
           "id:3": 105,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": -72,
+          "x:3": -96,
+          "y:3": -108,
           "id:3": 106,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": -36,
+          "x:3": -60,
+          "y:3": -72,
           "id:3": 107,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -96,
+          "x:3": -168,
           "y:3": -36,
           "id:3": 108,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": -96,
+          "x:3": -168,
           "y:3": 0,
           "id:3": 109,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": 0,
+          "id:3": 111,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": -108,
+          "id:3": 112,
           "sizeY:3": 24
         }
       },
