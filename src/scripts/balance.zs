@@ -58,6 +58,11 @@ val unncesaryThings = [
    <cfm:computer>,          // op kinda
    <cfm:printer>,           // def op
    <cfm:electric_fence>,    // just use ie tho
+   <cfm:white_fence>,
+   <cfm:upgraded_fence_oak>,  // these fences aren't very good
+   <cfm:upgraded_fence_spruce>,
+   <cfm:upgraded_fence_jungle>,
+   <cfm:upgraded_fence_dark_oak>,
    <toughasnails:fruit_juice:*>   // use pams
 ] as IItemStack[];
 
