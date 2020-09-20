@@ -1,0 +1,7 @@
+---
+title: "Chunks and You"
+category: "Gameplay"
+text: |
+  The Minecraft world is broken up into 16x16 blocks which are known as "chunks". These chunks can be loaded and unloaded as you and your community move around the server. As you progress further into a fully automated luxury queer block utopia, the desire to keep your structures running while you are off adventuring will intensify. You can control which chunks your team keeps loaded by accessing the land claim screen. It is the small map which is in the upper right when you bring up your inventory screen. Shift-click to set a claimed chunk to stay loaded, and shift right click to have it be claimed but not kept loaded. Note that there is a finite number of chunks which may be loaded and it is variable based on team size.
+
+  There are also a few upgrades which can be placed on equipment to keep chunks loaded. OpenComputer drones have a Chunkloader Upgrade and Mekanism machinery has the Anchor Upgrade.
