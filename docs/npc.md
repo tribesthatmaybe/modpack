@@ -39,7 +39,7 @@ When interacting with clones via the NPC Cloner tool, remember that the built in
 These clones are kinda a grab bag of miscreants, hippies, and long lost punks.
 
 * The Party Kids Brad, Chad, Kara, Karen are just party kids. They show up with the `test_party_kids` struccture.
-* The Tumbleweed Farmer is a Traveller who has been out in the desert for a long time. He will sell you things the Reverse Carinies would consider to be matter out of place.
+* The Tumbleweed Farmer is a Traveller who has been out in the desert for a long time. He will sell you things the Reverse Carinies would consider to be matter out of place. [Skin credit](https://www.minecraftskins.com/skin/13742380/old-desert-man/).
 * Third Year Joe hasn't been in the Block Rock Desert as long as he thinks. Chill Reverse Carnie who can be found in villages and in the middle of nowhere. [Skin credit](https://minecraftskins.com/skin/14784730/punk-in-leather-jacket/).
 
 ## Quest Helpers

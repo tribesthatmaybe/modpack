@@ -6,8 +6,8 @@
             "OptionSlot": 0,
             "Option": {
                 "DialogCommand": "",
-                "Dialog": -1,
-                "Title": "Talk",
+                "Dialog": 8,
+                "Title": "Iron Nugs",
                 "DialogColor": 14737632,
                 "OptionType": 1
             }
@@ -16,8 +16,18 @@
             "OptionSlot": 1,
             "Option": {
                 "DialogCommand": "",
-                "Dialog": -1,
-                "Title": "Talk",
+                "Dialog": 9,
+                "Title": "Sticks tho",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            }
+        },
+        {
+            "OptionSlot": 2,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": 13,
+                "Title": "Go to the place",
                 "DialogColor": 14737632,
                 "OptionType": 1
             }
@@ -25,9 +35,9 @@
     ],
     "AvailabilityScoreboardType": 1,
     "DialogHideNPC": 0b,
-    "AvailabilityFactionStance": 2,
+    "AvailabilityFactionStance": 1,
     "AvailabilityScoreboard2Value": 1,
-    "DialogId": 5,
+    "DialogId": 7,
     "AvailabilityQuest": 0,
     "AvailabilityDialog4": 0,
     "AvailabilityScoreboardObjective": "",
@@ -38,28 +48,26 @@
     "AvailabilityQuest4": 0,
     "ModRev": 18,
     "DecreaseFaction1Points": 0b,
-    "DialogQuest": 2,
+    "DialogQuest": -1,
     "AvailabilityDialog2": 0,
     "OptionFactions1": -1,
-    "AvailabilityDayTime": 2,
+    "AvailabilityDayTime": 0,
     "OptionFactions2": -1,
     "AvailabilityFaction2Id": -1,
     "OptionFaction1Points": 100,
     "AvailabilityScoreboardValue": 1,
     "DialogDisableEsc": 0b,
-    "AvailabilityFaction": 0,
-    "DialogTitle": "Fuck you cone me",
+    "AvailabilityFaction": 1,
+    "DialogTitle": "The moop frustration",
     "AvailabilityDialog": 0,
     "AvailabilityScoreboard2Type": 1,
     "AvailabilityFaction2": 0,
-    "AvailabilityFactionId": -1,
+    "AvailabilityFactionId": 0,
     "AvailabilityFaction2Stance": 0,
     "DialogCommand": "",
     "AvailabilityDialogId": -1,
     "OptionFaction2Points": 100,
-    "DialogText": "I need some cones for a thing, go get me a quarter stack of them.
-
-You know where to find them.",
+    "DialogText": "It is frustrating that even after all this time there are remnants of the past everywhere. Ore nuggets, string. Sticks and sawdust are truly the worst. Even still, we find tons of this kind of matter out of place in the Block Rock Desert.",
     "AvailabilityQuest4Id": -1,
     "AvailabilityQuest3Id": -1,
     "AvailabilityQuest2Id": -1,
@@ -76,7 +84,7 @@ You know where to find them.",
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1600565916147L,
+        "TimePast": 1600573929527L,
         "Time": 0L,
         "Subject": ""
     }

@@ -2,35 +2,15 @@
     "DialogShowWheel": 0b,
     "AvailabilityQuestId": -1,
     "Options": [
-        {
-            "OptionSlot": 0,
-            "Option": {
-                "DialogCommand": "",
-                "Dialog": -1,
-                "Title": "Talk",
-                "DialogColor": 14737632,
-                "OptionType": 1
-            }
-        },
-        {
-            "OptionSlot": 1,
-            "Option": {
-                "DialogCommand": "",
-                "Dialog": -1,
-                "Title": "Talk",
-                "DialogColor": 14737632,
-                "OptionType": 1
-            }
-        }
     ],
     "AvailabilityScoreboardType": 1,
     "DialogHideNPC": 0b,
-    "AvailabilityFactionStance": 2,
+    "AvailabilityFactionStance": 1,
     "AvailabilityScoreboard2Value": 1,
-    "DialogId": 5,
+    "DialogId": 16,
     "AvailabilityQuest": 0,
     "AvailabilityDialog4": 0,
-    "AvailabilityScoreboardObjective": "",
+    "AvailabilityScoreboardObjective": "GreeterStation",
     "AvailabilityDialog3": 0,
     "AvailabilityQuest2": 0,
     "AvailabilityQuest3": 0,
@@ -38,28 +18,26 @@
     "AvailabilityQuest4": 0,
     "ModRev": 18,
     "DecreaseFaction1Points": 0b,
-    "DialogQuest": 2,
+    "DialogQuest": -1,
     "AvailabilityDialog2": 0,
     "OptionFactions1": -1,
-    "AvailabilityDayTime": 2,
+    "AvailabilityDayTime": 0,
     "OptionFactions2": -1,
     "AvailabilityFaction2Id": -1,
     "OptionFaction1Points": 100,
     "AvailabilityScoreboardValue": 1,
     "DialogDisableEsc": 0b,
-    "AvailabilityFaction": 0,
-    "DialogTitle": "Fuck you cone me",
+    "AvailabilityFaction": 1,
+    "DialogTitle": "Old Blood Intro (newb)",
     "AvailabilityDialog": 0,
     "AvailabilityScoreboard2Type": 1,
     "AvailabilityFaction2": 0,
-    "AvailabilityFactionId": -1,
+    "AvailabilityFactionId": 0,
     "AvailabilityFaction2Stance": 0,
     "DialogCommand": "",
     "AvailabilityDialogId": -1,
     "OptionFaction2Points": 100,
-    "DialogText": "I need some cones for a thing, go get me a quarter stack of them.
-
-You know where to find them.",
+    "DialogText": "You look lost and a little confused. You should look in your quest book.",
     "AvailabilityQuest4Id": -1,
     "AvailabilityQuest3Id": -1,
     "AvailabilityQuest2Id": -1,
@@ -76,7 +54,7 @@ You know where to find them.",
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1600565916147L,
+        "TimePast": 1600585959620L,
         "Time": 0L,
         "Subject": ""
     }

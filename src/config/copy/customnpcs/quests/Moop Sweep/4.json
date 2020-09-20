@@ -1,0 +1,56 @@
+{
+    "CompleterNpc": "Old Blood",
+    "NextQuestId": -1,
+    "RandomReward": 0b,
+    "QuestRepeat": 2,
+    "QuestCompletion": 0,
+    "IgnoreNBT": 0b,
+    "Title": "Iron Nugs",
+    "Text": "Go out and find some iron nugget moop. You can find this buried in playa dust, and occasionally mixed in with the native wildlife that you harvest. Sometimes they are in tumbleweeds.",
+    "QuestFactionPoints": {
+        "DecreaseFaction1Points": 0b,
+        "OptionFaction2Points": 10,
+        "OptionFactions1": 0,
+        "OptionFactions2": 4,
+        "OptionFaction1Points": 25,
+        "DecreaseFaction2Points": 0b
+    },
+    "RewardExp": 10,
+    "QuestCommand": "",
+    "ModRev": 18,
+    "Type": 0,
+    "QuestMail": {
+        "Sender": "",
+        "BeenRead": 0b,
+        "Message": {
+        },
+        "MailItems": [
+        ],
+        "MailQuest": -1,
+        "TimePast": 1600572574879L,
+        "Time": 0L,
+        "Subject": ""
+    },
+    "IgnoreDamage": 0b,
+    "Rewards": {
+        "NpcMiscInv": [
+        ]
+    },
+    "Items": {
+        "NpcMiscInv": [
+            {
+                "Slot": 0b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:iron_nugget",
+                "Count": 16b,
+                "Damage": 0s
+            }
+        ]
+    },
+    "LeaveItems": 0b,
+    "CompleteText": "It feels good, removing some matter out of place.",
+    "NextQuestTitle": ""
+}

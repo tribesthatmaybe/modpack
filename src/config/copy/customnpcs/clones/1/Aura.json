@@ -1,20 +1,10 @@
 {
-    "ReturnToStart": 1b,
+    "ReturnToStart": 0b,
     "NpcInv": [
-        {
-            "Slot": 1b,
-            "ForgeCaps": {
-                "customnpcs:itemscripteddata": {
-                }
-            },
-            "id": "trafficcontrol:channelizer",
-            "Count": 1b,
-            "Damage": 0s
-        }
     ],
     "BossColor": 0,
     "PotionEffect": 0,
-    "Size": 6,
+    "Size": 5,
     "stopAndInteract": 1b,
     "Resistances": {
         "Arrow": 1.0f,
@@ -32,7 +22,7 @@
     "PositionOffsetX": 5.0f,
     "LootMode": 0,
     "TransformHasAI": 0b,
-    "AttackStrenght": 5,
+    "AttackStrenght": 8,
     "PersistenceRequired": 0b,
     "id": "customnpcs:customnpc",
     "IsStatue": 0b,
@@ -40,23 +30,13 @@
     "NpcLines": {
         "Lines": [
             {
-                "Line": "GET BACK IN YOUR VEHICLE",
+                "Line": "The desert is trying to move on.",
                 "Song": "",
                 "Slot": 0
-            },
-            {
-                "Line": "YOU CAN NOT WALK TO WILL CALL",
-                "Song": "",
-                "Slot": 1
-            },
-            {
-                "Line": "READ THE BACK OF YOUR TICKET",
-                "Song": "",
-                "Slot": 2
             }
         ]
     },
-    "DefendFaction": 0b,
+    "DefendFaction": 1b,
     "FireIndirect": 0,
     "NpcVisible": 0,
     "LinkedNpcName": "",
@@ -66,8 +46,55 @@
     },
     "HitSound": "minecraft:entity.arrow.hit",
     "FindShelter": 2,
+    "GuardTargets": [
+        {
+            "Line": "entity.Creeper.name"
+        },
+        {
+            "Line": "entity.betteranimalsplus.coyote.name"
+        },
+        {
+            "Line": "entity.betteranimalsplus.tarantula.name"
+        },
+        {
+            "Line": "entity.statues:FakeCreeper.name"
+        },
+        {
+            "Line": "entity.Zombie.name"
+        },
+        {
+            "Line": "entity.Husk.name"
+        },
+        {
+            "Line": "entity.Spider.name"
+        },
+        {
+            "Line": "entity.Skeleton.name"
+        },
+        {
+            "Line": "entity.Silverfish.name"
+        },
+        {
+            "Line": "entity.statues:FakeSpider.name"
+        },
+        {
+            "Line": "entity.statues:FakeZombie.name"
+        },
+        {
+            "Line": "entity.statues:FakeHusk.name"
+        },
+        {
+            "Line": "entity.statues:FakeSkeleton.name"
+        },
+        {
+            "Line": "entity.statues:FakeWitch.name"
+        },
+        {
+            "Line": "entity.Witch.name"
+        }
+    ],
     "Air": 300s,
-    "TacticalVariant": 0,
+    "TacticalVariant": 4,
     "Orientation": 0,
     "ScriptLanguage": "ECMAScript",
     "HandItems": [
@@ -76,7 +103,7 @@
         {
         }
     ],
-    "KnockBack": 0,
+    "KnockBack": 1,
     "TransformHasJob": 0b,
     "ArmorDropChances": [
         0.085f,
@@ -89,16 +116,6 @@
     "AttackInvisible": 0b,
     "NpcInteractNPCLines": {
         "Lines": [
-            {
-                "Line": "Didn't I see you at the block hole?",
-                "Song": "",
-                "Slot": 0
-            },
-            {
-                "Line": "Tomorrow people are exhausting",
-                "Song": "",
-                "Slot": 1
-            }
         ]
     },
     "HurtTime": 0s,
@@ -108,12 +125,32 @@
     "AttackRange": 2,
     "NpcKillLines": {
         "Lines": [
+            {
+                "Line": "Finally.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "Another one.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "There we go.",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "You would think it would star to bother me.",
+                "Song": "",
+                "Slot": 3
+            }
         ]
     },
     "PotionImmune": 0b,
     "AvoidsSun": 0b,
-    "Texture": "minecraft:textures/entity/skeleton/skeleton.png",
-    "NpcJob": 0,
+    "Texture": "customnpcs:textures/entity/humanmale/steve.png",
+    "NpcJob": 3,
     "BurstCount": 1,
     "NpcAttackLines": {
         "Lines": [
@@ -122,9 +159,9 @@
     "pSpeed": 10,
     "pArea": 0,
     "DeathTime": 0s,
-    "pImpact": 0,
+    "pImpact": 1,
     "MoveState": 0,
-    "pRender3D": 1b,
+    "pRender3D": 0b,
     "Motion": [
         0.0d,
         -0.0784000015258789d,
@@ -163,9 +200,14 @@
     "TransformHasInv": 0b,
     "NpcInteractLines": {
         "Lines": [
+            {
+                "Line": "Woah, who are you?",
+                "Song": "",
+                "Slot": 0
+            }
         ]
     },
-    "HurtByTimestamp": 14244,
+    "HurtByTimestamp": 12718,
     "pSpin": 0b,
     "NpcHurtSound": "minecraft:entity.player.hurt",
     "pTrail": 0,
@@ -200,7 +242,7 @@
             "Name": "generic.knockbackResistance"
         },
         {
-            "Base": 0.25d,
+            "Base": 0.30000001192092896d,
             "Name": "generic.movementSpeed"
         },
         {
@@ -220,11 +262,11 @@
             "Name": "generic.followRange"
         },
         {
-            "Base": 5.0d,
+            "Base": 8.0d,
             "Name": "generic.attackDamage"
         },
         {
-            "Base": 0.5d,
+            "Base": 0.6000000238418579d,
             "Name": "generic.flyingSpeed"
         }
     ],
@@ -233,9 +275,9 @@
     "NoFallDamage": 0b,
     "AbsorptionAmount": 0.0f,
     "TransformHasRole": 0b,
-    "Name": "Old Blood",
+    "Name": "Aura",
     "FallDistance": 0.0f,
-    "SkinColor": 11184810,
+    "SkinColor": 16777215,
     "NpcIdleSound": "",
     "Weapons": [
         {
@@ -244,34 +286,140 @@
                 "customnpcs:itemscripteddata": {
                 }
             },
-            "id": "trafficcontrol:channelizer",
+            "id": "tconstruct:crossbow",
             "Count": 1b,
+            "tag": {
+                "StatsOriginal": {
+                    "AttackSpeedMultiplier": 1.0f,
+                    "MiningSpeed": 5.0f,
+                    "DrawSpeed": 1.2f,
+                    "FreeModifiers": 3,
+                    "ProjectileBonusDamage": 3.0f,
+                    "Durability": 430,
+                    "HarvestLevel": 1,
+                    "Attack": 5.0f,
+                    "Range": 0.8f
+                },
+                "Stats": {
+                    "AttackSpeedMultiplier": 1.0f,
+                    "MiningSpeed": 5.0f,
+                    "DrawSpeed": 1.2f,
+                    "FreeModifiers": 3,
+                    "ProjectileBonusDamage": 3.0f,
+                    "Durability": 430,
+                    "HarvestLevel": 1,
+                    "Attack": 5.0f,
+                    "Range": 0.8f
+                },
+                "Special": {
+                    "Categories": [
+                        "tool",
+                        "launcher"
+                    ]
+                },
+                "TinkerData": {
+                    "Materials": [
+                        "silver",
+                        "silver",
+                        "silver",
+                        "string"
+                    ],
+                    "Modifiers": [
+                        "toolleveling"
+                    ]
+                },
+                "Modifiers": [
+                    {
+                        "identifier": "holy",
+                        "color": -3019530,
+                        "level": 1
+                    },
+                    {
+                        "identifier": "toolleveling",
+                        "color": 16777215,
+                        "level": 1
+                    }
+                ],
+                "Traits": [
+                    "holy",
+                    "toolleveling"
+                ]
+            },
+            "Damage": 0s
+        },
+        {
+            "Slot": 1b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "tconstruct:bolt",
+            "Count": 1b,
+            "tag": {
+                "StatsOriginal": {
+                    "AttackSpeedMultiplier": 1.0f,
+                    "Accuracy": 1.0f,
+                    "MiningSpeed": 7.0f,
+                    "FreeModifiers": 3,
+                    "Durability": 432,
+                    "HarvestLevel": 3,
+                    "Attack": 6.0f
+                },
+                "Stats": {
+                    "AttackSpeedMultiplier": 1.0f,
+                    "Accuracy": 1.0f,
+                    "MiningSpeed": 7.0f,
+                    "FreeModifiers": 3,
+                    "Durability": 432,
+                    "HarvestLevel": 3,
+                    "Attack": 6.0f
+                },
+                "Special": {
+                    "Categories": [
+                        "tool",
+                        "projectile",
+                        "no_melee"
+                    ]
+                },
+                "TinkerData": {
+                    "Materials": [
+                        "wood",
+                        "steel",
+                        "feather"
+                    ],
+                    "Modifiers": [
+                        "toolleveling"
+                    ]
+                },
+                "Modifiers": [
+                    {
+                        "identifier": "ecological",
+                        "color": -7444965,
+                        "level": 1
+                    },
+                    {
+                        "identifier": "sharp",
+                        "color": -5789785,
+                        "level": 1
+                    },
+                    {
+                        "identifier": "toolleveling",
+                        "color": 16777215,
+                        "level": 1
+                    }
+                ],
+                "Traits": [
+                    "ecological",
+                    "sharp",
+                    "toolleveling"
+                ]
+            },
             "Damage": 0s
         }
     ],
     "NPCDialogOptions": [
-        {
-            "NPCDialog": {
-                "DialogCommand": "",
-                "Dialog": 14,
-                "Title": "Old Blood Intro (neutral)",
-                "DialogColor": 14737632,
-                "OptionType": 1
-            },
-            "DialogSlot": 0
-        },
-        {
-            "NPCDialog": {
-                "DialogCommand": "",
-                "Dialog": 15,
-                "Title": "Old Blodo Intro (friendly)",
-                "DialogColor": 14737632,
-                "OptionType": 1
-            },
-            "DialogSlot": 1
-        }
     ],
-    "AggroRange": 8,
+    "AggroRange": 20,
     "DirectLOS": 1b,
     "HealthRegen": 1,
     "ForgeCaps": {
@@ -312,11 +460,10 @@
             "PositionY": 1,
             "SkinColor": 11830381,
             "PlayerTexture": 0b,
-            "Color": 16445005,
+            "Color": 6724056,
             "BrowColor": 5982516,
             "BrowThickness": 4
         },
-        "EntityClass": "net.minecraft.entity.monster.EntitySkeleton",
         "LegParts": {
             "Pattern": 0b,
             "Type": 0b,
@@ -346,20 +493,20 @@
             "ScaleX": 1.0f
         }
     },
-    "minDelay": 20,
+    "minDelay": 15,
     "DoorInteract": 2,
-    "MoveSpeed": 5,
+    "MoveSpeed": 6,
     "TransformEditingModus": 0b,
-    "UsingSkinUrl": 0b,
+    "UsingSkinUrl": 2b,
     "Leashed": 0b,
-    "SkinUrl": "",
+    "SkinUrl": "https://www.minecraftskins.com/uploads/skins/2019/11/23/desert-scavenger--woman--13645974.png?v256",
     "CanSwim": 1b,
     "GroundSound": "minecraft:block.stone.break",
     "MaxHealth": 20,
     "HideBodyWhenKilled": 0b,
     "AttackSpeed": 20,
     "PotionDuration": 5,
-    "maxDelay": 40,
+    "maxDelay": 30,
     "ScriptEnabled": 0b,
     "Role": 0,
     "DropChance": [
@@ -368,7 +515,7 @@
             "Slot": 0
         },
         {
-            "Integer": 30,
+            "Integer": 100,
             "Slot": 1
         },
         {
@@ -401,18 +548,18 @@
         }
     ],
     "FactionPoints": {
-        "DecreaseFaction1Points": 1b,
-        "OptionFaction2Points": 50,
-        "OptionFactions1": 0,
-        "OptionFactions2": 4,
+        "DecreaseFaction1Points": 0b,
+        "OptionFaction2Points": 100,
+        "OptionFactions1": -1,
+        "OptionFactions2": -1,
         "OptionFaction1Points": 100,
-        "DecreaseFaction2Points": 1b
+        "DecreaseFaction2Points": 0b
     },
-    "pDamage": 4,
+    "pDamage": 8,
     "KilledTime": 0L,
-    "AimWhileShooting": 0b,
+    "AimWhileShooting": 1b,
     "CanPickUpLoot": 0b,
-    "AttackOtherFactions": 0b,
+    "AttackOtherFactions": 1b,
     "CanDrown": 1b,
     "pSize": 5,
     "CanSprint": 0b,
@@ -424,21 +571,24 @@
             ]
         },
         "Potion Core - Health Fix": 20.0f,
+        "entityKillList": {
+            "otakup0pe": 1
+        },
         "Potion Core - Jump Boost Updated": 1b
     },
     "MovingState": 1,
     "MovingPos": 0,
     "PotionAmp": 0,
     "RelativeAABB": [
-        -0.36000001430511475d,
+        -0.30000001192092896d,
         0.0d,
-        -0.36000001430511475d,
-        0.36000001430511475d,
-        2.388000011444092d,
-        0.36000001430511475d
+        -0.30000001192092896d,
+        0.30000001192092896d,
+        1.899999976158142d,
+        0.30000001192092896d
     ],
     "OnAttack": 0,
-    "TacticalRadius": 8,
+    "TacticalRadius": 15,
     "FallFlying": 0b,
     "MaxExp": 0,
     "OrderedLines": 0b,
@@ -449,7 +599,7 @@
     "MovementType": 0,
     "FiringSound": "minecraft:entity.arrow.shoot",
     "ModRev": 18,
-    "Accuracy": 60,
+    "Accuracy": 100,
     "MinExp": 0,
     "Armor": [
         {
@@ -458,33 +608,63 @@
                 "customnpcs:itemscripteddata": {
                 }
             },
-            "id": "quark:pirate_hat",
+            "id": "minecraft:chainmail_helmet",
+            "Count": 1b,
+            "Damage": 0s
+        },
+        {
+            "Slot": 1b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "minecraft:chainmail_chestplate",
+            "Count": 1b,
+            "Damage": 0s
+        },
+        {
+            "Slot": 2b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "minecraft:chainmail_leggings",
+            "Count": 1b,
+            "Damage": 0s
+        },
+        {
+            "Slot": 3b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "minecraft:chainmail_boots",
             "Count": 1b,
             "Damage": 0s
         }
     ],
     "CloakTexture": "",
     "GlowTexture": "",
-    "MaxFiringRange": 15,
+    "MaxFiringRange": 20,
     "pXlr8": 0b,
-    "MarkovGeneratorId": 0,
+    "MarkovGeneratorId": 4,
     "Scripts": [
     ],
     "Health": 20.0f,
     "pStick": 0b,
     "MovingPause": 1b,
     "NpcDeathSound": "minecraft:entity.player.hurt",
-    "FactionID": 0,
-    "Title": "Gayte of yore",
-    "TotalTicksAlive": 45316L,
+    "FactionID": 1,
+    "Title": "",
+    "TotalTicksAlive": 48235L,
     "Rotation": [
-        0.2822113f,
+        66.53201f,
         0.0f
     ],
     "ShowName": 1,
     "npcInteracting": 1b,
     "UpdateBlocked": 0b,
-    "AvoidsWater": 0b,
+    "AvoidsWater": 1b,
     "NoLivingAnimation": 0b,
-    "SpawnCycle": 2
+    "SpawnCycle": 0
 }

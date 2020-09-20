@@ -11,23 +11,13 @@
                 "DialogColor": 14737632,
                 "OptionType": 1
             }
-        },
-        {
-            "OptionSlot": 1,
-            "Option": {
-                "DialogCommand": "",
-                "Dialog": -1,
-                "Title": "Talk",
-                "DialogColor": 14737632,
-                "OptionType": 1
-            }
         }
     ],
     "AvailabilityScoreboardType": 1,
     "DialogHideNPC": 0b,
-    "AvailabilityFactionStance": 2,
+    "AvailabilityFactionStance": 0,
     "AvailabilityScoreboard2Value": 1,
-    "DialogId": 5,
+    "DialogId": 8,
     "AvailabilityQuest": 0,
     "AvailabilityDialog4": 0,
     "AvailabilityScoreboardObjective": "",
@@ -38,17 +28,17 @@
     "AvailabilityQuest4": 0,
     "ModRev": 18,
     "DecreaseFaction1Points": 0b,
-    "DialogQuest": 2,
+    "DialogQuest": 4,
     "AvailabilityDialog2": 0,
     "OptionFactions1": -1,
-    "AvailabilityDayTime": 2,
+    "AvailabilityDayTime": 0,
     "OptionFactions2": -1,
     "AvailabilityFaction2Id": -1,
     "OptionFaction1Points": 100,
     "AvailabilityScoreboardValue": 1,
     "DialogDisableEsc": 0b,
     "AvailabilityFaction": 0,
-    "DialogTitle": "Fuck you cone me",
+    "DialogTitle": "Iron Nuggets",
     "AvailabilityDialog": 0,
     "AvailabilityScoreboard2Type": 1,
     "AvailabilityFaction2": 0,
@@ -57,9 +47,7 @@
     "DialogCommand": "",
     "AvailabilityDialogId": -1,
     "OptionFaction2Points": 100,
-    "DialogText": "I need some cones for a thing, go get me a quarter stack of them.
-
-You know where to find them.",
+    "DialogText": "Iron has been used to make things out here in the Block Rock Desert for longer than I can remember. Even long after those creations have been swallowed by the playa, the remaining iron nuggets be found everywhere.",
     "AvailabilityQuest4Id": -1,
     "AvailabilityQuest3Id": -1,
     "AvailabilityQuest2Id": -1,
@@ -76,7 +64,7 @@ You know where to find them.",
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1600565916147L,
+        "TimePast": 1600572691876L,
         "Time": 0L,
         "Subject": ""
     }
