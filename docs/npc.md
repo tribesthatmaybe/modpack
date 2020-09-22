@@ -8,10 +8,10 @@ Factions are how tribes within the modpack are represented. We will be using the
 
 | Name | Base Aggro | Min Neutral FP | Max Neutral FP | Default FP |
 | ---- | ---------- | -------------- | -------------- | ---------- |
-| Reverse Carnies | Friendly | 2000 | 3000 | 3100 |
+| Reverse Carnies | Friendly | 2000 | 3000 | 2100 |
 | Cabaret Kids | Friendly | 100 | 900 | 300 |
 | Locals | Neutral | 1000 | 2000 | 1100 |
-| Travellers | Neutral | 500 | 1500 | 1000 |
+| Travellers | Neutral | 500 | 1500 | 1600 |
 | Footprinters | Hostile | 500 | 2000 | 400 |
 | Come From Aways | Hostile | 1000 | 2000 | 0 |
 
@@ -36,15 +36,16 @@ When interacting with clones via the NPC Cloner tool, remember that the built in
 
 ## Assorted
 
-These clones are kinda a grab bag of miscreants, hippies, and long lost punks.
+These clones are kinda a grab bag of miscreants, hippies, and long lost punks. Tab one.
 
 * The Party Kids Brad, Chad, Kara, Karen are just party kids. They show up with the `test_party_kids` struccture.
 * The Tumbleweed Farmer is a Traveller who has been out in the desert for a long time. He will sell you things the Reverse Carinies would consider to be matter out of place. [Skin credit](https://www.minecraftskins.com/skin/13742380/old-desert-man/).
 * Third Year Joe hasn't been in the Block Rock Desert as long as he thinks. Chill Reverse Carnie who can be found in villages and in the middle of nowhere. [Skin credit](https://minecraftskins.com/skin/14784730/punk-in-leather-jacket/).
+* She goes by various names but always answers to Aura. She is a traveller who hangs around in certain areas doing what she can to keep people safe.
 
 ## Quest Helpers
 
-These clones are traders and plot elements.
+These clones are traders and plot elements. Tab two.
 
 * Arnold runs a industry focused shop which can show up in villages and work camps.
 * Badger rolls around with a shotgun and and attitude. [Skin credit](https://www.minecraftskins.com/skin/11823815/pyro-roadie/).
@@ -54,4 +55,7 @@ These clones are traders and plot elements.
 
 ## Antagonists
 
+Tab three.
+
 * Jonesey is the anti-Badger. [Skin credit](https://www.minecraftskins.com/skin/14860588/marines-desert-marpat-rolled-sleeves--fixed-/).
+* Daniel is a undead footprinter. [Skin credit](https://www.minecraftskins.com/skin/3162587/undead-steve/)

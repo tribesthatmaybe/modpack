@@ -2,6 +2,36 @@
     "DialogShowWheel": 0b,
     "AvailabilityQuestId": -1,
     "Options": [
+        {
+            "OptionSlot": 0,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": 14,
+                "Title": "Who are you?",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            }
+        },
+        {
+            "OptionSlot": 1,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": 22,
+                "Title": "Where are we?",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            }
+        },
+        {
+            "OptionSlot": 2,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": 17,
+                "Title": "I don't like the nights.",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            }
+        }
     ],
     "AvailabilityScoreboardType": 1,
     "DialogHideNPC": 0b,
@@ -54,7 +84,7 @@
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1600584064066L,
+        "TimePast": 1600645252602L,
         "Time": 0L,
         "Subject": ""
     }

@@ -2,32 +2,12 @@
     "DialogShowWheel": 0b,
     "AvailabilityQuestId": -1,
     "Options": [
-        {
-            "OptionSlot": 0,
-            "Option": {
-                "DialogCommand": "",
-                "Dialog": 17,
-                "Title": "Summon Aid",
-                "DialogColor": 14737632,
-                "OptionType": 1
-            }
-        },
-        {
-            "OptionSlot": 1,
-            "Option": {
-                "DialogCommand": "",
-                "Dialog": 20,
-                "Title": "I'm thirsty.",
-                "DialogColor": 14737632,
-                "OptionType": 1
-            }
-        }
     ],
     "AvailabilityScoreboardType": 1,
     "DialogHideNPC": 0b,
     "AvailabilityFactionStance": 0,
     "AvailabilityScoreboard2Value": 1,
-    "DialogId": 15,
+    "DialogId": 19,
     "AvailabilityQuest": 0,
     "AvailabilityDialog4": 0,
     "AvailabilityScoreboardObjective": "",
@@ -47,17 +27,23 @@
     "OptionFaction1Points": 100,
     "AvailabilityScoreboardValue": 1,
     "DialogDisableEsc": 0b,
-    "AvailabilityFaction": 1,
-    "DialogTitle": "Old Blodo Intro (friendly)",
+    "AvailabilityFaction": 0,
+    "DialogTitle": "Aura History",
     "AvailabilityDialog": 0,
     "AvailabilityScoreboard2Type": 1,
     "AvailabilityFaction2": 0,
-    "AvailabilityFactionId": 0,
-    "AvailabilityFaction2Stance": 0,
+    "AvailabilityFactionId": -1,
+    "AvailabilityFaction2Stance": 1,
     "DialogCommand": "",
     "AvailabilityDialogId": -1,
     "OptionFaction2Points": 100,
-    "DialogText": "Hey good to see you, it's been a minute.",
+    "DialogText": "Oh, not many people ask about where I came from. Most just want me do run into the creepers for them.
+
+I'm @name, thank you for asking.
+
+I grew up in a town far from here. The dust was bad, even then. I don't know much about what came before then. My town was built on top of an old settlement. It's still there, buried under the dust.
+
+It's amazing the things you can see wandering through this endless desert. From crystal caves to old survival caches to people living in a tent in the middle of nowhere.",
     "AvailabilityQuest4Id": -1,
     "AvailabilityQuest3Id": -1,
     "AvailabilityQuest2Id": -1,
@@ -74,7 +60,7 @@
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1600645208902L,
+        "TimePast": 1600642307863L,
         "Time": 0L,
         "Subject": ""
     }

@@ -2,19 +2,49 @@
     "ReturnToStart": 1b,
     "NpcInv": [
         {
+            "Slot": 0b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "minecraft:rotten_flesh",
+            "Count": 1b,
+            "Damage": 0s
+        },
+        {
             "Slot": 1b,
             "ForgeCaps": {
                 "customnpcs:itemscripteddata": {
                 }
             },
-            "id": "trafficcontrol:channelizer",
+            "id": "minecraft:bone",
             "Count": 1b,
+            "Damage": 0s
+        },
+        {
+            "Slot": 2b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "minecraft:gold_nugget",
+            "Count": 1b,
+            "Damage": 0s
+        },
+        {
+            "Slot": 3b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "cgm:shell",
+            "Count": 4b,
             "Damage": 0s
         }
     ],
     "BossColor": 0,
-    "PotionEffect": 0,
-    "Size": 6,
+    "PotionEffect": 4,
+    "Size": 5,
     "stopAndInteract": 1b,
     "Resistances": {
         "Arrow": 1.0f,
@@ -23,7 +53,7 @@
         "Melee": 1.0f
     },
     "BossBar": 0b,
-    "RespawnTime": 20,
+    "RespawnTime": 0,
     "NpcAngrySound": "",
     "ReactsToFire": 0b,
     "IgnoreCobweb": 0b,
@@ -32,31 +62,16 @@
     "PositionOffsetX": 5.0f,
     "LootMode": 0,
     "TransformHasAI": 0b,
-    "AttackStrenght": 5,
+    "AttackStrenght": 7,
     "PersistenceRequired": 0b,
     "id": "customnpcs:customnpc",
     "IsStatue": 0b,
     "MovingPatern": 0,
     "NpcLines": {
         "Lines": [
-            {
-                "Line": "GET BACK IN YOUR VEHICLE",
-                "Song": "",
-                "Slot": 0
-            },
-            {
-                "Line": "YOU CAN NOT WALK TO WILL CALL",
-                "Song": "",
-                "Slot": 1
-            },
-            {
-                "Line": "READ THE BACK OF YOUR TICKET",
-                "Song": "",
-                "Slot": 2
-            }
         ]
     },
-    "DefendFaction": 0b,
+    "DefendFaction": 1b,
     "FireIndirect": 0,
     "NpcVisible": 0,
     "LinkedNpcName": "",
@@ -89,25 +104,10 @@
     "AttackInvisible": 0b,
     "NpcInteractNPCLines": {
         "Lines": [
-            {
-                "Line": "Didn't I see you at the block hole?",
-                "Song": "",
-                "Slot": 0
-            },
-            {
-                "Line": "Tomorrow people are exhausting",
-                "Song": "",
-                "Slot": 1
-            },
-            {
-                "Line": "Going to need a new battery soon",
-                "Song": "",
-                "Slot": 2
-            }
         ]
     },
     "HurtTime": 0s,
-    "WalkingRange": 20,
+    "WalkingRange": 10,
     "ShotCount": 1,
     "pDur": 5,
     "AttackRange": 2,
@@ -117,7 +117,7 @@
     },
     "PotionImmune": 0b,
     "AvoidsSun": 0b,
-    "Texture": "minecraft:textures/entity/skeleton/skeleton.png",
+    "Texture": "customnpcs:textures/entity/humanmale/steve.png",
     "NpcJob": 0,
     "BurstCount": 1,
     "NpcAttackLines": {
@@ -138,10 +138,10 @@
     "CombatRegen": 0,
     "NpcsTimers": [
     ],
-    "MarkovGender": 0,
+    "MarkovGender": 1,
     "pEffect": 0,
     "DistanceToMelee": 0,
-    "NpcStepSound": "",
+    "NpcStepSound": "minecraft:entity.zombie.step",
     "FireRate": 5,
     "LeftHanded": 0b,
     "pEffAmp": 0,
@@ -150,16 +150,6 @@
     "ImmuneToFire": 0b,
     "NpcKilledLines": {
         "Lines": [
-            {
-                "Line": "Oh no.",
-                "Song": "",
-                "Slot": 0
-            },
-            {
-                "Line": "Ughhhhhh.",
-                "Song": "",
-                "Slot": 1
-            }
         ]
     },
     "Fire": -1s,
@@ -178,13 +168,18 @@
     "TransformHasInv": 0b,
     "NpcInteractLines": {
         "Lines": [
+            {
+                "Line": "Woah, who are you?",
+                "Song": "",
+                "Slot": 0
+            }
         ]
     },
-    "HurtByTimestamp": 10894,
+    "HurtByTimestamp": 4011,
     "pSpin": 0b,
-    "NpcHurtSound": "minecraft:entity.player.hurt",
+    "NpcHurtSound": "minecraft:entity.zombie.hurt",
     "pTrail": 0,
-    "CreatureType": 0,
+    "CreatureType": 1,
     "Attributes": [
         {
             "Base": 1.0d,
@@ -215,7 +210,7 @@
             "Name": "generic.knockbackResistance"
         },
         {
-            "Base": 0.25d,
+            "Base": 0.15000000596046448d,
             "Name": "generic.movementSpeed"
         },
         {
@@ -235,11 +230,11 @@
             "Name": "generic.followRange"
         },
         {
-            "Base": 5.0d,
+            "Base": 7.0d,
             "Name": "generic.attackDamage"
         },
         {
-            "Base": 0.5d,
+            "Base": 0.30000001192092896d,
             "Name": "generic.flyingSpeed"
         }
     ],
@@ -248,57 +243,17 @@
     "NoFallDamage": 0b,
     "AbsorptionAmount": 0.0f,
     "TransformHasRole": 0b,
-    "Name": "Rannoff",
+    "Name": "Daniel",
     "FallDistance": 0.0f,
-    "SkinColor": 11184810,
-    "NpcIdleSound": "",
+    "SkinColor": 16777215,
+    "NpcIdleSound": "minecraft:entity.zombie.ambient",
     "Weapons": [
-        {
-            "Slot": 0b,
-            "ForgeCaps": {
-                "customnpcs:itemscripteddata": {
-                }
-            },
-            "id": "trafficcontrol:channelizer",
-            "Count": 1b,
-            "Damage": 0s
-        }
     ],
     "NPCDialogOptions": [
-        {
-            "NPCDialog": {
-                "DialogCommand": "",
-                "Dialog": 14,
-                "Title": "Old Blood Intro (neutral)",
-                "DialogColor": 14737632,
-                "OptionType": 1
-            },
-            "DialogSlot": 0
-        },
-        {
-            "NPCDialog": {
-                "DialogCommand": "",
-                "Dialog": 15,
-                "Title": "Old Blodo Intro (friendly)",
-                "DialogColor": 14737632,
-                "OptionType": 1
-            },
-            "DialogSlot": 1
-        },
-        {
-            "NPCDialog": {
-                "DialogCommand": "",
-                "Dialog": 16,
-                "Title": "Old Blood Intro (newb)",
-                "DialogColor": 14737632,
-                "OptionType": 1
-            },
-            "DialogSlot": 2
-        }
     ],
-    "AggroRange": 8,
+    "AggroRange": 16,
     "DirectLOS": 1b,
-    "HealthRegen": 1,
+    "HealthRegen": 0,
     "ForgeCaps": {
         "tinkertoolleveling:entityxp": [
         ],
@@ -337,11 +292,10 @@
             "PositionY": 1,
             "SkinColor": 11830381,
             "PlayerTexture": 0b,
-            "Color": 16445005,
+            "Color": 6704179,
             "BrowColor": 5982516,
             "BrowThickness": 4
         },
-        "EntityClass": "net.minecraft.entity.monster.EntitySkeleton",
         "LegParts": {
             "Pattern": 0b,
             "Type": 0b,
@@ -372,36 +326,36 @@
         }
     },
     "minDelay": 20,
-    "DoorInteract": 2,
-    "MoveSpeed": 5,
+    "DoorInteract": 0,
+    "MoveSpeed": 3,
     "TransformEditingModus": 0b,
-    "UsingSkinUrl": 0b,
+    "UsingSkinUrl": 2b,
     "Leashed": 0b,
-    "SkinUrl": "",
+    "SkinUrl": "https://www.minecraftskins.com/uploads/skins/2014/06/05/skin_20140605142834179314.png?v256",
     "CanSwim": 1b,
     "GroundSound": "minecraft:block.stone.break",
     "MaxHealth": 20,
     "HideBodyWhenKilled": 0b,
     "AttackSpeed": 20,
-    "PotionDuration": 5,
+    "PotionDuration": 15,
     "maxDelay": 40,
     "ScriptEnabled": 0b,
     "Role": 0,
     "DropChance": [
         {
-            "Integer": 100,
+            "Integer": 57,
             "Slot": 0
         },
         {
-            "Integer": 30,
+            "Integer": 37,
             "Slot": 1
         },
         {
-            "Integer": 100,
+            "Integer": 19,
             "Slot": 2
         },
         {
-            "Integer": 100,
+            "Integer": 7,
             "Slot": 3
         },
         {
@@ -426,19 +380,19 @@
         }
     ],
     "FactionPoints": {
-        "DecreaseFaction1Points": 1b,
-        "OptionFaction2Points": 50,
-        "OptionFactions1": 0,
-        "OptionFactions2": 4,
-        "OptionFaction1Points": 100,
-        "DecreaseFaction2Points": 1b
+        "DecreaseFaction1Points": 0b,
+        "OptionFaction2Points": 10,
+        "OptionFactions1": 4,
+        "OptionFactions2": 0,
+        "OptionFaction1Points": 25,
+        "DecreaseFaction2Points": 0b
     },
     "pDamage": 4,
     "KilledTime": 0L,
     "AimWhileShooting": 0b,
     "CanPickUpLoot": 0b,
-    "AttackOtherFactions": 0b,
-    "CanDrown": 1b,
+    "AttackOtherFactions": 1b,
+    "CanDrown": 0b,
     "pSize": 5,
     "CanSprint": 0b,
     "CanLeap": 0b,
@@ -449,24 +403,23 @@
             ]
         },
         "Potion Core - Health Fix": 20.0f,
-        "Potion Core - Projectile Invulnerability": 0,
         "Potion Core - Jump Boost Updated": 1b
     },
     "MovingState": 1,
     "MovingPos": 0,
     "PotionAmp": 0,
     "RelativeAABB": [
-        -0.36000001430511475d,
+        -0.30000001192092896d,
         0.0d,
-        -0.36000001430511475d,
-        0.36000001430511475d,
-        2.388000011444092d,
-        0.36000001430511475d
+        -0.30000001192092896d,
+        0.30000001192092896d,
+        1.899999976158142d,
+        0.30000001192092896d
     ],
     "OnAttack": 0,
     "TacticalRadius": 8,
     "FallFlying": 0b,
-    "MaxExp": 0,
+    "MaxExp": 30,
     "OrderedLines": 0b,
     "PortalCooldown": 0,
     "pGlows": 0b,
@@ -476,41 +429,31 @@
     "FiringSound": "minecraft:entity.arrow.shoot",
     "ModRev": 18,
     "Accuracy": 60,
-    "MinExp": 0,
+    "MinExp": 10,
     "Armor": [
-        {
-            "Slot": 0b,
-            "ForgeCaps": {
-                "customnpcs:itemscripteddata": {
-                }
-            },
-            "id": "quark:pirate_hat",
-            "Count": 1b,
-            "Damage": 0s
-        }
     ],
     "CloakTexture": "",
     "GlowTexture": "",
     "MaxFiringRange": 15,
     "pXlr8": 0b,
-    "MarkovGeneratorId": 5,
+    "MarkovGeneratorId": 8,
     "Scripts": [
     ],
     "Health": 20.0f,
     "pStick": 0b,
     "MovingPause": 1b,
-    "NpcDeathSound": "minecraft:entity.player.hurt",
-    "FactionID": 0,
-    "Title": "Old Blood",
-    "TotalTicksAlive": 78236L,
+    "NpcDeathSound": "minecraft:entity.zombie.death",
+    "FactionID": 6,
+    "Title": "Infected Footprinter",
+    "TotalTicksAlive": 7084L,
     "Rotation": [
-        171.69702f,
-        24.732212f
+        135.00002f,
+        0.0f
     ],
     "ShowName": 1,
-    "npcInteracting": 1b,
+    "npcInteracting": 0b,
     "UpdateBlocked": 0b,
-    "AvoidsWater": 1b,
+    "AvoidsWater": 0b,
     "NoLivingAnimation": 0b,
-    "SpawnCycle": 2
+    "SpawnCycle": 3
 }

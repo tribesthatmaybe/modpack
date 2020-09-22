@@ -33,6 +33,21 @@
                 "Line": "The desert is trying to move on.",
                 "Song": "",
                 "Slot": 0
+            },
+            {
+                "Line": "I wonder where I left my cup.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "Could do with some rain.",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "This godforesaken desert.",
+                "Song": "",
+                "Slot": 3
             }
         ]
     },
@@ -116,6 +131,31 @@
     "AttackInvisible": 0b,
     "NpcInteractNPCLines": {
         "Lines": [
+            {
+                "Line": "It's going to be a long day.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "It's going to be a long night.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "Didn't I see you at the Block Hole?",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "Yeah, it's a decent crossbow but the bolts are where it's at.",
+                "Song": "",
+                "Slot": 3
+            },
+            {
+                "Line": "I'm as tired as this desert is old.",
+                "Song": "",
+                "Slot": 4
+            }
         ]
     },
     "HurtTime": 0s,
@@ -154,6 +194,21 @@
     "BurstCount": 1,
     "NpcAttackLines": {
         "Lines": [
+            {
+                "Line": "AH!",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "Here we go.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "NOW!",
+                "Song": "",
+                "Slot": 2
+            }
         ]
     },
     "pSpeed": 10,
@@ -170,7 +225,7 @@
     "CombatRegen": 0,
     "NpcsTimers": [
     ],
-    "MarkovGender": 0,
+    "MarkovGender": 2,
     "pEffect": 0,
     "DistanceToMelee": 0,
     "NpcStepSound": "",
@@ -182,6 +237,31 @@
     "ImmuneToFire": 0b,
     "NpcKilledLines": {
         "Lines": [
+            {
+                "Line": "Well, shit.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "Oh frak.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "Until next time....",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "We'll meet again.",
+                "Song": "",
+                "Slot": 3
+            },
+            {
+                "Line": "going off comms",
+                "Song": "",
+                "Slot": 4
+            }
         ]
     },
     "Fire": -1s,
@@ -200,14 +280,9 @@
     "TransformHasInv": 0b,
     "NpcInteractLines": {
         "Lines": [
-            {
-                "Line": "Woah, who are you?",
-                "Song": "",
-                "Slot": 0
-            }
         ]
     },
-    "HurtByTimestamp": 12718,
+    "HurtByTimestamp": 18191,
     "pSpin": 0b,
     "NpcHurtSound": "minecraft:entity.player.hurt",
     "pTrail": 0,
@@ -418,6 +493,16 @@
         }
     ],
     "NPCDialogOptions": [
+        {
+            "NPCDialog": {
+                "DialogCommand": "",
+                "Dialog": 18,
+                "Title": "Aura Intro (friendly)",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            },
+            "DialogSlot": 0
+        }
     ],
     "AggroRange": 20,
     "DirectLOS": 1b,
@@ -548,12 +633,12 @@
         }
     ],
     "FactionPoints": {
-        "DecreaseFaction1Points": 0b,
+        "DecreaseFaction1Points": 1b,
         "OptionFaction2Points": 100,
-        "OptionFactions1": -1,
-        "OptionFactions2": -1,
+        "OptionFactions1": 0,
+        "OptionFactions2": 1,
         "OptionFaction1Points": 100,
-        "DecreaseFaction2Points": 0b
+        "DecreaseFaction2Points": 1b
     },
     "pDamage": 8,
     "KilledTime": 0L,
@@ -571,6 +656,7 @@
             ]
         },
         "Potion Core - Health Fix": 20.0f,
+        "Potion Core - Projectile Invulnerability": 0,
         "entityKillList": {
             "otakup0pe": 1
         },
@@ -647,7 +733,7 @@
     "GlowTexture": "",
     "MaxFiringRange": 20,
     "pXlr8": 0b,
-    "MarkovGeneratorId": 4,
+    "MarkovGeneratorId": 3,
     "Scripts": [
     ],
     "Health": 20.0f,
@@ -656,9 +742,9 @@
     "NpcDeathSound": "minecraft:entity.player.hurt",
     "FactionID": 1,
     "Title": "",
-    "TotalTicksAlive": 48235L,
+    "TotalTicksAlive": 66466L,
     "Rotation": [
-        66.53201f,
+        213.14226f,
         0.0f
     ],
     "ShowName": 1,

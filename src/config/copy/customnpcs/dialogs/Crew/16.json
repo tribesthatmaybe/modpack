@@ -2,6 +2,36 @@
     "DialogShowWheel": 0b,
     "AvailabilityQuestId": -1,
     "Options": [
+        {
+            "OptionSlot": 0,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": 22,
+                "Title": "Where am I?",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            }
+        },
+        {
+            "OptionSlot": 1,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": 17,
+                "Title": "I hear it is scary at night.",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            }
+        },
+        {
+            "OptionSlot": 2,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": 21,
+                "Title": "Who are you?",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            }
+        }
     ],
     "AvailabilityScoreboardType": 1,
     "DialogHideNPC": 0b,
@@ -54,7 +84,7 @@
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1600585959620L,
+        "TimePast": 1600645176652L,
         "Time": 0L,
         "Subject": ""
     }

@@ -37,7 +37,7 @@
     "DialogCommand": "/noppes clone spawn Aura 1 Aura ~1 ~ ~1",
     "AvailabilityDialogId": -1,
     "OptionFaction2Points": 100,
-    "DialogText": "Oh we can summon aura.",
+    "DialogText": "Alright, I'll get Aura over here. She will help keep us safe.",
     "AvailabilityQuest4Id": -1,
     "AvailabilityQuest3Id": -1,
     "AvailabilityQuest2Id": -1,
@@ -54,7 +54,7 @@
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1600591396420L,
+        "TimePast": 1600644918103L,
         "Time": 0L,
         "Subject": ""
     }
