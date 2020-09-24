@@ -120,7 +120,7 @@ jobs:
       - name: "pull workflow container"
         run: |
           docker login ghcr.io --username otakup0pe --password-stdin <<< "$CONTAINER_TOKEN"
-          docker pull ghcr.io/tribesthatmaybe/workflow:${{needs.build.outputs.version}}
+          docker pull ghcr.io/tribesthatmaybe/workflow:${{needs.build.outputs.container_version}}
       - name: "deploy to dev server"
         run: |
           ./scripts/render-devsync.sh
@@ -169,7 +169,7 @@ jobs:
       - name: "pull workflow container"
         run: |
           docker login ghcr.io --username otakup0pe --password-stdin <<< "$CONTAINER_TOKEN"
-          docker pull ghcr.io/tribesthatmaybe/workflow:${{needs.build.outputs.version}}
+          docker pull ghcr.io/tribesthatmaybe/workflow:${{needs.build.outputs.container_version}}
       - name: "upload to curseforge"
         run: |
           ./scripts/render-devsync.sh
