@@ -1,0 +1,756 @@
+{
+    "ReturnToStart": 0b,
+    "NpcInv": [
+    ],
+    "BossColor": 0,
+    "PotionEffect": 0,
+    "Size": 5,
+    "stopAndInteract": 1b,
+    "Resistances": {
+        "Arrow": 1.0f,
+        "Explosion": 1.0f,
+        "Knockback": 1.0f,
+        "Melee": 1.0f
+    },
+    "BossBar": 0b,
+    "RespawnTime": 20,
+    "NpcAngrySound": "",
+    "ReactsToFire": 0b,
+    "IgnoreCobweb": 0b,
+    "PositionOffsetZ": 5.0f,
+    "PositionOffsetY": 5.0f,
+    "PositionOffsetX": 5.0f,
+    "LootMode": 0,
+    "TransformHasAI": 0b,
+    "AttackStrenght": 8,
+    "PersistenceRequired": 0b,
+    "id": "customnpcs:customnpc",
+    "IsStatue": 0b,
+    "MovingPatern": 0,
+    "NpcLines": {
+        "Lines": [
+            {
+                "Line": "The desert is trying to move on.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "I wonder where I left my cup.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "Could do with some rain.",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "This godforesaken desert.",
+                "Song": "",
+                "Slot": 3
+            }
+        ]
+    },
+    "DefendFaction": 1b,
+    "FireIndirect": 0,
+    "NpcVisible": 0,
+    "LinkedNpcName": "",
+    "NpcScenes": {
+        "Scenes": [
+        ]
+    },
+    "HitSound": "minecraft:entity.arrow.hit",
+    "FindShelter": 2,
+    "GuardTargets": [
+        {
+            "Line": "entity.Creeper.name"
+        },
+        {
+            "Line": "entity.betteranimalsplus.coyote.name"
+        },
+        {
+            "Line": "entity.betteranimalsplus.tarantula.name"
+        },
+        {
+            "Line": "entity.statues:FakeCreeper.name"
+        },
+        {
+            "Line": "entity.Zombie.name"
+        },
+        {
+            "Line": "entity.Husk.name"
+        },
+        {
+            "Line": "entity.Spider.name"
+        },
+        {
+            "Line": "entity.Skeleton.name"
+        },
+        {
+            "Line": "entity.Silverfish.name"
+        },
+        {
+            "Line": "entity.statues:FakeSpider.name"
+        },
+        {
+            "Line": "entity.statues:FakeZombie.name"
+        },
+        {
+            "Line": "entity.statues:FakeHusk.name"
+        },
+        {
+            "Line": "entity.statues:FakeSkeleton.name"
+        },
+        {
+            "Line": "entity.statues:FakeWitch.name"
+        },
+        {
+            "Line": "entity.Witch.name"
+        }
+    ],
+    "Air": 300s,
+    "TacticalVariant": 4,
+    "Orientation": 0,
+    "ScriptLanguage": "ECMAScript",
+    "HandItems": [
+        {
+        },
+        {
+        }
+    ],
+    "KnockBack": 1,
+    "TransformHasJob": 0b,
+    "ArmorDropChances": [
+        0.085f,
+        0.085f,
+        0.085f,
+        0.085f
+    ],
+    "BurnInSun": 0b,
+    "StandingState": 0,
+    "AttackInvisible": 0b,
+    "NpcInteractNPCLines": {
+        "Lines": [
+            {
+                "Line": "It's going to be a long day.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "It's going to be a long night.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "Didn't I see you at the Block Hole?",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "Yeah, it's a decent crossbow but the bolts are where it's at.",
+                "Song": "",
+                "Slot": 3
+            },
+            {
+                "Line": "I'm as tired as this desert is old.",
+                "Song": "",
+                "Slot": 4
+            }
+        ]
+    },
+    "HurtTime": 0s,
+    "WalkingRange": 20,
+    "ShotCount": 1,
+    "pDur": 5,
+    "AttackRange": 2,
+    "NpcKillLines": {
+        "Lines": [
+            {
+                "Line": "Finally.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "Another one.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "There we go.",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "You would think it would star to bother me.",
+                "Song": "",
+                "Slot": 3
+            }
+        ]
+    },
+    "PotionImmune": 0b,
+    "AvoidsSun": 0b,
+    "Texture": "customnpcs:textures/entity/humanmale/steve.png",
+    "NpcJob": 3,
+    "BurstCount": 1,
+    "NpcAttackLines": {
+        "Lines": [
+            {
+                "Line": "AH!",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "Here we go.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "NOW!",
+                "Song": "",
+                "Slot": 2
+            }
+        ]
+    },
+    "pSpeed": 10,
+    "pArea": 0,
+    "DeathTime": 0s,
+    "pImpact": 1,
+    "MoveState": 0,
+    "pRender3D": 0b,
+    "Motion": [
+        0.0d,
+        -0.0784000015258789d,
+        0.0d
+    ],
+    "CombatRegen": 0,
+    "NpcsTimers": [
+    ],
+    "MarkovGender": 2,
+    "pEffect": 0,
+    "DistanceToMelee": 0,
+    "NpcStepSound": "",
+    "FireRate": 5,
+    "LeftHanded": 0b,
+    "pEffAmp": 0,
+    "OnGround": 1b,
+    "Dimension": 1001,
+    "ImmuneToFire": 0b,
+    "NpcKilledLines": {
+        "Lines": [
+            {
+                "Line": "Well, shit.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "Oh frak.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "Until next time....",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "We'll meet again.",
+                "Song": "",
+                "Slot": 3
+            },
+            {
+                "Line": "going off comms",
+                "Song": "",
+                "Slot": 4
+            }
+        ]
+    },
+    "Fire": -1s,
+    "ArmorItems": [
+        {
+        },
+        {
+        },
+        {
+        },
+        {
+        }
+    ],
+    "DisablePitch": 0b,
+    "pPhysics": 1b,
+    "TransformHasInv": 0b,
+    "NpcInteractLines": {
+        "Lines": [
+        ]
+    },
+    "HurtByTimestamp": 18191,
+    "pSpin": 0b,
+    "NpcHurtSound": "minecraft:entity.player.hurt",
+    "pTrail": 0,
+    "CreatureType": 0,
+    "Attributes": [
+        {
+            "Base": 1.0d,
+            "Name": "potioncore.projectileDamage"
+        },
+        {
+            "Base": 1.0d,
+            "Name": "potioncore.magicDamage"
+        },
+        {
+            "Base": 1.0d,
+            "Name": "potioncore.jumpHeight"
+        },
+        {
+            "Base": 1.0d,
+            "Name": "potioncore.damageResistance"
+        },
+        {
+            "Base": 0.0d,
+            "Name": "potioncore.magicShielding"
+        },
+        {
+            "Base": 20.0d,
+            "Name": "generic.maxHealth"
+        },
+        {
+            "Base": 0.0d,
+            "Name": "generic.knockbackResistance"
+        },
+        {
+            "Base": 0.30000001192092896d,
+            "Name": "generic.movementSpeed"
+        },
+        {
+            "Base": 0.0d,
+            "Name": "generic.armor"
+        },
+        {
+            "Base": 0.0d,
+            "Name": "generic.armorToughness"
+        },
+        {
+            "Base": 1.0d,
+            "Name": "forge.swimSpeed"
+        },
+        {
+            "Base": 32.0d,
+            "Name": "generic.followRange"
+        },
+        {
+            "Base": 8.0d,
+            "Name": "generic.attackDamage"
+        },
+        {
+            "Base": 0.6000000238418579d,
+            "Name": "generic.flyingSpeed"
+        }
+    ],
+    "Invulnerable": 0b,
+    "TransformHasDisplay": 0b,
+    "NoFallDamage": 0b,
+    "AbsorptionAmount": 0.0f,
+    "TransformHasRole": 0b,
+    "Name": "Aura",
+    "FallDistance": 0.0f,
+    "SkinColor": 16777215,
+    "NpcIdleSound": "",
+    "Weapons": [
+        {
+            "Slot": 0b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "tconstruct:crossbow",
+            "Count": 1b,
+            "tag": {
+                "StatsOriginal": {
+                    "AttackSpeedMultiplier": 1.0f,
+                    "MiningSpeed": 5.0f,
+                    "DrawSpeed": 1.2f,
+                    "FreeModifiers": 3,
+                    "ProjectileBonusDamage": 3.0f,
+                    "Durability": 430,
+                    "HarvestLevel": 1,
+                    "Attack": 5.0f,
+                    "Range": 0.8f
+                },
+                "Stats": {
+                    "AttackSpeedMultiplier": 1.0f,
+                    "MiningSpeed": 5.0f,
+                    "DrawSpeed": 1.2f,
+                    "FreeModifiers": 3,
+                    "ProjectileBonusDamage": 3.0f,
+                    "Durability": 430,
+                    "HarvestLevel": 1,
+                    "Attack": 5.0f,
+                    "Range": 0.8f
+                },
+                "Special": {
+                    "Categories": [
+                        "tool",
+                        "launcher"
+                    ]
+                },
+                "TinkerData": {
+                    "Materials": [
+                        "silver",
+                        "silver",
+                        "silver",
+                        "string"
+                    ],
+                    "Modifiers": [
+                        "toolleveling"
+                    ]
+                },
+                "Modifiers": [
+                    {
+                        "identifier": "holy",
+                        "color": -3019530,
+                        "level": 1
+                    },
+                    {
+                        "identifier": "toolleveling",
+                        "color": 16777215,
+                        "level": 1
+                    }
+                ],
+                "Traits": [
+                    "holy",
+                    "toolleveling"
+                ]
+            },
+            "Damage": 0s
+        },
+        {
+            "Slot": 1b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "tconstruct:bolt",
+            "Count": 1b,
+            "tag": {
+                "StatsOriginal": {
+                    "AttackSpeedMultiplier": 1.0f,
+                    "Accuracy": 1.0f,
+                    "MiningSpeed": 7.0f,
+                    "FreeModifiers": 3,
+                    "Durability": 432,
+                    "HarvestLevel": 3,
+                    "Attack": 6.0f
+                },
+                "Stats": {
+                    "AttackSpeedMultiplier": 1.0f,
+                    "Accuracy": 1.0f,
+                    "MiningSpeed": 7.0f,
+                    "FreeModifiers": 3,
+                    "Durability": 432,
+                    "HarvestLevel": 3,
+                    "Attack": 6.0f
+                },
+                "Special": {
+                    "Categories": [
+                        "tool",
+                        "projectile",
+                        "no_melee"
+                    ]
+                },
+                "TinkerData": {
+                    "Materials": [
+                        "wood",
+                        "steel",
+                        "feather"
+                    ],
+                    "Modifiers": [
+                        "toolleveling"
+                    ]
+                },
+                "Modifiers": [
+                    {
+                        "identifier": "ecological",
+                        "color": -7444965,
+                        "level": 1
+                    },
+                    {
+                        "identifier": "sharp",
+                        "color": -5789785,
+                        "level": 1
+                    },
+                    {
+                        "identifier": "toolleveling",
+                        "color": 16777215,
+                        "level": 1
+                    }
+                ],
+                "Traits": [
+                    "ecological",
+                    "sharp",
+                    "toolleveling"
+                ]
+            },
+            "Damage": 0s
+        }
+    ],
+    "NPCDialogOptions": [
+        {
+            "NPCDialog": {
+                "DialogCommand": "",
+                "Dialog": 18,
+                "Title": "Aura Intro (friendly)",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            },
+            "DialogSlot": 0
+        }
+    ],
+    "AggroRange": 20,
+    "DirectLOS": 1b,
+    "HealthRegen": 1,
+    "ForgeCaps": {
+        "tinkertoolleveling:entityxp": [
+        ],
+        "dsurround:data": {
+            "a": 0b,
+            "f": 0b
+        }
+    },
+    "HandDropChances": [
+        0.085f,
+        0.085f
+    ],
+    "NpcModelData": {
+        "LegsConfig": {
+            "NotShared": 0b,
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.012000002f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "BodyConfig": {
+            "NotShared": 0b,
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "Eyes": {
+            "Pattern": 0b,
+            "Glint": 1b,
+            "Type": 0b,
+            "PositionY": 1,
+            "SkinColor": 11830381,
+            "PlayerTexture": 0b,
+            "Color": 6724056,
+            "BrowColor": 5982516,
+            "BrowThickness": 4
+        },
+        "LegParts": {
+            "Pattern": 0b,
+            "Type": 0b,
+            "PlayerTexture": 0b,
+            "Color": 16777215
+        },
+        "Parts": [
+        ],
+        "ArmsConfig": {
+            "NotShared": 0b,
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": -0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        },
+        "ExtraData": {
+        },
+        "HeadConfig": {
+            "NotShared": 0b,
+            "ScaleZ": 1.0f,
+            "TransZ": 0.0f,
+            "TransY": 0.0f,
+            "TransX": 0.0f,
+            "ScaleY": 1.0f,
+            "ScaleX": 1.0f
+        }
+    },
+    "minDelay": 15,
+    "DoorInteract": 2,
+    "MoveSpeed": 6,
+    "TransformEditingModus": 0b,
+    "UsingSkinUrl": 2b,
+    "Leashed": 0b,
+    "SkinUrl": "https://www.minecraftskins.com/uploads/skins/2019/11/23/desert-scavenger--woman--13645974.png?v256",
+    "CanSwim": 1b,
+    "GroundSound": "minecraft:block.stone.break",
+    "MaxHealth": 20,
+    "HideBodyWhenKilled": 0b,
+    "AttackSpeed": 20,
+    "PotionDuration": 5,
+    "maxDelay": 30,
+    "ScriptEnabled": 0b,
+    "Role": 0,
+    "DropChance": [
+        {
+            "Integer": 100,
+            "Slot": 0
+        },
+        {
+            "Integer": 100,
+            "Slot": 1
+        },
+        {
+            "Integer": 100,
+            "Slot": 2
+        },
+        {
+            "Integer": 100,
+            "Slot": 3
+        },
+        {
+            "Integer": 100,
+            "Slot": 4
+        },
+        {
+            "Integer": 100,
+            "Slot": 5
+        },
+        {
+            "Integer": 100,
+            "Slot": 6
+        },
+        {
+            "Integer": 100,
+            "Slot": 7
+        },
+        {
+            "Integer": 100,
+            "Slot": 8
+        }
+    ],
+    "FactionPoints": {
+        "DecreaseFaction1Points": 1b,
+        "OptionFaction2Points": 100,
+        "OptionFactions1": 0,
+        "OptionFactions2": 1,
+        "OptionFaction1Points": 100,
+        "DecreaseFaction2Points": 1b
+    },
+    "pDamage": 8,
+    "KilledTime": 0L,
+    "AimWhileShooting": 1b,
+    "CanPickUpLoot": 0b,
+    "AttackOtherFactions": 1b,
+    "CanDrown": 1b,
+    "pSize": 5,
+    "CanSprint": 0b,
+    "CanLeap": 0b,
+    "TransformIsActive": 0b,
+    "ForgeData": {
+        "cnpcmarkdata": {
+            "marks": [
+            ]
+        },
+        "Potion Core - Health Fix": 20.0f,
+        "Potion Core - Projectile Invulnerability": 0,
+        "entityKillList": {
+            "otakup0pe": 1
+        },
+        "Potion Core - Jump Boost Updated": 1b
+    },
+    "MovingState": 1,
+    "MovingPos": 0,
+    "PotionAmp": 0,
+    "RelativeAABB": [
+        -0.30000001192092896d,
+        0.0d,
+        -0.30000001192092896d,
+        0.30000001192092896d,
+        1.899999976158142d,
+        0.30000001192092896d
+    ],
+    "OnAttack": 0,
+    "TacticalRadius": 15,
+    "FallFlying": 0b,
+    "MaxExp": 0,
+    "OrderedLines": 0b,
+    "PortalCooldown": 0,
+    "pGlows": 0b,
+    "TransformHasAdvanced": 0b,
+    "TransformHasStats": 0b,
+    "MovementType": 0,
+    "FiringSound": "minecraft:entity.arrow.shoot",
+    "ModRev": 18,
+    "Accuracy": 100,
+    "MinExp": 0,
+    "Armor": [
+        {
+            "Slot": 0b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "minecraft:chainmail_helmet",
+            "Count": 1b,
+            "Damage": 0s
+        },
+        {
+            "Slot": 1b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "minecraft:chainmail_chestplate",
+            "Count": 1b,
+            "Damage": 0s
+        },
+        {
+            "Slot": 2b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "minecraft:chainmail_leggings",
+            "Count": 1b,
+            "Damage": 0s
+        },
+        {
+            "Slot": 3b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "minecraft:chainmail_boots",
+            "Count": 1b,
+            "Damage": 0s
+        }
+    ],
+    "CloakTexture": "",
+    "GlowTexture": "",
+    "MaxFiringRange": 20,
+    "pXlr8": 0b,
+    "MarkovGeneratorId": 3,
+    "Scripts": [
+    ],
+    "Health": 20.0f,
+    "pStick": 0b,
+    "MovingPause": 1b,
+    "NpcDeathSound": "minecraft:entity.player.hurt",
+    "FactionID": 1,
+    "Title": "",
+    "TotalTicksAlive": 66466L,
+    "Rotation": [
+        213.14226f,
+        0.0f
+    ],
+    "ShowName": 1,
+    "npcInteracting": 1b,
+    "UpdateBlocked": 0b,
+    "AvoidsWater": 1b,
+    "NoLivingAnimation": 0b,
+    "SpawnCycle": 0
+}

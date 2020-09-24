@@ -1,0 +1,56 @@
+{
+    "CompleterNpc": "Old Blood",
+    "NextQuestId": -1,
+    "RandomReward": 0b,
+    "QuestRepeat": 2,
+    "QuestCompletion": 0,
+    "IgnoreNBT": 0b,
+    "Title": "Sticks Tho",
+    "Text": "Go out and find some sticks. They sometimes are buried under large playa dust piles, and sometimes show up as part of harvesting the local plants. Dried trees will usually also provide sticks but those aren't really matter out of place.",
+    "QuestFactionPoints": {
+        "DecreaseFaction1Points": 0b,
+        "OptionFaction2Points": 10,
+        "OptionFactions1": 0,
+        "OptionFactions2": 4,
+        "OptionFaction1Points": 25,
+        "DecreaseFaction2Points": 0b
+    },
+    "RewardExp": 10,
+    "QuestCommand": "",
+    "ModRev": 18,
+    "Type": 0,
+    "QuestMail": {
+        "Sender": "",
+        "BeenRead": 0b,
+        "Message": {
+        },
+        "MailItems": [
+        ],
+        "MailQuest": -1,
+        "TimePast": 1600572678677L,
+        "Time": 0L,
+        "Subject": ""
+    },
+    "IgnoreDamage": 0b,
+    "Rewards": {
+        "NpcMiscInv": [
+        ]
+    },
+    "Items": {
+        "NpcMiscInv": [
+            {
+                "Slot": 0b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:stick",
+                "Count": 32b,
+                "Damage": 0s
+            }
+        ]
+    },
+    "LeaveItems": 0b,
+    "CompleteText": "It feels good, picking up some moop.",
+    "NextQuestTitle": ""
+}

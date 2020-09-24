@@ -1,6 +1,35 @@
 {
     "ReturnToStart": 1b,
     "NpcInv": [
+        {
+            "Slot": 0b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "loreexpansion:lore_scrap",
+            "Count": 1b,
+            "tag": {
+                "lore": {
+                    "id": "reversecarnies",
+                    "category": "Tribes"
+                }
+            },
+            "Damage": 0s
+        },
+        {
+            "Slot": 1b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "cgm:shotgun",
+            "Count": 1b,
+            "tag": {
+                "AmmoCount": 4
+            },
+            "Damage": 0s
+        }
     ],
     "BossColor": 0,
     "PotionEffect": 5,
@@ -29,6 +58,26 @@
     "MovingPatern": 0,
     "NpcLines": {
         "Lines": [
+            {
+                "Line": "I remember when there used to be wild things out here.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "Just killin' time 'til the world moves on.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "Strange days, stranger folk.",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "Looking forward to some downtime.",
+                "Song": "",
+                "Slot": 3
+            }
         ]
     },
     "DefendFaction": 1b,
@@ -42,7 +91,7 @@
     "HitSound": "minecraft:entity.arrow.hit",
     "FindShelter": 2,
     "Air": 300s,
-    "TacticalVariant": 1,
+    "TacticalVariant": 2,
     "Orientation": 0,
     "ScriptLanguage": "ECMAScript",
     "HandItems": [
@@ -78,6 +127,26 @@
                 "Line": "Hey do you have a radio on you?",
                 "Song": "",
                 "Slot": 2
+            },
+            {
+                "Line": "How have you been?",
+                "Song": "",
+                "Slot": 3
+            },
+            {
+                "Line": "Been a while since I saw you.",
+                "Song": "",
+                "Slot": 4
+            },
+            {
+                "Line": "You know, just killin' time.",
+                "Song": "",
+                "Slot": 5
+            },
+            {
+                "Line": "I could use a drink.",
+                "Song": "",
+                "Slot": 6
             }
         ]
     },
@@ -107,6 +176,16 @@
     "BurstCount": 1,
     "NpcAttackLines": {
         "Lines": [
+            {
+                "Line": "I am sick of this.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "Are you messing with me?",
+                "Song": "",
+                "Slot": 1
+            }
         ]
     },
     "pSpeed": 10,
@@ -120,7 +199,7 @@
         -0.0784000015258789d,
         0.0d
     ],
-    "CombatRegen": 3,
+    "CombatRegen": 2,
     "NpcsTimers": [
     ],
     "MarkovGender": 0,
@@ -160,7 +239,7 @@
             }
         ]
     },
-    "HurtByTimestamp": 78333,
+    "HurtByTimestamp": 5882,
     "pSpin": 0b,
     "NpcHurtSound": "minecraft:entity.player.hurt",
     "pTrail": 0,
@@ -244,6 +323,16 @@
             "tag": {
                 "AmmoCount": 4
             },
+            "Damage": 0s
+        },
+        {
+            "Slot": 1b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "cgm:shell",
+            "Count": 1b,
             "Damage": 0s
         }
     ],
@@ -329,7 +418,7 @@
     "TransformEditingModus": 0b,
     "UsingSkinUrl": 2b,
     "Leashed": 0b,
-    "SkinUrl": "https://www.minecraftskins.com/uploads/skins/2018/01/02/skin_20180102060311138401.png?v255",
+    "SkinUrl": "http://assets.tribesthatmay.be/images/skins/badger.png",
     "CanSwim": 1b,
     "GroundSound": "minecraft:block.stone.break",
     "MaxHealth": 40,
@@ -341,11 +430,11 @@
     "Role": 0,
     "DropChance": [
         {
-            "Integer": 100,
+            "Integer": 20,
             "Slot": 0
         },
         {
-            "Integer": 100,
+            "Integer": 5,
             "Slot": 1
         },
         {
@@ -378,12 +467,12 @@
         }
     ],
     "FactionPoints": {
-        "DecreaseFaction1Points": 0b,
+        "DecreaseFaction1Points": 1b,
         "OptionFaction2Points": 100,
-        "OptionFactions1": -1,
-        "OptionFactions2": -1,
-        "OptionFaction1Points": 100,
-        "DecreaseFaction2Points": 0b
+        "OptionFactions1": 0,
+        "OptionFactions2": 4,
+        "OptionFaction1Points": 500,
+        "DecreaseFaction2Points": 1b
     },
     "pDamage": 4,
     "KilledTime": 0L,
@@ -402,6 +491,9 @@
         },
         "Potion Core - Health Fix": 40.0f,
         "Potion Core - Projectile Invulnerability": 0,
+        "entityKillList": {
+            "otakup0pe": 1
+        },
         "Potion Core - Jump Boost Updated": 1b
     },
     "MovingState": 1,
@@ -416,7 +508,7 @@
         0.30000001192092896d
     ],
     "OnAttack": 0,
-    "TacticalRadius": 6,
+    "TacticalRadius": 8,
     "FallFlying": 0b,
     "MaxExp": 0,
     "OrderedLines": 0b,
@@ -442,11 +534,11 @@
     "pStick": 0b,
     "MovingPause": 1b,
     "NpcDeathSound": "minecraft:entity.player.hurt",
-    "FactionID": 1,
+    "FactionID": 0,
     "Title": "Some Bloke with a Shotgun",
-    "TotalTicksAlive": 277924L,
+    "TotalTicksAlive": 414836L,
     "Rotation": [
-        77.081894f,
+        49.180252f,
         0.0f
     ],
     "ShowName": 1,

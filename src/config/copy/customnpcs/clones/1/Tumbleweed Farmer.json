@@ -1,6 +1,32 @@
 {
     "ReturnToStart": 1b,
     "NpcInv": [
+        {
+            "Slot": 0b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "loreexpansion:lore_scrap",
+            "Count": 1b,
+            "tag": {
+                "lore": {
+                    "id": "travellers",
+                    "category": " Tribes"
+                }
+            },
+            "Damage": 0s
+        },
+        {
+            "Slot": 1b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "minecraft:deadbush",
+            "Count": 1b,
+            "Damage": 0s
+        }
     ],
     "BossColor": 0,
     "PotionEffect": 0,
@@ -60,7 +86,7 @@
         ]
     },
     "HitSound": "minecraft:entity.arrow.hit",
-    "FindShelter": 2,
+    "FindShelter": 0,
     "Air": 300s,
     "TacticalVariant": 0,
     "Orientation": 0,
@@ -134,7 +160,7 @@
         ]
     },
     "HurtTime": 0s,
-    "WalkingRange": 10,
+    "WalkingRange": 30,
     "ShotCount": 1,
     "pDur": 5,
     "TraderIgnoreDamage": 0b,
@@ -224,7 +250,7 @@
             }
         ]
     },
-    "HurtByTimestamp": 13377,
+    "HurtByTimestamp": 40695,
     "TraderCurrency": {
         "NpcMiscInv": [
             {
@@ -439,12 +465,12 @@
         }
     },
     "minDelay": 20,
-    "DoorInteract": 2,
+    "DoorInteract": 1,
     "MoveSpeed": 2,
     "TransformEditingModus": 0b,
     "UsingSkinUrl": 2b,
     "Leashed": 0b,
-    "SkinUrl": "https://www.minecraftskins.com/uploads/skins/2019/12/29/old-desert-man-13742380.png?v245",
+    "SkinUrl": "http://assets.tribesthatmay.be/images/skins/tumbleweed_farmer.png",
     "CanSwim": 1b,
     "TraderIgnoreNBT": 0b,
     "GroundSound": "minecraft:block.stone.break",
@@ -457,11 +483,11 @@
     "Role": 1,
     "DropChance": [
         {
-            "Integer": 100,
+            "Integer": 25,
             "Slot": 0
         },
         {
-            "Integer": 100,
+            "Integer": 40,
             "Slot": 1
         },
         {
@@ -530,7 +556,7 @@
         1.899999976158142d,
         0.30000001192092896d
     ],
-    "OnAttack": 0,
+    "OnAttack": 2,
     "TacticalRadius": 8,
     "FallFlying": 0b,
     "MaxExp": 0,
@@ -559,15 +585,15 @@
     "NpcDeathSound": "minecraft:entity.player.hurt",
     "FactionID": 0,
     "Title": "",
-    "TotalTicksAlive": 21285L,
+    "TotalTicksAlive": 751225L,
     "Rotation": [
-        35.760117f,
+        25.355026f,
         0.0f
     ],
     "ShowName": 1,
     "npcInteracting": 1b,
     "UpdateBlocked": 0b,
-    "AvoidsWater": 0b,
+    "AvoidsWater": 1b,
     "NoLivingAnimation": 0b,
     "SpawnCycle": 3
 }

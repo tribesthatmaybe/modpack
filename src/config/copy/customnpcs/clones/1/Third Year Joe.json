@@ -1,6 +1,32 @@
 {
     "ReturnToStart": 1b,
     "NpcInv": [
+        {
+            "Slot": 0b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "loreexpansion:lore_scrap",
+            "Count": 1b,
+            "tag": {
+                "lore": {
+                    "id": "reversecarnies",
+                    "category": "Tribes"
+                }
+            },
+            "Damage": 0s
+        },
+        {
+            "Slot": 1b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "brewcraft:blackholewhiskeyitem",
+            "Count": 1b,
+            "Damage": 0s
+        }
     ],
     "BossColor": 0,
     "PotionEffect": 0,
@@ -13,7 +39,7 @@
         "Melee": 1.0f
     },
     "BossBar": 0b,
-    "RespawnTime": 20,
+    "RespawnTime": 0,
     "NpcAngrySound": "",
     "ReactsToFire": 0b,
     "IgnoreCobweb": 0b,
@@ -55,7 +81,7 @@
         ]
     },
     "HitSound": "minecraft:entity.arrow.hit",
-    "FindShelter": 2,
+    "FindShelter": 0,
     "Air": 300s,
     "TacticalVariant": 0,
     "Orientation": 0,
@@ -165,7 +191,7 @@
         "Lines": [
         ]
     },
-    "HurtByTimestamp": 38487,
+    "HurtByTimestamp": 4774,
     "pSpin": 0b,
     "NpcHurtSound": "minecraft:entity.player.hurt",
     "pTrail": 0,
@@ -261,7 +287,7 @@
             "DialogSlot": 0
         }
     ],
-    "AggroRange": 16,
+    "AggroRange": 5,
     "DirectLOS": 1b,
     "HealthRegen": 1,
     "ForgeCaps": {
@@ -315,6 +341,13 @@
         "Parts": [
             {
                 "Pattern": 0b,
+                "Type": 0b,
+                "PlayerTexture": 0b,
+                "PartName": "mohawk",
+                "Color": 15256922
+            },
+            {
+                "Pattern": 0b,
                 "Type": 2b,
                 "PlayerTexture": 0b,
                 "PartName": "hair",
@@ -326,13 +359,6 @@
                 "PlayerTexture": 0b,
                 "PartName": "beard",
                 "Color": 15384901
-            },
-            {
-                "Pattern": 0b,
-                "Type": 0b,
-                "PlayerTexture": 0b,
-                "PartName": "mohawk",
-                "Color": 15256922
             }
         ],
         "ArmsConfig": {
@@ -357,12 +383,12 @@
         }
     },
     "minDelay": 20,
-    "DoorInteract": 2,
+    "DoorInteract": 1,
     "MoveSpeed": 5,
     "TransformEditingModus": 0b,
     "UsingSkinUrl": 2b,
     "Leashed": 0b,
-    "SkinUrl": "https://www.minecraftskins.com/uploads/skins/2020/07/09/punk-in-leather-jacket-14784730.png?v243",
+    "SkinUrl": "http://assets.tribesthatmay.be/images/skins/third_year_joe.png",
     "CanSwim": 1b,
     "GroundSound": "minecraft:block.stone.break",
     "MaxHealth": 20,
@@ -374,11 +400,11 @@
     "Role": 0,
     "DropChance": [
         {
-            "Integer": 100,
+            "Integer": 25,
             "Slot": 0
         },
         {
-            "Integer": 100,
+            "Integer": 10,
             "Slot": 1
         },
         {
@@ -411,12 +437,12 @@
         }
     ],
     "FactionPoints": {
-        "DecreaseFaction1Points": 0b,
-        "OptionFaction2Points": 100,
-        "OptionFactions1": -1,
-        "OptionFactions2": -1,
+        "DecreaseFaction1Points": 1b,
+        "OptionFaction2Points": 25,
+        "OptionFactions1": 0,
+        "OptionFactions2": 4,
         "OptionFaction1Points": 100,
-        "DecreaseFaction2Points": 0b
+        "DecreaseFaction2Points": 1b
     },
     "pDamage": 4,
     "KilledTime": 0L,
@@ -440,14 +466,14 @@
     "MovingPos": 0,
     "PotionAmp": 0,
     "RelativeAABB": [
-        -0.30000001192092896d,
+        -0.30000001192104264d,
         0.0d,
         -0.30000001192092896d,
-        0.30000001192092896d,
+        0.30000001192104264d,
         1.899999976158142d,
         0.30000001192092896d
     ],
-    "OnAttack": 0,
+    "OnAttack": 2,
     "TacticalRadius": 8,
     "FallFlying": 0b,
     "MaxExp": 0,
@@ -476,15 +502,15 @@
     "NpcDeathSound": "minecraft:entity.player.hurt",
     "FactionID": 0,
     "Title": "Roustabout",
-    "TotalTicksAlive": 39102L,
+    "TotalTicksAlive": 46496L,
     "Rotation": [
-        86.94379f,
-        -3.3796837f
+        234.05634f,
+        0.0f
     ],
     "ShowName": 1,
     "npcInteracting": 1b,
     "UpdateBlocked": 0b,
-    "AvoidsWater": 0b,
+    "AvoidsWater": 1b,
     "NoLivingAnimation": 0b,
-    "SpawnCycle": 0
+    "SpawnCycle": 3
 }

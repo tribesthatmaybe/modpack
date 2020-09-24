@@ -955,6 +955,15 @@
   },
   {
     "item": {
+      "name": "harvestcraft:cherrysodaitem",
+      "metadata": 0
+    },
+    "thirst": 3,
+    "hydration": 1.0,
+    "poisonChance": 0
+  },
+  {
+    "item": {
       "name": "harvestcraft:colasodaitem",
       "metadata": 0
     },
