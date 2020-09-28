@@ -35,6 +35,7 @@ var moopPlants = [
   <plants2:desert_1:1>,
   <plants2:desert_0:8>,
   <plants2:desert_0>,
+  <plants2:desert_0:4>,
   <plants2:desert_0:1>,
   <plants2:desert_0:12>,
   <plants2:desert_1:3>,

@@ -21,6 +21,16 @@
                 "DialogColor": 14737632,
                 "OptionType": 1
             }
+        },
+        {
+            "OptionSlot": 2,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": -1,
+                "Title": "Never mind.",
+                "DialogColor": 14737632,
+                "OptionType": 0
+            }
         }
     ],
     "AvailabilityScoreboardType": 1,
@@ -74,7 +84,7 @@
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1600642287863L,
+        "TimePast": 1601150009947L,
         "Time": 0L,
         "Subject": ""
     }

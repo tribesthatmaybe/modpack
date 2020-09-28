@@ -95,6 +95,18 @@ if [ "$OP" == "local" ] ; then
         fi
         cp "$file" "${MC_CAT}"
     done
+elif [ "$OP" == "remote" ] ; then
+    if [ $# == 0 ] ; then
+        problems "Must specify devtool commands"
+    fi
+    "${SCRIPTDIR}/versiongen.sh"
+    docker run \
+           -it --rm \
+           -v "${ROOTDIR}:/mnt" \
+           -u "$(id -u):$(id -g)" \
+           --entrypoint "/mnt/devtool/devtool.py" \
+           "ghcr.io/tribesthatmaybe/workflow:$(cat "${ROOTDIR}/.version-container")" \
+           $*
 else
     usage
     exit 1

@@ -37,9 +37,7 @@
     "DialogCommand": "",
     "AvailabilityDialogId": -1,
     "OptionFaction2Points": 100,
-    "DialogText": "Oh, not many people ask about where I came from. Most just want me do run into the creepers for them.
-
-I'm @name, thank you for asking.
+    "DialogText": "Oh, not many people ask about where I came from. Most just want me do run into the creepers for them. You can call me Aura, thank you for asking.
 
 I grew up in a town far from here. The dust was bad, even then. I don't know much about what came before then. My town was built on top of an old settlement. It's still there, buried under the dust.
 
@@ -60,7 +58,7 @@ It's amazing the things you can see wandering through this endless desert. From 
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1600642307863L,
+        "TimePast": 1601150027248L,
         "Time": 0L,
         "Subject": ""
     }
