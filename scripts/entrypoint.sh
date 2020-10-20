@@ -46,24 +46,20 @@ fi
 if [ "$ACTION" == "update" ] ; then
     gen_config
     cd /mnt
-    ttmb-render-packmaker
-    packmaker --config "$PACKMAKER_CONFIG" updatedb
-    packmaker --config "$PACKMAKER_CONFIG" findupdates
+    TTMB_VERSION="$(cat .version)" packmaker --config "$PACKMAKER_CONFIG" updatedb
+    TTMB_VERSION="$(cat .version)" packmaker --config "$PACKMAKER_CONFIG" findupdates
 elif [ "$ACTION" == "lock" ] ; then
     gen_config
     cd /mnt
-    ttmb-render-packmaker
-    packmaker --config "$PACKMAKER_CONFIG" lock
+    TTMB_VERSION="$(cat .version)" packmaker --config "$PACKMAKER_CONFIG" lock
 elif [ "$ACTION" == "build" ] ; then
     gen_config
     cd /mnt
-    ttmb-render-packmaker
-    packmaker --config "$PACKMAKER_CONFIG" build-curseforge
+    TTMB_VERSION="$(cat .version)" packmaker --config "$PACKMAKER_CONFIG" build-curseforge
 elif [ "$ACTION" == "server" ] ; then
     gen_config
     cd /mnt
-    ttmb-render-packmaker
-    packmaker --config "$PACKMAKER_CONFIG" build-server
+    TTMB_VERSION="$(cat .version)" packmaker --config "$PACKMAKER_CONFIG" build-server
 elif [ "$ACTION" == "loregen" ] ; then
     cd /mnt
     ./scripts/loregen.py
