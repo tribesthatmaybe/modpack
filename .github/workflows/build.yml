@@ -47,19 +47,19 @@ jobs:
         id: "client_upload"
         uses: "actions/upload-artifact@v2"
         with:
-          name: "ttmb-client-${{env.version}}"
+          name: "ttmb-client-${{version}}"
           path: "artifacts/github/client"
       - name: "upload server modpack i guess"
         id: "server_upload"
         uses: "actions/upload-artifact@v2"
         with:
-          name: "ttmb-server-${{env.version}}"
+          name: "ttmb-server-${{version}}"
           path: "artifacts/github/server"
       - name: "upload container on tagged builds"
         if: startsWith(github.ref, 'refs/tags')
         run: |
           docker login ghcr.io --username otakup0pe --password-stdin <<< "$CONTAINER_TOKEN"
-          docker push ghcr.io/tribesthatmaybe/workflow:${{env.container_version}}
+          docker push ghcr.io/tribesthatmaybe/workflow:${{container_version}}
   maybe_bump:
     if: github.ref == 'refs/heads/mainline'
     runs-on: "ubuntu-latest"
