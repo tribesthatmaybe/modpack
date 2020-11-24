@@ -39,8 +39,8 @@ jobs:
       - name: "set version for artifact upload"
         id: "version_meta"
         run: |
-          echo ::set-env name=version::$(cat $(pwd)/.version)
-          echo ::set-env name=container_version::$(cat $(pwd)/.version-container)
+          echo "name=version::$(cat $(pwd)/.version)" >> "$GITHUB_ENV"
+          echo "name=container_version::$(cat $(pwd)/.version-container)" >> "$GITHUB_ENV"
           echo ::set-output name=version::$(cat $(pwd)/.version)
           echo ::set-output name=container_version::$(cat $(pwd)/.version-container)
       - name: "upload artifact modpack i guess"
