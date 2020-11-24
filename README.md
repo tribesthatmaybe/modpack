@@ -16,7 +16,7 @@ Information on launching the modpack is available on the Tribes That May Be [web
 
 ![confused bloke](https://i.imgur.com/aSqWoNb.png)
 
-Adding and removing mods is done by editing the [packmaker](https://packmaker.readthedocs.io/en/stable/) [template](templates/packmaker.yml.j2). It is important to also keep our [mod listing](blob/mainline/docs/mods.mdb) up to date with licensing information as part of changing which mods are included.
+Adding and removing mods is done by editing the [packmaker](https://packmaker.readthedocs.io/en/stable/) [template](templates/packmaker.yml.j2). It is important to also keep our [mod listing](docs/mods.md) up to date with licensing information as part of changing which mods are included.
 
 Configuration for mods can be done by modifying (or creating) files in the [config](tree/mainline/src/config) directory. By using the [copy paste](https://www.curseforge.com/minecraft/mc-mods/copy-paste) mod it is possible to ensure that files will appear in new worlds as well. We use this for [customnpcs](http://www.kodevelopment.nl/minecraft/customnpcs) clones.
 
