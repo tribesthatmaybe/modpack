@@ -39,27 +39,27 @@ jobs:
       - name: "set version for artifact upload"
         id: "version_meta"
         run: |
-          echo "name=version::$(cat $(pwd)/.version)" >> "$GITHUB_ENV"
-          echo "name=container_version::$(cat $(pwd)/.version-container)" >> "$GITHUB_ENV"
+          echo "version=$(cat $(pwd)/.version)" >> "$GITHUB_ENV"
+          echo "container_version=$(cat $(pwd)/.version-container)" >> "$GITHUB_ENV"
           echo ::set-output name=version::$(cat $(pwd)/.version)
           echo ::set-output name=container_version::$(cat $(pwd)/.version-container)
       - name: "upload artifact modpack i guess"
         id: "client_upload"
         uses: "actions/upload-artifact@v2"
         with:
-          name: "ttmb-client-${version}"
+          name: "ttmb-client-${{env.version}}"
           path: "artifacts/github/client"
       - name: "upload server modpack i guess"
         id: "server_upload"
         uses: "actions/upload-artifact@v2"
         with:
-          name: "ttmb-server-${version}"
+          name: "ttmb-server-${{env.version}}"
           path: "artifacts/github/server"
       - name: "upload container on tagged builds"
         if: startsWith(github.ref, 'refs/tags')
         run: |
           docker login ghcr.io --username otakup0pe --password-stdin <<< "$CONTAINER_TOKEN"
-          docker push ghcr.io/tribesthatmaybe/workflow:${container_version}
+          docker push ghcr.io/tribesthatmaybe/workflow:${{env.container_version}}
   maybe_bump:
     if: github.ref == 'refs/heads/mainline'
     runs-on: "ubuntu-latest"
