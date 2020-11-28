@@ -1469,7 +1469,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Hot Roddin\u0027",
-          "desc:8": "Make some vehicles. Will need to put a bunch of words in here about how the mod works."
+          "desc:8": "There are several types of motorized vehicles which may be created at the vehicle workstation. In order to make a vehicle, you are going to need a decent amount of ore, redstone, and some specialized items. You can take your pick of electric or combustion engine as your reward. You will need to create a wheel (only actually need one, not four, because reasons) before you can make your first vehicle.\n\nTo use the vehicle workstation, place it in world and then right click on it. You can scroll through the available options and see the resources required. There is an optional space for a dye as well, if you would like a more vibrant ride.\n\nThe result of your crafting will be a vehicle crate. Place this down and then tap the top of it with the wrench. This will result in your sweet ride. \n\nNow where to find fuel...."
         }
       },
       "tasks:9": {
@@ -1486,6 +1486,24 @@
                 "customnpcs:itemscripteddata:10": {}
               },
               "id:8": "vehicle:workstation",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "vehicle:wheel",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "vehicle:wrench",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -11426,6 +11444,560 @@
           "index:3": 0
         }
       }
+    },
+    "115:10": {
+      "questID:3": 115,
+      "preRequisites:11": [
+        19
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "animalbikes:spiderbike",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Ride Away Into the Dust",
+          "desc:8": "There are a variety of eclectic bicycle like creations which the Animal Bikes mod provides. To start, we are going to create a Spider Bike. While not very fast, it can climb walls. Each Animal Bike has it\u0027s own special ability. \n\nTo use the bike, place it down (with right click) and then hop on it (with right click). To dismount, press shift. You can pick the bike back up by using shift-right click. Note that you can only use the bike a few dozen times or so before it will break."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "animalbikes:spiderbike",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:coffeeitem",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:energydrinkitem",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "116:10": {
+      "questID:3": 116,
+      "preRequisites:11": [
+        115
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "openblocks:hang_glider",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "The hang of it",
+          "desc:8": "While the hang glider may not be the most useful on it\u0027s own in the desert (depending on what kind of structures you find), there are other dimensions in which it is incredibly useful. To use it, simply make sure it is active and then right click to activate it. You can speed up a little bit by holding shift. If you right click again it will deactivate (you probably want to be on the ground for that)."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "openblocks:hang_glider",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:fairybreaditem",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:hotwingsitem",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "117:10": {
+      "questID:3": 117,
+      "preRequisites:11": [
+        17
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "vehicle:small_engine",
+            "Count:3": 1,
+            "Damage:2": 4,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "V-Tec, yo",
+          "desc:8": "You can modify the wheels and engine for vehicles by placing them on a jack. The jack can be placed on the ground like any other structure. To place a vehicle on a jack, shift right click it to pick it up, and then shift right click on the jack to place it. You can open up the interface by right clicking on the jack with your wrench. From this interface you can replace the engine and wheels for your ride. The higher tiers of engines allow the vehicle to travel faster, and the different kinds of wheels are optimized for different surfaces.\n\nYou can also repair your vehicle when it is on the jack by right clicking on it while holding the hammer."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "vehicle:small_engine",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "vehicle:jack",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
+    },
+    "118:10": {
+      "questID:3": 118,
+      "preRequisites:11": [
+        17
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "vehicle:spray_can",
+            "Count:3": 1,
+            "tag:10": {
+              "remainingSprays:3": 5
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Color My Ride",
+          "desc:8": "You can create (and then dye) spray cans which you can use to paint your vehicles. These spray cans have a finite number of uses."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "vehicle:spray_can",
+              "Count:3": 1,
+              "tag:10": {
+                "remainingSprays:3": 5
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "vehicle:spray_can",
+              "Count:3": 1,
+              "tag:10": {
+                "remainingSprays:3": 5
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "119:10": {
+      "questID:3": 119,
+      "preRequisites:11": [
+        118
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "vehicle:key",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Get your own ride",
+          "desc:8": "By right clicking on a vehicle with a key you can stop people from driving off with your ride. They can still carry it off, because this is still a video game. But they won\u0027t get far on foot...."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "vehicle:key",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "120:10": {
+      "questID:3": 120,
+      "preRequisites:11": [
+        12,
+        121
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mystcraft:blockbookstand",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Mystcraft Workshop",
+          "desc:8": "To start our inter dimensional voyage we are going to need an ink mixer and a book binder. As a reward you get a handful of either book stands or lecterns. The various linking books that you will create, that will allow you to travel between ages and worlds, should be placed in these before reading. Otherwise they will end up on the ground and can be damaged by rain or picked up by unsavory characters."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mystcraft:blockinkmixer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mystcraft:blockbookbinder",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mystcraft:blocklectern",
+              "Count:3": 5,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mystcraft:blockbookstand",
+              "Count:3": 5,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "121:10": {
+      "questID:3": 121,
+      "preRequisites:11": [
+        79
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "forge:bucketfilled",
+            "Count:3": 1,
+            "tag:10": {
+              "FluidName:8": "steel",
+              "Amount:3": 1000
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Double or Nothing",
+          "desc:8": "The Smeltery will melt things down for you. It will actually result in a doubling effect compared to just smelting things in a furnace. While there are advanced technologies which can eventually get you up to 5x ore efficiency, that will be a little while off.\n\nFor now, use the casting basin to pour out entier blocks (nine ingots) worth of ore and be a bit more efficient with your life."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:casting",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:iron_block",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:gold_block",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -11762,6 +12334,13 @@
           "y:3": -12,
           "id:3": 114,
           "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": 60,
+          "id:3": 121,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 1,
@@ -11793,6 +12372,41 @@
           "y:3": -108,
           "id:3": 17,
           "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": -72,
+          "id:3": 115,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": -72,
+          "id:3": 116,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": -108,
+          "id:3": 117,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": -144,
+          "id:3": 118,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": -144,
+          "id:3": 119,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 2,
@@ -11814,7 +12428,7 @@
           "desc:8": "Vehicles are real, and pretty cool."
         }
       },
-      "order:3": 4
+      "order:3": 6
     },
     "3:10": {
       "quests:9": {
@@ -12044,7 +12658,7 @@
           "desc:8": "There are may ways to perish and to be comfortable in this multiverse.\n\nIt\u0027s important to find pleasure in the simple things."
         }
       },
-      "order:3": 6
+      "order:3": 9
     },
     "5:10": {
       "quests:9": {
@@ -12156,7 +12770,7 @@
           "desc:8": "This is my tool. There are many like it, but this one is mine.\n\nMy tool is my best friend. It is my life.\n\nThe vast majority of the hand tools (weapons and armor included) you will make use if in Tribes That May Be will be created in your Tinkers Workshop. At this point you should have read the two Tinkers Books - \"Materials and You\" and the \"Armory Addendum\". These tools may be upgraded piece by piece, have modifiers placed on them (such as speed and durability boosts), and most importantly - be named.\n\nYou can repair them when they break so unless you end up in a particularly unfortunate set of circumstances involving lava they should be with you throughout your entire journey."
         }
       },
-      "order:3": 7
+      "order:3": 2
     },
     "6:10": {
       "quests:9": {
@@ -12229,7 +12843,7 @@
           "desc:8": "It ain\u0027t a real party without some sweet tunes. This quest line will take you through all the different steps you need to go through to listen to the built in chip tunes, or pipe in music from external sources."
         }
       },
-      "order:3": 2
+      "order:3": 8
     },
     "7:10": {
       "quests:9": {
@@ -12486,7 +13100,38 @@
           "desc:8": "We\u0027ve gotten by up until now with being able to extract sunk carbon in the least efficient way possible. If we are going to expand and ultimately end up at our fully automated anarchist queer block utopia then we are going to need to power ourselves through it. There are several ways of generating power with varying levels of power output and need to pay attention. It\u0027s possible to move power via wires, or via batteries.\n\nYou may find in some cases that you do not need full power infrastructure for smaller outposts, but if you do, the wires you create can be run throughout the realm without any worry about loaded chunks."
         }
       },
-      "order:3": 8
+      "order:3": 4
+    },
+    "9:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": -216,
+          "y:3": -120,
+          "id:3": 120,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 9,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "UNLOCKED",
+          "name:8": "Fantastic Voyage",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mystcraft:agebook",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "Using Mystcraft it is possible to create links between worlds. Be careful though, some of the places you may travel to can be quite dangerous.\n\nThese adventures will open up new possibilities for places to explore and resources to find."
+        }
+      },
+      "order:3": 7
     }
   },
   "questSettings:10": {
