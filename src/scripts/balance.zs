@@ -143,3 +143,6 @@ recipes.removeShapeless(<tconstruct:throwball:1>);
 //// recycle
 // people gonna end up with extra lore
 recipes.addShapeless(<minecraft:paper>, [<loreexpansion:lore_scrap>]);
+
+//// allow crafting of lore journal
+recipes.addShaped(<loreexpansion:lore_journal>, [[null, <minecraft:book>, null],[null, <minecraft:gold_nugget>, null], [null, <minecraft:book>, null]]);
