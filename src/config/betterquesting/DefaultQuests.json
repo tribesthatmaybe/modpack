@@ -9812,7 +9812,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "A Drawer Too Far",
-          "desc:8": "Drawers are cool but you know whats cooler? Not having to visit each drawer in order to empty your inventory.\n\nAlso being able to have your growing industry output feed directly into (let alone take from) your growing library of drawers.\n\nThe Drawer Controller will connect to any drawer it is contiguously connected to via other drawers (or trim) within a 12 block radius. Right clicking on the upper portion (the bit with a downward facing chevron) will place whatever is in your hand in the appropriate drawer. Double right cicking will drain your inventory. You can attach bits of automation and tech to the drawer controller to access the full inventory."
+          "desc:8": "Drawers are cool but you know whats cooler? Not having to visit each drawer in order to empty your inventory.\n\nAlso being able to have your growing industry output feed directly into (let alone take from) your growing library of drawers.\n\nThe Drawer Controller will connect to any drawer it is contiguously connected to via other drawers (or trim) within a 12 block radius. Right clicking on the upper portion (the bit with a downward facing chevron) will place whatever is in your hand in the appropriate drawer. Double right cicking will drain your inventory. You can attach bits of automation and tech to the drawer controller to access the full inventory.\n\nChances are you will need to use Dark Oak Trim (constructed from Black Kauraki planks) to create the controller."
         }
       },
       "tasks:9": {
@@ -11280,6 +11280,152 @@
           "index:3": 0
         }
       }
+    },
+    "113:10": {
+      "questID:3": 113,
+      "preRequisites:11": [
+        104
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "bibliocraft:bookcase",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Precious Shelves",
+          "desc:8": "Using the furniture paneler you can color the bibliocraft framed furniture with planks. This is how we make use of the Black Kauri wood to make things.\n\nLet\u0027s make a book case. You should already have one book case but once we start exploring mystcraft dimensions, we are going to need a lot more books."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "bibliocraft:bookcase",
+              "Count:3": 1,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:knowledge_book",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "114:10": {
+      "questID:3": 114,
+      "preRequisites:11": [
+        15
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "yurtmod:mallet",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Stop. Mallet Time.",
+          "desc:8": "You are going to be moving around a lot, and you are probably going to not want to always sleep outside. There are a variety of portable tents you can make. Once you place these tents down for the first time, a small \"pocket dimension\" is created for the interior. Things you place inside will stay there. If you place a bed in your tent and sleep in there, it will act as your spawn. You can also pick up your tent and take it with you as well.\n\nWe are going to start with a bedouin tent but there are several to choose from. Look for items from the \"Nomadic Tents\" mod in JEI.\n\nYou are going to need a lot of sisal (can be found in desert gardens) in order to make a lot of string in order to make a lot of cotton in order to make a handful of bedouin tent pieces. Use these five bedouin tent pieces to construct a small bedouin tent.\n\nAnd a Tent Mallet. We are going to need another hammer.\n\nNomadic Tents act as small homes which you may pack up and bring with you on adventures. They are easily upgradeable and provide a bit of protection at night from the outside world.\n\nTo place your tent, place it down in small clearing. It needs 5x5 unobstructed space. The tent will then be framed out, and you can use (right click) the Tent Mallet on the frame to build it. Once you find gold, you can make an upgraded tent mallet to do this in a single click.\n\nYou can enter/exit your tent by walking through or right clicking on the door. You can pack up your tent by right clicking on the door (when outside) with the Tent Mallet."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "yurtmod:mallet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "yurtmod:bed_wall_piece",
+              "Count:3": 5,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
     }
   },
   "questLines:9": {
@@ -11459,7 +11605,7 @@
         "4:10": {
           "sizeX:3": 24,
           "x:3": -36,
-          "y:3": -12,
+          "y:3": 24,
           "id:3": 20,
           "sizeY:3": 24
         },
@@ -11609,6 +11755,13 @@
           "y:3": -120,
           "id:3": 95,
           "sizeY:3": 24
+        },
+        "26:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": -12,
+          "id:3": 114,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 1,
@@ -11747,6 +11900,13 @@
           "x:3": -168,
           "y:3": -144,
           "id:3": 104,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -180,
+          "id:3": 113,
           "sizeY:3": 24
         }
       },

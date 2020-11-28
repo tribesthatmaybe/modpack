@@ -40,7 +40,7 @@ lock: container_build
 		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		lock
 
-client: container_build versiongen loregen lock
+client: container_build versiongen loregen
 	rm -rf build/curseforge
 	docker run \
 		--rm \
@@ -52,7 +52,7 @@ client: container_build versiongen loregen lock
 	VERSION=$$(cat $(shell pwd)/.version) ; \
 	cp build/release/ttmb-$${VERSION}.zip $(ARTIFACTS)/ttmb-client-$${VERSION}.zip
 
-server: container_build versiongen loregen lock
+server: container_build versiongen loregen
 	rm -f build/server/mods/* $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 	docker run \
 		--rm \

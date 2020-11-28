@@ -35,11 +35,13 @@ var moopPlants = [
   <plants2:desert_1:1>,
   <plants2:desert_0:8>,
   <plants2:desert_0>,
+  <plants2:desert_0:4>,
   <plants2:desert_0:1>,
   <plants2:desert_0:12>,
   <plants2:desert_1:3>,
   <plants2:desert_1:2>,
-  <plants2:desert_0:13>
+  <plants2:desert_0:13>,
+  <plants2:desert_0:15>
 ] as IItemStack[];
 
 var moopyPlantsDropt = Dropt.list("desert_moopy_plants").priority(0);

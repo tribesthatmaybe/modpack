@@ -188,3 +188,6 @@
 | [manatweaks](https://www.curseforge.com/minecraft/mc-mods/manatweaks) | MIT | None ???? |
 | [tinkers reforged](https://www.curseforge.com/minecraft/mc-mods/tinkers-reforged) | All Rights | [github](https://github.com/Mrthomas20121-Mods/Tinkers-Reforged) |
 | [crafttweaker-utils](https://www.curseforge.com/minecraft/mc-mods/crafttweaker-utils) | GPL | [github](https://github.com/BrisingrAerowing/CraftTweakerUtils) |
+| [nomadic tents](https://www.curseforge.com/minecraft/mc-mods/nomadic-tents) | custom but chill | [github](https://www.curseforge.com/minecraft/mc-mods/nomadic-tents) |
+| [just enough brewcraft](https://www.curseforge.com/minecraft/mc-mods/just-enough-brewcraft) | GPL | [github](https://github.com/pearxteam/just-enough-brewcraft) |
+| [tree tweaker](https://www.curseforge.com/minecraft/mc-mods/tree-tweaker) | MIT | [github](https://www.curseforge.com/minecraft/mc-mods/tree-tweaker) |
