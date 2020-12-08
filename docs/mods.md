@@ -32,7 +32,6 @@
 | [better animals plus](https://www.curseforge.com/minecraft/mc-mods/betteranimalsplus) | CC-NCSA | [github](https://github.com/itsmeow/betteranimalsplus) |
 | [biometweaker](https://www.curseforge.com/minecraft/mc-mods/biometweaker) | "MMPL2" | [github](https://github.com/superckl/BiomeTweaker) |
 | [biometewaker core](https://www.curseforge.com/minecraft/mc-mods/biometweakercore) | "MMPL2" | [github](https://github.com/superckl/BiomeTweakerCore) |
-| [realistic terrain generator](https://www.curseforge.com/minecraft/mc-mods/realistic-terrain-generation) | GPL3 | [github](https://www.curseforge.com/minecraft/mc-mods/realistic-terrain-generation) |
 | [mysticallib](https://www.curseforge.com/minecraft/mc-mods/mysticallib) | MIT | [github](https://github.com/MysticMods/MysticalLib) |
 | [patchouli](https://www.curseforge.com/minecraft/mc-mods/patchouli) | CC-NCSA | [github](https://github.com/Vazkii/Patchouli) |
 | [mystical world](https://www.curseforge.com/minecraft/mc-mods/mystical-world) | MIT | [github](https://github.com/MysticMods/MysticalWorld) |
