@@ -2,7 +2,6 @@ import logging
 import sys
 from config import Config
 from multicraftapi import MulticraftAPI
-from mcipc.config import Credentials
 from mcipc.rcon import Client
 
 LOG = logging.getLogger(__name__)
@@ -20,7 +19,7 @@ class Remote(object):
                                    self.config.host,
                                    self.config.rcon_port)
         host, port, passwd = Credentials.from_string(conn_deets)
-        with Client(host, port) as client:
+        with Client(self.config.host, self.config.rcon_port, passwd=self.rcon_key) as client:
             client.login(passwd)
             return client.run(cmd)
 

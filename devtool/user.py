@@ -2,9 +2,6 @@ import logging
 import sys
 from config import Config
 from remote import Remote
-from multicraftapi import MulticraftAPI
-from mcipc.config import Credentials
-from mcipc.rcon import Client
 
 LOG = logging.getLogger(__name__)
 
