@@ -12,7 +12,7 @@
             "tag": {
                 "lore": {
                     "id": "travellers",
-                    "category": " Tribes"
+                    "category": "Tribes"
                 }
             },
             "Damage": 0s
@@ -585,7 +585,7 @@
     "NpcDeathSound": "minecraft:entity.player.hurt",
     "FactionID": 0,
     "Title": "",
-    "TotalTicksAlive": 751225L,
+    "TotalTicksAlive": 751253L,
     "Rotation": [
         25.355026f,
         0.0f

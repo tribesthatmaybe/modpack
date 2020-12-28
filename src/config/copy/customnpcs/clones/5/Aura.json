@@ -1,5 +1,5 @@
 {
-    "ReturnToStart": 1b,
+    "ReturnToStart": 0b,
     "NpcInv": [
     ],
     "BossColor": 0,
@@ -29,6 +29,26 @@
     "MovingPatern": 0,
     "NpcLines": {
         "Lines": [
+            {
+                "Line": "The desert is trying to move on.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "I wonder where I left my cup.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "Could do with some rain.",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "This godforesaken desert.",
+                "Song": "",
+                "Slot": 3
+            }
         ]
     },
     "DefendFaction": 1b,
@@ -43,205 +63,37 @@
     "FindShelter": 2,
     "GuardTargets": [
         {
-            "Line": "entity.abyssalcraft.abygolem.name"
+            "Line": "entity.Creeper.name"
         },
         {
-            "Line": "entity.abyssalcraft.abyssalzombie.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.antiabyssalzombie.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.anticreeper.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.antighoul.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.antiplayer.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.antiskeleton.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.antispider.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.antizombie.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.chagaroth.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.chagarothfist.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.chagarothspawn.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.demonchicken.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.demoncow.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.demonpig.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.demonsheep.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.depthsghoul.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.dragonboss.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.dragonminion.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.dreadgolem.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.dreadguard.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.dreadling.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.dreadspawn.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.evilchicken.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.evilcow.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.evilpig.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.evilsheep.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.greaterdreadspawn.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.gskeleton.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.Jzahar.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.jzaharminion.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.lesserdreadbeast.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.lessershoggoth.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.omotholghoul.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.remnant.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.shadowbeast.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.shadowboss.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.shadowcreature.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.shadowmonster.name"
-        },
-        {
-            "Line": "entity.abyssalcraft.shuboffspring.name"
-        },
-        {
-            "Line": "entity.BabySkeleton.name"
-        },
-        {
-            "Line": "entity.betteranimalsplus.blackbear.name"
-        },
-        {
-            "Line": "entity.betteranimalsplus.brownbear.name"
+            "Line": "entity.betteranimalsplus.coyote.name"
         },
         {
             "Line": "entity.betteranimalsplus.tarantula.name"
         },
         {
-            "Line": "entity.betteranimalsplus.zotzpyre.name"
+            "Line": "entity.statues:FakeCreeper.name"
         },
         {
-            "Line": "entity.Blaze.name"
-        },
-        {
-            "Line": "entity.botania:pinkWither.name"
-        },
-        {
-            "Line": "entity.CaveSpider.name"
-        },
-        {
-            "Line": "entity.ElderGuardian.name"
-        },
-        {
-            "Line": "entity.Enderman.name"
-        },
-        {
-            "Line": "entity.Endermite.name"
-        },
-        {
-            "Line": "entity.EvocationIllager.name"
-        },
-        {
-            "Line": "entity.Giant.name"
-        },
-        {
-            "Line": "entity.Guardian.name"
+            "Line": "entity.Zombie.name"
         },
         {
             "Line": "entity.Husk.name"
         },
         {
-            "Line": "entity.IllusionIllager.name"
-        },
-        {
-            "Line": "entity.PigZombie.name"
-        },
-        {
-            "Line": "entity.quark:ashen.name"
-        },
-        {
-            "Line": "entity.quark:dweller.name"
-        },
-        {
-            "Line": "entity.quark:pirate.name"
-        },
-        {
-            "Line": "entity.quark:wraith.name"
-        },
-        {
-            "Line": "entity.Silverfish.name"
+            "Line": "entity.Spider.name"
         },
         {
             "Line": "entity.Skeleton.name"
         },
         {
-            "Line": "entity.Spider.name"
+            "Line": "entity.Silverfish.name"
         },
         {
-            "Line": "entity.statues:FakeBlaze.name"
+            "Line": "entity.statues:FakeSpider.name"
         },
         {
-            "Line": "entity.statues:FakeEnderman.name"
-        },
-        {
-            "Line": "entity.statues:FakeGuardian.name"
+            "Line": "entity.statues:FakeZombie.name"
         },
         {
             "Line": "entity.statues:FakeHusk.name"
@@ -250,56 +102,14 @@
             "Line": "entity.statues:FakeSkeleton.name"
         },
         {
-            "Line": "entity.statues:FakeSpider.name"
-        },
-        {
-            "Line": "entity.statues:FakeStray.name"
-        },
-        {
             "Line": "entity.statues:FakeWitch.name"
         },
         {
-            "Line": "entity.statues:FakeWitherSkeleton.name"
-        },
-        {
-            "Line": "entity.statues:FakeZombie.name"
-        },
-        {
-            "Line": "entity.statues:FakeZombiePigman.name"
-        },
-        {
-            "Line": "entity.Stray.name"
-        },
-        {
-            "Line": "entity.Vex.name"
-        },
-        {
-            "Line": "entity.VindicationIllager.name"
-        },
-        {
             "Line": "entity.Witch.name"
-        },
-        {
-            "Line": "entity.WitherBoss.name"
-        },
-        {
-            "Line": "entity.WitherSkeleton.name"
-        },
-        {
-            "Line": "entity.Zombie.name"
-        },
-        {
-            "Line": "entity.ZombieVillager.name"
-        },
-        {
-            "Line": "entity.Creeper.name"
-        },
-        {
-            "Line": "entity.statues:FakeCreeper.name"
         }
     ],
     "Air": 300s,
-    "TacticalVariant": 3,
+    "TacticalVariant": 4,
     "Orientation": 0,
     "ScriptLanguage": "ECMAScript",
     "HandItems": [
@@ -321,6 +131,31 @@
     "AttackInvisible": 0b,
     "NpcInteractNPCLines": {
         "Lines": [
+            {
+                "Line": "It's going to be a long day.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "It's going to be a long night.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "Didn't I see you at the Block Hole?",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "Yeah, it's a decent crossbow but the bolts are where it's at.",
+                "Song": "",
+                "Slot": 3
+            },
+            {
+                "Line": "I'm as tired as this desert is old.",
+                "Song": "",
+                "Slot": 4
+            }
         ]
     },
     "HurtTime": 0s,
@@ -330,6 +165,26 @@
     "AttackRange": 2,
     "NpcKillLines": {
         "Lines": [
+            {
+                "Line": "Finally.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "Another one.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "There we go.",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "You would think it would star to bother me.",
+                "Song": "",
+                "Slot": 3
+            }
         ]
     },
     "PotionImmune": 0b,
@@ -339,14 +194,29 @@
     "BurstCount": 1,
     "NpcAttackLines": {
         "Lines": [
+            {
+                "Line": "AH!",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "Here we go.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "NOW!",
+                "Song": "",
+                "Slot": 2
+            }
         ]
     },
     "pSpeed": 10,
     "pArea": 0,
     "DeathTime": 0s,
-    "pImpact": 0,
+    "pImpact": 1,
     "MoveState": 0,
-    "pRender3D": 1b,
+    "pRender3D": 0b,
     "Motion": [
         0.0d,
         -0.0784000015258789d,
@@ -355,7 +225,7 @@
     "CombatRegen": 0,
     "NpcsTimers": [
     ],
-    "MarkovGender": 0,
+    "MarkovGender": 2,
     "pEffect": 0,
     "DistanceToMelee": 0,
     "NpcStepSound": "",
@@ -367,6 +237,31 @@
     "ImmuneToFire": 0b,
     "NpcKilledLines": {
         "Lines": [
+            {
+                "Line": "Well, shit.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "Oh frak.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "Until next time....",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "We'll meet again.",
+                "Song": "",
+                "Slot": 3
+            },
+            {
+                "Line": "going off comms",
+                "Song": "",
+                "Slot": 4
+            }
         ]
     },
     "Fire": -1s,
@@ -385,14 +280,9 @@
     "TransformHasInv": 0b,
     "NpcInteractLines": {
         "Lines": [
-            {
-                "Line": "Woah, who are you?",
-                "Song": "",
-                "Slot": 0
-            }
         ]
     },
-    "HurtByTimestamp": 3843,
+    "HurtByTimestamp": 18191,
     "pSpin": 0b,
     "NpcHurtSound": "minecraft:entity.player.hurt",
     "pTrail": 0,
@@ -427,7 +317,7 @@
             "Name": "generic.knockbackResistance"
         },
         {
-            "Base": 0.25d,
+            "Base": 0.30000001192092896d,
             "Name": "generic.movementSpeed"
         },
         {
@@ -451,7 +341,7 @@
             "Name": "generic.attackDamage"
         },
         {
-            "Base": 0.5d,
+            "Base": 0.6000000238418579d,
             "Name": "generic.flyingSpeed"
         }
     ],
@@ -460,7 +350,7 @@
     "NoFallDamage": 0b,
     "AbsorptionAmount": 0.0f,
     "TransformHasRole": 0b,
-    "Name": "Eiven",
+    "Name": "Aura",
     "FallDistance": 0.0f,
     "SkinColor": 16777215,
     "NpcIdleSound": "",
@@ -603,8 +493,18 @@
         }
     ],
     "NPCDialogOptions": [
+        {
+            "NPCDialog": {
+                "DialogCommand": "",
+                "Dialog": 18,
+                "Title": "Aura Intro (friendly)",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            },
+            "DialogSlot": 0
+        }
     ],
-    "AggroRange": 16,
+    "AggroRange": 20,
     "DirectLOS": 1b,
     "HealthRegen": 1,
     "ForgeCaps": {
@@ -625,7 +525,7 @@
             "ScaleZ": 1.0f,
             "TransZ": 0.0f,
             "TransY": 0.0f,
-            "TransX": 0.0f,
+            "TransX": 0.012000002f,
             "ScaleY": 1.0f,
             "ScaleX": 1.0f
         },
@@ -662,7 +562,7 @@
             "ScaleZ": 1.0f,
             "TransZ": 0.0f,
             "TransY": 0.0f,
-            "TransX": 0.0f,
+            "TransX": -0.0f,
             "ScaleY": 1.0f,
             "ScaleX": 1.0f
         },
@@ -678,9 +578,9 @@
             "ScaleX": 1.0f
         }
     },
-    "minDelay": 20,
+    "minDelay": 15,
     "DoorInteract": 2,
-    "MoveSpeed": 5,
+    "MoveSpeed": 6,
     "TransformEditingModus": 0b,
     "UsingSkinUrl": 2b,
     "Leashed": 0b,
@@ -691,7 +591,7 @@
     "HideBodyWhenKilled": 0b,
     "AttackSpeed": 20,
     "PotionDuration": 5,
-    "maxDelay": 40,
+    "maxDelay": 30,
     "ScriptEnabled": 0b,
     "Role": 0,
     "DropChance": [
@@ -733,14 +633,14 @@
         }
     ],
     "FactionPoints": {
-        "DecreaseFaction1Points": 0b,
+        "DecreaseFaction1Points": 1b,
         "OptionFaction2Points": 100,
-        "OptionFactions1": -1,
-        "OptionFactions2": -1,
+        "OptionFactions1": 0,
+        "OptionFactions2": 1,
         "OptionFaction1Points": 100,
-        "DecreaseFaction2Points": 0b
+        "DecreaseFaction2Points": 1b
     },
-    "pDamage": 4,
+    "pDamage": 8,
     "KilledTime": 0L,
     "AimWhileShooting": 1b,
     "CanPickUpLoot": 0b,
@@ -756,6 +656,10 @@
             ]
         },
         "Potion Core - Health Fix": 20.0f,
+        "Potion Core - Projectile Invulnerability": 0,
+        "entityKillList": {
+            "otakup0pe": 1
+        },
         "Potion Core - Jump Boost Updated": 1b
     },
     "MovingState": 1,
@@ -770,7 +674,7 @@
         0.30000001192092896d
     ],
     "OnAttack": 0,
-    "TacticalRadius": 10,
+    "TacticalRadius": 15,
     "FallFlying": 0b,
     "MaxExp": 0,
     "OrderedLines": 0b,
@@ -827,9 +731,9 @@
     ],
     "CloakTexture": "",
     "GlowTexture": "",
-    "MaxFiringRange": 15,
+    "MaxFiringRange": 20,
     "pXlr8": 0b,
-    "MarkovGeneratorId": 4,
+    "MarkovGeneratorId": 3,
     "Scripts": [
     ],
     "Health": 20.0f,
@@ -838,12 +742,12 @@
     "NpcDeathSound": "minecraft:entity.player.hurt",
     "FactionID": 1,
     "Title": "",
-    "TotalTicksAlive": 3933L,
+    "TotalTicksAlive": 66495L,
     "Rotation": [
-        291.4311f,
-        -11.569972f
+        213.14226f,
+        0.0f
     ],
-    "ShowName": 0,
+    "ShowName": 1,
     "npcInteracting": 1b,
     "UpdateBlocked": 0b,
     "AvoidsWater": 1b,

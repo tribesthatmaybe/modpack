@@ -34,28 +34,42 @@ There are a bunch of NPC clones included in the modpack. They are loosely groupe
 
 When interacting with clones via the NPC Cloner tool, remember that the built in clones are all stored on the Server side.
 
-## Assorted
+| Tab | NPCs |
+| 1 | Semi-ambient Party Kids and Reverse Carnies |
+| 2 | Merchants |
+| 3 | Aggro NPCs |
+| 4 | Quest Related |
+| 5 | Support NPCs |
 
-These clones are kinda a grab bag of miscreants, hippies, and long lost punks. Tab one.
+## Party Kids
 
-* The Party Kids Brad, Chad, Kara, Karen are just party kids. They show up with the `test_party_kids` struccture.
-* The Tumbleweed Farmer is a Traveller who has been out in the desert for a long time. He will sell you things the Reverse Carinies would consider to be matter out of place. [Skin credit](https://www.minecraftskins.com/skin/13742380/old-desert-man/).
-* Third Year Joe hasn't been in the Block Rock Desert as long as he thinks. Chill Reverse Carnie who can be found in villages and in the middle of nowhere. [Skin credit](https://minecraftskins.com/skin/14784730/punk-in-leather-jacket/).
+Mostly harmless.
+
+* Brad, Chad, Kara, Karen are just party kids. They show up in a variety of naturally spawning structures.
+
+## Support NPCs
+
+Various kinds of helper NPCs who may be encountered in the desert.
+
 * She goes by various names but always answers to Aura. She is a traveller who hangs around in certain areas doing what she can to keep people safe.
 
-## Quest Helpers
+## Reverse Carnies
 
-These clones are traders and plot elements. Tab two.
+They may be found all throughout the desert building and fixing things, and helping to support the various communities out there.
 
-* Arnold runs a industry focused shop which can show up in villages and work camps.
+* Third Year Joe hasn't been in the Block Rock Desert as long as he thinks. Chill Reverse Carnie who can be found in villages and in the middle of nowhere. [Skin credit](https://minecraftskins.com/skin/14784730/punk-in-leather-jacket/).
 * Badger rolls around with a shotgun and and attitude. [Skin credit](https://www.minecraftskins.com/skin/11823815/pyro-roadie/).
+
+## Merchants
+
+* The Tumbleweed Farmer is a Traveller who has been out in the desert for a long time. He will sell you things the Reverse Carinies would consider to be matter out of place. [Skin credit](https://www.minecraftskins.com/skin/13742380/old-desert-man/).
+* Arnold runs a industry focused shop which can show up in villages and work camps.
 * Honf is a wandering merchant who likes oranges and will trade for assorted supplies.
 * Sunshine is a purveyor of supplies and vices who shows up in villages. [Skin Credit](https://www.minecraftskins.com/skin/10391865/hippy/).
 * Vanessa is a seed merchant who shows up in villages. [Skin credit](https://www.minecraftskins.com/skin/14948009/vanessa--the-merchant--ce-/).
 
-## Antagonists
 
-Tab three.
+## Antagonists
 
 * Jonesey is the anti-Badger. [Skin credit](https://www.minecraftskins.com/skin/14860588/marines-desert-marpat-rolled-sleeves--fixed-/).
 * Daniel is a undead footprinter. [Skin credit](https://www.minecraftskins.com/skin/3162587/undead-steve/)
