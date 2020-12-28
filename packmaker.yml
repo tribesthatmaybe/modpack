@@ -214,5 +214,6 @@ mods:
   - "instantunify":
   - "tellme":
   - "localized-chat":
+  - "dcintegration":
 files:
   - location: "src/"
