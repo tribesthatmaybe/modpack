@@ -10,7 +10,10 @@ endif
 DOCKER_IMAGE="ghcr.io/tribesthatmaybe/workflow"
 
 versiongen:
-	./scripts/versiongen.sh
+	docker run -v "$(shell pwd):/mnt" \
+       otakup0pe/avakas show /mnt \
+	   2> /dev/null 1> "$(shell pwd)/.version"
+	cp "$(shell pwd)/.version" "$(shell pwd)/.version-container"
 
 container_build: versiongen
 	docker build \
