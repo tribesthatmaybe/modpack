@@ -9,8 +9,8 @@ RELEASEFILE="${ROOTDIR}/release"
 RELEASE="stable"
 if [ -e "$RELEASEFILE" ] ; then
     RELEASE="$(cat "$RELEASEFILE")"
-    if [ "$RELEASE" != "alpha" ] || [ "$RELEASE" != "beta" ] ; then
-        2>& echo "invalid release ${RELEASE}"
+    if [ "$RELEASE" != "alpha" ] && [ "$RELEASE" != "beta" ] ; then
+        >&2 echo "invalid release ${RELEASE}"
         exit 2
     fi
 fi
