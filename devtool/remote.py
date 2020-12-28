@@ -15,10 +15,6 @@ class Remote(object):
         self.api_url = "https://%s/api.php" % self.config.api_host
 
     def rcon(self, cmd):
-        conn_deets = "%s@%s:%s" % (self.config.rcon_key,
-                                   self.config.host,
-                                   self.config.rcon_port)
-        host, port, passwd = Credentials.from_string(conn_deets)
         with Client(self.config.host, self.config.rcon_port, passwd=self.rcon_key) as client:
             client.login(passwd)
             return client.run(cmd)
