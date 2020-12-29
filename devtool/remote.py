@@ -16,7 +16,6 @@ class Remote(object):
 
     def rcon(self, cmd):
         with Client(self.config.host, self.config.rcon_port, passwd=self.config.rcon_key) as client:
-            client.login(passwd)
             return client.run(cmd)
 
     def multi(self):
