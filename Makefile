@@ -13,7 +13,7 @@ versiongen:
 	docker run -v "$(shell pwd):/mnt" \
        otakup0pe/avakas show /mnt \
 	   2> /dev/null 1> "$(shell pwd)/.version"
-	cp "$(shell pwd)/.version" "$(shell pwd)/.version-container"
+	cut -f 1 -d '+' < "$(shell pwd)/.version" > "$(shell pwd)/.version-container"
 
 container_build: versiongen
 	docker build \
