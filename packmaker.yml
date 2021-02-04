@@ -160,7 +160,8 @@ mods:
   - "botania":
      version: "Botania r1.10-363.jar"
   - "applied-energistics-2":
-  - "custom-npcs":
+# embedding snapshot jar
+#  - "custom-npcs":
   - "better-than-llamas":
       clientonly: true
   - "chunkpregenerator":
@@ -188,9 +189,11 @@ mods:
   - "integrated-rest":
   - "p455w0rds-library":
   - "ae2wtlib":
+      curseforgeid: 304024
   - "wireless-crafting-terminal":
   - "bq-multiblock-structure-integration":
   - "abyssalcraft":
+      version: "AbyssalCraft-1.12.2-1.10.3.jar"
   - "just-enough-resources-jer":
       clientonly: true
   - "codechicken-lib-1-8":
@@ -215,5 +218,8 @@ mods:
   - "tellme":
   - "localized-chat":
   - "dcintegration":
+  - "glibys-voice-chat-reloaded"
+# whut https://github.com/OreCruncher/DynamicSurroundings/issues/642
+  - "mixin-0-7-0-8-compatibility"
 files:
   - location: "src/"
