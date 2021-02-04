@@ -104,23 +104,13 @@ function getFactionId(event, name) {
 }
 
 function init(event) {
-  var npcNbt = event.npc.getEntityNbt();
-  var npcBirth = npcNbt.getInteger("ttmbNpcBirth");
-  var now = Math.floor(Date.now() / 1000);
-  if ( npcBirth == 0 ) {
-    event.npc.getStoreddata().clear();
-    var skinUrl = randomElement(partyKidSkins);
-    var name = randomElement(partyKidNames);
-    npcNbt.setInteger("ttmbNpcBirth", now);
-    event.npc.setEntityNbt(npcNbt);
-    event.npc.display.setSkinUrl(skinUrl);
-    event.npc.display.setSkinTexture("customnpcs:textures/entity/humanmale/steve.png");
-    event.npc.display.setName(name);
-    event.npc.display.setShowName(1);
-    event.npc.say("oh no");
-  } else {
-    event.npc.say("AGAIN after " + (now - npcBirth).toString() + "s");
-  }
+  event.npc.getStoreddata().clear();
+  var skinUrl = randomElement(partyKidSkins);
+  var name = randomElement(partyKidNames);
+  event.npc.display.setSkinUrl(skinUrl);
+  event.npc.display.setSkinTexture("customnpcs:textures/entity/humanmale/steve.png");
+  event.npc.display.setName(name);
+  event.npc.display.setShowName(1);
 
   event.npc.stats.setMaxHealth(10);
   event.npc.stats.setAggroRange(5);
