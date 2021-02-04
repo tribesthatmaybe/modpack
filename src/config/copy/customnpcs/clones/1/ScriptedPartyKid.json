@@ -1,5 +1,5 @@
 {
-    "ReturnToStart": 1b,
+    "ReturnToStart": 0b,
     "NpcInv": [
     ],
     "BossColor": 0,
@@ -12,8 +12,8 @@
         "Knockback": 1.0f,
         "Melee": 1.0f
     },
-    "BossBar": 2b,
-    "RespawnTime": 0,
+    "BossBar": 0b,
+    "RespawnTime": 20,
     "NpcAngrySound": "",
     "ReactsToFire": 0b,
     "IgnoreCobweb": 0b,
@@ -22,13 +22,43 @@
     "PositionOffsetX": 5.0f,
     "LootMode": 0,
     "TransformHasAI": 0b,
-    "AttackStrenght": 2,
+    "AttackStrenght": 1,
     "PersistenceRequired": 0b,
     "id": "customnpcs:customnpc",
     "IsStatue": 0b,
     "MovingPatern": 0,
     "NpcLines": {
         "Lines": [
+            {
+                "Line": "I wonder how hot it gets in the day.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "It's pretty dusty here.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "I wonder how cold it gets at night.",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "I can't find the restrooms.",
+                "Song": "",
+                "Slot": 3
+            },
+            {
+                "Line": "I wonder where I left my bag.",
+                "Song": "",
+                "Slot": 4
+            },
+            {
+                "Line": "I can't find my camp.",
+                "Song": "",
+                "Slot": 5
+            }
         ]
     },
     "DefendFaction": 0b,
@@ -40,9 +70,9 @@
         ]
     },
     "HitSound": "minecraft:entity.arrow.hit",
-    "FindShelter": 0,
+    "FindShelter": 2,
     "Air": 300s,
-    "TacticalVariant": 0,
+    "TacticalVariant": 1,
     "Orientation": 0,
     "ScriptLanguage": "ECMAScript",
     "HandItems": [
@@ -65,29 +95,44 @@
     "NpcInteractNPCLines": {
         "Lines": [
             {
-                "Line": "Where is Daft Punk playing?",
+                "Line": "Woah, who are you?",
                 "Song": "",
                 "Slot": 0
             },
             {
-                "Line": "Do you know where Distrikt is?",
+                "Line": "Can I come back to your camp?",
                 "Song": "",
                 "Slot": 1
             },
             {
-                "Line": "I've been awake for three days.",
+                "Line": "Do you know where I can find water?",
                 "Song": "",
                 "Slot": 2
             },
             {
-                "Line": "I need someone to take a photo of me.",
+                "Line": "Did you see that?",
                 "Song": "",
                 "Slot": 3
             },
             {
-                "Line": "Can I come back to your camp?",
+                "Line": "Did you hear that?",
                 "Song": "",
                 "Slot": 4
+            },
+            {
+                "Line": "Can I borrow your bike?",
+                "Song": "",
+                "Slot": 5
+            },
+            {
+                "Line": "Do you know where Distrikt is?",
+                "Song": "",
+                "Slot": 6
+            },
+            {
+                "Line": "Do you have any drugs?",
+                "Song": "",
+                "Slot": 7
             }
         ]
     },
@@ -95,7 +140,7 @@
     "WalkingRange": 10,
     "ShotCount": 1,
     "pDur": 5,
-    "AttackRange": 2,
+    "AttackRange": 1,
     "NpcKillLines": {
         "Lines": [
         ]
@@ -123,6 +168,7 @@
     "CombatRegen": 0,
     "NpcsTimers": [
     ],
+    "MarkovGender": 0,
     "pEffect": 0,
     "DistanceToMelee": 0,
     "NpcStepSound": "",
@@ -153,45 +199,75 @@
     "NpcInteractLines": {
         "Lines": [
             {
-                "Line": "Oh, hello",
+                "Line": "My camp is just past that dune",
                 "Song": "",
                 "Slot": 0
             },
             {
-                "Line": "Do we know each other?",
+                "Line": "Do you know where I can get a bike repaired?",
                 "Song": "",
                 "Slot": 1
             },
             {
-                "Line": "Do yo know where Distrikt is?",
+                "Line": "Can you taste these sounds?",
                 "Song": "",
                 "Slot": 2
             },
             {
-                "Line": "Do you know where I can find water?",
+                "Line": "Can you hear these smells?",
                 "Song": "",
                 "Slot": 3
             },
             {
-                "Line": "You startled me!",
+                "Line": "Did you see that?",
                 "Song": "",
                 "Slot": 4
             },
             {
-                "Line": "Do you know where I can find a bar?",
+                "Line": "Did you smell that?",
                 "Song": "",
                 "Slot": 5
+            },
+            {
+                "Line": "Woah, who are you?",
+                "Song": "",
+                "Slot": 6
+            },
+            {
+                "Line": "Do you know where Distrikt is?",
+                "Song": "",
+                "Slot": 7
             }
         ]
     },
-    "HurtByTimestamp": 12025,
+    "HurtByTimestamp": 803,
     "pSpin": 0b,
     "NpcHurtSound": "minecraft:entity.player.hurt",
     "pTrail": 0,
     "CreatureType": 0,
     "Attributes": [
         {
-            "Base": 15.0d,
+            "Base": 1.0d,
+            "Name": "potioncore.projectileDamage"
+        },
+        {
+            "Base": 1.0d,
+            "Name": "potioncore.magicDamage"
+        },
+        {
+            "Base": 1.0d,
+            "Name": "potioncore.jumpHeight"
+        },
+        {
+            "Base": 1.0d,
+            "Name": "potioncore.damageResistance"
+        },
+        {
+            "Base": 0.0d,
+            "Name": "potioncore.magicShielding"
+        },
+        {
+            "Base": 10.0d,
             "Name": "generic.maxHealth"
         },
         {
@@ -219,7 +295,7 @@
             "Name": "generic.followRange"
         },
         {
-            "Base": 2.0d,
+            "Base": 1.0d,
             "Name": "generic.attackDamage"
         },
         {
@@ -232,7 +308,7 @@
     "NoFallDamage": 0b,
     "AbsorptionAmount": 0.0f,
     "TransformHasRole": 0b,
-    "Name": "Karen",
+    "Name": "possum",
     "FallDistance": 0.0f,
     "SkinColor": 16777215,
     "NpcIdleSound": "",
@@ -240,9 +316,9 @@
     ],
     "NPCDialogOptions": [
     ],
-    "AggroRange": 16,
+    "AggroRange": 5,
     "DirectLOS": 1b,
-    "HealthRegen": 1,
+    "HealthRegen": 0,
     "ForgeCaps": {
         "tinkertoolleveling:entityxp": [
         ],
@@ -281,7 +357,7 @@
             "PositionY": 1,
             "SkinColor": 11830381,
             "PlayerTexture": 0b,
-            "Color": 6717235,
+            "Color": 8375321,
             "BrowColor": 5982516,
             "BrowThickness": 4
         },
@@ -292,13 +368,6 @@
             "Color": 16777215
         },
         "Parts": [
-            {
-                "Pattern": 0b,
-                "Type": 0b,
-                "PlayerTexture": 1b,
-                "PartName": "breasts",
-                "Color": 16777215
-            }
         ],
         "ArmsConfig": {
             "NotShared": 0b,
@@ -327,15 +396,15 @@
     "TransformEditingModus": 0b,
     "UsingSkinUrl": 2b,
     "Leashed": 0b,
-    "SkinUrl": "https://www.minecraftskins.com/uploads/skins/2016/04/23/skin_2016042320520572927.png?v233",
-    "CanSwim": 0b,
+    "SkinUrl": "http://assets.tribesthatmay.be/images/skins/chad.png",
+    "CanSwim": 1b,
     "GroundSound": "minecraft:block.stone.break",
-    "MaxHealth": 15,
+    "MaxHealth": 10,
     "HideBodyWhenKilled": 0b,
     "AttackSpeed": 15,
     "PotionDuration": 5,
     "maxDelay": 40,
-    "ScriptEnabled": 0b,
+    "ScriptEnabled": 1b,
     "Role": 0,
     "DropChance": [
         {
@@ -397,12 +466,26 @@
         "cnpcmarkdata": {
             "marks": [
             ]
-        }
+        },
+        "CNPCStoredData": {
+            "name": "possum",
+            "skinUrl": "http://assets.tribesthatmay.be/images/skins/chad.png"
+        },
+        "Potion Core - Health Fix": 10.0f,
+        "Potion Core - Jump Boost Updated": 1b
     },
     "MovingState": 1,
     "MovingPos": 0,
     "PotionAmp": 0,
-    "OnAttack": 1,
+    "RelativeAABB": [
+        -0.30000001192092896d,
+        0.0d,
+        -0.30000001192092896d,
+        0.30000001192092896d,
+        1.899999976158142d,
+        0.30000001192092896d
+    ],
+    "OnAttack": 2,
     "TacticalRadius": 8,
     "FallFlying": 0b,
     "MaxExp": 0,
@@ -422,23 +505,34 @@
     "GlowTexture": "",
     "MaxFiringRange": 15,
     "pXlr8": 0b,
+    "MarkovGeneratorId": 7,
     "Scripts": [
+        {
+            "Script": "",
+            "Console": [
+            ],
+            "ScriptList": [
+                {
+                    "Line": "party_kid.js"
+                }
+            ]
+        }
     ],
-    "Health": 15.0f,
+    "Health": 10.0f,
     "pStick": 0b,
     "MovingPause": 1b,
     "NpcDeathSound": "minecraft:entity.player.hurt",
-    "FactionID": 0,
-    "Title": "Sparkle Pony",
-    "TotalTicksAlive": 29267L,
+    "FactionID": 3,
+    "Title": "",
+    "TotalTicksAlive": 33909L,
     "Rotation": [
-        338.9538f,
+        9.339874f,
         0.0f
     ],
     "ShowName": 1,
     "npcInteracting": 1b,
     "UpdateBlocked": 0b,
-    "AvoidsWater": 1b,
+    "AvoidsWater": 0b,
     "NoLivingAnimation": 0b,
     "SpawnCycle": 3
 }
