@@ -77,7 +77,6 @@ distclean: clean
 	rm -rf build curseforge.db packmaker.lock config.yml .venv
 
 github_client: client
-	exit 1
 	mkdir -p artifacts/github/client
 	VERSION=$$(cat $(shell pwd)/.version) ; \
 	cd $(ARTIFACTS)/github/client && unzip $(ARTIFACTS)/ttmb-client-$${VERSION}.zip
