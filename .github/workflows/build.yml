@@ -60,6 +60,13 @@ jobs:
         run: |
           docker login ghcr.io --username otakup0pe --password-stdin <<< "$CONTAINER_TOKEN"
           docker push ghcr.io/tribesthatmaybe/workflow:${{env.container_version}}
+      - name: "notify discord on build failure"
+        if: failure()
+        uses: "rjstone/discord-webhook-notify@v1"
+        with:
+          severity: "error"
+          details: "Unable to complete ttmb build"
+          webhookUrl: ${{ secrets.DISCORD_BUILD_WEBHOOK }}
   maybe_bump:
     if: github.ref == 'refs/heads/mainline'
     runs-on: "ubuntu-latest"
@@ -174,3 +181,17 @@ jobs:
         run: |
           ./scripts/render-devsync.sh
           ./scripts/upload ${{needs.build.outputs.container_version}} ${{needs.build.outputs.version}}
+      - name: "notify discord on upload failure"
+        if: failure()
+        uses: "rjstone/discord-webhook-notify@v1"
+        with:
+          severity: "error"
+          details: "Unable to complete ttmb build"
+          webhookUrl: ${{ secrets.DISCORD_BUILD_WEBHOOK }}
+      - name: "notify discord on upload success"
+        if: success()
+        uses: "rjstone/discord-webhook-notify@v1"
+        with:
+          severity: "info"
+          details: "New build ${{needs.build.outputs.version}} uploaded to curse"
+          webhookUrl: ${{ secrets.DISCORD_BUILD_WEBHOOK }}
