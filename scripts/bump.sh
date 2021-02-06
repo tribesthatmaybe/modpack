@@ -20,5 +20,5 @@ if [ "$RELEASE" == "stable" ] ; then
     avakas bump . auto --branch=mainline
 else
     echo "${RELEASE} build"
-    avakas bump . auto --branch=mainline --build-meta --prerelease-prefix "$RELEASE"
+    avakas bump . auto --branch=mainline --build-meta --prerelease --prerelease-prefix "$RELEASE"
 fi
