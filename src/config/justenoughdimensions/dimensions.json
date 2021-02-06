@@ -6,7 +6,6 @@
   "dimensions": [
     {
       "dim": 1001,
-      "biome": "biometweaker:block_rock_desert_trees",
       "load_on_start": true,
       "dimensiontype": {
         "id": 1001,
