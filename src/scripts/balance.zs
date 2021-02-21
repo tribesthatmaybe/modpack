@@ -63,7 +63,10 @@ val unncesaryThings = [
    <cfm:upgraded_fence_spruce>,
    <cfm:upgraded_fence_jungle>,
    <cfm:upgraded_fence_dark_oak>,
-   <toughasnails:fruit_juice:*>   // use pams
+   <toughasnails:fruit_juice:*>,   // use pams
+   <vehicle:traffic_cone>,                    // prefer traffic control cones
+   <actuallyadditions:block_furnace_double>,   // too many furnaces
+   <extrautils2:machine>              // too many furnaces
 ] as IItemStack[];
 
 for widget in unncesaryThings {
@@ -146,3 +149,34 @@ recipes.addShapeless(<minecraft:paper>, [<loreexpansion:lore_scrap>]);
 
 //// allow crafting of lore journal
 recipes.addShaped(<loreexpansion:lore_journal>, [[null, <minecraft:book>, null],[null, <minecraft:gold_nugget>, null], [null, <minecraft:book>, null]]);
+
+//// ore balancing
+// blocks only from tinkers
+recipes.removeShaped(<minecraft:iron_block>, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>,<minecraft:iron_ingot>],
+                                             [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
+                                             [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]]);
+recipes.removeShaped(<minecraft:gold_block>, [[<minecraft:gold_ingot>, <minecraft:gold_ingot>,<minecraft:gold_ingot>],
+                                             [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>],
+                                             [<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:gold_ingot>]]);
+// copper
+recipes.removeShaped(<mekanism:basicblock:12>, [[<mekanism:ingot:5>, <mekanism:ingot:5>,<mekanism:ingot:5>],
+                                               [<mekanism:ingot:5>, <mekanism:ingot:5>, <mekanism:ingot:5>],
+                                               [<mekanism:ingot:5>, <mekanism:ingot:5>, <mekanism:ingot:5>]]);
+// lead
+recipes.removeShaped(<immersiveengineering:storage:2>, [[<immersiveengineering:metal:2>, <immersiveengineering:metal:2>,<immersiveengineering:metal:2>],
+                                               [<immersiveengineering:metal:2>, <immersiveengineering:metal:2>, <immersiveengineering:metal:2>],
+                                               [<immersiveengineering:metal:2>, <immersiveengineering:metal:2>, <immersiveengineering:metal:2>]]);
+
+
+//// paper and paper products
+// craftable from sawdust same as sugarcane
+recipes.addShaped(<minecraft:paper> * 3, [[null, null, null],[<mekanism:sawdust>, <mekanism:sawdust>, <mekanism:sawdust>], [null, null, null]]);
+recipes.removeShapeless(<minecraft:paper> * 6, [[null, null, null],[<ore:pulpWood> | <ore:dustWood>, <ore:pulpWood> | <ore:dustWood>, <ore:pulpWood> | <ore:dustWood>], [null, null, null]]);
+// rice
+recipes.addShaped(<minecraft:paper> * 3, [[null, null, null],[<harvestcraft:riceitem>, <harvestcraft:riceitem>, <harvestcraft:riceitem>], [null, null, null]]);
+
+// string consistency
+recipes.removeShapeless(<minecraft:string>, [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>]);
+recipes.addShapeless(<minecraft:string> * 2, [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>]);
+recipes.removeShapeless(<minecraft:string> * 2, [<plants2:generic>, <plants2:generic>, <plants2:generic>, <plants2:generic>, <plants2:generic>]);
+recipes.addShapeless(<minecraft:string> * 2, [<plants2:generic>, <plants2:generic>, <plants2:generic>]);

@@ -67,7 +67,6 @@ mods:
   - "foamfix-optimization-mod":
   - "no-recipe-book":
       clientonly: true
-  - "just-enough-dimensions":
   - "mystcraft":
   - "baubles":
   - "crafttweaker":
