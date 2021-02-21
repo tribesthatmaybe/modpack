@@ -132,7 +132,8 @@ val MystiWidgets = [
                     <mysticalagriculture:crafting:51>,
                     <mysticalagriculture:crafting:52>,
                     <mysticalagriculture:crafting:53>,
-                    <mysticalagriculture:crafting:54>
+                    <mysticalagriculture:crafting:54>,
+                    <mysticalagriculture:miners_torch>
 ] as IItemStack[];
 for widget in MystiWidgets {
   recipes.remove(widget);
@@ -239,7 +240,6 @@ var tooManyTools = [
 ] as IItemStack[];
 
 for widget in tooManyTools {
-  logger.logInfo("dropping " + widget.name);
   recipes.remove(widget);
   mods.jei.JEI.removeAndHide(widget);
 }
@@ -435,3 +435,7 @@ for potion in potionCoreTho {
   mods.jei.JEI.removeAndHide(p_splash);
   mods.jei.JEI.removeAndHide(p_arrow);
 }
+
+//// extra recipes we do not need
+// pointless string generation
+recipes.removeShapeless(<minecraft:string>, [<mysticalworld:silk_thread>, <mysticalworld:silk_thread>]);

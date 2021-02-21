@@ -67,7 +67,6 @@ mods:
   - "foamfix-optimization-mod":
   - "no-recipe-book":
       clientonly: true
-  - "just-enough-dimensions":
   - "mystcraft":
   - "baubles":
   - "crafttweaker":
@@ -219,6 +218,8 @@ mods:
   - "localized-chat":
   - "dcintegration":
   - "glibys-voice-chat-reloaded"
+  - "fossils"
+  - "llibrary"
 # whut https://github.com/OreCruncher/DynamicSurroundings/issues/642
   - "mixin-0-7-0-8-compatibility"
 files:

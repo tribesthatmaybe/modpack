@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "biomes": "\"biometweaker:block_rock_desert\""
+    },
+    {
+      "biomes": "\"biometweaker:block_rock_desert_trees\""
+    },
+    {
+      "biomes": "\"biometweaker:block_rock_desert_resources\""
+    }
+  ],
+  "metadata": {
+    "title": "Block Rock Desert Biomes",
+    "description": [
+      ""
+    ]
+  }
+}
