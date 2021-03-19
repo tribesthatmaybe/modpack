@@ -9,9 +9,7 @@ events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
         if ( event.player.world.isRemote() ) {
            return;
         }
-        logger.logInfo("using a " + event.item.name);
         if ( event.item.name != "item.actuallyadditions.item_leaf_blower" && event.item.name != "item.actuallyadditions.item_leaf_blower_advanced" ) {
-           logger.logInfo("invalid item?");
            return;
         }
         var player_x = event.player.x;
@@ -30,10 +28,8 @@ events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent) {
             while (actual_z <= max_z) {
                 while (actual_y <= max_y) {
                     var a_blockpos = crafttweaker.util.Position3f.create(actual_x, actual_y, actual_z).asBlockPos();
-                    logger.logInfo("scanning " + actual_x + "," + actual_y + "," + actual_z);
                     if (! event.world.isAirBlock(a_blockpos)) {
                         var a_block = event.world.getBlock(a_blockpos);
-                        logger.logInfo("found some " + a_block.definition.unlocalizedName + " at " + actual_x + "," + actual_y + "," + actual_z);
                         if ( a_block.definition.unlocalizedName == "tile.weather2.sand_layer" ) {
 
                            event.world.setBlockState(<blockstate:minecraft:air>, a_blockpos);
