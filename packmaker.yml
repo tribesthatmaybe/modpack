@@ -1,14 +1,14 @@
 # -*-yaml-*-
 ---
-name:  ttmb
+name: "ttmb"
 title: "Tribes That May Be"
 version: "${TTMB_VERSION}"
 
 authors:
-  - otakup0pe
+  - "otakup0pe"
 
-minecraft: 1.12.2
-forge: 14.23.5.2854
+minecraft: "1.12.2"
+forge: "14.23.5.2854"
 
 mods:
   # https://github.com/mezz/JustEnoughItems/issues/2066
@@ -53,7 +53,9 @@ mods:
       clientonly: true
   - "placebo":
   - "plants":
+      curseforgeid: 257229
   - "paintings":
+      curseforgeid: 252042
   - "chunk-animator":
       clientonly: true
   - "traffic-control":
@@ -75,9 +77,12 @@ mods:
   - "loottweaker":
   - "wanionlib":
   - "unidict":
-  - "ftb-backups":
-  - "ftb-library":
-  - "ftb-utilities":
+  - "ftb-backups-forge":
+      curseforgeid: 314904
+  - "ftb-library-legacy-forge":
+      curseforgeid: 237167
+  - "ftb-utilities-forge":
+      curseforgeid: 237102
   - "comforts":
   - "bookshelf":
   - "enchantment-descriptions":
@@ -144,6 +149,7 @@ mods:
   - "mekanism":
   - "mekanism-generators":
   - "base":
+      curseforgeid: 246996
   - "contenttweaker":
   - "tinkers-tool-leveling":
   - "constructs-armory":
@@ -151,8 +157,6 @@ mods:
   - "toast-control":
   - "pams-brewcraft":
   - "just-enough-brewcraft":
-  - "creativecore":
-  - "onlinepictureframe":
   - "architecturecraft-tridev":
   - "exchangers":
   - "gunpowderlib":
@@ -168,7 +172,7 @@ mods:
   - "appleskin":
   - "a-lib":
   - "alchemistry":
-  - "randompatches":
+  - "randompatches-forge":
   - "copy-paste":
   - "openmodslib":
   - "openblocks":
@@ -183,9 +187,6 @@ mods:
   - "potion-core":
   - "cyclops-core":
   - "common-capabilities":
-  - "integrated-dynamics":
-  - "integrated-tunnels":
-  - "integrated-rest":
   - "p455w0rds-library":
   - "ae2wtlib":
       curseforgeid: 304024
@@ -193,14 +194,16 @@ mods:
   - "bq-multiblock-structure-integration":
   - "abyssalcraft":
       version: "AbyssalCraft-1.12.2-1.10.3.jar"
+      curseforgeid: 53686
   - "just-enough-resources-jer":
       clientonly: true
   - "codechicken-lib-1-8":
   - "forge-multipart-cbe":
+      curseforgeid: 258426
   - "mrtjpcore":
-  - "project-red-base":
+  - "project-red-core":
   - "project-red-integration":
-  - "project-red-lighting":
+  - "project-red-illumination":
   - "project-red-compat":
   - "corpse-complex":
   - "world-primer":
@@ -217,9 +220,10 @@ mods:
   - "tellme":
   - "localized-chat":
   - "dcintegration":
-  - "glibys-voice-chat-reloaded"
   - "fossils"
   - "llibrary"
+  - "railcraft"
+  - "aquaculture"
 # whut https://github.com/OreCruncher/DynamicSurroundings/issues/642
   - "mixin-0-7-0-8-compatibility"
 files:

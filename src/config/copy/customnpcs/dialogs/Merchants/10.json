@@ -17,9 +17,39 @@
             "Option": {
                 "DialogCommand": "",
                 "Dialog": 12,
-                "Title": "How long ago was that?",
+                "Title": "Who are you?",
                 "DialogColor": 14737632,
                 "OptionType": 1
+            }
+        },
+        {
+            "OptionSlot": 2,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": 25,
+                "Title": "Tell me about the magic beans?",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            }
+        },
+        {
+            "OptionSlot": 3,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": 24,
+                "Title": "Tell me about the magic beans?",
+                "DialogColor": 14737632,
+                "OptionType": 1
+            }
+        },
+        {
+            "OptionSlot": 4,
+            "Option": {
+                "DialogCommand": "",
+                "Dialog": 25,
+                "Title": "Talk",
+                "DialogColor": 14737632,
+                "OptionType": 2
             }
         }
     ],
@@ -57,7 +87,7 @@
     "DialogCommand": "",
     "AvailabilityDialogId": -1,
     "OptionFaction2Points": 100,
-    "DialogText": "Hello there. My family has been growing seeds out here since before the playa dust covered up what used to be out here. I've selected these seeds for hardiness. You will need a green house to grow them.",
+    "DialogText": "Hello there, I am Vanessa. What can I help you with? Do you want seeds?",
     "AvailabilityQuest4Id": -1,
     "AvailabilityQuest3Id": -1,
     "AvailabilityQuest2Id": -1,
@@ -74,7 +104,7 @@
         "MailItems": [
         ],
         "MailQuest": -1,
-        "TimePast": 1600632693494L,
+        "TimePast": 1642968299405L,
         "Time": 0L,
         "Subject": ""
     }

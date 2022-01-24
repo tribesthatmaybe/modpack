@@ -33,7 +33,6 @@ recipes.addShaped(<cfm:coffee_table_dark_oak>, [[null, null, null],[<plants2:pla
 recipes.addShaped(<cfm:table_dark_oak>, [[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],[null, <plants2:planks:2>, null], [null, <plants2:planks:2>, null]]);
 recipes.addShaped(<cfm:blinds_dark_oak_open> * 2, [[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],[<minecraft:stick>, <minecraft:stick>, <minecraft:stick>], [<minecraft:stick>, <minecraft:stick>, <minecraft:stick>]]);
 recipes.addShaped(<cfm:cabinet_dark_oak>, [[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],[<plants2:planks:2>, <minecraft:chest>, <plants2:planks:2>], [<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>]]);
-recipes.addShaped(<cfm:chair_dark_oak>, [[<plants2:planks:2>, null, null],[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>], [<plants2:planks:2>, null, <plants2:planks:2>]]);
 recipes.addShaped(<cfm:desk_cabinet_dark_oak>, [[<plants2:log_0>, <plants2:log_0>, <plants2:log_0>],[<plants2:planks:2>, <minecraft:chest>, <plants2:planks:2>], [<plants2:planks:2>, null, <plants2:planks:2>]]);
 recipes.addShaped(<cfm:desk_dark_oak>, [[<plants2:log_0>, <plants2:log_0>, <plants2:log_0>],[<plants2:planks:2>, null, <plants2:planks:2>], [<plants2:planks:2>, null, <plants2:planks:2>]]);
 recipes.addShaped(<cfm:door_bell_dark_oak>, [[<minecraft:noteblock>, <minecraft:stone_button>, null],[<plants2:log_0>, null, null], [null, null, null]]);

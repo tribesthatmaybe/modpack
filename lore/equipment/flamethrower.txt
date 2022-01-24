@@ -1,0 +1,9 @@
+The flamethrower is great both for zombie defense and lighting wooden effigies on fire. Maximum range is sixteen blocks. It is fueled by hydrogen. You can place it in a tank of hydrogen to refill it.
+
+It has three modes that you can switch between using the Mekanism Mode key (default M).
+
+Combat mode damages entities and sets them on fire. Drops will be destroyed.
+
+Heat mode will apply to items. Smelting iron, etc.
+
+Inferno mode will light things on fire and result in blast damage for entities.

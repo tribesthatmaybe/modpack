@@ -1741,7 +1741,9 @@
     },
     "20:10": {
       "questID:3": 20,
-      "preRequisites:11": [],
+      "preRequisites:11": [
+        58
+      ],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -2985,7 +2987,7 @@
     "33:10": {
       "questID:3": 33,
       "preRequisites:11": [
-        52
+        26
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4665,7 +4667,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "So much for shade in the desert...",
-          "desc:8": "That is how Minecraft generally starts.\n\nYou punch a tree until you get a log of some kind.\n\nThen you make planks out of it with your §obare, hands§r (or the 2x2 grid in your inventory).\n\nFinally, before you know it you\u0027re being chased through a darkened desert by coyotes.\n\nFor the moment being, let\u0027s just stick to getting a crafting station built.\n\n§nTask 1§r: Punch a tree until you get a log.\n§n§nTask 2§r: Turn that log into planks.\n§nTask 3§r: Make those planks into a crafting table.\n§nTask 4§r: Turn that crafting table into a crafting station."
+          "desc:8": "That is how Minecraft generally starts.\n\nYou punch a tree, alive or dead, until you get something useful. It\u0027s often, but not always, a log.\n\nThen you make planks out of the log with your §obare, hands§r (or the 2x2 grid in your inventory).\n\nFinally, before you know it you\u0027re being chased through a darkened desert by coyotes.\n\nFor the moment being, let\u0027s just stick to getting a crafting station built.\n\n§nTask 1§r: Punch a tree until you get a log.\n§n§nTask 2§r: Turn that log into planks.\n§nTask 3§r: Make those planks into a crafting table.\n§nTask 4§r: Turn that crafting table into a crafting station."
         }
       },
       "tasks:9": {
@@ -5007,7 +5009,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Armaments!",
-          "desc:8": "That trusty knife of yours is great and all, but let\u0027s be real... you should probably find a way to better defend yourself.\n\nIt\u0027s about time you armed yourself with §mknowledge!§r some sort of weapon.\n\nTo the right, you\u0027ll see a few different options for weapons that should be easily craftable with the resources you currently have at your disposal.\n\nYou should probably have a helmet too, now that you\u0027re thinking of running around swinging a weapon at things that can fight back...\n\nI\u0027ve got you covered. \u003c3\n\n§nTask 1§r: Craft one of the listed weapons.\n\nQuick Tip;\nAn axe will not only help defend yourself, but it can also help you get wood faster if you whack some trees with it."
+          "desc:8": "That trusty knife of yours is great and all, but let\u0027s be real... you should probably find a way to better defend yourself.\n\nIt\u0027s about time you armed yourself with §mknowledge!§r some sort of weapon.\n\nTo the right, you\u0027ll see a few different options for swords, some of which you may have the materials on hand for already. Different materials (and there are a lot of options) will have different strenghts and in some cases special effects.\n\nYou should probably have a helmet too, now that you\u0027re thinking of running around swinging a weapon at things that can fight back...\n\nI\u0027ve got you covered. \u003c3\n\n§nTask 1§r: Craft one of the listed swords."
         }
       },
       "tasks:9": {
@@ -5023,7 +5025,7 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:wooden_axe",
+              "id:8": "minecraft:iron_sword",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -5043,12 +5045,8 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "betterquesting:placeholder",
+              "id:8": "mysticalworld:copper_sword",
               "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "cyclicmagic:sandstone_axe"
-              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -5067,7 +5065,7 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:stone_axe",
+              "id:8": "minecraft:stone_sword",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -5087,31 +5085,7 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "betterquesting:placeholder",
-              "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "cyclicmagic:sandstone_sword"
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          },
-          "taskID:8": "bq_standard:crafting"
-        },
-        "4:10": {
-          "partialMatch:1": 0,
-          "allowSmelt:1": 0,
-          "ignoreNBT:1": 0,
-          "index:3": 4,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
-          "requiredItems:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:stone_sword",
+              "id:8": "minecraft:wooden_sword",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -5340,7 +5314,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Such a User...",
-          "desc:8": "Being in a new environment can be challenging, as most of us are likely aware.\n\nIn an effort to mitigate frustration from UI troubles, listed below are some excerpts from my most helpful, less snarky pages that should serve you well.\n\nCaveat; If I were to attempt to explain every possible interaction available to you, I wouldn\u0027t have any room in my pages for the §ofun§r quests, so this should be seen as a relatively brief primer and starter guide.\n\nWhen in doubt, I recommend checking your controls, tooltips, or the quest you\u0027re working on if it requires a specific action.\n\n§1Quest Book§r\nFirst and foremost, while you can access the amazingly helpful knowledge I contain by using my physical form, I can also be accessed via hotkey (§1§d§5~§  §rby§r default), even if you lose me!\n\nNext, while I try to be as succinct as possible and present everything on one page, you may need to §3scroll§r or use the §2arrows§r at the bottom of my pages to see an entry in full.\nI apologize. I\u0027m not as thin as I once was, as I\u0027m now thick with knowledge!\nAnyway, let\u0027s test the functions I mentioned on this entry.\n\n§1Just Enough Items (JEI)\n§rLet\u0027s move on to what will surely be your next best friend after me, the §5§rJEI interface§r.\nThis is the interface on the right (by default) when your inventory is open.\nIts §2search bar§r allows you find just about anything in this multiverse.\nThen, with a simple §5l-§r or §5r-click§r on item in question you can both determine how to craft it and what you can craft with it!\n\n§mDon\u0027t say anything, but I love the JEI interface. \u003c3§r\n*cough*\n\nAlright, back to everything else.\n\n§1General Controls§r\nYou can exit almost any interface with §l§5esc§r.\n\nAlmost all other controls can be found, edited, and completely made a mess of via the \"§l§2Controls§l§r\" option in the main menu. Careful.\n\n§WWhile we\u0027re on the topic of being careful, you can §3sneak/crouch§r by holding the assigned hotkey (§5shift§r by default) while you move.\n\n§3Sneaking§r can help you avoid detection as well as prevent you from walking off the edge of the block you\u0027re on. Just be careful not to get hit by something, as it can easily push you over the edge to your demise.\n\nNow, let\u0027s talk about how to §3sprint§r! You can do so by holding down the assigned hotkey (§5ctrl§r by default) while you move.\n\nJust bear in mind that if you\u0027re too hungry or thirsty, §3sprinting§r won\u0027t be an option.\n\nWait! What good is all this sneaking and sprinting knowledge if you don\u0027t know how to move around in the first place?!\nYour movements are mapped to §5w§r, §5a§r, §5s§r, §5d§r by default, essentially creating a left-handed set of arrow keys.\n\nAaand finally, certain items and machines have alternate functions when §5l-§r or §5r-clicking§r while holding §5shift§r or §5ctrl§r regardless of whether you\u0027re moving or not.\n\nFor example, you can §3equip§r and §3unequip§r items and gear by §5shift§r + §3§5l-clicking§r on them in your inventory. \n\nNow that you\u0027re likely feeling a little lost, let\u0027s talk about getting found.\n\n§1Journey Map§r\nYou\u0027ve got a map!\nYeah, you\u0027ve got a minimap at the top right (default), but you can look at a larger version via hotkey (§1§5j§r by default).\nThrough this§r interface you can set and remove waypoints, see other nearby (or not-so-nearby players), and view details of the areas you\u0027ve discovered.\n\nThis probably all seems like a lot, but I promise you\u0027ll get the hang of it as you fiddle around and explore this bizarre, cuboid reality.\nJust remember, it\u0027s all about having a good time§m and avoiding unintended injuries, fatal mishaps, and unexpected creeper explosions§r.\n\nThis is it, your last tip! I\u0027ll try to simplify your quests by clearly labeling what you need to do to finish it at the bottom of each entry.\nSee below;\n\n§nTask 1§r: Check the first box.\n§nTask 2§r: Check the second box."
+          "desc:8": "Being in a new environment can be challenging, as most of us are likely aware.\n\nIn an effort to mitigate frustration from UI troubles, listed below are some excerpts from my most helpful, less snarky pages that should serve you well.\n\nCaveat; If I were to attempt to explain every possible interaction available to you, I wouldn\u0027t have any room in my pages for the §ofun§r quests, so this should be seen as a relatively brief primer and starter guide. You will find plenty of other lore pages, some of which will explain game concepts more in depth.\n\nWhen in doubt, I recommend checking your controls, tooltips, or the quest you\u0027re working on if it requires a specific action.\n\n§1§9§r§9Your Quest Book\n§f§rFirst and foremost, while you can access the amazingly helpful knowledge I contain by using my physical form, I can also be accessed via hotkey (§1§d§5~§  §rby§r default), even if you lose me!\n\nNext, while I try to be as succinct as possible and present everything on one page, you may need to §3scroll§r or use the §2arrows§r at the bottom of my pages to see an entry in full.\nI apologize. I\u0027m not as thin as I once was, as I\u0027m now thick with knowledge!\nAnyway, let\u0027s test the functions I mentioned on this entry.\n\n§1§9Just Enough Items (JEI)\n§rLet\u0027s move on to what will surely be your next best friend after me, the §5§rJEI interface§r.\nThis is the interface on the right (by default) when your inventory is open.\nIts §2search bar§r allows you find just about anything in this multiverse.\nThen, with a simple §5l-§r or §5r-click§r on item in question you can both determine how to craft it and what you can craft with it!\n\n§mDon\u0027t say anything, but I love the JEI interface. \u003c3§r\n*cough*\n\nAlright, back to everything else.\n\n§1§9General Controls§r\nYou can exit almost any interface with §l§5esc§r.\n\nAlmost all other controls can be found, edited, and completely made a mess of via the \"§l§2Controls§l§r\" option in the main menu. Careful.\n\n§WWhile we\u0027re on the topic of being careful, you can §3sneak/crouch§r by holding the assigned hotkey (§5shift§r by default) while you move.\n\n§3Sneaking§r can help you avoid detection as well as prevent you from walking off the edge of the block you\u0027re on. Just be careful not to get hit by something, as it can easily push you over the edge to your demise.\n\nNow, let\u0027s talk about how to §3sprint§r! You can do so by holding down the assigned hotkey (§5ctrl§r by default) while you move.\n\nJust bear in mind that if you\u0027re too hungry or thirsty, §3sprinting§r won\u0027t be an option.\n\nWait! What good is all this sneaking and sprinting knowledge if you don\u0027t know how to move around in the first place?!\nYour movements are mapped to §5w§r, §5a§r, §5s§r, §5d§r by default, essentially creating a left-handed set of arrow keys.\n\nAaand finally, certain items and machines have alternate functions when §5l-§r or §5r-clicking§r while holding §5shift§r or §5ctrl§r regardless of whether you\u0027re moving or not.\n\nFor example, you can §3equip§r and §3unequip§r items and gear by §5shift§r + §3§5l-clicking§r on them in your inventory. \n\nNow that you\u0027re likely feeling a little lost, let\u0027s talk about getting found.\n\n§1Journey Map§r\nYou\u0027ve got a map!\nYeah, you\u0027ve got a minimap at the top right (default), but you can look at a larger version via hotkey (§1§5j§r by default).\nThrough this§r interface you can set and remove waypoints, see other nearby (or not-so-nearby players), and view details of the areas you\u0027ve discovered.\n\nThis probably all seems like a lot, but I promise you\u0027ll get the hang of it as you fiddle around and explore this bizarre, cuboid reality.\nJust remember, it\u0027s all about having a good time§m and avoiding unintended injuries, fatal mishaps, and unexpected creeper explosions§r.\n\nThis is it, your last tip! I\u0027ll try to simplify your quests by clearly labeling what you need to do to finish it at the bottom of each entry.\nSee below;\n\n§nTask 1§r: Check the first box.\n§nTask 2§r: Check the second box."
         }
       },
       "tasks:9": {
@@ -7427,8 +7401,8 @@
     "77:10": {
       "questID:3": 77,
       "preRequisites:11": [
-        22,
-        55
+        55,
+        123
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -7437,7 +7411,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -11837,7 +11811,7 @@
       "questID:3": 120,
       "preRequisites:11": [
         12,
-        121
+        34
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12086,6 +12060,364 @@
           }
         }
       }
+    },
+    "123:10": {
+      "questID:3": 123,
+      "preRequisites:11": [
+        51
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "UNLOCKED",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:wheat_seeds",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Fruit of the Land",
+          "desc:8": "You harvested something! Many things which you harvest are edible. Some are meant for industry.\n\nMany things which you harvest can be converted into seeds in a crafting table."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "blocks:9": {
+            "0:10": {
+              "blockID:8": "harvestcraft:aridgarden",
+              "nbt:10": {},
+              "amount:3": 1,
+              "oreDict:8": "",
+              "meta:3": -1
+            }
+          },
+          "index:3": 0,
+          "taskID:8": "bq_standard:block_break"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:agaveseeditem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:chickpeaseeditem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:wheat_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "124:10": {
+      "questID:3": 124,
+      "preRequisites:11": [
+        74
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "blockcraftery:editable_door",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Block is not always what it seems",
+          "desc:8": "You can use the blockcraftery blocks to make structures that are then textured based on another block. There are a variety of blocks, along with some door options. Great for adding some non-ninety-degree angles to your creations, or for making hidden doors. While the architects workbench should work for most cases, there are some blocks which cannot be fed through it. In those cases, blockcraftery blocks should work.\n\nThe normal variant is flamable. The reinforced variant should hold up against fire and most explosions."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "blockcraftery:editable_door",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "125:10": {
+      "questID:3": 125,
+      "preRequisites:11": [
+        27
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "quark:trowel",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Trowel Aesthetic",
+          "desc:8": "Thr trowel is used to rapidly place down a random distribution of blocks. It is great for building with chisel based bricks to add cracked/mossy variants. To use it, place it in a hotbar row with the blocks you want it to pull from. Simply right click with the trowel where you want to place a block. It will randomly place a block, weighted based on how many slots have the same block."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "quark:trowel",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "chisel:laboratory",
+              "Count:3": 64,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "chisel:laboratory",
+              "Count:3": 64,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "126:10": {
+      "questID:3": 126,
+      "preRequisites:11": [
+        124,
+        76
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "malisisdoors:verticalhatch",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Bespoke Artisinal Doors",
+          "desc:8": "There are a variety of doors available to create but even then sometimes that isn\u0027t enough. Maybe you want it made out of magic wood and gold rimmed.\n\nFor this, you need the door factory. You can customize the frame and upper/lower panels, along with a how the door opens and operates."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "malisisdoors:door_factory",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "malisisdoors:hitechdoor",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "malisisdoors:big_door_dark_oak_3x3",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "127:10": {
+      "questID:3": 127,
+      "preRequisites:11": [
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cyclicmagic:sprout_seed",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Magic Bean Economy",
+          "desc:8": "Whats this, magic beans? If scuttlebutt is true, then I should mostly get useful stuff out of these. These annual plants should last a lifetime, if treated properly."
+        }
+      },
+      "tasks:9": {},
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cyclicmagic:sprout_seed",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     }
   },
   "questLines:9": {
@@ -12115,99 +12447,57 @@
         "3:10": {
           "sizeX:3": 24,
           "x:3": -132,
-          "y:3": -144,
-          "id:3": 77,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": -96,
-          "y:3": -144,
-          "id:3": 81,
-          "sizeY:3": 24
-        },
-        "5:10": {
-          "sizeX:3": 24,
-          "x:3": -132,
           "y:3": -72,
           "id:3": 82,
           "sizeY:3": 24
         },
-        "6:10": {
+        "4:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": -72,
           "id:3": 83,
           "sizeY:3": 24
         },
-        "7:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": -72,
           "id:3": 84,
           "sizeY:3": 24
         },
-        "8:10": {
-          "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": -144,
-          "id:3": 85,
-          "sizeY:3": 24
-        },
-        "9:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -36,
           "id:3": 86,
           "sizeY:3": 24
         },
-        "10:10": {
-          "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": -108,
-          "id:3": 105,
-          "sizeY:3": 24
-        },
-        "11:10": {
-          "sizeX:3": 24,
-          "x:3": -96,
-          "y:3": -108,
-          "id:3": 106,
-          "sizeY:3": 24
-        },
-        "12:10": {
-          "sizeX:3": 24,
-          "x:3": -60,
-          "y:3": -72,
-          "id:3": 107,
-          "sizeY:3": 24
-        },
-        "13:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": -36,
           "id:3": 108,
           "sizeY:3": 24
         },
-        "14:10": {
+        "8:10": {
           "sizeX:3": 24,
           "x:3": -168,
           "y:3": 0,
           "id:3": 109,
           "sizeY:3": 24
         },
-        "15:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": 0,
           "id:3": 111,
           "sizeY:3": 24
         },
-        "16:10": {
+        "10:10": {
           "sizeX:3": 24,
-          "x:3": -24,
-          "y:3": -108,
-          "id:3": 112,
+          "x:3": -132,
+          "y:3": -144,
+          "id:3": 127,
           "sizeY:3": 24
         }
       },
@@ -12236,260 +12526,54 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": -84,
+          "x:3": -264,
+          "y:3": -72,
           "id:3": 4,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": -12,
+          "x:3": -264,
+          "y:3": -108,
           "id:3": 13,
           "sizeY:3": 24
         },
         "2:10": {
-          "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": -48,
-          "id:3": 15,
-          "sizeY:3": 24
-        },
-        "3:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": -84,
-          "id:3": 19,
-          "sizeY:3": 24
-        },
-        "4:10": {
-          "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": 24,
-          "id:3": 20,
-          "sizeY:3": 24
-        },
-        "5:10": {
-          "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": -48,
-          "id:3": 21,
-          "sizeY:3": 24
-        },
-        "6:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": -48,
-          "id:3": 27,
-          "sizeY:3": 24
-        },
-        "7:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 24,
-          "id:3": 28,
-          "sizeY:3": 24
-        },
-        "8:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": -12,
-          "id:3": 29,
-          "sizeY:3": 24
-        },
-        "9:10": {
-          "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": 24,
-          "id:3": 32,
-          "sizeY:3": 24
-        },
-        "10:10": {
-          "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": -120,
-          "id:3": 33,
-          "sizeY:3": 24
-        },
-        "11:10": {
-          "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": -120,
-          "id:3": 34,
-          "sizeY:3": 24
-        },
-        "12:10": {
-          "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": -120,
-          "id:3": 35,
-          "sizeY:3": 24
-        },
-        "13:10": {
-          "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": -12,
-          "id:3": 46,
-          "sizeY:3": 24
-        },
-        "14:10": {
-          "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": -84,
-          "id:3": 71,
-          "sizeY:3": 24
-        },
-        "15:10": {
-          "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": -120,
-          "id:3": 72,
-          "sizeY:3": 24
-        },
-        "16:10": {
-          "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": -12,
-          "id:3": 73,
-          "sizeY:3": 24
-        },
-        "17:10": {
-          "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": -48,
-          "id:3": 74,
-          "sizeY:3": 24
-        },
-        "18:10": {
-          "sizeX:3": 24,
-          "x:3": 36,
-          "y:3": -84,
-          "id:3": 75,
-          "sizeY:3": 24
-        },
-        "19:10": {
-          "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": -84,
-          "id:3": 76,
-          "sizeY:3": 24
-        },
-        "20:10": {
-          "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": 24,
-          "id:3": 79,
-          "sizeY:3": 24
-        },
-        "21:10": {
-          "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": -48,
-          "id:3": 87,
-          "sizeY:3": 24
-        },
-        "22:10": {
-          "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": -84,
-          "id:3": 88,
-          "sizeY:3": 24
-        },
-        "23:10": {
-          "sizeX:3": 24,
-          "x:3": 108,
-          "y:3": 24,
-          "id:3": 91,
-          "sizeY:3": 24
-        },
-        "24:10": {
-          "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": -120,
-          "id:3": 94,
-          "sizeY:3": 24
-        },
-        "25:10": {
-          "sizeX:3": 24,
-          "x:3": -72,
-          "y:3": -120,
-          "id:3": 95,
-          "sizeY:3": 24
-        },
-        "26:10": {
-          "sizeX:3": 24,
-          "x:3": -36,
-          "y:3": -12,
-          "id:3": 114,
-          "sizeY:3": 24
-        },
-        "27:10": {
-          "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": 60,
-          "id:3": 121,
-          "sizeY:3": 24
-        }
-      },
-      "lineID:3": 1,
-      "properties:10": {
-        "betterquesting:10": {
-          "visibility:8": "NORMAL",
-          "name:8": "Block Rock Desert",
-          "icon:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "chisel:sandstoneyellow",
-            "Count:3": 1,
-            "Damage:2": 2,
-            "OreDict:8": ""
-          },
-          "bg_image:8": "",
-          "bg_size:3": 256,
-          "desc:8": "It is a little dusty in here. You are going to need to keep busy if you are going to survive and figure out what comes next."
-        }
-      },
-      "order:3": 1
-    },
-    "2:10": {
-      "quests:9": {
-        "0:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": -108,
           "id:3": 17,
           "sizeY:3": 24
         },
-        "1:10": {
+        "3:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": -72,
           "id:3": 115,
           "sizeY:3": 24
         },
-        "2:10": {
+        "4:10": {
           "sizeX:3": 24,
           "x:3": -192,
           "y:3": -72,
           "id:3": 116,
           "sizeY:3": 24
         },
-        "3:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -192,
           "y:3": -108,
           "id:3": 117,
           "sizeY:3": 24
         },
-        "4:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": -144,
           "id:3": 118,
           "sizeY:3": 24
         },
-        "5:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -192,
           "y:3": -144,
@@ -12518,7 +12602,7 @@
       },
       "order:3": 6
     },
-    "3:10": {
+    "2:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -12633,7 +12717,7 @@
       },
       "order:3": 5
     },
-    "4:10": {
+    "3:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -12748,41 +12832,167 @@
       },
       "order:3": 9
     },
-    "5:10": {
+    "4:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": -108,
-          "id:3": 89,
+          "x:3": -348,
+          "y:3": -24,
+          "id:3": 15,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -288,
-          "y:3": -108,
-          "id:3": 92,
+          "x:3": -396,
+          "y:3": -72,
+          "id:3": 19,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": -108,
-          "id:3": 102,
+          "x:3": -348,
+          "y:3": -72,
+          "id:3": 27,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": -72,
-          "id:3": 103,
+          "x:3": -396,
+          "y:3": 24,
+          "id:3": 28,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
+          "x:3": -348,
+          "y:3": 24,
+          "id:3": 32,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": -300,
+          "y:3": -72,
+          "id:3": 74,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": -252,
+          "y:3": -120,
+          "id:3": 75,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": -300,
+          "y:3": -120,
+          "id:3": 76,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": -348,
+          "y:3": 72,
+          "id:3": 79,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": -300,
+          "y:3": -24,
+          "id:3": 88,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -252,
+          "y:3": 72,
+          "id:3": 89,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": -300,
+          "y:3": 72,
+          "id:3": 91,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": -252,
+          "y:3": 24,
+          "id:3": 92,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
           "x:3": -252,
           "y:3": -72,
+          "id:3": 94,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": -252,
+          "y:3": -24,
+          "id:3": 95,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": -300,
+          "y:3": 24,
+          "id:3": 102,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": 24,
+          "id:3": 103,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": 72,
           "id:3": 110,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "sizeX:3": 24,
+          "x:3": -396,
+          "y:3": -24,
+          "id:3": 114,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "x:3": -396,
+          "y:3": 72,
+          "id:3": 121,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": -348,
+          "y:3": -120,
+          "id:3": 124,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": -396,
+          "y:3": -120,
+          "id:3": 125,
+          "sizeY:3": 24
+        },
+        "22:10": {
+          "sizeX:3": 24,
+          "x:3": -348,
+          "y:3": -168,
+          "id:3": 126,
           "sizeY:3": 24
         }
       },
@@ -12858,9 +13068,9 @@
           "desc:8": "This is my tool. There are many like it, but this one is mine.\n\nMy tool is my best friend. It is my life.\n\nThe vast majority of the hand tools (weapons and armor included) you will make use if in Tribes That May Be will be created in your Tinkers Workshop. At this point you should have read the two Tinkers Books - \"Materials and You\" and the \"Armory Addendum\". These tools may be upgraded piece by piece, have modifiers placed on them (such as speed and durability boosts), and most importantly - be named.\n\nYou can repair them when they break so unless you end up in a particularly unfortunate set of circumstances involving lava they should be with you throughout your entire journey."
         }
       },
-      "order:3": 2
+      "order:3": 1
     },
-    "6:10": {
+    "5:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -12871,40 +13081,47 @@
         },
         "1:10": {
           "sizeX:3": 24,
+          "x:3": -240,
+          "y:3": -60,
+          "id:3": 21,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
           "x:3": -132,
           "y:3": -96,
           "id:3": 39,
           "sizeY:3": 24
         },
-        "2:10": {
+        "3:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": -60,
           "id:3": 40,
           "sizeY:3": 24
         },
-        "3:10": {
+        "4:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": -132,
           "id:3": 41,
           "sizeY:3": 24
         },
-        "4:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -180,
           "y:3": -96,
           "id:3": 47,
           "sizeY:3": 24
         },
-        "5:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -132,
           "id:3": 48,
           "sizeY:3": 24
         },
-        "6:10": {
+        "7:10": {
           "sizeX:3": 24,
           "x:3": -240,
           "y:3": -96,
@@ -12933,7 +13150,7 @@
       },
       "order:3": 8
     },
-    "7:10": {
+    "6:10": {
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
@@ -12951,8 +13168,8 @@
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -300,
-          "y:3": -324,
+          "x:3": -396,
+          "y:3": -396,
           "id:3": 2,
           "sizeY:3": 24
         },
@@ -12987,165 +13204,172 @@
         "7:10": {
           "sizeX:3": 24,
           "x:3": -264,
+          "y:3": -288,
+          "id:3": 20,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": -264,
           "y:3": -180,
           "id:3": 22,
           "sizeY:3": 24
         },
-        "8:10": {
+        "9:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -144,
           "id:3": 23,
           "sizeY:3": 24
         },
-        "9:10": {
+        "10:10": {
           "sizeX:3": 24,
-          "x:3": -264,
-          "y:3": -324,
+          "x:3": -324,
+          "y:3": -396,
           "id:3": 24,
           "sizeY:3": 24
         },
-        "10:10": {
+        "11:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -144,
           "id:3": 25,
           "sizeY:3": 24
         },
-        "11:10": {
+        "12:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": -144,
           "id:3": 26,
           "sizeY:3": 24
         },
-        "12:10": {
+        "13:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": -108,
           "id:3": 30,
           "sizeY:3": 24
         },
-        "13:10": {
+        "14:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -108,
           "id:3": 36,
           "sizeY:3": 24
         },
-        "14:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": -396,
           "y:3": -360,
           "id:3": 38,
           "sizeY:3": 24
         },
-        "15:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": -360,
           "y:3": -360,
           "id:3": 50,
           "sizeY:3": 24
         },
-        "16:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": -324,
           "id:3": 51,
           "sizeY:3": 24
         },
-        "17:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": -324,
           "id:3": 52,
           "sizeY:3": 24
         },
-        "18:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": -408,
           "y:3": -288,
           "id:3": 54,
           "sizeY:3": 24
         },
-        "19:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -288,
           "id:3": 55,
           "sizeY:3": 24
         },
-        "20:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": -336,
           "y:3": -252,
           "id:3": 56,
           "sizeY:3": 24
         },
-        "21:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": -288,
           "y:3": -252,
           "id:3": 58,
           "sizeY:3": 24
         },
-        "22:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": -360,
           "y:3": -396,
           "id:3": 59,
           "sizeY:3": 24
         },
-        "23:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -312,
           "y:3": -216,
           "id:3": 60,
           "sizeY:3": 24
         },
-        "24:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -216,
           "id:3": 61,
           "sizeY:3": 24
         },
-        "25:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": -384,
           "y:3": -180,
           "id:3": 62,
           "sizeY:3": 24
         },
-        "26:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": -360,
           "y:3": -288,
           "id:3": 78,
           "sizeY:3": 24
         },
-        "27:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": -192,
           "y:3": -144,
           "id:3": 90,
           "sizeY:3": 24
         },
-        "28:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": -192,
           "y:3": -108,
           "id:3": 93,
           "sizeY:3": 24
         },
-        "29:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": -180,
           "id:3": 97,
           "sizeY:3": 24
         },
-        "30:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": -240,
           "y:3": -252,
@@ -13174,7 +13398,7 @@
       },
       "order:3": 0
     },
-    "8:10": {
+    "7:10": {
       "quests:9": {},
       "lineID:3": 8,
       "properties:10": {
@@ -13197,9 +13421,44 @@
       },
       "order:3": 4
     },
-    "9:10": {
+    "8:10": {
       "quests:9": {
         "0:10": {
+          "sizeX:3": 24,
+          "x:3": -252,
+          "y:3": -120,
+          "id:3": 33,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": -216,
+          "y:3": -84,
+          "id:3": 34,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -84,
+          "id:3": 35,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -144,
+          "y:3": -84,
+          "id:3": 71,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -48,
+          "id:3": 72,
+          "sizeY:3": 24
+        },
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -216,
           "y:3": -120,
@@ -13227,6 +13486,114 @@
         }
       },
       "order:3": 7
+    },
+    "9:10": {
+      "quests:9": {
+        "0:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": 0,
+          "id:3": 29,
+          "sizeY:3": 24
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 0,
+          "id:3": 46,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": 72,
+          "y:3": 36,
+          "id:3": 73,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 0,
+          "id:3": 77,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 36,
+          "id:3": 81,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 72,
+          "id:3": 85,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 36,
+          "id:3": 87,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": 72,
+          "id:3": 105,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": 0,
+          "y:3": 108,
+          "id:3": 106,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": 108,
+          "id:3": 107,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": 36,
+          "id:3": 112,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": 0,
+          "id:3": 123,
+          "sizeY:3": 24
+        }
+      },
+      "lineID:3": 10,
+      "properties:10": {
+        "betterquesting:10": {
+          "visibility:8": "UNLOCKED",
+          "name:8": "Second Lunch and Beyond",
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "harvestcraft:applejellysandwichitem",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "bg_image:8": "",
+          "bg_size:3": 256,
+          "desc:8": "You are going to need to eat something eventually. And you will probably. eventually, want something that is not water to drink.\n\nAnd what is more likely is that you are going to encounter people who are willing to trade you just the thing you are looking for in return for a delightlful snack that they are convinced only you can provide."
+        }
+      },
+      "order:3": 2
     }
   },
   "questSettings:10": {

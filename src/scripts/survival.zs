@@ -12,6 +12,7 @@ mods.cfm.Grill.addRecipe(<harvestcraft:cookedtofaconitem>,<harvestcraft:rawtofac
 mods.cfm.Grill.addRecipe(<harvestcraft:cookedtofabbititem>,<harvestcraft:rawtofabbititem>);
 mods.cfm.Grill.addRecipe(<harvestcraft:cookedtofeakitem>,<harvestcraft:rawtofeakitem>);
 mods.cfm.Grill.addRecipe(<harvestcraft:cookedtofishitem>,<harvestcraft:rawtofishitem>);
+mods.cfm.Grill.addRecipe(<harvestcraft:shrimpcookeditem>,<harvestcraft:shrimprawitem>);
 mods.cfm.Grill.addRecipe(<fossil:allosaurus_cooked>,<fossil:allosaurus_meat>);
 mods.cfm.Grill.addRecipe(<fossil:ankylosaurus_cooked>,<fossil:ankylosaurus_meat>);
 mods.cfm.Grill.addRecipe(<fossil:arthropleura_cooked>,<fossil:arthropleura_meat>);
@@ -59,3 +60,16 @@ mods.cfm.Grill.addRecipe(<fossil:titanis_cooked>,<fossil:titanis_meat>);
 mods.cfm.Grill.addRecipe(<fossil:triceratops_cooked>,<fossil:triceratops_meat>);
 mods.cfm.Grill.addRecipe(<fossil:tyrannosaurus_cooked>,<fossil:tyrannosaurus_meat>);
 mods.cfm.Grill.addRecipe(<fossil:velociraptor_cooked>,<fossil:velociraptor_meat>);
+
+// magic bean based economy
+recipes.removeShaped(<cyclicmagic:sprout_seed>, [
+  [<minecraft:wheat_seeds>, <minecraft:beetroot_seeds>, <minecraft:wheat_seeds>],
+  [<minecraft:melon_seeds>, <minecraft:emerald>, <minecraft:pumpkin_seeds>],
+  [<minecraft:wheat_seeds>, <minecraft:nether_wart>, <minecraft:wheat_seeds>]
+]);
+## seeds, prosperity shard, prudentium
+## todo : figure out how to make this take xp
+recipes.addShapeless(<cyclicmagic:sprout_seed>, [<appliedenergistics2:material:10>,<minecraft:wheat_seeds>,<quark:rune>,
+						<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:5>,
+						<mysticalagriculture:crafting:1>,<quark:rune:15>,<minecraft:wheat_seeds>,
+						<appliedenergistics2:material:11>]);

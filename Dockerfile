@@ -21,4 +21,7 @@ RUN chmod ugo+rx /usr/local/bin/ttmb-render-packmaker
 COPY templates/curseforge.conf.j2 /usr/local/share/ttmb/
 RUN chmod ugo+r /usr/local/share/ttmb/curseforge.conf.j2
 
+COPY deps /deps
+RUN if [ -e "/deps/packmaker/setup.py" ] ; then pip3 uninstall -y packmaker && cd /deps/packmaker && python3 setup.py install ; fi
+
 ENTRYPOINT ["ttmb-entrypoint"]

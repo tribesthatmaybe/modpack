@@ -65,8 +65,7 @@ val unncesaryThings = [
    <cfm:upgraded_fence_dark_oak>,
    <toughasnails:fruit_juice:*>,   // use pams
    <vehicle:traffic_cone>,                    // prefer traffic control cones
-   <actuallyadditions:block_furnace_double>,   // too many furnaces
-   <extrautils2:machine>              // too many furnaces
+   <actuallyadditions:block_furnace_double>   // too many furnaces
 ] as IItemStack[];
 
 for widget in unncesaryThings {
@@ -171,7 +170,8 @@ recipes.removeShaped(<immersiveengineering:storage:2>, [[<immersiveengineering:m
 //// paper and paper products
 // craftable from sawdust same as sugarcane
 recipes.addShaped(<minecraft:paper> * 3, [[null, null, null],[<mekanism:sawdust>, <mekanism:sawdust>, <mekanism:sawdust>], [null, null, null]]);
-recipes.removeShapeless(<minecraft:paper> * 6, [[null, null, null],[<ore:pulpWood> | <ore:dustWood>, <ore:pulpWood> | <ore:dustWood>, <ore:pulpWood> | <ore:dustWood>], [null, null, null]]);
+recipes.removeShaped(<minecraft:paper> * 6, [[null, null, null], [<mekanism:sawdust>, <mekanism:sawdust>, <mekanism:sawdust>], [null, null, null]]);
+
 // rice
 recipes.addShaped(<minecraft:paper> * 3, [[null, null, null],[<harvestcraft:riceitem>, <harvestcraft:riceitem>, <harvestcraft:riceitem>], [null, null, null]]);
 
@@ -180,3 +180,82 @@ recipes.removeShapeless(<minecraft:string>, [<ore:fiberHemp>, <ore:fiberHemp>, <
 recipes.addShapeless(<minecraft:string> * 2, [<ore:fiberHemp>, <ore:fiberHemp>, <ore:fiberHemp>]);
 recipes.removeShapeless(<minecraft:string> * 2, [<plants2:generic>, <plants2:generic>, <plants2:generic>, <plants2:generic>, <plants2:generic>]);
 recipes.addShapeless(<minecraft:string> * 2, [<plants2:generic>, <plants2:generic>, <plants2:generic>]);
+
+// instant community generated teleportation is hard
+recipes.addShaped(<waystones:warp_stone>, [[<actuallyadditions:item_crystal_empowered>,
+					  <mysticalagriculture:crafting:2>,
+					  <actuallyadditions:item_crystal_empowered:1>],
+					  [<mysticalagriculture:crafting:2>,
+					  <mekanism:teleportationcore>,
+					  <mysticalagriculture:crafting:2>],
+					  [<actuallyadditions:item_crystal_empowered:1>,
+					  <mysticalagriculture:crafting:2>,
+					  <actuallyadditions:item_crystal_empowered>]]);
+recipes.removeShaped(<waystones:warp_stone>, [[<ore:dyePurple>, <minecraft:ender_pearl>, <ore:dyePurple>],
+					      [<minecraft:ender_pearl>, <minecraft:emerald>, <minecraft:ender_pearl>],
+					      [<ore:dyePurple>, <minecraft:ender_pearl>, <ore:dyePurple>]]);
+
+// skilled construction but not use of furniture
+recipes.removeShaped(<cfm:chair_oak>, [[<minecraft:planks>, null, null],
+				      [<minecraft:planks>, <minecraft:planks>, <minecraft:planks>],
+				      [<minecraft:planks>, null, <minecraft:planks>]]);
+recipes.addShaped(<cfm:chair_oak>, [[<minecraft:planks>, null, null],
+				   [<minecraft:planks>, <minecraft:planks>, <minecraft:planks>],
+				   [<minecraft:planks>, <cfm:item_hammer>.reuse(), <minecraft:planks>]]);
+recipes.removeShaped(<cfm:chair_dark_oak>, [[<plants2:planks:2>, null, null],
+					   [<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],
+					   [<plants2:planks:2>, null, <plants2:planks:2>]]);
+recipes.addShaped(<cfm:chair_spruce>, [[<minecraft:planks:1>, null, null],
+				      [<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>],
+				      [<minecraft:planks:1>, <cfm:item_hammer>.reuse(), <minecraft:planks:1>]]);
+recipes.removeShaped(<cfm:chair_birch>, [[<minecraft:planks:2>, null, null],
+					[<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>],
+					[<minecraft:planks:2>, null, <minecraft:planks:2>]]);
+recipes.addShaped(<cfm:chair_birch>, [[<minecraft:planks:2>, null, null],
+				     [<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>],
+				     [<minecraft:planks:2>, <cfm:item_hammer>.reuse(), <minecraft:planks:2>]]);
+recipes.removeShaped(<cfm:chair_jungle>, [[<minecraft:planks:3>, null, null],
+					[<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>],
+					[<minecraft:planks:3>, null, <minecraft:planks:3>]]);
+recipes.addShaped(<cfm:chair_jungle>, [[<minecraft:planks:3>, null, null],
+				     [<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>],
+				     [<minecraft:planks:3>, <cfm:item_hammer>.reuse(), <minecraft:planks:3>]]);
+recipes.removeShaped(<cfm:chair_acacia>, [[<minecraft:planks:4>, null, null],
+					[<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>],
+					[<minecraft:planks:4>, null, <minecraft:planks:4>]]);
+recipes.addShaped(<cfm:chair_acacia>, [[<minecraft:planks:4>, null, null],
+				     [<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>],
+				     [<minecraft:planks:4>, <cfm:item_hammer>.reuse(), <minecraft:planks:4>]]);
+recipes.removeShaped(<cfm:chair_dark_oak>, [[<minecraft:planks:5>, null, null],
+					[<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>],
+					[<minecraft:planks:5>, null, <minecraft:planks:5>]]);
+recipes.addShaped(<cfm:chair_dark_oak>, [[<minecraft:planks:5>, null, null],
+				     [<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>],
+				     [<minecraft:planks:5>, <cfm:item_hammer>.reuse(), <minecraft:planks:5>]]);
+recipes.addShaped(<cfm:chair_dark_oak>, [[<plants2:planks:2>, null, null],
+				     [<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],
+				     [<plants2:planks:2>, <cfm:item_hammer>.reuse(), <plants2:planks:2>]]);
+recipes.removeShaped(<cfm:chair_diorite>, [[<minecraft:stone:3>, null, null],
+					[<minecraft:stone:3>, <minecraft:stone:3>, <minecraft:stone:3>],
+					[<minecraft:stone:3>, null, <minecraft:stone:3>]]);
+recipes.addShaped(<cfm:chair_diorite>, [[<minecraft:stone:3>, null, null],
+				     [<minecraft:stone:3>, <minecraft:stone:3>, <minecraft:stone:3>],
+				     [<minecraft:stone:3>, <cfm:item_hammer>.reuse(), <minecraft:stone:3>]]);
+recipes.removeShaped(<cfm:chair_granite>, [[<minecraft:stone:1>, null, null],
+					[<minecraft:stone:1>, <minecraft:stone:1>, <minecraft:stone:1>],
+					[<minecraft:stone:1>, null, <minecraft:stone:1>]]);
+recipes.addShaped(<cfm:chair_granite>, [[<minecraft:stone:1>, null, null],
+				     [<minecraft:stone:1>, <minecraft:stone:1>, <minecraft:stone:1>],
+				     [<minecraft:stone:1>, <cfm:item_hammer>.reuse(), <minecraft:stone:1>]]);
+recipes.removeShaped(<cfm:chair_andesite>, [[<minecraft:stone:5>, null, null],
+					[<minecraft:stone:5>, <minecraft:stone:5>, <minecraft:stone:5>],
+					[<minecraft:stone:5>, null, <minecraft:stone:5>]]);
+recipes.addShaped(<cfm:chair_andesite>, [[<minecraft:stone:5>, null, null],
+				     [<minecraft:stone:5>, <minecraft:stone:5>, <minecraft:stone:5>],
+				     [<minecraft:stone:5>, <cfm:item_hammer>.reuse(), <minecraft:stone:5>]]);
+recipes.removeShaped(<cfm:chair_stone>, [[<minecraft:cobblestone>, null, null],
+					[<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
+					[<minecraft:cobblestone>, null, <minecraft:cobblestone>]]);
+recipes.addShaped(<cfm:chair_stone>, [[<minecraft:cobblestone>, null, null],
+				     [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
+				     [<minecraft:cobblestone>, <cfm:item_hammer>.reuse(), <minecraft:cobblestone>]]);

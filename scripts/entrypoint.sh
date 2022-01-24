@@ -39,9 +39,8 @@ export LANGUAGE=en_US.UTF-8
 if [ -d "/packmaker" ] && [ -e "/packmaker/setup.py" ] ; then
     echo "packmaker override!"
     cd /packmaker
-    python3 setup.py install
+    sudo python3 setup.py install
 fi
-
 
 if [ "$ACTION" == "update" ] ; then
     gen_config
