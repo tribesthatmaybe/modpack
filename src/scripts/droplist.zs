@@ -60,6 +60,8 @@ val MystiWidgets = [
                     <mysticalagriculture:intermedium_sword>,
                     <mysticalagriculture:superium_sword>,
                     <mysticalagriculture:supremium_sword>,
+		    <mysticalworld:silver_sword>,
+		    <immersiveengineering:sword_steel>,
                     # armor
                     <mysticalagriculture:inferium_helmet>,
                     <mysticalagriculture:inferium_chestplate>,
@@ -163,10 +165,26 @@ var NarrativeTho = [
     <animalbikes:slimebike>,
     <animalbikes:witherbike>,
     <cyclicmagic:mattock>,
-    <actuallyadditions:block_greenhouse_glass>
+    <actuallyadditions:block_greenhouse_glass>,
+    <projectred-core:resource_item:301>,
+    <projectred-core:resource_item:310>,
+    <projectred-core:resource_item:311>,
+    <projectred-core:resource_item:312>,
+    <projectred-core:resource_item:341>,
+    <projectred-core:resource_item:342>,
+    <projectred-core:resource_item:300>,
+    <microblockcbe:saw_diamond>,
+    <projectred-core:resource_item:421>,
+    <projectred-core:resource_item:420>,
+    <mekanism:enrichediron>,
+    <betterbuilderswands:wandunbreakable:12>,
+    <betterbuilderswands:wandunbreakable:13>,
+    <betterbuilderswands:wandunbreakable:14>,
+    <actuallyadditions:item_misc>
 ] as IItemStack[];
 for widget in NarrativeTho {
   mods.jei.JEI.removeAndHide(widget);
+  recipes.remove(widget);
 }
 
 // not using temperature part of tough as nails
@@ -240,6 +258,19 @@ var tooManyTools = [
 ] as IItemStack[];
 
 for widget in tooManyTools {
+  recipes.remove(widget);
+  mods.jei.JEI.removeAndHide(widget);
+}
+// lotta teck and equipment that is a dupe
+var tooMuchEquipment = [
+    <actuallyadditions:item_canola_seed>,
+    <actuallyadditions:item_misc:23>,
+    <actuallyadditions:item_misc:24>,
+    <actuallyadditions:block_oil_generator>,
+    <extrautils2:decorativesolid>
+] as IItemStack[];
+
+for widget in tooMuchEquipment {
   recipes.remove(widget);
   mods.jei.JEI.removeAndHide(widget);
 }
@@ -439,3 +470,15 @@ for potion in potionCoreTho {
 //// extra recipes we do not need
 // pointless string generation
 recipes.removeShapeless(<minecraft:string>, [<mysticalworld:silk_thread>, <mysticalworld:silk_thread>]);
+
+recipes.removeShapeless(<harvestcraft:wovencottonitem> * 3, [<ore:materialCloth>, <ore:materialCloth>, <ore:materialCloth>]);
+recipes.removeShaped(<minecraft:leather_leggings>, [[<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>],
+						   [<harvestcraft:wovencottonitem>, null, <harvestcraft:wovencottonitem>],
+						   [<harvestcraft:wovencottonitem>, null, <harvestcraft:wovencottonitem>]]);
+recipes.removeShaped(<minecraft:leather_helmet>, [[<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>],
+		      				  [<harvestcraft:wovencottonitem>, null, <harvestcraft:wovencottonitem>]]);
+recipes.removeShaped(<minecraft:leather_chestplate>, [[<harvestcraft:wovencottonitem>, null, <harvestcraft:wovencottonitem>],
+						     [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>],
+						     [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>]]);
+recipes.removeShaped(<minecraft:leather_boots>, [[<harvestcraft:wovencottonitem>, null, <harvestcraft:wovencottonitem>],
+						[<harvestcraft:wovencottonitem>, null, <harvestcraft:wovencottonitem>]]);

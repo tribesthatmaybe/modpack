@@ -36,6 +36,9 @@ Structures are managed with the [Recurrent Complex](https://www.curseforge.com/m
 | `OreProcessing` | A ore processing facility. | |
 | `DevSmeltery` | A fully stocked smeltery. Just bring ores. | |
 | `DevContainer_commands` | Easy to access admin / development commands. | DC06 |
+| `DevContainer_greenhouse` | Small self contained plot of land. | DC07 |
+| `DevContainer_cokeoven` | Coke Oven in a Box | DC08 |
+| `DevContainer_ae2` | Hi Tech Storage (pre-seeded for questbook runthrough) | DC09 |
 
 ## Supplies and Provisions
 

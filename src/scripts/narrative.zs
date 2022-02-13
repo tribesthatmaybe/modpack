@@ -15,6 +15,9 @@ recipes.addShaped(<minecraft:dirt> * 4, [[<minecraft:clay_ball>, <minecraft:rott
 // hard to find hops too
 recipes.addShaped(<brewcraft:hopsseeditem>, [[<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>],[<mysticalagriculture:nature_essence>, <mysticalagriculture:crafting:18>, <mysticalagriculture:nature_essence>], [<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>]]);
 
+// consistent leather recipes
+furnace.remove(<minecraft:leather>, <minecraft:rotten_flesh>);
+
 // consistent books
 recipes.removeShapeless(<minecraft:book>, [<ore:paper>, <ore:paper>, <ore:paper>, <ore:string>]);
 recipes.removeShapeless(<minecraft:book>, [<ore:paper>, <ore:paper>, <ore:paper>, <minecraft:leather>]);

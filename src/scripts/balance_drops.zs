@@ -25,6 +25,13 @@ Dropt.list("desert_plant_fancy")
             .selector(Dropt.weight(15))
             .items([<harvestcraft:mustardseeditem>])
         )
+   )
+   .add(Dropt.rule()
+	.matchDrops([<plants2:desert_0:15>])
+	.addDrop(Dropt.drop()
+		.selector(Dropt.weight(10))
+		.items([<botania:petal:9>])
+	)
    );
 
 // Most plants will drop some moopy stuff
@@ -40,8 +47,7 @@ var moopPlants = [
   <plants2:desert_0:12>,
   <plants2:desert_1:3>,
   <plants2:desert_1:2>,
-  <plants2:desert_0:13>,
-  <plants2:desert_0:15>
+  <plants2:desert_0:13>
 ] as IItemStack[];
 
 var moopyPlantsDropt = Dropt.list("desert_moopy_plants").priority(0);

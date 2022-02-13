@@ -1,0 +1,14 @@
+The atomic reconstructor is used to make parts for different tech/magic items. You can use it to interact with the environment around it as well, and change that behavior using different lenses. It has two modes of operation.
+
+* Always on - Redstone disables operation (Deactivation)
+* Always off - Restone briefly enables operation (Pulse)
+
+Keep in mind that anything the laser touches may change. Sometimes we want this, sometimes we do not. It's generally wise to make a wall blocking the path of the beam.
+
+There are a bunch of lenses.
+
+* Lens of color will dye supported items in the path of the laser a random color.
+* Lens of disenchanting will extract the top enchantment of an item into a book.
+* Lens of certain death will deal a decent amount of damage to anything in the path.
+* Lens of the miner will convert stone (or netherrack) into a random ore.
+* Lens of the killer is like the lens of certain death except XP will drop.
