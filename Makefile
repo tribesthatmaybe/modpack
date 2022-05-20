@@ -18,7 +18,8 @@ versiongen:
 
 container_build: versiongen
 ifdef PACKMAKER
-	rm -rf deps/packmaker && \
+	mkdir -p deps && \
+		rm -rf deps/packmaker && \
 		cp -r $(PACKMAKER) deps/packmaker && \
 		rm -rf deps/packmaker/.git
 else

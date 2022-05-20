@@ -8,12 +8,12 @@ authors:
   - "otakup0pe"
 
 minecraft: "1.12.2"
-forge: "14.23.5.2854"
+forge: "14.23.5.2860"
 
 mods:
   # https://github.com/mezz/JustEnoughItems/issues/2066
   - "jei":
-      version: "jei_1.12.2-4.15.0.297.jar"
+      version: "jei_1.12.2-4.16.1.302.jar"
   - "journeymap":
   - "tinkers-construct":
   - "mantle":

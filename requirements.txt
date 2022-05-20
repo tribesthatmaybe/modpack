@@ -6,7 +6,8 @@ ipython
 ipdb
 requests-toolbelt
 Python-NBT
+jinja2-cli
+# git+https://github.com/mattrobenolt/jinja2-cli@master#egg=jinja2-cli
 
 git+https://github.com/Jakub-Wilk/multicraft-api@master#egg=multicraft-api
-git+https://github.com/mattrobenolt/jinja2-cli@master#egg=jinja2-cli
-git+https://gitlab.com/routhio/minecraft/tools/packmaker.git@master#egg=packmaker
+git+https://gitlab.com/otakup0pe/packmaker.git@master#egg=packmaker
