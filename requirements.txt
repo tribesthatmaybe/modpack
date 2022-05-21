@@ -10,4 +10,4 @@ jinja2-cli
 # git+https://github.com/mattrobenolt/jinja2-cli@master#egg=jinja2-cli
 
 git+https://github.com/Jakub-Wilk/multicraft-api@master#egg=multicraft-api
-git+https://gitlab.com/otakup0pe/packmaker.git@master#egg=packmaker
+git+https://gitlab.com/otakup0pe/packmaker.git@new-api#egg=packmaker
