@@ -17,9 +17,9 @@ versiongen:
 	cut -f 1 -d '+' < "$(shell pwd)/.version" > "$(shell pwd)/.version-container"
 
 container_build: versiongen
+	mkdir -p deps
 ifdef PACKMAKER
-	mkdir -p deps && \
-		rm -rf deps/packmaker && \
+	rm -rf deps/packmaker && \
 		cp -r $(PACKMAKER) deps/packmaker && \
 		rm -rf deps/packmaker/.git
 else
