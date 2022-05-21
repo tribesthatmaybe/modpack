@@ -8,7 +8,7 @@ authors:
   - "otakup0pe"
 
 minecraft: "1.12.2"
-forge: "14.23.5.2860"
+forge: "latest"
 
 mods:
   # https://github.com/mezz/JustEnoughItems/issues/2066

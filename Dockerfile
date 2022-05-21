@@ -9,6 +9,9 @@ RUN locale-gen en_US.UTF-8
 RUN DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
 RUN touch /tmp/locales-tho
 
+RUN mkdir /usr/local/etc/ipython
+COPY ipython_config.json /usr/local/etc/ipython
+
 COPY requirements.txt /usr/local/share/ttmb/
 RUN pip3 install -r /usr/local/share/ttmb/requirements.txt
 
