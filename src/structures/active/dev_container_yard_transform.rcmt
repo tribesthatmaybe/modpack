@@ -14,7 +14,7 @@
                 "transformer": {
                   "uniform": true,
                   "id": "replaceAll_4f10b62",
-                  "sourceExpression": "reccomplex:generic_solid \u0026 metadata\u003d0",
+                  "sourceExpression": "(reccomplex:spawn_script | reccomplex:generic_solid) \u0026 metadata\u003d0",
                   "destination": [
                     {
                       "block": "chisel:concrete_lightgray",
@@ -33,7 +33,7 @@
         "transformer": {
           "uniform": false,
           "id": "replace_32c0355b",
-          "sourceExpression": "reccomplex:generic_solid \u0026 metadata\u003d1",
+          "sourceExpression": "(reccomplex:spawn_script | reccomplex:generic_solid) \u0026 metadata\u003d1",
           "destination": [
             {
               "block": "minecraft:air",
@@ -54,7 +54,7 @@
                 "type": "naturalAir",
                 "transformer": {
                   "id": "naturalAir_62f77b91",
-                  "sourceExpression": "reccomplex:generic_space \u0026 metadata\u003d1",
+                  "sourceExpression": "(reccomplex:spawn_script | reccomplex:generic_space ) \u0026 metadata\u003d1",
                   "destExpression": "",
                   "naturalExpansionDistance": 4.0,
                   "naturalExpansionRandomization": 10.0
@@ -64,7 +64,7 @@
                 "type": "natural",
                 "transformer": {
                   "id": "natural_eed52750",
-                  "sourceExpression": "reccomplex:generic_solid \u0026 metadata\u003d0",
+                  "sourceExpression": "(reccomplex:spawn_script | reccomplex:generic_solid) \u0026 metadata\u003d0",
                   "destExpression": "is:replaceable | is:foliage",
                   "naturalExpansionDistance": 4.0,
                   "naturalExpansionRandomization": 6.0

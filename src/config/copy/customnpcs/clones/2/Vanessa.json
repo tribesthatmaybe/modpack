@@ -40,7 +40,7 @@
         ]
     },
     "HitSound": "minecraft:entity.arrow.hit",
-    "FindShelter": 2,
+    "FindShelter": 0,
     "Air": 300s,
     "TacticalVariant": 0,
     "Orientation": 0,
@@ -261,7 +261,7 @@
         "Lines": [
         ]
     },
-    "HurtByTimestamp": 5409,
+    "HurtByTimestamp": 54757,
     "TraderCurrency": {
         "NpcMiscInv": [
             {
@@ -544,7 +544,7 @@
             "NPCDialog": {
                 "DialogCommand": "",
                 "Dialog": 10,
-                "Title": "Greeting",
+                "Title": "Vanessa Introduction",
                 "DialogColor": 14737632,
                 "OptionType": 1
             },
@@ -560,6 +560,8 @@
         "dsurround:data": {
             "a": 0b,
             "f": 0b
+        },
+        "llibrary:extendedentitydatacapability": {
         }
     },
     "HandDropChances": [
@@ -624,6 +626,39 @@
             "ScaleY": 1.0f,
             "ScaleX": 1.0f
         }
+    },
+    "VisibleAvailability": {
+        "AvailabilityQuestId": -1,
+        "AvailabilityScoreboardType": 1,
+        "AvailabilityFactionStance": 0,
+        "AvailabilityScoreboard2Value": 1,
+        "AvailabilityQuest": 0,
+        "AvailabilityDialog4": 0,
+        "AvailabilityScoreboardObjective": "",
+        "AvailabilityDialog3": 0,
+        "AvailabilityQuest2": 0,
+        "AvailabilityQuest3": 0,
+        "AvailabilityScoreboard2Objective": "",
+        "AvailabilityQuest4": 0,
+        "ModRev": 18,
+        "AvailabilityDialog2": 0,
+        "AvailabilityDayTime": 0,
+        "AvailabilityFaction2Id": -1,
+        "AvailabilityScoreboardValue": 1,
+        "AvailabilityFaction": 0,
+        "AvailabilityDialog": 0,
+        "AvailabilityScoreboard2Type": 1,
+        "AvailabilityFaction2": 0,
+        "AvailabilityFactionId": -1,
+        "AvailabilityFaction2Stance": 0,
+        "AvailabilityDialogId": -1,
+        "AvailabilityQuest4Id": -1,
+        "AvailabilityQuest3Id": -1,
+        "AvailabilityQuest2Id": -1,
+        "AvailabilityDialog2Id": -1,
+        "AvailabilityDialog3Id": -1,
+        "AvailabilityDialog4Id": -1,
+        "AvailabilityMinPlayerLevel": 0
     },
     "minDelay": 20,
     "DoorInteract": 1,
@@ -744,11 +779,11 @@
     "pStick": 0b,
     "MovingPause": 1b,
     "NpcDeathSound": "minecraft:entity.player.hurt",
-    "FactionID": 4,
+    "FactionID": 0,
     "Title": "Merchant",
-    "TotalTicksAlive": 48930L,
+    "TotalTicksAlive": 104223L,
     "Rotation": [
-        258.48065f,
+        234.18762f,
         0.0f
     ],
     "ShowName": 1,

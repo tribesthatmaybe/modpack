@@ -1,0 +1,9 @@
+minecraft:obsidian:*, minecraft:obsidian:*, minecraft:obsidian:*, minecraft:obsidian:*
+.
+minecraft:obsidian:*, wildcard, wildcard, minecraft:obsidian:*
+.
+minecraft:obsidian:*, wildcard, wildcard, minecraft:obsidian:*
+.
+minecraft:obsidian:*, wildcard, wildcard, minecraft:obsidian:*
+.
+minecraft:obsidian:*, minecraft:obsidian:*, minecraft:obsidian:*, minecraft:obsidian:*

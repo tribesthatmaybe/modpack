@@ -7,6 +7,7 @@ else
 CIENV = $(VIRTUAL_ENV)/bin/
 endif
 
+
 DOCKER_IMAGE="ghcr.io/tribesthatmaybe/workflow"
 
 versiongen:
@@ -16,6 +17,14 @@ versiongen:
 	cut -f 1 -d '+' < "$(shell pwd)/.version" > "$(shell pwd)/.version-container"
 
 container_build: versiongen
+	mkdir -p deps
+ifdef PACKMAKER
+	rm -rf deps/packmaker && \
+		cp -r $(PACKMAKER) deps/packmaker && \
+		rm -rf deps/packmaker/.git
+else
+	rm -rf deps/packmaker
+endif
 	docker build \
 		--tag $(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		.
