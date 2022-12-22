@@ -1,0 +1,111 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "free_fuel",
+  "items": [
+    {
+      "weight": 0.0739658921957016,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "vehicle:jerry_can",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "fuel": {
+              "nbtType": "float",
+              "nbt": 5000.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.009064221754670143,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "vehicle:industrial_jerry_can",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "fuel": {
+              "nbtType": "float",
+              "nbt": 15000.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.2900550961494446,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "forge:bucketfilled",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "FluidName": {
+              "nbtType": "string",
+              "nbt": "blaze_juice"
+            },
+            "Amount": {
+              "nbtType": "int",
+              "nbt": 1000
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.3978064954280853,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "forge:bucketfilled",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "FluidName": {
+              "nbtType": "string",
+              "nbt": "ender_sap"
+            },
+            "Amount": {
+              "nbtType": "int",
+              "nbt": 1000
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.290178656578064,
+      "min": 4,
+      "max": 13,
+      "item": {
+        "id": "minecraft:coal",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.2900550961494446,
+      "min": 1,
+      "max": 20,
+      "item": {
+        "id": "vc:item_viesoline_pellets",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

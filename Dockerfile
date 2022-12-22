@@ -9,6 +9,9 @@ RUN locale-gen en_US.UTF-8
 RUN DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
 RUN touch /tmp/locales-tho
 
+RUN mkdir /usr/local/etc/ipython
+COPY ipython_config.json /usr/local/etc/ipython
+
 COPY requirements.txt /usr/local/share/ttmb/
 RUN pip3 install -r /usr/local/share/ttmb/requirements.txt
 
@@ -20,5 +23,8 @@ RUN chmod ugo+rx /usr/local/bin/ttmb-render-packmaker
 
 COPY templates/curseforge.conf.j2 /usr/local/share/ttmb/
 RUN chmod ugo+r /usr/local/share/ttmb/curseforge.conf.j2
+
+COPY deps /deps
+RUN if [ -e "/deps/packmaker/setup.py" ] ; then pip3 uninstall -y packmaker && cd /deps/packmaker && python3 setup.py install ; fi
 
 ENTRYPOINT ["ttmb-entrypoint"]

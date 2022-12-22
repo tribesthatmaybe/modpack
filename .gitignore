@@ -8,3 +8,5 @@ devsync.yml
 devtool/__pycache__/
 .version
 .version-container
+deps/packmaker/
+.pdbhistory
