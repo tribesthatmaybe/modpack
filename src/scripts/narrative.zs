@@ -1,5 +1,6 @@
 // some things we tweak bc narratives are important
 import crafttweaker.game.IGame;
+import crafttweaker.item.IItemStack;
 
 <weather2:sand_layer_placeable>.displayName = "Playa Dust";
 //resource-loaded works but this doesn't? odd
@@ -24,6 +25,11 @@ recipes.removeShapeless(<minecraft:book>, [<ore:paper>, <ore:paper>, <ore:paper>
 recipes.removeShapeless(<minecraft:book>, [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>, <minecraft:string>, <tconstruct:pattern>, <tconstruct:pattern>]);
 recipes.addShaped(<minecraft:book>, [[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>],[<minecraft:string>, <tconstruct:pattern>, <minecraft:leather>], [null, null, null]]);
 
+// nature compass
+recipes.remove(<naturescompass:naturescompass>);
+recipes.addShaped(<naturescompass:naturescompass>, [[<botania:manaresource:3>, <mysticalagriculture:crafting:22>, <botania:manaresource:3>],
+						    [<ore:plant>, <minecraft:compass>, <ore:plant>],
+						    [<botania:manaresource:3>, <mysticalagriculture:crafting:22>, <botania:manaresource:3>]]);
 // more leather sources
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<fossil:triceratops_cooked>, 100);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<fossil:allosaurus_cooked>, 100);
@@ -72,3 +78,76 @@ mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<fossil:titanis_cooked>, 10
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<fossil:triceratops_cooked>, 100);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<fossil:tyrannosaurus_cooked>, 100);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<fossil:velociraptor_cooked>, 100);
+
+//// we hide all the behind-the-scenes parts of the tents from jei
+var secretTentParts = [
+    <yurtmod:tentmod_barrier>,
+    <yurtmod:super_dirt>,
+    <yurtmod:yurt_wall_outer>,
+    <yurtmod:yurt_roof>,
+    <yurtmod:yurt_wall_inner>,
+    <yurtmod:bed_wall>,
+    <yurtmod:bed_roof>,
+    <yurtmod:indlu_wall_outer>,
+    <yurtmod:indlu_wall_inner>,
+    <yurtmod:tepee_wall_blank>,
+    <yurtmod:tepee_wall_black>,
+    <yurtmod:tepee_wall_yellow>,
+    <yurtmod:tepee_wall_white>,
+    <yurtmod:tepee_wall_red>,
+    <yurtmod:tepee_wall_orange>,
+    <yurtmod:tepee_wall_hope>,
+    <yurtmod:tepee_wall_sun>,
+    <yurtmod:tepee_wall_creeper>,
+    <yurtmod:tepee_wall_universe>,
+    <yurtmod:tepee_wall_eagle>,
+    <yurtmod:tepee_wall_eagle>,
+    <yurtmod:tepee_wall_triforce>,
+    <yurtmod:tepee_wall_dreamcatcher>,
+    <yurtmod:tepee_wall_rain>,
+    <yurtmod:tepee_wall_magic>,
+    <yurtmod:shamiana_white>,
+    <yurtmod:shamiana_orange>,
+    <yurtmod:shamiana_magenta>,
+    <yurtmod:shamiana_light_blue>,
+    <yurtmod:shamiana_yellow>,
+    <yurtmod:shamiana_lime>,
+    <yurtmod:shamiana_pink>,
+    <yurtmod:shamiana_gray>,
+    <yurtmod:shamiana_silver>,
+    <yurtmod:shamiana_cyan>,
+    <yurtmod:shamiana_purple>,
+    <yurtmod:shamiana_blue>,
+    <yurtmod:shamiana_brown>,
+    <yurtmod:shamiana_green>,
+    <yurtmod:shamiana_red>,
+    <yurtmod:shamiana_black>
+] as IItemStack[];
+for widget in secretTentParts {
+  mods.jei.JEI.removeAndHide(widget);
+}
+//// seasons tho
+recipes.remove(<sereneseasons:greenhouse_glass>);
+recipes.addShaped(<sereneseasons:greenhouse_glass> * 8, [[<minecraft:glass>, <ore:dyeCyan>, <minecraft:glass>],
+						         [<ore:dyeCyan>, <actuallyadditions:block_misc:4>, <ore:dyeCyan>],
+							 [<minecraft:glass>, <ore:dyeCyan>, <minecraft:glass>]]);
+recipes.remove(<sereneseasons:season_clock>);
+recipes.addShaped(<sereneseasons:season_clock>, [[null, <minecraft:quartz>, null],
+						 [<appliedenergistics2:material>, <minecraft:clock>, <appliedenergistics2:material>],
+						 [null, <minecraft:quartz>, null]]);
+recipes.remove(<sereneseasons:season_sensor_spring>);
+recipes.addShaped(<sereneseasons:season_sensor_spring>, [[<minecraft:redstone>, <botania:rune:4>, <minecraft:redstone>],
+							 [<minecraft:redstone>, <sereneseasons:season_clock>, <minecraft:redstone>],
+							 [<minecraft:redstone>, <opencomputers:material:4>, <minecraft:redstone>]]);
+recipes.remove(<sereneseasons:season_sensor_summer>);
+recipes.addShaped(<sereneseasons:season_sensor_summer>, [[<minecraft:redstone>, <botania:rune:5>, <minecraft:redstone>],
+							 [<minecraft:redstone>, <sereneseasons:season_clock>, <minecraft:redstone>],
+							 [<minecraft:redstone>, <opencomputers:material:4>, <minecraft:redstone>]]);
+recipes.remove(<sereneseasons:season_sensor_autumn>);
+recipes.addShaped(<sereneseasons:season_sensor_autumn>, [[<minecraft:redstone>, <botania:rune:6>, <minecraft:redstone>],
+							 [<minecraft:redstone>, <sereneseasons:season_clock>, <minecraft:redstone>],
+							 [<minecraft:redstone>, <opencomputers:material:4>, <minecraft:redstone>]]);
+recipes.remove(<sereneseasons:season_sensor_winter>);
+recipes.addShaped(<sereneseasons:season_sensor_winter>, [[<minecraft:redstone>, <botania:rune:7>, <minecraft:redstone>],
+							 [<minecraft:redstone>, <sereneseasons:season_clock>, <minecraft:redstone>],
+							 [<minecraft:redstone>, <opencomputers:material:4>, <minecraft:redstone>]]);

@@ -38,7 +38,11 @@ Structures are managed with the [Recurrent Complex](https://www.curseforge.com/m
 | `DevContainer_commands` | Easy to access admin / development commands. | DC06 |
 | `DevContainer_greenhouse` | Small self contained plot of land. | DC07 |
 | `DevContainer_cokeoven` | Coke Oven in a Box | DC08 |
-| `DevContainer_ae2` | Hi Tech Storage (pre-seeded for questbook runthrough) | DC09 |
+| `DevContainer_ae2` | Hi Tech Storage (pre-seeded for questbook runthrough) | DC09,DC09a |
+| `DevContainer_ae2_furnace` | AE2 wired furnaces | DC09b |
+| `DevContainer_blastfurnace` | Blast Furnace in a Box | DC10 |
+| `DevContainer_botania` | Botania Magic in a Box | DC11,DC11a |
+| `DevContainer_archaeology` | Dinosaur Laboratory | DC12 |
 
 ## Supplies and Provisions
 

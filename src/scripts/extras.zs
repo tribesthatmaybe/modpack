@@ -21,17 +21,18 @@ recipes.addShaped(<minecraft:dark_oak_door>, [[null, <plants2:planks:2>,
 recipes.addShaped(<minecraft:dark_oak_fence> * 3, [[null, null, null],
 					     [<plants2:planks:2>, <minecraft:stick>, <plants2:planks:2>],
 					     [<plants2:planks:2>, <minecraft:stick>, <plants2:planks:2>]]);
-// can use the paneller to make the rest of the bibliocraft (framed) stuff
-recipes.addShaped(<bibliocraft:furniturepaneler:5>, [[<minecraft:iron_ingot>, <bibliocraft:framingsaw>, <minecraft:iron_ingot>],[<plants2:black_kauri_slab>, <plants2:black_kauri_slab>, <plants2:black_kauri_slab>], [<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>]]);
+// only use the intermediary bits of bibliocraft (see note in droplist.zs)
 // except for the saw
-recipes.addShaped(<bibliocraft:framingsaw>, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, null],[null, <minecraft:iron_ingot>, <plants2:planks:2>], [null, null, <plants2:planks:2>]]);
+recipes.addShaped(<bibliocraft:framingsaw>, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, null],
+					    [null, <minecraft:iron_ingot>, <plants2:planks:2>],
+					    [null, null, <plants2:planks:2>]]);
 // and framing sheets
 recipes.addShapeless(<bibliocraft:framingsheet> * 2, [<plants2:planks:2>, <bibliocraft:framingsaw>]);
 
 // quark dark oak stuff
-recipes.addShaped(<chisel:bookshelf_darkoak>, [[<plants2:black_kauri_stairs>, null, <plants2:black_kauri_stairs>],[<minecraft:book>, <minecraft:book>, <minecraft:book>], [<plants2:black_kauri_stairs>, null, <plants2:black_kauri_stairs>]]);
-// we prefer the dark oak vanilla chest
-recipes.removeShaped(<minecraft:chest>, [[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],[<plants2:planks:2>, null, <plants2:planks:2>], [<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>]]);
+recipes.addShaped(<chisel:bookshelf_darkoak>, [[<plants2:black_kauri_stairs>, null, <plants2:black_kauri_stairs>],
+					       [<minecraft:book>, <minecraft:book>, <minecraft:book>],
+					       [<plants2:black_kauri_stairs>, null, <plants2:black_kauri_stairs>]]);
 
 // maccaws bridges stuff
 recipes.addShaped(<mcwbridges:dark_oak_log_bridge_middle> * 4, [[null, null, null],[<minecraft:dark_oak_fence>, null, <minecraft:dark_oak_fence>], [<plants2:black_kauri_slab>, <plants2:black_kauri_slab>, <plants2:black_kauri_slab>]]);
@@ -43,7 +44,6 @@ recipes.addShaped(<cfm:blinds_dark_oak_open> * 2, [[<plants2:planks:2>, <plants2
 recipes.addShaped(<cfm:desk_dark_oak>, [[<plants2:log_0>, <plants2:log_0>, <plants2:log_0>],[<plants2:planks:2>, null, <plants2:planks:2>], [<plants2:planks:2>, null, <plants2:planks:2>]]);
 recipes.addShaped(<cfm:door_bell_dark_oak>, [[<minecraft:noteblock>, <minecraft:stone_button>, null],[<plants2:log_0>, null, null], [null, null, null]]);
 recipes.addShaped(<cfm:mail_box_dark_oak>, [[<plants2:log_0>, <minecraft:book>, <plants2:log_0>],[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>], [null, <plants2:planks:2>, null]]);
-recipes.addShaped(<cfm:bedside_cabinet_dark_oak>, [[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],[<plants2:planks:2>, <minecraft:chest>, <plants2:planks:2>], [<plants2:planks:2>, <minecraft:chest>, <plants2:planks:2>]]);
 recipes.addShaped(<cfm:blinds_dark_oak_open> * 2, [[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],[<minecraft:stick>, <minecraft:stick>, <minecraft:stick>], [<minecraft:stick>, <minecraft:stick>, <minecraft:stick>]]);
 recipes.addShaped(<cfm:upgraded_gate_dark_oak> * 2, [[<minecraft:dark_oak_fence_gate>, <plants2:log_0>, null],[null, null, null], [null, null, null]]);
 recipes.addShaped(<cfm:upgraded_fence_dark_oak> * 8, [[<minecraft:dark_oak_fence>, <minecraft:dark_oak_fence>, <minecraft:dark_oak_fence>],[<minecraft:dark_oak_fence>, <plants2:log_0>, <minecraft:dark_oak_fence>], [<minecraft:dark_oak_fence>, <minecraft:dark_oak_fence>, <minecraft:dark_oak_fence>]]);
@@ -135,79 +135,3 @@ mods.actuallyadditions.Crusher.addRecipe(<immersiveengineering:metal:10>,
 mods.mekanism.crusher.addRecipe(<geolosys:ore:7>, <immersiveengineering:metal:10>);
 
 
-//// too much storage
-// we prefer iron chest remixes, storage drawers, ae2
-// if we need these in creative need to /give them
-val tooMuchStorage = [
-   <actuallyadditions:block_giant_chest>,
-   <actuallyadditions:block_giant_chest_medium>,
-   <actuallyadditions:block_giant_chest_large>,
-   <actuallyadditions:item_crate_keeper>,
-   <extrautils2:drum:1>,
-   <extrautils2:drum:2>,
-   <extrautils2:drum:3>,
-   <mekanism:basicblock:6>.withTag({tier:0}),
-   <mekanism:basicblock:6>.withTag({tier:1}),
-   <mekanism:basicblock:6>.withTag({tier:2}),
-   <mekanism:basicblock:6>.withTag({tier:3}),
-   <mekanism:basicblock:6>.withTag({tier:4}),
-   <cfm:wall_cabinet:*>,
-   <cfm:crate:*>,
-   <cfm:crate_acacia:*>,
-   <cfm:crate_spruce:*>,
-   <cfm:crate_birch:*>,
-   <cfm:crate_jungle:*>,
-   <cfm:crate_dark_oak:*>,
-   <abyssalcraft:crate>,
-] as IItemStack[];
-
-for widget in tooMuchStorage {
-  recipes.remove(widget);
-  mods.jei.JEI.removeAndHide(widget);
-}
-
-// do not want these at all
-val unncesaryThings = [
-   <vehicle:fuel_drum>,
-   <vehicle:industrial_fuel_drum>,
-   <actuallyadditions:item_chest_to_crate_upgrade>,
-   <actuallyadditions:item_small_to_medium_crate_upgrade>,
-   <actuallyadditions:item_medium_to_large_crate_upgrade>,
-   <cgm:workbench>,         // these are created differently,
-   <cgm:handgun>,           // just use the revolver lol
-   <cgm:rifle>,             // just use the railgun lol
-   <cgm:advanced_ammo>,     // only used by rifle
-   <cfm:counter:*>,         // prefer cooking for blockheads
-   <cfm:counter_sink:*>,
-   <cfm:counter_drawer:*>,
-   <cfm:cabinet_kitchen:*>,
-   <cfm:oven>,
-   <cfm:microwave>,
-   <cfm:toaster>,
-   <cfm:item_bread_slice>,
-   <cfm:chopping_board>,
-   <cfm:item_toast>,
-   <cfm:item_knife>,
-   <cfm:item_cool_pack>,
-   <cfm:dishwasher>,        // kinda op tho
-   <cfm:washing_machine>,
-   <cfm:fairy_light>,       // got a whole mod for this
-   <cfm:bin>,               // prefer extra utils trash
-   <cyclicmagic:trash>,
-   <cfm:computer>,          // op kinda
-   <cfm:printer>,           // def op
-   <cfm:electric_fence>,    // just use ie tho
-   <cfm:white_fence>,
-   <cfm:upgraded_fence_oak>,  // these fences aren't very good
-   <cfm:upgraded_fence_spruce>,
-   <cfm:upgraded_fence_jungle>,
-   <cfm:upgraded_fence_dark_oak>,
-   <toughasnails:fruit_juice:*>,   // use pams
-   <vehicle:traffic_cone>,                    // prefer traffic control cones
-   <actuallyadditions:block_furnace_double>   // too many furnaces
-] as IItemStack[];
-
-for widget in unncesaryThings {
-  recipes.remove(widget);
-  mods.jei.JEI.removeAndHide(widget);
-}

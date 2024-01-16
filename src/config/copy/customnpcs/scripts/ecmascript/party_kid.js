@@ -12,7 +12,12 @@ var partyKidNames=[
   "possum",
   "moist",
   "speedbump",
-  "fluffy"
+  "fluffy",
+  "kitten",
+  "bubbles",
+  "newt",
+  "chuffy",
+  "trash block"
 ];
 
 var partyKidWorldLines = [
@@ -39,7 +44,8 @@ var partyKidInteractLines = [
   "Do you have any water?",
   "Do you know where I can find a grilled cheese?",
   "So I'm looking for this water bottle...",
-  "Do you know where I can get a bike repaired?"
+  "Do you know where I can get a bike repaired?",
+  "Can you grill me a cheese?"
 ];
 
 var partyKidPlayerLines = [
@@ -60,7 +66,11 @@ var partyKidNpcLines = [
   "Can I come back to your camp?",
   "This place is kinda freaky.",
   "Do you have any drugs?",
-  "Do you know where I can find a bar?"
+  "Do you know where I can find a bar?",
+  "I want to be famous for eating things.",
+  "I want to be famous for boofing things.",
+  "Do you know where I can find a grilled cheese?",
+  "I could really go for some sushi."
 ];
 
 function randomElement(someList, p_dupes) {

@@ -4,4 +4,5 @@ category: "HOWTO"
 text: |
   There are two ways of linking button/lever redstone devices.
 
-  The Gauges and Switches module allows you to create a Switch Link Pearl by clicking with an enderpearl on a supported device. You can then use this Switch Link Pearl to remotely link another supported device. The Cyclic mod also brings us the remote lever, which can be associated with an existing lever by right clicking with it on the target. You can also rename this one in an anvil.
+  The Gauges and Switches module allows you to create a Switch Link Pearl by clicking with an enderpearl on a supported device. You can then use this Switch Link Pearl to remotely link another supported device.
+  The Cyclic mod also brings us the remote lever, which can be associated with an existing lever by right clicking with it on the target. You can also rename this one in an anvil.

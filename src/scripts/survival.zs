@@ -2,15 +2,10 @@
 // from https://github.com/McJtyMods/AquaMunda/issues/10#issuecomment-397499883
 recipes.addShapeless(<toughasnails:canteen:2>, [<forge:bucketfilled>.withTag({FluidName: "purified_water", Amount: 1000}),<toughasnails:canteen:*>]);
 recipes.addShapeless(<toughasnails:purified_water_bottle>*3, [<forge:bucketfilled>.withTag({FluidName: "purified_water", Amount: 1000}),<minecraft:glass_bottle>,<minecraft:glass_bottle>,<minecraft:glass_bottle>]);
-recipes.removeShaped(<harvestcraft:freshwateritem>, [[null, null, null],
-						   [null, <ore:listAllwater>, null],
-						   [null, null, null]]);
-recipes.removeShaped(<harvestcraft:freshwateritem> * 8, [[null, null, null],
-						   [null, <minecraft:water_bucket>, null],
-						   [null, null, null]]);
-recipes.addShaped(<harvestcraft:freshwateritem>, [[null, null, null],
-						 [null, <ore:listAllWater>, null],
-						 [null, null, null]]);
+recipes.remove(<harvestcraft:freshwateritem>);
+recipes.addShaped(<harvestcraft:freshwateritem> * 8, [[null, null, null],
+						       [null, <ore:listAllWater>, null],
+						       [null, null, null]]);
 
 // grilling is a matter of survival
 mods.cfm.Grill.addRecipe(<minecraft:cooked_chicken>,<minecraft:chicken>);
@@ -71,13 +66,10 @@ mods.cfm.Grill.addRecipe(<fossil:tyrannosaurus_cooked>,<fossil:tyrannosaurus_mea
 mods.cfm.Grill.addRecipe(<fossil:velociraptor_cooked>,<fossil:velociraptor_meat>);
 
 // magic bean based economy
-recipes.removeShaped(<cyclicmagic:sprout_seed>, [
-  [<minecraft:wheat_seeds>, <minecraft:beetroot_seeds>, <minecraft:wheat_seeds>],
-  [<minecraft:melon_seeds>, <minecraft:emerald>, <minecraft:pumpkin_seeds>],
-  [<minecraft:wheat_seeds>, <minecraft:nether_wart>, <minecraft:wheat_seeds>]
-]);
+recipes.removeShaped(<cyclicmagic:sprout_seed>);
+
 ## seeds, prosperity shard, prudentium
-## todo : figure out how to make this take xp
+## TODO : figure out how to make this take xp
 recipes.addShapeless(<cyclicmagic:sprout_seed>, [<appliedenergistics2:material:10>,<minecraft:wheat_seeds>,<quark:rune>,
 						<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:5>,
 						<mysticalagriculture:crafting:1>,<quark:rune:15>,<minecraft:wheat_seeds>,

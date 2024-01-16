@@ -1,6 +1,41 @@
 import crafttweaker.item.IItemStack;
 // some things get removed because too many things
 
+// pretty sure we can drop these bc we use tinkers for abyssal kit
+// note some of them still need to have their rituals implemented
+val AbyssalWidgets = [
+    <abyssalcraft:apick>,
+    <abyssalcraft:aaxe>,
+    <abyssalcraft:ashovel>,
+    <abyssalcraft:asword>,
+    <abyssalcraft:ahoe>,
+    <abyssalcraft:corpick>,
+    <abyssalcraft:coraxe>,
+    <abyssalcraft:corshovel>,
+    <abyssalcraft:corsword>,
+    <abyssalcraft:corhoe>,
+    <abyssalcraft:dreadiumpickaxe>,
+    <abyssalcraft:dreadiumaxe>,
+    <abyssalcraft:dreadiumshovel>,
+    <abyssalcraft:dreadiumsword>,
+    <abyssalcraft:dreadiumhoe>,
+    <abyssalcraft:ahelmet>,
+    <abyssalcraft:aplate>,
+    <abyssalcraft:alegs>,
+    <abyssalcraft:aboots>,
+    <abyssalcraft:corhelmet>,
+    <abyssalcraft:corplate>,
+    <abyssalcraft:corlegs>,
+    <abyssalcraft:corboots>,
+    <abyssalcraft:dreadiumhelmet>,
+    <abyssalcraft:dreadiumplate>,
+    <abyssalcraft:dreadiumlegs>,
+    <abyssalcraft:dreadiumboots>
+] as IItemStack[];
+for widget in AbyssalWidgets {
+  recipes.remove(widget);
+  mods.jei.JEI.removeAndHide(widget);
+}
 // we want mystical agriculture for the post scarcity vibes
 val MystiWidgets = [
                     # tools
@@ -164,7 +199,7 @@ var NarrativeTho = [
     <animalbikes:ocelotbike>,
     <animalbikes:slimebike>,
     <animalbikes:witherbike>,
-    <cyclicmagic:mattock>,
+//    <cyclicmagic:mattock>,
     <actuallyadditions:block_greenhouse_glass>,
     <projectred-core:resource_item:301>,
     <projectred-core:resource_item:310>,
@@ -180,7 +215,14 @@ var NarrativeTho = [
     <betterbuilderswands:wandunbreakable:12>,
     <betterbuilderswands:wandunbreakable:13>,
     <betterbuilderswands:wandunbreakable:14>,
-    <actuallyadditions:item_misc>
+    <actuallyadditions:item_misc>,
+//    <abyssalcraft:ironp>,           // preferring pam's for majority of food stuff
+//    <abyssalcraft:dirtyplate>,
+//    <abyssalcraft:cloth>,
+    <bibliocraft:cookiejar>,
+    <cfm:cookie_jar>,
+    <cfm:esky:*>,
+    <actuallyadditions:block_misc:7>   // no idea what this "casing" is supposed to be used for?
 ] as IItemStack[];
 for widget in NarrativeTho {
   mods.jei.JEI.removeAndHide(widget);
@@ -218,7 +260,7 @@ var tooManyTools = [
     <botania:manasteelpick>,
     <botania:elementiumpick>,
     <botania:glasspick>,
-    <cyclicmagic:netherbrick_pickaxe>,
+//    <cyclicmagic:netherbrick_pickaxe>,
     <immersiveengineering:pickaxe_steel>,
     <mysticalworld:copper_pickaxe>,
     <mysticalworld:silver_pickaxe>,
@@ -227,14 +269,14 @@ var tooManyTools = [
     <plants2:dark_crystal_pickaxe>,
     <botania:manasteelshovel>,
     <botania:elementiumshovel>,
-    <cyclicmagic:netherbrick_spade>,
+//    <cyclicmagic:netherbrick_spade>,
     <immersiveengineering:shovel_steel>,
     <mysticalworld:copper_shovel>,
     <mysticalworld:silver_shovel>,
     <mysticalworld:amethyst_shovel>,
     <plants2:crystal_shovel>,
     <plants2:dark_crystal_shovel>,
-    <cyclicmagic:netherbrick_hoe>,
+//    <cyclicmagic:netherbrick_hoe>,
     <immersiveengineering:hoe_steel>,
     <mysticalworld:copper_hoe>,
     <mysticalworld:silver_hoe>,
@@ -243,18 +285,63 @@ var tooManyTools = [
     <plants2:dark_crystal_hoe>,
     <botania:elementiumaxe>,
     <botania:manasteelaxe>,
-    <cyclicmagic:netherbrick_axe>,
+//    <cyclicmagic:netherbrick_axe>,
     <immersiveengineering:axe_steel>,
     <mysticalworld:copper_axe>,
     <mysticalworld:silver_axe>,
     <mysticalworld:amethyst_axe>,
     <plants2:crystal_axe>,
     <plants2:dark_crystal_axe>,
-    <cyclicmagic:tool_harvest_crops>,
-    <cyclicmagic:tool_harvest_weeds>,
+//    <cyclicmagic:tool_harvest_crops>,
+//    <cyclicmagic:tool_harvest_weeds>,
     <plants2:dark_crystal_sword>,
     <plants2:crystal_sword>,
-    <botania:manasteelsword>
+    <botania:manasteelsword>,
+//    <cyclicmagic:block_screen>,   // also these don't really work?
+//    <cyclicmagic:screen_target>,
+    <mekanism:walkietalkie>,
+    <extrautils2:passivegenerator>,  // not using any eu2 gp
+    <extrautils2:passivegenerator:1>,
+    <extrautils2:passivegenerator:2>,
+    <extrautils2:passivegenerator:3>,
+    <extrautils2:passivegenerator:4>,
+    <extrautils2:passivegenerator:5>,
+    <extrautils2:passivegenerator:6>,
+    <extrautils2:passivegenerator:7>,
+    <extrautils2:passivegenerator:8>,
+    <extrautils2:poweroverload>,
+    <extrautils2:decorativesolid:8>,
+    <extrautils2:ingredients:1>,
+    <extrautils2:interactionproxy>,
+    <extrautils2:powerbattery>,
+    <extrautils2:powertransmitter>,
+    <extrautils2:ingredients:13>,
+    <extrautils2:redstonelantern>,
+    <extrautils2:ingredients:4>,
+    <extrautils2:enderlilly>,
+    <extrautils2:powermanager>,
+    <extrautils2:scanner>,
+    <extrautils2:indexerremote>,
+    <extrautils2:ingredients:16>,
+    <extrautils2:ingredients:15>,
+    <openblocks:imaginary:*>,
+    <extrautils2:lawsword>,
+    <extrautils2:opinium:5>,
+    <extrautils2:opinium:8>,
+    <extrautils2:opinium:7>,
+    <extrautils2:opinium>,
+    <extrautils2:opinium:7>,
+    <extrautils2:opinium:1>,
+    <extrautils2:opinium:3>,
+    <extrautils2:ingredients:6>,
+    <extrautils2:ingredients:7>,
+    <extrautils2:ingredients:8>,
+    <extrautils2:ingredients:9>,
+    <botania:waterbowl>,
+    <actuallyadditions:item_chest_to_crate_upgrade>,
+    <actuallyadditions:item_small_to_medium_crate_upgrade>,
+    <actuallyadditions:item_medium_to_large_crate_upgrade>,
+    <vc:airship_workbench>
 ] as IItemStack[];
 
 for widget in tooManyTools {
@@ -267,7 +354,25 @@ var tooMuchEquipment = [
     <actuallyadditions:item_misc:23>,
     <actuallyadditions:item_misc:24>,
     <actuallyadditions:block_oil_generator>,
-    <extrautils2:decorativesolid>
+    <extrautils2:decorativesolid>,
+    <immersivetech:metal_trash:2>,
+    <immersivetech:metal_trash:1>,
+    <immersivetech:metal_trash>,
+    <actuallyadditions:block_enervator>,
+    <actuallyadditions:block_energizer>,
+    <extrautils2:redstoneclock>,
+    <extrautils2:user>,
+    <openblocks:path>,
+    <extrautils2:trashchest>,
+    <mysticalworld:copper_helmet>,
+    <mysticalworld:copper_chestplate>,
+    <mysticalworld:copper_leggings>,
+    <mysticalworld:copper_boots>,
+    <mysticalworld:silver_helmet>,
+    <mysticalworld:silver_chestplate>,
+    <mysticalworld:silver_leggings>,
+    <mysticalworld:silver_boots>,
+    <mysticalworld:copper_sword>
 ] as IItemStack[];
 
 for widget in tooMuchEquipment {
@@ -482,3 +587,103 @@ recipes.removeShaped(<minecraft:leather_chestplate>, [[<harvestcraft:wovencotton
 						     [<harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>, <harvestcraft:wovencottonitem>]]);
 recipes.removeShaped(<minecraft:leather_boots>, [[<harvestcraft:wovencottonitem>, null, <harvestcraft:wovencottonitem>],
 						[<harvestcraft:wovencottonitem>, null, <harvestcraft:wovencottonitem>]]);
+
+// sadly, bibliocraft stuff is super funky and will often render oddly or straight-up crash
+// some we can breakup with others we can not
+// i can't break up with the clipboard or big book tho let alone bookshelves
+// or aesthetic tables
+var ripBibliocraft = [
+    <bibliocraft:lanterngold:*>,
+    <bibliocraft:lanterniron:*>,
+    <bibliocraft:lampgold:*>,
+    <bibliocraft:lampiron:*>,
+    <bibliocraft:fancysign:*>,
+    <bibliocraft:fancyworkbench:*>,
+    <bibliocraft:toolrack:*>,
+    <bibliocraft:label:*>,
+    <bibliocraft:case:*>,
+    <bibliocraft:shelf:*>,
+    <bibliocraft:bookcasecreative:*>,
+    <bibliocraft:swordpedestal:*>
+] as IItemStack[];
+for widget in ripBibliocraft {
+  recipes.remove(widget);
+  mods.jei.JEI.removeAndHide(widget);
+}
+
+//// too much storage
+// we prefer iron chest remixes, storage drawers, ae2
+// if we need these in creative need to /give them
+val tooMuchStorage = [
+   <actuallyadditions:block_giant_chest>,
+   <actuallyadditions:block_giant_chest_medium>,
+   <actuallyadditions:block_giant_chest_large>,
+   <actuallyadditions:item_crate_keeper>,
+   <extrautils2:drum:1>,
+   <extrautils2:drum:2>,
+   <extrautils2:drum:3>,
+   <mekanism:basicblock:6>.withTag({tier:0}),
+   <mekanism:basicblock:6>.withTag({tier:1}),
+   <mekanism:basicblock:6>.withTag({tier:2}),
+   <mekanism:basicblock:6>.withTag({tier:3}),
+   <mekanism:basicblock:6>.withTag({tier:4}),
+   <cfm:wall_cabinet:*>,
+   <cfm:crate:*>,
+   <cfm:crate_acacia:*>,
+   <cfm:crate_spruce:*>,
+   <cfm:crate_birch:*>,
+   <cfm:crate_jungle:*>,
+   <cfm:crate_dark_oak:*>,
+   <abyssalcraft:crate>,
+] as IItemStack[];
+
+for widget in tooMuchStorage {
+  recipes.remove(widget);
+  mods.jei.JEI.removeAndHide(widget);
+}
+
+// do not want these at all
+val unncesaryThings = [
+   <vehicle:fuel_drum>,
+   <vehicle:industrial_fuel_drum>,
+   <actuallyadditions:item_chest_to_crate_upgrade>,
+   <actuallyadditions:item_small_to_medium_crate_upgrade>,
+   <actuallyadditions:item_medium_to_large_crate_upgrade>,
+   <cgm:workbench>,         // these are created differently,
+   <cgm:handgun>,           // just use the revolver lol
+   <cgm:rifle>,             // just use the railgun lol
+   <cgm:advanced_ammo>,     // only used by rifle
+   <cfm:counter:*>,         // prefer cooking for blockheads
+   <cfm:counter_sink:*>,
+   <cfm:counter_drawer:*>,
+   <cfm:cabinet_kitchen:*>,
+   <cfm:oven>,
+   <cfm:microwave>,
+   <cfm:toaster>,
+   <cfm:item_bread_slice>,
+   <cfm:chopping_board>,
+   <cfm:item_toast>,
+   <cfm:item_knife>,
+   <cfm:item_cool_pack>,
+   <cfm:dishwasher>,        // kinda op tho
+   <cfm:washing_machine>,
+   <cfm:fairy_light>,       // got a whole mod for this
+   <cfm:bin>,               // prefer extra utils trash
+//   <cyclicmagic:trash>,
+   <cfm:computer>,          // op kinda
+   <cfm:printer>,           // def op
+   <cfm:electric_fence>,    // just use ie tho
+   <cfm:white_fence>,
+   <cfm:upgraded_fence_oak>,  // these fences aren't very good
+   <cfm:upgraded_fence_spruce>,
+   <cfm:upgraded_fence_jungle>,
+   <cfm:upgraded_fence_dark_oak>,
+   <toughasnails:fruit_juice:*>,   // use pams
+   <vehicle:traffic_cone>,                    // prefer traffic control cones
+   <actuallyadditions:block_furnace_double>   // too many furnaces
+] as IItemStack[];
+
+for widget in unncesaryThings {
+  recipes.remove(widget);
+  mods.jei.JEI.removeAndHide(widget);
+}

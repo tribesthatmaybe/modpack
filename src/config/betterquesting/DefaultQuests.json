@@ -454,6 +454,15 @@
               "Count:3": 8,
               "Damage:2": 20,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:tool",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:crafting"
@@ -658,13 +667,13 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "*Exo-Dermis",
-          "desc:8": "Alright, class! Today we\u0027re learning how to make leather!\n\nCheck JEI for all the ways you can make leather but two early methods are combining four rabbit skins in a crafting table or putting rotten flesh in a furnace. If you don\u0027t remember what JEI is then go back and check the early §eSuch a User§r quest. It covers a lot of important game tools such as the map, JEI, and others!\n\nYour reward includes a new piece of gameplay lore on some of the possibilities you have for customizing your avatar."
+          "desc:8": "Alright, class! Today we\u0027re learning how to make leather!\n\nCheck JEI for all the ways you can make leather but the best early game method is combining four rabbit skins in a crafting table. If you are feeling flush with food, you can also use a Drying Rack and hang out some cooked meat (such as rabbit). If you don\u0027t remember what JEI is then go back and check the early §eSuch a User§r quest. It covers a lot of important game tools such as the map, JEI, and others!\n\nYour reward includes a new piece of gameplay lore on some of the possibilities you have for customizing your avatar."
         }
       },
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "allowSmelt:1": 1,
+          "allowSmelt:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
           "allowCraft:1": 1,
@@ -1032,7 +1041,7 @@
               },
               "id:8": "bibliocraft:bookcase",
               "Count:3": 1,
-              "Damage:2": 2,
+              "Damage:2": 4,
               "OreDict:8": ""
             },
             "3:10": {
@@ -1041,7 +1050,7 @@
               },
               "id:8": "bibliocraft:bookcase",
               "Count:3": 1,
-              "Damage:2": 3,
+              "Damage:2": 2,
               "OreDict:8": ""
             }
           }
@@ -1086,7 +1095,7 @@
         "0:10": {
           "name:8": "Fuel Cache",
           "index:3": 0,
-          "dimension:3": 1001,
+          "dimension:3": 0,
           "structure:8": "fuel_cache",
           "taskID:8": "bq_msi:location",
           "hideInfo:1": 0
@@ -1565,7 +1574,8 @@
     "19:10": {
       "questID:3": 19,
       "preRequisites:11": [
-        15
+        15,
+        79
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2008,7 +2018,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "*Closing Tiiime!",
-          "desc:8": "Alright, the time for hand holding is just about over.\n\nFrom now on, the quests are going to get pared down to only the essentials.\n\nBeing that it\u0027s almost time to leave in search of a suitable home and the fact that you\u0027ve gotten this far, I\u0027m sure you can manage.\n\nBut how are you supposed to get where you\u0027re going with all the possessions you\u0027ve surely gathered by now?\n\nWell, unless you want to practice extreme minimalism and discard everything you own, you\u0027re going to need a backpack.\n\n§\n§n§n§r§nTask 1§r: Make yourself a backpack.\n\n*The crate you receive as a reward for this quest will keep its contents when picked up, making it perfect for travel.\n\n*Will incorporate some of duplicate quest text;\n\nIt takes a lot of supplies and preparation to have a good time. You are going to need more than your pockets and your tool belt. The simple backpack can be upgrade as you gain access to more advanced materials. Always make sure to empty it before you upgrade!\n\nTo put it on, bring up your inventory (default key \"e\"). Click on the baubles icon (a little ring in the upper right of your avatar display). Shift-click the backpack and you will now be wearing it (assuming nothing was already in the back slot)."
+          "desc:8": "Alright, the time for hand holding is just about over.\n\nFrom now on, the quests are going to get pared down to only the essentials.\n\nBeing that it\u0027s almost time to leave in search of a suitable home and the fact that you\u0027ve gotten this far, I\u0027m sure you can manage.\n\nBut how are you supposed to get where you\u0027re going with all the possessions you\u0027ve surely gathered by now?\n\nWell, unless you want to practice extreme minimalism and discard everything you own, you\u0027re going to need a backpack.\n\n§\n§n§n§r§nTask 1§r: Make yourself a backpack.\n\n*The crate you receive as a reward for this quest will keep its contents when picked up, making it perfect for travel.\n\n*Will incorporate some of duplicate quest text;\n\nIt takes a lot of supplies and preparation to have a good time. You are going to need more than your pockets and your tool belt. The simple backpack can be upgrade as you gain access to more advanced materials. Always make sure to empty it before you upgrade!\n\nTo put it on, bring up your inventory (default key \"e\"). Click on the baubles icon (a little ring in the upper right of your avatar display). Shift-click the backpack and you will now be wearing it (assuming nothing was already in the back slot). When you are wearing it as a bauble you can open it via a hotkey (default \"b\")."
         }
       },
       "tasks:9": {
@@ -2058,6 +2068,21 @@
               },
               "id:8": "immersiveengineering:wooden_device0",
               "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "backpack",
+                  "category:8": "Equipment"
+                }
+              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -2123,7 +2148,7 @@
                 },
                 "mekData:10": {
                   "security:3": 0,
-                  "ownerUUID:8": "1630dad8-2f68-4eec-b363-54fe2366b225",
+                  "ownerUUID:8": "dd7af4ea-1c10-42b1-bc3c-d72126685293",
                   "fluidTank:10": {
                     "FluidName:8": "purified_water",
                     "Amount:3": 14000
@@ -2254,6 +2279,27 @@
           "rewardID:8": "bq_standard:xp",
           "isLevels:1": 1,
           "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "toolbelt",
+                  "category:8": "Equipment"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -2327,7 +2373,8 @@
     "27:10": {
       "questID:3": 27,
       "preRequisites:11": [
-        15
+        15,
+        79
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -2462,7 +2509,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -3251,7 +3298,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Shelf It",
-          "desc:8": "If you are the kind of logistics fetishist I think you are then some of the first todo items on your clipboard are related to sustainable storing the rapidly escalating amount of blocks you have collected. Storage Drawers are a great way of doing so and they can be expanded and make use of late game tech as well!\n\nThe framing table may be used with framed drawers to use any kind of wood for your drawers. You can actually mix and match the different kinds of wood as well to make patterns if you would like"
+          "desc:8": "If you are the kind of logistics fetishist I think you are then some of the first todo items on your clipboard are related to sustainably storing the rapidly escalating amount of blocks you have collected. Storage Drawers are a great way of doing so and they can be expanded, upgraded,  and are compatible with advanced tech.\n\nThe framing table may be used with framed drawers to use any kind of wood for your drawers. You can actually mix and match the different kinds of wood as well to make patterns if you would like."
         }
       },
       "tasks:9": {
@@ -3744,7 +3791,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Sleep The Day Away",
-          "desc:8": "The only thing better than a good nights sleep is spending the day in a hammock.\n\nTo hang a hammock you need two rope \u0026 nails. And some hammock cloth. And some trees.\n\nYou can place the role and nail into the trees. Make sure there is a straight line between them (along the N/S or E/W axis). Once you\u0027ve done that, right click with the hammock cloth on one of the nails. The max distance is about five blocks.\n\nSweet day dreams."
+          "desc:8": "The only thing better than a good nights sleep is spending the day in a hammock.\n\nTo hang a hammock you need two rope \u0026 nails. And some hammock cloth. And some trees.\n\nYou can place the role and nail into some logs. Trees make a good target. Make sure there is a straight line between them (along the N/S or E/W axis). Once you\u0027ve done that, right click with the hammock cloth on one of the nails. The max distance is about five blocks. Note that while you can put the nails in other blocks, you can\u0027t make a hammock that way.\n\nSweet day dreams."
         }
       },
       "tasks:9": {
@@ -3869,9 +3916,9 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "bibliocraft:lampiron",
+              "id:8": "cfm:lamp_off",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 15,
               "OreDict:8": ""
             },
             "1:10": {
@@ -5698,8 +5745,8 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "harvestcraft:fruitcakeitem",
-              "Count:3": 3,
+              "id:8": "mysticalworld:stewed_eggplant",
+              "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -7580,7 +7627,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Metal Worker",
-          "desc:8": "Find a nice (permanent, it\u0027s a pain to move) place for your smeltery. The Materials and You book, which you should already have, contains information on how to build the smeltery and what the different pieces do. I\u0027d recommend taking a look through that book because the smeltery can be a bit confusing the first time.\n\nStart by creating a 3x3 bottom layer of smeltery bricks in your floor. Now, create the first layer of the walls. The walls should not be placed on top of the floor - you should end up with a 3x3x2 space within the smeltery. Place the tank on the bottom layer, the controller and a drain on the top layer.\n\nOnce you have created the casting table place it under the drain and place the faucet on to the drain.\n\nYou will need a metal bucket to transfer lava from the world (if you haven\u0027t found any on the surface there is plenty underground) to the tank."
+          "desc:8": "Find a nice (permanent, it\u0027s a pain to move) place for your smeltery. The Materials and You book, which you should already have, contains information on how to build the smeltery and what the different pieces do. I\u0027d recommend taking a look through that book because the smeltery can be a bit confusing the first time.\n\nStart by creating a 3x3 bottom layer of smeltery bricks in your floor. Now, create the first layer of the walls. The walls should not be placed on top of the floor - you should end up with a 3x3x2 space within the smeltery. Place the tank on the bottom layer, the controller and a drain on the top layer.\n\nOnce you have created the casting table place it under the drain and place the faucet on to the drain. Until you expand your smeltery, you will need to swap the casting table and basin depending on whether you want parts or blocks.\n\nYou will need a metal bucket to transfer lava from the world (if you haven\u0027t found any on the surface there is plenty underground) to the tank."
         }
       },
       "tasks:9": {
@@ -7596,18 +7643,8 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "tconstruct:toolforge",
+              "id:8": "tconstruct:casting",
               "Count:3": 1,
-              "tag:10": {
-                "textureBlock:10": {
-                  "ForgeCaps:10": {
-                    "customnpcs:itemscripteddata:10": {}
-                  },
-                  "id:8": "minecraft:iron_block",
-                  "Count:1": 1,
-                  "Damage:2": 0
-                }
-              },
               "Damage:2": 0,
               "OreDict:8": ""
             },
@@ -7615,7 +7652,7 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "tconstruct:casting",
+              "id:8": "tconstruct:faucet",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -7624,9 +7661,9 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "tconstruct:faucet",
+              "id:8": "tconstruct:casting",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           },
@@ -7686,7 +7723,7 @@
             },
             "id:8": "ironchest:iron_chest",
             "Count:3": 1,
-            "Damage:2": 2,
+            "Damage:2": 4,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -8936,7 +8973,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Our First Cast",
-          "desc:8": "In order to make parts on the casting table you need casts. Single use casts can be made out of clay. Multi use casts can be made out of aluminum. You can keep casts in Parts Chests but note you can\u0027t mix stencils/clay/normal casts in the same chest.\n\nThrow some clay in your smeltery. You will need four pieces for this.\n\nCraft a sharpening kit and large plate in your tool station, it doesn\u0027t matter what material it\u0027s made out of, but err on the cheap side, it will be consumed during this process.\n\nPlace the sharpening kit on the casting table by right clicking. Right click on the faucet you have installed on a drain above the casting basin. Some clay will come out and you will end up with a single-use cast of a repair kit. Now place the large plate on the casting basin and pour the rest of the clay in."
+          "desc:8": "In order to make metal parts on the casting table you need casts and a tool forge. Single use casts can be made out of clay. Multi use casts can be made out of aluminum. You can keep casts in Parts Chests but note you can\u0027t mix stencils/clay/normal casts in the same chest.\n\nThrow some clay in your smeltery. You will need four pieces for this.\n\nCraft a tough binding and large plate in your tool station, it doesn\u0027t matter what material it\u0027s made out of, but err on the cheap side, it will be consumed during this process.\n\nPlace the sharpening kit on the casting table by right clicking. Right click on the faucet you have installed on a drain above the casting basin. Some clay will come out and you will end up with a single-use cast of a repair kit. Now place the large plate on the casting basin and pour the rest of the clay in.\n\nYou can use the casting basin to make the blocks needed for the tool forge."
         }
       },
       "tasks:9": {
@@ -8967,13 +9004,43 @@
               "id:8": "tconstruct:clay_cast",
               "Count:3": 1,
               "tag:10": {
-                "PartType:8": "tconstruct:sharpening_kit"
+                "PartType:8": "tconstruct:tough_binding"
               },
               "Damage:2": 0,
               "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:toolforge",
+              "Count:3": 1,
+              "tag:10": {
+                "textureBlock:10": {
+                  "ForgeCaps:10": {
+                    "customnpcs:itemscripteddata:10": {}
+                  },
+                  "id:8": "minecraft:iron_block",
+                  "Count:1": 1,
+                  "Damage:2": 0
+                }
+              },
+              "Damage:2": 32767,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
         }
       },
       "rewards:9": {
@@ -9033,7 +9100,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "A Nice Blend",
-          "desc:8": "The smeltery can be used to combine materials and create alloys. The first alloy we will make is aluminum brass as it can be used to create casts which do not get consumed. It takes a 3:1 ratio of Aluminum (found in Bauxite deposits) and Copper (found in Malachite and Azurite deposits). Remember the doubling effect of the smeltery on ore when creating alloys.\n\nPut all the materials in to the smeltery and wait for them to melt. Once that has occured then you need to wait for the alloying to happen. Once that has occured you can use resulting alloy to cast things."
+          "desc:8": "The smeltery can be used to combine materials and create alloys. The first alloy we will make is aluminum brass as it can be used to create casts which do not get consumed. It takes a 3:1 ratio of Aluminum (found in Bauxite deposits) and Copper (found in Malachite and Azurite deposits). Remember the doubling effect of the smeltery on ore when creating alloys.\n\nPut all the materials in to the smeltery and wait for them to melt. Once that has occured then you need to wait for the alloying to happen. Once that has occured you can use resulting alloy to cast things. You should start by making a plate cast."
         }
       },
       "tasks:9": {
@@ -9052,6 +9119,15 @@
               "id:8": "tconstruct:ingots",
               "Count:3": 2,
               "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:cast_custom",
+              "Count:3": 1,
+              "Damage:2": 3,
               "OreDict:8": ""
             }
           },
@@ -10134,6 +10210,25 @@
               },
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "conarm:armorforge",
+              "Count:3": 1,
+              "tag:10": {
+                "textureBlock:10": {
+                  "ForgeCaps:10": {
+                    "customnpcs:itemscripteddata:10": {}
+                  },
+                  "id:8": "minecraft:iron_block",
+                  "Count:1": 1,
+                  "Damage:2": 0
+                }
+              },
+              "Damage:2": 32767,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:crafting"
@@ -10311,9 +10406,9 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "bibliocraft:furniturepaneler",
+            "id:8": "bibliocraft:bookcase",
             "Count:3": 1,
-            "Damage:2": 6,
+            "Damage:2": 5,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -10322,8 +10417,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Libraries of Stuff",
-          "desc:8": "Bibliocraft gives us plenty of items both aesthetic and quite useful. Much of the furniture cannot be made normally with the wood that is native to the Block Rock Desert, but you can craft it with framing boards - which you can turn Black Kaurai planks into. Make yourself a Framed Workbench. You can then use this to apply any plank to the framed furniture you will then create."
+          "name:8": "A Growing Library",
+          "desc:8": "You will continue to collect books as you learn more about this world. Some of these books will help you build things, some of them will help you enchant things, some will help you remember things, and at least one will result in your agonizing death.\n\nYou can use book shelves to store these books, along with other forms of media you may create or find."
         }
       },
       "tasks:9": {
@@ -10339,32 +10434,16 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "bibliocraft:furniturepaneler",
+              "id:8": "bibliocraft:bookcase",
               "Count:3": 1,
-              "Damage:2": 6,
+              "Damage:2": 5,
               "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {
-        "0:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 1,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "bibliocraft:framingsheet",
-              "Count:3": 16,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        }
-      }
+      "rewards:9": {}
     },
     "105:10": {
       "questID:3": 105,
@@ -11234,7 +11313,8 @@
     "113:10": {
       "questID:3": 113,
       "preRequisites:11": [
-        104
+        36,
+        716
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11243,15 +11323,16 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "bibliocraft:bookcase",
+            "id:8": "openblocks:luggage",
             "Count:3": 1,
-            "Damage:2": 5,
+            "tag:10": {},
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -11260,14 +11341,14 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Precious Shelves",
-          "desc:8": "Using the furniture paneler you can color the bibliocraft framed furniture with planks. This is how we make use of the Black Kauri wood to make things.\n\nLet\u0027s make a book case. You should already have one book case but once we start exploring mystcraft dimensions, we are going to need a lot more books."
+          "name:8": "Luggage!",
+          "desc:8": "Luggage is a companion who will gobble up any items around it. Luggage will follow you around and act as a medium sized chest. Luggage is pretty much invincible from enemy damage but you probably don\u0027t want luggage to fall off the world or intro a pit of lava. Luggage will follow you around quite quickly once you get a few dozen blocks away. You can pick luggage up with a \"Shift-Right Click\"."
         }
       },
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "allowSmelt:1": 1,
+          "allowSmelt:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
           "allowCraft:1": 1,
@@ -11277,9 +11358,10 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "bibliocraft:bookcase",
+              "id:8": "openblocks:luggage",
               "Count:3": 1,
-              "Damage:2": 6,
+              "tag:10": {},
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -11295,7 +11377,16 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:knowledge_book",
+              "id:8": "harvestcraft:boiledeggitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:stone",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -11374,6 +11465,27 @@
           "rewardID:8": "bq_standard:xp",
           "isLevels:1": 1,
           "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "nomadictent",
+                  "category:8": "Equipment"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -11553,7 +11665,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -11626,7 +11738,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -11849,7 +11961,7 @@
     "121:10": {
       "questID:3": 121,
       "preRequisites:11": [
-        79
+        80
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11864,13 +11976,9 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "forge:bucketfilled",
+            "id:8": "ironchest:iron_chest",
             "Count:3": 1,
-            "tag:10": {
-              "FluidName:8": "steel",
-              "Amount:3": 1000
-            },
-            "Damage:2": 0,
+            "Damage:2": 2,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -11879,8 +11987,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Double or Nothing",
-          "desc:8": "The Smeltery will melt things down for you. It will actually result in a doubling effect compared to just smelting things in a furnace. While there are advanced technologies which can eventually get you up to 5x ore efficiency, that will be a little while off.\n\nFor now, use the casting basin to pour out entier blocks (nine ingots) worth of ore and be a bit more efficient with your life."
+          "name:8": "Upgrade in Place",
+          "desc:8": "There are so many things to store, so many ways to organize them, and did we mention there are so many things to store.\n\nSometimes you won\u0027t want to empty a chest/bin in order to make it larger. When you find yourself in this position, consider making a chest upgrade. This will convert a storage chest/bin into the next tier.\n\nSometimes you just want to store a single item. Using the tiny chest you get as a reward, you can do just that.\n\nThere are so many storage options, remember you can search through JEI to see all of them. Always remember you can check the entry under \"Gameplay\" in your journal for a refresher."
         }
       },
       "tasks:9": {
@@ -11896,9 +12004,9 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "tconstruct:casting",
+              "id:8": "ironchest:copper_iron_chest_upgrade",
               "Count:3": 1,
-              "Damage:2": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -11907,23 +12015,14 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:choice",
+          "rewardID:8": "bq_standard:item",
           "index:3": 0,
-          "choices:9": {
+          "rewards:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:iron_block",
-              "Count:3": 2,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "minecraft:gold_block",
+              "id:8": "extrautils2:minichest",
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
@@ -11935,7 +12034,8 @@
     "122:10": {
       "questID:3": 122,
       "preRequisites:11": [
-        61
+        61,
+        79
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11944,7 +12044,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -12691,7 +12791,7 @@
             "Damage:2": 0,
             "OreDict:8": ""
           },
-          "wildcardOptimization:1": 0,
+          "wildcardOptimization:1": 1,
           "length:3": 1,
           "index:3": 0,
           "imageLocation:8": "",
@@ -12763,7 +12863,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Let the power move you",
-          "desc:8": "You will need to attach your atomic reconstructor to your coal generator somehow. Make a LV (low voltage) copper coil and some LV  connectors. Attach the LV connectors to the two machines within line of sight of each other. With the LV coil in your hand, right click on tne LV connectors one at a time to link them.\n\nNote that these wires have limited range and must have clear line of sight. If there are obstructions, they will be illuminated red.\n\nTake a look in your engineers manual if this is still confusing."
+          "desc:8": "You will need to attach your atomic reconstructor to your coal generator somehow. Make a LV (low voltage) copper coil and some LV  connectors. Attach the LV connectors to the two machines within line of sight of each other. With the LV coil in your hand, right click on tne LV connectors one at a time to link them.\n\nNote that these wires have limited range and must have clear line of sight and have a finite range. If there are obstructions, they will be illuminated red. Be careful when running wires outside in the desert as the build up of playa dust over time §owill§r disrupt your wires.\n\nTake a look in your engineers manual if this is still confusing."
         }
       },
       "tasks:9": {
@@ -12956,6 +13056,79 @@
       }
     },
     "135:10": {
+      "questID:3": 135,
+      "preRequisites:11": [
+        66
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:mirror",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Such a pretty thing.",
+          "desc:8": "It\u0027s a mirror. So you can admire how cute you are.\n\nHere, have a painting, so you can surround yourself with art."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:mirror",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:painting",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "136:10": {
       "questID:3": 136,
       "preRequisites:11": [
         218
@@ -12997,7 +13170,7 @@
       },
       "rewards:9": {}
     },
-    "136:10": {
+    "137:10": {
       "questID:3": 137,
       "preRequisites:11": [
         365
@@ -13039,7 +13212,7 @@
       },
       "rewards:9": {}
     },
-    "137:10": {
+    "138:10": {
       "questID:3": 138,
       "preRequisites:11": [],
       "properties:10": {
@@ -13079,7 +13252,7 @@
       },
       "rewards:9": {}
     },
-    "138:10": {
+    "139:10": {
       "questID:3": 139,
       "preRequisites:11": [
         134
@@ -13170,7 +13343,7 @@
         }
       }
     },
-    "139:10": {
+    "140:10": {
       "questID:3": 140,
       "preRequisites:11": [
         335
@@ -13212,7 +13385,7 @@
       },
       "rewards:9": {}
     },
-    "140:10": {
+    "141:10": {
       "questID:3": 141,
       "preRequisites:11": [
         377
@@ -13254,7 +13427,7 @@
       },
       "rewards:9": {}
     },
-    "141:10": {
+    "142:10": {
       "questID:3": 142,
       "preRequisites:11": [
         369
@@ -13296,7 +13469,118 @@
       },
       "rewards:9": {}
     },
-    "142:10": {
+    "143:10": {
+      "questID:3": 143,
+      "preRequisites:11": [
+        66
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cfm:blinds_open",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Me Time",
+          "desc:8": "Sometimes you want a little privacy, and need to cover up the windows. Make yourself a window blind.\n\nPick one, and make it, and get another optional-privacy-barrier as a reward. You have a choice of the same blinds, or single block high or a double block high curtain to choose from."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:blinds_dark_oak_open",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:curtains_open",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "malisisdoors:curtain_white",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:curtains_open",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cfm:blinds_dark_oak_open",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "144:10": {
       "questID:3": 144,
       "preRequisites:11": [
         204
@@ -13338,7 +13622,7 @@
       },
       "rewards:9": {}
     },
-    "143:10": {
+    "145:10": {
       "questID:3": 145,
       "preRequisites:11": [
         314
@@ -13380,7 +13664,7 @@
       },
       "rewards:9": {}
     },
-    "144:10": {
+    "146:10": {
       "questID:3": 146,
       "preRequisites:11": [
         287
@@ -13422,7 +13706,7 @@
       },
       "rewards:9": {}
     },
-    "145:10": {
+    "147:10": {
       "questID:3": 147,
       "preRequisites:11": [
         36,
@@ -13435,7 +13719,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -13505,7 +13789,7 @@
         }
       }
     },
-    "146:10": {
+    "148:10": {
       "questID:3": 148,
       "preRequisites:11": [
         171
@@ -13547,7 +13831,7 @@
       },
       "rewards:9": {}
     },
-    "147:10": {
+    "149:10": {
       "questID:3": 149,
       "preRequisites:11": [],
       "properties:10": {
@@ -13587,7 +13871,7 @@
       },
       "rewards:9": {}
     },
-    "148:10": {
+    "150:10": {
       "questID:3": 150,
       "preRequisites:11": [
         411
@@ -13667,7 +13951,7 @@
       },
       "rewards:9": {}
     },
-    "149:10": {
+    "151:10": {
       "questID:3": 151,
       "preRequisites:11": [
         212
@@ -13709,7 +13993,7 @@
       },
       "rewards:9": {}
     },
-    "150:10": {
+    "152:10": {
       "questID:3": 152,
       "preRequisites:11": [],
       "properties:10": {
@@ -13749,7 +14033,7 @@
       },
       "rewards:9": {}
     },
-    "151:10": {
+    "153:10": {
       "questID:3": 153,
       "preRequisites:11": [],
       "properties:10": {
@@ -13789,7 +14073,7 @@
       },
       "rewards:9": {}
     },
-    "152:10": {
+    "154:10": {
       "questID:3": 154,
       "preRequisites:11": [
         287
@@ -13831,10 +14115,10 @@
       },
       "rewards:9": {}
     },
-    "153:10": {
-      "questID:3": 156,
+    "155:10": {
+      "questID:3": 155,
       "preRequisites:11": [
-        104
+        121
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -13849,9 +14133,9 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "bibliocraft:framedchest",
+            "id:8": "ironchest:iron_chest",
             "Count:3": 1,
-            "Damage:2": 6,
+            "Damage:2": 5,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -13860,8 +14144,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Aesthetic Chest Decisions",
-          "desc:8": "Using the paneler we can make chests out of any plank in the game, because aesthetics matter. Turns out there are many framed goods which can be customized in the paneller, not just the book cases."
+          "name:8": "Visible Storage",
+          "desc:8": "Usually when tidying up the goal is to hide all the irregularly shaped objects behind, or within, the flat objects.\n\nBut sometimes you still want things to be visible. For that, we have the crystal chest.\n\nIt\u0027s §overy§r fancy, and for §ofancy§r people."
         }
       },
       "tasks:9": {
@@ -13877,9 +14161,9 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "bibliocraft:framedchest",
+              "id:8": "ironchest:iron_chest",
               "Count:3": 1,
-              "Damage:2": 6,
+              "Damage:2": 5,
               "OreDict:8": ""
             }
           },
@@ -13888,32 +14172,123 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:choice",
+          "rewardID:8": "bq_standard:item",
           "index:3": 0,
-          "choices:9": {
+          "rewards:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "bibliocraft:shelf",
-              "Count:3": 1,
-              "Damage:2": 6,
+              "id:8": "harvestcraft:oliveitem",
+              "Count:3": 8,
+              "Damage:2": 0,
               "OreDict:8": ""
             },
             "1:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "bibliocraft:fancysign",
+              "id:8": "harvestcraft:snailcookeditem",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:riverchardonnayitem",
               "Count:3": 1,
-              "Damage:2": 6,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
         }
       }
     },
-    "154:10": {
+    "156:10": {
+      "questID:3": 156,
+      "preRequisites:11": [
+        155
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mekanism:machineblock",
+            "Count:3": 1,
+            "Damage:2": 13,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Trusted Chest Access",
+          "desc:8": "The Personal Chest is a mid-range capacity chest that allows you to not only restrict who can open it but also make use of it from within your inventory. Much like the Storage Crate, this chest allows you to break it down and carry it around with the contents preserved."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mekanism:machineblock",
+              "Count:3": 1,
+              "Damage:2": 13,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:onionhamburgeritem",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "toughasnails:purified_water_bottle",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "157:10": {
       "questID:3": 157,
       "preRequisites:11": [
         330
@@ -13955,7 +14330,7 @@
       },
       "rewards:9": {}
     },
-    "155:10": {
+    "158:10": {
       "questID:3": 158,
       "preRequisites:11": [
         364
@@ -13997,7 +14372,7 @@
       },
       "rewards:9": {}
     },
-    "156:10": {
+    "159:10": {
       "questID:3": 159,
       "preRequisites:11": [],
       "properties:10": {
@@ -14037,7 +14412,7 @@
       },
       "rewards:9": {}
     },
-    "157:10": {
+    "160:10": {
       "questID:3": 160,
       "preRequisites:11": [
         76,
@@ -14102,7 +14477,7 @@
         }
       }
     },
-    "158:10": {
+    "161:10": {
       "questID:3": 161,
       "preRequisites:11": [
         314
@@ -14144,7 +14519,90 @@
       },
       "rewards:9": {}
     },
-    "159:10": {
+    "162:10": {
+      "questID:3": 162,
+      "preRequisites:11": [
+        134,
+        164
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "immersiveengineering:metal_device0",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Keep that Power",
+          "desc:8": "You are going to generate a lot of electricty and you are going to need to keep it somewhere. The LV capacitor is your basic \"RF\" energy storage mechanism. Itt can hold a decent amount and distribute it at \"Low Voltage\" rates. Take a look at your Engineers Guide for more information."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:metal_device0",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:wirecoil",
+              "Count:3": 4,
+              "Damage:2": 6,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:connector",
+              "Count:3": 4,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "163:10": {
       "questID:3": 163,
       "preRequisites:11": [
         400
@@ -14186,7 +14644,67 @@
       },
       "rewards:9": {}
     },
-    "160:10": {
+    "164:10": {
+      "questID:3": 164,
+      "preRequisites:11": [
+        715
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "actuallyadditions:item_battery_quintuple",
+            "Count:3": 1,
+            "tag:10": {
+              "Energy:3": 2000000
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Charge it Up",
+          "desc:8": "The battery box is a device that can charge batteries only. While the batteries can be used in other (fancier) chargers, this charger can only charge the batteries. Some recipes will require a charged battery, otherwise the batteries can be kept in your inventory to extend how long you can use electric devices."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "actuallyadditions:block_battery_box",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "165:10": {
       "questID:3": 165,
       "preRequisites:11": [
         361
@@ -14228,7 +14746,7 @@
       },
       "rewards:9": {}
     },
-    "161:10": {
+    "166:10": {
       "questID:3": 166,
       "preRequisites:11": [
         271
@@ -14270,7 +14788,7 @@
       },
       "rewards:9": {}
     },
-    "162:10": {
+    "167:10": {
       "questID:3": 167,
       "preRequisites:11": [
         355
@@ -14312,7 +14830,71 @@
       },
       "rewards:9": {}
     },
-    "163:10": {
+    "168:10": {
+      "questID:3": 168,
+      "preRequisites:11": [
+        164
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mekanism:machineblock",
+            "Count:3": 1,
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Infused to Usefulnes",
+          "desc:8": "Machines to make parts to make Machines. The Metallurgic Infuser combines two ingredients into a third, consuming power, and time.\n\nYou should make one so you can continue making things. You will need more batteries."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mekanism:machineblock",
+              "Count:3": 1,
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
+    },
+    "169:10": {
       "questID:3": 169,
       "preRequisites:11": [],
       "properties:10": {
@@ -14352,7 +14934,7 @@
       },
       "rewards:9": {}
     },
-    "164:10": {
+    "170:10": {
       "questID:3": 170,
       "preRequisites:11": [],
       "properties:10": {
@@ -14392,7 +14974,7 @@
       },
       "rewards:9": {}
     },
-    "165:10": {
+    "171:10": {
       "questID:3": 171,
       "preRequisites:11": [],
       "properties:10": {
@@ -14432,7 +15014,7 @@
       },
       "rewards:9": {}
     },
-    "166:10": {
+    "172:10": {
       "questID:3": 172,
       "preRequisites:11": [
         171
@@ -14474,7 +15056,7 @@
       },
       "rewards:9": {}
     },
-    "167:10": {
+    "173:10": {
       "questID:3": 173,
       "preRequisites:11": [],
       "properties:10": {
@@ -14514,7 +15096,7 @@
       },
       "rewards:9": {}
     },
-    "168:10": {
+    "174:10": {
       "questID:3": 174,
       "preRequisites:11": [
         417
@@ -14556,7 +15138,7 @@
       },
       "rewards:9": {}
     },
-    "169:10": {
+    "175:10": {
       "questID:3": 175,
       "preRequisites:11": [
         239
@@ -14598,7 +15180,7 @@
       },
       "rewards:9": {}
     },
-    "170:10": {
+    "176:10": {
       "questID:3": 177,
       "preRequisites:11": [],
       "properties:10": {
@@ -14638,7 +15220,7 @@
       },
       "rewards:9": {}
     },
-    "171:10": {
+    "177:10": {
       "questID:3": 178,
       "preRequisites:11": [
         287
@@ -14680,7 +15262,7 @@
       },
       "rewards:9": {}
     },
-    "172:10": {
+    "178:10": {
       "questID:3": 179,
       "preRequisites:11": [
         319
@@ -14722,7 +15304,7 @@
       },
       "rewards:9": {}
     },
-    "173:10": {
+    "179:10": {
       "questID:3": 181,
       "preRequisites:11": [],
       "properties:10": {
@@ -14762,7 +15344,7 @@
       },
       "rewards:9": {}
     },
-    "174:10": {
+    "180:10": {
       "questID:3": 182,
       "preRequisites:11": [
         187
@@ -14804,7 +15386,7 @@
       },
       "rewards:9": {}
     },
-    "175:10": {
+    "181:10": {
       "questID:3": 185,
       "preRequisites:11": [
         192
@@ -14846,7 +15428,7 @@
       },
       "rewards:9": {}
     },
-    "176:10": {
+    "182:10": {
       "questID:3": 186,
       "preRequisites:11": [
         365
@@ -14912,7 +15494,7 @@
       },
       "rewards:9": {}
     },
-    "177:10": {
+    "183:10": {
       "questID:3": 187,
       "preRequisites:11": [],
       "properties:10": {
@@ -14952,7 +15534,7 @@
       },
       "rewards:9": {}
     },
-    "178:10": {
+    "184:10": {
       "questID:3": 188,
       "preRequisites:11": [
         360
@@ -14994,7 +15576,7 @@
       },
       "rewards:9": {}
     },
-    "179:10": {
+    "185:10": {
       "questID:3": 191,
       "preRequisites:11": [],
       "properties:10": {
@@ -15034,7 +15616,7 @@
       },
       "rewards:9": {}
     },
-    "180:10": {
+    "186:10": {
       "questID:3": 192,
       "preRequisites:11": [
         213
@@ -15076,7 +15658,7 @@
       },
       "rewards:9": {}
     },
-    "181:10": {
+    "187:10": {
       "questID:3": 193,
       "preRequisites:11": [
         245
@@ -15118,7 +15700,7 @@
       },
       "rewards:9": {}
     },
-    "182:10": {
+    "188:10": {
       "questID:3": 194,
       "preRequisites:11": [
         173
@@ -15160,7 +15742,7 @@
       },
       "rewards:9": {}
     },
-    "183:10": {
+    "189:10": {
       "questID:3": 195,
       "preRequisites:11": [
         179
@@ -15202,7 +15784,7 @@
       },
       "rewards:9": {}
     },
-    "184:10": {
+    "190:10": {
       "questID:3": 196,
       "preRequisites:11": [
         335
@@ -15244,7 +15826,7 @@
       },
       "rewards:9": {}
     },
-    "185:10": {
+    "191:10": {
       "questID:3": 197,
       "preRequisites:11": [],
       "properties:10": {
@@ -15284,7 +15866,7 @@
       },
       "rewards:9": {}
     },
-    "186:10": {
+    "192:10": {
       "questID:3": 200,
       "preRequisites:11": [],
       "properties:10": {
@@ -15324,7 +15906,7 @@
       },
       "rewards:9": {}
     },
-    "187:10": {
+    "193:10": {
       "questID:3": 202,
       "preRequisites:11": [
         287
@@ -15366,7 +15948,7 @@
       },
       "rewards:9": {}
     },
-    "188:10": {
+    "194:10": {
       "questID:3": 203,
       "preRequisites:11": [
         165
@@ -15408,7 +15990,7 @@
       },
       "rewards:9": {}
     },
-    "189:10": {
+    "195:10": {
       "questID:3": 204,
       "preRequisites:11": [],
       "properties:10": {
@@ -15448,7 +16030,7 @@
       },
       "rewards:9": {}
     },
-    "190:10": {
+    "196:10": {
       "questID:3": 206,
       "preRequisites:11": [
         327
@@ -15490,7 +16072,7 @@
       },
       "rewards:9": {}
     },
-    "191:10": {
+    "197:10": {
       "questID:3": 207,
       "preRequisites:11": [],
       "properties:10": {
@@ -15530,7 +16112,7 @@
       },
       "rewards:9": {}
     },
-    "192:10": {
+    "198:10": {
       "questID:3": 208,
       "preRequisites:11": [],
       "properties:10": {
@@ -15570,7 +16152,7 @@
       },
       "rewards:9": {}
     },
-    "193:10": {
+    "199:10": {
       "questID:3": 209,
       "preRequisites:11": [],
       "properties:10": {
@@ -15610,7 +16192,7 @@
       },
       "rewards:9": {}
     },
-    "194:10": {
+    "200:10": {
       "questID:3": 210,
       "preRequisites:11": [],
       "properties:10": {
@@ -15650,7 +16232,7 @@
       },
       "rewards:9": {}
     },
-    "195:10": {
+    "201:10": {
       "questID:3": 211,
       "preRequisites:11": [
         163
@@ -15692,7 +16274,7 @@
       },
       "rewards:9": {}
     },
-    "196:10": {
+    "202:10": {
       "questID:3": 212,
       "preRequisites:11": [
         388
@@ -15734,7 +16316,7 @@
       },
       "rewards:9": {}
     },
-    "197:10": {
+    "203:10": {
       "questID:3": 213,
       "preRequisites:11": [],
       "properties:10": {
@@ -15774,7 +16356,7 @@
       },
       "rewards:9": {}
     },
-    "198:10": {
+    "204:10": {
       "questID:3": 215,
       "preRequisites:11": [
         209
@@ -15816,7 +16398,7 @@
       },
       "rewards:9": {}
     },
-    "199:10": {
+    "205:10": {
       "questID:3": 216,
       "preRequisites:11": [
         203
@@ -15858,7 +16440,7 @@
       },
       "rewards:9": {}
     },
-    "200:10": {
+    "206:10": {
       "questID:3": 217,
       "preRequisites:11": [
         401
@@ -15900,7 +16482,7 @@
       },
       "rewards:9": {}
     },
-    "201:10": {
+    "207:10": {
       "questID:3": 218,
       "preRequisites:11": [],
       "properties:10": {
@@ -15940,7 +16522,7 @@
       },
       "rewards:9": {}
     },
-    "202:10": {
+    "208:10": {
       "questID:3": 220,
       "preRequisites:11": [
         285
@@ -15982,7 +16564,7 @@
       },
       "rewards:9": {}
     },
-    "203:10": {
+    "209:10": {
       "questID:3": 223,
       "preRequisites:11": [
         355
@@ -16024,7 +16606,7 @@
       },
       "rewards:9": {}
     },
-    "204:10": {
+    "210:10": {
       "questID:3": 225,
       "preRequisites:11": [
         292
@@ -16066,7 +16648,7 @@
       },
       "rewards:9": {}
     },
-    "205:10": {
+    "211:10": {
       "questID:3": 227,
       "preRequisites:11": [
         171
@@ -16108,7 +16690,7 @@
       },
       "rewards:9": {}
     },
-    "206:10": {
+    "212:10": {
       "questID:3": 228,
       "preRequisites:11": [
         174
@@ -16150,7 +16732,7 @@
       },
       "rewards:9": {}
     },
-    "207:10": {
+    "213:10": {
       "questID:3": 229,
       "preRequisites:11": [
         203
@@ -16192,7 +16774,7 @@
       },
       "rewards:9": {}
     },
-    "208:10": {
+    "214:10": {
       "questID:3": 230,
       "preRequisites:11": [
         203
@@ -16234,7 +16816,7 @@
       },
       "rewards:9": {}
     },
-    "209:10": {
+    "215:10": {
       "questID:3": 231,
       "preRequisites:11": [],
       "properties:10": {
@@ -16274,7 +16856,7 @@
       },
       "rewards:9": {}
     },
-    "210:10": {
+    "216:10": {
       "questID:3": 232,
       "preRequisites:11": [
         211
@@ -16316,7 +16898,7 @@
       },
       "rewards:9": {}
     },
-    "211:10": {
+    "217:10": {
       "questID:3": 234,
       "preRequisites:11": [
         257
@@ -16358,7 +16940,7 @@
       },
       "rewards:9": {}
     },
-    "212:10": {
+    "218:10": {
       "questID:3": 237,
       "preRequisites:11": [
         417
@@ -16400,7 +16982,7 @@
       },
       "rewards:9": {}
     },
-    "213:10": {
+    "219:10": {
       "questID:3": 238,
       "preRequisites:11": [
         287
@@ -16442,7 +17024,7 @@
       },
       "rewards:9": {}
     },
-    "214:10": {
+    "220:10": {
       "questID:3": 239,
       "preRequisites:11": [
         319
@@ -16484,7 +17066,7 @@
       },
       "rewards:9": {}
     },
-    "215:10": {
+    "221:10": {
       "questID:3": 240,
       "preRequisites:11": [],
       "properties:10": {
@@ -16524,7 +17106,7 @@
       },
       "rewards:9": {}
     },
-    "216:10": {
+    "222:10": {
       "questID:3": 241,
       "preRequisites:11": [],
       "properties:10": {
@@ -16564,7 +17146,7 @@
       },
       "rewards:9": {}
     },
-    "217:10": {
+    "223:10": {
       "questID:3": 242,
       "preRequisites:11": [
         245
@@ -16606,7 +17188,7 @@
       },
       "rewards:9": {}
     },
-    "218:10": {
+    "224:10": {
       "questID:3": 243,
       "preRequisites:11": [],
       "properties:10": {
@@ -16646,7 +17228,7 @@
       },
       "rewards:9": {}
     },
-    "219:10": {
+    "225:10": {
       "questID:3": 245,
       "preRequisites:11": [
         187
@@ -16688,7 +17270,7 @@
       },
       "rewards:9": {}
     },
-    "220:10": {
+    "226:10": {
       "questID:3": 246,
       "preRequisites:11": [
         171
@@ -16735,7 +17317,7 @@
       },
       "rewards:9": {}
     },
-    "221:10": {
+    "227:10": {
       "questID:3": 247,
       "preRequisites:11": [],
       "properties:10": {
@@ -16775,7 +17357,7 @@
       },
       "rewards:9": {}
     },
-    "222:10": {
+    "228:10": {
       "questID:3": 248,
       "preRequisites:11": [
         203
@@ -16817,7 +17399,7 @@
       },
       "rewards:9": {}
     },
-    "223:10": {
+    "229:10": {
       "questID:3": 249,
       "preRequisites:11": [
         182
@@ -16859,7 +17441,7 @@
       },
       "rewards:9": {}
     },
-    "224:10": {
+    "230:10": {
       "questID:3": 251,
       "preRequisites:11": [
         381
@@ -16901,7 +17483,7 @@
       },
       "rewards:9": {}
     },
-    "225:10": {
+    "231:10": {
       "questID:3": 252,
       "preRequisites:11": [
         381
@@ -16943,7 +17525,7 @@
       },
       "rewards:9": {}
     },
-    "226:10": {
+    "232:10": {
       "questID:3": 254,
       "preRequisites:11": [
         355
@@ -16985,7 +17567,7 @@
       },
       "rewards:9": {}
     },
-    "227:10": {
+    "233:10": {
       "questID:3": 256,
       "preRequisites:11": [
         151
@@ -17027,7 +17609,7 @@
       },
       "rewards:9": {}
     },
-    "228:10": {
+    "234:10": {
       "questID:3": 257,
       "preRequisites:11": [],
       "properties:10": {
@@ -17067,7 +17649,7 @@
       },
       "rewards:9": {}
     },
-    "229:10": {
+    "235:10": {
       "questID:3": 258,
       "preRequisites:11": [
         192
@@ -17109,7 +17691,7 @@
       },
       "rewards:9": {}
     },
-    "230:10": {
+    "236:10": {
       "questID:3": 259,
       "preRequisites:11": [
         381
@@ -17151,7 +17733,7 @@
       },
       "rewards:9": {}
     },
-    "231:10": {
+    "237:10": {
       "questID:3": 262,
       "preRequisites:11": [
         412
@@ -17193,7 +17775,7 @@
       },
       "rewards:9": {}
     },
-    "232:10": {
+    "238:10": {
       "questID:3": 263,
       "preRequisites:11": [],
       "properties:10": {
@@ -17233,7 +17815,7 @@
       },
       "rewards:9": {}
     },
-    "233:10": {
+    "239:10": {
       "questID:3": 265,
       "preRequisites:11": [
         381
@@ -17275,7 +17857,7 @@
       },
       "rewards:9": {}
     },
-    "234:10": {
+    "240:10": {
       "questID:3": 269,
       "preRequisites:11": [
         394
@@ -17317,7 +17899,7 @@
       },
       "rewards:9": {}
     },
-    "235:10": {
+    "241:10": {
       "questID:3": 270,
       "preRequisites:11": [
         262
@@ -17359,7 +17941,7 @@
       },
       "rewards:9": {}
     },
-    "236:10": {
+    "242:10": {
       "questID:3": 271,
       "preRequisites:11": [],
       "properties:10": {
@@ -17399,7 +17981,7 @@
       },
       "rewards:9": {}
     },
-    "237:10": {
+    "243:10": {
       "questID:3": 273,
       "preRequisites:11": [],
       "properties:10": {
@@ -17439,7 +18021,7 @@
       },
       "rewards:9": {}
     },
-    "238:10": {
+    "244:10": {
       "questID:3": 274,
       "preRequisites:11": [
         144
@@ -17481,7 +18063,7 @@
       },
       "rewards:9": {}
     },
-    "239:10": {
+    "245:10": {
       "questID:3": 275,
       "preRequisites:11": [],
       "properties:10": {
@@ -17521,7 +18103,7 @@
       },
       "rewards:9": {}
     },
-    "240:10": {
+    "246:10": {
       "questID:3": 277,
       "preRequisites:11": [
         187
@@ -17563,7 +18145,7 @@
       },
       "rewards:9": {}
     },
-    "241:10": {
+    "247:10": {
       "questID:3": 278,
       "preRequisites:11": [
         247
@@ -17605,7 +18187,7 @@
       },
       "rewards:9": {}
     },
-    "242:10": {
+    "248:10": {
       "questID:3": 279,
       "preRequisites:11": [],
       "properties:10": {
@@ -17645,7 +18227,7 @@
       },
       "rewards:9": {}
     },
-    "243:10": {
+    "249:10": {
       "questID:3": 280,
       "preRequisites:11": [
         369
@@ -17687,7 +18269,7 @@
       },
       "rewards:9": {}
     },
-    "244:10": {
+    "250:10": {
       "questID:3": 281,
       "preRequisites:11": [
         355
@@ -17729,7 +18311,7 @@
       },
       "rewards:9": {}
     },
-    "245:10": {
+    "251:10": {
       "questID:3": 282,
       "preRequisites:11": [
         220
@@ -17771,7 +18353,7 @@
       },
       "rewards:9": {}
     },
-    "246:10": {
+    "252:10": {
       "questID:3": 283,
       "preRequisites:11": [],
       "properties:10": {
@@ -17811,7 +18393,7 @@
       },
       "rewards:9": {}
     },
-    "247:10": {
+    "253:10": {
       "questID:3": 284,
       "preRequisites:11": [
         287
@@ -17853,7 +18435,7 @@
       },
       "rewards:9": {}
     },
-    "248:10": {
+    "254:10": {
       "questID:3": 285,
       "preRequisites:11": [],
       "properties:10": {
@@ -17893,7 +18475,7 @@
       },
       "rewards:9": {}
     },
-    "249:10": {
+    "255:10": {
       "questID:3": 286,
       "preRequisites:11": [
         151
@@ -17935,7 +18517,7 @@
       },
       "rewards:9": {}
     },
-    "250:10": {
+    "256:10": {
       "questID:3": 287,
       "preRequisites:11": [
         165
@@ -17977,7 +18559,7 @@
       },
       "rewards:9": {}
     },
-    "251:10": {
+    "257:10": {
       "questID:3": 288,
       "preRequisites:11": [
         171
@@ -18019,7 +18601,7 @@
       },
       "rewards:9": {}
     },
-    "252:10": {
+    "258:10": {
       "questID:3": 290,
       "preRequisites:11": [
         203
@@ -18061,7 +18643,7 @@
       },
       "rewards:9": {}
     },
-    "253:10": {
+    "259:10": {
       "questID:3": 292,
       "preRequisites:11": [
         397
@@ -18103,7 +18685,7 @@
       },
       "rewards:9": {}
     },
-    "254:10": {
+    "260:10": {
       "questID:3": 294,
       "preRequisites:11": [
         200
@@ -18145,7 +18727,7 @@
       },
       "rewards:9": {}
     },
-    "255:10": {
+    "261:10": {
       "questID:3": 295,
       "preRequisites:11": [
         273
@@ -18187,7 +18769,7 @@
       },
       "rewards:9": {}
     },
-    "256:10": {
+    "262:10": {
       "questID:3": 296,
       "preRequisites:11": [
         287
@@ -18229,7 +18811,7 @@
       },
       "rewards:9": {}
     },
-    "257:10": {
+    "263:10": {
       "questID:3": 297,
       "preRequisites:11": [],
       "properties:10": {
@@ -18272,7 +18854,7 @@
       },
       "rewards:9": {}
     },
-    "258:10": {
+    "264:10": {
       "questID:3": 302,
       "preRequisites:11": [],
       "properties:10": {
@@ -18312,7 +18894,7 @@
       },
       "rewards:9": {}
     },
-    "259:10": {
+    "265:10": {
       "questID:3": 303,
       "preRequisites:11": [],
       "properties:10": {
@@ -18352,7 +18934,7 @@
       },
       "rewards:9": {}
     },
-    "260:10": {
+    "266:10": {
       "questID:3": 304,
       "preRequisites:11": [],
       "properties:10": {
@@ -18392,7 +18974,7 @@
       },
       "rewards:9": {}
     },
-    "261:10": {
+    "267:10": {
       "questID:3": 305,
       "preRequisites:11": [
         343
@@ -18434,7 +19016,7 @@
       },
       "rewards:9": {}
     },
-    "262:10": {
+    "268:10": {
       "questID:3": 306,
       "preRequisites:11": [],
       "properties:10": {
@@ -18474,7 +19056,7 @@
       },
       "rewards:9": {}
     },
-    "263:10": {
+    "269:10": {
       "questID:3": 309,
       "preRequisites:11": [],
       "properties:10": {
@@ -18514,7 +19096,7 @@
       },
       "rewards:9": {}
     },
-    "264:10": {
+    "270:10": {
       "questID:3": 310,
       "preRequisites:11": [],
       "properties:10": {
@@ -18554,7 +19136,7 @@
       },
       "rewards:9": {}
     },
-    "265:10": {
+    "271:10": {
       "questID:3": 311,
       "preRequisites:11": [
         163
@@ -18596,7 +19178,7 @@
       },
       "rewards:9": {}
     },
-    "266:10": {
+    "272:10": {
       "questID:3": 312,
       "preRequisites:11": [
         241
@@ -18638,7 +19220,7 @@
       },
       "rewards:9": {}
     },
-    "267:10": {
+    "273:10": {
       "questID:3": 314,
       "preRequisites:11": [],
       "properties:10": {
@@ -18678,7 +19260,7 @@
       },
       "rewards:9": {}
     },
-    "268:10": {
+    "274:10": {
       "questID:3": 316,
       "preRequisites:11": [
         151
@@ -18720,7 +19302,7 @@
       },
       "rewards:9": {}
     },
-    "269:10": {
+    "275:10": {
       "questID:3": 318,
       "preRequisites:11": [
         287
@@ -18762,7 +19344,7 @@
       },
       "rewards:9": {}
     },
-    "270:10": {
+    "276:10": {
       "questID:3": 319,
       "preRequisites:11": [
         263
@@ -18804,7 +19386,7 @@
       },
       "rewards:9": {}
     },
-    "271:10": {
+    "277:10": {
       "questID:3": 320,
       "preRequisites:11": [
         239
@@ -18846,7 +19428,7 @@
       },
       "rewards:9": {}
     },
-    "272:10": {
+    "278:10": {
       "questID:3": 321,
       "preRequisites:11": [
         151
@@ -18888,7 +19470,7 @@
       },
       "rewards:9": {}
     },
-    "273:10": {
+    "279:10": {
       "questID:3": 322,
       "preRequisites:11": [
         231
@@ -18930,7 +19512,7 @@
       },
       "rewards:9": {}
     },
-    "274:10": {
+    "280:10": {
       "questID:3": 323,
       "preRequisites:11": [
         355
@@ -18975,7 +19557,7 @@
       },
       "rewards:9": {}
     },
-    "275:10": {
+    "281:10": {
       "questID:3": 324,
       "preRequisites:11": [],
       "properties:10": {
@@ -19015,7 +19597,7 @@
       },
       "rewards:9": {}
     },
-    "276:10": {
+    "282:10": {
       "questID:3": 326,
       "preRequisites:11": [
         381
@@ -19057,7 +19639,7 @@
       },
       "rewards:9": {}
     },
-    "277:10": {
+    "283:10": {
       "questID:3": 327,
       "preRequisites:11": [
         368
@@ -19099,7 +19681,7 @@
       },
       "rewards:9": {}
     },
-    "278:10": {
+    "284:10": {
       "questID:3": 328,
       "preRequisites:11": [
         265
@@ -19141,7 +19723,7 @@
       },
       "rewards:9": {}
     },
-    "279:10": {
+    "285:10": {
       "questID:3": 329,
       "preRequisites:11": [],
       "properties:10": {
@@ -19181,7 +19763,7 @@
       },
       "rewards:9": {}
     },
-    "280:10": {
+    "286:10": {
       "questID:3": 330,
       "preRequisites:11": [
         187
@@ -19223,7 +19805,7 @@
       },
       "rewards:9": {}
     },
-    "281:10": {
+    "287:10": {
       "questID:3": 331,
       "preRequisites:11": [
         306
@@ -19265,7 +19847,7 @@
       },
       "rewards:9": {}
     },
-    "282:10": {
+    "288:10": {
       "questID:3": 332,
       "preRequisites:11": [],
       "properties:10": {
@@ -19305,7 +19887,7 @@
       },
       "rewards:9": {}
     },
-    "283:10": {
+    "289:10": {
       "questID:3": 333,
       "preRequisites:11": [
         326
@@ -19351,7 +19933,7 @@
       },
       "rewards:9": {}
     },
-    "284:10": {
+    "290:10": {
       "questID:3": 335,
       "preRequisites:11": [
         237
@@ -19393,7 +19975,7 @@
       },
       "rewards:9": {}
     },
-    "285:10": {
+    "291:10": {
       "questID:3": 336,
       "preRequisites:11": [
         310
@@ -19435,7 +20017,7 @@
       },
       "rewards:9": {}
     },
-    "286:10": {
+    "292:10": {
       "questID:3": 337,
       "preRequisites:11": [],
       "properties:10": {
@@ -19475,7 +20057,7 @@
       },
       "rewards:9": {}
     },
-    "287:10": {
+    "293:10": {
       "questID:3": 338,
       "preRequisites:11": [
         355
@@ -19517,7 +20099,7 @@
       },
       "rewards:9": {}
     },
-    "288:10": {
+    "294:10": {
       "questID:3": 339,
       "preRequisites:11": [
         287
@@ -19559,7 +20141,7 @@
       },
       "rewards:9": {}
     },
-    "289:10": {
+    "295:10": {
       "questID:3": 340,
       "preRequisites:11": [],
       "properties:10": {
@@ -19599,7 +20181,7 @@
       },
       "rewards:9": {}
     },
-    "290:10": {
+    "296:10": {
       "questID:3": 342,
       "preRequisites:11": [
         265
@@ -19641,7 +20223,7 @@
       },
       "rewards:9": {}
     },
-    "291:10": {
+    "297:10": {
       "questID:3": 343,
       "preRequisites:11": [],
       "properties:10": {
@@ -19681,7 +20263,7 @@
       },
       "rewards:9": {}
     },
-    "292:10": {
+    "298:10": {
       "questID:3": 344,
       "preRequisites:11": [],
       "properties:10": {
@@ -19721,7 +20303,7 @@
       },
       "rewards:9": {}
     },
-    "293:10": {
+    "299:10": {
       "questID:3": 346,
       "preRequisites:11": [],
       "properties:10": {
@@ -19761,7 +20343,7 @@
       },
       "rewards:9": {}
     },
-    "294:10": {
+    "300:10": {
       "questID:3": 347,
       "preRequisites:11": [
         287
@@ -19803,7 +20385,7 @@
       },
       "rewards:9": {}
     },
-    "295:10": {
+    "301:10": {
       "questID:3": 349,
       "preRequisites:11": [],
       "properties:10": {
@@ -19843,7 +20425,7 @@
       },
       "rewards:9": {}
     },
-    "296:10": {
+    "302:10": {
       "questID:3": 351,
       "preRequisites:11": [
         378
@@ -19885,7 +20467,7 @@
       },
       "rewards:9": {}
     },
-    "297:10": {
+    "303:10": {
       "questID:3": 353,
       "preRequisites:11": [
         231
@@ -19927,7 +20509,7 @@
       },
       "rewards:9": {}
     },
-    "298:10": {
+    "304:10": {
       "questID:3": 354,
       "preRequisites:11": [
         153
@@ -19969,7 +20551,7 @@
       },
       "rewards:9": {}
     },
-    "299:10": {
+    "305:10": {
       "questID:3": 355,
       "preRequisites:11": [],
       "properties:10": {
@@ -20009,7 +20591,7 @@
       },
       "rewards:9": {}
     },
-    "300:10": {
+    "306:10": {
       "questID:3": 356,
       "preRequisites:11": [
         327
@@ -20051,7 +20633,7 @@
       },
       "rewards:9": {}
     },
-    "301:10": {
+    "307:10": {
       "questID:3": 357,
       "preRequisites:11": [
         241
@@ -20093,7 +20675,7 @@
       },
       "rewards:9": {}
     },
-    "302:10": {
+    "308:10": {
       "questID:3": 358,
       "preRequisites:11": [
         378
@@ -20135,7 +20717,7 @@
       },
       "rewards:9": {}
     },
-    "303:10": {
+    "309:10": {
       "questID:3": 359,
       "preRequisites:11": [
         171
@@ -20177,7 +20759,7 @@
       },
       "rewards:9": {}
     },
-    "304:10": {
+    "310:10": {
       "questID:3": 360,
       "preRequisites:11": [
         262
@@ -20219,7 +20801,7 @@
       },
       "rewards:9": {}
     },
-    "305:10": {
+    "311:10": {
       "questID:3": 361,
       "preRequisites:11": [],
       "properties:10": {
@@ -20259,7 +20841,7 @@
       },
       "rewards:9": {}
     },
-    "306:10": {
+    "312:10": {
       "questID:3": 362,
       "preRequisites:11": [
         355
@@ -20301,7 +20883,7 @@
       },
       "rewards:9": {}
     },
-    "307:10": {
+    "313:10": {
       "questID:3": 363,
       "preRequisites:11": [
         262
@@ -20343,7 +20925,7 @@
       },
       "rewards:9": {}
     },
-    "308:10": {
+    "314:10": {
       "questID:3": 364,
       "preRequisites:11": [
         215
@@ -20385,7 +20967,7 @@
       },
       "rewards:9": {}
     },
-    "309:10": {
+    "315:10": {
       "questID:3": 365,
       "preRequisites:11": [
         326
@@ -20431,7 +21013,7 @@
       },
       "rewards:9": {}
     },
-    "310:10": {
+    "316:10": {
       "questID:3": 366,
       "preRequisites:11": [
         171
@@ -20473,7 +21055,7 @@
       },
       "rewards:9": {}
     },
-    "311:10": {
+    "317:10": {
       "questID:3": 368,
       "preRequisites:11": [],
       "properties:10": {
@@ -20513,7 +21095,7 @@
       },
       "rewards:9": {}
     },
-    "312:10": {
+    "318:10": {
       "questID:3": 369,
       "preRequisites:11": [
         373
@@ -20555,7 +21137,7 @@
       },
       "rewards:9": {}
     },
-    "313:10": {
+    "319:10": {
       "questID:3": 371,
       "preRequisites:11": [
         171
@@ -20597,7 +21179,7 @@
       },
       "rewards:9": {}
     },
-    "314:10": {
+    "320:10": {
       "questID:3": 372,
       "preRequisites:11": [
         239
@@ -20639,7 +21221,7 @@
       },
       "rewards:9": {}
     },
-    "315:10": {
+    "321:10": {
       "questID:3": 373,
       "preRequisites:11": [
         192
@@ -20681,7 +21263,7 @@
       },
       "rewards:9": {}
     },
-    "316:10": {
+    "322:10": {
       "questID:3": 374,
       "preRequisites:11": [
         171
@@ -20723,7 +21305,7 @@
       },
       "rewards:9": {}
     },
-    "317:10": {
+    "323:10": {
       "questID:3": 377,
       "preRequisites:11": [
         179
@@ -20765,7 +21347,7 @@
       },
       "rewards:9": {}
     },
-    "318:10": {
+    "324:10": {
       "questID:3": 378,
       "preRequisites:11": [
         240
@@ -20807,7 +21389,7 @@
       },
       "rewards:9": {}
     },
-    "319:10": {
+    "325:10": {
       "questID:3": 379,
       "preRequisites:11": [],
       "properties:10": {
@@ -20847,7 +21429,7 @@
       },
       "rewards:9": {}
     },
-    "320:10": {
+    "326:10": {
       "questID:3": 381,
       "preRequisites:11": [],
       "properties:10": {
@@ -20887,7 +21469,7 @@
       },
       "rewards:9": {}
     },
-    "321:10": {
+    "327:10": {
       "questID:3": 384,
       "preRequisites:11": [],
       "properties:10": {
@@ -20927,7 +21509,7 @@
       },
       "rewards:9": {}
     },
-    "322:10": {
+    "328:10": {
       "questID:3": 387,
       "preRequisites:11": [
         151
@@ -20969,7 +21551,7 @@
       },
       "rewards:9": {}
     },
-    "323:10": {
+    "329:10": {
       "questID:3": 388,
       "preRequisites:11": [
         381
@@ -21011,7 +21593,7 @@
       },
       "rewards:9": {}
     },
-    "324:10": {
+    "330:10": {
       "questID:3": 389,
       "preRequisites:11": [
         355
@@ -21053,7 +21635,7 @@
       },
       "rewards:9": {}
     },
-    "325:10": {
+    "331:10": {
       "questID:3": 390,
       "preRequisites:11": [
         397
@@ -21095,7 +21677,7 @@
       },
       "rewards:9": {}
     },
-    "326:10": {
+    "332:10": {
       "questID:3": 391,
       "preRequisites:11": [
         171
@@ -21137,7 +21719,7 @@
       },
       "rewards:9": {}
     },
-    "327:10": {
+    "333:10": {
       "questID:3": 393,
       "preRequisites:11": [
         400
@@ -21179,7 +21761,7 @@
       },
       "rewards:9": {}
     },
-    "328:10": {
+    "334:10": {
       "questID:3": 394,
       "preRequisites:11": [
         245
@@ -21221,7 +21803,7 @@
       },
       "rewards:9": {}
     },
-    "329:10": {
+    "335:10": {
       "questID:3": 395,
       "preRequisites:11": [
         287
@@ -21263,7 +21845,7 @@
       },
       "rewards:9": {}
     },
-    "330:10": {
+    "336:10": {
       "questID:3": 397,
       "preRequisites:11": [],
       "properties:10": {
@@ -21303,7 +21885,7 @@
       },
       "rewards:9": {}
     },
-    "331:10": {
+    "337:10": {
       "questID:3": 399,
       "preRequisites:11": [
         265
@@ -21345,7 +21927,7 @@
       },
       "rewards:9": {}
     },
-    "332:10": {
+    "338:10": {
       "questID:3": 400,
       "preRequisites:11": [
         343
@@ -21387,7 +21969,7 @@
       },
       "rewards:9": {}
     },
-    "333:10": {
+    "339:10": {
       "questID:3": 401,
       "preRequisites:11": [
         408
@@ -21429,7 +22011,7 @@
       },
       "rewards:9": {}
     },
-    "334:10": {
+    "340:10": {
       "questID:3": 403,
       "preRequisites:11": [
         326
@@ -21475,7 +22057,7 @@
       },
       "rewards:9": {}
     },
-    "335:10": {
+    "341:10": {
       "questID:3": 404,
       "preRequisites:11": [
         287
@@ -21517,7 +22099,7 @@
       },
       "rewards:9": {}
     },
-    "336:10": {
+    "342:10": {
       "questID:3": 405,
       "preRequisites:11": [
         206
@@ -21559,7 +22141,7 @@
       },
       "rewards:9": {}
     },
-    "337:10": {
+    "343:10": {
       "questID:3": 407,
       "preRequisites:11": [
         262
@@ -21601,7 +22183,7 @@
       },
       "rewards:9": {}
     },
-    "338:10": {
+    "344:10": {
       "questID:3": 408,
       "preRequisites:11": [],
       "properties:10": {
@@ -21641,7 +22223,7 @@
       },
       "rewards:9": {}
     },
-    "339:10": {
+    "345:10": {
       "questID:3": 409,
       "preRequisites:11": [
         151
@@ -21683,7 +22265,7 @@
       },
       "rewards:9": {}
     },
-    "340:10": {
+    "346:10": {
       "questID:3": 410,
       "preRequisites:11": [],
       "properties:10": {
@@ -21723,7 +22305,7 @@
       },
       "rewards:9": {}
     },
-    "341:10": {
+    "347:10": {
       "questID:3": 411,
       "preRequisites:11": [
         326
@@ -21769,7 +22351,7 @@
       },
       "rewards:9": {}
     },
-    "342:10": {
+    "348:10": {
       "questID:3": 412,
       "preRequisites:11": [],
       "properties:10": {
@@ -21809,7 +22391,7 @@
       },
       "rewards:9": {}
     },
-    "343:10": {
+    "349:10": {
       "questID:3": 414,
       "preRequisites:11": [
         163
@@ -21851,7 +22433,7 @@
       },
       "rewards:9": {}
     },
-    "344:10": {
+    "350:10": {
       "questID:3": 415,
       "preRequisites:11": [
         192
@@ -21893,7 +22475,7 @@
       },
       "rewards:9": {}
     },
-    "345:10": {
+    "351:10": {
       "questID:3": 417,
       "preRequisites:11": [
         336
@@ -21935,7 +22517,7 @@
       },
       "rewards:9": {}
     },
-    "346:10": {
+    "352:10": {
       "questID:3": 419,
       "preRequisites:11": [
         420
@@ -21977,7 +22559,7 @@
       },
       "rewards:9": {}
     },
-    "347:10": {
+    "353:10": {
       "questID:3": 420,
       "preRequisites:11": [
         163
@@ -22019,7 +22601,7 @@
       },
       "rewards:9": {}
     },
-    "348:10": {
+    "354:10": {
       "questID:3": 422,
       "preRequisites:11": [
         287
@@ -22061,7 +22643,7 @@
       },
       "rewards:9": {}
     },
-    "349:10": {
+    "355:10": {
       "questID:3": 424,
       "preRequisites:11": [],
       "properties:10": {
@@ -22101,7 +22683,7 @@
       },
       "rewards:9": {}
     },
-    "350:10": {
+    "356:10": {
       "questID:3": 427,
       "preRequisites:11": [
         509
@@ -22143,7 +22725,7 @@
       },
       "rewards:9": {}
     },
-    "351:10": {
+    "357:10": {
       "questID:3": 428,
       "preRequisites:11": [
         656
@@ -22185,7 +22767,7 @@
       },
       "rewards:9": {}
     },
-    "352:10": {
+    "358:10": {
       "questID:3": 429,
       "preRequisites:11": [],
       "properties:10": {
@@ -22225,7 +22807,7 @@
       },
       "rewards:9": {}
     },
-    "353:10": {
+    "359:10": {
       "questID:3": 431,
       "preRequisites:11": [
         626
@@ -22267,7 +22849,7 @@
       },
       "rewards:9": {}
     },
-    "354:10": {
+    "360:10": {
       "questID:3": 432,
       "preRequisites:11": [
         668
@@ -22309,7 +22891,7 @@
       },
       "rewards:9": {}
     },
-    "355:10": {
+    "361:10": {
       "questID:3": 433,
       "preRequisites:11": [
         660
@@ -22351,7 +22933,7 @@
       },
       "rewards:9": {}
     },
-    "356:10": {
+    "362:10": {
       "questID:3": 435,
       "preRequisites:11": [
         495
@@ -22393,7 +22975,7 @@
       },
       "rewards:9": {}
     },
-    "357:10": {
+    "363:10": {
       "questID:3": 436,
       "preRequisites:11": [
         605
@@ -22435,7 +23017,7 @@
       },
       "rewards:9": {}
     },
-    "358:10": {
+    "364:10": {
       "questID:3": 437,
       "preRequisites:11": [
         578
@@ -22477,7 +23059,7 @@
       },
       "rewards:9": {}
     },
-    "359:10": {
+    "365:10": {
       "questID:3": 439,
       "preRequisites:11": [
         462
@@ -22519,7 +23101,7 @@
       },
       "rewards:9": {}
     },
-    "360:10": {
+    "366:10": {
       "questID:3": 440,
       "preRequisites:11": [],
       "properties:10": {
@@ -22559,7 +23141,7 @@
       },
       "rewards:9": {}
     },
-    "361:10": {
+    "367:10": {
       "questID:3": 441,
       "preRequisites:11": [
         702
@@ -22639,7 +23221,7 @@
       },
       "rewards:9": {}
     },
-    "362:10": {
+    "368:10": {
       "questID:3": 442,
       "preRequisites:11": [
         503
@@ -22681,7 +23263,7 @@
       },
       "rewards:9": {}
     },
-    "363:10": {
+    "369:10": {
       "questID:3": 443,
       "preRequisites:11": [],
       "properties:10": {
@@ -22721,7 +23303,7 @@
       },
       "rewards:9": {}
     },
-    "364:10": {
+    "370:10": {
       "questID:3": 444,
       "preRequisites:11": [],
       "properties:10": {
@@ -22761,7 +23343,7 @@
       },
       "rewards:9": {}
     },
-    "365:10": {
+    "371:10": {
       "questID:3": 445,
       "preRequisites:11": [
         578
@@ -22803,7 +23385,7 @@
       },
       "rewards:9": {}
     },
-    "366:10": {
+    "372:10": {
       "questID:3": 448,
       "preRequisites:11": [
         621
@@ -22845,7 +23427,7 @@
       },
       "rewards:9": {}
     },
-    "367:10": {
+    "373:10": {
       "questID:3": 449,
       "preRequisites:11": [
         655
@@ -22887,7 +23469,7 @@
       },
       "rewards:9": {}
     },
-    "368:10": {
+    "374:10": {
       "questID:3": 450,
       "preRequisites:11": [],
       "properties:10": {
@@ -22927,7 +23509,7 @@
       },
       "rewards:9": {}
     },
-    "369:10": {
+    "375:10": {
       "questID:3": 452,
       "preRequisites:11": [
         605
@@ -22969,7 +23551,7 @@
       },
       "rewards:9": {}
     },
-    "370:10": {
+    "376:10": {
       "questID:3": 454,
       "preRequisites:11": [
         691
@@ -23011,7 +23593,7 @@
       },
       "rewards:9": {}
     },
-    "371:10": {
+    "377:10": {
       "questID:3": 456,
       "preRequisites:11": [
         652
@@ -23053,7 +23635,7 @@
       },
       "rewards:9": {}
     },
-    "372:10": {
+    "378:10": {
       "questID:3": 457,
       "preRequisites:11": [
         562
@@ -23095,7 +23677,7 @@
       },
       "rewards:9": {}
     },
-    "373:10": {
+    "379:10": {
       "questID:3": 458,
       "preRequisites:11": [
         646
@@ -23137,7 +23719,7 @@
       },
       "rewards:9": {}
     },
-    "374:10": {
+    "380:10": {
       "questID:3": 460,
       "preRequisites:11": [],
       "properties:10": {
@@ -23177,7 +23759,7 @@
       },
       "rewards:9": {}
     },
-    "375:10": {
+    "381:10": {
       "questID:3": 461,
       "preRequisites:11": [],
       "properties:10": {
@@ -23217,7 +23799,7 @@
       },
       "rewards:9": {}
     },
-    "376:10": {
+    "382:10": {
       "questID:3": 462,
       "preRequisites:11": [],
       "properties:10": {
@@ -23257,7 +23839,7 @@
       },
       "rewards:9": {}
     },
-    "377:10": {
+    "383:10": {
       "questID:3": 463,
       "preRequisites:11": [
         462
@@ -23299,7 +23881,7 @@
       },
       "rewards:9": {}
     },
-    "378:10": {
+    "384:10": {
       "questID:3": 464,
       "preRequisites:11": [],
       "properties:10": {
@@ -23339,7 +23921,7 @@
       },
       "rewards:9": {}
     },
-    "379:10": {
+    "385:10": {
       "questID:3": 465,
       "preRequisites:11": [
         708
@@ -23381,7 +23963,7 @@
       },
       "rewards:9": {}
     },
-    "380:10": {
+    "386:10": {
       "questID:3": 466,
       "preRequisites:11": [
         530
@@ -23423,7 +24005,7 @@
       },
       "rewards:9": {}
     },
-    "381:10": {
+    "387:10": {
       "questID:3": 468,
       "preRequisites:11": [],
       "properties:10": {
@@ -23463,7 +24045,7 @@
       },
       "rewards:9": {}
     },
-    "382:10": {
+    "388:10": {
       "questID:3": 469,
       "preRequisites:11": [
         578
@@ -23505,7 +24087,7 @@
       },
       "rewards:9": {}
     },
-    "383:10": {
+    "389:10": {
       "questID:3": 470,
       "preRequisites:11": [
         610
@@ -23547,7 +24129,7 @@
       },
       "rewards:9": {}
     },
-    "384:10": {
+    "390:10": {
       "questID:3": 472,
       "preRequisites:11": [],
       "properties:10": {
@@ -23587,7 +24169,7 @@
       },
       "rewards:9": {}
     },
-    "385:10": {
+    "391:10": {
       "questID:3": 473,
       "preRequisites:11": [
         478
@@ -23629,7 +24211,7 @@
       },
       "rewards:9": {}
     },
-    "386:10": {
+    "392:10": {
       "questID:3": 476,
       "preRequisites:11": [
         483
@@ -23671,7 +24253,7 @@
       },
       "rewards:9": {}
     },
-    "387:10": {
+    "393:10": {
       "questID:3": 477,
       "preRequisites:11": [
         656
@@ -23737,7 +24319,7 @@
       },
       "rewards:9": {}
     },
-    "388:10": {
+    "394:10": {
       "questID:3": 478,
       "preRequisites:11": [],
       "properties:10": {
@@ -23777,7 +24359,7 @@
       },
       "rewards:9": {}
     },
-    "389:10": {
+    "395:10": {
       "questID:3": 479,
       "preRequisites:11": [
         651
@@ -23819,7 +24401,7 @@
       },
       "rewards:9": {}
     },
-    "390:10": {
+    "396:10": {
       "questID:3": 482,
       "preRequisites:11": [],
       "properties:10": {
@@ -23859,7 +24441,7 @@
       },
       "rewards:9": {}
     },
-    "391:10": {
+    "397:10": {
       "questID:3": 483,
       "preRequisites:11": [
         504
@@ -23901,7 +24483,7 @@
       },
       "rewards:9": {}
     },
-    "392:10": {
+    "398:10": {
       "questID:3": 484,
       "preRequisites:11": [
         536
@@ -23943,7 +24525,7 @@
       },
       "rewards:9": {}
     },
-    "393:10": {
+    "399:10": {
       "questID:3": 485,
       "preRequisites:11": [
         464
@@ -23985,7 +24567,7 @@
       },
       "rewards:9": {}
     },
-    "394:10": {
+    "400:10": {
       "questID:3": 486,
       "preRequisites:11": [
         470
@@ -24027,7 +24609,7 @@
       },
       "rewards:9": {}
     },
-    "395:10": {
+    "401:10": {
       "questID:3": 487,
       "preRequisites:11": [
         626
@@ -24069,7 +24651,7 @@
       },
       "rewards:9": {}
     },
-    "396:10": {
+    "402:10": {
       "questID:3": 488,
       "preRequisites:11": [],
       "properties:10": {
@@ -24109,7 +24691,7 @@
       },
       "rewards:9": {}
     },
-    "397:10": {
+    "403:10": {
       "questID:3": 491,
       "preRequisites:11": [],
       "properties:10": {
@@ -24149,7 +24731,7 @@
       },
       "rewards:9": {}
     },
-    "398:10": {
+    "404:10": {
       "questID:3": 493,
       "preRequisites:11": [
         578
@@ -24191,7 +24773,7 @@
       },
       "rewards:9": {}
     },
-    "399:10": {
+    "405:10": {
       "questID:3": 494,
       "preRequisites:11": [
         456
@@ -24233,7 +24815,7 @@
       },
       "rewards:9": {}
     },
-    "400:10": {
+    "406:10": {
       "questID:3": 495,
       "preRequisites:11": [],
       "properties:10": {
@@ -24273,7 +24855,7 @@
       },
       "rewards:9": {}
     },
-    "401:10": {
+    "407:10": {
       "questID:3": 497,
       "preRequisites:11": [
         618
@@ -24315,7 +24897,7 @@
       },
       "rewards:9": {}
     },
-    "402:10": {
+    "408:10": {
       "questID:3": 498,
       "preRequisites:11": [],
       "properties:10": {
@@ -24355,7 +24937,7 @@
       },
       "rewards:9": {}
     },
-    "403:10": {
+    "409:10": {
       "questID:3": 499,
       "preRequisites:11": [],
       "properties:10": {
@@ -24395,7 +24977,7 @@
       },
       "rewards:9": {}
     },
-    "404:10": {
+    "410:10": {
       "questID:3": 500,
       "preRequisites:11": [],
       "properties:10": {
@@ -24435,7 +25017,7 @@
       },
       "rewards:9": {}
     },
-    "405:10": {
+    "411:10": {
       "questID:3": 501,
       "preRequisites:11": [],
       "properties:10": {
@@ -24475,7 +25057,7 @@
       },
       "rewards:9": {}
     },
-    "406:10": {
+    "412:10": {
       "questID:3": 502,
       "preRequisites:11": [
         454
@@ -24517,7 +25099,7 @@
       },
       "rewards:9": {}
     },
-    "407:10": {
+    "413:10": {
       "questID:3": 503,
       "preRequisites:11": [
         679
@@ -24559,7 +25141,7 @@
       },
       "rewards:9": {}
     },
-    "408:10": {
+    "414:10": {
       "questID:3": 504,
       "preRequisites:11": [],
       "properties:10": {
@@ -24599,7 +25181,7 @@
       },
       "rewards:9": {}
     },
-    "409:10": {
+    "415:10": {
       "questID:3": 506,
       "preRequisites:11": [
         500
@@ -24641,7 +25223,7 @@
       },
       "rewards:9": {}
     },
-    "410:10": {
+    "416:10": {
       "questID:3": 507,
       "preRequisites:11": [
         494
@@ -24683,7 +25265,7 @@
       },
       "rewards:9": {}
     },
-    "411:10": {
+    "417:10": {
       "questID:3": 508,
       "preRequisites:11": [
         692
@@ -24725,7 +25307,7 @@
       },
       "rewards:9": {}
     },
-    "412:10": {
+    "418:10": {
       "questID:3": 509,
       "preRequisites:11": [],
       "properties:10": {
@@ -24765,7 +25347,7 @@
       },
       "rewards:9": {}
     },
-    "413:10": {
+    "419:10": {
       "questID:3": 511,
       "preRequisites:11": [
         576
@@ -24807,7 +25389,7 @@
       },
       "rewards:9": {}
     },
-    "414:10": {
+    "420:10": {
       "questID:3": 514,
       "preRequisites:11": [
         646
@@ -24849,7 +25431,7 @@
       },
       "rewards:9": {}
     },
-    "415:10": {
+    "421:10": {
       "questID:3": 516,
       "preRequisites:11": [
         583
@@ -24891,7 +25473,7 @@
       },
       "rewards:9": {}
     },
-    "416:10": {
+    "422:10": {
       "questID:3": 518,
       "preRequisites:11": [
         462
@@ -24933,7 +25515,7 @@
       },
       "rewards:9": {}
     },
-    "417:10": {
+    "423:10": {
       "questID:3": 519,
       "preRequisites:11": [
         465
@@ -24975,7 +25557,7 @@
       },
       "rewards:9": {}
     },
-    "418:10": {
+    "424:10": {
       "questID:3": 520,
       "preRequisites:11": [
         494
@@ -25017,7 +25599,7 @@
       },
       "rewards:9": {}
     },
-    "419:10": {
+    "425:10": {
       "questID:3": 521,
       "preRequisites:11": [
         494
@@ -25059,7 +25641,7 @@
       },
       "rewards:9": {}
     },
-    "420:10": {
+    "426:10": {
       "questID:3": 522,
       "preRequisites:11": [],
       "properties:10": {
@@ -25099,7 +25681,7 @@
       },
       "rewards:9": {}
     },
-    "421:10": {
+    "427:10": {
       "questID:3": 523,
       "preRequisites:11": [
         502
@@ -25141,7 +25723,7 @@
       },
       "rewards:9": {}
     },
-    "422:10": {
+    "428:10": {
       "questID:3": 525,
       "preRequisites:11": [
         548
@@ -25183,7 +25765,7 @@
       },
       "rewards:9": {}
     },
-    "423:10": {
+    "429:10": {
       "questID:3": 528,
       "preRequisites:11": [
         708
@@ -25225,7 +25807,7 @@
       },
       "rewards:9": {}
     },
-    "424:10": {
+    "430:10": {
       "questID:3": 529,
       "preRequisites:11": [
         578
@@ -25267,7 +25849,7 @@
       },
       "rewards:9": {}
     },
-    "425:10": {
+    "431:10": {
       "questID:3": 530,
       "preRequisites:11": [
         610
@@ -25309,7 +25891,7 @@
       },
       "rewards:9": {}
     },
-    "426:10": {
+    "432:10": {
       "questID:3": 531,
       "preRequisites:11": [],
       "properties:10": {
@@ -25349,7 +25931,7 @@
       },
       "rewards:9": {}
     },
-    "427:10": {
+    "433:10": {
       "questID:3": 532,
       "preRequisites:11": [],
       "properties:10": {
@@ -25389,7 +25971,7 @@
       },
       "rewards:9": {}
     },
-    "428:10": {
+    "434:10": {
       "questID:3": 533,
       "preRequisites:11": [
         536
@@ -25431,7 +26013,7 @@
       },
       "rewards:9": {}
     },
-    "429:10": {
+    "435:10": {
       "questID:3": 534,
       "preRequisites:11": [],
       "properties:10": {
@@ -25471,7 +26053,7 @@
       },
       "rewards:9": {}
     },
-    "430:10": {
+    "436:10": {
       "questID:3": 536,
       "preRequisites:11": [
         478
@@ -25513,7 +26095,7 @@
       },
       "rewards:9": {}
     },
-    "431:10": {
+    "437:10": {
       "questID:3": 537,
       "preRequisites:11": [
         462
@@ -25560,7 +26142,7 @@
       },
       "rewards:9": {}
     },
-    "432:10": {
+    "438:10": {
       "questID:3": 538,
       "preRequisites:11": [],
       "properties:10": {
@@ -25600,7 +26182,7 @@
       },
       "rewards:9": {}
     },
-    "433:10": {
+    "439:10": {
       "questID:3": 539,
       "preRequisites:11": [
         494
@@ -25642,7 +26224,7 @@
       },
       "rewards:9": {}
     },
-    "434:10": {
+    "440:10": {
       "questID:3": 540,
       "preRequisites:11": [
         473
@@ -25684,7 +26266,7 @@
       },
       "rewards:9": {}
     },
-    "435:10": {
+    "441:10": {
       "questID:3": 542,
       "preRequisites:11": [
         672
@@ -25726,7 +26308,7 @@
       },
       "rewards:9": {}
     },
-    "436:10": {
+    "442:10": {
       "questID:3": 543,
       "preRequisites:11": [
         672
@@ -25768,7 +26350,7 @@
       },
       "rewards:9": {}
     },
-    "437:10": {
+    "443:10": {
       "questID:3": 545,
       "preRequisites:11": [
         646
@@ -25810,7 +26392,7 @@
       },
       "rewards:9": {}
     },
-    "438:10": {
+    "444:10": {
       "questID:3": 547,
       "preRequisites:11": [
         442
@@ -25852,7 +26434,7 @@
       },
       "rewards:9": {}
     },
-    "439:10": {
+    "445:10": {
       "questID:3": 548,
       "preRequisites:11": [],
       "properties:10": {
@@ -25892,7 +26474,7 @@
       },
       "rewards:9": {}
     },
-    "440:10": {
+    "446:10": {
       "questID:3": 549,
       "preRequisites:11": [
         483
@@ -25934,7 +26516,7 @@
       },
       "rewards:9": {}
     },
-    "441:10": {
+    "447:10": {
       "questID:3": 550,
       "preRequisites:11": [
         672
@@ -25976,7 +26558,7 @@
       },
       "rewards:9": {}
     },
-    "442:10": {
+    "448:10": {
       "questID:3": 553,
       "preRequisites:11": [
         703
@@ -26018,7 +26600,7 @@
       },
       "rewards:9": {}
     },
-    "443:10": {
+    "449:10": {
       "questID:3": 554,
       "preRequisites:11": [],
       "properties:10": {
@@ -26058,7 +26640,7 @@
       },
       "rewards:9": {}
     },
-    "444:10": {
+    "450:10": {
       "questID:3": 556,
       "preRequisites:11": [
         672
@@ -26100,7 +26682,7 @@
       },
       "rewards:9": {}
     },
-    "445:10": {
+    "451:10": {
       "questID:3": 560,
       "preRequisites:11": [
         685
@@ -26142,7 +26724,7 @@
       },
       "rewards:9": {}
     },
-    "446:10": {
+    "452:10": {
       "questID:3": 561,
       "preRequisites:11": [
         553
@@ -26184,7 +26766,7 @@
       },
       "rewards:9": {}
     },
-    "447:10": {
+    "453:10": {
       "questID:3": 562,
       "preRequisites:11": [],
       "properties:10": {
@@ -26224,7 +26806,7 @@
       },
       "rewards:9": {}
     },
-    "448:10": {
+    "454:10": {
       "questID:3": 564,
       "preRequisites:11": [],
       "properties:10": {
@@ -26264,7 +26846,7 @@
       },
       "rewards:9": {}
     },
-    "449:10": {
+    "455:10": {
       "questID:3": 565,
       "preRequisites:11": [
         435
@@ -26306,7 +26888,7 @@
       },
       "rewards:9": {}
     },
-    "450:10": {
+    "456:10": {
       "questID:3": 566,
       "preRequisites:11": [],
       "properties:10": {
@@ -26346,7 +26928,7 @@
       },
       "rewards:9": {}
     },
-    "451:10": {
+    "457:10": {
       "questID:3": 568,
       "preRequisites:11": [
         478
@@ -26388,7 +26970,7 @@
       },
       "rewards:9": {}
     },
-    "452:10": {
+    "458:10": {
       "questID:3": 569,
       "preRequisites:11": [
         538
@@ -26430,7 +27012,7 @@
       },
       "rewards:9": {}
     },
-    "453:10": {
+    "459:10": {
       "questID:3": 570,
       "preRequisites:11": [],
       "properties:10": {
@@ -26470,7 +27052,7 @@
       },
       "rewards:9": {}
     },
-    "454:10": {
+    "460:10": {
       "questID:3": 571,
       "preRequisites:11": [
         660
@@ -26512,7 +27094,7 @@
       },
       "rewards:9": {}
     },
-    "455:10": {
+    "461:10": {
       "questID:3": 572,
       "preRequisites:11": [
         646
@@ -26554,7 +27136,7 @@
       },
       "rewards:9": {}
     },
-    "456:10": {
+    "462:10": {
       "questID:3": 573,
       "preRequisites:11": [
         511
@@ -26596,7 +27178,7 @@
       },
       "rewards:9": {}
     },
-    "457:10": {
+    "463:10": {
       "questID:3": 574,
       "preRequisites:11": [],
       "properties:10": {
@@ -26636,7 +27218,7 @@
       },
       "rewards:9": {}
     },
-    "458:10": {
+    "464:10": {
       "questID:3": 575,
       "preRequisites:11": [
         578
@@ -26678,7 +27260,7 @@
       },
       "rewards:9": {}
     },
-    "459:10": {
+    "465:10": {
       "questID:3": 576,
       "preRequisites:11": [],
       "properties:10": {
@@ -26718,7 +27300,7 @@
       },
       "rewards:9": {}
     },
-    "460:10": {
+    "466:10": {
       "questID:3": 577,
       "preRequisites:11": [
         442
@@ -26760,7 +27342,7 @@
       },
       "rewards:9": {}
     },
-    "461:10": {
+    "467:10": {
       "questID:3": 578,
       "preRequisites:11": [
         456
@@ -26802,7 +27384,7 @@
       },
       "rewards:9": {}
     },
-    "462:10": {
+    "468:10": {
       "questID:3": 579,
       "preRequisites:11": [
         462
@@ -26844,7 +27426,7 @@
       },
       "rewards:9": {}
     },
-    "463:10": {
+    "469:10": {
       "questID:3": 581,
       "preRequisites:11": [
         494
@@ -26886,7 +27468,7 @@
       },
       "rewards:9": {}
     },
-    "464:10": {
+    "470:10": {
       "questID:3": 583,
       "preRequisites:11": [
         688
@@ -26928,7 +27510,7 @@
       },
       "rewards:9": {}
     },
-    "465:10": {
+    "471:10": {
       "questID:3": 585,
       "preRequisites:11": [
         491
@@ -26970,7 +27552,7 @@
       },
       "rewards:9": {}
     },
-    "466:10": {
+    "472:10": {
       "questID:3": 586,
       "preRequisites:11": [
         564
@@ -27012,7 +27594,7 @@
       },
       "rewards:9": {}
     },
-    "467:10": {
+    "473:10": {
       "questID:3": 587,
       "preRequisites:11": [
         578
@@ -27054,7 +27636,7 @@
       },
       "rewards:9": {}
     },
-    "468:10": {
+    "474:10": {
       "questID:3": 588,
       "preRequisites:11": [],
       "properties:10": {
@@ -27097,7 +27679,7 @@
       },
       "rewards:9": {}
     },
-    "469:10": {
+    "475:10": {
       "questID:3": 593,
       "preRequisites:11": [],
       "properties:10": {
@@ -27137,7 +27719,7 @@
       },
       "rewards:9": {}
     },
-    "470:10": {
+    "476:10": {
       "questID:3": 594,
       "preRequisites:11": [],
       "properties:10": {
@@ -27177,7 +27759,7 @@
       },
       "rewards:9": {}
     },
-    "471:10": {
+    "477:10": {
       "questID:3": 595,
       "preRequisites:11": [],
       "properties:10": {
@@ -27217,7 +27799,7 @@
       },
       "rewards:9": {}
     },
-    "472:10": {
+    "478:10": {
       "questID:3": 596,
       "preRequisites:11": [
         634
@@ -27259,7 +27841,7 @@
       },
       "rewards:9": {}
     },
-    "473:10": {
+    "479:10": {
       "questID:3": 597,
       "preRequisites:11": [],
       "properties:10": {
@@ -27299,7 +27881,7 @@
       },
       "rewards:9": {}
     },
-    "474:10": {
+    "480:10": {
       "questID:3": 600,
       "preRequisites:11": [],
       "properties:10": {
@@ -27339,7 +27921,7 @@
       },
       "rewards:9": {}
     },
-    "475:10": {
+    "481:10": {
       "questID:3": 601,
       "preRequisites:11": [],
       "properties:10": {
@@ -27379,7 +27961,7 @@
       },
       "rewards:9": {}
     },
-    "476:10": {
+    "482:10": {
       "questID:3": 602,
       "preRequisites:11": [
         454
@@ -27421,7 +28003,7 @@
       },
       "rewards:9": {}
     },
-    "477:10": {
+    "483:10": {
       "questID:3": 603,
       "preRequisites:11": [
         532
@@ -27463,7 +28045,7 @@
       },
       "rewards:9": {}
     },
-    "478:10": {
+    "484:10": {
       "questID:3": 605,
       "preRequisites:11": [],
       "properties:10": {
@@ -27503,7 +28085,7 @@
       },
       "rewards:9": {}
     },
-    "479:10": {
+    "485:10": {
       "questID:3": 607,
       "preRequisites:11": [
         442
@@ -27545,7 +28127,7 @@
       },
       "rewards:9": {}
     },
-    "480:10": {
+    "486:10": {
       "questID:3": 609,
       "preRequisites:11": [
         578
@@ -27587,7 +28169,7 @@
       },
       "rewards:9": {}
     },
-    "481:10": {
+    "487:10": {
       "questID:3": 610,
       "preRequisites:11": [
         554
@@ -27629,7 +28211,7 @@
       },
       "rewards:9": {}
     },
-    "482:10": {
+    "488:10": {
       "questID:3": 611,
       "preRequisites:11": [
         530
@@ -27671,7 +28253,7 @@
       },
       "rewards:9": {}
     },
-    "483:10": {
+    "489:10": {
       "questID:3": 612,
       "preRequisites:11": [
         442
@@ -27713,7 +28295,7 @@
       },
       "rewards:9": {}
     },
-    "484:10": {
+    "490:10": {
       "questID:3": 613,
       "preRequisites:11": [
         522
@@ -27755,7 +28337,7 @@
       },
       "rewards:9": {}
     },
-    "485:10": {
+    "491:10": {
       "questID:3": 614,
       "preRequisites:11": [
         646
@@ -27800,7 +28382,7 @@
       },
       "rewards:9": {}
     },
-    "486:10": {
+    "492:10": {
       "questID:3": 615,
       "preRequisites:11": [],
       "properties:10": {
@@ -27840,7 +28422,7 @@
       },
       "rewards:9": {}
     },
-    "487:10": {
+    "493:10": {
       "questID:3": 617,
       "preRequisites:11": [
         672
@@ -27882,7 +28464,7 @@
       },
       "rewards:9": {}
     },
-    "488:10": {
+    "494:10": {
       "questID:3": 618,
       "preRequisites:11": [
         659
@@ -27924,7 +28506,7 @@
       },
       "rewards:9": {}
     },
-    "489:10": {
+    "495:10": {
       "questID:3": 619,
       "preRequisites:11": [
         556
@@ -27966,7 +28548,7 @@
       },
       "rewards:9": {}
     },
-    "490:10": {
+    "496:10": {
       "questID:3": 620,
       "preRequisites:11": [],
       "properties:10": {
@@ -28006,7 +28588,7 @@
       },
       "rewards:9": {}
     },
-    "491:10": {
+    "497:10": {
       "questID:3": 621,
       "preRequisites:11": [
         478
@@ -28048,7 +28630,7 @@
       },
       "rewards:9": {}
     },
-    "492:10": {
+    "498:10": {
       "questID:3": 622,
       "preRequisites:11": [
         597
@@ -28090,7 +28672,7 @@
       },
       "rewards:9": {}
     },
-    "493:10": {
+    "499:10": {
       "questID:3": 623,
       "preRequisites:11": [],
       "properties:10": {
@@ -28130,7 +28712,7 @@
       },
       "rewards:9": {}
     },
-    "494:10": {
+    "500:10": {
       "questID:3": 624,
       "preRequisites:11": [
         617
@@ -28176,7 +28758,7 @@
       },
       "rewards:9": {}
     },
-    "495:10": {
+    "501:10": {
       "questID:3": 626,
       "preRequisites:11": [
         528
@@ -28218,7 +28800,7 @@
       },
       "rewards:9": {}
     },
-    "496:10": {
+    "502:10": {
       "questID:3": 627,
       "preRequisites:11": [
         601
@@ -28260,7 +28842,7 @@
       },
       "rewards:9": {}
     },
-    "497:10": {
+    "503:10": {
       "questID:3": 628,
       "preRequisites:11": [],
       "properties:10": {
@@ -28300,7 +28882,7 @@
       },
       "rewards:9": {}
     },
-    "498:10": {
+    "504:10": {
       "questID:3": 629,
       "preRequisites:11": [
         646
@@ -28342,7 +28924,7 @@
       },
       "rewards:9": {}
     },
-    "499:10": {
+    "505:10": {
       "questID:3": 630,
       "preRequisites:11": [
         578
@@ -28384,7 +28966,7 @@
       },
       "rewards:9": {}
     },
-    "500:10": {
+    "506:10": {
       "questID:3": 631,
       "preRequisites:11": [],
       "properties:10": {
@@ -28424,7 +29006,7 @@
       },
       "rewards:9": {}
     },
-    "501:10": {
+    "507:10": {
       "questID:3": 633,
       "preRequisites:11": [
         556
@@ -28466,7 +29048,7 @@
       },
       "rewards:9": {}
     },
-    "502:10": {
+    "508:10": {
       "questID:3": 634,
       "preRequisites:11": [],
       "properties:10": {
@@ -28506,7 +29088,7 @@
       },
       "rewards:9": {}
     },
-    "503:10": {
+    "509:10": {
       "questID:3": 635,
       "preRequisites:11": [],
       "properties:10": {
@@ -28546,7 +29128,7 @@
       },
       "rewards:9": {}
     },
-    "504:10": {
+    "510:10": {
       "questID:3": 637,
       "preRequisites:11": [],
       "properties:10": {
@@ -28586,7 +29168,7 @@
       },
       "rewards:9": {}
     },
-    "505:10": {
+    "511:10": {
       "questID:3": 638,
       "preRequisites:11": [
         578
@@ -28628,7 +29210,7 @@
       },
       "rewards:9": {}
     },
-    "506:10": {
+    "512:10": {
       "questID:3": 640,
       "preRequisites:11": [],
       "properties:10": {
@@ -28668,7 +29250,7 @@
       },
       "rewards:9": {}
     },
-    "507:10": {
+    "513:10": {
       "questID:3": 642,
       "preRequisites:11": [
         669
@@ -28710,7 +29292,7 @@
       },
       "rewards:9": {}
     },
-    "508:10": {
+    "514:10": {
       "questID:3": 644,
       "preRequisites:11": [
         522
@@ -28752,7 +29334,7 @@
       },
       "rewards:9": {}
     },
-    "509:10": {
+    "515:10": {
       "questID:3": 645,
       "preRequisites:11": [
         444
@@ -28794,7 +29376,7 @@
       },
       "rewards:9": {}
     },
-    "510:10": {
+    "516:10": {
       "questID:3": 646,
       "preRequisites:11": [],
       "properties:10": {
@@ -28834,7 +29416,7 @@
       },
       "rewards:9": {}
     },
-    "511:10": {
+    "517:10": {
       "questID:3": 647,
       "preRequisites:11": [
         618
@@ -28876,7 +29458,7 @@
       },
       "rewards:9": {}
     },
-    "512:10": {
+    "518:10": {
       "questID:3": 648,
       "preRequisites:11": [
         532
@@ -28918,7 +29500,7 @@
       },
       "rewards:9": {}
     },
-    "513:10": {
+    "519:10": {
       "questID:3": 649,
       "preRequisites:11": [
         669
@@ -28960,7 +29542,7 @@
       },
       "rewards:9": {}
     },
-    "514:10": {
+    "520:10": {
       "questID:3": 650,
       "preRequisites:11": [
         462
@@ -29002,7 +29584,7 @@
       },
       "rewards:9": {}
     },
-    "515:10": {
+    "521:10": {
       "questID:3": 651,
       "preRequisites:11": [
         553
@@ -29044,7 +29626,7 @@
       },
       "rewards:9": {}
     },
-    "516:10": {
+    "522:10": {
       "questID:3": 652,
       "preRequisites:11": [],
       "properties:10": {
@@ -29084,7 +29666,7 @@
       },
       "rewards:9": {}
     },
-    "517:10": {
+    "523:10": {
       "questID:3": 653,
       "preRequisites:11": [
         646
@@ -29126,7 +29708,7 @@
       },
       "rewards:9": {}
     },
-    "518:10": {
+    "524:10": {
       "questID:3": 654,
       "preRequisites:11": [
         553
@@ -29168,7 +29750,7 @@
       },
       "rewards:9": {}
     },
-    "519:10": {
+    "525:10": {
       "questID:3": 655,
       "preRequisites:11": [
         506
@@ -29210,7 +29792,7 @@
       },
       "rewards:9": {}
     },
-    "520:10": {
+    "526:10": {
       "questID:3": 656,
       "preRequisites:11": [
         617
@@ -29256,7 +29838,7 @@
       },
       "rewards:9": {}
     },
-    "521:10": {
+    "527:10": {
       "questID:3": 657,
       "preRequisites:11": [
         462
@@ -29298,7 +29880,7 @@
       },
       "rewards:9": {}
     },
-    "522:10": {
+    "528:10": {
       "questID:3": 659,
       "preRequisites:11": [],
       "properties:10": {
@@ -29338,7 +29920,7 @@
       },
       "rewards:9": {}
     },
-    "523:10": {
+    "529:10": {
       "questID:3": 660,
       "preRequisites:11": [
         664
@@ -29380,7 +29962,7 @@
       },
       "rewards:9": {}
     },
-    "524:10": {
+    "530:10": {
       "questID:3": 662,
       "preRequisites:11": [
         462
@@ -29422,7 +30004,7 @@
       },
       "rewards:9": {}
     },
-    "525:10": {
+    "531:10": {
       "questID:3": 663,
       "preRequisites:11": [
         530
@@ -29464,7 +30046,7 @@
       },
       "rewards:9": {}
     },
-    "526:10": {
+    "532:10": {
       "questID:3": 664,
       "preRequisites:11": [
         483
@@ -29506,7 +30088,7 @@
       },
       "rewards:9": {}
     },
-    "527:10": {
+    "533:10": {
       "questID:3": 665,
       "preRequisites:11": [
         462
@@ -29548,7 +30130,7 @@
       },
       "rewards:9": {}
     },
-    "528:10": {
+    "534:10": {
       "questID:3": 668,
       "preRequisites:11": [
         470
@@ -29590,7 +30172,7 @@
       },
       "rewards:9": {}
     },
-    "529:10": {
+    "535:10": {
       "questID:3": 669,
       "preRequisites:11": [
         531
@@ -29632,7 +30214,7 @@
       },
       "rewards:9": {}
     },
-    "530:10": {
+    "536:10": {
       "questID:3": 670,
       "preRequisites:11": [],
       "properties:10": {
@@ -29672,7 +30254,7 @@
       },
       "rewards:9": {}
     },
-    "531:10": {
+    "537:10": {
       "questID:3": 672,
       "preRequisites:11": [],
       "properties:10": {
@@ -29712,7 +30294,7 @@
       },
       "rewards:9": {}
     },
-    "532:10": {
+    "538:10": {
       "questID:3": 675,
       "preRequisites:11": [],
       "properties:10": {
@@ -29752,7 +30334,7 @@
       },
       "rewards:9": {}
     },
-    "533:10": {
+    "539:10": {
       "questID:3": 678,
       "preRequisites:11": [
         442
@@ -29794,7 +30376,7 @@
       },
       "rewards:9": {}
     },
-    "534:10": {
+    "540:10": {
       "questID:3": 679,
       "preRequisites:11": [
         672
@@ -29836,7 +30418,7 @@
       },
       "rewards:9": {}
     },
-    "535:10": {
+    "541:10": {
       "questID:3": 680,
       "preRequisites:11": [
         646
@@ -29878,7 +30460,7 @@
       },
       "rewards:9": {}
     },
-    "536:10": {
+    "542:10": {
       "questID:3": 681,
       "preRequisites:11": [
         688
@@ -29920,7 +30502,7 @@
       },
       "rewards:9": {}
     },
-    "537:10": {
+    "543:10": {
       "questID:3": 682,
       "preRequisites:11": [
         462
@@ -29962,7 +30544,7 @@
       },
       "rewards:9": {}
     },
-    "538:10": {
+    "544:10": {
       "questID:3": 684,
       "preRequisites:11": [
         691
@@ -30004,7 +30586,7 @@
       },
       "rewards:9": {}
     },
-    "539:10": {
+    "545:10": {
       "questID:3": 685,
       "preRequisites:11": [
         536
@@ -30046,7 +30628,7 @@
       },
       "rewards:9": {}
     },
-    "540:10": {
+    "546:10": {
       "questID:3": 686,
       "preRequisites:11": [
         578
@@ -30088,7 +30670,7 @@
       },
       "rewards:9": {}
     },
-    "541:10": {
+    "547:10": {
       "questID:3": 688,
       "preRequisites:11": [],
       "properties:10": {
@@ -30128,7 +30710,7 @@
       },
       "rewards:9": {}
     },
-    "542:10": {
+    "548:10": {
       "questID:3": 690,
       "preRequisites:11": [
         556
@@ -30170,7 +30752,7 @@
       },
       "rewards:9": {}
     },
-    "543:10": {
+    "549:10": {
       "questID:3": 691,
       "preRequisites:11": [
         634
@@ -30212,7 +30794,7 @@
       },
       "rewards:9": {}
     },
-    "544:10": {
+    "550:10": {
       "questID:3": 692,
       "preRequisites:11": [
         699
@@ -30254,7 +30836,7 @@
       },
       "rewards:9": {}
     },
-    "545:10": {
+    "551:10": {
       "questID:3": 694,
       "preRequisites:11": [
         617
@@ -30300,7 +30882,7 @@
       },
       "rewards:9": {}
     },
-    "546:10": {
+    "552:10": {
       "questID:3": 695,
       "preRequisites:11": [
         578
@@ -30342,7 +30924,7 @@
       },
       "rewards:9": {}
     },
-    "547:10": {
+    "553:10": {
       "questID:3": 696,
       "preRequisites:11": [
         497
@@ -30384,7 +30966,7 @@
       },
       "rewards:9": {}
     },
-    "548:10": {
+    "554:10": {
       "questID:3": 698,
       "preRequisites:11": [
         553
@@ -30426,7 +31008,7 @@
       },
       "rewards:9": {}
     },
-    "549:10": {
+    "555:10": {
       "questID:3": 699,
       "preRequisites:11": [],
       "properties:10": {
@@ -30466,7 +31048,7 @@
       },
       "rewards:9": {}
     },
-    "550:10": {
+    "556:10": {
       "questID:3": 700,
       "preRequisites:11": [
         442
@@ -30508,7 +31090,7 @@
       },
       "rewards:9": {}
     },
-    "551:10": {
+    "557:10": {
       "questID:3": 701,
       "preRequisites:11": [],
       "properties:10": {
@@ -30548,7 +31130,7 @@
       },
       "rewards:9": {}
     },
-    "552:10": {
+    "558:10": {
       "questID:3": 702,
       "preRequisites:11": [
         617
@@ -30594,7 +31176,7 @@
       },
       "rewards:9": {}
     },
-    "553:10": {
+    "559:10": {
       "questID:3": 703,
       "preRequisites:11": [],
       "properties:10": {
@@ -30634,7 +31216,7 @@
       },
       "rewards:9": {}
     },
-    "554:10": {
+    "560:10": {
       "questID:3": 705,
       "preRequisites:11": [
         454
@@ -30676,7 +31258,7 @@
       },
       "rewards:9": {}
     },
-    "555:10": {
+    "561:10": {
       "questID:3": 706,
       "preRequisites:11": [
         483
@@ -30718,7 +31300,7 @@
       },
       "rewards:9": {}
     },
-    "556:10": {
+    "562:10": {
       "questID:3": 708,
       "preRequisites:11": [
         627
@@ -30760,7 +31342,7 @@
       },
       "rewards:9": {}
     },
-    "557:10": {
+    "563:10": {
       "questID:3": 710,
       "preRequisites:11": [
         711
@@ -30802,7 +31384,7 @@
       },
       "rewards:9": {}
     },
-    "558:10": {
+    "564:10": {
       "questID:3": 711,
       "preRequisites:11": [
         454
@@ -30844,7 +31426,7 @@
       },
       "rewards:9": {}
     },
-    "559:10": {
+    "565:10": {
       "questID:3": 713,
       "preRequisites:11": [
         578
@@ -30886,7 +31468,7 @@
       },
       "rewards:9": {}
     },
-    "560:10": {
+    "566:10": {
       "questID:3": 714,
       "preRequisites:11": [
         82,
@@ -30917,13 +31499,13 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Magical Realism Technolgy",
-          "desc:8": "Nobody really knows how the atomic reconstructor works. Power goes in (hopefully you attached a button to it before powering it) and changes to the world around the machine happen. The atomic reconstructor is used for \n\n* creating crafting bits and pieces\n* mining\n* laser effects"
+          "desc:8": "Nobody really knows how the atomic reconstructor works. Power goes in (hopefully you attached a button to it before powering it) and changes to the world around the machine happen. The atomic reconstructor is used for \n\n* creating crafting bits and pieces\n* mining\n* laser effects\n\nYou are going to need a variety of new metals as plates and ingots. And a transistor. Welcome to the transistor age."
         }
       },
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "allowSmelt:1": 1,
+          "allowSmelt:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
           "allowCraft:1": 1,
@@ -30937,6 +31519,15 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "opencomputers:material",
+              "Count:3": 1,
+              "Damage:2": 6,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:crafting"
@@ -30944,7 +31535,7 @@
       },
       "rewards:9": {}
     },
-    "561:10": {
+    "567:10": {
       "questID:3": 715,
       "preRequisites:11": [
         714,
@@ -30979,7 +31570,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Holding the Power",
-          "desc:8": "Nobody knows how batteries work but gosh they use a lot of them. You are going to need to make five restonia crystals using your atomic reconstructor.\n\nIt\u0027s simple. Make sure your atomic reconstructor is\n\n* built somewhere a block or two from a wall (to block the laser)\n* is in pulse mode and has a button attached to oit\n* is powered\n\nDrop the redstone in front of the laser, press the button, and poof."
+          "desc:8": "Nobody knows how batteries work but gosh they use a lot of them. You are going to need to make six restonia crystals using your atomic reconstructor.\n\nIt\u0027s simple. Make sure your atomic reconstructor is\n\n* built somewhere a block or two from a wall (to block the laser)\n* is in pulse mode and has a button attached to oit\n* is powered\n\nDrop the redstone in front of the laser, press the button, and poof.\n\nUse one of these restonia crystals to make a basic battery."
         }
       },
       "tasks:9": {
@@ -31002,11 +31593,34 @@
             }
           },
           "taskID:8": "bq_standard:retrieval"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "actuallyadditions:item_battery",
+              "Count:3": 1,
+              "tag:10": {
+                "Energy:3": 0
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
         }
       },
       "rewards:9": {}
     },
-    "562:10": {
+    "568:10": {
       "questID:3": 716,
       "preRequisites:11": [],
       "properties:10": {
@@ -31044,7 +31658,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "ForgeCaps:10": {
@@ -31077,7 +31691,7 @@
         }
       }
     },
-    "563:10": {
+    "569:10": {
       "questID:3": 717,
       "preRequisites:11": [
         9
@@ -31141,7 +31755,7 @@
         }
       }
     },
-    "564:10": {
+    "570:10": {
       "questID:3": 718,
       "preRequisites:11": [
         129,
@@ -31172,7 +31786,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Coal Fired Up",
-          "desc:8": "It\u0027s pretty much the worse way to generate electricty and yet here we are.\n\nWe can coal, coal coke, and the mystical variants into this in exchange for a steady trickle of power."
+          "desc:8": "It\u0027s pretty much the worse way to generate electricty and yet here we are.\n\nWe can place coal, charcoal, coal coke, and the mystical variants of coal into this in exchange for a steady trickle of power."
         }
       },
       "tasks:9": {
@@ -31320,7 +31934,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "There is just barely enough natural resources to survive out here in the desert. In order to create a thriving fully automated queer luxury block utopia we are going to have to get into all kinds of growing and farm. There are food crops, although the challenge will be finding more diverse seeds. There are also resource crops which can be used to grow various forms of magical essence which can be crafted into usable items such as steel, glass, and skulls.\n\nAdvanced post-scarcity will get you down the path of deconstructing things into their base components and then reconstituting them into whatever your little heart desires in the moment."
+          "desc:8": "You are a long way from a thriving fully automated queer luxury block utopia, but you will get there. It all starts with a snack."
         }
       },
       "order:3": 3
@@ -31387,7 +32001,7 @@
       "lineID:3": 2,
       "properties:10": {
         "betterquesting:10": {
-          "visibility:8": "UNLOCKED",
+          "visibility:8": "COMPLETED",
           "name:8": "Ride or Die",
           "icon:10": {
             "ForgeCaps:10": {
@@ -31403,7 +32017,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Vehicles are real, and pretty cool."
+          "desc:8": "Shut up, get in, let\u0027s go for a ride. As far as we can go."
         }
       },
       "order:3": 6
@@ -31419,8 +32033,8 @@
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -204,
-          "y:3": -72,
+          "x:3": -240,
+          "y:3": -108,
           "id:3": 31,
           "sizeY:3": 24
         },
@@ -31433,57 +32047,57 @@
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": -72,
+          "x:3": -204,
+          "y:3": -144,
           "id:3": 53,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -132,
-          "y:3": -108,
+          "x:3": -168,
+          "y:3": -72,
           "id:3": 57,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -240,
-          "y:3": -144,
+          "x:3": -204,
+          "y:3": -72,
           "id:3": 80,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
           "x:3": -132,
-          "y:3": -72,
+          "y:3": -108,
           "id:3": 96,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -96,
-          "y:3": -108,
+          "x:3": -132,
+          "y:3": -36,
           "id:3": 98,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -132,
-          "y:3": -144,
+          "x:3": -204,
+          "y:3": -36,
           "id:3": 99,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -96,
-          "y:3": -144,
+          "x:3": -132,
+          "y:3": -72,
           "id:3": 100,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": -96,
-          "y:3": -72,
+          "x:3": -168,
+          "y:3": -36,
           "id:3": 101,
           "sizeY:3": 24
         },
@@ -31496,15 +32110,22 @@
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -168,
-          "y:3": -180,
-          "id:3": 113,
+          "x:3": -240,
+          "y:3": -72,
+          "id:3": 121,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -204,
-          "y:3": -144,
+          "x:3": -240,
+          "y:3": -36,
+          "id:3": 155,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": -276,
+          "y:3": -36,
           "id:3": 156,
           "sizeY:3": 24
         }
@@ -31525,7 +32146,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "It\u0027s not easy having a good time. The amount of logistics involved are staggering. The storage concerns alone are enough to fill a Big Book with. We will learn how to store all the junk we\u0027ll find in this world, how to keep track of what we are doing as our attention span comes and goes over the months, and how to attach inventories together with the ultimate goal of not having to care about where our blocks and items are."
+          "desc:8": "It\u0027s not easy having a good time. The amount of logistics involved are staggering. The storage concerns alone are enough to fill a Big Book with."
         }
       },
       "order:3": 5
@@ -31622,6 +32243,20 @@
           "y:3": -36,
           "id:3": 70,
           "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": -60,
+          "y:3": -72,
+          "id:3": 135,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": -108,
+          "id:3": 143,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 4,
@@ -31649,8 +32284,8 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": -24,
+          "x:3": -300,
+          "y:3": 24,
           "id:3": 5,
           "sizeY:3": 24
         },
@@ -31664,28 +32299,28 @@
         "2:10": {
           "sizeX:3": 24,
           "x:3": -396,
-          "y:3": -72,
+          "y:3": -24,
           "id:3": 19,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -348,
+          "x:3": -396,
           "y:3": -72,
           "id:3": 27,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -396,
-          "y:3": 24,
+          "x:3": -444,
+          "y:3": -168,
           "id:3": 28,
           "sizeY:3": 24
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -348,
-          "y:3": 24,
+          "x:3": -444,
+          "y:3": -120,
           "id:3": 32,
           "sizeY:3": 24
         },
@@ -31712,8 +32347,8 @@
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -348,
-          "y:3": 72,
+          "x:3": -444,
+          "y:3": -72,
           "id:3": 79,
           "sizeY:3": 24
         },
@@ -31726,21 +32361,21 @@
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": 72,
+          "x:3": -444,
+          "y:3": 24,
           "id:3": 89,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -300,
-          "y:3": 72,
+          "x:3": -444,
+          "y:3": -24,
           "id:3": 91,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -300,
+          "x:3": -396,
           "y:3": 24,
           "id:3": 92,
           "sizeY:3": 24
@@ -31761,82 +32396,75 @@
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": 24,
+          "x:3": -444,
+          "y:3": 72,
           "id:3": 102,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": -204,
+          "x:3": -492,
           "y:3": 24,
           "id:3": 103,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": -204,
+          "x:3": -492,
           "y:3": 72,
           "id:3": 110,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": -396,
-          "y:3": -24,
+          "x:3": -348,
+          "y:3": -72,
           "id:3": 114,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
           "x:3": -396,
-          "y:3": 72,
-          "id:3": 121,
-          "sizeY:3": 24
-        },
-        "21:10": {
-          "sizeX:3": 24,
-          "x:3": -396,
           "y:3": -168,
           "id:3": 124,
           "sizeY:3": 24
         },
-        "22:10": {
+        "21:10": {
           "sizeX:3": 24,
           "x:3": -396,
           "y:3": -120,
           "id:3": 125,
           "sizeY:3": 24
         },
-        "23:10": {
+        "22:10": {
           "sizeX:3": 24,
           "x:3": -348,
           "y:3": -168,
           "id:3": 126,
           "sizeY:3": 24
         },
-        "24:10": {
+        "23:10": {
           "sizeX:3": 24,
-          "x:3": -300,
-          "y:3": -24,
+          "x:3": -348,
+          "y:3": 24,
           "id:3": 129,
           "sizeY:3": 24
         },
-        "25:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -204,
           "y:3": -120,
           "id:3": 134,
           "sizeY:3": 24
         },
-        "26:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -204,
           "y:3": -168,
           "id:3": 139,
           "sizeY:3": 24
         },
-        "27:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": -252,
           "y:3": -168,
@@ -31913,7 +32541,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "This is my tool. There are many like it, but this one is mine.\n\nMy tool is my best friend. It is my life.\n\nThe vast majority of the hand tools (weapons and armor included) you will make use if in Tribes That May Be will be created in your Tinkers Workshop. At this point you should have read the two Tinkers Books - \"Materials and You\" and the \"Armory Addendum\". These tools may be upgraded piece by piece, have modifiers placed on them (such as speed and durability boosts), and most importantly - be named.\n\nYou can repair them when they break so unless you end up in a particularly unfortunate set of circumstances involving lava they should be with you throughout your entire journey."
+          "desc:8": "This is my tool. There are many like it, but this one is mine.\n\nMy tool is my best friend. It is my life.\n"
         }
       },
       "order:3": 1
@@ -31980,7 +32608,7 @@
       "lineID:3": 6,
       "properties:10": {
         "betterquesting:10": {
-          "visibility:8": "UNLOCKED",
+          "visibility:8": "COMPLETED",
           "name:8": "Let the music play",
           "icon:10": {
             "ForgeCaps:10": {
@@ -31993,7 +32621,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "It ain\u0027t a real party without some sweet tunes. This quest line will take you through all the different steps you need to go through to listen to the built in chip tunes, or pipe in music from external sources."
+          "desc:8": "It ain\u0027t a real party without some sweet tunes."
         }
       },
       "order:3": 8
@@ -32009,7 +32637,7 @@
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -336,
+          "x:3": -372,
           "y:3": -108,
           "id:3": 1,
           "sizeY:3": 24
@@ -32079,7 +32707,7 @@
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": -312,
+          "x:3": -336,
           "y:3": -144,
           "id:3": 25,
           "sizeY:3": 24
@@ -32219,22 +32847,29 @@
         },
         "31:10": {
           "sizeX:3": 24,
+          "x:3": -300,
+          "y:3": -144,
+          "id:3": 113,
+          "sizeY:3": 24
+        },
+        "32:10": {
+          "sizeX:3": 24,
           "x:3": -240,
           "y:3": -252,
           "id:3": 122,
           "sizeY:3": 24
         },
-        "32:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": -108,
           "id:3": 147,
           "sizeY:3": 24
         },
-        "33:10": {
+        "34:10": {
           "sizeX:3": 24,
-          "x:3": -300,
-          "y:3": -324,
+          "x:3": -336,
+          "y:3": -108,
           "id:3": 716,
           "sizeY:3": 24
         }
@@ -32255,7 +32890,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Well, you finally made it to the desert. But why?\n\nIf you haven\u0027t already started questioning why you made such a horrible decision, you will shortly...\n\nNaaah. While this won\u0027t necessarily be \"easy\", it should absolutely be fun.\n\nWhat is in store for you has been crafted to provide an experience akin to an artistic orgy in the desert.\n\nA pack for newbies and more experienced players alike, Tribes That May Be is here to help you create art, machines, and community in a desert survival environment.\n\nWelcome. Now get down in the dust and roll around a bit so you don\u0027t look so out of place."
+          "desc:8": "Well, you finally made it to the desert. But why? I guess try to not die."
         }
       },
       "order:3": 0
@@ -32271,19 +32906,40 @@
         },
         "1:10": {
           "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -108,
+          "id:3": 162,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -216,
+          "y:3": -72,
+          "id:3": 164,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -72,
+          "id:3": 168,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
           "x:3": -216,
           "y:3": -144,
           "id:3": 714,
           "sizeY:3": 24
         },
-        "2:10": {
+        "5:10": {
           "sizeX:3": 24,
           "x:3": -216,
           "y:3": -108,
           "id:3": 715,
           "sizeY:3": 24
         },
-        "3:10": {
+        "6:10": {
           "sizeX:3": 24,
           "x:3": -252,
           "y:3": -144,
@@ -32307,7 +32963,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "We\u0027ve gotten by up until now with being able to extract sunk carbon in the least efficient way possible. If we are going to expand and ultimately end up at our fully automated anarchist queer block utopia then we are going to need to power ourselves through it. There are several ways of generating power with varying levels of power output and need to pay attention. It\u0027s possible to move power via wires, or via batteries.\n\nYou may find in some cases that you do not need full power infrastructure for smaller outposts, but if you do, the wires you create can be run throughout the realm without any worry about loaded chunks."
+          "desc:8": "We\u0027ve gotten by up until now with being able to extract sunk carbon in the least efficient way possible. Let\u0027s try and do better and not make this world more of a hellscape.\n\nIf we are going to expand and ultimately end up at our fully automated anarchist queer block utopia then we are going to need to power ourselves through it. There are several ways of generating power with varying levels of power output and need to pay attention. It\u0027s possible to move power via wires, or via batteries.\n\nYou may find in some cases that you do not need full power infrastructure for smaller outposts, but if you do, the wires you create can be run throughout the realm without any worry about loaded chunks."
         }
       },
       "order:3": 4
@@ -32394,7 +33050,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "Using Mystcraft it is possible to create links between worlds. Be careful though, some of the places you may travel to can be quite dangerous.\n\nThese adventures will open up new possibilities for places to explore and resources to find."
+          "desc:8": "There are plenty of ways to navigate this world. And remember there are more worlds than these. And you will go to them. Try to not die."
         }
       },
       "order:3": 7
@@ -32502,7 +33158,7 @@
           },
           "bg_image:8": "",
           "bg_size:3": 256,
-          "desc:8": "You are going to need to eat something eventually. And you will probably. eventually, want something that is not water to drink.\n\nAnd what is more likely is that you are going to encounter people who are willing to trade you just the thing you are looking for in return for a delightlful snack that they are convinced only you can provide."
+          "desc:8": "You are going to need to eat something eventually. And you will probably. eventually, want something that is not water to drink."
         }
       },
       "order:3": 2
