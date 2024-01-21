@@ -66,11 +66,18 @@ mods.cfm.Grill.addRecipe(<fossil:tyrannosaurus_cooked>,<fossil:tyrannosaurus_mea
 mods.cfm.Grill.addRecipe(<fossil:velociraptor_cooked>,<fossil:velociraptor_meat>);
 
 // magic bean based economy
-recipes.removeShaped(<cyclicmagic:sprout_seed>);
+recipes.remove(<cyclicmagic:sprout_seed>);
 
 ## seeds, prosperity shard, prudentium
-## TODO : figure out how to make this take xp
-recipes.addShapeless(<cyclicmagic:sprout_seed>, [<appliedenergistics2:material:10>,<minecraft:wheat_seeds>,<quark:rune>,
-						<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:5>,
-						<mysticalagriculture:crafting:1>,<quark:rune:15>,<minecraft:wheat_seeds>,
-						<appliedenergistics2:material:11>]);
+recipes.addShapeless("Magic Beenz",
+			    <cyclicmagic:sprout_seed>,
+			    [<appliedenergistics2:material:10>,<minecraft:wheat_seeds>,<quark:rune:*>,
+				<mysticalagriculture:crafting:1>,<mysticalagriculture:crafting:5>,
+				<mysticalagriculture:crafting:1>,<quark:rune:*>,<minecraft:wheat_seeds>,
+				<appliedenergistics2:material:11>],
+			function(out,ins,cInfo){
+				return out;
+			},
+			function(out,cInfo,player){
+				player.xp -= 20;
+			});

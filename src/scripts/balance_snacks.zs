@@ -24,11 +24,9 @@ val dropSnacks = [
     <actuallyadditions:item_food:12>,   # "big cookie"
     <cfm:item_kebab>,
     <cfm:item_kebab_cooked>
-
 ] as IItemStack[];
 
 for snack in dropSnacks {
-  recipes.remove(snack);
   mods.jei.JEI.removeAndHide(snack);
 }
 
@@ -78,6 +76,7 @@ for drink in hydrationDrinks {
     drink.foodValues.hunger = 0.5;
     drink.foodValues.saturationModifier = 0.25;
 }
+
 
 //// adding in some pams compat
 // aa rice dough

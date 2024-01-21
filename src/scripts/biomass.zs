@@ -169,3 +169,6 @@ var gooeyItems as IItemStack[] = [
 for item in gooeyItems {
     mods.mekanism.reaction.addRecipe(item * 2, <liquid:biomass> * 2500, <gas:hydrogenchloride> * 5000, <fossil:bio_goo>, <gas:water>, 25000, 6000);
 }
+
+// add back in bio fuel as we lost it when we pulled mekanism crusher
+mods.alchemistry.Evaporator.addRecipe(<mekanism:biofuel>, <liquid:biomass> * 1500);

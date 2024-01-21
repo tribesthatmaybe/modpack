@@ -7,11 +7,11 @@
     "Spread": 0.8
   },
   "Projectile": {
-    "Damage": 6.0,
+    "Damage": 12.0,
     "Damage Falloff": false,
     "Gravity": false,
     "Ticks Before Removed": 10,
-    "Reduce Damage If Not Zoomed": false,
+    "Reduce Damage If Not Zoomed": true,
     "Size": 0.2,
     "Speed": 10.0
   }

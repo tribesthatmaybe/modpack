@@ -211,6 +211,12 @@ var NarrativeTho = [
     <microblockcbe:saw_diamond>,
     <projectred-core:resource_item:421>,
     <projectred-core:resource_item:420>,
+    <projectred-core:resource_item:410>,    // don't need every project red piece
+    <projectred-core:resource_item:400>,
+    <projectred-core:resource_item:401>,
+    <projectred-core:resource_item:402>,
+    <projectred-core:resource_item:600>,
+    <projectred-core:drawplate>,
     <mekanism:enrichediron>,
     <betterbuilderswands:wandunbreakable:12>,
     <betterbuilderswands:wandunbreakable:13>,
@@ -260,7 +266,6 @@ var tooManyTools = [
     <botania:manasteelpick>,
     <botania:elementiumpick>,
     <botania:glasspick>,
-//    <cyclicmagic:netherbrick_pickaxe>,
     <immersiveengineering:pickaxe_steel>,
     <mysticalworld:copper_pickaxe>,
     <mysticalworld:silver_pickaxe>,
@@ -269,14 +274,12 @@ var tooManyTools = [
     <plants2:dark_crystal_pickaxe>,
     <botania:manasteelshovel>,
     <botania:elementiumshovel>,
-//    <cyclicmagic:netherbrick_spade>,
     <immersiveengineering:shovel_steel>,
     <mysticalworld:copper_shovel>,
     <mysticalworld:silver_shovel>,
     <mysticalworld:amethyst_shovel>,
     <plants2:crystal_shovel>,
     <plants2:dark_crystal_shovel>,
-//    <cyclicmagic:netherbrick_hoe>,
     <immersiveengineering:hoe_steel>,
     <mysticalworld:copper_hoe>,
     <mysticalworld:silver_hoe>,
@@ -285,63 +288,26 @@ var tooManyTools = [
     <plants2:dark_crystal_hoe>,
     <botania:elementiumaxe>,
     <botania:manasteelaxe>,
-//    <cyclicmagic:netherbrick_axe>,
     <immersiveengineering:axe_steel>,
     <mysticalworld:copper_axe>,
     <mysticalworld:silver_axe>,
     <mysticalworld:amethyst_axe>,
     <plants2:crystal_axe>,
     <plants2:dark_crystal_axe>,
-//    <cyclicmagic:tool_harvest_crops>,
-//    <cyclicmagic:tool_harvest_weeds>,
     <plants2:dark_crystal_sword>,
     <plants2:crystal_sword>,
     <botania:manasteelsword>,
-//    <cyclicmagic:block_screen>,   // also these don't really work?
-//    <cyclicmagic:screen_target>,
     <mekanism:walkietalkie>,
-    <extrautils2:passivegenerator>,  // not using any eu2 gp
-    <extrautils2:passivegenerator:1>,
-    <extrautils2:passivegenerator:2>,
-    <extrautils2:passivegenerator:3>,
-    <extrautils2:passivegenerator:4>,
-    <extrautils2:passivegenerator:5>,
-    <extrautils2:passivegenerator:6>,
-    <extrautils2:passivegenerator:7>,
-    <extrautils2:passivegenerator:8>,
-    <extrautils2:poweroverload>,
-    <extrautils2:decorativesolid:8>,
-    <extrautils2:ingredients:1>,
-    <extrautils2:interactionproxy>,
-    <extrautils2:powerbattery>,
-    <extrautils2:powertransmitter>,
-    <extrautils2:ingredients:13>,
-    <extrautils2:redstonelantern>,
-    <extrautils2:ingredients:4>,
-    <extrautils2:enderlilly>,
-    <extrautils2:powermanager>,
-    <extrautils2:scanner>,
-    <extrautils2:indexerremote>,
-    <extrautils2:ingredients:16>,
-    <extrautils2:ingredients:15>,
     <openblocks:imaginary:*>,
-    <extrautils2:lawsword>,
-    <extrautils2:opinium:5>,
-    <extrautils2:opinium:8>,
-    <extrautils2:opinium:7>,
-    <extrautils2:opinium>,
-    <extrautils2:opinium:7>,
-    <extrautils2:opinium:1>,
-    <extrautils2:opinium:3>,
-    <extrautils2:ingredients:6>,
-    <extrautils2:ingredients:7>,
-    <extrautils2:ingredients:8>,
-    <extrautils2:ingredients:9>,
     <botania:waterbowl>,
     <actuallyadditions:item_chest_to_crate_upgrade>,
     <actuallyadditions:item_small_to_medium_crate_upgrade>,
     <actuallyadditions:item_medium_to_large_crate_upgrade>,
-    <vc:airship_workbench>
+    <vc:airship_workbench>,
+    <actuallyadditions:block_tiny_torch>,
+    <tconstruct:stone_torch>,
+    <bountifulbaubles:flaregun>,
+    <bountifulbaubles:flare_red>
 ] as IItemStack[];
 
 for widget in tooManyTools {
@@ -354,16 +320,12 @@ var tooMuchEquipment = [
     <actuallyadditions:item_misc:23>,
     <actuallyadditions:item_misc:24>,
     <actuallyadditions:block_oil_generator>,
-    <extrautils2:decorativesolid>,
     <immersivetech:metal_trash:2>,
     <immersivetech:metal_trash:1>,
     <immersivetech:metal_trash>,
     <actuallyadditions:block_enervator>,
     <actuallyadditions:block_energizer>,
-    <extrautils2:redstoneclock>,
-    <extrautils2:user>,
     <openblocks:path>,
-    <extrautils2:trashchest>,
     <mysticalworld:copper_helmet>,
     <mysticalworld:copper_chestplate>,
     <mysticalworld:copper_leggings>,
@@ -619,9 +581,6 @@ val tooMuchStorage = [
    <actuallyadditions:block_giant_chest_medium>,
    <actuallyadditions:block_giant_chest_large>,
    <actuallyadditions:item_crate_keeper>,
-   <extrautils2:drum:1>,
-   <extrautils2:drum:2>,
-   <extrautils2:drum:3>,
    <mekanism:basicblock:6>.withTag({tier:0}),
    <mekanism:basicblock:6>.withTag({tier:1}),
    <mekanism:basicblock:6>.withTag({tier:2}),
@@ -680,10 +639,112 @@ val unncesaryThings = [
    <cfm:upgraded_fence_dark_oak>,
    <toughasnails:fruit_juice:*>,   // use pams
    <vehicle:traffic_cone>,                    // prefer traffic control cones
-   <actuallyadditions:block_furnace_double>   // too many furnaces
+   <actuallyadditions:block_furnace_double>,   // too many furnaces
+   <minecraft:chainmail_helmet>,         // early game but not bc nuggets gated
+   <minecraft:chainmail_chestplate>,
+   <minecraft:chainmail_leggings>,
+   <minecraft:chainmail_boots>,
+   <minecraft:golden_helmet>,             // smeltery tho
+   <minecraft:golden_chestplate>,
+   <minecraft:golden_leggings>,
+   <minecraft:golden_boots>,
+   <minecraft:iron_helmet>,
+   <minecraft:iron_chestplate>,
+   <minecraft:iron_leggings>,
+   <minecraft:iron_boots>,
+   <minecraft:diamond_helmet>,
+   <minecraft:diamond_chestplate>,
+   <minecraft:diamond_leggings>,
+   <minecraft:diamond_boots>,
+   <minecraft:golden_sword>,
+   <minecraft:golden_shovel>,
+   <minecraft:golden_pickaxe>,
+   <minecraft:golden_axe>,
+   <minecraft:golden_hoe>,
+   <minecraft:diamond_sword>,
+   <minecraft:diamond_shovel>,
+   <minecraft:diamond_pickaxe>,
+   <minecraft:diamond_axe>,
+   <minecraft:diamond_hoe>,
+   <minecraft:iron_sword>,
+   <minecraft:iron_shovel>,
+   <minecraft:iron_pickaxe>,
+   <minecraft:iron_axe>,
+   <minecraft:iron_hoe>,
+   <mekanism:obsidiantnt>,
+   <mekanism:basicblock:14>,     // using immersive tech kit for brine
+   <mekanism:basicblock:15>,
+   <mekanism:basicblock2>,
+   <mekanism:basicblock2:5>,     // not using mekanism boiler
+   <mekanism:basicblock2:6>,
+   <mekanism:basicblock2:7>,
+   <mekanism:basicblock2:8>,
+   <actuallyadditions:block_laser_relay>,    // prefer conveyors/pipes/cables
+   <actuallyadditions:block_laser_relay_advanced>,
+   <actuallyadditions:block_laser_relay_extreme>,
+   <actuallyadditions:block_laser_relay_fluids>,
+   <actuallyadditions:block_laser_relay_item>,
+   <actuallyadditions:block_laser_relay_item_whitelist>,
+   <actuallyadditions:block_bio_reactor>,
+   <actuallyadditions:block_item_viewer>,
+   <actuallyadditions:block_fermenting_barrel>,
+   <actuallyadditions:block_grinder>,
+   <actuallyadditions:block_grinder_double>,
+   <actuallyadditions:block_canola_press>,
+   <actuallyadditions:block_inputter>,
+   <actuallyadditions:block_inputter_advanced>,
+   <actuallyadditions:block_furnace_solar>,
+   <actuallyadditions:block_heat_collector>,
+   <actuallyadditions:block_item_repairer>,
+   <actuallyadditions:block_breaker>,
+   <actuallyadditions:block_placer>,
+   <actuallyadditions:block_dropper>,
+   <actuallyadditions:block_fluid_placer>,
+   <actuallyadditions:block_fluid_collector>,
+   <actuallyadditions:item_laser_upgrade_invisibility>,
+   <actuallyadditions:item_laser_upgrade_range>,
+   <actuallyadditions:block_phantom_liquiface>,
+   <actuallyadditions:block_phantom_placer>,
+   <actuallyadditions:block_phantomface>,
+   <actuallyadditions:block_phantom_energyface>,
+   <actuallyadditions:block_phantom_redstoneface>,
+   <actuallyadditions:item_phantom_connector>,
+   <actuallyadditions:block_phantom_breaker>,
+   <actuallyadditions:block_directional_breaker>,
+   <actuallyadditions:block_miner>,
+   <actuallyadditions:block_lava_factory_controller>,
+   <actuallyadditions:block_feeder>,
+   <actuallyadditions:item_water_bowl>,
+   <actuallyadditions:block_colored_lamp:*>,
+   <actuallyadditions:block_lamp_powerer:*>,
+   <actuallyadditions:item_bag>,
+   <actuallyadditions:item_void_bag>
 ] as IItemStack[];
 
 for widget in unncesaryThings {
-  recipes.remove(widget);
   mods.jei.JEI.removeAndHide(widget);
 }
+//// extra liquids
+mods.jei.JEI.hide(<liquid:crystaloil>);
+mods.jei.JEI.hide(<liquid:empoweredoil>);
+mods.jei.JEI.hide(<forge:bucketfilled>.withTag({FluidName: "crystaloil"}));
+mods.jei.JEI.hide(<forge:bucketfilled>.withTag({FluidName: "empoweredoil"}));
+
+//// don't need to see these in jei
+// gravestones just appear
+for item in loadedMods["gravestone"].items {
+    mods.jei.JEI.hide(item);
+}
+// can see architecturecraft bits in table
+for i in 0 .. 93 {
+    mods.jei.JEI.hide(<architecturecraft:shape>.withTag({Shape: i, BaseName: "minecraft:planks", BaseData: 0}));
+}
+
+//// not mucking with blaze powered stuff
+for i in 0 .. 9 {
+    mods.jei.JEI.removeAndHide(itemUtils.getItem("actuallyadditions:item_potion_ring", i));
+    mods.jei.JEI.removeAndHide(itemUtils.getItem("actuallyadditions:item_potion_ring_advanced", i));
+}
+mods.jei.JEI.removeAndHide(<actuallyadditions:item_growth_ring>);
+mods.jei.JEI.removeAndHide(<actuallyadditions:item_suction_ring>);
+mods.jei.JEI.removeAndHide(<actuallyadditions:item_water_removal_ring>);

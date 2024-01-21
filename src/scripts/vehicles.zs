@@ -38,8 +38,9 @@ recipes.addShaped(<animalbikes:reindeerbike>, [[<minecraft:sapling:1>, <minecraf
 recipes.addShaped(<animalbikes:irongolembike>, [[<minecraft:vine>, <minecraft:saddle>, <ore:plant>],
                                                [<minecraft:iron_block>, <mysticalagriculture:storage>, <minecraft:iron_block>],
                                                [<tconstruct:pan_head>.withTag({Material: "iron"}), <vehicle:hammer>.reuse(), <tconstruct:pan_head>.withTag({Material: "iron"})]]);
-recipes.addShaped(<animalbikes:dinobike>, [[<animalbikes:fossil>, <minecraft:saddle>, <animalbikes:fossil>],
-                                          [<animalbikes:fossil>, <mysticalagriculture:storage>, <animalbikes:fossil>],
+recipes.remove(<animalbikes:fossil>);
+recipes.addShaped(<animalbikes:dinobike>, [[<fossil:biofossil>, <minecraft:saddle>, <fossil:biofossil>],
+                                          [<fossil:biofossil>, <mysticalagriculture:storage>, <fossil:biofossil>],
                                           [<tconstruct:pan_head>.withTag({Material: "iron"}), <vehicle:hammer>.reuse(), <tconstruct:pan_head>.withTag({Material: "iron"})]]);
 recipes.addShaped(<animalbikes:chocobobike>, [[<minecraft:golden_carrot>, <minecraft:saddle>,<minecraft:golden_carrot>],
                                              [<minecraft:golden_carrot>, <mysticalagriculture:storage>, <minecraft:golden_carrot>],
@@ -491,3 +492,36 @@ mods.mekanism.compressor.addRecipe(<immersiveposts:metal_rods:6>, <gas:hydrogenc
 mods.mekanism.compressor.addRecipe(<immersiveengineering:material:2>, <gas:ethene>, <railcraft:rail:4>);
 // electric rail
 mods.mekanism.compressor.addRecipe(<immersiveposts:metal_rods:1>, <gas:hydrogenchloride>, <railcraft:rail:5>);
+
+//// cones and things
+// these items seem bugged?
+mods.jei.JEI.removeAndHide(<trafficcontrol:shunt_border>);
+mods.jei.JEI.removeAndHide(<trafficcontrol:shunt_island>);
+// this seems like a dupe?
+mods.jei.JEI.removeAndHide(<trafficcontrol:type_3_barrier_right>);
+// use plastic for plastic things
+recipes.remove(<trafficcontrol:cone>);
+recipes.addShaped(<trafficcontrol:cone> * 5, [[null, <mekanism:plasticblock:15>, null],
+					      [null, <mekanism:plasticblock:14>, null],
+					      [<mekanism:plasticblock:14>, <mekanism:plasticblock:15>, <mekanism:plasticblock:14>]]);
+recipes.remove(<trafficcontrol:channelizer>);
+recipes.addShaped(<trafficcontrol:channelizer> * 3, [[null, <mekanism:plasticblock:15>, null],
+					             [null, <mekanism:plasticblock:14>, null],
+						     [null, <mekanism:plasticblock>, null]]);
+recipes.remove(<trafficcontrol:drum>);
+recipes.addShaped(<trafficcontrol:drum> * 6, [[null, null, null],
+					  [<mekanism:plasticblock:14>, <mekanism:plasticblock:15>, <mekanism:plasticblock:14>],
+					  [<mekanism:plasticblock:15>, <mekanism:plasticblock:14>, <mekanism:plasticblock:15>]]);
+recipes.remove(<trafficcontrol:street_sign>);
+recipes.addShaped(<trafficcontrol:street_sign>, [[null, null, null],
+						 [null, <minecraft:sign>, null],
+						 [null, <immersiveengineering:metal:31>, null]]);
+recipes.remove(<trafficcontrol:sign>);
+recipes.addShaped(<trafficcontrol:sign>, [[null, null, null],
+					  [null, <minecraft:painting>, null],
+					  [null, <immersiveengineering:metal:31>, null]]);
+recipes.remove(<trafficcontrol:type_3_barrier>);
+recipes.addShaped(<trafficcontrol:type_3_barrier> * 3, [[<immersiveengineering:material:1>, <mekanism:plasticblock:15>, <immersiveengineering:material:1>],
+						        [<immersiveengineering:material:1>, <mekanism:plasticblock:14>, <immersiveengineering:material:1>],
+							[<immersiveengineering:material:1>, null, <immersiveengineering:material:1>]]);
+
