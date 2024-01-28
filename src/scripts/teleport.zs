@@ -40,6 +40,7 @@ mods.botania.RuneAltar.addRecipe(<bountifulbaubles:wormholemirror>, [<botania:ru
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:thick"}), <waystones:warp_stone>);
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:thick"}), <waystones:warp_stone>, <bountifulbaubles:potionrecall>);
 brewing.removeRecipe(<bountifulbaubles:potionrecall>, <appliedenergistics2:material:46>);
+brewing.removeRecipe(<bountifulbaubles:potionrecall>, <minecraft:quartz>);
 brewing.addBrew(<bountifulbaubles:potionrecall>, <appliedenergistics2:material:46>, <bountifulbaubles:potionwormhole>);
 
 // stationary

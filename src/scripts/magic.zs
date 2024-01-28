@@ -1,6 +1,16 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IItemTransformer;
 
+//// parts
+// manaweave cloth
+recipes.remove(<botania:manaresource:22>);
+recipes.addShaped(<botania:manaresource:22>, [[<botania:manaresource:16>, null, <botania:manaresource:16>],
+					      [null, <mysticalagriculture:crafting:23>, null],
+					      [<botania:manaresource:16>, null, <botania:manaresource:16>]]);
+// eu magical wood
+recipes.remove(<extrautils2:decorativesolidwood:1>);
+mods.botania.RuneAltar.addRecipe(<extrautils2:decorativesolidwood:1>, [<ore:plankWood>, <minecraft:gold_ingot>], 50);
+
 //// botania
 // magic relies upon essence
 recipes.remove(<botania:lexicon>);
@@ -12,17 +22,15 @@ recipes.remove(<botania:fertilizer>);
 recipes.addShaped(<botania:fertilizer>, [[null, <botania:petal:*>, null],
 					 [<mysticalagriculture:crafting>, <minecraft:dye:15>, <mysticalagriculture:crafting>],
 					 [null, <botania:petal:*>, null]]);
-// parts
-recipes.remove(<botania:manaresource:22>);
-recipes.addShaped(<botania:manaresource:22>, [[<botania:manaresource:16>, null, <botania:manaresource:16>],
-					      [null, <mysticalagriculture:crafting:23>, null],
-					      [<botania:manaresource:16>, null, <botania:manaresource:16>]]);
 // block equipment
 recipes.remove(<botania:altar>);
 recipes.addShaped(<botania:altar>, [[<tconstruct:large_plate>.withTag({Material: "stone"}), <botania:petal:*>, <tconstruct:large_plate>.withTag({Material: "stone"})],
 				    [null, <actuallyadditions:block_misc:4>, null],
 				    [<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
-
+recipes.remove(<botania:runealtar>);
+recipes.addShaped(<botania:runealtar>, [[null, null, null],
+				        [<botania:livingrock:1>, <mysticalagriculture:crafting:38>, <botania:livingrock:1>],
+					[<botania:livingrock:1>, <botania:manaresource:1>, <botania:livingrock:1>]]);
 recipes.remove(<botania:opencrate>);
 recipes.addShaped(<botania:opencrate>, [[<immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>],
 				        [<botania:livingwood:1>, null, <botania:livingwood:1>],
@@ -157,7 +165,7 @@ recipes.addShaped(<botania:lens:23>, [[null, <botania:rune:13>, null],
 				      [null, <botania:manaresource:7>, null]]);
 // other
 recipes.remove(<botania:managun>);
-recipes.addShaped(<botania:managun>, [[<botania:manaresource:2>, <botania:manaresource>, null],
+recipes.addShaped(<botania:managun>, [[null, <botania:manaresource>, null],
 				      [<immersiveengineering:material:8>, <tconstruct:tough_binding>.withTag({Material: "livingwood"}), <immersiveengineering:material:14>],
 				      [<immersiveengineering:material:13>, null, null]]);
 recipes.remove(<botania:unholycloak>);
@@ -184,8 +192,12 @@ mods.botania.PureDaisy.addRecipe(<minecraft:sand>, <minecraft:dirt>, 600);
 // torch launcher
 recipes.remove(<cyclicmagic:tool_torch_launcher>);
 recipes.addShaped(<cyclicmagic:tool_torch_launcher>, [[null, <realistictorches:glowstone_paste>, <mysticalagriculture:crafting:35>],
-						      [<immersiveposts:metal_rods>, <tconstruct:tough_binding>.withTag({Material: "livingwood"}), <realistictorches:glowstone_paste>],
+						      [<tconstruct:tough_binding>.withTag({Material: "manasteel"}), <tconstruct:tough_binding>.withTag({Material: "livingwood"}), <tconstruct:tough_binding>.withTag({Material: "manasteel"})],
 						      [<immersiveengineering:material:13>, <immersiveposts:metal_rods>, null]]);
+recipes.remove(<cyclicmagic:tool_auto_torch>);
+recipes.addShaped(<cyclicmagic:tool_auto_torch>, [[<realistictorches:glowstone_paste>, null, <realistictorches:glowstone_paste>],
+						  [<botania:manaresource:22>, <tconstruct:binding>.withTag({Material: "livingwood"}), <botania:manaresource:22>],
+						  [<botania:manaresource:22>, <mysticalagriculture:crafting:35>, <botania:manaresource:22>]]);
 recipes.remove(<cyclicmagic:laser_cannon>);
 recipes.addShaped(<cyclicmagic:laser_cannon>, [[null, <mysticalagriculture:crafting:33>, <actuallyadditions:item_color_lens>],
 					       [<immersiveengineering:material:1>, <tconstruct:tough_binding>.withTag({Material: "livingwood"}), <mysticalagriculture:crafting:33>],
@@ -247,3 +259,10 @@ recipes.remove(<extrautils2:goldenlasso>);
 recipes.addShaped(<extrautils2:goldenlasso>, [[null, <immersiveengineering:metal:40>, null],
 					      [<immersiveengineering:metal:40>, <extrautils2:decorativeglass>, <immersiveengineering:metal:40>],
 					      [<botania:manaresource:1>, <tconstruct:pan_head>.withTag({Material: "manasteel"}), <botania:manaresource:1>]]);
+
+// mystcraft portal "controller"
+recipes.remove(<mystcraft:blockbookreceptacle>);
+mods.botania.RuneAltar.addRecipe(<mystcraft:blockbookreceptacle>, [<mystcraft:blockcrystal>, <botania:livingrock>, <botania:manaresource:8>, <botania:livingrock>,
+								   <mystcraft:blockcrystal>, <mysticalagriculture:storage:2>], 2500);
+
+//// baubles and more

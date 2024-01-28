@@ -97,7 +97,6 @@ github_server: server
 
 loregen: container_build
 	rm -rf src/config/loreexpansion/lore/*.json src/structures/active/lore_*.rcig
-	cp lore/static/*.json src/config/loreexpansion/lore/
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \

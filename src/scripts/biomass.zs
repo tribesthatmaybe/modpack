@@ -172,3 +172,5 @@ for item in gooeyItems {
 
 // add back in bio fuel as we lost it when we pulled mekanism crusher
 mods.alchemistry.Evaporator.addRecipe(<mekanism:biofuel>, <liquid:biomass> * 1500);
+// also generate via squeezer
+mods.immersiveengineering.Squeezer.addRecipe(<mekanism:biofuel>, <liquid:brine> * 250, <minecraft:dirt> * 2, 2500);

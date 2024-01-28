@@ -6,9 +6,6 @@ recipes.remove(<realistictorches:glowstone_crystal>);
 recipes.addShaped(<realistictorches:glowstone_crystal>, [[null, <realistictorches:glowstone_paste>, null],
 							 [<realistictorches:glowstone_paste>, <minecraft:coal>, <realistictorches:glowstone_paste>],
 							 [null, <realistictorches:glowstone_paste>, null]]);
-recipes.addShaped(<realistictorches:glowstone_crystal>, [[null, <realistictorches:glowstone_paste>, null],
-							 [<realistictorches:glowstone_paste>, <minecraft:coal>, <realistictorches:glowstone_paste>],
-							 [null, <realistictorches:glowstone_paste>, null]]);
 recipes.addShaped(<realistictorches:glowstone_crystal> * 2, [[null, <realistictorches:glowstone_paste>, null],
 							     [<realistictorches:glowstone_paste>, <immersiveengineering:material:6>, <realistictorches:glowstone_paste>],
 							     [null, <realistictorches:glowstone_paste>, null]]);
@@ -46,7 +43,17 @@ recipes.addShaped(<realistictorches:glowstone_crystal> * 2, [[<minecraft:paper>,
 mods.mekanism.infuser.addRecipe("BIO", 50, <minecraft:glowstone_dust>, <realistictorches:glowstone_paste>);
 mods.mekanism.chemical.injection.addRecipe(<minecraft:glowstone_dust>, <gas:ethene>, <realistictorches:glowstone_paste>);
 mods.mekanism.chemical.injection.addRecipe(<mekanism:ingot:3>, <gas:sulfuricacid>, <realistictorches:glowstone_paste> * 3);
+// machine based glowstone crystal
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal>,  <realistictorches:glowstone_paste> * 2,  <minecraft:coal>);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 2,  <realistictorches:glowstone_paste> * 2,  <immersiveengineering:material:6>);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 2,  <realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal>);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 3,  <realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:1>);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 4,  <realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:2>);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 5,  <realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:3>);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 6,  <realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:4>);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 3,  <realistictorches:glowstone_paste> * 2,  <mekanism:biofuel>);
 
+// portable light sources
 val dyeArray = [
     <ore:dyeBlack>,
     <ore:dyeRed>,
@@ -398,3 +405,11 @@ recipes.remove(<trafficcontrol:street_light_single>);
 recipes.addShaped(<trafficcontrol:street_light_single>, [[null, <immersiveengineering:metal:38>, <projectred-illumination:inverted_fixture_light>],
 							 [null, <engineersdecor:thin_steel_pole>, null],
 							 [null, <engineersdecor:thin_steel_pole>, null]]);
+//// other
+recipes.remove(<tconstruct:throwball>);
+recipes.addShaped(<tconstruct:throwball> * 8, [[<minecraft:snowball>, <minecraft:snowball>, <minecraft:snowball>],
+					       [<minecraft:snowball>, <realistictorches:glowstone_crystal>, <minecraft:snowball>],
+					       [<minecraft:snowball>, <minecraft:snowball>, <minecraft:snowball>]]);
+// glimmering wood?
+recipes.remove(<botania:livingwood:5>);
+recipes.addShapeless(<botania:livingwood:5>, [<botania:livingwood>, <realistictorches:glowstone_paste>]);

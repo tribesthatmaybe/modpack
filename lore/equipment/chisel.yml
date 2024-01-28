@@ -1,0 +1,11 @@
+---
+title: "Chisels"
+category: "Equipment"
+text: |
+  Much like there are plenty of hammers in this world, there are also plenty of chisels. There are three types of chisels and they all have their own uses.
+
+  The architecturecraft chisel (orange handle, wide blade) is used to modify architecturecraft blocks once they have been placed in-world. This can be used to connect/disconnect different blocks, remove secondary materials which are present on some blocks, and harvest breakable blocks (such as glass) without breaking them.
+
+  The "generic" chisel (from the "chisel" mod; wooden handle, large iron or diamond blade) is used to convert blocks into different flavors of block. To use this chisel you can either left click on a block that is in-world to cycle through different patterns, or right click and place blocks in the slot on the left. You can then select different aesthetic variants on the block. With this chisel, there are different kinds of crafted blocks for different aesthetic effects. They are the "antiblock" with high contrast colors, the "factory block" with various industrial aesthetics, the "futura block" with various eccentric future-y aesthetics, the "laboratory" block for those science labs, "lavastone" for various hot aesthetic building blocks, a "valentines" block with wholesome loving aesthetics, a "waterstone" block for those damp environments, and a "voidstone" with heavy magic workshop vibes. You can see all the different blocks under JEI. You can also create a "Ender Offset Wand" that allows you to adjust the texture on some multi-block creations that can be made with the fancy blocks.
+
+  The last chisel (from the "chisel and bits" mod; wooden handle, small iron or diamond blade) is used to break blocks down into a 16x16x16 grid and make smaller creations with them. These chisels have a menu which you can bring up by pressing "Alt" when holding the chisel or a chisel "bit". The menu allows you to select different patterns and selection options. Helpful accesories are the "Chiseled Bit Bags" that store a large amount of individual bits, a wrench for rotating creations, a "Diamond Bit Saw" for easily slicing blocks, and a tape measure for fine-grained measurements.

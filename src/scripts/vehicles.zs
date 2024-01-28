@@ -87,7 +87,7 @@ recipes.addShaped(<vehicle:fluid_pipe> * 4, [[null, null, null],
 					     [null, null, null]]);
 recipes.remove(<vehicle:fluid_pump>);
 recipes.addShaped(<vehicle:fluid_pump>, [[null, <immersiveengineering:material:8>, null],
-					 [null, <mekanism:transmitter:1>, <tconstruct:large_plate>],
+					 [null, <mekanism:transmitter:1>, <tconstruct:large_plate>.withTag({Material: "iron"})],
 					 [null, <immersiveengineering:material:8>, null]]);
 // fill er' up
 recipes.remove(<vehicle:gas_pump>);
@@ -524,4 +524,9 @@ recipes.remove(<trafficcontrol:type_3_barrier>);
 recipes.addShaped(<trafficcontrol:type_3_barrier> * 3, [[<immersiveengineering:material:1>, <mekanism:plasticblock:15>, <immersiveengineering:material:1>],
 						        [<immersiveengineering:material:1>, <mekanism:plasticblock:14>, <immersiveengineering:material:1>],
 							[<immersiveengineering:material:1>, null, <immersiveengineering:material:1>]]);
-
+recipes.remove(<trafficcontrol:crossing_gate_pole>);
+recipes.addShapeless(<trafficcontrol:crossing_gate_pole>, [<immersiveposts:fence_iron>, <chiselsandbits:bitsaw_diamond>.reuse()]);
+recipes.remove(<trafficcontrol:traffic_rail>);
+recipes.addShaped(<trafficcontrol:traffic_rail>, [[null, null, null],
+						  [<immersiveengineering:material:1>, <immersiveengineering:material:1>, <immersiveengineering:material:1>],
+						  [null, <immersiveengineering:treated_wood>, null]]);

@@ -23,7 +23,11 @@ val dropSnacks = [
     <actuallyadditions:item_resonant_rice>,
     <actuallyadditions:item_food:12>,   # "big cookie"
     <cfm:item_kebab>,
-    <cfm:item_kebab_cooked>
+    <cfm:item_kebab_cooked>,
+    <cfm:item_flesh>,
+    <cfm:item_flesh_cooked>,
+    <cfm:item_sausage>,
+    <cfm:item_sausage_cooked>
 ] as IItemStack[];
 
 for snack in dropSnacks {

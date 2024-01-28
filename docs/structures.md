@@ -13,7 +13,7 @@ Structures are managed with the [Recurrent Complex](https://www.curseforge.com/m
 | Name | Description |
 | ---- | ----------- |
 | `ContainerTan_finished` | Tan container with lighting, flooring, and interior door. |
-| `ContainerTan_empty` | Tan container. |
+| `ContainerTan_empty` | Completely empty tan sheet metal container. |
 
 ## Sleeping
 
@@ -43,6 +43,7 @@ Structures are managed with the [Recurrent Complex](https://www.curseforge.com/m
 | `DevContainer_blastfurnace` | Blast Furnace in a Box | DC10 |
 | `DevContainer_botania` | Botania Magic in a Box | DC11,DC11a |
 | `DevContainer_archaeology` | Dinosaur Laboratory | DC12 |
+| `DevContainer_cloche` | AutoFarm in a Box | DC13 |
 
 ## Supplies and Provisions
 

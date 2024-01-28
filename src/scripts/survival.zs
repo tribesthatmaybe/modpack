@@ -6,6 +6,8 @@ recipes.remove(<harvestcraft:freshwateritem>);
 recipes.addShaped(<harvestcraft:freshwateritem> * 8, [[null, null, null],
 						       [null, <ore:listAllWater>, null],
 						       [null, null, null]]);
+mods.immersivetechnology.Distiller.addRecipe(<liquid:purified_water> * 1000, <liquid:distwater> * 1000, <mekanism:salt>, 2500, 20, 0.10);
+mods.immersiveengineering.Mixer.addRecipe(<liquid:purified_water> * 500, <liquid:water> * 1000, [<minecraft:coal:1>, <minecraft:sand>], 1800);
 
 // grilling is a matter of survival
 mods.cfm.Grill.addRecipe(<minecraft:cooked_chicken>,<minecraft:chicken>);

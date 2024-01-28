@@ -100,3 +100,25 @@ recipes.addShapeless(<cyclicmagic:ender_tnt_5>, [<cyclicmagic:ender_tnt_4>, <cyc
 recipes.remove(<cyclicmagic:ender_tnt_6>);
 recipes.addShapeless(<cyclicmagic:ender_tnt_6>, [<cyclicmagic:ender_tnt_4>, <cyclicmagic:ender_tnt_4>, <cyclicmagic:ender_tnt_4>, <cyclicmagic:ender_tnt_4>, <minecraft:clay_ball>]);
 recipes.addShapeless(<cyclicmagic:ender_tnt_6>, [<cyclicmagic:ender_tnt_5>, <cyclicmagic:ender_tnt_5>, <minecraft:clay_ball>]);
+
+// lux sabers
+// lux sabers
+val saberColors = [
+    4,        // blue
+    13,       // magenta
+    1,        // red
+    11,       // yellow
+    2,        // green
+    6,        // cyan
+    15,       // white
+    7         // light gray
+] as short[];
+
+for i, color in saberColors {
+    val illumar = itemUtils.getItem("projectred-core:resource_item", (15 - color) + 500);
+    val saber = itemUtils.getItem("extrautils2:luxsaber", i);
+    recipes.remove(saber);
+    recipes.addShaped(saber, [[<extrautils2:ingredients:17>, <mekanism:basicblock:10>, <extrautils2:ingredients:17>],
+    			      [<immersiveengineering:metal:38>, <actuallyadditions:item_battery>, <immersiveengineering:metal:38>],
+			      [<mysticalagriculture:crafting:34>, <mekanism:controlcircuit:3>, illumar]]);
+}

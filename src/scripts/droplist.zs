@@ -228,7 +228,8 @@ var NarrativeTho = [
     <bibliocraft:cookiejar>,
     <cfm:cookie_jar>,
     <cfm:esky:*>,
-    <actuallyadditions:block_misc:7>   // no idea what this "casing" is supposed to be used for?
+    <actuallyadditions:block_misc:7>,   // no idea what this "casing" is supposed to be used for?
+    <mekanism:nugget:3>           // glowstone nugget
 ] as IItemStack[];
 for widget in NarrativeTho {
   mods.jei.JEI.removeAndHide(widget);
@@ -307,7 +308,11 @@ var tooManyTools = [
     <actuallyadditions:block_tiny_torch>,
     <tconstruct:stone_torch>,
     <bountifulbaubles:flaregun>,
-    <bountifulbaubles:flare_red>
+    <bountifulbaubles:flare_red>,
+    <bountifulbaubles:ringflywheel>,
+    <bountifulbaubles:ringflywheeladvanced>,
+    <railcraft:tool_axe_steel>,
+    <railcraft:tool_hoe_steel>
 ] as IItemStack[];
 
 for widget in tooManyTools {
@@ -718,7 +723,22 @@ val unncesaryThings = [
    <actuallyadditions:block_colored_lamp:*>,
    <actuallyadditions:block_lamp_powerer:*>,
    <actuallyadditions:item_bag>,
-   <actuallyadditions:item_void_bag>
+   <actuallyadditions:item_void_bag>,
+   <chisel:chisel_hitech>,
+   <chiselsandbits:chisel_stone>,
+   <mekanismgenerators:generator:8>,
+   <mekanismgenerators:generator:9>,
+   <mekanismgenerators:generator:10>,
+   <mekanismgenerators:generator:11>,
+   <mekanismgenerators:generator:12>,
+   <mekanismgenerators:generator:13>,
+   <mekanismgenerators:reactor>,
+   <mekanismgenerators:reactor:1>,
+   <mekanismgenerators:reactor:2>,
+   <mekanismgenerators:reactor:3>,
+   <mekanismgenerators:reactorglass>,
+   <mekanismgenerators:reactorglass:1>,
+   <mekanismgenerators:hohlraum>
 ] as IItemStack[];
 
 for widget in unncesaryThings {
@@ -740,11 +760,14 @@ for i in 0 .. 93 {
     mods.jei.JEI.hide(<architecturecraft:shape>.withTag({Shape: i, BaseName: "minecraft:planks", BaseData: 0}));
 }
 
-//// not mucking with blaze powered stuff
-for i in 0 .. 9 {
+//// not mucking with blaze powered stuff (0-9 is what we want to delete, but i guess the for loop is i < n ?)
+for i in 0 .. 10 {
     mods.jei.JEI.removeAndHide(itemUtils.getItem("actuallyadditions:item_potion_ring", i));
     mods.jei.JEI.removeAndHide(itemUtils.getItem("actuallyadditions:item_potion_ring_advanced", i));
 }
 mods.jei.JEI.removeAndHide(<actuallyadditions:item_growth_ring>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:item_suction_ring>);
 mods.jei.JEI.removeAndHide(<actuallyadditions:item_water_removal_ring>);
+
+// not using multiblock mekanism generators
+mods.mekanism.infuser.removeRecipe(<mekanismgenerators:hohlraum>);
