@@ -570,7 +570,7 @@ var ripBibliocraft = [
     <bibliocraft:label:*>,
     <bibliocraft:case:*>,
     <bibliocraft:shelf:*>,
-    <bibliocraft:bookcasecreative:*>,
+//    <bibliocraft:bookcasecreative:*>,
     <bibliocraft:swordpedestal:*>
 ] as IItemStack[];
 for widget in ripBibliocraft {

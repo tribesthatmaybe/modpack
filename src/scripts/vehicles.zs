@@ -120,7 +120,7 @@ recipes.addShaped(<vehicle:steep_boost_ramp> * 3, [[<vehicle:boost_pad>, null, n
 recipes.remove(<vehicle:boost_ramp>);
 recipes.addShaped(<vehicle:boost_ramp> * 2, [[null, null, null],
 				       	     [<vehicle:boost_ramp>, null, null],
-					     [<tconstruct:large_plate>, <vehicle:boost_ramp>.withTag({Material: "electrum"}), null]]);
+					     [<tconstruct:large_plate>.withTag({Material: "electrum"}), <vehicle:boost_ramp>, null]]);
 recipes.remove(<vehicle:boost_pad>);
 recipes.addShaped(<vehicle:boost_pad>, [[<tconstruct:large_plate>.withTag({Material: "electrum"}), <botania:blazeblock>, <tconstruct:large_plate>.withTag({Material: "electrum"})],
 				        [<botania:blazeblock>, <vehicle:wrench>.reuse(), <botania:blazeblock>],
@@ -128,11 +128,8 @@ recipes.addShaped(<vehicle:boost_pad>, [[<tconstruct:large_plate>.withTag({Mater
 
 // panel a more in line with what we want
 recipes.remove(<vehicle:panel>);
-//recipes.removeShaped(<vehicle:panel> * 8, [[<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>],
-//				      [<minecraft:concrete>, <minecraft:concrete>, <minecraft:concrete>],
-//				      [<minecraft:iron_nugget>, <minecraft:iron_nugget>, <minecraft:iron_nugget>]]);
 recipes.addShaped(<vehicle:panel> * 8, [[<mekanism:polyethene:2>, <immersiveengineering:metal:30>, <mekanism:polyethene:2>],
-				        [<immersiveengineering:metal:39>, <mekanism:polyethene:2>, <immersiveengineering:metal:39>],
+				        [<immersiveengineering:metal:39>, <mekanism:enrichedalloy>, <immersiveengineering:metal:39>],
 				        [<mekanism:polyethene:2>, <immersiveengineering:metal:30>, <mekanism:polyethene:2>]]);
 // so many parts.
 // normal wheel
@@ -175,12 +172,12 @@ recipes.addShaped(<vehicle:wheel:6>, [[<mekanism:polyethene:2>, <actuallyadditio
 // sm wood engine
 recipes.remove(<vehicle:small_engine>);
 recipes.addShaped(<vehicle:small_engine>, [[null, <tconstruct:tough_binding>.withTag({Material:"iron"}), null],
-					   [<mysticalagriculture:crafting:33>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
+					   [<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
 					   [<vehicle:wrench>.reuse(), <immersiveengineering:metal_decoration0:4>, <tconstruct:large_plate>.withTag({Material:"iron"})]]);
 // sm stone engine
 recipes.remove(<vehicle:small_engine:1>);
 recipes.addShaped(<vehicle:small_engine:1>, [[null, <tconstruct:tough_binding>.withTag({Material:"bronze"}), null],
-					     [<mysticalagriculture:crafting:33>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
+					     [<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
 					     [<vehicle:wrench>.reuse(), <immersiveengineering:metal_decoration0:4>, <tconstruct:large_plate>.withTag({Material:"iron"})]]);
 // sm iron engine
 recipes.remove(<vehicle:small_engine:2>);
@@ -190,62 +187,62 @@ recipes.addShaped(<vehicle:small_engine:2>, [[null, <tconstruct:tough_binding>.w
 // sm gold engine
 recipes.remove(<vehicle:small_engine:3>);
 recipes.addShaped(<vehicle:small_engine:3>, [[null, <tconstruct:tough_binding>.withTag({Material:"steel"}), null],
-					     [<mysticalagriculture:crafting:33>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
+					     [<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
 					     [<vehicle:wrench>.reuse(), <immersiveengineering:metal_decoration0:4>,  <immersiveengineering:metal:40>]]);
 // sm diamond engine
 recipes.remove(<vehicle:small_engine:4>);
 recipes.addShaped(<vehicle:small_engine:4>, [[null, <tconstruct:tough_binding>.withTag({Material:"steel"}), null],
-					     [<mysticalagriculture:crafting:34>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
+					     [<actuallyadditions:item_misc:8>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
 					     [<vehicle:wrench>.reuse(), <immersiveengineering:metal_decoration0:4>,  <immersiveengineering:metal:40>]]);
 // lg wood engine
 recipes.remove(<vehicle:large_engine>);
 recipes.addShaped(<vehicle:large_engine>, [[null, <tconstruct:tough_binding>.withTag({Material: "iron"}), null],
-					   [<mysticalagriculture:storage>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
+					   [<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
 					   [<vehicle:wrench>.reuse(), <immersiveengineering:metal_decoration0:5>, <tconstruct:large_plate>.withTag({Material: "iron"})]]);
 // lg stone engine
 recipes.remove(<vehicle:large_engine:1>);
 recipes.addShaped(<vehicle:large_engine:1>, [[null, <tconstruct:tough_binding>.withTag({Material: "bronze"}), null],
-					     [<mysticalagriculture:storage>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
+					     [<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
 					     [<vehicle:wrench>.reuse(), <immersiveengineering:metal_decoration0:5>, <tconstruct:large_plate>.withTag({Material: "iron"})]]);
 // lg iron engine
 recipes.remove(<vehicle:large_engine:2>);
 recipes.addShaped(<vehicle:large_engine:2>, [[null, <tconstruct:tough_binding>.withTag({Material: "bronze"}), null],
-					     [<mysticalagriculture:storage>, <actuallyadditions:block_misc:9>, <railcraft:gear:1>],
+					     [<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:9>, <railcraft:gear:1>],
 					     [<vehicle:wrench>.reuse(), <immersiveengineering:metal_decoration0:5>, <tconstruct:large_plate>.withTag({Material: "iron"})]]);
 // lg gold engine
 recipes.remove(<vehicle:large_engine:3>);
 recipes.addShaped(<vehicle:large_engine:3>, [[null, <tconstruct:tough_binding>.withTag({Material: "steel"}), null],
-					     [<mysticalagriculture:storage>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
+					     [<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
 					     [<vehicle:wrench>.reuse(), <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal:40>]]);
 // lg diamond engine
 recipes.remove(<vehicle:large_engine:4>);
 recipes.addShaped(<vehicle:large_engine:4>, [[null, <tconstruct:tough_binding>.withTag({Material: "steel"}), null],
-					     [<mysticalagriculture:storage:1>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
+					     [<actuallyadditions:item_misc:8>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
 					     [<vehicle:wrench>.reuse(), <immersiveengineering:metal_decoration0:5>, <immersiveengineering:metal:40>]]);
 // electric wood engine
 recipes.remove(<vehicle:electric_engine>);
 recipes.addShaped(<vehicle:electric_engine>, [[null, <tconstruct:tough_binding>.withTag({Material: "iron"}), null],
-					      [<mekanism:enrichedalloy>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
+					      [<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
 					      [<vehicle:wrench>, <immersiveengineering:metal_decoration0:3>, <tconstruct:large_plate>.withTag({Material: "iron"})]]);
 // electric stone engine
 recipes.remove(<vehicle:electric_engine:1>);
 recipes.addShaped(<vehicle:electric_engine:1>, [[null, <tconstruct:tough_binding>.withTag({Material: "bronze"}), null],
-					      [<mekanism:enrichedalloy>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
+					      [<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:4>, <railcraft:gear:1>],
 					      [<vehicle:wrench>, <immersiveengineering:metal_decoration0:3>, <tconstruct:large_plate>.withTag({Material: "iron"})]]);
 // electric iron engine
 recipes.remove(<vehicle:electric_engine:2>);
 recipes.addShaped(<vehicle:electric_engine:2>, [[null, <tconstruct:tough_binding>.withTag({Material: "bronze"}), null],
-					      [<mekanism:enrichedalloy>, <actuallyadditions:block_misc:9>, <railcraft:gear:1>],
+					      [<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:9>, <railcraft:gear:1>],
 					      [<vehicle:wrench>, <immersiveengineering:metal_decoration0:3>, <tconstruct:large_plate>.withTag({Material: "iron"})]]);
 // electric gold engine
 recipes.remove(<vehicle:electric_engine:3>);
 recipes.addShaped(<vehicle:electric_engine:3>, [[null, <tconstruct:tough_binding>.withTag({Material: "steel"}), null],
-					      [<mekanism:enrichedalloy>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
+					      [<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
 					      [<vehicle:wrench>, <immersiveengineering:metal_decoration0:3>, <tconstruct:large_plate>.withTag({Material: "iron"})]]);
 // electric diamond engine
 recipes.remove(<vehicle:electric_engine:4>);
 recipes.addShaped(<vehicle:electric_engine:4>, [[null, <tconstruct:tough_binding>.withTag({Material: "steel"}), null],
-					      [<mekanism:reinforcedalloy>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
+					      [<actuallyadditions:item_misc:8>, <actuallyadditions:block_misc:9>, <railcraft:gear:2>],
 					      [<vehicle:wrench>, <immersiveengineering:metal_decoration0:3>, <tconstruct:large_plate>.withTag({Material: "iron"})]]);
 
 //// airshipssss

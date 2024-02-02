@@ -44,14 +44,14 @@ mods.mekanism.infuser.addRecipe("BIO", 50, <minecraft:glowstone_dust>, <realisti
 mods.mekanism.chemical.injection.addRecipe(<minecraft:glowstone_dust>, <gas:ethene>, <realistictorches:glowstone_paste>);
 mods.mekanism.chemical.injection.addRecipe(<mekanism:ingot:3>, <gas:sulfuricacid>, <realistictorches:glowstone_paste> * 3);
 // machine based glowstone crystal
-mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal>,  <realistictorches:glowstone_paste> * 2,  <minecraft:coal>);
-mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 2,  <realistictorches:glowstone_paste> * 2,  <immersiveengineering:material:6>);
-mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 2,  <realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal>);
-mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 3,  <realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:1>);
-mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 4,  <realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:2>);
-mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 5,  <realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:3>);
-mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 6,  <realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:4>);
-mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_crystal> * 3,  <realistictorches:glowstone_paste> * 2,  <mekanism:biofuel>);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_paste> * 2,  <minecraft:coal>, <realistictorches:glowstone_crystal>);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_paste> * 2,  <immersiveengineering:material:6>, <realistictorches:glowstone_crystal> * 2);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal>, <realistictorches:glowstone_crystal> * 2);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:1>, <realistictorches:glowstone_crystal> * 3);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:2>, <realistictorches:glowstone_crystal> * 4);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:3>, <realistictorches:glowstone_crystal> * 5);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_paste> * 2,  <mysticalagriculture:coal:4>, <realistictorches:glowstone_crystal> * 6);
+mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_paste> * 2,  <mekanism:biofuel>, <realistictorches:glowstone_crystal> * 3);
 
 // portable light sources
 val dyeArray = [
@@ -130,14 +130,14 @@ for i, dye in dyeArray {
 //// ie lighting
 // basic lantern
 recipes.remove(<immersiveengineering:metal_decoration2:4>);
-recipes.addShaped(<immersiveengineering:metal_decoration2:4>, [[null, <immersiveengineering:metal:39>, null],
-							       [<tconstruct:clear_glass>, <realistictorches:glowstone_crystal>, <tconstruct:clear_glass>],
-							       [null, <immersiveengineering:metal:30>, null]]);
+recipes.addShaped(<immersiveengineering:metal_decoration2:4> * 2, [[null, <immersiveengineering:metal:39>, null],
+							           [<tconstruct:clear_glass>, <realistictorches:glowstone_crystal>, <tconstruct:clear_glass>],
+							           [null, <immersiveengineering:metal:30>, null]]);
 // electric lamp
-recipes.remove(<immersiveengineering:metal_decoration1:4>);
-recipes.addShaped(<immersiveengineering:metal_device1:4>, [[null, <immersiveengineering:metal:38>, null],
-							   [<tconstruct:clear_glass>, <realistictorches:glowstone_crystal>, <tconstruct:clear_glass>],
-							   [<immersiveengineering:metal:30>, <immersiveengineering:material:26>, <immersiveengineering:metal:30>]]);
+recipes.remove(<immersiveengineering:metal_device1:4>);
+recipes.addShaped(<immersiveengineering:metal_device1:4> * 2, [[null, <immersiveengineering:metal:38>, null],
+							       [<tconstruct:clear_glass>, <realistictorches:glowstone_crystal>, <tconstruct:clear_glass>],
+							       [<immersiveengineering:metal:30>, <immersiveengineering:material:26>, <immersiveengineering:metal:30>]]);
 // flood lamp
 recipes.remove(<immersiveengineering:metal_device1:9>);
 recipes.addShaped(<immersiveengineering:metal_device1:9>, [[<immersiveengineering:material:26>, <immersiveengineering:metal:38>, <immersiveengineering:metal:38>],

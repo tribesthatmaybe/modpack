@@ -616,6 +616,12 @@ recipes.addShaped(<cyclicmagic:block_enchanter>, [[null, <minecraft:enchanting_t
 						  [<minecraft:obsidian>, <botania:manaresource:2>, <minecraft:obsidian>]]);
 
 
+// door factory
+recipes.remove(<malisisdoors:door_factory>);
+recipes.addShaped(<malisisdoors:door_factory>, [[<railcraft:plate:2>, <actuallyadditions:item_crystal_empowered>, ],
+					        [<mekanism:controlcircuit>, <vehicle:wrench>.reuse(), <railcraft:plate:2>],
+						[<actuallyadditions:item_crystal:5>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_crystal:5>]]);
+
 // combiner why tho??? make it easier, and use it for specific things.
 mods.mekanism.combiner.removeAllRecipes();
 recipes.remove(<mekanism:machineblock:2>);
@@ -692,6 +698,11 @@ recipes.remove(<alchemistry:evaporator>);
 recipes.addShaped(<alchemistry:evaporator>, [[null, null, null],
 					     [<tconstruct:tool_rod>.withTag({Material: "iron"}), <tconstruct:binding>.withTag({Material: "iron"}), <tconstruct:tool_rod>.withTag({Material: "iron"})],
 					     [<tconstruct:tool_rod>.withTag({Material: "iron"}), <immersivetech:metal_barrel:1>, <tconstruct:tool_rod>.withTag({Material: "iron"})]]);
+// chemical combiner
+recipes.remove(<alchemistry:chemical_combiner>);
+recipes.addShaped(<alchemistry:chemical_combiner>, [[<mekanism:compresseddiamond>, <mekanismgenerators:turbineblade>, <mekanism:compresseddiamond>],
+						    [<projectred-core:resource_item:103>, <actuallyadditions:block_misc:9>, <projectred-core:resource_item:103>],
+						    [<immersiveengineering:sheetmetal:9>, <actuallyadditions:item_crystal:5>, <immersiveengineering:sheetmetal:9>]]);
 // garden cloche
 recipes.remove(<immersiveengineering:metal_device1:13>);
 recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<tconstruct:clear_glass>, <immersiveengineering:material:26>, <tconstruct:clear_glass>],
@@ -700,7 +711,7 @@ recipes.addShaped(<immersiveengineering:metal_device1:13>, [[<tconstruct:clear_g
 
 // other
 recipes.remove(<architecturecraft:sawbench>);
-recipes.addShaped(<architecturecraft:sawbench>, [[<tconstruct:large_plate>.withTag({Material: "livingwood"}), <architecturecraft:sawblade>, <tconstruct:large_plate>.withTag({Material: "livingwood"})],
+recipes.addShaped(<architecturecraft:sawbench>, [[<tconstruct:large_plate>.withTag({Material: "treatedwood"}), <architecturecraft:sawblade>, <tconstruct:large_plate>.withTag({Material: "treatedwood"})],
 						 [<immersiveengineering:material>, <architecturecraft:largepulley>, <immersiveengineering:material>],
 						 [<immersiveengineering:material>, <actuallyadditions:block_misc:4>, <minecraft:wooden_pressure_plate>]]);
 
@@ -747,7 +758,7 @@ mods.jei.JEI.removeAndHide(<mekanism:energycube>.withTag({tier: 4, mekData: {ene
 
 // batteries
 recipes.remove(<actuallyadditions:item_battery>);
-recipes.addShaped(<actuallyadditions:item_battery>, [[<immersiveengineering:metal:30>, <actuallyadditions:item_crystal>, <immersiveengineering:metal:30>],
+recipes.addShaped(<actuallyadditions:item_battery>, [[<immersiveengineering:metal:30>, <actuallyadditions:item_misc:7>, <immersiveengineering:metal:30>],
 						    [<railcraft:plate:2>, <immersiveengineering:metal:32>, <railcraft:plate:2>],
 						    [<railcraft:plate:2>, <railcraft:plate:2>, <railcraft:plate:2>]]);
 recipes.remove(<actuallyadditions:item_battery_double>);
@@ -759,11 +770,11 @@ recipes.addShaped(<actuallyadditions:item_battery_triple>, [[<immersiveengineeri
 							    [<actuallyadditions:item_crystal:2>, <actuallyadditions:item_battery_double>, <actuallyadditions:item_crystal:2>],
 							    [<railcraft:plate:2>, <actuallyadditions:item_crystal:2>, <railcraft:plate:2>]]);
 recipes.remove(<actuallyadditions:item_battery_quadruple>);
-recipes.addShaped(<actuallyadditions:item_battery_quadruple>, [[<immersiveengineering:metal:37>, <actuallyadditions:item_crystal_empowered:5>, <immersiveengineering:metal:37>],
+recipes.addShaped(<actuallyadditions:item_battery_quadruple>, [[<immersiveengineering:metal:37>, <actuallyadditions:item_misc:8>, <immersiveengineering:metal:37>],
 							       [<mekanism:compresseddiamond>, <actuallyadditions:item_battery_triple>, <mekanism:compresseddiamond>],
 							       [<railcraft:plate:6>, <mekanism:compresseddiamond>, <railcraft:plate:6>]]);
 recipes.remove(<actuallyadditions:item_battery_quintuple>);
-recipes.addShaped(<actuallyadditions:item_battery_quintuple>, [[<immersiveengineering:metal:37>, <actuallyadditions:item_crystal_empowered:4>, <immersiveengineering:metal:37>],
+recipes.addShaped(<actuallyadditions:item_battery_quintuple>, [[<immersiveengineering:metal:37>, <actuallyadditions:item_crystal_empowered:5>, <immersiveengineering:metal:37>],
 							       [<mekanism:compresseddiamond>, <actuallyadditions:item_battery_quadruple>, <mekanism:compresseddiamond>],
 							       [<railcraft:plate:6>, <mekanism:atomicalloy>, <railcraft:plate:6>]]);
 // ie lv cap and cabling
@@ -772,11 +783,11 @@ recipes.addShaped(<immersiveengineering:metal_device0>, [[<immersiveengineering:
 							[<immersiveengineering:metal:30>, <actuallyadditions:item_battery>.withTag({Energy: 200000}), <immersiveengineering:metal:30>],
 							[<immersiveengineering:treated_wood>, <actuallyadditions:item_crystal>, <immersiveengineering:treated_wood>]]);
 recipes.remove(<immersiveengineering:wirecoil:6>);
-recipes.addShaped(<immersiveengineering:wirecoil:6> * 4, [[<immersiveengineering:material:5>, <immersiveengineering:material:20>, <immersiveengineering:material:5>],
+recipes.addShaped(<immersiveengineering:wirecoil:6> * 6, [[<immersiveengineering:material:5>, <immersiveengineering:material:20>, <immersiveengineering:material:5>],
 						          [<immersiveengineering:material:20>, <mysticalworld:spindle>, <immersiveengineering:material:20>],
 							  [<immersiveengineering:material:5>, <immersiveengineering:material:20>, <immersiveengineering:material:5>]]);
 recipes.remove(<immersiveengineering:wirecoil>);
-recipes.addShaped(<immersiveengineering:wirecoil> * 4, [[null, <immersiveengineering:material:20>, null],
+recipes.addShaped(<immersiveengineering:wirecoil> * 6, [[null, <immersiveengineering:material:20>, null],
   						        [<immersiveengineering:material:20>, <mysticalworld:spindle>, <immersiveengineering:material:20>],
 							[null, <immersiveengineering:material:20>, null]]);
 // ie mv cap and cabling
@@ -785,13 +796,22 @@ recipes.addShaped(<immersiveengineering:metal_device0:1>, [[<immersiveengineerin
 							   [<immersiveengineering:metal:37>, <actuallyadditions:item_battery_double>, <immersiveengineering:metal:37>],
 							   [<immersiveengineering:treated_wood>, <actuallyadditions:item_crystal:2>, <immersiveengineering:treated_wood>]]);
 recipes.remove(<immersiveengineering:wirecoil:1>);
-recipes.addShaped(<immersiveengineering:wirecoil:1> * 4 , [[null, <immersiveengineering:material:21>, null],
+recipes.addShaped(<immersiveengineering:wirecoil:1> * 6 , [[null, <immersiveengineering:material:21>, null],
 						           [<immersiveengineering:material:21>, <mysticalworld:spindle>, <immersiveengineering:material:21>],
 							   [null, <immersiveengineering:material:21>, null]]);
 recipes.remove(<immersiveengineering:wirecoil:7>);
-recipes.addShaped(<immersiveengineering:wirecoil:7>, [[<immersiveengineering:material:5>, <immersiveengineering:material:21>, <immersiveengineering:material:5>],
- 						      [<immersiveengineering:material:21>, <mysticalworld:spindle>, <immersiveengineering:material:21>],
-						      [<immersiveengineering:material:5>, <immersiveengineering:material:21>, <immersiveengineering:material:5>]]);
+recipes.addShaped(<immersiveengineering:wirecoil:7> * 6, [[<immersiveengineering:material:5>, <immersiveengineering:material:21>, <immersiveengineering:material:5>],
+ 						          [<immersiveengineering:material:21>, <mysticalworld:spindle>, <immersiveengineering:material:21>],
+						          [<immersiveengineering:material:5>, <immersiveengineering:material:21>, <immersiveengineering:material:5>]]);
+// ie hv cap and cabling
+recipes.remove(<immersiveengineering:metal_device0:2>);
+recipes.addShaped(<immersiveengineering:metal_device0:2>, [[<mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>, <mekanism:reinforcedalloy>],
+							   [<immersiveengineering:metal:37>, <actuallyadditions:item_battery_double>, <immersiveengineering:metal:37>],
+							   [<immersiveengineering:treated_wood>, <actuallyadditions:item_crystal_empowered:5>, <immersiveengineering:treated_wood>]]);
+recipes.remove(<immersiveengineering:wirecoil:2>);
+recipes.addShaped(<immersiveengineering:wirecoil:2> * 6, [[null, <immersiveengineering:material:22>, null],
+						          [<immersiveengineering:material:23>, <mysticalworld:spindle>, <immersiveengineering:material:23>],
+							  [null, <immersiveengineering:material:22>, null]]);
 // ie transformer
 recipes.remove(<immersiveengineering:connector:7>);
 recipes.addShaped(<immersiveengineering:connector:7>, [[<immersiveengineering:connector>, null, <immersiveengineering:connector:2>],
@@ -815,7 +835,7 @@ recipes.addShaped(<actuallyadditions:block_battery_box>, [[<immersiveengineering
 // generator progression
 recipes.remove(<actuallyadditions:block_coal_generator>);
 recipes.addShaped(<actuallyadditions:block_coal_generator>, [[<immersiveengineering:metal:39>, <immersiveengineering:metal:39>, <immersiveengineering:metal:39>],
-							    [<immersiveengineering:metal:39>, <mysticalagriculture:coal_block>, <immersiveengineering:metal:39>],
+							    [<immersiveengineering:metal:39>, <actuallyadditions:item_misc:7>, <immersiveengineering:metal:39>],
 							    [<immersiveengineering:metal:39>, <engineersdecor:small_lab_furnace>, <immersiveengineering:metal:39>]]);
 recipes.remove(<actuallyadditions:block_leaf_generator>);
 recipes.addShaped(<actuallyadditions:block_leaf_generator>, [[<immersiveengineering:metal:39>, <immersiveengineering:metal:40>, <immersiveengineering:metal:39>],
@@ -823,19 +843,28 @@ recipes.addShaped(<actuallyadditions:block_leaf_generator>, [[<immersiveengineer
 							     [<immersiveengineering:metal:39>, <actuallyadditions:block_misc:9>, <immersiveengineering:metal:39>]]);
 recipes.remove(<engineersdecor:small_solar_panel>);
 recipes.addShaped(<engineersdecor:small_solar_panel>, [[null, <mekanismgenerators:solarpanel>, null],
-						       [<vehicle:wrench>.reuse(), <immersiveengineering:material:8>, null],
+						       [<vehicle:wrench>.reuse(), <immersiveengineering:material:8>, <actuallyadditions:item_misc:7>],
 						       [<immersiveengineering:metal:38>, <immersiveengineering:metal_decoration0:3>, <immersiveengineering:metal:38>]]);
 // thermo generator
 recipes.remove(<immersiveengineering:metal_device1:3>);
 recipes.addShaped(<immersiveengineering:metal_device1:3>, [[<immersiveengineering:metal:36>, <immersiveengineering:metal:36>, <immersiveengineering:metal:36>],
 							   [<immersiveengineering:metal:36>, <immersiveengineering:metal_decoration0>, <immersiveengineering:metal:36>],
 							   [<immersiveengineering:metal:38>, <immersiveengineering:metal_decoration0:3>, <immersiveengineering:metal:38>]]);
+// gas burning generator
+recipes.remove(<mekanismgenerators:generator:3>);
+recipes.addShaped(<mekanismgenerators:generator:3>, [[<mekanism:ingot:1>, <mekanism:controlcircuit:1>, <mekanism:ingot:1>],
+						     [<actuallyadditions:item_misc:7>, <mekanism:basicblock:8>, <actuallyadditions:item_misc:7>],
+						     [<mekanism:ingot:1>, <actuallyadditions:item_battery>, <mekanism:ingot:1>]]);
 // chargepad
 recipes.remove(<mekanism:machineblock:14>);
 recipes.addShaped(<mekanism:machineblock:14>, [[null, null, null],
 					       [<mekanism:ingot:1>, <minecraft:heavy_weighted_pressure_plate>, <minecraft:heavy_weighted_pressure_plate>],
 					       [<immersiveengineering:metal_device0>, <mekanism:controlcircuit:1>, <immersiveengineering:metal_decoration0:4>]]);
-
+// ie charging station
+recipes.remove(<immersiveengineering:metal_device1:5>);
+recipes.addShaped(<immersiveengineering:metal_device1:5>, [[<projectred-core:resource_item:103>, <immersiveengineering:connector>, <mysticalagriculture:crafting:33>],
+							   [<tconstruct:clear_glass>, <tconstruct:clear_glass>, <tconstruct:clear_glass>],
+							   [<immersiveengineering:treated_wood>, <actuallyadditions:item_misc:7>, <immersiveengineering:treated_wood>]]);
 // rice slime from pams
 recipes.remove(<actuallyadditions:item_misc:12>);
 recipes.addShaped(<actuallyadditions:item_misc:12> * 4, [[null, <harvestcraft:riceitem>, null],
@@ -874,13 +903,48 @@ recipes.addShaped(<cfm:tv_remote>, [[null, <actuallyadditions:item_crystal:5>, n
 				    [<actuallyadditions:item_crystal>, <immersiveengineering:material:8>, <actuallyadditions:item_crystal>]]);
 
 //// parts and pieces and bobs
+// silk -> string
+recipes.addShaped(<minecraft:string>, [[<mysticalworld:silk_thread>, <mysticalworld:silk_thread>, <mysticalworld:silk_thread>],
+				       [<mysticalworld:silk_thread>, <mysticalworld:silk_thread>, <mysticalworld:silk_thread>],
+				       [<mysticalworld:silk_thread>, <mysticalworld:silk_thread>, <mysticalworld:silk_thread>]]);
+// iron rod
+recipes.remove(<immersiveengineering:material:1>);
+recipes.addShaped(<immersiveengineering:material:1>, [[null, null, null],
+						      [null, <minecraft:iron_ingot>, null],
+						      [null, <minecraft:iron_ingot>, null]]);
+// red iron compound
+recipes.remove(<projectred-core:resource_item:251>);
+recipes.addShaped(<projectred-core:resource_item:251> * 2, [[<minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>],
+						            [<minecraft:redstone>, <minecraft:iron_ingot>, <minecraft:redstone>],
+							    [<minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>]]);
+// electrotine powder
+recipes.addShaped(<projectred-core:resource_item:105> * 4, [[null, null, null],
+						      	    [<minecraft:redstone>, <minecraft:redstone>, null],
+							    [<mekanism:dust:4>, <mekanism:dust:4>, null]]);
+mods.mekanism.infuser.addRecipe("TIN", 50, <minecraft:redstone>, <projectred-core:resource_item:105> * 2);
+// electrotine iron compound
+recipes.remove(<projectred-core:resource_item:252>);
+recipes.addShaped(<projectred-core:resource_item:252> * 2, [[<projectred-core:resource_item:105>, <projectred-core:resource_item:105>, <projectred-core:resource_item:105>],
+						            [<projectred-core:resource_item:105>, <minecraft:iron_ingot>, <projectred-core:resource_item:105>],
+							    [<projectred-core:resource_item:105>, <projectred-core:resource_item:105>, <projectred-core:resource_item:105>]]);
+// advanced coil
+recipes.remove(<actuallyadditions:item_misc:8>);
+recipes.addShaped(<actuallyadditions:item_misc:8> * 2, [[null, <mysticalagriculture:crafting:35>, null],
+						        [<actuallyadditions:item_crystal:1>, <tconstruct:tough_binding>.withTag({Material: "copper"}), <actuallyadditions:item_crystal:1>],
+						        [null, <mysticalagriculture:crafting:35>, null]]);
+// basic coil
+recipes.remove(<actuallyadditions:item_misc:7>);
+recipes.addShaped(<actuallyadditions:item_misc:7> * 2, [[null, <mysticalagriculture:crafting:33>, null],
+						        [<actuallyadditions:item_crystal>, <tconstruct:tough_binding>.withTag({Material: "iron"}), <actuallyadditions:item_crystal>],
+						        [null, <mysticalagriculture:crafting:33>, null]]);
+
 // livingwood stick
 recipes.remove(<botania:manaresource:3>);
 recipes.addShaped(<botania:manaresource:3>, [[null, <botania:livingwood>, null],[null, <botania:livingwood:1>, null], [null, null, null]]);
 // tripwire
 recipes.remove(<minecraft:tripwire_hook>);
 recipes.addShaped(<minecraft:tripwire_hook> * 4, [[null, <mysticalagriculture:crafting:33>, null],
-					          [null, <tconstruct:binding>, null],
+					          [null, <tconstruct:binding>.withTag({Material: "wood"}), null],
 						  [null, <minecraft:planks>, null]]);
 // spindle
 recipes.remove(<mysticalworld:spindle>);
@@ -919,19 +983,24 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:4> * 8, [[<railcraft:p
 							           [<immersiveengineering:metal:30>, <immersiveengineering:material:8>, <immersiveengineering:metal:30>]]);
 // heavy engineering block
 recipes.remove(<immersiveengineering:metal_decoration0:5>);
-recipes.addShaped(<immersiveengineering:metal_decoration0:5>, [[<immersiveengineering:metal:38>, <immersiveengineering:material:9>, <immersiveengineering:metal:38>],
-							       [<alchemistry:ingot:22>, <mekanism:basicblock:8>, <alchemistry:ingot:22>],
-							       [<immersiveengineering:metal:31>, <immersiveengineering:material:9>, <immersiveengineering:metal:31>]]);
+recipes.addShaped(<immersiveengineering:metal_decoration0:5> * 4, [[<immersiveengineering:metal:38>, <immersiveengineering:material:9>, <immersiveengineering:metal:38>],
+							           [<alchemistry:ingot:22>, <mekanism:basicblock:8>, <alchemistry:ingot:22>],
+							           [<immersiveengineering:metal:31>, <immersiveengineering:material:9>, <immersiveengineering:metal:31>]]);
 // generator block
 recipes.remove(<immersiveengineering:metal_decoration0:6>);
-recipes.addShaped(<immersiveengineering:metal_decoration0:6>, [[<immersiveengineering:metal:38>, <tconstruct:large_plate>.withTag({Material: "electrum"}), <immersiveengineering:metal:38>],
-							       [<immersiveengineering:metal:37>, <immersiveengineering:metal_device1:2>, <immersiveengineering:metal:37>],
-							       [<immersiveengineering:metal:38>, <mysticalagriculture:storage>, <immersiveengineering:metal:38>]]);
+recipes.addShaped(<immersiveengineering:metal_decoration0:6> * 4, [[<immersiveengineering:metal:38>, <tconstruct:large_plate>.withTag({Material: "electrum"}), <immersiveengineering:metal:38>],
+							           [<immersiveengineering:metal:37>, <actuallyadditions:item_misc:7>, <immersiveengineering:metal:37>],
+							           [<immersiveengineering:metal:38>, <actuallyadditions:block_misc:9>, <immersiveengineering:metal:38>]]);
 // kinetic generator
 recipes.remove(<immersiveengineering:metal_device1:2>);
 recipes.addShaped(<immersiveengineering:metal_device1:2>, [[<immersiveengineering:metal:39>, <immersiveengineering:metal:39>, <immersiveengineering:metal:39>],
 							   [<projectred-core:resource_item:103>, <immersiveengineering:metal_decoration0>, <projectred-core:resource_item:103>],
 							   [<mysticalagriculture:crafting:33>, <actuallyadditions:block_misc:9>, <mysticalagriculture:crafting:33>]]);
+// radiator block
+recipes.remove(<immersiveengineering:metal_decoration0:7>);
+recipes.addShaped(<immersiveengineering:metal_decoration0:7> * 4, [[<mekanism:ingot:1>, <immersiveengineering:metal:30>, <mekanism:ingot:1>],
+							           [<tconstruct:large_plate>.withTag({Material: "copper"}), <tconstruct:tough_binding>.withTag({Material: "aluminum"}), <tconstruct:large_plate>.withTag({Material: "copper"})],
+								   [<mekanism:ingot:1>, <immersiveengineering:metal:30>, <mekanism:ingot:1>]]);
 // energized silicon chip
 recipes.remove(<projectred-core:resource_item:21>);
 recipes.addShaped(<projectred-core:resource_item:21>, [[null, null, null],
@@ -945,7 +1014,7 @@ recipes.addShaped(<projectred-core:resource_item:20>, [[null, null, null],
 // TODO: see if we can drop the shaped reference to multiples?
 // transistor
 recipes.remove(<opencomputers:material:6>);
-recipes.addShaped(<opencomputers:material:6> * 4, [[<mekanism:nugget:6>, <immersiveengineering:material:20>, <mekanism:nugget:6>],
+recipes.addShaped(<opencomputers:material:6> * 8, [[<mekanism:nugget:6>, <immersiveengineering:material:20>, <mekanism:nugget:6>],
 					      [<mysticalagriculture:crafting>, <mekanism:dust:5>, <mysticalagriculture:crafting>],
 					      [<appliedenergistics2:material:5>, <projectred-core:resource_item:103>, <appliedenergistics2:material:5>]]);
 // t1 microchip
@@ -960,7 +1029,7 @@ recipes.addShaped(<opencomputers:material:8> * 4, [[<mysticalworld:gold_dust_tin
 						   [<mysticalworld:gold_dust_tiny>, <projectred-core:resource_item:105>, <mysticalworld:gold_dust_tiny>]]);
 // t3 microchip
 recipes.remove(<opencomputers:material:9>);
-recipes.addShaped(<opencomputers:material:9> * 2, [[<opencomputers:material:7>, <actuallyadditions:item_crystal:2>, <opencomputers:material:7>],
+recipes.addShaped(<opencomputers:material:9> * 4, [[<opencomputers:material:7>, <actuallyadditions:item_crystal:2>, <opencomputers:material:7>],
 					           [<actuallyadditions:item_crystal:1>, <mekanism:compressedredstone>, <actuallyadditions:item_crystal:1>],
 						   [<opencomputers:material:7>, <mekanism:otherdust>, <opencomputers:material:7>]]);
 // interwebs
@@ -987,9 +1056,6 @@ recipes.addShaped(<actuallyadditions:item_misc:18>, [[null, <tconstruct:tough_bi
 						     [<tconstruct:tough_binding>.withTag({Material: "wood"}), <tconstruct:clear_glass>, <tconstruct:tough_binding>.withTag({Material: "wood"})],
 						     [null, <tconstruct:tough_binding>.withTag({Material: "wood"}), null]]);
 
-// electrotine powder
-recipes.addShapeless(<projectred-core:resource_item:105>, [<minecraft:redstone>, <minecraft:redstone>, <mekanism:dust:4>, <mekanism:dust:4>]);
-mods.mekanism.infuser.addRecipe("TIN", 30, <minecraft:redstone>, <projectred-core:resource_item:105>);
 // circuit plate
 furnace.remove(<projectred-core:resource_item>);
 recipes.addShapeless(<projectred-core:resource_item> * 4, [<tconstruct:large_plate>.withTag({Material: "stone"}), <immersiveengineering:tool:1>]);
@@ -1008,9 +1074,9 @@ recipes.addShaped(<mekanism:electrolyticcore>, [[<mekanism:enrichedalloy>, <meka
 					        [<immersiveengineering:metal:16>, <actuallyadditions:item_crystal>, <immersiveengineering:metal:16>],
 						[<mekanism:enrichedalloy>, <mekanism:dust:2>, <mekanism:enrichedalloy>]]);
 recipes.remove(<mekanismgenerators:solarpanel>);
-recipes.addShaped(<mekanismgenerators:solarpanel>, [[<extrautils2:decorativeglass>, <extrautils2:decorativeglass>, <extrautils2:decorativeglass>],
-						    [<projectred-core:resource_item:103>, <mekanism:enrichedalloy>, <projectred-core:resource_item:103>],
-						    [<mekanism:ingot:1>, <mekanism:ingot:1>, <mekanism:ingot:1>]]);
+recipes.addShaped(<mekanismgenerators:solarpanel> * 2, [[<extrautils2:decorativeglass>, <extrautils2:decorativeglass>, <extrautils2:decorativeglass>],
+						        [<projectred-core:resource_item:103>, <mekanism:enrichedalloy>, <projectred-core:resource_item:103>],
+						        [<mekanism:ingot:1>, <mekanism:ingot:1>, <mekanism:ingot:1>]]);
 //// dat glass????
 // explosion proof glass
 recipes.remove(<engineersdecor:panzerglass_block>);
@@ -1063,6 +1129,9 @@ mods.mekanism.chemical.injection.addRecipe(<extrautils2:decorativesolid:4>, <gas
 // quartz glass
 recipes.remove(<appliedenergistics2:quartz_glass>);
 mods.mekanism.combiner.addRecipe(<extrautils2:decorativesolid:4>, <ore:dustCertusQuartz> | <ore:dustNetherQuartz>, <appliedenergistics2:quartz_glass>);
+// insulated glass
+recipes.remove(<immersiveengineering:stone_decoration:8>);
+mods.mekanism.chemical.injection.addRecipe(<appliedenergistics2:quartz_glass>, <gas:ethene>, <immersiveengineering:stone_decoration:8>);
 
 //// dino time
 recipes.remove(<fossil:cultivate>);
@@ -1180,6 +1249,8 @@ recipes.remove(<mysticalagriculture:ingot_storage:6>);
 recipes.addShaped(<mysticalagriculture:ingot_storage:6>, [[<mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>],
 							  [<mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>],
 							  [<mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>]]);
+recipes.addShapeless(<mysticalagriculture:crafting:38> * 9, [<mysticalagriculture:ingot_storage:6>]);
+
 // cfm picture frame
 for i, dye in dyeArray {
     val frame = itemUtils.getItem("cfm:photo_frame", 15 - i);
@@ -1188,3 +1259,22 @@ for i, dye in dyeArray {
     			     [<tconstruct:tough_binding>.withTag({Material: "wood"}), <bibliocraft:paintingcanvas>, <tconstruct:tough_binding>.withTag({Material: "wood"})],
 			     [dye, <opencomputers:material:13>, dye]]);
 }
+
+//// boatrtttt
+recipes.remove(<immersivepetroleum:speedboat>);
+recipes.addShaped(<immersivepetroleum:speedboat>, [[null, null, null],
+						   [<immersiveengineering:treated_wood:1>, <immersiveengineering:material:9>, <vehicle:small_engine:2>],
+						   [<mekanism:reinforcedplasticblock:3>, <immersiveengineering:treated_wood:1>, <mekanism:reinforcedplasticblock:3>]]);
+//// manasteel essence lol
+// manasteel
+recipes.addShaped(<botania:manaresource>, [[<mysticalagriculture:manasteel_essence>, <mysticalagriculture:manasteel_essence>, null],
+					   [<mysticalagriculture:manasteel_essence>, <mysticalagriculture:manasteel_essence>, null],
+					   [<mysticalagriculture:manasteel_essence>, <mysticalagriculture:manasteel_essence>, null]]);
+// mana diamond
+recipes.addShaped(<botania:manaresource:2>, [[<mysticalagriculture:diamond_essence>, <mysticalagriculture:manasteel_essence>, <mysticalagriculture:diamond_essence>],
+					     [<mysticalagriculture:manasteel_essence>, <mysticalagriculture:manasteel_essence>, <mysticalagriculture:manasteel_essence>],
+					     [<mysticalagriculture:diamond_essence>, <mysticalagriculture:manasteel_essence>, <mysticalagriculture:diamond_essence>]]);
+// mana pearl
+recipes.addShaped(<botania:manaresource:1>, [[<mysticalagriculture:enderman_essence>, <mysticalagriculture:manasteel_essence>, <mysticalagriculture:enderman_essence>],
+					     [<mysticalagriculture:manasteel_essence>, <mysticalagriculture:manasteel_essence>, <mysticalagriculture:manasteel_essence>],
+					     [<mysticalagriculture:enderman_essence>, <mysticalagriculture:manasteel_essence>, <mysticalagriculture:enderman_essence>]]);

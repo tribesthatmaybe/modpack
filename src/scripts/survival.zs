@@ -83,3 +83,68 @@ recipes.addShapeless("Magic Beenz",
 			function(out,cInfo,player){
 				player.xp -= 20;
 			});
+// kitchen tho
+recipes.remove(<cookingforblockheads:cooking_table>);
+recipes.addShaped(<cookingforblockheads:cooking_table>, [[<chisel:marble2:7>, <chisel:marble2:7>, <chisel:marble2:7>],
+							 [<minecraft:hardened_clay>, <minecraft:crafting_table>, <minecraft:hardened_clay>],
+							 [<minecraft:hardened_clay>, <cookingforblockheads:recipe_book:1>, <minecraft:hardened_clay>]]);
+recipes.remove(<cookingforblockheads:oven>);
+recipes.addShaped(<cookingforblockheads:oven>, [[<tconstruct:clear_glass>, <tconstruct:clear_glass>, <tconstruct:clear_glass>],
+					        [<minecraft:iron_ingot>, <minecraft:furnace>, <minecraft:iron_ingot>],
+						[<mysticalagriculture:crafting:33>, <actuallyadditions:block_misc:4>, <mysticalagriculture:crafting:33>]]);
+recipes.remove(<cookingforblockheads:fridge>);
+recipes.addShaped(<cookingforblockheads:fridge>, [[<mysticalagriculture:crafting:32>, <mysticalagriculture:crafting:32>, <mysticalagriculture:crafting:32>],
+						  [<mysticalagriculture:crafting:32>, <minecraft:chest>, <minecraft:wooden_door>],
+						  [<mysticalagriculture:crafting:33>, <actuallyadditions:block_misc:4>, <mysticalagriculture:crafting:33>]]);
+recipes.remove(<cookingforblockheads:sink>);
+recipes.addShaped(<cookingforblockheads:sink>, [[<mysticalagriculture:crafting:32>, <tconstruct:faucet>, <mysticalagriculture:crafting:32>],
+					        [<minecraft:hardened_clay>, <mysticalagriculture:crafting:33>, <minecraft:hardened_clay>],
+						[<minecraft:hardened_clay>, <minecraft:hardened_clay>, <minecraft:hardened_clay>]]);
+recipes.remove(<cookingforblockheads:tool_rack>);
+recipes.addShaped(<cookingforblockheads:tool_rack>, [[null, null, null],
+						     [<bibliocraft:framingboard>, <bibliocraft:framingboard>, <bibliocraft:framingboard>],
+						     [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
+recipes.remove(<cookingforblockheads:toaster>);
+recipes.addShaped(<cookingforblockheads:toaster>, [[null, null, null],
+						   [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:stone_button>],
+						   [<minecraft:iron_ingot>, <mysticalagriculture:crafting:2>, <minecraft:iron_ingot>]]);
+recipes.remove(<cookingforblockheads:counter>);
+recipes.addShaped(<cookingforblockheads:counter>, [[<chisel:marble2:7>, <chisel:marble2:7>, <chisel:marble2:7>],
+						   [<minecraft:hardened_clay>, <minecraft:chest>, <minecraft:hardened_clay>],
+						   [<minecraft:hardened_clay>, <minecraft:hardened_clay>, <minecraft:hardened_clay>]]);
+recipes.remove(<cookingforblockheads:corner>);
+recipes.addShaped(<cookingforblockheads:corner>, [[<chisel:marble2:7>, <chisel:marble2:7>, <chisel:marble2:7>],
+						  [<minecraft:hardened_clay>, <minecraft:hardened_clay>, <minecraft:hardened_clay>],
+						  [<minecraft:hardened_clay>, <minecraft:hardened_clay>, <minecraft:hardened_clay>]]);
+recipes.remove(<cookingforblockheads:kitchen_floor>);
+recipes.addShaped(<cookingforblockheads:kitchen_floor> * 4, [[<chisel:basalt2:7>, <chisel:marble2:7>, null],
+						             [<chisel:marble2:7>, <chisel:basalt2:7>, null],
+							     [null, null, null]]);
+recipes.remove(<cookingforblockheads:heating_unit>);
+recipes.addShaped(<cookingforblockheads:heating_unit>, [[null, null, null],
+						        [<minecraft:iron_ingot>, <actuallyadditions:item_misc:7>, <minecraft:iron_ingot>],
+							[<mysticalagriculture:crafting:1>, <mysticalagriculture:crafting:1>, <mysticalagriculture:crafting:1>]]);
+recipes.remove(<cookingforblockheads:ice_unit>);
+recipes.addShaped(<cookingforblockheads:ice_unit>, [[null, null, null],
+						    [<mysticalagriculture:crafting:32>, <actuallyadditions:item_misc:7>, <mysticalagriculture:crafting:32>],
+						    [<mysticalagriculture:crafting>, <mysticalagriculture:crafting>, <mysticalagriculture:crafting>]]);
+recipes.remove(<cookingforblockheads:preservation_chamber>);
+recipes.addShaped(<cookingforblockheads:preservation_chamber>, [[null, null, null],
+							        [<projectred-core:resource_item:103>, <minecraft:chest>, <projectred-core:resource_item:103>],
+								[<mysticalagriculture:crafting>, <mysticalagriculture:crafting>, <mysticalagriculture:crafting>]]);
+recipes.remove(<harvestcraft:cuttingboarditem>);
+recipes.addShaped(<harvestcraft:cuttingboarditem>, [[null, null, null],
+						    [null, <actuallyadditions:item_misc:2>, null],
+						    [<actuallyadditions:item_misc:3>, null, <tconstruct:sign_head>.withTag({Material: "wood"})]]);
+recipes.remove(<harvestcraft:saucepanitem>);
+recipes.addShaped(<harvestcraft:saucepanitem>, [[null, null, <microblockcbe:stone_rod>],
+					        [null, <tconstruct:pan_head>.withTag({Material: "iron"}), null],
+						[null, null, null]]);
+recipes.remove(<harvestcraft:potitem>);
+recipes.addShaped(<harvestcraft:potitem>, [[null, null, null],
+					   [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],
+					   [null, <minecraft:iron_ingot>, null]]);
+recipes.remove(<harvestcraft:skilletitem>);
+recipes.addShaped(<harvestcraft:skilletitem>, [[null, null, null],
+					       [null, <tconstruct:pan_head>.withTag({Material: "iron"}), null],
+					       [<microblockcbe:stone_rod>, null, null]]);

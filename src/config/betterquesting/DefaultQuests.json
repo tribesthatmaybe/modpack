@@ -1409,7 +1409,7 @@
             },
             "id:8": "vehicle:wheel",
             "Count:3": 1,
-            "Damage:2": 3,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -1555,7 +1555,6 @@
     "19:10": {
       "questID:3": 19,
       "preRequisites:11": [
-        15,
         79
       ],
       "properties:10": {
@@ -3640,9 +3639,9 @@
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "solcarrot:food_book",
+            "id:8": "cookingforblockheads:recipe_book",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 1,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -3652,7 +3651,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Know What You Eat",
-          "desc:8": "By building the Food Book you can track all the different things you have eaten. The more unique foods you consume, the better your overall health will be.\n\nBon apetit."
+          "desc:8": "With the Cooking for Blockheads book you can take a look through all the different food recipes for ingredients you are currently holding. Eventually, you can make a full kitchen with built in storage and the ability to easily make varied foods.\n\nEventually..."
         }
       },
       "tasks:9": {
@@ -3668,21 +3667,38 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "solcarrot:food_book",
+              "id:8": "cookingforblockheads:recipe_book",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "chisel:marble2",
+              "Count:3": 6,
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "42:10": {
       "questID:3": 42,
       "preRequisites:11": [
-        6
+        6,
+        36
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3691,7 +3707,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -3703,7 +3719,7 @@
             "OreDict:8": ""
           },
           "globalshare:1": 0,
-          "questlogic:8": "AND",
+          "questlogic:8": "OR",
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
@@ -4105,21 +4121,6 @@
               "id:8": "harvestcraft:onionhamburgeritem",
               "Count:3": 4,
               "Damage:2": 0,
-              "OreDict:8": ""
-            }
-          }
-        },
-        "1:10": {
-          "rewardID:8": "bq_standard:item",
-          "index:3": 1,
-          "rewards:9": {
-            "0:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "cookingforblockheads:recipe_book",
-              "Count:3": 1,
-              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -6539,7 +6540,7 @@
     "72:10": {
       "questID:3": 72,
       "preRequisites:11": [
-        35
+        71
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6621,7 +6622,7 @@
     "73:10": {
       "questID:3": 73,
       "preRequisites:11": [
-        46
+        29
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6721,6 +6722,21 @@
               "id:8": "cookingforblockheads:fridge",
               "Count:3": 1,
               "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cookingforblockheads:recipe_book",
+              "Count:3": 1,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           }
@@ -12300,7 +12316,7 @@
     "125:10": {
       "questID:3": 125,
       "preRequisites:11": [
-        27
+        76
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12950,7 +12966,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Let the power move you",
-          "desc:8": "You will need to attach your atomic reconstructor to your coal generator somehow. Make a LV (low voltage) copper coil and some LV  connectors. Attach the LV connectors to the two machines within line of sight of each other. With the LV coil in your hand, right click on tne LV connectors one at a time to link them. LV power does suffer some loss when run over long distances.\n\nNote that these wires have limited range and must have clear line of sight and have a finite range. If there are obstructions, they will be illuminated red. Be careful when running wires outside in the desert as the build up of playa dust over time §owill§r disrupt your wires.\n\nTake a look in your engineers manual if this is still confusing."
+          "desc:8": "You will need to attach your atomic reconstructor to your coal generator somehow. Make a LV (low voltage) copper coil and some LV  connectors. Attach the LV connectors to the two machines within line of sight of each other. With the LV coil in your hand, right click on tne LV connectors one at a time to link them. LV power does suffer some loss when run over long distances.\n\nNote that these wires have limited range and must have clear line of sight and have a finite range. If there are obstructions, they will be illuminated red. Be careful when running wires outside in the desert as the build up of playa dust over time §owill§r disrupt your wires. Also be careful with uninsulated wires - you will get zapped, and it will hurt.\n\nTake a look in your engineers manual if this is still confusing."
         }
       },
       "tasks:9": {
@@ -14406,7 +14422,7 @@
             }
           },
           "MailQuest:3": -1,
-          "TimePast:4": 1706426877862,
+          "TimePast:4": 1706861941613,
           "index:3": 0,
           "Time:4": 0,
           "Subject:8": "Trade Opportunity"
@@ -15391,7 +15407,7 @@
           },
           "MailItems:9": {},
           "MailQuest:3": -1,
-          "TimePast:4": 1706426877862,
+          "TimePast:4": 1706861941613,
           "index:3": 0,
           "Time:4": 0,
           "Subject:8": "A modest request"
@@ -19975,7 +19991,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "The Lanterning",
-          "desc:8": "These lanterns come in all kinds of colors and design variations. They can be suspended from the ceiling with chains, or simply placed on the ground. Right click the lantern to turn it on/off. There are other non-electric light sources as wel - you\u0027ve received some as quest rewards already. For others, take a look under JEI for lamps and lanterns."
+          "desc:8": "These lanterns come in all kinds of colors and design variations. They can be suspended from the ceiling with chains, or simply placed on the ground. Right click the lantern to turn it on/off. There are other non-electric light sources as wel - you\u0027ve received some as quest rewards already. For others, take a look under JEI for lamps and lanterns.\n\nAs a reward have some glowballs. These are throwable lights crafted with a glowstone crystal and snowballs. They are easy to make, assuming you can find snowballs."
         }
       },
       "tasks:9": {
@@ -20006,6 +20022,21 @@
           "rewardID:8": "bq_standard:xp",
           "isLevels:1": 0,
           "index:3": 0
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "tconstruct:throwball",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
         }
       }
     },
@@ -20081,7 +20112,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Increasingly Dangerous Power",
-          "desc:8": "The bigger a machine is, the more power it will probably use. Some of the larger machines use a phenomenal amount of power. There willl come a time when using the LV wires just won\u0027t do any more, and you will find your LV capacity not even lasting through afternoon tea. There are Medium (MV) and High (HV) levels of Immersive Engineering cables, relays, and connectors which can be created. You can ramp the power up/down using transformers. While the densest Universal Cable can more power than HV cabling, it can be very expensive to run it longer distances.\n\nThe HV cables can also be run for a further distance, and have less power loss.\n\nFor now, craft a MV battery."
+          "desc:8": "The bigger a machine is, the more power it will probably use. Some of the larger machines use a phenomenal amount of power. There willl come a time when using the LV wires just won\u0027t do any more, and you will find your LV capacity not even lasting through afternoon tea. There are Medium (MV) and High (HV) levels of Immersive Engineering cables, relays, and connectors which can be created. You can ramp the power up/down using transformers. While the densest Universal Cable can more power than HV cabling, it can be very expensive to run it longer distances.\n\nThe HV cables can also be run for a further distance, and have less power loss. Remember that you will get zapped if you get too close to uninsulated wires, and it will hurt.\n\nFor now, craft a MV battery."
         }
       },
       "tasks:9": {
@@ -20109,6 +20140,15 @@
               "id:8": "immersiveengineering:wirecoil",
               "Count:3": 8,
               "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:connector",
+              "Count:3": 1,
+              "Damage:2": 7,
               "OreDict:8": ""
             }
           },
@@ -20274,6 +20314,26 @@
             }
           },
           "taskID:8": "bq_standard:crafting"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:wheat_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {
@@ -22404,7 +22464,23 @@
           "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "plants2:crystal_torch",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "309:10": {
       "questID:3": 309,
@@ -24321,6 +24397,15 @@
               "Count:3": 1,
               "Damage:2": 7,
               "OreDict:8": ""
+            },
+            "3:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "appliedenergistics2:inscriber",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:crafting"
@@ -25171,7 +25256,8 @@
       "questID:3": 367,
       "preRequisites:11": [
         260,
-        129
+        129,
+        267
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -25226,7 +25312,38 @@
           "taskID:8": "bq_standard:crafting"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersivepetroleum:schematic",
+              "Count:3": 1,
+              "tag:10": {
+                "multiblock:8": "IE:SheetmetalTank"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersivepetroleum:schematic",
+              "Count:3": 1,
+              "tag:10": {
+                "multiblock:8": "IE:Silo"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "368:10": {
       "questID:3": 368,
@@ -25350,7 +25467,41 @@
           "taskID:8": "bq_standard:advancement"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:mold",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:mold",
+              "Count:3": 1,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:mold",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "371:10": {
       "questID:3": 371,
@@ -25521,6 +25672,146 @@
       "rewards:9": {}
     },
     "375:10": {
+      "questID:3": 375,
+      "preRequisites:11": [
+        9
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "immersiveengineering:metal_device1",
+            "Count:3": 1,
+            "Damage:2": 7,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Moar Resources",
+          "desc:8": "Plenty of resources will be needed and not all of them can be grown in some kind of weird magical garden. Mining by hand, or by robot, will get old over time. Using a core sample drill you can find areas that have mineral or fluid deposits. Specialized machinery can be setup in these areas to slowly  and passively extract the materials. This will take a decent amount of power, but is likely worth it.\n\nBuild the core sample drill and place it down where you want to search. Attach it to LV power and right click on the machine to start the process. It will take a few minutes at which point you can right-click to remove the core sample. Hoving over it with the mouse cursor will show it\u0027s findings. You can place the core sample down on a built-in display stand."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersiveengineering:metal_device1",
+              "Count:3": 1,
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 2000,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 0,
+          "index:3": 0
+        }
+      }
+    },
+    "376:10": {
+      "questID:3": 376,
+      "preRequisites:11": [
+        308,
+        426
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "UNLOCKED",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "cyclicmagic:tool_auto_torch",
+            "Count:3": 1,
+            "tag:10": {},
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Auto Torch It",
+          "desc:8": "Being able to just wander around and have torches placed is almost as cool as yeeting torches. Arguably, it\u0027s cooler.\n\nThis device should be worn as a bauble and can be toggled on/off by right clicking it in your inventory."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cyclicmagic:tool_auto_torch",
+              "Count:3": 1,
+              "tag:10": {},
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:softpretzelandmustarditem",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "377:10": {
       "questID:3": 377,
       "preRequisites:11": [
         179
@@ -25562,7 +25853,7 @@
       },
       "rewards:9": {}
     },
-    "376:10": {
+    "378:10": {
       "questID:3": 378,
       "preRequisites:11": [
         240
@@ -25604,7 +25895,7 @@
       },
       "rewards:9": {}
     },
-    "377:10": {
+    "379:10": {
       "questID:3": 379,
       "preRequisites:11": [],
       "properties:10": {
@@ -25644,7 +25935,90 @@
       },
       "rewards:9": {}
     },
-    "378:10": {
+    "380:10": {
+      "questID:3": 380,
+      "preRequisites:11": [
+        325
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "brewcraft:bluebeeritem",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Brew it for Real",
+          "desc:8": "Placing a mix kit and some glass bottles in a distiller that is sitting on a block of lava will result in brewing and deliciousness.\n\nDrink responsibly."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:redbeeritem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "brewcraft:bluebeeritem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "Sender:8": "Brewers Guild",
+          "rewardID:8": "bq_npc_integration:npc_mail",
+          "BeenRead:1": 0,
+          "Message:10": {
+            "pages:9": {
+              "0:8": "Hi we\u0027ll buy your beer etc etc more npcs"
+            }
+          },
+          "MailItems:9": {},
+          "MailQuest:3": -1,
+          "TimePast:4": 1706861941614,
+          "index:3": 0,
+          "Time:4": 0,
+          "Subject:8": "Ingots 4 Beer"
+        }
+      }
+    },
+    "381:10": {
       "questID:3": 381,
       "preRequisites:11": [],
       "properties:10": {
@@ -25684,7 +26058,139 @@
       },
       "rewards:9": {}
     },
-    "379:10": {
+    "382:10": {
+      "questID:3": 382,
+      "preRequisites:11": [
+        307
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "botania:lens",
+            "Count:3": 1,
+            "tag:10": {},
+            "Damage:2": 9,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "The Lenses",
+          "desc:8": "There are a variety of lenses that can be used to modify the behavior of a mana pulse. The phantom lens is a great one as it allows you to send mana through solid objects, thus allowing some protection of your mana sources. Take a look at your Lexica Botanica for more lenses.\n\nYou will need to toss an ender eye into a mana pool and use the results to make a fancy kind of magical wood. Among other ingredients..."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "botania:lens",
+              "Count:3": 1,
+              "tag:10": {},
+              "Damage:2": 9,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "botania:lens",
+              "Count:3": 1,
+              "tag:10": {},
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "383:10": {
+      "questID:3": 383,
+      "preRequisites:11": [],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "HIDDEN",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "tconstruct:edible",
+            "Count:3": 1,
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Consolation Cube",
+          "desc:8": "Never trust the ocean."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "advancement_id:8": "betteranimalsplus:jellyfish_sting",
+          "index:3": 0,
+          "taskID:8": "bq_standard:advancement"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "chisel:valentines",
+              "Count:3": 1,
+              "Damage:2": 9,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "384:10": {
       "questID:3": 384,
       "preRequisites:11": [],
       "properties:10": {
@@ -25724,7 +26230,169 @@
       },
       "rewards:9": {}
     },
-    "380:10": {
+    "385:10": {
+      "questID:3": 385,
+      "preRequisites:11": [
+        183
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mekanism:jetpack",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Rockets!",
+          "desc:8": "Well here we are in the future and at least there are jetpacks. The jetpack is hydrogen fueled, toss it in a hydrogen tank or an electrolyzer to fill it up. You can make an armored variant of the jetpack as well."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mekanism:jetpack",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:figjellysandwichitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "386:10": {
+      "questID:3": 386,
+      "preRequisites:11": [
+        117
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "vehicle:wheel",
+            "Count:3": 1,
+            "Damage:2": 3,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Riding through the dust",
+          "desc:8": "Make a dirt bike! It is one of the easier vehicles to make and does not require plastics to make panels."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "vehicle:vehicle_crate",
+              "Count:3": 1,
+              "tag:10": {
+                "BlockEntityTag:10": {
+                  "engineTier:3": 0,
+                  "wheelType:3": 0,
+                  "vehicle:8": "vehicle:dirt_bike"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "vehicle:wheel",
+              "Count:3": 1,
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "vehicle:wheel",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "387:10": {
       "questID:3": 387,
       "preRequisites:11": [
         151
@@ -25766,7 +26434,7 @@
       },
       "rewards:9": {}
     },
-    "381:10": {
+    "388:10": {
       "questID:3": 388,
       "preRequisites:11": [
         381
@@ -25808,7 +26476,7 @@
       },
       "rewards:9": {}
     },
-    "382:10": {
+    "389:10": {
       "questID:3": 389,
       "preRequisites:11": [
         355
@@ -25850,7 +26518,7 @@
       },
       "rewards:9": {}
     },
-    "383:10": {
+    "390:10": {
       "questID:3": 390,
       "preRequisites:11": [
         397
@@ -25892,7 +26560,7 @@
       },
       "rewards:9": {}
     },
-    "384:10": {
+    "391:10": {
       "questID:3": 391,
       "preRequisites:11": [
         171
@@ -25934,7 +26602,106 @@
       },
       "rewards:9": {}
     },
-    "385:10": {
+    "392:10": {
+      "questID:3": 392,
+      "preRequisites:11": [
+        236
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "Parent:10": {
+                "Size:3": 1,
+                "Items:9": {}
+              },
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "immersivepetroleum:speedboat",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Motrrrrrrrr boat",
+          "desc:8": "The motorboat is not only kinda fast but also upgradable! It runs on gasoline."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "Parent:10": {
+                  "Size:3": 1,
+                  "Items:9": {}
+                },
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersivepetroleum:speedboat",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersivepetroleum:upgrades",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersivepetroleum:upgrades",
+              "Count:3": 1,
+              "Damage:2": 3,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "immersivepetroleum:upgrades",
+              "Count:3": 1,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "393:10": {
       "questID:3": 393,
       "preRequisites:11": [
         400
@@ -25976,7 +26743,7 @@
       },
       "rewards:9": {}
     },
-    "386:10": {
+    "394:10": {
       "questID:3": 394,
       "preRequisites:11": [
         245
@@ -26018,7 +26785,7 @@
       },
       "rewards:9": {}
     },
-    "387:10": {
+    "395:10": {
       "questID:3": 395,
       "preRequisites:11": [
         287
@@ -26060,7 +26827,98 @@
       },
       "rewards:9": {}
     },
-    "388:10": {
+    "396:10": {
+      "questID:3": 396,
+      "preRequisites:11": [
+        123
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "solcarrot:food_book",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Varied Diets",
+          "desc:8": "The more different foods you eat, the higher your total number of hearts will go. Craft a food book to see what you haven\u0027t eaten yet and track your progress to a healthy varied diet."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "solcarrot:food_book",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:cucumbersoupitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:pizzasoupitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:splitpeasoupitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "397:10": {
       "questID:3": 397,
       "preRequisites:11": [],
       "properties:10": {
@@ -26100,7 +26958,80 @@
       },
       "rewards:9": {}
     },
-    "389:10": {
+    "398:10": {
+      "questID:3": 398,
+      "preRequisites:11": [
+        345
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "alchemistry:chemical_combiner",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Kombiner",
+          "desc:8": "The chemical combiner is the opposite of the dissolver. You can craft items with the base elements and compounds. The machine does consume RF power.\n\nAnd they say alchemy is dead."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "alchemistry:chemical_combiner",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "alchemistry:compound",
+              "Count:3": 16,
+              "Damage:2": 19,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "399:10": {
       "questID:3": 399,
       "preRequisites:11": [
         265
@@ -26142,7 +27073,7 @@
       },
       "rewards:9": {}
     },
-    "390:10": {
+    "400:10": {
       "questID:3": 400,
       "preRequisites:11": [
         343
@@ -26184,7 +27115,7 @@
       },
       "rewards:9": {}
     },
-    "391:10": {
+    "401:10": {
       "questID:3": 401,
       "preRequisites:11": [
         408
@@ -26226,7 +27157,80 @@
       },
       "rewards:9": {}
     },
-    "392:10": {
+    "402:10": {
+      "questID:3": 402,
+      "preRequisites:11": [
+        345
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "alchemistry:evaporator",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "It\u0027s like an Evaporation Pond",
+          "desc:8": "It\u0027s almost like an evaporation pond except people are unlikely to leave messes in it. Place liquids in the thing, wait, and collect the solids later. Works faster in dry biomes."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "alchemistry:evaporator",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:apricotjellysandwichitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "403:10": {
       "questID:3": 403,
       "preRequisites:11": [
         326
@@ -26272,7 +27276,7 @@
       },
       "rewards:9": {}
     },
-    "393:10": {
+    "404:10": {
       "questID:3": 404,
       "preRequisites:11": [
         287
@@ -26314,7 +27318,7 @@
       },
       "rewards:9": {}
     },
-    "394:10": {
+    "405:10": {
       "questID:3": 405,
       "preRequisites:11": [
         206
@@ -26356,7 +27360,80 @@
       },
       "rewards:9": {}
     },
-    "395:10": {
+    "406:10": {
+      "questID:3": 406,
+      "preRequisites:11": [
+        402
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "alchemistry:electrolyzer",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Electrolyze and Back",
+          "desc:8": "The elecotrlyzer will use RF energy to convert liquids into base elements. You should be able to pipe the liquids out."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "alchemistry:electrolyzer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:kiwijellysandwichitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "407:10": {
       "questID:3": 407,
       "preRequisites:11": [
         262
@@ -26398,7 +27475,7 @@
       },
       "rewards:9": {}
     },
-    "396:10": {
+    "408:10": {
       "questID:3": 408,
       "preRequisites:11": [],
       "properties:10": {
@@ -26438,7 +27515,7 @@
       },
       "rewards:9": {}
     },
-    "397:10": {
+    "409:10": {
       "questID:3": 409,
       "preRequisites:11": [
         151
@@ -26480,7 +27557,7 @@
       },
       "rewards:9": {}
     },
-    "398:10": {
+    "410:10": {
       "questID:3": 410,
       "preRequisites:11": [],
       "properties:10": {
@@ -26520,7 +27597,7 @@
       },
       "rewards:9": {}
     },
-    "399:10": {
+    "411:10": {
       "questID:3": 411,
       "preRequisites:11": [
         326
@@ -26566,7 +27643,7 @@
       },
       "rewards:9": {}
     },
-    "400:10": {
+    "412:10": {
       "questID:3": 412,
       "preRequisites:11": [],
       "properties:10": {
@@ -26606,7 +27683,80 @@
       },
       "rewards:9": {}
     },
-    "401:10": {
+    "413:10": {
+      "questID:3": 413,
+      "preRequisites:11": [
+        313
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mekanism:freerunners",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "For the Run of It",
+          "desc:8": "The free runners, when charged up, will allow you to run up 1-block heights and not take damage when you fall.\n\nJust remember to keep them charged.\n\nThe cloud? Don\u0027t worry about it, just give it a name and it will love you unconditionally."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mekanism:freerunners",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "actuallyadditions:block_smiley_cloud",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "414:10": {
       "questID:3": 414,
       "preRequisites:11": [
         163
@@ -26648,7 +27798,7 @@
       },
       "rewards:9": {}
     },
-    "402:10": {
+    "415:10": {
       "questID:3": 415,
       "preRequisites:11": [
         192
@@ -26690,7 +27840,80 @@
       },
       "rewards:9": {}
     },
-    "403:10": {
+    "416:10": {
+      "questID:3": 416,
+      "preRequisites:11": [
+        34
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "quark:rope",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Drop the Rope",
+          "desc:8": "The rope coil is similar to the rescue ladder except it goes out piece by piece and it\u0027s climbed in a slightly different way - you are going to need a bit more agility. The benefit is that you can control how far it goes down, and (by right clicking with an empty hand) pull back in all the rope except the top piece. It can also anchor just to a ceiling - doesn\u0027t need an initial wall."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "quark:rope",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "quark:rope",
+              "Count:3": 4,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "417:10": {
       "questID:3": 417,
       "preRequisites:11": [
         336
@@ -26732,7 +27955,80 @@
       },
       "rewards:9": {}
     },
-    "404:10": {
+    "418:10": {
+      "questID:3": 418,
+      "preRequisites:11": [
+        345
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "alchemistry:atomizer",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Atomicize it",
+          "desc:8": "Liquids piped into the atomizer will be converted to the appropriate compound or base element. This will take RF power. Conversely, the liquifier will take base elements or compounds and convert them to liquids when feasible."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "alchemistry:atomizer",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "alchemistry:liquifier",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
+    },
+    "419:10": {
       "questID:3": 419,
       "preRequisites:11": [
         420
@@ -26774,7 +28070,7 @@
       },
       "rewards:9": {}
     },
-    "405:10": {
+    "420:10": {
       "questID:3": 420,
       "preRequisites:11": [
         163
@@ -26816,7 +28112,81 @@
       },
       "rewards:9": {}
     },
-    "406:10": {
+    "421:10": {
+      "questID:3": 421,
+      "preRequisites:11": [
+        108,
+        307
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "UNLOCKED",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mysticalagriculture:manasteel_essence",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Mana for Days",
+          "desc:8": "Once it\u0027s feasible, may as well save all that mana for fireworks and light shows.\n\nWith manasteel essence you can craft a variety of mana derived items."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:manasteel_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:manasteel_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "422:10": {
       "questID:3": 422,
       "preRequisites:11": [
         287
@@ -26858,7 +28228,80 @@
       },
       "rewards:9": {}
     },
-    "407:10": {
+    "423:10": {
+      "questID:3": 423,
+      "preRequisites:11": [
+        421
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "botania:alchemycatalyst",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Alchemy but for Real",
+          "desc:8": "If you place a mana pool on top of an alchemy catalyst, you can transmogrify different items using magic.\n\nRedstone to Glowstone, fish to different fish, that kind of thing.\n\nEnjoy."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "botania:alchemycatalyst",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "harvestcraft:leafychickensandwichitem",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "424:10": {
       "questID:3": 424,
       "preRequisites:11": [],
       "properties:10": {
@@ -26898,7 +28341,151 @@
       },
       "rewards:9": {}
     },
-    "408:10": {
+    "425:10": {
+      "questID:3": 425,
+      "preRequisites:11": [
+        423
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "botania:conjurationcatalyst",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Double or Nothing",
+          "desc:8": "With the conjuration catalyst you can straight up double valuable items.\n\nYou don\u0027t get a reward for making this.\n\nThe doubling is the reward."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "advancement_id:8": "botania:main/elf_portal_open",
+          "index:3": 0,
+          "taskID:8": "bq_standard:advancement"
+        },
+        "1:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "botania:conjurationcatalyst",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "426:10": {
+      "questID:3": 426,
+      "preRequisites:11": [
+        299
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "botania:manaresource",
+            "Count:3": 1,
+            "Damage:2": 22,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Weave it",
+          "desc:8": "Manaweave is used to make a variety of clothing. Some of it lets you conserve mana, some of it makes you invisible, and some of it lets you consume the life force of enemies when you slaughter them."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "botania:manaresource",
+              "Count:3": 8,
+              "Damage:2": 22,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:choice",
+          "index:3": 0,
+          "choices:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "botania:manaweavehelm",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "botania:manaweaveboots",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "427:10": {
       "questID:3": 427,
       "preRequisites:11": [
         509
@@ -26940,7 +28527,7 @@
       },
       "rewards:9": {}
     },
-    "409:10": {
+    "428:10": {
       "questID:3": 428,
       "preRequisites:11": [
         656
@@ -26982,7 +28569,7 @@
       },
       "rewards:9": {}
     },
-    "410:10": {
+    "429:10": {
       "questID:3": 429,
       "preRequisites:11": [],
       "properties:10": {
@@ -27022,7 +28609,80 @@
       },
       "rewards:9": {}
     },
-    "411:10": {
+    "430:10": {
+      "questID:3": 430,
+      "preRequisites:11": [
+        131
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "mysticalagriculture:crafting",
+            "Count:3": 1,
+            "Damage:2": 38,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Soulful",
+          "desc:8": "Soulsand is used to create a variety of semi-creepy items. You will use it to, among other things, create soulium ingots which are an ingredient in some magical items."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:soul_sand",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "mysticalagriculture:crafting",
+              "Count:3": 4,
+              "Damage:2": 28,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "431:10": {
       "questID:3": 431,
       "preRequisites:11": [
         626
@@ -27064,7 +28724,7 @@
       },
       "rewards:9": {}
     },
-    "412:10": {
+    "432:10": {
       "questID:3": 432,
       "preRequisites:11": [
         668
@@ -27106,7 +28766,7 @@
       },
       "rewards:9": {}
     },
-    "413:10": {
+    "433:10": {
       "questID:3": 433,
       "preRequisites:11": [
         660
@@ -27148,7 +28808,98 @@
       },
       "rewards:9": {}
     },
-    "414:10": {
+    "434:10": {
+      "questID:3": 434,
+      "preRequisites:11": [
+        4
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "minecraft:potion",
+            "Count:3": 1,
+            "tag:10": {
+              "Potion:8": "minecraft:luck"
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Get Lucky",
+          "desc:8": "The potion of luck will increase the chances of sweet loot when going through dungeons.\n\nBrew up three mudane potions, then brew up the potion of luck.\n\nThis is the basic form for potions. A base potion, then the actual potion. Sometimes there are more levels of potions."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:potion",
+              "Count:3": 3,
+              "tag:10": {
+                "Potion:8": "minecraft:mundane"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "minecraft:potion",
+              "Count:3": 1,
+              "tag:10": {
+                "Potion:8": "cyclicmagic:luck"
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "plants2:cosmetic_3",
+              "Count:3": 4,
+              "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "435:10": {
       "questID:3": 435,
       "preRequisites:11": [
         495
@@ -27190,7 +28941,7 @@
       },
       "rewards:9": {}
     },
-    "415:10": {
+    "436:10": {
       "questID:3": 436,
       "preRequisites:11": [
         605
@@ -27232,7 +28983,7 @@
       },
       "rewards:9": {}
     },
-    "416:10": {
+    "437:10": {
       "questID:3": 437,
       "preRequisites:11": [
         578
@@ -27274,7 +29025,64 @@
       },
       "rewards:9": {}
     },
-    "417:10": {
+    "438:10": {
+      "questID:3": 438,
+      "preRequisites:11": [
+        39
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "actuallyadditions:block_firework_box",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Firework Show",
+          "desc:8": "The firewor launcher is cool, it just launches fireworks. You gotta feed it power though. It can be set on a timer with redstone.\n\nGreat complement to a big finale."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "actuallyadditions:block_firework_box",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {}
+    },
+    "439:10": {
       "questID:3": 439,
       "preRequisites:11": [
         462
@@ -27316,7 +29124,7 @@
       },
       "rewards:9": {}
     },
-    "418:10": {
+    "440:10": {
       "questID:3": 440,
       "preRequisites:11": [],
       "properties:10": {
@@ -27356,7 +29164,7 @@
       },
       "rewards:9": {}
     },
-    "419:10": {
+    "441:10": {
       "questID:3": 441,
       "preRequisites:11": [
         702
@@ -27436,7 +29244,7 @@
       },
       "rewards:9": {}
     },
-    "420:10": {
+    "442:10": {
       "questID:3": 442,
       "preRequisites:11": [
         503
@@ -27478,7 +29286,7 @@
       },
       "rewards:9": {}
     },
-    "421:10": {
+    "443:10": {
       "questID:3": 443,
       "preRequisites:11": [],
       "properties:10": {
@@ -27518,7 +29326,7 @@
       },
       "rewards:9": {}
     },
-    "422:10": {
+    "444:10": {
       "questID:3": 444,
       "preRequisites:11": [],
       "properties:10": {
@@ -27558,7 +29366,7 @@
       },
       "rewards:9": {}
     },
-    "423:10": {
+    "445:10": {
       "questID:3": 445,
       "preRequisites:11": [
         578
@@ -27600,7 +29408,150 @@
       },
       "rewards:9": {}
     },
-    "424:10": {
+    "446:10": {
+      "questID:3": 446,
+      "preRequisites:11": [
+        39,
+        307
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "botania:lens",
+            "Count:3": 1,
+            "tag:10": {},
+            "Damage:2": 21,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Flaring",
+          "desc:8": "By placing a colored flare lens on a (pulsed) mana spreader you can get some neat lighting effects and the cost of a small amount of mana.\n\nFor the right party, it\u0027s worth it."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "botania:lens",
+              "Count:3": 1,
+              "tag:10": {},
+              "Damage:2": 21,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "bountifulbaubles:trinketmagiclenses",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "447:10": {
+      "questID:3": 447,
+      "preRequisites:11": [
+        438,
+        307
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "ForgeCaps:10": {
+              "customnpcs:itemscripteddata:10": {}
+            },
+            "id:8": "botania:lens",
+            "Count:3": 1,
+            "tag:10": {},
+            "Damage:2": 20,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Magiworks",
+          "desc:8": "The celebratory lens will cause the mana pulse to turn into a firework when it hits a solid surface. All kinds of fun ways to throw a big show."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "allowSmelt:1": 1,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "allowCraft:1": 1,
+          "allowAnvil:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "botania:lens",
+              "Count:3": 1,
+              "tag:10": {},
+              "Damage:2": 20,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:crafting"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "amount:3": 1,
+          "rewardID:8": "bq_standard:xp",
+          "isLevels:1": 1,
+          "index:3": 0
+        }
+      }
+    },
+    "448:10": {
       "questID:3": 448,
       "preRequisites:11": [
         621
@@ -27642,7 +29593,7 @@
       },
       "rewards:9": {}
     },
-    "425:10": {
+    "449:10": {
       "questID:3": 449,
       "preRequisites:11": [
         655
@@ -27684,7 +29635,7 @@
       },
       "rewards:9": {}
     },
-    "426:10": {
+    "450:10": {
       "questID:3": 450,
       "preRequisites:11": [],
       "properties:10": {
@@ -27724,7 +29675,7 @@
       },
       "rewards:9": {}
     },
-    "427:10": {
+    "451:10": {
       "questID:3": 452,
       "preRequisites:11": [
         605
@@ -27766,7 +29717,7 @@
       },
       "rewards:9": {}
     },
-    "428:10": {
+    "452:10": {
       "questID:3": 454,
       "preRequisites:11": [
         691
@@ -27808,7 +29759,7 @@
       },
       "rewards:9": {}
     },
-    "429:10": {
+    "453:10": {
       "questID:3": 456,
       "preRequisites:11": [
         652
@@ -27850,7 +29801,7 @@
       },
       "rewards:9": {}
     },
-    "430:10": {
+    "454:10": {
       "questID:3": 457,
       "preRequisites:11": [
         562
@@ -27892,7 +29843,7 @@
       },
       "rewards:9": {}
     },
-    "431:10": {
+    "455:10": {
       "questID:3": 458,
       "preRequisites:11": [
         646
@@ -27934,7 +29885,7 @@
       },
       "rewards:9": {}
     },
-    "432:10": {
+    "456:10": {
       "questID:3": 460,
       "preRequisites:11": [],
       "properties:10": {
@@ -27974,7 +29925,7 @@
       },
       "rewards:9": {}
     },
-    "433:10": {
+    "457:10": {
       "questID:3": 461,
       "preRequisites:11": [],
       "properties:10": {
@@ -28014,7 +29965,7 @@
       },
       "rewards:9": {}
     },
-    "434:10": {
+    "458:10": {
       "questID:3": 462,
       "preRequisites:11": [],
       "properties:10": {
@@ -28054,7 +30005,7 @@
       },
       "rewards:9": {}
     },
-    "435:10": {
+    "459:10": {
       "questID:3": 463,
       "preRequisites:11": [
         462
@@ -28096,7 +30047,7 @@
       },
       "rewards:9": {}
     },
-    "436:10": {
+    "460:10": {
       "questID:3": 464,
       "preRequisites:11": [],
       "properties:10": {
@@ -28136,7 +30087,7 @@
       },
       "rewards:9": {}
     },
-    "437:10": {
+    "461:10": {
       "questID:3": 465,
       "preRequisites:11": [
         708
@@ -28178,7 +30129,7 @@
       },
       "rewards:9": {}
     },
-    "438:10": {
+    "462:10": {
       "questID:3": 466,
       "preRequisites:11": [
         530
@@ -28220,7 +30171,7 @@
       },
       "rewards:9": {}
     },
-    "439:10": {
+    "463:10": {
       "questID:3": 468,
       "preRequisites:11": [],
       "properties:10": {
@@ -28260,7 +30211,7 @@
       },
       "rewards:9": {}
     },
-    "440:10": {
+    "464:10": {
       "questID:3": 469,
       "preRequisites:11": [
         578
@@ -28302,7 +30253,7 @@
       },
       "rewards:9": {}
     },
-    "441:10": {
+    "465:10": {
       "questID:3": 470,
       "preRequisites:11": [
         610
@@ -28344,7 +30295,7 @@
       },
       "rewards:9": {}
     },
-    "442:10": {
+    "466:10": {
       "questID:3": 472,
       "preRequisites:11": [],
       "properties:10": {
@@ -28384,7 +30335,7 @@
       },
       "rewards:9": {}
     },
-    "443:10": {
+    "467:10": {
       "questID:3": 473,
       "preRequisites:11": [
         478
@@ -28426,7 +30377,7 @@
       },
       "rewards:9": {}
     },
-    "444:10": {
+    "468:10": {
       "questID:3": 476,
       "preRequisites:11": [
         483
@@ -28468,7 +30419,7 @@
       },
       "rewards:9": {}
     },
-    "445:10": {
+    "469:10": {
       "questID:3": 477,
       "preRequisites:11": [
         656
@@ -28534,7 +30485,7 @@
       },
       "rewards:9": {}
     },
-    "446:10": {
+    "470:10": {
       "questID:3": 478,
       "preRequisites:11": [],
       "properties:10": {
@@ -28574,7 +30525,7 @@
       },
       "rewards:9": {}
     },
-    "447:10": {
+    "471:10": {
       "questID:3": 479,
       "preRequisites:11": [
         651
@@ -28616,7 +30567,7 @@
       },
       "rewards:9": {}
     },
-    "448:10": {
+    "472:10": {
       "questID:3": 482,
       "preRequisites:11": [],
       "properties:10": {
@@ -28656,7 +30607,7 @@
       },
       "rewards:9": {}
     },
-    "449:10": {
+    "473:10": {
       "questID:3": 483,
       "preRequisites:11": [
         504
@@ -28698,7 +30649,7 @@
       },
       "rewards:9": {}
     },
-    "450:10": {
+    "474:10": {
       "questID:3": 484,
       "preRequisites:11": [
         536
@@ -28740,7 +30691,7 @@
       },
       "rewards:9": {}
     },
-    "451:10": {
+    "475:10": {
       "questID:3": 485,
       "preRequisites:11": [
         464
@@ -28782,7 +30733,7 @@
       },
       "rewards:9": {}
     },
-    "452:10": {
+    "476:10": {
       "questID:3": 486,
       "preRequisites:11": [
         470
@@ -28824,7 +30775,7 @@
       },
       "rewards:9": {}
     },
-    "453:10": {
+    "477:10": {
       "questID:3": 487,
       "preRequisites:11": [
         626
@@ -28866,7 +30817,7 @@
       },
       "rewards:9": {}
     },
-    "454:10": {
+    "478:10": {
       "questID:3": 488,
       "preRequisites:11": [],
       "properties:10": {
@@ -28906,7 +30857,7 @@
       },
       "rewards:9": {}
     },
-    "455:10": {
+    "479:10": {
       "questID:3": 491,
       "preRequisites:11": [],
       "properties:10": {
@@ -28946,7 +30897,7 @@
       },
       "rewards:9": {}
     },
-    "456:10": {
+    "480:10": {
       "questID:3": 493,
       "preRequisites:11": [
         578
@@ -28988,7 +30939,7 @@
       },
       "rewards:9": {}
     },
-    "457:10": {
+    "481:10": {
       "questID:3": 494,
       "preRequisites:11": [
         456
@@ -29030,7 +30981,7 @@
       },
       "rewards:9": {}
     },
-    "458:10": {
+    "482:10": {
       "questID:3": 495,
       "preRequisites:11": [],
       "properties:10": {
@@ -29070,7 +31021,7 @@
       },
       "rewards:9": {}
     },
-    "459:10": {
+    "483:10": {
       "questID:3": 497,
       "preRequisites:11": [
         618
@@ -29112,7 +31063,7 @@
       },
       "rewards:9": {}
     },
-    "460:10": {
+    "484:10": {
       "questID:3": 498,
       "preRequisites:11": [],
       "properties:10": {
@@ -29152,7 +31103,7 @@
       },
       "rewards:9": {}
     },
-    "461:10": {
+    "485:10": {
       "questID:3": 499,
       "preRequisites:11": [],
       "properties:10": {
@@ -29192,7 +31143,7 @@
       },
       "rewards:9": {}
     },
-    "462:10": {
+    "486:10": {
       "questID:3": 500,
       "preRequisites:11": [],
       "properties:10": {
@@ -29232,7 +31183,7 @@
       },
       "rewards:9": {}
     },
-    "463:10": {
+    "487:10": {
       "questID:3": 501,
       "preRequisites:11": [],
       "properties:10": {
@@ -29272,7 +31223,7 @@
       },
       "rewards:9": {}
     },
-    "464:10": {
+    "488:10": {
       "questID:3": 502,
       "preRequisites:11": [
         454
@@ -29314,7 +31265,7 @@
       },
       "rewards:9": {}
     },
-    "465:10": {
+    "489:10": {
       "questID:3": 503,
       "preRequisites:11": [
         679
@@ -29356,7 +31307,7 @@
       },
       "rewards:9": {}
     },
-    "466:10": {
+    "490:10": {
       "questID:3": 504,
       "preRequisites:11": [],
       "properties:10": {
@@ -29396,7 +31347,7 @@
       },
       "rewards:9": {}
     },
-    "467:10": {
+    "491:10": {
       "questID:3": 506,
       "preRequisites:11": [
         500
@@ -29438,7 +31389,7 @@
       },
       "rewards:9": {}
     },
-    "468:10": {
+    "492:10": {
       "questID:3": 507,
       "preRequisites:11": [
         494
@@ -29480,7 +31431,7 @@
       },
       "rewards:9": {}
     },
-    "469:10": {
+    "493:10": {
       "questID:3": 508,
       "preRequisites:11": [
         692
@@ -29522,7 +31473,7 @@
       },
       "rewards:9": {}
     },
-    "470:10": {
+    "494:10": {
       "questID:3": 509,
       "preRequisites:11": [],
       "properties:10": {
@@ -29562,7 +31513,7 @@
       },
       "rewards:9": {}
     },
-    "471:10": {
+    "495:10": {
       "questID:3": 511,
       "preRequisites:11": [
         576
@@ -29604,7 +31555,7 @@
       },
       "rewards:9": {}
     },
-    "472:10": {
+    "496:10": {
       "questID:3": 514,
       "preRequisites:11": [
         646
@@ -29646,7 +31597,7 @@
       },
       "rewards:9": {}
     },
-    "473:10": {
+    "497:10": {
       "questID:3": 516,
       "preRequisites:11": [
         583
@@ -29688,7 +31639,7 @@
       },
       "rewards:9": {}
     },
-    "474:10": {
+    "498:10": {
       "questID:3": 518,
       "preRequisites:11": [
         462
@@ -29730,7 +31681,7 @@
       },
       "rewards:9": {}
     },
-    "475:10": {
+    "499:10": {
       "questID:3": 519,
       "preRequisites:11": [
         465
@@ -29772,7 +31723,7 @@
       },
       "rewards:9": {}
     },
-    "476:10": {
+    "500:10": {
       "questID:3": 520,
       "preRequisites:11": [
         494
@@ -29814,7 +31765,7 @@
       },
       "rewards:9": {}
     },
-    "477:10": {
+    "501:10": {
       "questID:3": 521,
       "preRequisites:11": [
         494
@@ -29856,7 +31807,7 @@
       },
       "rewards:9": {}
     },
-    "478:10": {
+    "502:10": {
       "questID:3": 522,
       "preRequisites:11": [],
       "properties:10": {
@@ -29896,7 +31847,7 @@
       },
       "rewards:9": {}
     },
-    "479:10": {
+    "503:10": {
       "questID:3": 523,
       "preRequisites:11": [
         502
@@ -29938,7 +31889,7 @@
       },
       "rewards:9": {}
     },
-    "480:10": {
+    "504:10": {
       "questID:3": 525,
       "preRequisites:11": [
         548
@@ -29980,7 +31931,7 @@
       },
       "rewards:9": {}
     },
-    "481:10": {
+    "505:10": {
       "questID:3": 528,
       "preRequisites:11": [
         708
@@ -30022,7 +31973,7 @@
       },
       "rewards:9": {}
     },
-    "482:10": {
+    "506:10": {
       "questID:3": 529,
       "preRequisites:11": [
         578
@@ -30064,7 +32015,7 @@
       },
       "rewards:9": {}
     },
-    "483:10": {
+    "507:10": {
       "questID:3": 530,
       "preRequisites:11": [
         610
@@ -30106,7 +32057,7 @@
       },
       "rewards:9": {}
     },
-    "484:10": {
+    "508:10": {
       "questID:3": 531,
       "preRequisites:11": [],
       "properties:10": {
@@ -30146,7 +32097,7 @@
       },
       "rewards:9": {}
     },
-    "485:10": {
+    "509:10": {
       "questID:3": 532,
       "preRequisites:11": [],
       "properties:10": {
@@ -30186,7 +32137,7 @@
       },
       "rewards:9": {}
     },
-    "486:10": {
+    "510:10": {
       "questID:3": 533,
       "preRequisites:11": [
         536
@@ -30228,7 +32179,7 @@
       },
       "rewards:9": {}
     },
-    "487:10": {
+    "511:10": {
       "questID:3": 534,
       "preRequisites:11": [],
       "properties:10": {
@@ -30268,7 +32219,7 @@
       },
       "rewards:9": {}
     },
-    "488:10": {
+    "512:10": {
       "questID:3": 536,
       "preRequisites:11": [
         478
@@ -30310,7 +32261,7 @@
       },
       "rewards:9": {}
     },
-    "489:10": {
+    "513:10": {
       "questID:3": 537,
       "preRequisites:11": [
         462
@@ -30357,7 +32308,7 @@
       },
       "rewards:9": {}
     },
-    "490:10": {
+    "514:10": {
       "questID:3": 538,
       "preRequisites:11": [],
       "properties:10": {
@@ -30397,7 +32348,7 @@
       },
       "rewards:9": {}
     },
-    "491:10": {
+    "515:10": {
       "questID:3": 539,
       "preRequisites:11": [
         494
@@ -30439,7 +32390,7 @@
       },
       "rewards:9": {}
     },
-    "492:10": {
+    "516:10": {
       "questID:3": 540,
       "preRequisites:11": [
         473
@@ -30481,7 +32432,7 @@
       },
       "rewards:9": {}
     },
-    "493:10": {
+    "517:10": {
       "questID:3": 542,
       "preRequisites:11": [
         672
@@ -30523,7 +32474,7 @@
       },
       "rewards:9": {}
     },
-    "494:10": {
+    "518:10": {
       "questID:3": 543,
       "preRequisites:11": [
         672
@@ -30565,7 +32516,7 @@
       },
       "rewards:9": {}
     },
-    "495:10": {
+    "519:10": {
       "questID:3": 545,
       "preRequisites:11": [
         646
@@ -30607,7 +32558,7 @@
       },
       "rewards:9": {}
     },
-    "496:10": {
+    "520:10": {
       "questID:3": 547,
       "preRequisites:11": [
         442
@@ -30649,7 +32600,7 @@
       },
       "rewards:9": {}
     },
-    "497:10": {
+    "521:10": {
       "questID:3": 548,
       "preRequisites:11": [],
       "properties:10": {
@@ -30689,7 +32640,7 @@
       },
       "rewards:9": {}
     },
-    "498:10": {
+    "522:10": {
       "questID:3": 549,
       "preRequisites:11": [
         483
@@ -30731,7 +32682,7 @@
       },
       "rewards:9": {}
     },
-    "499:10": {
+    "523:10": {
       "questID:3": 550,
       "preRequisites:11": [
         672
@@ -30773,7 +32724,7 @@
       },
       "rewards:9": {}
     },
-    "500:10": {
+    "524:10": {
       "questID:3": 553,
       "preRequisites:11": [
         703
@@ -30815,7 +32766,7 @@
       },
       "rewards:9": {}
     },
-    "501:10": {
+    "525:10": {
       "questID:3": 554,
       "preRequisites:11": [],
       "properties:10": {
@@ -30855,7 +32806,7 @@
       },
       "rewards:9": {}
     },
-    "502:10": {
+    "526:10": {
       "questID:3": 556,
       "preRequisites:11": [
         672
@@ -30897,7 +32848,7 @@
       },
       "rewards:9": {}
     },
-    "503:10": {
+    "527:10": {
       "questID:3": 560,
       "preRequisites:11": [
         685
@@ -30939,7 +32890,7 @@
       },
       "rewards:9": {}
     },
-    "504:10": {
+    "528:10": {
       "questID:3": 561,
       "preRequisites:11": [
         553
@@ -30981,7 +32932,7 @@
       },
       "rewards:9": {}
     },
-    "505:10": {
+    "529:10": {
       "questID:3": 562,
       "preRequisites:11": [],
       "properties:10": {
@@ -31021,7 +32972,7 @@
       },
       "rewards:9": {}
     },
-    "506:10": {
+    "530:10": {
       "questID:3": 564,
       "preRequisites:11": [],
       "properties:10": {
@@ -31061,7 +33012,7 @@
       },
       "rewards:9": {}
     },
-    "507:10": {
+    "531:10": {
       "questID:3": 565,
       "preRequisites:11": [
         435
@@ -31103,7 +33054,7 @@
       },
       "rewards:9": {}
     },
-    "508:10": {
+    "532:10": {
       "questID:3": 566,
       "preRequisites:11": [],
       "properties:10": {
@@ -31143,7 +33094,7 @@
       },
       "rewards:9": {}
     },
-    "509:10": {
+    "533:10": {
       "questID:3": 568,
       "preRequisites:11": [
         478
@@ -31185,7 +33136,7 @@
       },
       "rewards:9": {}
     },
-    "510:10": {
+    "534:10": {
       "questID:3": 569,
       "preRequisites:11": [
         538
@@ -31227,7 +33178,7 @@
       },
       "rewards:9": {}
     },
-    "511:10": {
+    "535:10": {
       "questID:3": 570,
       "preRequisites:11": [],
       "properties:10": {
@@ -31267,7 +33218,7 @@
       },
       "rewards:9": {}
     },
-    "512:10": {
+    "536:10": {
       "questID:3": 571,
       "preRequisites:11": [
         660
@@ -31309,7 +33260,7 @@
       },
       "rewards:9": {}
     },
-    "513:10": {
+    "537:10": {
       "questID:3": 572,
       "preRequisites:11": [
         646
@@ -31351,7 +33302,7 @@
       },
       "rewards:9": {}
     },
-    "514:10": {
+    "538:10": {
       "questID:3": 573,
       "preRequisites:11": [
         511
@@ -31393,7 +33344,7 @@
       },
       "rewards:9": {}
     },
-    "515:10": {
+    "539:10": {
       "questID:3": 574,
       "preRequisites:11": [],
       "properties:10": {
@@ -31433,7 +33384,7 @@
       },
       "rewards:9": {}
     },
-    "516:10": {
+    "540:10": {
       "questID:3": 575,
       "preRequisites:11": [
         578
@@ -31475,7 +33426,7 @@
       },
       "rewards:9": {}
     },
-    "517:10": {
+    "541:10": {
       "questID:3": 576,
       "preRequisites:11": [],
       "properties:10": {
@@ -31515,7 +33466,7 @@
       },
       "rewards:9": {}
     },
-    "518:10": {
+    "542:10": {
       "questID:3": 577,
       "preRequisites:11": [
         442
@@ -31557,7 +33508,7 @@
       },
       "rewards:9": {}
     },
-    "519:10": {
+    "543:10": {
       "questID:3": 578,
       "preRequisites:11": [
         456
@@ -31599,7 +33550,7 @@
       },
       "rewards:9": {}
     },
-    "520:10": {
+    "544:10": {
       "questID:3": 579,
       "preRequisites:11": [
         462
@@ -31641,7 +33592,7 @@
       },
       "rewards:9": {}
     },
-    "521:10": {
+    "545:10": {
       "questID:3": 581,
       "preRequisites:11": [
         494
@@ -31683,7 +33634,7 @@
       },
       "rewards:9": {}
     },
-    "522:10": {
+    "546:10": {
       "questID:3": 583,
       "preRequisites:11": [
         688
@@ -31725,7 +33676,7 @@
       },
       "rewards:9": {}
     },
-    "523:10": {
+    "547:10": {
       "questID:3": 585,
       "preRequisites:11": [
         491
@@ -31767,7 +33718,7 @@
       },
       "rewards:9": {}
     },
-    "524:10": {
+    "548:10": {
       "questID:3": 586,
       "preRequisites:11": [
         564
@@ -31809,7 +33760,7 @@
       },
       "rewards:9": {}
     },
-    "525:10": {
+    "549:10": {
       "questID:3": 587,
       "preRequisites:11": [
         578
@@ -31851,7 +33802,7 @@
       },
       "rewards:9": {}
     },
-    "526:10": {
+    "550:10": {
       "questID:3": 588,
       "preRequisites:11": [],
       "properties:10": {
@@ -31894,7 +33845,7 @@
       },
       "rewards:9": {}
     },
-    "527:10": {
+    "551:10": {
       "questID:3": 593,
       "preRequisites:11": [],
       "properties:10": {
@@ -31934,7 +33885,7 @@
       },
       "rewards:9": {}
     },
-    "528:10": {
+    "552:10": {
       "questID:3": 594,
       "preRequisites:11": [],
       "properties:10": {
@@ -31974,7 +33925,7 @@
       },
       "rewards:9": {}
     },
-    "529:10": {
+    "553:10": {
       "questID:3": 595,
       "preRequisites:11": [],
       "properties:10": {
@@ -32014,7 +33965,7 @@
       },
       "rewards:9": {}
     },
-    "530:10": {
+    "554:10": {
       "questID:3": 596,
       "preRequisites:11": [
         634
@@ -32056,7 +34007,7 @@
       },
       "rewards:9": {}
     },
-    "531:10": {
+    "555:10": {
       "questID:3": 597,
       "preRequisites:11": [],
       "properties:10": {
@@ -32096,7 +34047,7 @@
       },
       "rewards:9": {}
     },
-    "532:10": {
+    "556:10": {
       "questID:3": 600,
       "preRequisites:11": [],
       "properties:10": {
@@ -32136,7 +34087,7 @@
       },
       "rewards:9": {}
     },
-    "533:10": {
+    "557:10": {
       "questID:3": 601,
       "preRequisites:11": [],
       "properties:10": {
@@ -32176,7 +34127,7 @@
       },
       "rewards:9": {}
     },
-    "534:10": {
+    "558:10": {
       "questID:3": 602,
       "preRequisites:11": [
         454
@@ -32218,7 +34169,7 @@
       },
       "rewards:9": {}
     },
-    "535:10": {
+    "559:10": {
       "questID:3": 603,
       "preRequisites:11": [
         532
@@ -32260,7 +34211,7 @@
       },
       "rewards:9": {}
     },
-    "536:10": {
+    "560:10": {
       "questID:3": 605,
       "preRequisites:11": [],
       "properties:10": {
@@ -32300,7 +34251,7 @@
       },
       "rewards:9": {}
     },
-    "537:10": {
+    "561:10": {
       "questID:3": 607,
       "preRequisites:11": [
         442
@@ -32342,7 +34293,7 @@
       },
       "rewards:9": {}
     },
-    "538:10": {
+    "562:10": {
       "questID:3": 609,
       "preRequisites:11": [
         578
@@ -32384,7 +34335,7 @@
       },
       "rewards:9": {}
     },
-    "539:10": {
+    "563:10": {
       "questID:3": 610,
       "preRequisites:11": [
         554
@@ -32426,7 +34377,7 @@
       },
       "rewards:9": {}
     },
-    "540:10": {
+    "564:10": {
       "questID:3": 611,
       "preRequisites:11": [
         530
@@ -32468,7 +34419,7 @@
       },
       "rewards:9": {}
     },
-    "541:10": {
+    "565:10": {
       "questID:3": 612,
       "preRequisites:11": [
         442
@@ -32510,7 +34461,7 @@
       },
       "rewards:9": {}
     },
-    "542:10": {
+    "566:10": {
       "questID:3": 613,
       "preRequisites:11": [
         522
@@ -32552,7 +34503,7 @@
       },
       "rewards:9": {}
     },
-    "543:10": {
+    "567:10": {
       "questID:3": 614,
       "preRequisites:11": [
         646
@@ -32597,7 +34548,7 @@
       },
       "rewards:9": {}
     },
-    "544:10": {
+    "568:10": {
       "questID:3": 615,
       "preRequisites:11": [],
       "properties:10": {
@@ -32637,7 +34588,7 @@
       },
       "rewards:9": {}
     },
-    "545:10": {
+    "569:10": {
       "questID:3": 617,
       "preRequisites:11": [
         672
@@ -32679,7 +34630,7 @@
       },
       "rewards:9": {}
     },
-    "546:10": {
+    "570:10": {
       "questID:3": 618,
       "preRequisites:11": [
         659
@@ -32721,7 +34672,7 @@
       },
       "rewards:9": {}
     },
-    "547:10": {
+    "571:10": {
       "questID:3": 619,
       "preRequisites:11": [
         556
@@ -32763,7 +34714,7 @@
       },
       "rewards:9": {}
     },
-    "548:10": {
+    "572:10": {
       "questID:3": 620,
       "preRequisites:11": [],
       "properties:10": {
@@ -32803,7 +34754,7 @@
       },
       "rewards:9": {}
     },
-    "549:10": {
+    "573:10": {
       "questID:3": 621,
       "preRequisites:11": [
         478
@@ -32845,7 +34796,7 @@
       },
       "rewards:9": {}
     },
-    "550:10": {
+    "574:10": {
       "questID:3": 622,
       "preRequisites:11": [
         597
@@ -32887,7 +34838,7 @@
       },
       "rewards:9": {}
     },
-    "551:10": {
+    "575:10": {
       "questID:3": 623,
       "preRequisites:11": [],
       "properties:10": {
@@ -32927,7 +34878,7 @@
       },
       "rewards:9": {}
     },
-    "552:10": {
+    "576:10": {
       "questID:3": 624,
       "preRequisites:11": [
         617
@@ -32973,7 +34924,7 @@
       },
       "rewards:9": {}
     },
-    "553:10": {
+    "577:10": {
       "questID:3": 626,
       "preRequisites:11": [
         528
@@ -33015,7 +34966,7 @@
       },
       "rewards:9": {}
     },
-    "554:10": {
+    "578:10": {
       "questID:3": 627,
       "preRequisites:11": [
         601
@@ -33057,7 +35008,7 @@
       },
       "rewards:9": {}
     },
-    "555:10": {
+    "579:10": {
       "questID:3": 628,
       "preRequisites:11": [],
       "properties:10": {
@@ -33097,7 +35048,7 @@
       },
       "rewards:9": {}
     },
-    "556:10": {
+    "580:10": {
       "questID:3": 629,
       "preRequisites:11": [
         646
@@ -33139,7 +35090,7 @@
       },
       "rewards:9": {}
     },
-    "557:10": {
+    "581:10": {
       "questID:3": 630,
       "preRequisites:11": [
         578
@@ -33181,7 +35132,7 @@
       },
       "rewards:9": {}
     },
-    "558:10": {
+    "582:10": {
       "questID:3": 631,
       "preRequisites:11": [],
       "properties:10": {
@@ -33221,7 +35172,7 @@
       },
       "rewards:9": {}
     },
-    "559:10": {
+    "583:10": {
       "questID:3": 633,
       "preRequisites:11": [
         556
@@ -33263,7 +35214,7 @@
       },
       "rewards:9": {}
     },
-    "560:10": {
+    "584:10": {
       "questID:3": 634,
       "preRequisites:11": [],
       "properties:10": {
@@ -33303,7 +35254,7 @@
       },
       "rewards:9": {}
     },
-    "561:10": {
+    "585:10": {
       "questID:3": 635,
       "preRequisites:11": [],
       "properties:10": {
@@ -33343,7 +35294,7 @@
       },
       "rewards:9": {}
     },
-    "562:10": {
+    "586:10": {
       "questID:3": 637,
       "preRequisites:11": [],
       "properties:10": {
@@ -33383,7 +35334,7 @@
       },
       "rewards:9": {}
     },
-    "563:10": {
+    "587:10": {
       "questID:3": 638,
       "preRequisites:11": [
         578
@@ -33425,7 +35376,7 @@
       },
       "rewards:9": {}
     },
-    "564:10": {
+    "588:10": {
       "questID:3": 640,
       "preRequisites:11": [],
       "properties:10": {
@@ -33465,7 +35416,7 @@
       },
       "rewards:9": {}
     },
-    "565:10": {
+    "589:10": {
       "questID:3": 642,
       "preRequisites:11": [
         669
@@ -33507,7 +35458,7 @@
       },
       "rewards:9": {}
     },
-    "566:10": {
+    "590:10": {
       "questID:3": 644,
       "preRequisites:11": [
         522
@@ -33549,7 +35500,7 @@
       },
       "rewards:9": {}
     },
-    "567:10": {
+    "591:10": {
       "questID:3": 645,
       "preRequisites:11": [
         444
@@ -33591,7 +35542,7 @@
       },
       "rewards:9": {}
     },
-    "568:10": {
+    "592:10": {
       "questID:3": 646,
       "preRequisites:11": [],
       "properties:10": {
@@ -33631,7 +35582,7 @@
       },
       "rewards:9": {}
     },
-    "569:10": {
+    "593:10": {
       "questID:3": 647,
       "preRequisites:11": [
         618
@@ -33673,7 +35624,7 @@
       },
       "rewards:9": {}
     },
-    "570:10": {
+    "594:10": {
       "questID:3": 648,
       "preRequisites:11": [
         532
@@ -33715,7 +35666,7 @@
       },
       "rewards:9": {}
     },
-    "571:10": {
+    "595:10": {
       "questID:3": 649,
       "preRequisites:11": [
         669
@@ -33757,7 +35708,7 @@
       },
       "rewards:9": {}
     },
-    "572:10": {
+    "596:10": {
       "questID:3": 650,
       "preRequisites:11": [
         462
@@ -33799,7 +35750,7 @@
       },
       "rewards:9": {}
     },
-    "573:10": {
+    "597:10": {
       "questID:3": 651,
       "preRequisites:11": [
         553
@@ -33841,7 +35792,7 @@
       },
       "rewards:9": {}
     },
-    "574:10": {
+    "598:10": {
       "questID:3": 652,
       "preRequisites:11": [],
       "properties:10": {
@@ -33881,7 +35832,7 @@
       },
       "rewards:9": {}
     },
-    "575:10": {
+    "599:10": {
       "questID:3": 653,
       "preRequisites:11": [
         646
@@ -33923,7 +35874,7 @@
       },
       "rewards:9": {}
     },
-    "576:10": {
+    "600:10": {
       "questID:3": 654,
       "preRequisites:11": [
         553
@@ -33965,7 +35916,7 @@
       },
       "rewards:9": {}
     },
-    "577:10": {
+    "601:10": {
       "questID:3": 655,
       "preRequisites:11": [
         506
@@ -34007,7 +35958,7 @@
       },
       "rewards:9": {}
     },
-    "578:10": {
+    "602:10": {
       "questID:3": 656,
       "preRequisites:11": [
         617
@@ -34053,7 +36004,7 @@
       },
       "rewards:9": {}
     },
-    "579:10": {
+    "603:10": {
       "questID:3": 657,
       "preRequisites:11": [
         462
@@ -34095,7 +36046,7 @@
       },
       "rewards:9": {}
     },
-    "580:10": {
+    "604:10": {
       "questID:3": 659,
       "preRequisites:11": [],
       "properties:10": {
@@ -34135,7 +36086,7 @@
       },
       "rewards:9": {}
     },
-    "581:10": {
+    "605:10": {
       "questID:3": 660,
       "preRequisites:11": [
         664
@@ -34177,7 +36128,7 @@
       },
       "rewards:9": {}
     },
-    "582:10": {
+    "606:10": {
       "questID:3": 662,
       "preRequisites:11": [
         462
@@ -34219,7 +36170,7 @@
       },
       "rewards:9": {}
     },
-    "583:10": {
+    "607:10": {
       "questID:3": 663,
       "preRequisites:11": [
         530
@@ -34261,7 +36212,7 @@
       },
       "rewards:9": {}
     },
-    "584:10": {
+    "608:10": {
       "questID:3": 664,
       "preRequisites:11": [
         483
@@ -34303,7 +36254,7 @@
       },
       "rewards:9": {}
     },
-    "585:10": {
+    "609:10": {
       "questID:3": 665,
       "preRequisites:11": [
         462
@@ -34345,7 +36296,7 @@
       },
       "rewards:9": {}
     },
-    "586:10": {
+    "610:10": {
       "questID:3": 668,
       "preRequisites:11": [
         470
@@ -34387,7 +36338,7 @@
       },
       "rewards:9": {}
     },
-    "587:10": {
+    "611:10": {
       "questID:3": 669,
       "preRequisites:11": [
         531
@@ -34429,7 +36380,7 @@
       },
       "rewards:9": {}
     },
-    "588:10": {
+    "612:10": {
       "questID:3": 670,
       "preRequisites:11": [],
       "properties:10": {
@@ -34469,7 +36420,7 @@
       },
       "rewards:9": {}
     },
-    "589:10": {
+    "613:10": {
       "questID:3": 672,
       "preRequisites:11": [],
       "properties:10": {
@@ -34509,7 +36460,7 @@
       },
       "rewards:9": {}
     },
-    "590:10": {
+    "614:10": {
       "questID:3": 675,
       "preRequisites:11": [],
       "properties:10": {
@@ -34549,7 +36500,7 @@
       },
       "rewards:9": {}
     },
-    "591:10": {
+    "615:10": {
       "questID:3": 678,
       "preRequisites:11": [
         442
@@ -34591,7 +36542,7 @@
       },
       "rewards:9": {}
     },
-    "592:10": {
+    "616:10": {
       "questID:3": 679,
       "preRequisites:11": [
         672
@@ -34633,7 +36584,7 @@
       },
       "rewards:9": {}
     },
-    "593:10": {
+    "617:10": {
       "questID:3": 680,
       "preRequisites:11": [
         646
@@ -34675,7 +36626,7 @@
       },
       "rewards:9": {}
     },
-    "594:10": {
+    "618:10": {
       "questID:3": 681,
       "preRequisites:11": [
         688
@@ -34717,7 +36668,7 @@
       },
       "rewards:9": {}
     },
-    "595:10": {
+    "619:10": {
       "questID:3": 682,
       "preRequisites:11": [
         462
@@ -34759,7 +36710,7 @@
       },
       "rewards:9": {}
     },
-    "596:10": {
+    "620:10": {
       "questID:3": 684,
       "preRequisites:11": [
         691
@@ -34801,7 +36752,7 @@
       },
       "rewards:9": {}
     },
-    "597:10": {
+    "621:10": {
       "questID:3": 685,
       "preRequisites:11": [
         536
@@ -34843,7 +36794,7 @@
       },
       "rewards:9": {}
     },
-    "598:10": {
+    "622:10": {
       "questID:3": 686,
       "preRequisites:11": [
         578
@@ -34885,7 +36836,7 @@
       },
       "rewards:9": {}
     },
-    "599:10": {
+    "623:10": {
       "questID:3": 688,
       "preRequisites:11": [],
       "properties:10": {
@@ -34925,7 +36876,7 @@
       },
       "rewards:9": {}
     },
-    "600:10": {
+    "624:10": {
       "questID:3": 690,
       "preRequisites:11": [
         556
@@ -34967,7 +36918,7 @@
       },
       "rewards:9": {}
     },
-    "601:10": {
+    "625:10": {
       "questID:3": 691,
       "preRequisites:11": [
         634
@@ -35009,7 +36960,7 @@
       },
       "rewards:9": {}
     },
-    "602:10": {
+    "626:10": {
       "questID:3": 692,
       "preRequisites:11": [
         699
@@ -35051,7 +37002,7 @@
       },
       "rewards:9": {}
     },
-    "603:10": {
+    "627:10": {
       "questID:3": 694,
       "preRequisites:11": [
         617
@@ -35097,7 +37048,7 @@
       },
       "rewards:9": {}
     },
-    "604:10": {
+    "628:10": {
       "questID:3": 695,
       "preRequisites:11": [
         578
@@ -35139,7 +37090,7 @@
       },
       "rewards:9": {}
     },
-    "605:10": {
+    "629:10": {
       "questID:3": 696,
       "preRequisites:11": [
         497
@@ -35181,7 +37132,7 @@
       },
       "rewards:9": {}
     },
-    "606:10": {
+    "630:10": {
       "questID:3": 698,
       "preRequisites:11": [
         553
@@ -35223,7 +37174,7 @@
       },
       "rewards:9": {}
     },
-    "607:10": {
+    "631:10": {
       "questID:3": 699,
       "preRequisites:11": [],
       "properties:10": {
@@ -35263,7 +37214,7 @@
       },
       "rewards:9": {}
     },
-    "608:10": {
+    "632:10": {
       "questID:3": 700,
       "preRequisites:11": [
         442
@@ -35305,7 +37256,7 @@
       },
       "rewards:9": {}
     },
-    "609:10": {
+    "633:10": {
       "questID:3": 701,
       "preRequisites:11": [],
       "properties:10": {
@@ -35345,7 +37296,7 @@
       },
       "rewards:9": {}
     },
-    "610:10": {
+    "634:10": {
       "questID:3": 702,
       "preRequisites:11": [
         617
@@ -35391,7 +37342,7 @@
       },
       "rewards:9": {}
     },
-    "611:10": {
+    "635:10": {
       "questID:3": 703,
       "preRequisites:11": [],
       "properties:10": {
@@ -35431,7 +37382,7 @@
       },
       "rewards:9": {}
     },
-    "612:10": {
+    "636:10": {
       "questID:3": 705,
       "preRequisites:11": [
         454
@@ -35473,7 +37424,7 @@
       },
       "rewards:9": {}
     },
-    "613:10": {
+    "637:10": {
       "questID:3": 706,
       "preRequisites:11": [
         483
@@ -35515,7 +37466,7 @@
       },
       "rewards:9": {}
     },
-    "614:10": {
+    "638:10": {
       "questID:3": 708,
       "preRequisites:11": [
         627
@@ -35557,7 +37508,7 @@
       },
       "rewards:9": {}
     },
-    "615:10": {
+    "639:10": {
       "questID:3": 710,
       "preRequisites:11": [
         711
@@ -35599,7 +37550,7 @@
       },
       "rewards:9": {}
     },
-    "616:10": {
+    "640:10": {
       "questID:3": 711,
       "preRequisites:11": [
         454
@@ -35641,7 +37592,7 @@
       },
       "rewards:9": {}
     },
-    "617:10": {
+    "641:10": {
       "questID:3": 713,
       "preRequisites:11": [
         578
@@ -35683,7 +37634,7 @@
       },
       "rewards:9": {}
     },
-    "618:10": {
+    "642:10": {
       "questID:3": 714,
       "preRequisites:11": [
         82,
@@ -35750,7 +37701,7 @@
       },
       "rewards:9": {}
     },
-    "619:10": {
+    "643:10": {
       "questID:3": 715,
       "preRequisites:11": [
         714,
@@ -35835,7 +37786,7 @@
       },
       "rewards:9": {}
     },
-    "620:10": {
+    "644:10": {
       "questID:3": 716,
       "preRequisites:11": [],
       "properties:10": {
@@ -35906,7 +37857,7 @@
         }
       }
     },
-    "621:10": {
+    "645:10": {
       "questID:3": 717,
       "preRequisites:11": [
         9
@@ -35970,7 +37921,7 @@
         }
       }
     },
-    "622:10": {
+    "646:10": {
       "questID:3": 718,
       "preRequisites:11": [
         129,
@@ -36143,6 +38094,62 @@
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": -108,
+          "id:3": 375,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -72,
+          "id:3": 398,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": -144,
+          "id:3": 402,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": -240,
+          "y:3": -144,
+          "id:3": 406,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": -240,
+          "y:3": -108,
+          "id:3": 418,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "sizeX:3": 24,
+          "x:3": -204,
+          "y:3": 0,
+          "id:3": 421,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "x:3": -240,
+          "y:3": 0,
+          "id:3": 423,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": -276,
+          "y:3": 0,
+          "id:3": 425,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": -96,
+          "y:3": -144,
           "id:3": 717,
           "sizeY:3": 24
         }
@@ -36263,6 +38270,20 @@
           "y:3": -180,
           "id:3": 236,
           "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": -168,
+          "y:3": -108,
+          "id:3": 386,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": -240,
+          "y:3": -180,
+          "id:3": 392,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 2,
@@ -36301,7 +38322,7 @@
         "1:10": {
           "sizeX:3": 24,
           "x:3": -240,
-          "y:3": -108,
+          "y:3": -144,
           "id:3": 31,
           "sizeY:3": 24
         },
@@ -36422,15 +38443,15 @@
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": -132,
+          "x:3": -192,
+          "y:3": -96,
           "id:3": 42,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
           "x:3": -228,
-          "y:3": -96,
+          "y:3": -132,
           "id:3": 43,
           "sizeY:3": 24
         },
@@ -36472,7 +38493,7 @@
         "8:10": {
           "sizeX:3": 24,
           "x:3": -228,
-          "y:3": -168,
+          "y:3": -204,
           "id:3": 67,
           "sizeY:3": 24
         },
@@ -36493,7 +38514,7 @@
         "11:10": {
           "sizeX:3": 24,
           "x:3": -228,
-          "y:3": -276,
+          "y:3": -96,
           "id:3": 70,
           "sizeY:3": 24
         },
@@ -36534,8 +38555,8 @@
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": -204,
+          "x:3": -192,
+          "y:3": -240,
           "id:3": 205,
           "sizeY:3": 24
         },
@@ -36548,29 +38569,29 @@
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": -228,
-          "y:3": -240,
+          "x:3": -264,
+          "y:3": -96,
           "id:3": 261,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": -192,
-          "y:3": -240,
+          "x:3": -264,
+          "y:3": -132,
           "id:3": 264,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": -156,
-          "y:3": -240,
+          "x:3": -264,
+          "y:3": -168,
           "id:3": 272,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": -240,
+          "x:3": -264,
+          "y:3": -204,
           "id:3": 276,
           "sizeY:3": 24
         },
@@ -36583,9 +38604,16 @@
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": -84,
+          "x:3": -264,
           "y:3": -240,
           "id:3": 308,
+          "sizeY:3": 24
+        },
+        "25:10": {
+          "sizeX:3": 24,
+          "x:3": -228,
+          "y:3": -240,
+          "id:3": 376,
           "sizeY:3": 24
         }
       },
@@ -36614,7 +38642,7 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -324,
+          "x:3": -396,
           "y:3": -12,
           "id:3": 5,
           "sizeY:3": 24
@@ -36622,28 +38650,28 @@
         "1:10": {
           "sizeX:3": 24,
           "x:3": -360,
-          "y:3": -48,
+          "y:3": -12,
           "id:3": 15,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
           "x:3": -396,
-          "y:3": -48,
+          "y:3": -120,
           "id:3": 19,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
           "x:3": -360,
-          "y:3": -84,
+          "y:3": -48,
           "id:3": 27,
           "sizeY:3": 24
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -432,
-          "y:3": -120,
+          "x:3": -468,
+          "y:3": -84,
           "id:3": 28,
           "sizeY:3": 24
         },
@@ -36657,7 +38685,7 @@
         "6:10": {
           "sizeX:3": 24,
           "x:3": -360,
-          "y:3": -120,
+          "y:3": -84,
           "id:3": 74,
           "sizeY:3": 24
         },
@@ -36671,7 +38699,7 @@
         "8:10": {
           "sizeX:3": 24,
           "x:3": -324,
-          "y:3": -156,
+          "y:3": -120,
           "id:3": 76,
           "sizeY:3": 24
         },
@@ -36685,7 +38713,7 @@
         "10:10": {
           "sizeX:3": 24,
           "x:3": -324,
-          "y:3": -84,
+          "y:3": -48,
           "id:3": 88,
           "sizeY:3": 24
         },
@@ -36706,14 +38734,14 @@
         "13:10": {
           "sizeX:3": 24,
           "x:3": -396,
-          "y:3": -12,
+          "y:3": 24,
           "id:3": 92,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
           "x:3": -324,
-          "y:3": -120,
+          "y:3": -84,
           "id:3": 94,
           "sizeY:3": 24
         },
@@ -36747,22 +38775,22 @@
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": -324,
+          "x:3": -396,
           "y:3": -48,
           "id:3": 114,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": -396,
-          "y:3": -156,
+          "x:3": -360,
+          "y:3": -120,
           "id:3": 124,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": -396,
-          "y:3": -120,
+          "x:3": -324,
+          "y:3": -156,
           "id:3": 125,
           "sizeY:3": 24
         },
@@ -36776,7 +38804,7 @@
         "23:10": {
           "sizeX:3": 24,
           "x:3": -360,
-          "y:3": -12,
+          "y:3": 24,
           "id:3": 129,
           "sizeY:3": 24
         },
@@ -36790,7 +38818,7 @@
         "25:10": {
           "sizeX:3": 24,
           "x:3": -252,
-          "y:3": -84,
+          "y:3": -48,
           "id:3": 139,
           "sizeY:3": 24
         },
@@ -36803,15 +38831,15 @@
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": -120,
+          "x:3": -288,
+          "y:3": -12,
           "id:3": 267,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": -360,
-          "y:3": 24,
+          "x:3": -324,
+          "y:3": -12,
           "id:3": 367,
           "sizeY:3": 24
         },
@@ -36901,7 +38929,7 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -144,
+          "x:3": -180,
           "y:3": -132,
           "id:3": 18,
           "sizeY:3": 24
@@ -36915,7 +38943,7 @@
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -180,
+          "x:3": -144,
           "y:3": -132,
           "id:3": 39,
           "sizeY:3": 24
@@ -36946,6 +38974,27 @@
           "x:3": -216,
           "y:3": -96,
           "id:3": 49,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": -144,
+          "y:3": -96,
+          "id:3": 438,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": -132,
+          "id:3": 446,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": -96,
+          "id:3": 447,
           "sizeY:3": 24
         }
       },
@@ -37219,6 +39268,13 @@
         },
         "35:10": {
           "sizeX:3": 24,
+          "x:3": -216,
+          "y:3": -252,
+          "id:3": 383,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 24,
           "x:3": -324,
           "y:3": -180,
           "id:3": 716,
@@ -37449,7 +39505,7 @@
         },
         "4:10": {
           "sizeX:3": 24,
-          "x:3": -180,
+          "x:3": -144,
           "y:3": -48,
           "id:3": 72,
           "sizeY:3": 24
@@ -37515,6 +39571,34 @@
           "x:3": -288,
           "y:3": -84,
           "id:3": 334,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": -288,
+          "y:3": -12,
+          "id:3": 385,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": -216,
+          "y:3": -12,
+          "id:3": 413,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": -180,
+          "y:3": -48,
+          "id:3": 416,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": -288,
+          "y:3": -156,
+          "id:3": 430,
           "sizeY:3": 24
         }
       },
@@ -37673,6 +39757,27 @@
           "y:3": 72,
           "id:3": 341,
           "sizeY:3": 24
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 108,
+          "id:3": 380,
+          "sizeY:3": 24
+        },
+        "20:10": {
+          "sizeX:3": 24,
+          "x:3": -120,
+          "y:3": 0,
+          "id:3": 396,
+          "sizeY:3": 24
+        },
+        "21:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": 108,
+          "id:3": 434,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 10,
@@ -37766,6 +39871,20 @@
           "x:3": -72,
           "y:3": -108,
           "id:3": 315,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": -36,
+          "y:3": -144,
+          "id:3": 382,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": -180,
+          "id:3": 426,
           "sizeY:3": 24
         }
       },

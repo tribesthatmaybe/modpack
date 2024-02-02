@@ -151,8 +151,22 @@ recipes.remove(<cyclicmagic:void_anvil>);
 recipes.addShaped(<cyclicmagic:void_anvil>, [[<mysticalagriculture:crafting:38>, <actuallyadditions:item_crystal:2>, <mysticalagriculture:crafting:38>],
 					     [<vehicle:wrench>.reuse(), <actuallyadditions:item_crystal:3>, null],
 					     [<minecraft:quartz_block>, <mekanism:basicblock:8>, <minecraft:quartz_block>]]);
-// ie charging station
-recipes.remove(<immersiveengineering:metal_device1:5>);
-recipes.addShaped(<immersiveengineering:metal_device1:5>, [[<projectred-core:resource_item:103>, <immersiveengineering:connector>, <mysticalagriculture:crafting:33>],
-							   [<tconstruct:clear_glass>, <tconstruct:clear_glass>, <tconstruct:clear_glass>],
-							   [<immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>]]);
+// core sample dril
+recipes.remove(<immersiveengineering:metal_device1:7>);
+recipes.addShaped(<immersiveengineering:metal_device1:7>, [[<immersiveengineering:metal_decoration1:1>, <vehicle:small_engine>, <immersiveengineering:metal_decoration1:1>],
+							   [<immersiveengineering:metal_decoration1:1>, <engineersdecor:thin_steel_pole>, <immersiveengineering:metal_decoration1:1>],
+							   [<actuallyadditions:item_battery>, <engineersdecor:thin_steel_pole>, <immersiveengineering:metal_decoration0:4>]]);
+// sprinkler
+recipes.remove(<cyclicmagic:sprinkler>);
+recipes.addShaped(<cyclicmagic:sprinkler>, [[<minecraft:iron_bars>, <minecraft:iron_bars>, <minecraft:iron_bars>],
+					    [null, <projectred-core:resource_item:103>, null],
+					    [<minecraft:bone_block>, <actuallyadditions:block_misc:4>, <minecraft:bone_block>]]);
+// rope coil
+recipes.remove(<quark:rope>);
+recipes.addShaped(<quark:rope> * 4, [[null, <hooked:microcrafting:1>, null],
+			             [<hooked:microcrafting:1>, null, <hooked:microcrafting:1>],
+				     [null, <hooked:microcrafting:1>, null]]);
+recipes.remove(<actuallyadditions:block_firework_box>);
+recipes.addShaped(<actuallyadditions:block_firework_box>, [[<mysticalagriculture:crafting:2>, <botania:manaresource>, <mysticalagriculture:crafting:2>],
+							   [<mekanism:enrichedalloy>, <actuallyadditions:block_misc:9>, <mekanism:enrichedalloy>],
+							   [<actuallyadditions:item_crystal:5>, <mekanism:controlcircuit>, <actuallyadditions:item_crystal:5>]]);

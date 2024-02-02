@@ -163,6 +163,11 @@ recipes.remove(<botania:lens:23>);
 recipes.addShaped(<botania:lens:23>, [[null, <botania:rune:13>, null],
  				      [<mysticalagriculture:crafting:34>, <botania:lens>, <minecraft:tripwire_hook>],
 				      [null, <botania:manaresource:7>, null]]);
+// alchemy catalyst
+recipes.remove(<botania:alchemycatalyst>);
+recipes.addShaped(<botania:alchemycatalyst>, [[<botania:livingrock>, <immersiveengineering:metal:37>, <botania:livingrock>],
+					      [<actuallyadditions:item_crystal:3>, <botania:manaresource:1>, <actuallyadditions:item_crystal:3>],
+					      [<botania:livingrock>, <immersiveengineering:metal:37>, <botania:livingrock>]]);
 // other
 recipes.remove(<botania:managun>);
 recipes.addShaped(<botania:managun>, [[null, <botania:manaresource>, null],
