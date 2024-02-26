@@ -60,7 +60,7 @@ mods.jei.JEI.hide(<forge:bucketfilled>.withTag({FluidName: "ender_sap"}));
 mods.jei.JEI.hide(<forge:bucketfilled>.withTag({FluidName: "blaze_juice"}));
 mods.jei.JEI.removeAndHide(<vehicle:fluid_extractor>);
 mods.jei.JEI.removeAndHide(<vehicle:fluid_mixer>);
-// distilling fuelium from gasoline - change of nitrogen, carbon, methane
+// distilling fuelium from gasoline - chance of nitrogen, carbon, methane
 mods.immersivepetroleum.Distillation.addRecipe(
 	[<liquid:fuelium> * 5],
 	[<alchemistry:element:7>, <alchemistry:element:6>, <alchemistry:compound:34>],
@@ -246,25 +246,19 @@ recipes.addShaped(<vehicle:electric_engine:4>, [[null, <tconstruct:tough_binding
 					      [<vehicle:wrench>, <immersiveengineering:metal_decoration0:3>, <tconstruct:large_plate>.withTag({Material: "iron"})]]);
 
 //// airshipssss
-// parts. logic chip used in some other things.
-recipes.remove(<vc:item_logic_chip>);
-recipes.addShaped(<vc:item_logic_chip>, [[<railcraft:plate:2>, <immersiveengineering:metal_decoration0:3>, <railcraft:plate:2>],
-					[<mysticalagriculture:crafting:24>, <opencomputers:material:6>, <mysticalagriculture:crafting:24>],
-					[<actuallyadditions:item_crystal_empowered>, <opencomputers:material:2>, <actuallyadditions:item_crystal_empowered>]]);
 recipes.remove(<vc:item_airship_balloon>);
-recipes.addShaped(<vc:item_airship_balloon>, [[<minecraft:leather>, <mekanism:polyethene:2>, <minecraft:leather>],
+recipes.addShaped(<vc:item_airship_balloon>, [[<vc:upgrades/item_upgrade_airship_balloon>, <mekanism:polyethene:2>, <vc:upgrades/item_upgrade_airship_balloon>],
 					      [<mekanism:polyethene:2>, <tconstruct:binding>.withTag({Material: "livingwood"}), <mekanism:polyethene:2>],
-					      [<minecraft:leather>, <vehicle:wrench>.reuse(), <minecraft:leather>]]);
-recipes.remove(<vc:item_airship_ignition>);
-recipes.addShaped(<vc:item_airship_ignition>, [[null, null, null],
-					       [<immersiveengineering:metal_decoration0:3>, <actuallyadditions:block_misc:9>, <vc:item_logic_chip>],
+					      [<vc:upgrades/item_upgrade_airship_balloon>, <vehicle:wrench>.reuse(), <vc:upgrades/item_upgrade_airship_balloon>]]);
+scripts.shared.recipeRemapShaped(<vc:item_airship_ignition>, [[<vc:upgrades/item_upgrade_airship_core>, <vc:upgrades/item_upgrade_airship_core>, <vc:upgrades/item_upgrade_airship_core>],
+					       [<immersiveengineering:metal_decoration0:3>, <vc:upgrades/item_upgrade_airship_core>, <mekanism:controlcircuit>],
 					       [<tconstruct:large_plate>.withTag({Material: "livingwood"}), <vehicle:wrench>.reuse(), <tconstruct:large_plate>.withTag({Material: "livingwood"})]]);
 recipes.remove(<vc:item_airship_engine>);
 recipes.addShaped(<vc:item_airship_engine>, [[<immersiveengineering:metal_decoration0:4>, <tconstruct:seared_tank>, <immersiveengineering:metal_decoration0:4>],
 					     [<tconstruct:large_plate>.withTag({Material: "livingwood"}), <vehicle:large_engine:2>, <tconstruct:large_plate>.withTag({Material: "livingwood"})],
 					     [<tconstruct:large_plate>.withTag({Material: "livingwood"}), <vehicle:wrench>, <tconstruct:large_plate>.withTag({Material: "livingwood"})]]);
 recipes.remove(<vc:item_airship_frame>);
-recipes.addShaped(<vc:item_airship_frame>, [[<tconstruct:large_plate>.withTag({Material: "livingwood"}), <vc:item_logic_chip>, <tconstruct:large_plate>.withTag({Material: "livingwood"})],
+recipes.addShaped(<vc:item_airship_frame>, [[<tconstruct:large_plate>.withTag({Material: "livingwood"}), <mekanism:controlcircuit>, <tconstruct:large_plate>.withTag({Material: "livingwood"})],
 					    [<mysticalagriculture:crafting:34>, <mekanism:basicblock:8>, <mysticalagriculture:crafting:34>],
 					    [<alchemistry:ingot:74>, <vehicle:wrench>, <alchemistry:ingot:74>]]);
 // tools
@@ -278,24 +272,24 @@ recipes.addShaped(<vc:item_dismounter_player>, [[null, <mysticalagriculture:craf
 						[<tconstruct:tough_tool_rod>.withTag({Material: "treatedwood"}), null, null]]);
 // upgrade base's
 recipes.remove(<vc:upgrades/item_upgrade_airship_core>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_core> * 4, [[<mekanism:enrichedalloy>, <tconstruct:large_plate>.withTag({Material: "iron"}), <mekanism:enrichedalloy>],
-							        [<vc:item_logic_chip>, <tconstruct:large_plate>.withTag({Material: "manasteel"}), <vc:item_logic_chip>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_core> * 6, [[<mekanism:enrichedalloy>, <tconstruct:large_plate>.withTag({Material: "iron"}), <mekanism:enrichedalloy>],
+							        [<mekanism:controlcircuit>, <tconstruct:large_plate>.withTag({Material: "manasteel"}), <mekanism:controlcircuit>],
 								[<mekanism:enrichedalloy>, <tconstruct:large_plate>.withTag({Material: "iron"}), <mekanism:enrichedalloy>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_frame>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_frame> * 4, [[<mekanism:enrichedalloy>, <tconstruct:large_plate>.withTag({Material: "iron"}), <mekanism:enrichedalloy>],
-							         [<vc:item_logic_chip>, <actuallyadditions:item_color_lens>, <vc:item_logic_chip>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_frame> * 6, [[<mekanism:enrichedalloy>, <tconstruct:large_plate>.withTag({Material: "iron"}), <mekanism:enrichedalloy>],
+							         [<mekanism:controlcircuit>, <actuallyadditions:item_color_lens>, <mekanism:controlcircuit>],
 								 [<mekanism:enrichedalloy>, <tconstruct:large_plate>.withTag({Material: "iron"}), <mekanism:enrichedalloy>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_engine>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_engine> * 4, [[null, <tconstruct:large_plate>, null],
-							          [<vc:item_logic_chip>, <immersiveengineering:metal_device1:2>, <vc:item_logic_chip>],
-								  [<mekanism:polyethene:2>, <tconstruct:large_plate>, <mekanism:polyethene:2>]]);
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_engine> * 6, [[null, <tconstruct:large_plate>.withTag({Material: "steel"}), null],
+							          [<mekanism:controlcircuit>, <immersiveengineering:metal_device1:2>, <mekanism:controlcircuit>],
+								  [<mekanism:polyethene:2>, <tconstruct:large_plate>.withTag({Material: "steel"}), <mekanism:polyethene:2>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_balloon>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_balloon> * 4, [[<minecraft:leather>, <mysticalagriculture:crafting:24>, <minecraft:leather>],
-							           [<vc:item_logic_chip>, <botania:rune:3>, <vc:item_logic_chip>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_balloon> * 6, [[<minecraft:leather>, <mysticalagriculture:crafting:24>, <minecraft:leather>],
+							           [<mekanism:controlcircuit>, <botania:rune:3>, <mekanism:controlcircuit>],
 								   [<minecraft:leather>, <mysticalagriculture:crafting:24>, <minecraft:leather>]]);
 recipes.remove(<vc:modules/item_module_type>);
 recipes.addShaped(<vc:modules/item_module_type> * 4, [[null, <railcraft:plate:6>, null],
-						      [<opencomputers:material:6>, <vc:item_logic_chip>, <opencomputers:material:6>],
+						      [<opencomputers:material:6>, <mekanism:controlcircuit>, <opencomputers:material:6>],
 						      [null, <tconstruct:large_plate>.withTag({Material: "manasteel"}), null]]);
 // dat airship tho
 recipes.remove(<vc:airships/item_airship>);
@@ -304,68 +298,110 @@ recipes.addShaped(<vc:airships/item_airship>, [[<immersiveengineering:wirecoil:4
 					       [<mekanism:polyethene:2>, <vc:item_airship_ignition>, <mekanism:polyethene:2>]]);
 // core upgrades
 recipes.remove(<vc:upgrades/item_upgrade_airship_core:1>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_core:1>, [[<vc:upgrades/item_upgrade_airship_core>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_core>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_core:1>, [[<vc:upgrades/item_upgrade_airship_core>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_core>],
  							      [<immersiveengineering:metal:30>, <storagedrawers:upgrade_template>, <immersiveengineering:metal:30>],
-							      [<vc:upgrades/item_upgrade_airship_core>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_core>]]);
+							      [<vc:upgrades/item_upgrade_airship_core>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_core>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_core:2>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_core:2>, [[<vc:upgrades/item_upgrade_airship_core>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_core>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_core:2>, [[<vc:upgrades/item_upgrade_airship_core>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_core>],
 							      [<immersiveengineering:metal:40>, <storagedrawers:upgrade_template>, <immersiveengineering:metal:40>],
-							      [<vc:upgrades/item_upgrade_airship_core>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_core>]]);
+							      [<vc:upgrades/item_upgrade_airship_core>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_core>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_core:3>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_core:3>, [[<vc:upgrades/item_upgrade_airship_core>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_core>],
-							      [<actuallyadditions:item_crystal:2>, <storagedrawers:upgrade_template>, <actuallyadditions:item_crystal:2>],
-							      [<vc:upgrades/item_upgrade_airship_core>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_core>]]);
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_core:3>, [[<vc:upgrades/item_upgrade_airship_core>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_core>],
+							      [<actuallyadditions:item_crystal:2>, <storagedrawers:upgrade_storage>, <actuallyadditions:item_crystal:2>],
+							      [<vc:upgrades/item_upgrade_airship_core>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_core>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_core:4>);
 recipes.addShaped(<vc:upgrades/item_upgrade_airship_core:4>, [[<vc:upgrades/item_upgrade_airship_core>, <mekanism:controlcircuit:1>, <vc:upgrades/item_upgrade_airship_core>],
-							      [<actuallyadditions:item_crystal:2>, <storagedrawers:upgrade_template>, <actuallyadditions:item_crystal:2>],
+							      [<actuallyadditions:item_crystal:2>, <storagedrawers:upgrade_storage:1>, <actuallyadditions:item_crystal:2>],
 							      [<vc:upgrades/item_upgrade_airship_core>, <mekanism:controlcircuit:1>, <vc:upgrades/item_upgrade_airship_core>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_core:5>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_core:5>, [[<vc:upgrades/item_upgrade_airship_core>, <mekanism:atomicalloy>, <vc:upgrades/item_upgrade_airship_core>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_core:5>, [[<vc:upgrades/item_upgrade_airship_core>, <mekanism:controlcircuit:2>, <vc:upgrades/item_upgrade_airship_core>],
 							      [<actuallyadditions:item_crystal_empowered:4>, <storagedrawers:upgrade_template>, <actuallyadditions:item_crystal_empowered:4>],
-							      [<vc:upgrades/item_upgrade_airship_core>, <mekanism:atomicalloy>, <vc:upgrades/item_upgrade_airship_core>]]);
+							      [<vc:upgrades/item_upgrade_airship_core>, <storagedrawers:upgrade_storage:2>, <vc:upgrades/item_upgrade_airship_core>]]);
 // frame upgrades
 recipes.remove(<vc:upgrades/item_upgrade_airship_frame:1>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_frame:1>, [[<vc:upgrades/item_upgrade_airship_frame>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_frame>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_frame:1>, [[<vc:upgrades/item_upgrade_airship_frame>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_frame>],
 							       [<immersiveengineering:metal:39>, <actuallyadditions:block_misc:9>, <immersiveengineering:metal:39>],
-							       [<vc:upgrades/item_upgrade_airship_frame>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_frame>]]);
+							       [<vc:upgrades/item_upgrade_airship_frame>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_frame>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_frame:2>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_frame:2>, [[<vc:upgrades/item_upgrade_airship_frame>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_frame>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_frame:2>, [[<vc:upgrades/item_upgrade_airship_frame>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_frame>],
 							       [<immersiveengineering:metal:40>, <actuallyadditions:block_misc:9>, <immersiveengineering:metal:40>],
-							       [<vc:upgrades/item_upgrade_airship_frame>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_frame>]]);
+							       [<vc:upgrades/item_upgrade_airship_frame>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_frame>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_frame:3>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_frame:3>, [[<vc:upgrades/item_upgrade_airship_frame>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_frame>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_frame:3>, [[<vc:upgrades/item_upgrade_airship_frame>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_frame>],
 							       [<actuallyadditions:item_crystal:2>, <mekanism:basicblock:8>, <actuallyadditions:item_crystal:2>],
-							       [<vc:upgrades/item_upgrade_airship_frame>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_frame>]]);
+							       [<vc:upgrades/item_upgrade_airship_frame>, <mekanism:controlcircuit>, <vc:upgrades/item_upgrade_airship_frame>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_frame:4>);
 recipes.addShaped(<vc:upgrades/item_upgrade_airship_frame:4>, [[<vc:upgrades/item_upgrade_airship_frame>, <mekanism:controlcircuit:1>, <vc:upgrades/item_upgrade_airship_frame>],
 							       [<actuallyadditions:item_crystal:2>, <mekanism:basicblock:8>, <actuallyadditions:item_crystal:2>],
 							       [<vc:upgrades/item_upgrade_airship_frame>, <mekanism:controlcircuit:1>, <vc:upgrades/item_upgrade_airship_frame>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_frame:5>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_frame:5>, [[<vc:upgrades/item_upgrade_airship_frame>, <mekanism:atomicalloy>, <vc:upgrades/item_upgrade_airship_frame>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_frame:5>, [[<vc:upgrades/item_upgrade_airship_frame>, <mekanism:controlcircuit:2>, <vc:upgrades/item_upgrade_airship_frame>],
 							       [<actuallyadditions:item_crystal_empowered:4>, <mekanism:basicblock:8>, <actuallyadditions:item_crystal_empowered:4>],
-							       [<vc:upgrades/item_upgrade_airship_frame>, <mekanism:atomicalloy>, <vc:upgrades/item_upgrade_airship_frame>]]);
+							       [<vc:upgrades/item_upgrade_airship_frame>, <mekanism:controlcircuit:2>, <vc:upgrades/item_upgrade_airship_frame>]]);
 
 // balloon upgrades
 recipes.remove(<vc:upgrades/item_upgrade_airship_balloon:1>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_balloon:1>, [[<vc:upgrades/item_upgrade_airship_balloon>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_balloon>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_balloon:1>, [[<vc:upgrades/item_upgrade_airship_balloon>, <mekanism:enrichedalloy>, <vc:upgrades/item_upgrade_airship_balloon>],
 								 [<immersiveengineering:metal:39>, <immersiveengineering:cloth_device:1>, <immersiveengineering:metal:39>],
-								 [<vc:upgrades/item_upgrade_airship_balloon>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_balloon>]]);
+								 [<vc:upgrades/item_upgrade_airship_balloon>, <botania:manaresource>, <vc:upgrades/item_upgrade_airship_balloon>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_balloon:2>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_balloon:2>, [[<vc:upgrades/item_upgrade_airship_balloon>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_balloon>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_balloon:2>, [[<vc:upgrades/item_upgrade_airship_balloon>, <mekanism:enrichedalloy>, <vc:upgrades/item_upgrade_airship_balloon>],
 								 [<immersiveengineering:metal:40>, <immersiveengineering:cloth_device:1>, <immersiveengineering:metal:40>],
-								 [<vc:upgrades/item_upgrade_airship_balloon>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_balloon>]]);
+								 [<vc:upgrades/item_upgrade_airship_balloon>, <botania:manaresource>, <vc:upgrades/item_upgrade_airship_balloon>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_balloon:3>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_balloon:3>, [[<vc:upgrades/item_upgrade_airship_balloon>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_balloon>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_balloon:3>, [[<vc:upgrades/item_upgrade_airship_balloon>, <mekanism:reinforcedalloy>, <vc:upgrades/item_upgrade_airship_balloon>],
 								 [<actuallyadditions:item_crystal:2>, <immersiveengineering:cloth_device:1>, <actuallyadditions:item_crystal:2>],
-								 [<vc:upgrades/item_upgrade_airship_balloon>, <vc:item_logic_chip>, <vc:upgrades/item_upgrade_airship_balloon>]]);
+								 [<vc:upgrades/item_upgrade_airship_balloon>, <botania:manaresource>, <vc:upgrades/item_upgrade_airship_balloon>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_balloon:4>);
-recipes.addShaped(<vc:upgrades/item_upgrade_airship_balloon:4>, [[<vc:upgrades/item_upgrade_airship_balloon>, <mekanism:controlcircuit:1>, <vc:upgrades/item_upgrade_airship_balloon>],
+recipes.addShaped(<vc:upgrades/item_upgrade_airship_balloon:4>, [[<vc:upgrades/item_upgrade_airship_balloon>, <mekanism:reinforcedalloy>, <vc:upgrades/item_upgrade_airship_balloon>],
 								 [<actuallyadditions:item_crystal:2>, <mekanism:reinforcedplasticblock:*>, <actuallyadditions:item_crystal:2>],
-								 [<vc:upgrades/item_upgrade_airship_balloon>, <mekanism:controlcircuit:1>, <vc:upgrades/item_upgrade_airship_balloon>]]);
+								 [<vc:upgrades/item_upgrade_airship_balloon>, <botania:manaresource>, <vc:upgrades/item_upgrade_airship_balloon>]]);
 recipes.remove(<vc:upgrades/item_upgrade_airship_balloon:5>);
 recipes.addShaped(<vc:upgrades/item_upgrade_airship_balloon:5>, [[<vc:upgrades/item_upgrade_airship_frame>, <mekanism:atomicalloy>, <vc:upgrades/item_upgrade_airship_frame>],
 							         [<actuallyadditions:item_crystal_empowered:4>, <mekanism:reinforcedplasticblock:*>, <actuallyadditions:item_crystal_empowered:4>],
-							         [<vc:upgrades/item_upgrade_airship_frame>, <mekanism:atomicalloy>, <vc:upgrades/item_upgrade_airship_frame>]]);
+							         [<vc:upgrades/item_upgrade_airship_frame>, <botania:manaresource>, <vc:upgrades/item_upgrade_airship_frame>]]);
+// engine upgrades
+scripts.shared.recipeRemapShaped(<vc:upgrades/item_upgrade_airship_engine:4>, [[<vc:upgrades/item_upgrade_airship_engine>, <actuallyadditions:item_misc:8>, <vc:upgrades/item_upgrade_airship_engine>],
+									       [<mekanism:enrichedalloy>, <vehicle:large_engine:3>, <mekanism:enrichedalloy>],
+									       [<vc:upgrades/item_upgrade_airship_engine>, <actuallyadditions:item_misc:8>, <vc:upgrades/item_upgrade_airship_engine>]]);
+scripts.shared.recipeRemapShaped(<vc:upgrades/item_upgrade_airship_engine:4>, [[<vc:upgrades/item_upgrade_airship_engine>, <actuallyadditions:item_misc:8>, <vc:upgrades/item_upgrade_airship_engine>],
+									       [<railcraft:gear:5>, <vehicle:large_engine:3>, <railcraft:gear:5>],
+									       [<vc:upgrades/item_upgrade_airship_engine>, <actuallyadditions:item_misc:8>, <vc:upgrades/item_upgrade_airship_engine>]]);
+scripts.shared.recipeRemapShaped(<vc:upgrades/item_upgrade_airship_engine:3>, [[<vc:upgrades/item_upgrade_airship_engine>, <actuallyadditions:item_misc:7>, <vc:upgrades/item_upgrade_airship_engine>],
+									       [<railcraft:gear:5>, <vehicle:large_engine:3>, <railcraft:gear:5>],
+									       [<vc:upgrades/item_upgrade_airship_engine>, <actuallyadditions:item_misc:7>, <vc:upgrades/item_upgrade_airship_engine>]]);
+scripts.shared.recipeRemapShaped(<vc:upgrades/item_upgrade_airship_engine:2>, [[<vc:upgrades/item_upgrade_airship_engine>, <actuallyadditions:item_misc:7>, <vc:upgrades/item_upgrade_airship_engine>],
+									       [<railcraft:gear:4>, <vehicle:large_engine:3>, <railcraft:gear:4>],
+									       [<vc:upgrades/item_upgrade_airship_engine>, <actuallyadditions:item_misc:7>, <vc:upgrades/item_upgrade_airship_engine>]]);
+scripts.shared.recipeRemapShaped(<vc:upgrades/item_upgrade_airship_engine:1>, [[<vc:upgrades/item_upgrade_airship_engine>, <actuallyadditions:item_misc:7>, <vc:upgrades/item_upgrade_airship_engine>],
+									       [<railcraft:gear:2>, <vehicle:large_engine:3>, <railcraft:gear:2>],
+									       [<vc:upgrades/item_upgrade_airship_engine>, <actuallyadditions:item_misc:7>, <vc:upgrades/item_upgrade_airship_engine>]]);
+// bombbbbb
+scripts.shared.recipeRemapShaped(<vc:item_bomb>, [[<mekanism:plasticblock>, <extrautils2:ingredients:17>, <mekanism:plasticblock>],
+						  [<immersiveengineering:metal:39>, <appliedenergistics2:material:22>, <immersiveengineering:metal:39>],
+						  [<mekanism:plasticblock>, <extrautils2:ingredients:17>, <mekanism:plasticblock>]]);
+// small bomb
+scripts.shared.recipeRemapShaped(<vc:item_bomb:1>, [[<vc:item_bomb>, <projectred-core:resource_item:105>, <vc:item_bomb>],
+						    [<botania:manaresource:16>, <cyclicmagic:ender_tnt_4>, <botania:manaresource:16>],
+						    [<vc:item_bomb>, <projectred-core:resource_item:105>, <vc:item_bomb>]]);
+// big bomb
+scripts.shared.recipeRemapShaped(<vc:item_bomb:2>, [[<vc:item_bomb>, <projectred-core:resource_item:103>, <vc:item_bomb>],
+						    [<cyclicmagic:ender_tnt_4>, <cyclicmagic:ender_tnt_4>, <cyclicmagic:ender_tnt_4>],
+						    [<vc:item_bomb>, <immersiveengineering:metal:38>, <vc:item_bomb>]]);
+// scatter bomb
+scripts.shared.recipeRemapShaped(<vc:item_bomb:3>, [[<vc:item_bomb>, <tconstruct:tough_binding>.withTag({Material: "iron"}), <vc:item_bomb>],
+						    [<cyclicmagic:ender_tnt_6>, <tconstruct:tough_binding>.withTag({Material: "iron"}), <cyclicmagic:ender_tnt_6>],
+						    [<vc:item_bomb>, <tconstruct:tough_binding>.withTag({Material: "iron"}), <vc:item_bomb>]]);
+// fuel
+mods.mekanism.infuser.addRecipe("REDSTONE", 100, <minecraft:coal>, <vc:item_viesoline_pellets>);
+mods.mekanism.infuser.addRecipe("REDSTONE", 100, <minecraft:coal:1>, <vc:item_viesoline_pellets>);
+mods.mekanism.infuser.addRecipe("REDSTONE", 100, <immersiveengineering:material:6>, <vc:item_viesoline_pellets> * 3);
+mods.mekanism.infuser.addRecipe("REDSTONE", 50, <mysticalagriculture:coal>, <vc:item_viesoline_pellets> * 3);
+mods.mekanism.infuser.addRecipe("REDSTONE", 50, <mysticalagriculture:coal:1>, <vc:item_viesoline_pellets> * 5);
+mods.mekanism.infuser.addRecipe("REDSTONE", 40, <mysticalagriculture:coal:2>, <vc:item_viesoline_pellets> * 7);
+mods.mekanism.infuser.addRecipe("REDSTONE", 30, <mysticalagriculture:coal:3>, <vc:item_viesoline_pellets> * 9);
+mods.mekanism.infuser.addRecipe("REDSTONE", 10, <mysticalagriculture:coal:4>, <vc:item_viesoline_pellets> * 10);
+
 // altitude mods
 recipes.remove(<vc:modules/item_module_type:1>);
 recipes.addShaped(<vc:modules/item_module_type:1>, [[null, null, null],
@@ -419,18 +455,15 @@ recipes.addShaped(<vc:modules/item_module_type:12>, [[<quark:rune:10>, <quark:ru
 						     [<immersiveengineering:metal_decoration0:5>, <quark:rune:10>, <immersiveengineering:metal_decoration0:5>],
 						     [<vc:modules/item_module_type>, <tconstruct:tough_binding>.withTag({Material: "manasteel"}), <vc:modules/item_module_type>]]);
 // music mods
-recipes.remove(<vc:modules/item_module_type:13>);
-recipes.addShaped(<vc:modules/item_module_type:13>, [[null, null, null],
-						     [<immersiveengineering:metal_decoration0:4>, <betterrecords:recordplayer>, <immersiveengineering:metal_decoration0:4>],
-						     [<vc:modules/item_module_type>, <tconstruct:tough_binding>.withTag({Material: "livingwood"}), <vc:modules/item_module_type>]]);
-recipes.remove(<vc:modules/item_module_type:14>);
-recipes.addShaped(<vc:modules/item_module_type:14>, [[<betterrecords:record>, null, <betterrecords:record>],
-						     [<immersiveengineering:metal_decoration0:4>, <betterrecords:record>, <immersiveengineering:metal_decoration0:4>],
-						     [<vc:modules/item_module_type>, <tconstruct:tough_binding>.withTag({Material: "livingwood"}), <vc:modules/item_module_type>]]);
-recipes.remove(<vc:modules/item_module_type:15>);
-recipes.addShaped(<vc:modules/item_module_type:15>, [[null, null, null],
-						     [<immersiveengineering:metal_decoration0:5>, <betterrecords:frequencycrystal>, <immersiveengineering:metal_decoration0:5>],
-						     [<vc:modules/item_module_type>, <tconstruct:tough_binding>.withTag({Material: "manasteel"}), <vc:modules/item_module_type>]]);
+scripts.shared.recipeRemapShaped(<vc:modules/item_module_type:13>, [[null, null, null],
+								    [<immersiveengineering:metal_decoration0:3>, <tconstruct:tough_binding>.withTag({Material: "copper"}), <immersiveengineering:metal_decoration0:3>],
+								    [<vc:modules/item_module_type>, <betterrecords:recordplayer>, <vc:modules/item_module_type>]]);
+scripts.shared.recipeRemapShaped(<vc:modules/item_module_type:14>, [[null, null, null],
+								    [null, <appliedenergistics2:material:35>, null],
+								    [<vc:modules/item_module_type>, <betterrecords:record>, <vc:modules/item_module_type>]]);
+scripts.shared.recipeRemapShaped(<vc:modules/item_module_type:15>, [[null, null, null],
+								    [<appliedenergistics2:material:35>, <mekanism:plasticblock:1>, <appliedenergistics2:material:35>],
+								    [<vc:modules/item_module_type>, <betterrecords:record>, <vc:modules/item_module_type>]]);
 // cruise control mod
 recipes.remove(<vc:modules/item_module_type:16>);
 recipes.addShaped(<vc:modules/item_module_type:16>, [[null, null, null],
@@ -440,10 +473,10 @@ recipes.remove(<vc:modules/item_module_type:17>);
 recipes.addShaped(<vc:modules/item_module_type:17>, [[null, null, null],
 						     [<immersiveengineering:metal_decoration0:4>, <opencomputers:component>, <immersiveengineering:metal_decoration0:4>],
 						     [<vc:modules/item_module_type>, <tconstruct:tough_binding>.withTag({Material: "manasteel"}), <vc:modules/item_module_type>]]);
-recipes.remove(<vc:modules/item_module_type:18>);
-recipes.addShaped(<vc:modules/item_module_type:18>, [[null, null, null],
-						     [<immersiveengineering:metal_decoration0:5>, <opencomputers:component>, <immersiveengineering:metal_decoration0:5>],
-						     [<vc:modules/item_module_type>, <tconstruct:tough_binding>.withTag({Material: "manasteel"}), <vc:modules/item_module_type>]]);
+scripts.shared.recipeRemapShaped(<vc:modules/item_module_type:18>, [[null, null, null],
+								    [<immersiveengineering:metal_decoration0:4>, <opencomputers:component:1>, <immersiveengineering:metal_decoration0:4>],
+								    [<vc:modules/item_module_type>, <tconstruct:tough_binding>.withTag({Material: "manasteel"}), <vc:modules/item_module_type>]]);
+
 // water landing mod
 recipes.remove(<vc:modules/item_module_type:19>);
 recipes.addShaped(<vc:modules/item_module_type:19>, [[null, null, null],
@@ -474,21 +507,6 @@ recipes.remove(<vc:modules/item_module_type:27>);
 recipes.addShaped(<vc:modules/item_module_type:27>, [[null, null, null],
 						     [<immersiveengineering:metal_decoration0:5>, <cgm:scope:1>, <immersiveengineering:metal_decoration0:5>],
 						     [<vc:modules/item_module_type>, <tconstruct:tough_binding>.withTag({Material: "manasteel"}), <vc:modules/item_module_type>]]);
-
-//// railcraft - chooooo choo bitches
-recipes.removeShaped(<minecraft:rail> * 24, [[<mekanism:ingot:1>, null, <mekanism:ingot:1>],
-				             [<mekanism:ingot:1>, <minecraft:stick>, <mekanism:ingot:1>],
-					     [<mekanism:ingot:1>, null, <mekanism:ingot:1>]]);
-// basic rail
-mods.mekanism.compressor.addRecipe(<immersiveengineering:material:1>, <gas:oxygen>, <railcraft:rail>);
-// fancy rail
-mods.mekanism.compressor.addRecipe(<immersiveposts:metal_rods>, <gas:ethene>, <railcraft:rail:1>);
-// high speed rail
-mods.mekanism.compressor.addRecipe(<immersiveposts:metal_rods:6>, <gas:hydrogenchloride>, <railcraft:rail:3>);
-// reinforced rail
-mods.mekanism.compressor.addRecipe(<immersiveengineering:material:2>, <gas:ethene>, <railcraft:rail:4>);
-// electric rail
-mods.mekanism.compressor.addRecipe(<immersiveposts:metal_rods:1>, <gas:hydrogenchloride>, <railcraft:rail:5>);
 
 //// cones and things
 // these items seem bugged?

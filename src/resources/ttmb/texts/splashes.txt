@@ -2,6 +2,8 @@ Could you pass the salt.
 Could you pass the butter.
 Could you pass the redstone.
 It was on fire when we got here.
+It was in the lava when we got here.
+It was covered in tar when we got here.
 Welcome to Birmingham!
 Welcome to Conechella!
 Why are we even in this desert.

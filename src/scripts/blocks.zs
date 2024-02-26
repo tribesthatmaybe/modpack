@@ -10,5 +10,5 @@ tanSheetmetal.setBlockResistance(15.0);
 tanSheetmetal.setBlockHardness(3.0);
 tanSheetmetal.register();
 
-var playaBlock = VanillaFactory.createBlock("playa", <blockmaterial:sand>);
-playaBlock.register();
+// var playaBlock = VanillaFactory.createBlock("playa", <blockmaterial:sand>);
+// playaBlock.register();

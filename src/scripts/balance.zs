@@ -2,26 +2,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IItemTransformer;
 import crafttweaker.oredict.IOreDictEntry;
 
-val dyeArray = [
-    <ore:dyeBlack>,
-    <ore:dyeRed>,
-    <ore:dyeGreen>,
-    <ore:dyeBrown>,
-    <ore:dyeBlue>,
-    <ore:dyePurple>,
-    <ore:dyeCyan>,
-    <ore:dyeLightGray>,
-    <ore:dyeGray>,
-    <ore:dyePink>,
-    <ore:dyeLime>,
-    <ore:dyeYellow>,
-    <ore:dyeLightBlue>,
-    <ore:dyeMagenta>,
-    <ore:dyeOrange>,
-    <ore:dyeWhite>
-] as IOreDictEntry[];
-
-
 //// recycle
 // people gonna end up with extra lore
 recipes.addShapeless(<minecraft:paper>, [<loreexpansion:lore_scrap>]);
@@ -73,255 +53,146 @@ recipes.removeShapeless(<minecraft:string> * 2, [<plants2:generic>, <plants2:gen
 recipes.addShapeless(<minecraft:string> * 2, [<plants2:generic>, <plants2:generic>, <plants2:generic>]);
 
 
-//// simplify chests
-// TODO: railcraft chest split / recovery recipe?
-recipes.remove(<minecraft:chest>);
-recipes.addShaped(<minecraft:chest>, [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
-				      [<ore:plankWood>, null, <ore:plankWood>],
-				      [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 // luggage :3
 recipes.remove(<openblocks:luggage>);
 recipes.addShaped(<openblocks:luggage>, [[<minecraft:spider_eye>, <minecraft:diamond>, <minecraft:spider_eye>],
 					 [<minecraft:rabbit_foot>, <minecraft:chest>, <minecraft:rabbit_foot>],
 					 [<minecraft:rabbit_foot>, <mysticalagriculture:storage>, <minecraft:rabbit_foot>]]);
-// fancy chests
-mods.jei.JEI.removeAndHide(<ironchest:iron_chest:7>, false);
-recipes.remove(<ironchest:iron_chest:3>); // copper chest / box of not drugs
-recipes.addShaped(<ironchest:iron_chest:3>, [[<tconstruct:large_plate>.withTag({Material: "wood"}), <architecturecraft:hammer>.reuse(), <tconstruct:large_plate>.withTag({Material: "wood"})],
-					     [<mekanism:ingot:5>, <minecraft:chest>, <mekanism:ingot:5>],
-					     [<mekanism:ingot:5>, <actuallyadditions:block_misc:4>, <mekanism:ingot:5>]]);
-
-recipes.remove(<ironchest:wood_copper_chest_upgrade>);
-recipes.addShaped(<ironchest:wood_copper_chest_upgrade>, [[<tconstruct:large_plate>.withTag({Material: "wood"}), <architecturecraft:hammer>.reuse(), <tconstruct:large_plate>.withTag({Material: "wood"})],
-					     [<mekanism:ingot:5>, <storagedrawers:upgrade_template>, <mekanism:ingot:5>],
-					     [<mekanism:ingot:5>, <actuallyadditions:block_misc:4>, <mekanism:ingot:5>]]);
-recipes.remove(<ironchest:iron_chest>); // iron chest / janky bin
-recipes.addShaped(<ironchest:iron_chest>, [[<tconstruct:large_plate>.withTag({Material: "wood"}), <architecturecraft:hammer>.reuse(), <tconstruct:large_plate>.withTag({Material: "wood"})],
-					   [<minecraft:iron_ingot>, <minecraft:chest>, <minecraft:iron_ingot>],
-					   [<minecraft:iron_ingot>, <actuallyadditions:block_misc:9>, <minecraft:iron_ingot>]]);
-recipes.remove(<ironchest:wood_iron_chest_upgrade>);
-recipes.remove(<ironchest:copper_iron_chest_upgrade>);
-recipes.addShaped(<ironchest:copper_iron_chest_upgrade>, [[<tconstruct:large_plate>.withTag({Material: "wood"}), <architecturecraft:hammer>.reuse(), <tconstruct:large_plate>.withTag({Material: "wood"})],
-							  [<minecraft:iron_ingot>, <storagedrawers:upgrade_storage>, <minecraft:iron_ingot>],
-							  [<minecraft:iron_ingot>, <actuallyadditions:block_misc:9>, <minecraft:iron_ingot>]]);
-recipes.addShaped(<ironchest:wood_iron_chest_upgrade>, [[<tconstruct:large_plate>.withTag({Material: "wood"}), <architecturecraft:hammer>.reuse(), <tconstruct:large_plate>.withTag({Material: "wood"})],
-						        [<minecraft:iron_ingot>, <storagedrawers:upgrade_storage:1>, <minecraft:iron_ingot>],
-							[<minecraft:iron_ingot>, <actuallyadditions:block_misc:9>, <minecraft:iron_ingot>]]);
-recipes.remove(<ironchest:iron_chest:4>);  // silver chest / less janky bin
-recipes.addShaped(<ironchest:iron_chest:4>, [[<tconstruct:large_plate>.withTag({Material: "silver"}), <architecturecraft:hammer>.reuse(), <tconstruct:large_plate>.withTag({Material: "silver"})],
-					     [<immersiveengineering:metal:3>, <minecraft:chest>, <immersiveengineering:metal:3>],
-					     [<immersiveengineering:metal:3>, <actuallyadditions:block_misc:9>, <immersiveengineering:metal:3>]]);
-recipes.remove(<ironchest:copper_silver_chest_upgrade>);
-recipes.addShaped(<ironchest:copper_silver_chest_upgrade>, [[<tconstruct:large_plate>.withTag({Material: "silver"}), <architecturecraft:hammer>.reuse(), <tconstruct:large_plate>.withTag({Material: "silver"})],
-							    [<immersiveengineering:metal:3>, <storagedrawers:upgrade_storage>, <immersiveengineering:metal:3>],
-							    [<immersiveengineering:metal:3>, <actuallyadditions:block_misc:9>, <immersiveengineering:metal:3>]]);
-recipes.remove(<ironchest:iron_chest:1>);   // gold chest / black & yellow
-recipes.addShaped(<ironchest:iron_chest:1>, [[<immersiveengineering:metal:40>, <architecturecraft:hammer>.reuse(), <immersiveengineering:metal:40>],
-					     [<minecraft:gold_ingot>, <minecraft:chest>, <minecraft:gold_ingot>],
-					     [<minecraft:gold_ingot>, <actuallyadditions:block_misc:9>, <minecraft:gold_ingot>]]);
-recipes.remove(<ironchest:iron_gold_chest_upgrade>);
-recipes.remove(<ironchest:silver_gold_chest_upgrade>);
-recipes.addShaped(<ironchest:iron_gold_chest_upgrade>, [[<immersiveengineering:metal:40>, <architecturecraft:hammer>.reuse(), <immersiveengineering:metal:40>],
-						        [<minecraft:gold_ingot>, <storagedrawers:upgrade_storage:1>, <minecraft:gold_ingot>],
-							[<minecraft:gold_ingot>, <actuallyadditions:block_misc:9>, <minecraft:gold_ingot>]]);
-recipes.addShaped(<ironchest:silver_gold_chest_upgrade>, [[<immersiveengineering:metal:40>, <architecturecraft:hammer>.reuse(), <immersiveengineering:metal:40>],
-							  [<minecraft:gold_ingot>, <storagedrawers:upgrade_storage>, <minecraft:gold_ingot>],
-							  [<minecraft:gold_ingot>, <actuallyadditions:block_misc:9>, <minecraft:gold_ingot>]]);
-recipes.remove(<ironchest:iron_chest:2>);   // diamond chest / giant bin
-recipes.addShaped(<ironchest:iron_chest:2>, [[<immersiveengineering:metal:40>, <architecturecraft:hammer>.reuse(), <immersiveengineering:metal:40>],
-					     [<mekanism:compresseddiamond>, <minecraft:chest>, <mekanism:compresseddiamond>],
-					     [<mekanism:compresseddiamond>, <actuallyadditions:block_misc:9>, <mekanism:compresseddiamond>]]);
-recipes.remove(<ironchest:gold_diamond_chest_upgrade>);
-recipes.addShaped(<ironchest:gold_diamond_chest_upgrade>, [[<immersiveengineering:metal:40>, <architecturecraft:hammer>.reuse(), <immersiveengineering:metal:40>],
-					     [<mekanism:compresseddiamond>, <storagedrawers:upgrade_storage>, <mekanism:compresseddiamond>],
-					     [<mekanism:compresseddiamond>, <actuallyadditions:block_misc:9>, <mekanism:compresseddiamond>]]);
-recipes.remove(<ironchest:iron_chest:6>);  // obsidian chest
-recipes.addShaped(<ironchest:iron_chest:6>, [[<immersiveengineering:metal:40>, <architecturecraft:hammer>.reuse(), <immersiveengineering:metal:40>],
-					     [<tconstruct:large_plate>.withTag({Material: "obsidian"}), <minecraft:chest>, <tconstruct:large_plate>.withTag({Material: "obsidian"})],
-					     [<tconstruct:large_plate>.withTag({Material: "obsidian"}), <actuallyadditions:block_misc:9>, <tconstruct:large_plate>.withTag({Material: "obsidian"})]]);
-recipes.remove(<ironchest:diamond_obsidian_chest_upgrade>);
-recipes.addShaped(<ironchest:diamond_obsidian_chest_upgrade>, [[<immersiveengineering:metal:40>, <architecturecraft:hammer>.reuse(), <immersiveengineering:metal:40>],
-							       [<tconstruct:large_plate>.withTag({Material: "obsidian"}), <storagedrawers:upgrade_storage>, <tconstruct:large_plate>.withTag({Material: "obsidian"})],
-							       [<tconstruct:large_plate>.withTag({Material: "obsidian"}), <actuallyadditions:block_misc:9>, <tconstruct:large_plate>.withTag({Material: "obsidian"})]]);
-recipes.remove(<ironchest:iron_chest:5>);  // clear chest
-recipes.addShaped(<ironchest:iron_chest:5>, [[<immersiveengineering:metal:40>, <architecturecraft:hammer>.reuse(), <immersiveengineering:metal:40>],
-					     [<tconstruct:large_plate>.withTag({Material: "obsidian"}), <minecraft:chest>, <tconstruct:large_plate>.withTag({Material: "obsidian"})],
-					     [<tconstruct:large_plate>.withTag({Material: "obsidian"}), <mekanism:basicblock:8>, <tconstruct:large_plate>.withTag({Material: "obsidian"})]]);
 
 //// skilled construction but not use of furniture
 
 // sitting things
-recipes.remove(<cfm:chair_oak>);
-recipes.addShaped(<cfm:chair_oak>, [[<minecraft:planks>, null, null],
+scripts.shared.recipeRemapShaped(<cfm:chair_oak>, [[<minecraft:planks>, null, null],
 				   [<minecraft:planks>, <minecraft:planks>, <minecraft:planks>],
 				   [<minecraft:planks>, <architecturecraft:hammer>.reuse(), <minecraft:planks>]]);
-recipes.remove(<cfm:chair_spruce>);
-recipes.addShaped(<cfm:chair_spruce>, [[<minecraft:planks:1>, null, null],
+scripts.shared.recipeRemapShaped(<cfm:chair_spruce>, [[<minecraft:planks:1>, null, null],
 				      [<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>],
 				      [<minecraft:planks:1>, <architecturecraft:hammer>.reuse(), <minecraft:planks:1>]]);
-recipes.remove(<cfm:chair_birch>);
-recipes.addShaped(<cfm:chair_birch>, [[<minecraft:planks:2>, null, null],
+scripts.shared.recipeRemapShaped(<cfm:chair_birch>, [[<minecraft:planks:2>, null, null],
 				     [<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>],
 				     [<minecraft:planks:2>, <architecturecraft:hammer>.reuse(), <minecraft:planks:2>]]);
-recipes.remove(<cfm:chair_jungle>);
-recipes.addShaped(<cfm:chair_jungle>, [[<minecraft:planks:3>, null, null],
+scripts.shared.recipeRemapShaped(<cfm:chair_jungle>, [[<minecraft:planks:3>, null, null],
 				     [<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>],
 				     [<minecraft:planks:3>, <architecturecraft:hammer>.reuse(), <minecraft:planks:3>]]);
-recipes.remove(<cfm:chair_acacia>);
-recipes.addShaped(<cfm:chair_acacia>, [[<minecraft:planks:4>, null, null],
+scripts.shared.recipeRemapShaped(<cfm:chair_acacia>, [[<minecraft:planks:4>, null, null],
 				     [<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>],
 				     [<minecraft:planks:4>, <architecturecraft:hammer>.reuse(), <minecraft:planks:4>]]);
-recipes.remove(<cfm:chair_dark_oak>);
-recipes.addShaped(<cfm:chair_dark_oak>, [[<minecraft:planks:5>, null, null],
+scripts.shared.recipeRemapShaped(<cfm:chair_dark_oak>, [[<minecraft:planks:5>, null, null],
 				     [<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>],
 				     [<minecraft:planks:5>, <architecturecraft:hammer>.reuse(), <minecraft:planks:5>]]);
 recipes.addShaped(<cfm:chair_dark_oak>, [[<plants2:planks:2>, null, null],
 				     [<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],
 				     [<plants2:planks:2>, <architecturecraft:hammer>.reuse(), <plants2:planks:2>]]);
 
-recipes.remove(<cfm:chair_diorite>);
-recipes.addShaped(<cfm:chair_diorite>, [[<minecraft:stone:3>, null, null],
+scripts.shared.recipeRemapShaped(<cfm:chair_diorite>, [[<minecraft:stone:3>, null, null],
 				     [<minecraft:stone:3>, <minecraft:stone:3>, <minecraft:stone:3>],
 				     [<minecraft:stone:3>, <architecturecraft:hammer>.reuse(), <minecraft:stone:3>]]);
-recipes.remove(<cfm:chair_granite>);
-recipes.addShaped(<cfm:chair_granite>, [[<minecraft:stone:1>, null, null],
+scripts.shared.recipeRemapShaped(<cfm:chair_granite>, [[<minecraft:stone:1>, null, null],
 				     [<minecraft:stone:1>, <minecraft:stone:1>, <minecraft:stone:1>],
 				     [<minecraft:stone:1>, <architecturecraft:hammer>.reuse(), <minecraft:stone:1>]]);
-recipes.remove(<cfm:chair_andesite>);
-recipes.addShaped(<cfm:chair_andesite>, [[<minecraft:stone:5>, null, null],
+scripts.shared.recipeRemapShaped(<cfm:chair_andesite>, [[<minecraft:stone:5>, null, null],
 				     [<minecraft:stone:5>, <minecraft:stone:5>, <minecraft:stone:5>],
 				     [<minecraft:stone:5>, <architecturecraft:hammer>.reuse(), <minecraft:stone:5>]]);
-recipes.remove(<cfm:chair_stone>);
-recipes.addShaped(<cfm:chair_stone>, [[<minecraft:cobblestone>, null, null],
+scripts.shared.recipeRemapShaped(<cfm:chair_stone>, [[<minecraft:cobblestone>, null, null],
 				     [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
 				     [<minecraft:cobblestone>, <architecturecraft:hammer>.reuse(), <minecraft:cobblestone>]]);
-recipes.remove(<cfm:bench>);
-recipes.addShaped(<cfm:bench>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:bench>, [[null, null, null],
 			       [<minecraft:log>, <minecraft:planks>, <minecraft:log>],
 			       [<minecraft:planks>, <architecturecraft:hammer>.reuse(), <minecraft:planks>]]);
-recipes.remove(<cfm:park_bench_oak>);
-recipes.addShaped(<cfm:park_bench_oak>, [[<minecraft:planks>, <minecraft:planks>, <minecraft:planks>],
+scripts.shared.recipeRemapShaped(<cfm:park_bench_oak>, [[<minecraft:planks>, <minecraft:planks>, <minecraft:planks>],
 					[<minecraft:planks>, <minecraft:planks>, <minecraft:planks>],
 					[<minecraft:log>, <architecturecraft:hammer>.reuse(), <minecraft:log>]]);
-recipes.remove(<cfm:park_bench_spruce>);
-recipes.addShaped(<cfm:park_bench_spruce>, [[<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>],
+scripts.shared.recipeRemapShaped(<cfm:park_bench_spruce>, [[<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>],
 					[<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>],
 					[<minecraft:log:1>, <architecturecraft:hammer>.reuse(), <minecraft:log:1>]]);
-recipes.remove(<cfm:park_bench_birch>);
-recipes.addShaped(<cfm:park_bench_birch>, [[<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>],
+scripts.shared.recipeRemapShaped(<cfm:park_bench_birch>, [[<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>],
 					[<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>],
 					[<minecraft:log:2>, <architecturecraft:hammer>.reuse(), <minecraft:log:2>]]);
-recipes.remove(<cfm:park_bench_jungle>);
-recipes.addShaped(<cfm:park_bench_jungle>, [[<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>],
+scripts.shared.recipeRemapShaped(<cfm:park_bench_jungle>, [[<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>],
 					[<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>],
 					[<minecraft:log:3>, <architecturecraft:hammer>.reuse(), <minecraft:log:3>]]);
-recipes.remove(<cfm:park_bench_acacia>);
-recipes.addShaped(<cfm:park_bench_acacia>, [[<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>],
+scripts.shared.recipeRemapShaped(<cfm:park_bench_acacia>, [[<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>],
 					[<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>],
 					[<minecraft:log2>, <architecturecraft:hammer>.reuse(), <minecraft:log2>]]);
-recipes.remove(<cfm:park_bench_dark_oak>);
-recipes.addShaped(<cfm:park_bench_dark_oak>, [[<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>],
+scripts.shared.recipeRemapShaped(<cfm:park_bench_dark_oak>, [[<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>],
 					[<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>],
 					[<minecraft:log2:1>, <architecturecraft:hammer>.reuse(), <minecraft:log2:1>]]);
-recipes.addShaped(<cfm:park_bench_dark_oak>, [[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],
+scripts.shared.recipeRemapShaped(<cfm:park_bench_dark_oak>, [[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],
 					[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],
 					[<plants2:log_0>, <architecturecraft:hammer>.reuse(), <plants2:log_0>]]);
 
 // coffee table
-recipes.remove(<cfm:coffee_table_oak>);
-recipes.addShaped(<cfm:coffee_table_oak>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:coffee_table_oak>, [[null, null, null],
 					  [<minecraft:planks>, <minecraft:planks>, <minecraft:planks>],
 					  [<minecraft:planks>, <architecturecraft:hammer>.reuse(), <minecraft:planks>]]);
-recipes.remove(<cfm:coffee_table_spruce>);
-recipes.addShaped(<cfm:coffee_table_spruce>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:coffee_table_spruce>, [[null, null, null],
 					  [<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>],
 					  [<minecraft:planks:1>, <architecturecraft:hammer>.reuse(), <minecraft:planks:1>]]);
-recipes.remove(<cfm:coffee_table_birch>);
-recipes.addShaped(<cfm:coffee_table_birch>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:coffee_table_birch>, [[null, null, null],
 					  [<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>],
 					  [<minecraft:planks:2>, <architecturecraft:hammer>.reuse(), <minecraft:planks:2>]]);
-recipes.remove(<cfm:coffee_table_jungle>);
-recipes.addShaped(<cfm:coffee_table_jungle>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:coffee_table_jungle>, [[null, null, null],
 					  [<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>],
 					  [<minecraft:planks:3>, <architecturecraft:hammer>.reuse(), <minecraft:planks:3>]]);
-recipes.remove(<cfm:coffee_table_acacia>);
-recipes.addShaped(<cfm:coffee_table_acacia>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:coffee_table_acacia>, [[null, null, null],
 					  [<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>],
 					  [<minecraft:planks:4>, <architecturecraft:hammer>.reuse(), <minecraft:planks:4>]]);
-recipes.remove(<cfm:coffee_table_dark_oak>);
-recipes.addShaped(<cfm:coffee_table_dark_oak>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:coffee_table_dark_oak>, [[null, null, null],
 					  [<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>],
 					  [<minecraft:planks:5>, <architecturecraft:hammer>.reuse(), <minecraft:planks:5>]]);
-recipes.addShaped(<cfm:coffee_table_dark_oak>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:coffee_table_dark_oak>, [[null, null, null],
 					  [<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],
 					  [<plants2:planks:2>, <architecturecraft:hammer>.reuse(), <plants2:planks:2>]]);
-recipes.remove(<cfm:coffee_table_diorite>);
-recipes.addShaped(<cfm:coffee_table_diorite>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:coffee_table_diorite>, [[null, null, null],
 					  [<minecraft:stone:3>, <minecraft:stone:3>, <minecraft:stone:3>],
 					  [<minecraft:stone:3>, <architecturecraft:hammer>.reuse(), <minecraft:stone:3>]]);
-recipes.remove(<cfm:coffee_table_granite>);
-recipes.addShaped(<cfm:coffee_table_granite>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:coffee_table_granite>, [[null, null, null],
 					  [<minecraft:stone:1>, <minecraft:stone:1>, <minecraft:stone:1>],
 					  [<minecraft:stone:1>, <architecturecraft:hammer>.reuse(), <minecraft:stone:1>]]);
-recipes.remove(<cfm:coffee_table_andesite>);
-recipes.addShaped(<cfm:coffee_table_andesite>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:coffee_table_andesite>, [[null, null, null],
 					  [<minecraft:stone:5>, <minecraft:stone:5>, <minecraft:stone:5>],
 					  [<minecraft:stone:5>, <architecturecraft:hammer>.reuse(), <minecraft:stone:5>]]);
-recipes.remove(<cfm:coffee_table_stone>);
-recipes.addShaped(<cfm:coffee_table_stone>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:coffee_table_stone>, [[null, null, null],
 					  [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
 					  [<minecraft:cobblestone>, <architecturecraft:hammer>.reuse(), <minecraft:cobblestone>]]);
-recipes.remove(<cfm:modern_coffee_table>);
-recipes.addShaped(<cfm:modern_coffee_table>, [[null, null, null],
+scripts.shared.recipeRemapShaped(<cfm:modern_coffee_table>, [[null, null, null],
 					     [<minecraft:concrete>, <minecraft:concrete>, <minecraft:concrete>],
 					     [<minecraft:concrete:8>, <architecturecraft:hammer>.reuse(), <minecraft:concrete:8>]]);
 // other tables
-recipes.remove(<cfm:table_oak>);
-recipes.addShaped(<cfm:table_oak>, [[<minecraft:planks>, <minecraft:planks>, <minecraft:planks>],
+scripts.shared.recipeRemapShaped(<cfm:table_oak>, [[<minecraft:planks>, <minecraft:planks>, <minecraft:planks>],
 				   [null, <minecraft:planks>, null],
 				   [<architecturecraft:hammer>.reuse(), <minecraft:planks>, null]]);
-recipes.remove(<cfm:table_spruce>);
-recipes.addShaped(<cfm:table_spruce>, [[<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>],
+scripts.shared.recipeRemapShaped(<cfm:table_spruce>, [[<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>],
 				   [null, <minecraft:planks:1>, null],
 				   [<architecturecraft:hammer>.reuse(), <minecraft:planks:1>, null]]);
-recipes.remove(<cfm:table_birch>);
-recipes.addShaped(<cfm:table_birch>, [[<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>],
+scripts.shared.recipeRemapShaped(<cfm:table_birch>, [[<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>],
 				   [null, <minecraft:planks:2>, null],
 				   [<architecturecraft:hammer>.reuse(), <minecraft:planks:2>, null]]);
-recipes.remove(<cfm:table_jungle>);
-recipes.addShaped(<cfm:table_jungle>, [[<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>],
+scripts.shared.recipeRemapShaped(<cfm:table_jungle>, [[<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>],
 				   [null, <minecraft:planks:3>, null],
 				   [<architecturecraft:hammer>.reuse(), <minecraft:planks:3>, null]]);
-recipes.remove(<cfm:table_acacia>);
-recipes.addShaped(<cfm:table_acacia>, [[<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>],
+scripts.shared.recipeRemapShaped(<cfm:table_acacia>, [[<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>],
 				   [null, <minecraft:planks:4>, null],
 				   [<architecturecraft:hammer>.reuse(), <minecraft:planks:4>, null]]);
-recipes.remove(<cfm:table_dark_oak>);
-recipes.addShaped(<cfm:table_dark_oak>, [[<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>],
+scripts.shared.recipeRemapShaped(<cfm:table_dark_oak>, [[<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>],
 				   [null, <minecraft:planks:5>, null],
 				   [<architecturecraft:hammer>.reuse(), <minecraft:planks:5>, null]]);
-recipes.remove(<cfm:table_dark_oak>);
-recipes.addShaped(<cfm:table_dark_oak>, [[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],
+scripts.shared.recipeRemapShaped(<cfm:table_dark_oak>, [[<plants2:planks:2>, <plants2:planks:2>, <plants2:planks:2>],
 				   [null, <plants2:planks:2>, null],
 				   [<architecturecraft:hammer>.reuse(), <plants2:planks:2>, null]]);
-recipes.remove(<cfm:table_diorite>);
-recipes.addShaped(<cfm:table_diorite>, [[<minecraft:stone:3>, <minecraft:stone:3>, <minecraft:stone:3>],
+scripts.shared.recipeRemapShaped(<cfm:table_diorite>, [[<minecraft:stone:3>, <minecraft:stone:3>, <minecraft:stone:3>],
 				   [null, <minecraft:stone:3>, null],
 				   [<architecturecraft:hammer>.reuse(), <minecraft:stone:3>, null]]);
-recipes.remove(<cfm:table_granite>);
-recipes.addShaped(<cfm:table_granite>, [[<minecraft:stone:1>, <minecraft:stone:1>, <minecraft:stone:1>],
+scripts.shared.recipeRemapShaped(<cfm:table_granite>, [[<minecraft:stone:1>, <minecraft:stone:1>, <minecraft:stone:1>],
 				   [null, <minecraft:stone:1>, null],
 				   [<architecturecraft:hammer>.reuse(), <minecraft:stone:1>, null]]);
-recipes.remove(<cfm:table_andesite>);
-recipes.addShaped(<cfm:table_andesite>, [[<minecraft:stone:5>, <minecraft:stone:5>, <minecraft:stone:5>],
+scripts.shared.recipeRemapShaped(<cfm:table_andesite>, [[<minecraft:stone:5>, <minecraft:stone:5>, <minecraft:stone:5>],
 				   [null, <minecraft:stone:5>, null],
 				   [<architecturecraft:hammer>.reuse(), <minecraft:stone:5>, null]]);
-recipes.remove(<cfm:table_stone>);
-recipes.addShaped(<cfm:table_stone>, [[<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
+scripts.shared.recipeRemapShaped(<cfm:table_stone>, [[<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
 				   [null, <minecraft:cobblestone>, null],
 				   [<architecturecraft:hammer>.reuse(), <minecraft:cobblestone>, null]]);
-recipes.remove(<cfm:table_outdoor>);
-recipes.addShaped(<cfm:table_outdoor>, [[<minecraft:log>, <minecraft:stained_glass:12>, <minecraft:log>],
+scripts.shared.recipeRemapShaped(<cfm:table_outdoor>, [[<minecraft:log>, <minecraft:stained_glass:12>, <minecraft:log>],
 				       [<minecraft:planks>, <architecturecraft:hammer>.reuse(), <minecraft:planks>],
 				       [<minecraft:planks>, null, <minecraft:planks>]]);
 recipes.remove(<cfm:modern_table>);
@@ -583,6 +454,16 @@ recipes.remove(<actuallyadditions:block_atomic_reconstructor>);
 recipes.addShaped(<actuallyadditions:block_atomic_reconstructor>, [[<immersiveengineering:metal:39>, <immersiveengineering:metal:34>, <immersiveengineering:metal:39>],
 								  [<mekanism:ingot:1>, <opencomputers:material:6>, <mekanism:ingot:1>],
 								  [<immersiveengineering:metal:39>, <mysticalagriculture:storage:1>,  <immersiveengineering:metal:39>]]);
+// display stand
+recipes.remove(<actuallyadditions:block_display_stand>);
+recipes.addShaped(<actuallyadditions:block_display_stand>, [[<immersiveengineering:metal:38>, <immersiveengineering:metal:33>, <immersiveengineering:metal:38>],
+							    [<tconstruct:clear_stained_glass:5>, <actuallyadditions:item_battery>, <tconstruct:clear_stained_glass:5>],
+							    [<actuallyadditions:item_misc:8>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_misc:8>]]);
+// empowerererererer
+recipes.remove(<actuallyadditions:block_empowerer>);
+recipes.addShaped(<actuallyadditions:block_empowerer>, [[<immersiveengineering:metal:38>, <mekanism:reinforcedalloy>, <immersiveengineering:metal:38>],
+							    [<tconstruct:clear_stained_glass:15>, <botania:manaresource>, <tconstruct:clear_stained_glass:15>],
+							    [<actuallyadditions:item_misc:8>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_misc:8>]]);
 
 recipes.remove(<actuallyadditions:item_mining_lens>);
 recipes.addShaped(<actuallyadditions:item_mining_lens>, [[<actuallyadditions:item_crystal:5>, <tconstruct:clear_glass>, <actuallyadditions:item_crystal>],
@@ -627,7 +508,7 @@ mods.mekanism.combiner.removeAllRecipes();
 recipes.remove(<mekanism:machineblock:2>);
 recipes.addShaped(<mekanism:machineblock:2>, [[<tconstruct:large_plate>.withTag({Material: "electrum"}), <tconstruct:clear_glass>, <tconstruct:large_plate>.withTag({Material: "electrum"})],
 					      [<actuallyadditions:item_crystal:3>, <mekanism:basicblock:8>, <actuallyadditions:item_crystal:3>],
-					      [<mekanism:reinforcedalloy>, <mysticalagriculture:storage>, <mekanism:controlcircuit:1>]]);
+					      [<mekanism:reinforcedalloy>, <actuallyadditions:item_misc:8>, <mekanism:controlcircuit:1>]]);
 // enrichment chamber
 recipes.remove(<mekanism:machineblock>);
 recipes.addShaped(<mekanism:machineblock>, [[<mekanism:enrichedalloy>, <mekanism:controlcircuit:1>, <mekanism:enrichedalloy>],
@@ -889,11 +770,11 @@ recipes.addShaped(<cfm:mirror>, [[<immersiveengineering:metal:39>, <immersiveeng
 				 [<immersiveengineering:sheetmetal_slab:3>, <minecraft:glass_pane>, <immersiveengineering:sheetmetal_slab:3>],
 				 [<immersiveengineering:metal:39>, <immersiveengineering:metal:39>, <immersiveengineering:metal:39>]]);
 recipes.remove(<cfm:tv>);
-recipes.addShaped(<cfm:tv>, [[<immersiveengineering:metal:39>, <tconstruct:tool_rod>.withTag({Material: "iron"}), <immersiveengineering:metal:39>],
+recipes.addShaped(<cfm:tv>, [[<immersiveengineering:metal:39>, <opencomputers:material:13>, <immersiveengineering:metal:39>],
 			     [<immersiveengineering:metal:39>, <minecraft:glass>, <immersiveengineering:metal:39>],
 			     [<actuallyadditions:block_misc:9>, <mekanism:controlcircuit>, <actuallyadditions:block_misc:9>]]);
 recipes.remove(<cfm:modern_tv>);
-recipes.addShaped(<cfm:modern_tv>, [[<tconstruct:large_plate>.withTag({Material: "iron"}), <actuallyadditions:block_misc:9>, <tconstruct:large_plate>.withTag({Material: "iron"})],
+recipes.addShaped(<cfm:modern_tv>, [[<tconstruct:large_plate>.withTag({Material: "iron"}), <opencomputers:material:13>, <tconstruct:large_plate>.withTag({Material: "iron"})],
 				    [<tconstruct:clear_glass>, <tconstruct:clear_glass>, <tconstruct:clear_glass>],
 				    [<actuallyadditions:block_misc:9>, <mekanism:controlcircuit>, <actuallyadditions:block_misc:9>]]);
 
@@ -903,6 +784,50 @@ recipes.addShaped(<cfm:tv_remote>, [[null, <actuallyadditions:item_crystal:5>, n
 				    [<actuallyadditions:item_crystal>, <immersiveengineering:material:8>, <actuallyadditions:item_crystal>]]);
 
 //// parts and pieces and bobs
+// ie mechanisms
+recipes.remove(<immersiveengineering:material:9>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:9>);
+mods.immersiveengineering.Blueprint.addRecipe("Crafting Components", <immersiveengineering:material:9>, [<immersiveengineering:metal:38>, <railcraft:gear:1>,
+										 <immersiveengineering:material:3>, <immersiveengineering:metal:38>]);
+recipes.remove(<immersiveengineering:material:8>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:material:8>);
+mods.immersiveengineering.Blueprint.addRecipe("Crafting Components", <immersiveengineering:material:8>, [<immersiveengineering:metal:39>, <railcraft:gear>,
+										 <immersiveposts:metal_rods:1>, <immersiveengineering:metal:39>]);
+// mystery ingos
+mods.actuallyadditions.Empowerer.addRecipe(<extrautils2:ingredients:17>, <botania:manaresource>,
+									 <abyssalcraft:shadowshard>, <minecraft:ghast_tear>,
+									 <fossil:skull_block>, <minecraft:redstone_block>, 85000, 15);
+
+mods.actuallyadditions.Empowerer.addRecipe(<extrautils2:ingredients:12>, <actuallyadditions:item_solidified_experience>,
+									 <immersiveengineering:metal:16>, <minecraft:lapis_block>,
+									 <actuallyadditions:item_crystal:1>, <mystcraft:blockcrystal>, 85000, 15);
+// melt solidified experience
+mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:xpjuice>, <actuallyadditions:item_solidified_experience>, 2500, 300);
+
+// generic mechanical parts
+recipes.remove(<railcraft:track_parts>);
+mods.mekanism.combiner.addRecipe(<immersiveengineering:metal:6>, <immersiveengineering:material:1>, <railcraft:track_parts> * 4);
+<railcraft:track_parts>.displayName = "Assorted Parts";
+
+// empowered thing
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered>, <actuallyadditions:item_crystal>, <minecraft:redstone>, <minecraft:netherbrick>,
+										       <projectred-core:resource_item:103>, <minecraft:brick>, 5000, 15);
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:1>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:1>, <actuallyadditions:item_crystal:1>, <actuallyadditions:item_dust:4>,
+											 <projectred-core:resource_item:105>, <botania:manaresource>, <tconstruct:ingots>, 7500, 20);
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:2>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:2>, <actuallyadditions:item_crystal:2>, <botania:manaresource:2>,
+											 <mekanism:otherdust>, <minecraft:clay_ball>, <immersiveengineering:material:6>, 10000, 25);
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:3>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:3>, <actuallyadditions:item_crystal:3>, <minecraft:coal>, <fossil:tardrop>,
+											 <quark:rune:15>, <abyssalcraft:shadowfragment>, 12500, 30);
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:4>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:4>, <actuallyadditions:item_crystal:4>, <actuallyadditions:item_solidified_experience>,
+											 <botania:manaresource:4>, <immersiveengineering:stone_decoration:8>, <projectred-core:resource_item:513>, 15000, 30);
+mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:5>);
+mods.actuallyadditions.Empowerer.addRecipe(<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_crystal:5>, <minecraft:cobblestone>, <mekanism:ingot:1>,
+											 <mekanism:ingot:6>, <projectred-core:resource_item>, 7500, 20);
 // silk -> string
 recipes.addShaped(<minecraft:string>, [[<mysticalworld:silk_thread>, <mysticalworld:silk_thread>, <mysticalworld:silk_thread>],
 				       [<mysticalworld:silk_thread>, <mysticalworld:silk_thread>, <mysticalworld:silk_thread>],
@@ -980,12 +905,12 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:3> * 4, [[<mekanism:in
 recipes.remove(<immersiveengineering:metal_decoration0:4>);
 recipes.addShaped(<immersiveengineering:metal_decoration0:4> * 8, [[<railcraft:plate:2>, <immersiveengineering:material:8>, <railcraft:plate:2>],
 							           [<mysticalagriculture:crafting:32>, <actuallyadditions:block_misc:9>, <mysticalagriculture:crafting:32>],
-							           [<immersiveengineering:metal:30>, <immersiveengineering:material:8>, <immersiveengineering:metal:30>]]);
+							           [<immersiveengineering:metal:30>, <railcraft:track_parts>, <immersiveengineering:metal:30>]]);
 // heavy engineering block
 recipes.remove(<immersiveengineering:metal_decoration0:5>);
 recipes.addShaped(<immersiveengineering:metal_decoration0:5> * 4, [[<immersiveengineering:metal:38>, <immersiveengineering:material:9>, <immersiveengineering:metal:38>],
 							           [<alchemistry:ingot:22>, <mekanism:basicblock:8>, <alchemistry:ingot:22>],
-							           [<immersiveengineering:metal:31>, <immersiveengineering:material:9>, <immersiveengineering:metal:31>]]);
+							           [<immersiveengineering:metal:31>, <railcraft:track_parts>, <immersiveengineering:metal:31>]]);
 // generator block
 recipes.remove(<immersiveengineering:metal_decoration0:6>);
 recipes.addShaped(<immersiveengineering:metal_decoration0:6> * 4, [[<immersiveengineering:metal:38>, <tconstruct:large_plate>.withTag({Material: "electrum"}), <immersiveengineering:metal:38>],
@@ -994,7 +919,7 @@ recipes.addShaped(<immersiveengineering:metal_decoration0:6> * 4, [[<immersiveen
 // kinetic generator
 recipes.remove(<immersiveengineering:metal_device1:2>);
 recipes.addShaped(<immersiveengineering:metal_device1:2>, [[<immersiveengineering:metal:39>, <immersiveengineering:metal:39>, <immersiveengineering:metal:39>],
-							   [<projectred-core:resource_item:103>, <immersiveengineering:metal_decoration0>, <projectred-core:resource_item:103>],
+							   [<actuallyadditions:item_misc:8>, <immersiveengineering:metal_decoration0>, <projectred-core:resource_item:103>],
 							   [<mysticalagriculture:crafting:33>, <actuallyadditions:block_misc:9>, <mysticalagriculture:crafting:33>]]);
 // radiator block
 recipes.remove(<immersiveengineering:metal_decoration0:7>);
@@ -1034,9 +959,9 @@ recipes.addShaped(<opencomputers:material:9> * 4, [[<opencomputers:material:7>, 
 						   [<opencomputers:material:7>, <mekanism:otherdust>, <opencomputers:material:7>]]);
 // interwebs
 recipes.remove(<opencomputers:material:13>);
-recipes.addShaped(<opencomputers:material:13>, [[<immersiveposts:metal_rods:6>, <minecraft:web>, <immersiveposts:metal_rods:6>],
-					        [<minecraft:web>, <mekanism:controlcircuit:3>, <minecraft:web>],
-						[<botania:manaresource:8>, <minecraft:web>, <botania:manaresource:8>]]);
+recipes.addShaped(<opencomputers:material:13>, [[<minecraft:web>, <immersiveposts:metal_rods:6>, <minecraft:web>],
+					        [<actuallyadditions:item_crystal>, <mekanism:controlcircuit>, <actuallyadditions:item_crystal>],
+						[<minecraft:web>, <immersiveposts:metal_rods:6>, <minecraft:web>]]);
 // basic control circuit
 recipes.remove(<mekanism:controlcircuit>);
 mods.mekanism.infuser.removeRecipe(<mekanism:controlcircuit>);
@@ -1186,7 +1111,7 @@ recipes.addShaped(<extrautils2:trashcanfluid>, [[<immersiveengineering:metal:39>
 					        [<immersiveengineering:metal:39>, <actuallyadditions:item_crystal_empowered:5>, <immersiveengineering:metal:39>],
 						[<immersiveengineering:metal:39>, <mekanism:compressedobsidian>, <immersiveengineering:metal:39>]]);
 // elevators
-for i, dye in dyeArray {
+for i, dye in dyeOreDictArray {
     val elevator = itemUtils.getItem("openblocks:elevator", 15 - i);
     val rotevator = itemUtils.getItem("openblocks:elevator_rotating", 15 - i);
     recipes.remove(elevator);
@@ -1198,13 +1123,6 @@ for i, dye in dyeArray {
 			         [<mysticalagriculture:crafting:24>, <actuallyadditions:block_misc:9>, <mysticalagriculture:crafting:24>],
 			         [dye, <mysticalagriculture:crafting:34>, dye]]);
 }
-
-//// salty tho
-mods.immersivetechnology.Distiller.removeRecipe(<liquid:water>);
-mods.immersivetechnology.Distiller.addRecipe(<liquid:distwater> * 500, <liquid:water> * 1000, <mekanism:salt>, 5000, 20, 0.25);
-
-// recipes.remove(<mekanism:salt>);
-// mods.mekanism.chemical.washer.addRecipe(
 
 //// mystiag
 // need to add these back in bc unidict is overzealous
@@ -1231,28 +1149,8 @@ for i in 1 .. 6 {
 
 }
 
-// base essence ingot
-mods.jei.JEI.removeAndHide(<mysticalagriculture:crafting:39>);
-recipes.remove(<mysticalagriculture:crafting:32>);
-recipes.addShaped(<mysticalagriculture:crafting:32>, [[null, <mysticalagriculture:crafting:5>, null],
-						      [<mysticalagriculture:crafting:5>, <minecraft:iron_ingot>, <mysticalagriculture:crafting:5>],
-						      [null, <mysticalagriculture:crafting:5>, null]]);
-recipes.remove(<mysticalagriculture:ingot_storage>);
-recipes.addShaped(<mysticalagriculture:ingot_storage>, [[<mysticalagriculture:crafting:32>, <mysticalagriculture:crafting:32>, <mysticalagriculture:crafting:32>],
-						        [<mysticalagriculture:crafting:32>, <mysticalagriculture:crafting:32>, <mysticalagriculture:crafting:32>],
-							[<mysticalagriculture:crafting:32>, <mysticalagriculture:crafting:32>, <mysticalagriculture:crafting:32>]]);
-recipes.addShapeless(<mysticalagriculture:crafting:32> * 9, [<mysticalagriculture:ingot_storage>]);
-
-// soulium
-mods.jei.JEI.removeAndHide(<mysticalagriculture:crafting:45>);
-recipes.remove(<mysticalagriculture:ingot_storage:6>);
-recipes.addShaped(<mysticalagriculture:ingot_storage:6>, [[<mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>],
-							  [<mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>],
-							  [<mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>, <mysticalagriculture:crafting:38>]]);
-recipes.addShapeless(<mysticalagriculture:crafting:38> * 9, [<mysticalagriculture:ingot_storage:6>]);
-
 // cfm picture frame
-for i, dye in dyeArray {
+for i, dye in dyeOreDictArray {
     val frame = itemUtils.getItem("cfm:photo_frame", 15 - i);
     recipes.remove(frame);
     recipes.addShaped(frame, [[dye, <tconstruct:tough_binding>.withTag({Material: "wood"}), dye],
@@ -1278,3 +1176,38 @@ recipes.addShaped(<botania:manaresource:2>, [[<mysticalagriculture:diamond_essen
 recipes.addShaped(<botania:manaresource:1>, [[<mysticalagriculture:enderman_essence>, <mysticalagriculture:manasteel_essence>, <mysticalagriculture:enderman_essence>],
 					     [<mysticalagriculture:manasteel_essence>, <mysticalagriculture:manasteel_essence>, <mysticalagriculture:manasteel_essence>],
 					     [<mysticalagriculture:enderman_essence>, <mysticalagriculture:manasteel_essence>, <mysticalagriculture:enderman_essence>]]);
+//// more things for biodiesel precursors
+// all seeds can make plant oil
+mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:plantoil>);
+for aSeed in <ore:listAllseed>.items {
+    mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil>, aSeed, 256);
+}
+// for some reason f&a uses diff oredict
+for aSeed in <ore:flowerSeed>.items {
+    mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil>, aSeed, 256);
+}
+// and the rest
+val otherSqueezed = [
+    <plants2:apocynum_c>,
+    <immersiveengineering:seed>
+] as IItemStack[];
+for aSeed in otherSqueezed {
+    mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil>, Mplants2:apocynum_c>, 256);
+}
+
+// mystical seeds are cheap on power and return essence
+mods.immersiveengineering.Squeezer.addRecipe(<mysticalagriculture:crafting>, <liquid:plantoil>, <ore:seedsTier1>, 128);
+mods.immersiveengineering.Squeezer.addRecipe(<mysticalagriculture:crafting:1>, <liquid:plantoil>, <ore:seedsTier2>, 96);
+mods.immersiveengineering.Squeezer.addRecipe(<mysticalagriculture:crafting:2>, <liquid:plantoil>, <ore:seedsTier3>, 64);
+mods.immersiveengineering.Squeezer.addRecipe(<mysticalagriculture:crafting:3>, <liquid:plantoil>, <ore:seedsTier4>, 64);
+mods.immersiveengineering.Squeezer.addRecipe(<mysticalagriculture:crafting:4>, <liquid:plantoil>, <ore:seedsTier5>, 64);
+mods.immersiveengineering.Fermenter.removeFluidRecipe(<liquid:ethanol>);
+
+for aFruit in <ore:listAllfruit>.items {
+    mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol>, aFruit, 256);
+}
+mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 10, <harvestcraft:cornitem>, 128);
+mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 10, <minecraft:beetroot>, 128);
+mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 10, <harvestcraft:barleyitem>, 128);
+mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 10, <harvestcraft:ryeitem>, 128);
+mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 10, <minecraft:reeds>, 128);

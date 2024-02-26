@@ -9,12 +9,18 @@ import crafttweaker.item.IItemStack;
 
 // c'mon now it's 2020
 <storagedrawers:controllerslave>.displayName = "Drawer Interface";
+// comedy tho
+<alchemistry:evaporator>.displayName = "Evap Pond";
 
 // hard to find dirt in the desert y'know
-recipes.addShaped(<minecraft:dirt> * 4, [[<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>],[<minecraft:rotten_flesh>, <ore:logWood>, <minecraft:rotten_flesh>], [<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>]]);
+recipes.addShaped(<minecraft:dirt> * 4, [[<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>],
+				         [<minecraft:rotten_flesh>, <ore:logWood>, <minecraft:rotten_flesh>],
+					 [<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>]]);
 
 // hard to find hops too
-recipes.addShaped(<brewcraft:hopsseeditem>, [[<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>],[<mysticalagriculture:nature_essence>, <mysticalagriculture:crafting:18>, <mysticalagriculture:nature_essence>], [<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>]]);
+recipes.addShaped(<brewcraft:hopsseeditem> * 4, [[<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>],
+					         [<mysticalagriculture:nature_essence>, <mysticalagriculture:crafting:18>, <mysticalagriculture:nature_essence>],
+						 [<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>]]);
 
 // consistent leather recipes
 furnace.remove(<minecraft:leather>, <minecraft:rotten_flesh>);
@@ -26,10 +32,9 @@ recipes.removeShapeless(<minecraft:book>, [<minecraft:paper>, <minecraft:paper>,
 recipes.addShaped(<minecraft:book>, [[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>],[<minecraft:string>, <tconstruct:pattern>, <minecraft:leather>], [null, null, null]]);
 
 // nature compass
-recipes.remove(<naturescompass:naturescompass>);
-recipes.addShaped(<naturescompass:naturescompass>, [[<botania:manaresource:3>, <mysticalagriculture:crafting:22>, <botania:manaresource:3>],
-						    [<ore:plant>, <minecraft:compass>, <ore:plant>],
-						    [<botania:manaresource:3>, <mysticalagriculture:crafting:22>, <botania:manaresource:3>]]);
+scripts.shared.recipeRemapShaped(<naturescompass:naturescompass>, [[<botania:manaresource:3>, <mysticalagriculture:crafting:22>, <botania:manaresource:3>],
+								   [<ore:plant>, <minecraft:compass>, <ore:plant>],
+								   [<botania:manaresource:3>, <mysticalagriculture:crafting:22>, <botania:manaresource:3>]]);
 // more leather sources
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<fossil:triceratops_cooked>, 12000);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<fossil:allosaurus_cooked>, 12000);
@@ -127,27 +132,26 @@ for widget in secretTentParts {
   mods.jei.JEI.removeAndHide(widget);
 }
 //// seasons tho
-recipes.remove(<sereneseasons:greenhouse_glass>);
-recipes.addShaped(<sereneseasons:greenhouse_glass> * 8, [[<minecraft:glass>, <ore:dyeCyan>, <minecraft:glass>],
+scripts.shared.recipeRemapShaped(<sereneseasons:greenhouse_glass> * 8, [[<minecraft:glass>, <ore:dyeCyan>, <minecraft:glass>],
 						         [<ore:dyeCyan>, <actuallyadditions:block_misc:4>, <ore:dyeCyan>],
 							 [<minecraft:glass>, <ore:dyeCyan>, <minecraft:glass>]]);
-recipes.remove(<sereneseasons:season_clock>);
-recipes.addShaped(<sereneseasons:season_clock>, [[null, <minecraft:quartz>, null],
+scripts.shared.recipeRemapShaped(<sereneseasons:season_clock>, [[null, <minecraft:quartz>, null],
 						 [<appliedenergistics2:material>, <minecraft:clock>, <appliedenergistics2:material>],
 						 [null, <minecraft:quartz>, null]]);
-recipes.remove(<sereneseasons:season_sensor_spring>);
-recipes.addShaped(<sereneseasons:season_sensor_spring>, [[<minecraft:redstone>, <botania:rune:4>, <minecraft:redstone>],
+scripts.shared.recipeRemapShaped(<sereneseasons:season_sensor_spring>, [[<minecraft:redstone>, <botania:rune:4>, <minecraft:redstone>],
 							 [<minecraft:redstone>, <sereneseasons:season_clock>, <minecraft:redstone>],
 							 [<minecraft:redstone>, <opencomputers:material:4>, <minecraft:redstone>]]);
-recipes.remove(<sereneseasons:season_sensor_summer>);
-recipes.addShaped(<sereneseasons:season_sensor_summer>, [[<minecraft:redstone>, <botania:rune:5>, <minecraft:redstone>],
+scripts.shared.recipeRemapShaped(<sereneseasons:season_sensor_summer>, [[<minecraft:redstone>, <botania:rune:5>, <minecraft:redstone>],
 							 [<minecraft:redstone>, <sereneseasons:season_clock>, <minecraft:redstone>],
 							 [<minecraft:redstone>, <opencomputers:material:4>, <minecraft:redstone>]]);
-recipes.remove(<sereneseasons:season_sensor_autumn>);
-recipes.addShaped(<sereneseasons:season_sensor_autumn>, [[<minecraft:redstone>, <botania:rune:6>, <minecraft:redstone>],
+scripts.shared.recipeRemapShaped(<sereneseasons:season_sensor_autumn>, [[<minecraft:redstone>, <botania:rune:6>, <minecraft:redstone>],
 							 [<minecraft:redstone>, <sereneseasons:season_clock>, <minecraft:redstone>],
 							 [<minecraft:redstone>, <opencomputers:material:4>, <minecraft:redstone>]]);
-recipes.remove(<sereneseasons:season_sensor_winter>);
-recipes.addShaped(<sereneseasons:season_sensor_winter>, [[<minecraft:redstone>, <botania:rune:7>, <minecraft:redstone>],
+scripts.shared.recipeRemapShaped(<sereneseasons:season_sensor_winter>, [[<minecraft:redstone>, <botania:rune:7>, <minecraft:redstone>],
 							 [<minecraft:redstone>, <sereneseasons:season_clock>, <minecraft:redstone>],
 							 [<minecraft:redstone>, <opencomputers:material:4>, <minecraft:redstone>]]);
+// lol. lmao.
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:gas_cartridge>, <immersiveengineering:metal:38>, <contenttweaker:gas_cartridge_plate>, 500);
+mods.immersiveengineering.Blueprint.addRecipe("Metal Press Molds", <contenttweaker:gas_cartridge_plate>, [<immersiveengineering:metal:38>, <immersiveengineering:metal:38>,
+						     	   <immersiveengineering:metal:38>, <immersiveengineering:metal:38>,
+							   <immersiveengineering:metal:38>]);

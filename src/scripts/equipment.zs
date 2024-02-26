@@ -170,3 +170,92 @@ recipes.remove(<actuallyadditions:block_firework_box>);
 recipes.addShaped(<actuallyadditions:block_firework_box>, [[<mysticalagriculture:crafting:2>, <botania:manaresource>, <mysticalagriculture:crafting:2>],
 							   [<mekanism:enrichedalloy>, <actuallyadditions:block_misc:9>, <mekanism:enrichedalloy>],
 							   [<actuallyadditions:item_crystal:5>, <mekanism:controlcircuit>, <actuallyadditions:item_crystal:5>]]);
+//// exchangers
+recipes.remove(<exchangers:ie_exchanger_core_tier1>);
+recipes.addShaped(<exchangers:ie_exchanger_core_tier1>, [[<immersiveengineering:material:8>, <mekanism:enrichedalloy>, <immersiveengineering:material:8>],
+							 [<mekanism:enrichedalloy>, <actuallyadditions:item_crystal:5>, <mekanism:enrichedalloy>],
+							 [<immersiveengineering:material:8>, <mekanism:enrichedalloy>, <immersiveengineering:material:8>]]);
+recipes.remove(<exchangers:ie_exchanger_core_tier2>);
+recipes.addShaped(<exchangers:ie_exchanger_core_tier2>, [[<immersiveengineering:material:9>, <actuallyadditions:item_crystal_empowered:5>, <immersiveengineering:material:9>],
+							 [<mekanism:reinforcedalloy>, <exchangers:ie_exchanger_core_tier1>, <mekanism:reinforcedalloy>],
+							 [<immersiveengineering:material:9>, <actuallyadditions:item_crystal_empowered:5>, <immersiveengineering:material:9>]]);
+recipes.remove(<exchangers:ie_exchanger_core_tier3>);
+recipes.addShaped(<exchangers:ie_exchanger_core_tier3>, [[<mekanism:atomicalloy>, <botania:manaresource:4>, <mekanism:atomicalloy>],
+							 [<immersiveengineering:metal_decoration0:3>, <exchangers:ie_exchanger_core_tier2>, <immersiveengineering:metal_decoration0:3>],
+							 [<mekanism:atomicalloy>, <botania:manaresource:4>, <mekanism:atomicalloy>]]);
+recipes.remove(<exchangers:lv_exchanger>);
+recipes.addShaped(<exchangers:lv_exchanger>, [[<mekanism:plasticblock:14>, <projectred-core:resource_item:103>, <mekanism:plasticblock:14>],
+					      [<projectred-core:resource_item:103>, <exchangers:ie_exchanger_core_tier1>, <opencomputers:material:14>],
+					      [<mekanism:plasticblock:14>, <actuallyadditions:block_misc:4>, <mekanism:plasticblock:14>]]);
+recipes.remove(<exchangers:mv_exchanger>);
+recipes.addShaped(<exchangers:mv_exchanger>, [[<mekanism:plasticblock:11>, <projectred-core:resource_item:104>, <mekanism:plasticblock:11>],
+					      [<projectred-core:resource_item:104>, <exchangers:ie_exchanger_core_tier2>, <opencomputers:material:14>],
+					      [<mekanism:plasticblock:11>, <actuallyadditions:block_misc:9>, <mekanism:plasticblock:11>]]);
+recipes.remove(<exchangers:hv_exchanger>);
+recipes.addShaped(<exchangers:hv_exchanger>, [[<mekanism:plasticblock:2>, <actuallyadditions:item_crystal_empowered:1>, <mekanism:plasticblock:2>],
+					      [<actuallyadditions:item_crystal_empowered:1>, <exchangers:ie_exchanger_core_tier3>, <opencomputers:material:14>],
+					      [<mekanism:plasticblock:2>, <mekanism:basicblock:8>, <mekanism:plasticblock:2>]]);
+
+// sweet tunez
+recipes.remove(<betterrecords:radio>);
+recipes.addShaped(<betterrecords:radio>, [[null, <opencomputers:material:13>, null],
+					  [<immersiveengineering:treated_wood>, <actuallyadditions:item_misc:7>, <immersiveengineering:treated_wood>],
+					  [<immersiveengineering:treated_wood>, <actuallyadditions:block_misc:4>, <immersiveengineering:treated_wood>]]);
+recipes.remove(<betterrecords:recordplayer>);
+recipes.addShaped(<betterrecords:recordplayer>, [[<tconstruct:clear_glass>, <tconstruct:clear_glass>, <tconstruct:clear_glass>],
+						 [<minecraft:wool:15>, <actuallyadditions:item_misc:7>, <minecraft:wool:15>],
+						 [<immersiveengineering:treated_wood>, <actuallyadditions:block_misc:4>, <immersiveengineering:treated_wood>]]);
+recipes.remove(<betterrecords:frequencycrystal>);
+recipes.addShaped(<betterrecords:frequencycrystal>, [[null, <projectred-core:resource_item:103>, null],
+						     [<projectred-core:resource_item:104>, <opencomputers:material:13>, <projectred-core:resource_item:104>],
+						     [null, <projectred-core:resource_item:103>, null]]);
+recipes.remove(<betterrecords:record>);
+recipes.addShaped(<betterrecords:record>, [[null, <actuallyadditions:item_crystal:3>, null],
+					   [<actuallyadditions:item_crystal:3>, <mekanism:enrichedalloy>, <actuallyadditions:item_crystal:3>],
+					   [null, <actuallyadditions:item_crystal:3>, null]]);
+recipes.remove(<betterrecords:recordetcher>);
+recipes.addShaped(<betterrecords:recordetcher>, [[<immersiveengineering:material:3>, <immersiveengineering:metal:37>, <immersiveengineering:material:3>],
+						 [<immersiveengineering:treated_wood>, <opencomputers:material:13>, <immersiveengineering:treated_wood>],
+						 [<immersiveengineering:treated_wood>, <actuallyadditions:block_misc:9>, <immersiveengineering:treated_wood>]]);
+recipes.remove(<betterrecords:frequencytuner>);
+recipes.addShaped(<betterrecords:frequencytuner>, [[null, <immersiveposts:metal_rods:6>, null],
+						   [<immersiveengineering:metal:2>, <opencomputers:material:13>, <immersiveengineering:metal:2>],
+						   [<immersiveengineering:treated_wood>, <actuallyadditions:block_misc:9>, <immersiveengineering:treated_wood>]]);
+recipes.remove(<betterrecords:speaker>);
+recipes.remove(<betterrecords:speaker:1>);
+recipes.remove(<betterrecords:speaker:2>);
+recipes.addShaped(<betterrecords:speaker:2>, [[null, <immersiveengineering:treated_wood>, <minecraft:wool:15>],
+					      [null, <actuallyadditions:item_misc:8>, <minecraft:wool:15>],
+					      [null, <actuallyadditions:block_misc:9>, <minecraft:wool:15>]]);
+recipes.addShaped(<betterrecords:speaker:1>, [[null, <immersiveengineering:treated_wood>, <minecraft:wool:15>],
+					      [null, <actuallyadditions:item_misc:8>, <minecraft:wool:15>],
+					      [null, <actuallyadditions:block_misc:4>, <minecraft:wool:15>]]);
+recipes.addShaped(<betterrecords:speaker>, [[null, <immersiveengineering:treated_wood>, <minecraft:wool:15>],
+					    [null, <actuallyadditions:item_misc:7>, <minecraft:wool:15>],
+					    [null, <actuallyadditions:block_misc:4>, <minecraft:wool:15>]]);
+recipes.remove(<betterrecords:laser>);
+recipes.addShaped(<betterrecords:laser>, [[<immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>],
+					  [<mekanism:controlcircuit>, <realistictorches:glowstone_crystal>, <tconstruct:clear_glass>],
+					  [<immersiveengineering:material:8>, <actuallyadditions:block_misc:4>, <immersiveengineering:treated_wood>]]);
+recipes.remove(<betterrecords:strobelight>);
+recipes.addShaped(<betterrecords:strobelight>, [[null, null, null],
+					        [<immersiveengineering:treated_wood>, <projectred-illumination:lamp:16>, <immersiveengineering:treated_wood>],
+						[<projectred-core:resource_item:104>, <actuallyadditions:block_misc:4>, <projectred-core:resource_item:104>]]);
+recipes.remove(<betterrecords:lasercluster>);
+recipes.addShaped(<betterrecords:lasercluster>, [[<tconstruct:clear_glass>, <betterrecords:laser>, <tconstruct:clear_glass>],
+						 [<betterrecords:laser>, <mekanism:controlcircuit:1>, <betterrecords:laser>],
+						 [<immersiveengineering:treated_wood>, <actuallyadditions:block_misc:4>, <immersiveengineering:treated_wood>]]);
+recipes.remove(<betterrecords:wirecutters>);
+recipes.addShaped(<betterrecords:wirecutters>, [[null, null, null],
+					        [null, <immersiveengineering:tool:1>, null],
+						[null, <mekanism:plasticblock>, null]]);
+recipes.remove(<betterrecords:wire>);
+recipes.addShaped(<betterrecords:wire> * 4, [[<mekanism:plasticblock>, <immersiveengineering:material:20>, <mekanism:plasticblock>],
+					     [<immersiveengineering:material:20>, <actuallyadditions:item_crystal:1>, <immersiveengineering:material:20>],
+					     [<mekanism:plasticblock>, <immersiveengineering:material:20>, <mekanism:plasticblock>]]);
+
+// errata
+recipes.remove(<mysticalagriculture:master_infusion_crystal>);
+recipes.addShaped(<mysticalagriculture:master_infusion_crystal>, [[<mysticalagriculture:crafting:4>, <mysticalagriculture:crafting:5>, <mysticalagriculture:crafting:4>],
+								  [<mysticalagriculture:crafting:5>, <botania:manaresource:2>, <mysticalagriculture:crafting:5>],
+								  [<mysticalagriculture:crafting:4>, <mysticalagriculture:crafting:5>, <mysticalagriculture:crafting:4>]]);

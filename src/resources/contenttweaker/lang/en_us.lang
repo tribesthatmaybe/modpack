@@ -1,5 +1,9 @@
 # Bespoke / ttmb
 tile.contenttweaker.tan_sheetmetal.name=Tan Sheet Metal
+item.contenttweaker.gold_trinket.name=Golden Trinket
+item.contenttweaker.gas_cartridge.name=Empty Gas Cartridge
+item.contenttweaker.gas_cartridge_plate.name=Gas Cartridge Press
+
 # BOTANIA MATERIALS
 ########
 #

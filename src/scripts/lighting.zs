@@ -54,27 +54,8 @@ mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_paste> * 2,  <mysti
 mods.mekanism.combiner.addRecipe(<realistictorches:glowstone_paste> * 2,  <mekanism:biofuel>, <realistictorches:glowstone_crystal> * 3);
 
 // portable light sources
-val dyeArray = [
-    <ore:dyeBlack>,
-    <ore:dyeRed>,
-    <ore:dyeGreen>,
-    <ore:dyeBrown>,
-    <ore:dyeBlue>,
-    <ore:dyePurple>,
-    <ore:dyeCyan>,
-    <ore:dyeLightGray>,
-    <ore:dyeGray>,
-    <ore:dyePink>,
-    <ore:dyeLime>,
-    <ore:dyeYellow>,
-    <ore:dyeLightBlue>,
-    <ore:dyeMagenta>,
-    <ore:dyeOrange>,
-    <ore:dyeWhite>
-] as IOreDictEntry[];
-
 //// illumar
-for i, dye in dyeArray {
+for i, dye in dyeOreDictArray {
     val illumar = itemUtils.getItem("projectred-core:resource_item", (15 - i) + 500);
     recipes.remove(illumar);
     recipes.addShaped(illumar * 4, [[dye, <realistictorches:glowstone_paste>, dye],
@@ -106,7 +87,7 @@ for i in 0 .. 15 {
 
 
 //// mekanism glowies
-for i, dye in dyeArray {
+for i, dye in dyeOreDictArray {
     val glowpanel = itemUtils.getItem("mekanism:glowpanel", i);
     val glowplasticblock = itemUtils.getItem("mekanism:glowplasticblock", i);
     val illumar = itemUtils.getItem("projectred-core:resource_item", (15 - i) + 500);
@@ -150,7 +131,7 @@ recipes.addShaped(<quark:paper_lantern>, [[<minecraft:paper>, <tconstruct:large_
 					  [<minecraft:paper>, <tconstruct:large_plate>.withTag({Material: "paper"}), <minecraft:paper>]]);
 
 //// fairy lights
-for i, dye in dyeArray {
+for i, dye in dyeOreDictArray {
     // the lights
     val fairy_light = itemUtils.getItem("fairylights:light", i);
     val paper_lantern = itemUtils.getItem("fairylights:light", i + 16);
@@ -413,3 +394,6 @@ recipes.addShaped(<tconstruct:throwball> * 8, [[<minecraft:snowball>, <minecraft
 // glimmering wood?
 recipes.remove(<botania:livingwood:5>);
 recipes.addShapeless(<botania:livingwood:5>, [<botania:livingwood>, <realistictorches:glowstone_paste>]);
+//engineers decore lights
+scripts.shared.recipeRemapShaped(<engineersdecor:iron_inset_light>, [[null, null, null],[null, <realistictorches:glowstone_crystal>, null], [null, <immersiveengineering:metal:31>, null]]);
+scripts.shared.recipeRemapShaped(<engineersdecor:iron_floor_edge_light>, [[null, null, null],[null, null, null], [<immersiveengineering:metal:32>, <realistictorches:glowstone_crystal>, <immersiveengineering:metal:32>]]);

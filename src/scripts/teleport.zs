@@ -44,10 +44,11 @@ brewing.removeRecipe(<bountifulbaubles:potionrecall>, <minecraft:quartz>);
 brewing.addBrew(<bountifulbaubles:potionrecall>, <appliedenergistics2:material:46>, <bountifulbaubles:potionwormhole>);
 
 // stationary
-recipes.remove(<waystones:waystone>);
-recipes.addShaped(<waystones:waystone>, [[null, <botania:livingrock:4>, null],
-					 [<actuallyadditions:item_crystal_empowered:3>, <waystones:warp_stone>, <actuallyadditions:item_crystal_empowered:3>],
-					 [<botania:livingrock:4>, <botania:livingrock:4>, <botania:livingrock:4>]]);
+scripts.shared.recipeRemapShaped(<waystones:waystone>, [[null, <botania:livingrock:4>, null],
+						       	 [<actuallyadditions:item_crystal_empowered:3>, <waystones:warp_stone>, <actuallyadditions:item_crystal_empowered:3>],
+							 [<botania:livingrock:4>, <botania:livingrock:4>, <botania:livingrock:4>]]);
+// waystones unbreakable once placed
+<waystones:waystone>.hardness = -1;
 
 recipes.remove(<mekanism:basicblock:7>);
 recipes.addShaped(<mekanism:basicblock:7> * 3, [[<mekanism:ingot>, <actuallyadditions:item_crystal_empowered:1>, <mekanism:ingot>],
@@ -59,5 +60,10 @@ recipes.addShaped(<mekanism:machineblock:11>, [[<mekanism:reinforcedplasticblock
 					       [<mekanism:reinforcedplasticblock:2>, <actuallyadditions:block_misc:8>, <mekanism:reinforcedplasticblock:2>]]);
 // deep dark portal technically counts?
 recipes.remove(<extrautils2:teleporter:1>);
-mods.botania.RuneAltar.addRecipe(<extrautils2:teleporter:1>, [<botania:livingrock>, <botania:livingrock>, <botania:manaresource:8>, <botania:livingrock>, <mysticalagriculture:storage:1>,
-							     <actuallyadditions:item_crystal_empowered>, <mysticalagriculture:storage:1>], 2000);
+mods.botania.RuneAltar.addRecipe(<extrautils2:teleporter:1>, [<minecraft:ghast_tear>, <immersiveengineering:metal:32>,<immersiveengineering:metal:37>,
+							     <botania:manaresource:8>, <mysticalagriculture:storage:1>,
+							     <actuallyadditions:item_crystal_empowered>], 2000);
+// mystcraft portal "controller"
+recipes.remove(<mystcraft:blockbookreceptacle>);
+mods.botania.RuneAltar.addRecipe(<mystcraft:blockbookreceptacle>, [<mystcraft:blockcrystal>, <botania:manaresource>, <botania:manaresource:8>, <immersiveengineering:metal:37>,
+								   <mystcraft:blockcrystal>, <mysticalagriculture:storage:2>], 2500);

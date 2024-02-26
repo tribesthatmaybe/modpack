@@ -170,7 +170,12 @@ val MystiWidgets = [
                     <mysticalagriculture:crafting:52>,
                     <mysticalagriculture:crafting:53>,
                     <mysticalagriculture:crafting:54>,
-                    <mysticalagriculture:miners_torch>
+                    <mysticalagriculture:miners_torch>,
+		    <mysticalagriculture:chunk>,            // no crafting of chunks
+		    <mysticalagriculture:chunk:1>,
+    		    <mysticalagriculture:chunk:2>,
+    		    <mysticalagriculture:chunk:3>,
+    		    <mysticalagriculture:chunk:4>
 ] as IItemStack[];
 for widget in MystiWidgets {
   recipes.remove(widget);
@@ -229,7 +234,8 @@ var NarrativeTho = [
     <cfm:cookie_jar>,
     <cfm:esky:*>,
     <actuallyadditions:block_misc:7>,   // no idea what this "casing" is supposed to be used for?
-    <mekanism:nugget:3>           // glowstone nugget
+    <mekanism:nugget:3>,           // glowstone nugget
+    <storagedrawers:upgrade_conversion>
 ] as IItemStack[];
 for widget in NarrativeTho {
   mods.jei.JEI.removeAndHide(widget);
@@ -339,7 +345,12 @@ var tooMuchEquipment = [
     <mysticalworld:silver_chestplate>,
     <mysticalworld:silver_leggings>,
     <mysticalworld:silver_boots>,
-    <mysticalworld:copper_sword>
+    <mysticalworld:copper_sword>,
+    <actuallyadditions:block_coffee_machine>,        // aa coffee
+    <actuallyadditions:item_misc:14>,
+    <actuallyadditions:item_coffee_seed>,
+    <actuallyadditions:item_coffee_beans>,
+    <actuallyadditions:item_filling_wand>
 ] as IItemStack[];
 
 for widget in tooMuchEquipment {
@@ -738,7 +749,42 @@ val unncesaryThings = [
    <mekanismgenerators:reactor:3>,
    <mekanismgenerators:reactorglass>,
    <mekanismgenerators:reactorglass:1>,
-   <mekanismgenerators:hohlraum>
+   <mekanismgenerators:hohlraum>,
+   <malisisdoors:forcefielditem>,   // buggy a f
+   <minecraft:bow>,                  // turns out tc bows work with magic arrows
+   <vc:item_logic_chip>,             // using other chips
+   <botania:swapring>,
+   <actuallyadditions:block_farmer>,
+   <mekanism:electricbow>,
+   <mekanism:transmitter:6>.withTag({tier: 0}),   // thermo conductors
+   <mekanism:transmitter:6>.withTag({tier: 1}),
+   <mekanism:transmitter:6>.withTag({tier: 2}),
+   <mekanism:transmitter:6>.withTag({tier: 3}),
+   <mekanism:machineblock2:13>,            // laser junk
+   <mekanism:machineblock2:14>,
+   <mekanism:machineblock2:15>,
+   <mekanism:tierinstaller>,                // factory upgrades
+   <mekanism:tierinstaller:1>,
+   <mekanism:tierinstaller:2>,
+   <mekanism:tierinstaller:3>,
+   <mekanism:shard>,                        // not this level of ore proc
+   <mekanism:shard:1>,
+   <mekanism:shard:2>,
+   <mekanism:shard:3>,
+   <mekanism:shard:4>,
+   <mekanism:shard:5>,
+   <mekanism:shard:6>,
+   <actuallyadditions:item_drill_upgrade_speed>,
+   <actuallyadditions:item_drill_upgrade_speed_ii>,
+   <actuallyadditions:item_drill_upgrade_speed_iii>,
+   <actuallyadditions:item_drill_upgrade_silk_touch>,
+   <actuallyadditions:item_drill_upgrade_fortune_ii>,
+   <actuallyadditions:item_drill_upgrade_fortune>,
+   <actuallyadditions:item_drill_upgrade_three_by_three>,
+   <actuallyadditions:item_drill_upgrade_five_by_five>,
+   <actuallyadditions:item_drill_upgrade_block_placing>,
+   <actuallyadditions:item_coffee>,
+   <immersivetech:connectors>                 // superfluous
 ] as IItemStack[];
 
 for widget in unncesaryThings {
@@ -749,6 +795,8 @@ mods.jei.JEI.hide(<liquid:crystaloil>);
 mods.jei.JEI.hide(<liquid:empoweredoil>);
 mods.jei.JEI.hide(<forge:bucketfilled>.withTag({FluidName: "crystaloil"}));
 mods.jei.JEI.hide(<forge:bucketfilled>.withTag({FluidName: "empoweredoil"}));
+mods.jei.JEI.hide(<actuallyadditions:block_crystal_oil>);
+mods.jei.JEI.hide(<actuallyadditions:block_empowered_oil>);
 
 //// don't need to see these in jei
 // gravestones just appear
@@ -771,3 +819,9 @@ mods.jei.JEI.removeAndHide(<actuallyadditions:item_water_removal_ring>);
 
 // not using multiblock mekanism generators
 mods.mekanism.infuser.removeRecipe(<mekanismgenerators:hohlraum>);
+
+// not using aa drill
+for i in 0 .. 16 {
+    mods.jei.JEI.removeAndHide(itemUtils.getItem("actuallyadditions:item_drill", i));
+}
+mods.jei.JEI.removeAndHide(<actuallyadditions:item_misc:16>);
