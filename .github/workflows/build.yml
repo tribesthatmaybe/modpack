@@ -18,11 +18,32 @@ jobs:
       container_version: ${{steps.version_meta.outputs.container_version}}
     env:
       CONTAINER_TOKEN: "${{secrets.CONTAINER_TOKEN}}"
+      ART_PAT: "${{secrets.ART_PAT}}"
     steps:
       - id: "checkout"
         uses: "actions/checkout@v2"
         with:
           fetch-depth: 1
+      - id: get_dependencies
+        # Ubuntu latest does not have wget or unzip installed by default
+        name: "Get dependencies"
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install wget unzip
+      - id: fetch_artifacts
+        name: "fetch ARTifacts"
+        # Credit to https://gist.github.com/umohi/bfc7ad9a845fc10289c03d532e3d2c2f
+        # want to pin to tags for releases, but currently no tags in art to
+        # which to pin.
+        run: |
+          artifact=textures-latest
+          list_asset_url=https://api.github.com/repos/tribesthatmaybe/art_source/actions/artifacts
+          asset_url=$(curl "${list_asset_url}" | jq ".artifacts[] | select(.name==\"${artifact}\") | .url" | sed 's/\"//g')/zip
+          curl -s -L -H "Authorization: token ${ART_PAT}" -o textures-latest.zip $asset_url
+          unzip -od src/resources textures-latest.zip  || cat textures-latest.zip
+          # The above should fail eventually, but put the cat in to debug, so re-do the unzip so it fails if it does
+          unzip -od src/resources textures-latest.zip
+
       - name: "generate config"
         id: "configgen"
         run: 'echo "twitch_token: ${{ secrets.CURSE_TOKEN }}" > config.yml'
