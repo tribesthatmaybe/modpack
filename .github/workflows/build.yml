@@ -115,7 +115,7 @@ jobs:
           ref: "mainline"
           fetch-depth: 1
       - name: "fetch server artifact"
-        uses: "actions/download-artifact@v2"
+        uses: "actions/download-artifact@v4.1.7"
         with:
           name: "ttmb-server-${{needs.build.outputs.version}}"
           path: "server-artifact"
@@ -154,12 +154,12 @@ jobs:
           ref: "mainline"
           fetch-depth: 1
       - name: "fetch server artifact"
-        uses: "actions/download-artifact@v2"
+        uses: "actions/download-artifact@v4.1.7"
         with:
           name: "ttmb-server-${{needs.build.outputs.version}}"
           path: "server-artifact"
       - name: "fetch client artifact"
-        uses: "actions/download-artifact@v2"
+        uses: "actions/download-artifact@v4.1.7"
         with:
           name: "ttmb-client-${{needs.build.outputs.version}}"
           path: "client-artifact"
