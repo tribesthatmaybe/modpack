@@ -1192,7 +1192,7 @@ val otherSqueezed = [
     <immersiveengineering:seed>
 ] as IItemStack[];
 for aSeed in otherSqueezed {
-    mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil>, Mplants2:apocynum_c>, 256);
+    mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil>, aSeed, 256);
 }
 
 // mystical seeds are cheap on power and return essence

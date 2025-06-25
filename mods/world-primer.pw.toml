@@ -1,0 +1,13 @@
+name = "World Primer"
+filename = "worldprimer-1.12.2-0.6.0-dev.20200122.211517.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4a8a76e897b0b03623b51f5f0d737cd36e237e54"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 2866063
+project-id = 258911

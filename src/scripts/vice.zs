@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2020 Jonathan Freedman <jonafree@gmail.com>
+Copyright (c) 2020-2025 Jonathan Freedman <jonafree@gmail.com>
 
 The MIT License
 

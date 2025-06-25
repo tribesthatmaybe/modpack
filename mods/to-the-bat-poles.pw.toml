@@ -1,0 +1,13 @@
+name = "\"To the Bat Poles!\""
+filename = "AdPoles-1.12.2-2.0.3.0-build.0552.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b7cce1329bf0e34dc0ac83fe11c0506f86ce910a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3068992
+project-id = 272190

@@ -1,0 +1,13 @@
+name = "Lore Expansion"
+filename = "LoreExpansion-1.12-1.1.7-13.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0975dbf8ec751a36b5fa53d0d69415d57b93a985"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 2537201
+project-id = 228897

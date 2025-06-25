@@ -1,0 +1,13 @@
+name = "Better Than Llamas (Forge)"
+filename = "BetterThanLlamas-1.12.1-1.0.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "3d0ba5f1d1fb351f684f4818d23c0542cec43efd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 2477842
+project-id = 264161

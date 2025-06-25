@@ -1,0 +1,13 @@
+name = "Controlled Burn"
+filename = "Controlled Burn-1.12.2.024.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "66869a4e7b70c58ed0eae7e06d418ecd3307dba5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6599931
+project-id = 306335

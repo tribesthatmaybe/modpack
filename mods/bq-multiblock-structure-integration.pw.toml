@@ -1,0 +1,13 @@
+name = "Better Questing - Multiblock and Structure Integration"
+filename = "BQ_Multiblock_Structure_Integration-1.0.9.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e6c40fbfa0020892e0ea4288e657f8910816ae85"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4448656
+project-id = 375285

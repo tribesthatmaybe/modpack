@@ -18,13 +18,6 @@ versiongen:
 
 container_build: versiongen
 	mkdir -p deps
-ifdef PACKMAKER
-	rm -rf deps/packmaker && \
-		cp -r $(PACKMAKER) deps/packmaker && \
-		rm -rf deps/packmaker/.git
-else
-	rm -rf deps/packmaker
-endif
 	docker build \
 		--tag $(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		.
@@ -35,6 +28,12 @@ container_shell: container_build
 		-u "$(shell id -u):$(shell id -g)" \
 		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		shell
+
+copy: loregen
+	[ -d build/pack ] && rm -rf build/pack || true
+	mkdir -p build/pack/mods
+	cp -r mods/*.toml src/mods/*.jar build/pack/mods
+	cp -r src/config src/customnpcs src/*.txt src/resources src/scripts src/structures build/pack
 
 update: container_build
 	docker run \
@@ -52,19 +51,18 @@ lock: container_build
 		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		lock
 
-client: container_build versiongen loregen
-	rm -rf build/curseforge
+client: container_build versiongen copy
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
 		-u "$(shell id -u):$(shell id -g)" \
 		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
-		build
+		client
 	mkdir -p artifacts
 	VERSION=$$(cat $(shell pwd)/.version) ; \
-	cp build/release/ttmb-$${VERSION}.zip $(ARTIFACTS)/ttmb-client-$${VERSION}.zip
+	cp build/release/ttmb-client-$${VERSION}.zip $(ARTIFACTS)
 
-server: container_build versiongen loregen
+server: container_build versiongen copy
 	rm -f build/server/mods/* $(ARTIFACTS)/ttmb-server-$(VERSION).zip
 	docker run \
 		--rm \
@@ -79,11 +77,11 @@ server: container_build versiongen loregen
 build: client server
 
 clean:
-	rm -rf build/server build/release .version .version-container
+	rm -rf build/pack build/server build/release .version .version-container
 	rm -f src/config/loreexpansion/lore/*.json src/structures/active/lore_*.rcig
 
 distclean: clean
-	rm -rf build curseforge.db packmaker.lock config.yml .venv
+	rm -rf build curseforge.db config.yml .venv artifacts
 
 github_client: client
 	mkdir -p artifacts/github/client
@@ -100,5 +98,6 @@ loregen: container_build
 	docker run \
 		--rm \
 		-v "$(shell pwd):/mnt" \
+		-u "$(shell id -u):$(shell id -g)" \
 		$(DOCKER_IMAGE):$(shell cat $(shell pwd)/.version-container) \
 		loregen

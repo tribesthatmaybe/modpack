@@ -1,0 +1,13 @@
+name = "Tribes That May Be"
+author = "Jonathan Freedman"
+version = "2.2.1-alpha.1+cb5c5e9a.542326503.319"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "2852b2efce967f3e693a1bdf2e27d67d4fadeee6e660d81b55ea37f3df37d1cd"
+
+[versions]
+forge = "14.23.5.2860"
+minecraft = "1.12.2"

@@ -1,0 +1,13 @@
+name = "ExtraSkills"
+filename = "extraskills-1.12.2-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b0fcc920ba42f26fdd40459c72c255c807dc3f92"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 2552823
+project-id = 292163

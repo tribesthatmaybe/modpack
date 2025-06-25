@@ -1,0 +1,13 @@
+name = "Localized Chat"
+filename = "localizedchat-1.12.2-4.1.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5e2f812ab7decd1b14d2c9ab332401d7ea334f28"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3510931
+project-id = 292502

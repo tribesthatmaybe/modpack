@@ -1,0 +1,13 @@
+name = "Better Animal Models"
+filename = "betteranimals-1.12.2-5.5.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "e9c8500f07e52a20a05214c2d8f662e943716b0f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3231446
+project-id = 287443

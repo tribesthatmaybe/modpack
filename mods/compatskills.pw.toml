@@ -1,0 +1,13 @@
+name = "CompatSkills"
+filename = "CompatSkills-1.12.2-1.17.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d984e2e532c3fa6516f8c441bd3f727fe9fc891e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 2815688
+project-id = 290541

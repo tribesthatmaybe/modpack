@@ -1,0 +1,13 @@
+name = "Immersive Posts"
+filename = "ImmersivePosts-0.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7f8b97e25ed8072715f558cc6efe7f7997f492b7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 2951672
+project-id = 314645

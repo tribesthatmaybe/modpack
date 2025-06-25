@@ -1,0 +1,13 @@
+name = "ViesCraft Machines"
+filename = "vc-1.12.2-5.10-final.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "52c3b8d112b8bc435e432898c4a095e8f279492f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3906332
+project-id = 246795

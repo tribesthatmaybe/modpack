@@ -6,18 +6,11 @@ problems() {
     exit 1
 }
 
-PACKMAKER_CONFIG="/tmp/packmaker.conf"
-gen_config() {
-    if [ ! -e "$PACKMAKER_CONFIG" ] ; then
-        if [ ! -e "/mnt/config.yml" ] ; then
-            problems "Unable to find config"
-        fi
-
-        jinja2 \
-            -o "$PACKMAKER_CONFIG" \
-            /usr/local/share/ttmb/curseforge.conf.j2 \
-            /mnt/config.yml
-    fi
+gen_configs() {
+    jinja2 \
+	-o "/mnt/build/pack/pack.toml" \
+	-D "version=$(cat /mnt/.version)" \
+	/mnt/templates/pack.toml.j2
 }
 
 ACTION="shell"
@@ -36,29 +29,16 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-if [ -d "/packmaker" ] && [ -e "/packmaker/setup.py" ] ; then
-    echo "packmaker override!"
-    cd /packmaker
-    sudo python3 setup.py install
-fi
-
-if [ "$ACTION" == "update" ] ; then
-    gen_config
-    cd /mnt
-    TTMB_VERSION="$(cat .version)" packmaker --config "$PACKMAKER_CONFIG" updatedb
-    TTMB_VERSION="$(cat .version)" packmaker --config "$PACKMAKER_CONFIG" findupdates
-elif [ "$ACTION" == "lock" ] ; then
-    gen_config
-    cd /mnt
-    TTMB_VERSION="$(cat .version)" packmaker --config "$PACKMAKER_CONFIG" lock
-elif [ "$ACTION" == "build" ] ; then
-    gen_config
-    cd /mnt
-    TTMB_VERSION="$(cat .version)" packmaker --config "$PACKMAKER_CONFIG" build-curseforge
-elif [ "$ACTION" == "server" ] ; then
-    gen_config
-    cd /mnt
-    TTMB_VERSION="$(cat .version)" packmaker --config "$PACKMAKER_CONFIG" build-server
+if [ "$ACTION" == "client" ] ; then
+    gen_configs
+    cd /mnt/build/pack
+    if [ ! -d "/mnt/build/release" ] ; then
+	mkdir -p "/mnt/build/release"
+    fi
+    cp /mnt/index.toml /mnt/build/pack
+    packwiz refresh
+    packwiz curseforge export \
+	    --output "/mnt/build/release/ttmb-client-$(cat /mnt/.version).zip"
 elif [ "$ACTION" == "loregen" ] ; then
     cd /mnt
     ./scripts/loregen.py

@@ -1,0 +1,13 @@
+name = "Plants"
+filename = "Plants-1.12.2-2.10.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f1f887be1d63e3d1376dbc9d40ef8ec5e334ec2a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 2697165
+project-id = 257229

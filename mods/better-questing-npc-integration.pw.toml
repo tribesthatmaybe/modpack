@@ -1,0 +1,13 @@
+name = "Better Questing - NPC Integration"
+filename = "NPCIntegration-3.4.34.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6f3aad03e57b882299013e751740f5bb26134011"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 2787291
+project-id = 241475

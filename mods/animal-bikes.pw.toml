@@ -1,0 +1,13 @@
+name = "Animal Bikes"
+filename = "AnimalBikes_1.12.2(13Jan19).jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f3631e37251cbdcea57a573b4675c06761ad8bb8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 2659790
+project-id = 222718

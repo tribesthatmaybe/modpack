@@ -1,0 +1,13 @@
+name = "Better Questing - Standard Expansion"
+filename = "StandardExpansion-3.4.173.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "aeea1502862382cf9859c495f1494e2bc7cc1d33"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 2863771
+project-id = 238857
