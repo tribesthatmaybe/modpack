@@ -159,7 +159,7 @@ recipes.remove(<fossil:bio_goo>);
 // mekanism oredict doesn't work?
 var gooeyItems as IItemStack[] = [
     <minecraft:slime_ball>,
-    <actuallyadditions:item_misc:12>,    // tice ball
+    <actuallyadditions:item_misc:12>,    // rice ball
     <tconstruct:edible:1>,               // tc slimese
     <tconstruct:edible:2>,
     <tconstruct:edible:3>,
@@ -168,7 +168,13 @@ var gooeyItems as IItemStack[] = [
     <immersivepetroleum:material>        // bitumen
 ];
 for item in gooeyItems {
-    mods.mekanism.reaction.addRecipe(item * 2, <liquid:biomass> * 2500, <gas:hydrogenchloride> * 5000, <fossil:bio_goo>, <gas:water>, 25000, 6000);
+    mods.mekanism.reaction.addRecipe(item * 2,
+				     <liquid:biomass> * 2500,
+				     <gas:hydrogenchloride> * 5000,
+				     <fossil:bio_goo>,
+				     <gas:water>,
+				     25000,
+				     6000);
 }
 
 // add back in bio fuel as we lost it when we pulled mekanism crusher

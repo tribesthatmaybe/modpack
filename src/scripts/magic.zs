@@ -3,41 +3,65 @@ import crafttweaker.item.IItemTransformer;
 
 //// parts
 // manaweave cloth
-scripts.shared.recipeRemapShaped(<botania:manaresource:22>, [[<botania:manaresource:16>, null, <botania:manaresource:16>],
-					      [null, <mysticalagriculture:crafting:23>, null],
-					      [<botania:manaresource:16>, null, <botania:manaresource:16>]]);
+scripts.shared.recipeRemapShaped(<botania:manaresource:22>, [
+    [<botania:manaresource:16>, null, <botania:manaresource:16>],
+    [null, <mysticalagriculture:crafting:23>, null],
+    [<botania:manaresource:16>, null, <botania:manaresource:16>]
+]);
+
 // eu magical wood
 recipes.remove(<extrautils2:decorativesolidwood:1>);
-mods.botania.RuneAltar.addRecipe(<extrautils2:decorativesolidwood:1>, [<ore:plankWood>, <minecraft:gold_ingot>], 50);
+mods.botania.RuneAltar.addRecipe(<extrautils2:decorativesolidwood:1>,
+				 [<ore:plankWood>, <minecraft:gold_ingot>],
+				 50);
 
 //// botania
 // magic relies upon essence
-scripts.shared.recipeRemapShaped(<botania:lexicon>, [[null, <ore:plant>, null],
-				      [<mysticalagriculture:crafting>, <minecraft:book>, <mysticalagriculture:crafting>],
-				      [null, <botania:dye:*>, null]]);
+scripts.shared.recipeRemapShaped(<botania:lexicon>, [
+    [null, <ore:plant>, null],
+    [<mysticalagriculture:crafting>, <minecraft:book>, <mysticalagriculture:crafting>],
+    [null, <botania:dye:*>, null]
+]);
+
 // do not allow use of any dye
-scripts.shared.recipeRemapShaped(<botania:fertilizer>, [[null, <botania:petal:*>, null],
-					 [<mysticalagriculture:crafting>, <minecraft:dye:15>, <mysticalagriculture:crafting>],
-					 [null, <botania:petal:*>, null]]);
+scripts.shared.recipeRemapShaped(<botania:fertilizer>, [
+    [null, <botania:petal:*>, null],
+    [<mysticalagriculture:crafting>, <minecraft:dye:15>, <mysticalagriculture:crafting>],
+    [null, <botania:petal:*>, null]
+]);
+
 // block equipment
-scripts.shared.recipeRemapShaped(<botania:altar>, [[<tconstruct:large_plate>.withTag({Material: "stone"}), <botania:petal:*>, <tconstruct:large_plate>.withTag({Material: "stone"})],
-				    [null, <actuallyadditions:block_misc:4>, null],
-				    [<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]]);
-scripts.shared.recipeRemapShaped(<botania:runealtar>, [[null, null, null],
-				        [<botania:livingrock:1>, <mysticalagriculture:crafting:38>, <botania:livingrock:1>],
-					[<botania:livingrock:1>, <botania:manaresource:1>, <botania:livingrock:1>]]);
-scripts.shared.recipeRemapShaped(<botania:opencrate>, [[<immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>],
-				        [<botania:livingwood:1>, null, <botania:livingwood:1>],
-					[<botania:livingwood:1>, null, <botania:livingwood:1>]]);
-scripts.shared.recipeRemapShaped(<botania:spreader>, [[<mysticalagriculture:crafting:33>, <botania:livingwood:1>, <botania:livingwood:1>],
-				       [<tconstruct:clear_glass>, <actuallyadditions:block_misc:4>, <botania:livingwood:1>],
-				       [<mysticalagriculture:crafting:33>, <botania:livingwood:1>, <botania:livingwood:1>]]);
-scripts.shared.recipeRemapShaped(<botania:lens>, [[null, <botania:manaresource>, null],
-				   [<botania:manaresource>, <tconstruct:clear_glass>, <botania:manaresource>],
-				   [null, <botania:manaresource>, null]]);
-scripts.shared.recipeRemapShaped(<botania:rfgenerator>, [[<botania:livingrock>, <mekanism:compressedredstone>, <botania:livingrock>],
-					  [<immersiveengineering:metal_decoration0:6>, <actuallyadditions:block_misc:9>, <immersiveengineering:metal_decoration0:6>],
-					  [<botania:livingrock>, <tconstruct:large_plate>.withTag({Material: "manasteel"}), <botania:livingrock>]]);
+scripts.shared.recipeRemapShaped(<botania:altar>, [
+    [<tconstruct:large_plate>.withTag({Material: "stone"}), <botania:petal:*>, <tconstruct:large_plate>.withTag({Material: "stone"})],
+    [null, <actuallyadditions:block_misc:4>, null],
+    [<minecraft:stone_slab:3>, <minecraft:cobblestone>, <minecraft:stone_slab:3>]
+]);
+scripts.shared.recipeRemapShaped(<botania:runealtar>, [
+    [null, null, null],
+    [<botania:livingrock:1>, <mysticalagriculture:crafting:38>, <botania:livingrock:1>],
+    [<botania:livingrock:1>, <botania:manaresource:1>, <botania:livingrock:1>]
+]);
+scripts.shared.recipeRemapShaped(<botania:opencrate>, [
+    [<immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>],
+    [<botania:livingwood:1>, null, <botania:livingwood:1>],
+    [<botania:livingwood:1>, null, <botania:livingwood:1>]
+]);
+scripts.shared.recipeRemapShaped(<botania:spreader>, [
+    [<mysticalagriculture:crafting:33>, <botania:livingwood:1>, <botania:livingwood:1>],
+    [<tconstruct:clear_glass>, <actuallyadditions:block_misc:4>, <botania:livingwood:1>],
+    [<mysticalagriculture:crafting:33>, <botania:livingwood:1>, <botania:livingwood:1>]
+]);
+scripts.shared.recipeRemapShaped(<botania:lens>, [
+    [null, <botania:manaresource>, null],
+    [<botania:manaresource>, <tconstruct:clear_glass>, <botania:manaresource>],
+    [null, <botania:manaresource>, null]
+]);
+scripts.shared.recipeRemapShaped(<botania:rfgenerator>, [
+    [<botania:livingrock>, <mekanism:compressedredstone>, <botania:livingrock>],
+    [<immersiveengineering:metal_decoration0:6>, <actuallyadditions:block_misc:9>, <immersiveengineering:metal_decoration0:6>],
+    [<botania:livingrock>, <tconstruct:large_plate>.withTag({Material: "manasteel"}), <botania:livingrock>]
+]);
+
 // velocity lens
 scripts.shared.recipeRemapShaped(<botania:lens:1>, [[null, <botania:rune:3>, null],
 				     [<mysticalagriculture:crafting:24>, <botania:lens>, <mysticalagriculture:crafting:24>],

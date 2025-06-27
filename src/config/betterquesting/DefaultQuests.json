@@ -966,24 +966,6 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "minecraft:book",
-              "Count:3": 4,
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "quark:custom_bookshelf",
-              "Count:3": 1,
-              "Damage:2": 4,
-              "OreDict:8": "bookshelf"
-            },
-            "2:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
               "id:8": "akashictome:tome",
               "Count:3": 1,
               "Damage:2": 0,
@@ -3070,12 +3052,6 @@
               "OreDict:8": ""
             }
           }
-        },
-        "1:10": {
-          "amount:3": 1,
-          "rewardID:8": "bq_standard:xp",
-          "isLevels:1": 1,
-          "index:3": 1
         }
       }
     },
@@ -3678,10 +3654,10 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "allowSmelt:1": 0,
+          "allowSmelt:1": 1,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "allowCraft:1": 1,
+          "allowCraft:1": 0,
           "allowAnvil:1": 0,
           "requiredItems:9": {
             "0:10": {
@@ -7573,7 +7549,7 @@
     "78:10": {
       "questID:3": 78,
       "preRequisites:11": [
-        55
+        30
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11368,14 +11344,10 @@
       },
       "tasks:9": {
         "0:10": {
-          "orig_data:10": {
-            "npcDialogID:3": 10,
-            "description:8": "Talk to an NPC",
-            "index:3": 0,
-            "taskID:8": "bq_npc_integration:npc_dialog"
-          },
+          "npcDialogID:3": 10,
+          "description:8": "Talk to an NPC",
           "index:3": 0,
-          "taskID:8": "betterquesting:placeholder"
+          "taskID:8": "bq_npc_integration:npc_dialog"
         }
       },
       "rewards:9": {
@@ -11517,7 +11489,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Stop. Mallet Time.",
-          "desc:8": "You are going to be moving around a lot, and you are probably going to not want to always sleep outside. There are a variety of portable tents you can make. Once you place these tents down for the first time, a small \"pocket dimension\" is created for the interior. Things you place inside will stay there. If you place a bed in your tent and sleep in there, it will act as your spawn. You can also pick up your tent and take it with you as well.\n\nWe are going to start with a bedouin tent but there are several to choose from. Look for items from the \"Nomadic Tents\" mod in JEI.\n\nYou are going to need a lot of sisal (can be found in desert gardens) in order to make a lot of string in order to make a lot of cotton in order to make a handful of bedouin tent pieces. Use these five bedouin tent pieces to construct a small bedouin tent.\n\nAnd a Tent Mallet. We are going to need another hammer.\n\nNomadic Tents act as small homes which you may pack up and bring with you on adventures. They are easily upgradeable and provide a bit of protection at night from the outside world.\n\nTo place your tent, place it down in small clearing. It needs 5x5 unobstructed space. The tent will then be framed out, and you can use (right click) the Tent Mallet on the frame to build it. Once you find gold, you can make an upgraded tent mallet to do this in a single click.\n\nYou can enter/exit your tent by walking through or right clicking on the door. You can pack up your tent by right clicking on the door (when outside) with the Tent Mallet."
+          "desc:8": "You are going to be moving around a lot, and you are probably going to not want to always sleep outside. There are a variety of portable tents you can make. Once you place these tents down for the first time, a small \"pocket dimension\" is created for the interior. Things you place inside will stay there. If you place a bed in your tent and sleep in there, it will act as your spawn. You can also pick up your tent and take it with you as well.\n\nWe are going to start with a bedouin tent but there are several to choose from. Look for items from the \"Nomadic Tents\" mod in JEI.\n\nYou are going to need a lot of sisal (can be found in desert gardens) in order to make a lot of string in order to make a lot of cotton in order to make a handful of bedouin tent pieces. Use these six bedouin tent pieces to construct a small bedouin tent.\n\nAnd a Tent Mallet. We are going to need another hammer.\n\nNomadic Tents act as small homes which you may pack up and bring with you on adventures. They are easily upgradeable and provide a bit of protection at night from the outside world.\n\nTo place your tent, place it down in small clearing. It needs 5x5 unobstructed space. The tent will then be framed out, and you can use (right click) the Tent Mallet on the frame to build it. Once you find gold, you can make an upgraded tent mallet to do this in a single click.\n\nYou can enter/exit your tent by walking through or right clicking on the door. You can pack up your tent by right clicking on the door (when outside) with the Tent Mallet."
         }
       },
       "tasks:9": {
@@ -11543,7 +11515,7 @@
                 "customnpcs:itemscripteddata:10": {}
               },
               "id:8": "yurtmod:bed_wall_piece",
-              "Count:3": 5,
+              "Count:3": 6,
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -14429,34 +14401,30 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "betterquesting:placeholder",
-          "orig_data:10": {
-            "Sender:8": "The Food Council",
-            "rewardID:8": "bq_npc_integration:npc_mail",
-            "BeenRead:1": 0,
-            "Message:10": {
-              "pages:9": {
-                "0:8": "We see you have managed to aquire the source of foods from outside that cursed desert. Come find us, now that we have something to talk about...."
-              }
-            },
-            "MailItems:9": {
-              "0:10": {
-                "Slot:1": 0,
-                "ForgeCaps:10": {
-                  "customnpcs:itemscripteddata:10": {}
-                },
-                "id:8": "cyclicmagic:sprout_seed",
-                "Count:1": 1,
-                "Damage:2": 0
-              }
-            },
-            "MailQuest:3": -1,
-            "TimePast:4": 1708896134593,
-            "index:3": 0,
-            "Time:4": 0,
-            "Subject:8": "Trade Opportunity"
+          "Sender:8": "The Food Council",
+          "rewardID:8": "bq_npc_integration:npc_mail",
+          "BeenRead:1": 0,
+          "Message:10": {
+            "pages:9": {
+              "0:8": "We see you have managed to aquire the source of foods from outside that cursed desert. Come find us, now that we have something to talk about...."
+            }
           },
-          "index:3": 0
+          "MailItems:9": {
+            "0:10": {
+              "Slot:1": 0,
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "cyclicmagic:sprout_seed",
+              "Count:1": 1,
+              "Damage:2": 0
+            }
+          },
+          "MailQuest:3": -1,
+          "TimePast:4": 1750975139264,
+          "index:3": 0,
+          "Time:4": 0,
+          "Subject:8": "Trade Opportunity"
         }
       }
     },
@@ -15428,24 +15396,20 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "betterquesting:placeholder",
-          "orig_data:10": {
-            "Sender:8": "Bonnie",
-            "rewardID:8": "bq_npc_integration:npc_mail",
-            "BeenRead:1": 0,
-            "Message:10": {
-              "pages:9": {
-                "0:8": "Someone told me that you have found a shadow fragment. I\u0027ve heard, from someone else, that there is a market in things which can only be found with enough shadow fragments.\n\nPlease come see me, or one of my sisters, at your earliest convenience."
-              }
-            },
-            "MailItems:9": {},
-            "MailQuest:3": -1,
-            "TimePast:4": 1708896134593,
-            "index:3": 0,
-            "Time:4": 0,
-            "Subject:8": "A modest request"
+          "Sender:8": "Bonnie",
+          "rewardID:8": "bq_npc_integration:npc_mail",
+          "BeenRead:1": 0,
+          "Message:10": {
+            "pages:9": {
+              "0:8": "Someone told me that you have found a shadow fragment. I\u0027ve heard, from someone else, that there is a market in things which can only be found with enough shadow fragments.\n\nPlease come see me, or one of my sisters, at your earliest convenience."
+            }
           },
-          "index:3": 0
+          "MailItems:9": {},
+          "MailQuest:3": -1,
+          "TimePast:4": 1750975139264,
+          "index:3": 0,
+          "Time:4": 0,
+          "Subject:8": "A modest request"
         },
         "1:10": {
           "rewardID:8": "bq_standard:item",
@@ -26056,24 +26020,20 @@
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "betterquesting:placeholder",
-          "orig_data:10": {
-            "Sender:8": "Brewers Guild",
-            "rewardID:8": "bq_npc_integration:npc_mail",
-            "BeenRead:1": 0,
-            "Message:10": {
-              "pages:9": {
-                "0:8": "Hi we\u0027ll buy your beer etc etc more npcs"
-              }
-            },
-            "MailItems:9": {},
-            "MailQuest:3": -1,
-            "TimePast:4": 1708896134594,
-            "index:3": 0,
-            "Time:4": 0,
-            "Subject:8": "Ingots 4 Beer"
+          "Sender:8": "Brewers Guild",
+          "rewardID:8": "bq_npc_integration:npc_mail",
+          "BeenRead:1": 0,
+          "Message:10": {
+            "pages:9": {
+              "0:8": "Hi we\u0027ll buy your beer etc etc more npcs"
+            }
           },
-          "index:3": 0
+          "MailItems:9": {},
+          "MailQuest:3": -1,
+          "TimePast:4": 1750975139264,
+          "index:3": 0,
+          "Time:4": 0,
+          "Subject:8": "Ingots 4 Beer"
         }
       }
     },
@@ -42174,24 +42134,20 @@
           }
         },
         "1:10": {
-          "rewardID:8": "betterquesting:placeholder",
-          "orig_data:10": {
-            "Sender:8": "Some Vendor (tbd)",
-            "rewardID:8": "bq_npc_integration:npc_mail",
-            "BeenRead:1": 0,
-            "Message:10": {
-              "pages:9": {
-                "0:8": "Something something bring us some tropical fruit"
-              }
-            },
-            "MailItems:9": {},
-            "MailQuest:3": -1,
-            "TimePast:4": 1708896134594,
-            "index:3": 1,
-            "Time:4": 0,
-            "Subject:8": "Ethical Kiwi Sourcing"
+          "Sender:8": "Some Vendor (tbd)",
+          "rewardID:8": "bq_npc_integration:npc_mail",
+          "BeenRead:1": 0,
+          "Message:10": {
+            "pages:9": {
+              "0:8": "Something something bring us some tropical fruit"
+            }
           },
-          "index:3": 1
+          "MailItems:9": {},
+          "MailQuest:3": -1,
+          "TimePast:4": 1750975139265,
+          "index:3": 1,
+          "Time:4": 0,
+          "Subject:8": "Ethical Kiwi Sourcing"
         }
       }
     },
@@ -45188,28 +45144,28 @@
         "0:10": {
           "sizeX:3": 24,
           "x:3": -252,
-          "y:3": -252,
+          "y:3": -216,
           "id:3": 0,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -360,
-          "y:3": -144,
+          "x:3": -396,
+          "y:3": -180,
           "id:3": 1,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -216,
+          "x:3": -492,
           "y:3": -324,
           "id:3": 2,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -360,
-          "y:3": -108,
+          "x:3": -480,
+          "y:3": -216,
           "id:3": 6,
           "sizeY:3": 24
         },
@@ -45230,14 +45186,14 @@
         "6:10": {
           "sizeX:3": 24,
           "x:3": -216,
-          "y:3": -252,
+          "y:3": -216,
           "id:3": 12,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -324,
-          "y:3": -324,
+          "x:3": -288,
+          "y:3": -288,
           "id:3": 20,
           "sizeY:3": 24
         },
@@ -45257,8 +45213,8 @@
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": -324,
-          "y:3": -108,
+          "x:3": -432,
+          "y:3": -180,
           "id:3": 24,
           "sizeY:3": 24
         },
@@ -45272,13 +45228,13 @@
         "12:10": {
           "sizeX:3": 24,
           "x:3": -252,
-          "y:3": -180,
+          "y:3": -144,
           "id:3": 26,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -252,
+          "x:3": -324,
           "y:3": -108,
           "id:3": 30,
           "sizeY:3": 24
@@ -45376,29 +45332,29 @@
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": -360,
-          "y:3": -324,
+          "x:3": -288,
+          "y:3": -72,
           "id:3": 78,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": -144,
+          "x:3": -324,
+          "y:3": -72,
           "id:3": 90,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": -108,
+          "x:3": -360,
+          "y:3": -72,
           "id:3": 93,
           "sizeY:3": 24
         },
         "30:10": {
           "sizeX:3": 24,
           "x:3": -252,
-          "y:3": -216,
+          "y:3": -180,
           "id:3": 97,
           "sizeY:3": 24
         },
@@ -45411,57 +45367,57 @@
         },
         "32:10": {
           "sizeX:3": 24,
-          "x:3": -288,
+          "x:3": -252,
           "y:3": -288,
           "id:3": 122,
           "sizeY:3": 24
         },
         "33:10": {
           "sizeX:3": 24,
-          "x:3": -288,
-          "y:3": -108,
+          "x:3": -324,
+          "y:3": -180,
           "id:3": 147,
           "sizeY:3": 24
         },
         "34:10": {
           "sizeX:3": 24,
           "x:3": -252,
-          "y:3": -288,
+          "y:3": -252,
           "id:3": 190,
           "sizeY:3": 24
         },
         "35:10": {
           "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": -288,
+          "x:3": -420,
+          "y:3": -324,
           "id:3": 383,
           "sizeY:3": 24
         },
         "36:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": -144,
+          "x:3": -360,
+          "y:3": -108,
           "id:3": 558,
           "sizeY:3": 24
         },
         "37:10": {
           "sizeX:3": 24,
           "x:3": -216,
-          "y:3": -216,
+          "y:3": -180,
           "id:3": 641,
           "sizeY:3": 24
         },
         "38:10": {
           "sizeX:3": 24,
-          "x:3": -216,
-          "y:3": -180,
+          "x:3": -288,
+          "y:3": -108,
           "id:3": 677,
           "sizeY:3": 24
         },
         "39:10": {
           "sizeX:3": 24,
-          "x:3": -324,
-          "y:3": -180,
+          "x:3": -360,
+          "y:3": -144,
           "id:3": 716,
           "sizeY:3": 24
         }

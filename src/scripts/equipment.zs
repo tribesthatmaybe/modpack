@@ -1,43 +1,58 @@
 import crafttweaker.item.IItemStack;
 
 //// handheld things
-recipes.remove(<geolosys:pro_pick>);
-recipes.addShaped(<geolosys:pro_pick>, [[<minecraft:iron_ingot>, <minecraft:iron_ingot>, null],
-				        [null, <tconstruct:binding>.withTag({Material: "wood"}), null],
-					[null, <tconstruct:tool_rod>.withTag({Material: "wood"}), null]]);
-recipes.remove(<realistictorches:matchbox>);
-recipes.addShaped(<realistictorches:matchbox>, [[null, null, null],
-					        [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>],
-						[<ore:slabWood>, <minecraft:flint>, <ore:slabWood>]]);
+scripts.shared.recipeRemapShaped(<geolosys:pro_pick>, [
+    [<minecraft:iron_ingot>, <minecraft:iron_ingot>, null],
+    [null, <tconstruct:binding>.withTag({Material: "wood"}), null],
+    [null, <tconstruct:tool_rod>.withTag({Material: "wood"}), null]
+]);
 
-recipes.remove(<mekanism:jetpack>);
-recipes.addShaped(<mekanism:jetpack>, [[<mekanism:plasticblock:14>, <mekanism:controlcircuit:2>, <mekanism:plasticblock:14>],
-				       [<tconstruct:large_plate>.withTag({Material: "electrum"}), <mekanism:gastank>, <tconstruct:large_plate>.withTag({Material: "electrum"})],
-				       [<mekanism:atomicalloy>, <mekanism:transmitter:2>, <mekanism:atomicalloy>]]);
+scripts.shared.recipeRemapShaped(<realistictorches:matchbox>, [
+    [null, null, null],
+    [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>],
+    [<ore:slabWood>, <minecraft:flint>, <ore:slabWood>]
+]);
+
+scripts.shared.recipeRemapShaped(<mekanism:jetpack>, [
+    [<mekanism:plasticblock:14>, <mekanism:controlcircuit:2>, <mekanism:plasticblock:14>],
+    [<tconstruct:large_plate>.withTag({Material: "electrum"}),
+     <mekanism:gastank>,
+     <tconstruct:large_plate>.withTag({Material: "electrum"})],
+    [<mekanism:atomicalloy>, <mekanism:transmitter:2>, <mekanism:atomicalloy>]
+]);
+
 recipes.remove(<mekanism:armoredjetpack>);
 recipes.addShaped(<mekanism:armoredjetpack>.withTag({}), [[<conarm:armor_trim>.withTag({Material: "steel"}), <actuallyadditions:item_crystal_empowered:2>, <conarm:armor_trim>.withTag({Material: "steel"})],
 					                  [<mekanism:compressedobsidian>, <conarm:chest_core>.withTag({Material: "steel"}), <mekanism:compressedobsidian>],
 					                  [null, <mekanism:jetpack>.withTag({}), null]]);
 // free runners
-recipes.remove(<mekanism:freerunners>);
-recipes.addShaped(<mekanism:freerunners>, [[<mekanism:controlcircuit>, <actuallyadditions:item_battery_double>, <mekanism:controlcircuit>],
-					   [<mekanism:compresseddiamond>, <conarm:leggings_core>.withTag({Material: "steel"}), <mekanism:compresseddiamond>],
-					   [<actuallyadditions:item_crystal_empowered>, <conarm:boots_core>.withTag({Material: "steel"}), <actuallyadditions:item_crystal_empowered>]]);
+scripts.shared.recipeRemapShaped(<mekanism:freerunners>, [
+    [<mekanism:controlcircuit>, <actuallyadditions:item_battery_double>, <mekanism:controlcircuit>],
+    [<mekanism:compresseddiamond>, <conarm:leggings_core>.withTag({Material: "steel"}), <mekanism:compresseddiamond>],
+    [<actuallyadditions:item_crystal_empowered>,
+     <conarm:boots_core>.withTag({Material: "steel"}),
+     <actuallyadditions:item_crystal_empowered>]
+]);
+
 // scuba kit
-recipes.remove(<mekanism:gasmask>);
-recipes.addShaped(<mekanism:gasmask>, [[<immersiveengineering:metal:38>, <mekanism:plasticblock:11>, <immersiveengineering:metal:38>],
-				       [<immersiveengineering:material:9>, <mekanism:controlcircuit>, <mekanism:basicblock:10>],
-				       [<mekanism:transmitter:2>, <mekanism:plasticblock:11>, <mekanism:plasticblock:11>]]);
-recipes.remove(<mekanism:scubatank>);
-recipes.addShaped(<mekanism:scubatank>, [[<immersiveengineering:metal:38>, <mekanism:gastank>, <immersiveengineering:metal:38>],
-					 [<mekanism:compressedobsidian>, <mekanism:controlcircuit>, <mekanism:compressedobsidian>],
-					 [<mekanism:plasticblock:11>, <actuallyadditions:item_crystal_empowered:5>, <mekanism:plasticblock:11>]]);
+scripts.shared.recipeRemapShaped(<mekanism:gasmask>, [
+    [<immersiveengineering:metal:38>, <mekanism:plasticblock:11>, <immersiveengineering:metal:38>],
+    [<immersiveengineering:material:9>, <mekanism:controlcircuit>, <mekanism:basicblock:10>],
+    [<mekanism:transmitter:2>, <mekanism:plasticblock:11>, <mekanism:plasticblock:11>]
+]);
+scripts.shared.recipeRemapShaped(<mekanism:scubatank>, [
+    [<immersiveengineering:metal:38>, <mekanism:gastank>, <immersiveengineering:metal:38>],
+    [<mekanism:compressedobsidian>, <mekanism:controlcircuit>, <mekanism:compressedobsidian>],
+    [<mekanism:plasticblock:11>, <actuallyadditions:item_crystal_empowered:5>, <mekanism:plasticblock:11>]
+]);
 
 // fire extinguisher
-recipes.remove(<cyclicmagic:fire_killer>);
-recipes.addShaped(<cyclicmagic:fire_killer>, [[<immersiveengineering:material:13>, <immersiveengineering:metal_device1:6>, null],
-					      [<immersiveengineering:metal:39>, <mysticalagriculture:water_essence>, null],
-					      [<immersiveengineering:metal:39>, <mysticalagriculture:water_essence>, null]]);
+scripts.shared.recipeRemapShaped(<cyclicmagic:fire_killer>, [
+    [<immersiveengineering:material:13>, <immersiveengineering:metal_device1:6>, null],
+    [<immersiveengineering:metal:39>, <mysticalagriculture:water_essence>, null],
+    [<immersiveengineering:metal:39>, <mysticalagriculture:water_essence>, null]
+]);
+
 // mekanism tweaker
 recipes.remove(<mekanism:configurator>);
 recipes.addShaped(<mekanism:configurator>, [[null, <actuallyadditions:item_crystal:1>, null],

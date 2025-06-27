@@ -3,19 +3,31 @@ import crafttweaker.item.IItemStack;
 
 // parts
 recipes.remove(<waystones:warp_stone>);
-mods.botania.RuneAltar.addRecipe(<waystones:warp_stone>, [<actuallyadditions:item_crystal_empowered>, <mysticalagriculture:crafting:2>, <actuallyadditions:item_crystal_empowered:1>,
-					  <mysticalagriculture:crafting:2>, <botania:manaresource:8>, <mysticalagriculture:crafting:2>, <actuallyadditions:item_crystal_empowered:1>,
-					  <mysticalagriculture:crafting:2>, <actuallyadditions:item_crystal_empowered>], 50000);
-recipes.remove(<mekanism:teleportationcore>);
-recipes.addShaped(<mekanism:teleportationcore>, [[<mekanism:reinforcedplasticblock:6>, <mekanism:atomicalloy>, <mekanism:reinforcedplasticblock:6>],
-						 [<mekanism:reinforcedplasticblock:6>, <waystones:warp_stone>, <mekanism:reinforcedplasticblock:6>],
-						 [<mekanism:controlcircuit:3>, <actuallyadditions:block_misc:8>, <mekanism:controlcircuit:3>]]);
+mods.botania.RuneAltar.addRecipe(<waystones:warp_stone>, [
+    <actuallyadditions:item_crystal_empowered>,
+    <mysticalagriculture:crafting:2>,
+    <actuallyadditions:item_crystal_empowered:1>,
+    <mysticalagriculture:crafting:2>,
+    <botania:manaresource:8>,
+    <mysticalagriculture:crafting:2>,
+    <actuallyadditions:item_crystal_empowered:1>,
+    <mysticalagriculture:crafting:2>,
+    <actuallyadditions:item_crystal_empowered>
+], 50000);
+
+scripts.shared.recipeRemapShaped(<mekanism:teleportationcore>, [
+    [<mekanism:reinforcedplasticblock:6>, <mekanism:atomicalloy>, <mekanism:reinforcedplasticblock:6>],
+    [<mekanism:reinforcedplasticblock:6>, <waystones:warp_stone>, <mekanism:reinforcedplasticblock:6>],
+    [<mekanism:controlcircuit:3>, <actuallyadditions:block_misc:8>, <mekanism:controlcircuit:3>]
+]);
 
 // handhelds
-recipes.remove(<mekanism:portableteleporter>);
-recipes.addShaped(<mekanism:portableteleporter>, [[<projectred-core:resource_item:104>, <openscreens:backflatscreen1>, <projectred-core:resource_item:104>],
-						  [<mekanism:controlcircuit:3>, <mekanism:teleportationcore>, <mekanism:compressedobsidian>],
-						  [<mekanism:plasticblock:7>, <actuallyadditions:item_battery_triple>, <mekanism:compressedobsidian>]]);
+scripts.shared.recipeRemapShaped(<mekanism:portableteleporter>, [
+    [<projectred-core:resource_item:104>, <openscreens:backflatscreen1>, <projectred-core:resource_item:104>],
+    [<mekanism:controlcircuit:3>, <mekanism:teleportationcore>, <mekanism:compressedobsidian>],
+    [<mekanism:plasticblock:7>, <actuallyadditions:item_battery_triple>, <mekanism:compressedobsidian>]
+]);
+
 recipes.remove(<actuallyadditions:item_tele_staff>);
 mods.botania.RuneAltar.addRecipe(<actuallyadditions:item_tele_staff>, [<actuallyadditions:item_crystal_empowered:2>, <waystones:warp_stone>, <tconstruct:binding>.withTag({Material: "livingwood"}),
 								      <tconstruct:tough_tool_rod>, <actuallyadditions:item_crystal_empowered:5>, null, <botania:rune:8>], 15000);
@@ -43,21 +55,28 @@ brewing.removeRecipe(<bountifulbaubles:potionrecall>, <appliedenergistics2:mater
 brewing.removeRecipe(<bountifulbaubles:potionrecall>, <minecraft:quartz>);
 brewing.addBrew(<bountifulbaubles:potionrecall>, <appliedenergistics2:material:46>, <bountifulbaubles:potionwormhole>);
 
-// stationary
-scripts.shared.recipeRemapShaped(<waystones:waystone>, [[null, <botania:livingrock:4>, null],
-						       	 [<actuallyadditions:item_crystal_empowered:3>, <waystones:warp_stone>, <actuallyadditions:item_crystal_empowered:3>],
-							 [<botania:livingrock:4>, <botania:livingrock:4>, <botania:livingrock:4>]]);
+// stationary waystones are cool
+scripts.shared.recipeRemapShaped(<waystones:waystone>, [
+    [null, <botania:livingrock:4>, null],
+    [<actuallyadditions:item_crystal_empowered:3>, <waystones:warp_stone>, <actuallyadditions:item_crystal_empowered:3>],
+    [<botania:livingrock:4>, <botania:livingrock:4>, <botania:livingrock:4>]
+]);
 // waystones unbreakable once placed
 <waystones:waystone>.hardness = -1;
 
 recipes.remove(<mekanism:basicblock:7>);
-recipes.addShaped(<mekanism:basicblock:7> * 3, [[<mekanism:ingot>, <actuallyadditions:item_crystal_empowered:1>, <mekanism:ingot>],
-					        [<mekanism:ingot>, <mekanism:ingot:3>, <mekanism:ingot>],
-					        [<mekanism:ingot>, <actuallyadditions:item_crystal_empowered>, <mekanism:ingot>]]);
+recipes.addShaped(<mekanism:basicblock:7> * 3, [
+    [<mekanism:ingot>, <actuallyadditions:item_crystal_empowered:1>, <mekanism:ingot>],
+    [<mekanism:ingot>, <mekanism:ingot:3>, <mekanism:ingot>],
+    [<mekanism:ingot>, <actuallyadditions:item_crystal_empowered>, <mekanism:ingot>]
+]);
 recipes.remove(<mekanism:machineblock:11>);
-recipes.addShaped(<mekanism:machineblock:11>, [[<mekanism:reinforcedplasticblock:2>, <mekanism:controlcircuit:3>, <mekanism:reinforcedplasticblock:2>],
-					       [<mekanism:ingot>, <mekanism:teleportationcore>, <mekanism:ingot>],
-					       [<mekanism:reinforcedplasticblock:2>, <actuallyadditions:block_misc:8>, <mekanism:reinforcedplasticblock:2>]]);
+recipes.addShaped(<mekanism:machineblock:11>, [
+    [<mekanism:reinforcedplasticblock:2>, <mekanism:controlcircuit:3>, <mekanism:reinforcedplasticblock:2>],
+    [<mekanism:ingot>, <mekanism:teleportationcore>, <mekanism:ingot>],
+    [<mekanism:reinforcedplasticblock:2>, <actuallyadditions:block_misc:8>, <mekanism:reinforcedplasticblock:2>]
+]);
+
 // deep dark portal technically counts?
 recipes.remove(<extrautils2:teleporter:1>);
 mods.botania.RuneAltar.addRecipe(<extrautils2:teleporter:1>, [<minecraft:ghast_tear>, <immersiveengineering:metal:32>,<immersiveengineering:metal:37>,

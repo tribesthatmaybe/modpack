@@ -33,3 +33,16 @@ mods.alchemistry.Dissolver.addRecipe(<appliedenergistics2:sky_stone_chest>, fals
    [20, <alchemistry:element:22>],       // titanium
    [5, <alchemistry:element:28> * 2]     // nickel
 ]);
+
+mods.alchemistry.Dissolver.addRecipe(<minecraft:leather_helmet:0>, false, 5, [
+  [60, <alchemistry:compound:9> * 4]     // protein
+]);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:leather_boots:0>, false, 5, [
+  [60, <alchemistry:compound:9> * 2]     // protein
+]);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:leather_chestplate:0>, false, 5, [
+  [60, <alchemistry:compound:9> * 8]     // protein
+]);
+mods.alchemistry.Dissolver.addRecipe(<minecraft:leather_leggings:0>, false, 5, [
+  [60, <alchemistry:compound:9> * 6]     // protein
+]);

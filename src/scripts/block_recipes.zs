@@ -8,5 +8,7 @@ recipes.addShapeless(<contenttweaker:tan_sheetmetal>, [<immersiveengineering:she
 
 // witherproof block
 recipes.remove(<mysticalagriculture:witherproof_block>);
-mods.botania.RuneAltar.addRecipe(<mysticalagriculture:witherproof_block> * 4, [<mysticalagriculture:soulstone>, <mysticalagriculture:soulstone>,
-									       <botania:manaresource:2>, <actuallyadditions:item_crystal_empowered:3>], 500);
+mods.botania.RuneAltar.addRecipe(<mysticalagriculture:witherproof_block> * 4, [
+    <mysticalagriculture:soulstone>, <mysticalagriculture:soulstone>,
+    <botania:manaresource:2>, <actuallyadditions:item_crystal_empowered:3>
+], 500);

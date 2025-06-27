@@ -1,3 +1,5 @@
+import crafttweaker.item.IItemStack;
+
 // allow conversion of waters
 // from https://github.com/McJtyMods/AquaMunda/issues/10#issuecomment-397499883
 recipes.addShapeless(<toughasnails:canteen:2>, [<forge:bucketfilled>.withTag({FluidName: "purified_water", Amount: 1000}),<toughasnails:canteen:*>]);
@@ -7,7 +9,11 @@ recipes.addShaped(<harvestcraft:freshwateritem> * 8, [[null, null, null],
 						       [null, <ore:listAllWater>, null],
 						       [null, null, null]]);
 mods.immersivetechnology.Distiller.addRecipe(<liquid:purified_water> * 1000, <liquid:distwater> * 1000, <mekanism:salt>, 2500, 20, 0.10);
-mods.immersiveengineering.Mixer.addRecipe(<liquid:purified_water> * 500, <liquid:water> * 1000, [<minecraft:coal:1>, <minecraft:sand>], 1800);
+mods.immersiveengineering.Mixer.addRecipe(<liquid:purified_water> * 1000, <liquid:water> * 1000, [<toughasnails:charcoal_filter>], 1800);
+mods.immersiveengineering.Mixer.addRecipe(<liquid:purified_water> * 500, <liquid:water> * 1000, [<minecraft:sand>], 3600);
+
+// stackable bottled liquids
+<toughasnails:purified_water_bottle>.maxStackSize = 8;
 
 // grilling is a matter of survival
 mods.cfm.Grill.addRecipe(<minecraft:cooked_chicken>,<minecraft:chicken>);

@@ -1,44 +1,44 @@
 /*
-Copyright (c) 2020-2025 Jonathan Freedman <jonafree@gmail.com>
+  Copyright (c) 2020-2025 Jonathan Freedman <jonafree@gmail.com>
 
-The MIT License
+  The MIT License
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
 
-Tribes That May Be Vice Framework
+  Tribes That May Be Vice Framework
 
-This set of zenscript is meant to be used to produce a variety of progressive
-intoxification effects based on consumption of items.
+  This set of zenscript is meant to be used to produce a variety of progressive
+  intoxification effects based on consumption of items.
 
-It currently supports
+  It currently supports
 
-* multiple (potion) effects with varying and increasing durations
-* ability to just "keep going" with increasing durations
+ * multiple (potion) effects with varying and increasing durations
+ * ability to just "keep going" with increasing durations
 
-Planned future work includes
+  Planned future work includes
 
-* handle cross-intoxicant effects - as of now new intoxication will override old
-* remove the ability for milk to sober the player up
-* add ability for other things to sober the player up
-* some op level commands for managing sobriety level
-* some randomness thrown in on a per-player basis
-*/
+ * handle cross-intoxicant effects - as of now new intoxication will override old
+ * remove the ability for milk to sober the player up
+ * add ability for other things to sober the player up
+ * some op level commands for managing sobriety level
+ * some randomness thrown in on a per-player basis
+ */
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.potions.IPotionEffect;
@@ -51,18 +51,18 @@ import crafttweaker.event.PlayerRespawnEvent;
 
 
 /*
-the ttmbViceEffect class represents how the thing will affect the player
+  the ttmbViceEffect class represents how the thing will affect the player
 
-var fooEffect = ttmbViceEffect(name, min_level, max_level, potion, duration_multiplier)
-fooEffect.effectMultiplier(effect_multiplier)
+  var fooEffect = ttmbViceEffect(name, min_level, max_level, potion, duration_multiplier)
+  fooEffect.effectMultiplier(effect_multiplier)
 
-name is a simple friendly name used for debugging
-min_level is the first level of intoxication at which the effect will take place
-max_level is the highest level of intoxication at which the effect will take place
-potion is the potion to extract an effect from
-duration_multiplier is applied when determining how long the effect will last
-effect_multiplier is applied to the potion itself. this is optional.
-*/
+  name is a simple friendly name used for debugging
+  min_level is the first level of intoxication at which the effect will take place
+  max_level is the highest level of intoxication at which the effect will take place
+  potion is the potion to extract an effect from
+  duration_multiplier is applied when determining how long the effect will last
+  effect_multiplier is applied to the potion itself. this is optional.
+ */
 
 zenClass ttmbViceEffect {
     var name as string;
@@ -88,21 +88,21 @@ zenClass ttmbViceEffect {
 }
 
 /*
-the ttmbVice class manages the intoxication itself. it supports progressive levels
-of intoxication based on continued consumption. intoxication effects will max out
-at whatever the higest level of included effects is unless you invoke the keepGoing() method
+  the ttmbVice class manages the intoxication itself. it supports progressive levels
+  of intoxication based on continued consumption. intoxication effects will max out
+  at whatever the higest level of included effects is unless you invoke the keepGoing() method
 
-var foo = ttmbVice(name, consumables, duration)
-foo.keepGoing()
+  var foo = ttmbVice(name, consumables, duration)
+  foo.keepGoing()
 
-name is a simple friendly name used for debugging and tracking intoxication via player tag
-consumables is a list of IItemStack of things which will cause the intoxication. these must be food.
-duration is the base level of duration for effects
+  name is a simple friendly name used for debugging and tracking intoxication via player tag
+  consumables is a list of IItemStack of things which will cause the intoxication. these must be food.
+  duration is the base level of duration for effects
 
-intoxication is progressive. the duration for each effect is multiplied by the
-current level of intoxication and also the duration modifier for the effect. the intoxication
-level is reset when the player respawns after death.
-*/
+  intoxication is progressive. the duration for each effect is multiplied by the
+  current level of intoxication and also the duration modifier for the effect. the intoxication
+  level is reset when the player respawns after death.
+ */
 
 zenClass ttmbVice {
     var viceName as string = "";
@@ -145,8 +145,8 @@ zenClass ttmbVice {
             if (tag.startsWith("ttmb_rekt_" + viceName)) {
                 var rekt_bits = tag.split(":") as string[];
                 if (rekt_bits.length != 4) {
-                   logger.logWarning("discarding invalid player tag for " + viceName);
-                   player.removeTag(tag);
+                    logger.logWarning("discarding invalid player tag for " + viceName);
+                    player.removeTag(tag);
                 }
                 return rekt_bits;
             }
@@ -181,7 +181,7 @@ zenClass ttmbVice {
     function ourVice(consumable as IItemStack) as bool {
         for viceConsumable in viceConsumables {
             if ( viceConsumable.name == consumable.name ) {
-               return true;
+                return true;
             }
         }
         return false;
@@ -193,13 +193,13 @@ zenClass ttmbVice {
         var this_max = 0 as int;
         for effect in viceEffects {
             if (effect.max_level > this_max ) {
-               this_max = effect.max_level;
+                this_max = effect.max_level;
             }
         }
         for effect in viceEffects {
             //logger.logInfo("Checking " + effect.name + " level " + level as string + " (" + effect.min_level as string + ":" + effect.max_level as string + ")");
             if (level >= effect.min_level && (level <= effect.max_level || (keep_going && effect.max_level == this_max))) {
-               deez_effects += effect;
+                deez_effects += effect;
             }
         }
         return deez_effects;
@@ -212,11 +212,11 @@ zenClass ttmbVice {
 
     function foodEatenHandler(event as FoodEatenEvent) as void {
         if ( event.player.world.isRemote() ) {
-           // basically none of this state exists in a authoritative way on the client
-           return;
+            // basically none of this state exists in a authoritative way on the client
+            return;
         }
         if ( ! ourVice(event.food) ) {
-           return;
+            return;
         }
         var now = event.player.world.getWorldInfo().worldTotalTime as long;
         var rekt_level = 1 as int;
@@ -224,11 +224,11 @@ zenClass ttmbVice {
         var rekt_duration = 0 as long;
         var rekt_tag_bits = this.getTag(event.player);
         if ( rekt_tag_bits.length == 0 ) {
-           rekt_start = now;
+            rekt_start = now;
         } else {
-           rekt_level = tagLevel(rekt_tag_bits);
-           rekt_start = tagStart(rekt_tag_bits);
-           rekt_duration = tagDuration(rekt_tag_bits);
+            rekt_level = tagLevel(rekt_tag_bits);
+            rekt_start = tagStart(rekt_tag_bits);
+            rekt_duration = tagDuration(rekt_tag_bits);
         }
         var my_effects = levelEffects(rekt_level);
         logger.logInfo(event.player.name + " gettin' rekt on " + viceName + " starting " + (now - rekt_start) + " ticks ago, level " + rekt_level as string + " w/ " + my_effects.length as string + " effects");
@@ -256,13 +256,13 @@ zenClass ttmbVice {
 
     function playerTickHandler(event as PlayerTickEvent) as void {
         if ( event.player.world.isRemote() ) {
-           // basically none of this state exists in a authoritative way on the client
-           return;
+            // basically none of this state exists in a authoritative way on the client
+            return;
         }
         var now = event.player.world.getWorldInfo().worldTotalTime as long;
         var rekt_tag_bits = this.getTag(event.player);
         if (rekt_tag_bits.length == 0) {
-           return;
+            return;
         }
         var rekt_start = tagStart(rekt_tag_bits);
         var rekt_duration = tagDuration(rekt_tag_bits);
@@ -277,12 +277,12 @@ zenClass ttmbVice {
 
     function playerRespawnHandler(event as PlayerRespawnEvent) as void {
         if ( event.player.world.isRemote() ) {
-           // basically none of this state exists in a authoritative way on the client
-           return;
+            // basically none of this state exists in a authoritative way on the client
+            return;
         }
         var rekt_tag_bits = this.getTag(event.player);
         if (rekt_tag_bits.length == 0) {
-           return;
+            return;
         }
         // that's one way to sober up
         removeTag(event.player, tagDuration(rekt_tag_bits), tagStart(rekt_tag_bits), tagLevel(rekt_tag_bits));
@@ -293,20 +293,20 @@ zenClass ttmbVice {
 
 // cocktails can have consequences
 val hardLiquor =
-[
-    <brewcraft:totalvodkaitem>,
-    <brewcraft:handmadevodkaitem>,
-    <brewcraft:cherryvodkaitem>,
-    <brewcraft:beachrumitem>,
-    <brewcraft:coconutrumitem>,
-    <brewcraft:spicedrumitem>,
-    <brewcraft:uglyavocadoginitem>,
-    <brewcraft:blackholewhiskeyitem>,
-    <brewcraft:borgiaabsintheitem>,
-    <brewcraft:goldschlageritem>,
-    <brewcraft:malortitem>,
-    <brewcraft:pointthreeryeitem>
-] as IItemStack[];
+    [
+        <brewcraft:totalvodkaitem>,
+        <brewcraft:handmadevodkaitem>,
+        <brewcraft:cherryvodkaitem>,
+        <brewcraft:beachrumitem>,
+        <brewcraft:coconutrumitem>,
+        <brewcraft:spicedrumitem>,
+        <brewcraft:uglyavocadoginitem>,
+        <brewcraft:blackholewhiskeyitem>,
+        <brewcraft:borgiaabsintheitem>,
+        <brewcraft:goldschlageritem>,
+        <brewcraft:malortitem>,
+        <brewcraft:pointthreeryeitem>
+    ] as IItemStack[];
 // marathon not a sprint
 val refreshingBooze = [
     <brewcraft:hardapplecideritem>,

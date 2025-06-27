@@ -3,42 +3,44 @@ import crafttweaker.oredict.IOreDictEntry;
 
 //// dat glow coal tho
 recipes.remove(<realistictorches:glowstone_crystal>);
-recipes.addShaped(<realistictorches:glowstone_crystal>, [[null, <realistictorches:glowstone_paste>, null],
-							 [<realistictorches:glowstone_paste>, <minecraft:coal>, <realistictorches:glowstone_paste>],
-							 [null, <realistictorches:glowstone_paste>, null]]);
+recipes.addShaped(<realistictorches:glowstone_crystal>, [
+    [null, <realistictorches:glowstone_paste>, null],
+    [<realistictorches:glowstone_paste>, <minecraft:coal>, <realistictorches:glowstone_paste>],
+    [null, <realistictorches:glowstone_paste>, null]
+]);
 recipes.addShaped(<realistictorches:glowstone_crystal> * 2, [[null, <realistictorches:glowstone_paste>, null],
-							     [<realistictorches:glowstone_paste>, <immersiveengineering:material:6>, <realistictorches:glowstone_paste>],
-							     [null, <realistictorches:glowstone_paste>, null]]);
+                                                             [<realistictorches:glowstone_paste>, <immersiveengineering:material:6>, <realistictorches:glowstone_paste>],
+                                                             [null, <realistictorches:glowstone_paste>, null]]);
 recipes.addShaped(<realistictorches:glowstone_crystal>, [[null, <realistictorches:glowstone_paste>, null],
-							 [<realistictorches:glowstone_paste>, <minecraft:coal:1>, <realistictorches:glowstone_paste>],
-							 [null, <realistictorches:glowstone_paste>, null]]);
+                                                         [<realistictorches:glowstone_paste>, <minecraft:coal:1>, <realistictorches:glowstone_paste>],
+                                                         [null, <realistictorches:glowstone_paste>, null]]);
 recipes.addShaped(<realistictorches:glowstone_crystal> * 2, [[null, <realistictorches:glowstone_paste>, null],
-							     [<realistictorches:glowstone_paste>, <mysticalagriculture:coal>, <realistictorches:glowstone_paste>],
-							     [null, <realistictorches:glowstone_paste>, null]]);
+                                                             [<realistictorches:glowstone_paste>, <mysticalagriculture:coal>, <realistictorches:glowstone_paste>],
+                                                             [null, <realistictorches:glowstone_paste>, null]]);
 recipes.addShaped(<realistictorches:glowstone_crystal> * 3, [[null, <realistictorches:glowstone_paste>, null],
-							     [<realistictorches:glowstone_paste>, <mysticalagriculture:coal:1>, <realistictorches:glowstone_paste>],
-							     [null, <realistictorches:glowstone_paste>, null]]);
+                                                             [<realistictorches:glowstone_paste>, <mysticalagriculture:coal:1>, <realistictorches:glowstone_paste>],
+                                                             [null, <realistictorches:glowstone_paste>, null]]);
 recipes.addShaped(<realistictorches:glowstone_crystal> * 4, [[null, <realistictorches:glowstone_paste>, null],
-							     [<realistictorches:glowstone_paste>, <mysticalagriculture:coal:2>, <realistictorches:glowstone_paste>],
-							     [null, <realistictorches:glowstone_paste>, null]]);
+                                                             [<realistictorches:glowstone_paste>, <mysticalagriculture:coal:2>, <realistictorches:glowstone_paste>],
+                                                             [null, <realistictorches:glowstone_paste>, null]]);
 recipes.addShaped(<realistictorches:glowstone_crystal> * 5, [[null, <realistictorches:glowstone_paste>, null],
-							     [<realistictorches:glowstone_paste>, <mysticalagriculture:coal:3>, <realistictorches:glowstone_paste>],
-							     [null, <realistictorches:glowstone_paste>, null]]);
+                                                             [<realistictorches:glowstone_paste>, <mysticalagriculture:coal:3>, <realistictorches:glowstone_paste>],
+                                                             [null, <realistictorches:glowstone_paste>, null]]);
 recipes.addShaped(<realistictorches:glowstone_crystal> * 6, [[null, <realistictorches:glowstone_paste>, null],
-							     [<realistictorches:glowstone_paste>, <mysticalagriculture:coal:4>, <realistictorches:glowstone_paste>],
-							     [null, <realistictorches:glowstone_paste>, null]]);
+                                                             [<realistictorches:glowstone_paste>, <mysticalagriculture:coal:4>, <realistictorches:glowstone_paste>],
+                                                             [null, <realistictorches:glowstone_paste>, null]]);
 recipes.addShaped(<realistictorches:glowstone_crystal> * 3, [[<mekanism:biofuel>, <realistictorches:glowstone_paste>, <mekanism:biofuel>],
-						             [<realistictorches:glowstone_paste>, <mekanism:biofuel>, <realistictorches:glowstone_paste>],
-						             [<mekanism:biofuel>, <realistictorches:glowstone_paste>, <mekanism:biofuel>]]);
+                                                             [<realistictorches:glowstone_paste>, <mekanism:biofuel>, <realistictorches:glowstone_paste>],
+                                                             [<mekanism:biofuel>, <realistictorches:glowstone_paste>, <mekanism:biofuel>]]);
 recipes.addShaped(<realistictorches:glowstone_crystal> * 2, [[null, <realistictorches:glowstone_paste>, null],
-							     [<realistictorches:glowstone_paste>, <railcraft:generic:5>, <realistictorches:glowstone_paste>],
-							     [null, <realistictorches:glowstone_paste>, null]]);
+                                                             [<realistictorches:glowstone_paste>, <railcraft:generic:5>, <realistictorches:glowstone_paste>],
+                                                             [null, <realistictorches:glowstone_paste>, null]]);
 recipes.addShaped(<realistictorches:glowstone_crystal> * 2, [[<minecraft:paper>, <realistictorches:glowstone_paste>, <minecraft:paper>],
-							     [<realistictorches:glowstone_paste>, <railcraft:fluid_bottle_creosote>, <realistictorches:glowstone_paste>],
-							     [<minecraft:paper>, <realistictorches:glowstone_paste>, <minecraft:paper>]]);
+                                                             [<realistictorches:glowstone_paste>, <railcraft:fluid_bottle_creosote>, <realistictorches:glowstone_paste>],
+                                                             [<minecraft:paper>, <realistictorches:glowstone_paste>, <minecraft:paper>]]);
 recipes.addShaped(<realistictorches:glowstone_crystal> * 2, [[<minecraft:paper>, <realistictorches:glowstone_paste>, <minecraft:paper>],
-						             [<realistictorches:glowstone_paste>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), <realistictorches:glowstone_paste>],
-							     [<minecraft:paper>, <realistictorches:glowstone_paste>, <minecraft:paper>]]);
+                                                             [<realistictorches:glowstone_paste>, <forge:bucketfilled>.withTag({FluidName: "creosote", Amount: 1000}), <realistictorches:glowstone_paste>],
+                                                             [<minecraft:paper>, <realistictorches:glowstone_paste>, <minecraft:paper>]]);
 // machine based glowstone paste
 mods.mekanism.infuser.addRecipe("BIO", 50, <minecraft:glowstone_dust>, <realistictorches:glowstone_paste>);
 mods.mekanism.chemical.injection.addRecipe(<minecraft:glowstone_dust>, <gas:ethene>, <realistictorches:glowstone_paste>);
@@ -59,21 +61,21 @@ for i, dye in dyeOreDictArray {
     val illumar = itemUtils.getItem("projectred-core:resource_item", (15 - i) + 500);
     recipes.remove(illumar);
     recipes.addShaped(illumar * 4, [[dye, <realistictorches:glowstone_paste>, dye],
-    			            [<realistictorches:glowstone_paste>, <appliedenergistics2:material:3>, <realistictorches:glowstone_paste>],
-				    [dye, <realistictorches:glowstone_paste>, dye]]);
+                                    [<realistictorches:glowstone_paste>, <appliedenergistics2:material:3>, <realistictorches:glowstone_paste>],
+                                    [dye, <realistictorches:glowstone_paste>, dye]]);
     recipes.addShaped(illumar * 4, [[dye, <realistictorches:glowstone_paste>, dye],
-    			            [<realistictorches:glowstone_paste>, <appliedenergistics2:material:2>, <realistictorches:glowstone_paste>],
-				    [dye, <realistictorches:glowstone_paste>, dye]]);
+                                    [<realistictorches:glowstone_paste>, <appliedenergistics2:material:2>, <realistictorches:glowstone_paste>],
+                                    [dye, <realistictorches:glowstone_paste>, dye]]);
 }
 //// vanilla
 recipes.remove(<minecraft:redstone_lamp>);
 recipes.addShaped(<minecraft:redstone_lamp>, [[null, <ore:dustRedstone>, null],
-					      [<ore:dustRedstone>, <realistictorches:glowstone_crystal>, <ore:dustRedstone>],
-					      [null, <ore:dustRedstone>, null]]);
+                                              [<ore:dustRedstone>, <realistictorches:glowstone_crystal>, <ore:dustRedstone>],
+                                              [null, <ore:dustRedstone>, null]]);
 recipes.remove(<minecraft:sea_lantern>);
 recipes.addShaped(<minecraft:sea_lantern>, [[<ore:gemPrismarine>, <ore:dustPrismarine>, <ore:gemPrismarine>],
-					    [<ore:dustPrismarine>, <realistictorches:glowstone_crystal>, <ore:dustPrismarine>],
-					    [<ore:gemPrismarine>, <ore:dustPrismarine>, <ore:gemPrismarine>]]);
+                                            [<ore:dustPrismarine>, <realistictorches:glowstone_crystal>, <ore:dustPrismarine>],
+                                            [<ore:gemPrismarine>, <ore:dustPrismarine>, <ore:gemPrismarine>]]);
 
 ////crayfish lamp
 for i in 0 .. 15 {
@@ -81,8 +83,8 @@ for i in 0 .. 15 {
     val lamp = itemUtils.getItem("cfm:lamp_off", 15 - i);
     recipes.remove(lamp);
     recipes.addShaped(lamp, [[<minecraft:wool>, <immersiveengineering:material:1>, <minecraft:wool>],
-    			     [<minecraft:wool>, illumar, <minecraft:wool>],
-			     [null, <minecraft:stained_hardened_clay:15>, null]]);
+                             [<minecraft:wool>, illumar, <minecraft:wool>],
+                             [null, <minecraft:stained_hardened_clay:15>, null]]);
 }
 
 
@@ -95,40 +97,40 @@ for i, dye in dyeOreDictArray {
     recipes.remove(glowpanel);
     recipes.remove(glowplasticblock);
     recipes.addShaped(glowpanel * 3, [[<tconstruct:clear_glass>, <mekanism:polyethene:2>, <tconstruct:clear_glass>],
-			              [<mekanism:polyethene:2>, illumar, <mekanism:polyethene:2>],
-			              [illumar, <mekanism:polyethene:2>, illumar]]);
+                                      [<mekanism:polyethene:2>, illumar, <mekanism:polyethene:2>],
+                                      [illumar, <mekanism:polyethene:2>, illumar]]);
     recipes.addShaped(glowpanel * 4, [[<mekanism:glowpanel:*>, null, <mekanism:glowpanel:*>],
-    				      [null, dye, null],
-				      [<mekanism:glowpanel:*>, null, <mekanism:glowpanel:*>]]);
+                                      [null, dye, null],
+                                      [<mekanism:glowpanel:*>, null, <mekanism:glowpanel:*>]]);
     recipes.addShaped(glowplasticblock * 4, [[illumar, plasticblock, illumar],
-				             [plasticblock, null, plasticblock],
-				             [illumar, plasticblock, illumar]]);
+                                             [plasticblock, null, plasticblock],
+                                             [illumar, plasticblock, illumar]]);
     recipes.addShaped(glowplasticblock * 4, [[<mekanism:glowplasticblock:*>, null, <mekanism:glowplasticblock:*>],
-    				             [null, dye, null],
-					     [<mekanism:glowplasticblock:*>, null, <mekanism:glowplasticblock:*>]]);
+                                             [null, dye, null],
+                                             [<mekanism:glowplasticblock:*>, null, <mekanism:glowplasticblock:*>]]);
 }
 
 //// ie lighting
 // basic lantern
 recipes.remove(<immersiveengineering:metal_decoration2:4>);
 recipes.addShaped(<immersiveengineering:metal_decoration2:4> * 2, [[null, <immersiveengineering:metal:39>, null],
-							           [<tconstruct:clear_glass>, <realistictorches:glowstone_crystal>, <tconstruct:clear_glass>],
-							           [null, <immersiveengineering:metal:30>, null]]);
+                                                                   [<tconstruct:clear_glass>, <realistictorches:glowstone_crystal>, <tconstruct:clear_glass>],
+                                                                   [null, <immersiveengineering:metal:30>, null]]);
 // electric lamp
 recipes.remove(<immersiveengineering:metal_device1:4>);
 recipes.addShaped(<immersiveengineering:metal_device1:4> * 2, [[null, <immersiveengineering:metal:38>, null],
-							       [<tconstruct:clear_glass>, <realistictorches:glowstone_crystal>, <tconstruct:clear_glass>],
-							       [<immersiveengineering:metal:30>, <immersiveengineering:material:26>, <immersiveengineering:metal:30>]]);
+                                                               [<tconstruct:clear_glass>, <realistictorches:glowstone_crystal>, <tconstruct:clear_glass>],
+                                                               [<immersiveengineering:metal:30>, <immersiveengineering:material:26>, <immersiveengineering:metal:30>]]);
 // flood lamp
 recipes.remove(<immersiveengineering:metal_device1:9>);
 recipes.addShaped(<immersiveengineering:metal_device1:9>, [[<immersiveengineering:material:26>, <immersiveengineering:metal:38>, <immersiveengineering:metal:38>],
-							   [<immersiveengineering:material:8>, <realistictorches:glowstone_crystal>, <tconstruct:clear_glass>],
-							   [<immersiveengineering:metal:30>, <railcraft:gear:1>, <immersiveengineering:metal:30>]]);
+                                                           [<immersiveengineering:material:8>, <realistictorches:glowstone_crystal>, <tconstruct:clear_glass>],
+                                                           [<immersiveengineering:metal:30>, <railcraft:gear:1>, <immersiveengineering:metal:30>]]);
 //// quark lights
 recipes.remove(<quark:paper_lantern>);
 recipes.addShaped(<quark:paper_lantern>, [[<minecraft:paper>, <tconstruct:large_plate>.withTag({Material: "wood"}), <minecraft:paper>],
-					  [<minecraft:paper>, <realistictorches:glowstone_crystal>, <minecraft:paper>],
-					  [<minecraft:paper>, <tconstruct:large_plate>.withTag({Material: "paper"}), <minecraft:paper>]]);
+                                          [<minecraft:paper>, <realistictorches:glowstone_crystal>, <minecraft:paper>],
+                                          [<minecraft:paper>, <tconstruct:large_plate>.withTag({Material: "paper"}), <minecraft:paper>]]);
 
 //// fairy lights
 for i, dye in dyeOreDictArray {
@@ -166,50 +168,50 @@ for i, dye in dyeOreDictArray {
     recipes.remove(meteor_light);
     // add new recipes
     recipes.addShaped(fairy_light * 4, [[<immersiveengineering:tool:1>, <minecraft:iron_ingot>, null],
-    				        [color_glass,  <realistictorches:glowstone_crystal>, color_glass],
-				        [null, <minecraft:iron_ingot>, null]]);
+                                        [color_glass,  <realistictorches:glowstone_crystal>, color_glass],
+                                        [null, <minecraft:iron_ingot>, null]]);
     recipes.addShaped(paper_lantern * 4, [[<immersiveengineering:tool:1>, <minecraft:iron_ingot>, null],
-    				          [<minecraft:paper>, illumar, <minecraft:paper>],
-				          [null, <minecraft:paper>, null]]);
+                                          [<minecraft:paper>, illumar, <minecraft:paper>],
+                                          [null, <minecraft:paper>, null]]);
     recipes.addShaped(orb_lantern * 4, [[<immersiveengineering:tool:1>, <minecraft:iron_ingot>, null],
-    				        [<minecraft:string>, illumar, <minecraft:string>],
-				        [null, <minecraft:wool:*>, null]]);
+                                        [<minecraft:string>, illumar, <minecraft:string>],
+                                        [null, <minecraft:wool:*>, null]]);
     recipes.addShaped(flower_light * 4, [[<immersiveengineering:tool:1>, <minecraft:iron_ingot>, null],
-    				         [<ore:flowerRed>, illumar, <ore:flowerYellow>],
-				         [null, <mekanism:polyethene:1>, null]]);
+                                         [<ore:flowerRed>, illumar, <ore:flowerYellow>],
+                                         [null, <mekanism:polyethene:1>, null]]);
     recipes.addShaped(ornate_lantern * 4, [[<immersiveengineering:tool:1>, <immersiveengineering:metal:40>, null],
-    			                   [color_glass, <realistictorches:glowstone_crystal>, color_glass],
-				           [null, <immersiveengineering:metal:32>, null]]);
+                                           [color_glass, <realistictorches:glowstone_crystal>, color_glass],
+                                           [null, <immersiveengineering:metal:32>, null]]);
     recipes.addShaped(oil_lantern * 4, [[<immersiveengineering:tool:1>, <tconstruct:large_plate>.withTag({Material: "wood"}), null],
-    			                [color_glass, <realistictorches:glowstone_crystal>, color_glass],
-			                [null, <tconstruct:large_plate>.withTag({Material: "stone"}), null]]);
+                                        [color_glass, <realistictorches:glowstone_crystal>, color_glass],
+                                        [null, <tconstruct:large_plate>.withTag({Material: "stone"}), null]]);
     recipes.addShaped(oil_lantern * 4, [[<immersiveengineering:tool:1>, <tconstruct:large_plate>.withTag({Material: "wood"}), null],
-    			                [color_glass, <realistictorches:glowstone_crystal>, color_glass],
-			                [null, <tconstruct:large_plate>.withTag({Material: "stone"}), null]]);
+                                        [color_glass, <realistictorches:glowstone_crystal>, color_glass],
+                                        [null, <tconstruct:large_plate>.withTag({Material: "stone"}), null]]);
     recipes.addShaped(jack_o_lantern * 4, [[<immersiveengineering:tool:1>, <tconstruct:large_plate>.withTag({Material: "wood"}), null],
-    			                   [null, <minecraft:pumpkin>, null],
-			                   [null, illumar, null]]);
+                                           [null, <minecraft:pumpkin>, null],
+                                           [null, illumar, null]]);
     recipes.addShaped(skull_light * 4, [[<immersiveengineering:tool:1>, <minecraft:iron_ingot>, null],
-    			                [null, <fossil:skull_block>, null],
-			                [null, illumar, null]]);
+                                        [null, <fossil:skull_block>, null],
+                                        [null, illumar, null]]);
     recipes.addShaped(ghost_light * 4, [[<immersiveengineering:tool:1>, <minecraft:iron_ingot>, null],
-    			                [<immersiveengineering:material:5>, illumar, <immersiveengineering:material:5>],
-			                [<immersiveengineering:material:5>, null, <immersiveengineering:material:5>]]);
+                                        [<immersiveengineering:material:5>, illumar, <immersiveengineering:material:5>],
+                                        [<immersiveengineering:material:5>, null, <immersiveengineering:material:5>]]);
     recipes.addShaped(spider_light * 4, [[<immersiveengineering:tool:1>, <minecraft:iron_ingot>, null],
-    			                 [<minecraft:spider_eye>, illumar, <minecraft:spider_eye>],
-			                 [null, <mekanism:polyethene:1>, null]]);
+                                         [<minecraft:spider_eye>, illumar, <minecraft:spider_eye>],
+                                         [null, <mekanism:polyethene:1>, null]]);
     recipes.addShaped(witch_light * 4, [[<immersiveengineering:tool:1>, <minecraft:iron_ingot>, null],
-    			                 [<minecraft:glass_bottle>, illumar, <minecraft:wheat>],
-			                 [null, <mekanism:polyethene:1>, null]]);
+                                        [<minecraft:glass_bottle>, illumar, <minecraft:wheat>],
+                                        [null, <mekanism:polyethene:1>, null]]);
     recipes.addShaped(snowflake_light * 4, [[<immersiveengineering:tool:1>, <minecraft:iron_ingot>, null],
-    			                    [color_glass, <minecraft:snowball>, color_glass],
-			                    [null, null, null]]);
+                                            [color_glass, <minecraft:snowball>, color_glass],
+                                            [null, null, null]]);
     recipes.addShaped(icicle_light * 4, [[<immersiveengineering:tool:1>, <minecraft:iron_ingot>, null],
-    			                 [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
-			                 [null, <tconstruct:clear_glass>, null]]);
+                                         [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
+                                         [null, <tconstruct:clear_glass>, null]]);
     recipes.addShaped(meteor_light * 4, [[<immersiveengineering:tool:1>, <minecraft:iron_ingot>, null],
-    			                 [null, color_glass, null],
-			                 [null, <mekanism:polyethene:1>, null]]);
+                                         [null, color_glass, null],
+                                         [null, <mekanism:polyethene:1>, null]]);
 }
 //// so many lanterns
 val lanternColors = [
@@ -299,16 +301,16 @@ for i, lanternType in lanternTypes {
     }
     recipes.remove(baseLantern);
     recipes.addShaped(baseLantern * 4, [[null, material, null],
-				        [material, <realistictorches:glowstone_crystal>, material],
-				        [<tconstruct:clear_glass>, <minecraft:iron_ingot>, <tconstruct:clear_glass>]]);
+                                        [material, <realistictorches:glowstone_crystal>, material],
+                                        [<tconstruct:clear_glass>, <minecraft:iron_ingot>, <tconstruct:clear_glass>]]);
     recipes.addShapeless(baseLantern, [oreDict.get(lanternType + "_lanterns")]);
     for j, lanternColor in lanternColors {
-    	val colorLantern = itemUtils.getItem("additionallanterns:" + lanternColor + "_" + lanternType + "_lantern");
-	val illumar = itemUtils.getItem("projectred-core:resource_item", j + 500);
-	recipes.remove(colorLantern);
-	recipes.addShaped(colorLantern * 4, [[null, material, null],
-				       	     [material, illumar, material],
-					     [<tconstruct:clear_glass>, <minecraft:iron_ingot>, <tconstruct:clear_glass>]]);
+        val colorLantern = itemUtils.getItem("additionallanterns:" + lanternColor + "_" + lanternType + "_lantern");
+        val illumar = itemUtils.getItem("projectred-core:resource_item", j + 500);
+        recipes.remove(colorLantern);
+        recipes.addShaped(colorLantern * 4, [[null, material, null],
+                                             [material, illumar, material],
+                                             [<tconstruct:clear_glass>, <minecraft:iron_ingot>, <tconstruct:clear_glass>]]);
     }
 }
 
@@ -343,54 +345,54 @@ for i in 0 .. 15 {
     recipes.remove(inverted_cage);
 
     recipes.addShaped(lamp * 4, [[<tconstruct:clear_glass>, <tconstruct:clear_glass>, <tconstruct:clear_glass>],
-    			         [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
-				 [<tconstruct:clear_glass>, <ore:dustRedstone>, <tconstruct:clear_glass>]]);
+                                 [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
+                                 [<tconstruct:clear_glass>, <ore:dustRedstone>, <tconstruct:clear_glass>]]);
     recipes.addShaped(inverted_lamp * 4, [[<tconstruct:clear_glass>, <tconstruct:clear_glass>, <tconstruct:clear_glass>],
-    				          [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
-				          [<tconstruct:clear_glass>, <minecraft:redstone_torch>, <tconstruct:clear_glass>]]);
+                                          [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
+                                          [<tconstruct:clear_glass>, <minecraft:redstone_torch>, <tconstruct:clear_glass>]]);
     recipes.addShapeless(light_button * 4, [illumar, <minecraft:stone_button>]);
     recipes.addShapeless(feedback_light_button * 4, [light_button, <minecraft:redstone_torch>]);
     recipes.addShaped(lantern * 4, [[<projectred-core:resource_item>, <immersiveengineering:metal:39>, <projectred-core:resource_item>],
-    			            [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
-				    [<projectred-core:resource_item>, <ore:dustRedstone>, <projectred-core:resource_item>]]);
+                                    [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
+                                    [<projectred-core:resource_item>, <ore:dustRedstone>, <projectred-core:resource_item>]]);
     recipes.addShaped(inverted_lantern * 4, [[<projectred-core:resource_item>, <immersiveengineering:metal:39>, <projectred-core:resource_item>],
-    			                     [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
-				             [<projectred-core:resource_item>, <minecraft:redstone_torch>, <projectred-core:resource_item>]]);
+                                             [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
+                                             [<projectred-core:resource_item>, <minecraft:redstone_torch>, <projectred-core:resource_item>]]);
     recipes.addShaped(fixture * 4, [[<tconstruct:clear_glass>, <tconstruct:clear_glass>, <tconstruct:clear_glass>],
                                     [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
-				    [<projectred-core:resource_item>, <projectred-core:resource_item:1>, <projectred-core:resource_item>]]);
+                                    [<projectred-core:resource_item>, <projectred-core:resource_item:1>, <projectred-core:resource_item>]]);
     recipes.addShaped(inverted_fixture * 4, [[<tconstruct:clear_glass>, <tconstruct:clear_glass>, <tconstruct:clear_glass>],
                                              [<tconstruct:clear_glass>, illumar, <tconstruct:clear_glass>],
-				             [<projectred-core:resource_item>, <projectred-core:resource_item:11>, <projectred-core:resource_item>]]);
+                                             [<projectred-core:resource_item>, <projectred-core:resource_item:11>, <projectred-core:resource_item>]]);
     recipes.addShaped(fallout * 4, [[<minecraft:iron_bars>, <minecraft:iron_bars>, <minecraft:iron_bars>],
                                     [<minecraft:iron_bars>, illumar, <minecraft:iron_bars>],
-				    [<projectred-core:resource_item>, <projectred-core:resource_item:1>, <projectred-core:resource_item>]]);
+                                    [<projectred-core:resource_item>, <projectred-core:resource_item:1>, <projectred-core:resource_item>]]);
     recipes.addShaped(inverted_fallout * 4, [[<minecraft:iron_bars>, <minecraft:iron_bars>, <minecraft:iron_bars>],
                                              [<minecraft:iron_bars>, illumar, <minecraft:iron_bars>],
-				             [<projectred-core:resource_item>, <projectred-core:resource_item:11>, <projectred-core:resource_item>]]);
+                                             [<projectred-core:resource_item>, <projectred-core:resource_item:11>, <projectred-core:resource_item>]]);
     recipes.addShaped(cage * 4, [[null, <minecraft:iron_bars>, null],
                                  [<minecraft:iron_bars>, illumar, <minecraft:iron_bars>],
-				 [<projectred-core:resource_item>, <projectred-core:resource_item:1>, <projectred-core:resource_item>]]);
+                                 [<projectred-core:resource_item>, <projectred-core:resource_item:1>, <projectred-core:resource_item>]]);
     recipes.addShaped(inverted_cage * 4, [[null, <minecraft:iron_bars>, null],
                                           [<minecraft:iron_bars>, illumar, <minecraft:iron_bars>],
-				          [<projectred-core:resource_item>, <projectred-core:resource_item:11>, <projectred-core:resource_item>]]);
+                                          [<projectred-core:resource_item>, <projectred-core:resource_item:11>, <projectred-core:resource_item>]]);
 
 }
 
 //// trafficcontrol
 recipes.remove(<trafficcontrol:street_light_double>);
 recipes.addShaped(<trafficcontrol:street_light_double>, [[<projectred-illumination:inverted_fixture_light>, <immersiveengineering:metal:38>, <projectred-illumination:inverted_fixture_light>],
-							[null, <engineersdecor:thin_steel_pole>, null],
-							[null, <engineersdecor:thin_steel_pole>, null]]);
+                                                         [null, <engineersdecor:thin_steel_pole>, null],
+                                                         [null, <engineersdecor:thin_steel_pole>, null]]);
 recipes.remove(<trafficcontrol:street_light_single>);
 recipes.addShaped(<trafficcontrol:street_light_single>, [[null, <immersiveengineering:metal:38>, <projectred-illumination:inverted_fixture_light>],
-							 [null, <engineersdecor:thin_steel_pole>, null],
-							 [null, <engineersdecor:thin_steel_pole>, null]]);
+                                                         [null, <engineersdecor:thin_steel_pole>, null],
+                                                         [null, <engineersdecor:thin_steel_pole>, null]]);
 //// other
 recipes.remove(<tconstruct:throwball>);
 recipes.addShaped(<tconstruct:throwball> * 8, [[<minecraft:snowball>, <minecraft:snowball>, <minecraft:snowball>],
-					       [<minecraft:snowball>, <realistictorches:glowstone_crystal>, <minecraft:snowball>],
-					       [<minecraft:snowball>, <minecraft:snowball>, <minecraft:snowball>]]);
+                                               [<minecraft:snowball>, <realistictorches:glowstone_crystal>, <minecraft:snowball>],
+                                               [<minecraft:snowball>, <minecraft:snowball>, <minecraft:snowball>]]);
 // glimmering wood?
 recipes.remove(<botania:livingwood:5>);
 recipes.addShapeless(<botania:livingwood:5>, [<botania:livingwood>, <realistictorches:glowstone_paste>]);

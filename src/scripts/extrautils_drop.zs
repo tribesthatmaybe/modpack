@@ -77,5 +77,5 @@ var tooMuchEU2 = [
 ] as IItemStack[];
 
 for widget in tooMuchEU2 {
-  mods.jei.JEI.removeAndHide(widget);
+    mods.jei.JEI.removeAndHide(widget);
 }

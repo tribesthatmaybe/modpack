@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "hydration",
+  "items": [
+    {
+      "weight": 2.0475566387176514,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "toughasnails:purified_water_bottle",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "harvestcraft:strawberryjuiceitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5889394283294678,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "harvestcraft:cranberryjuiceitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.7087690830230713,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "harvestcraft:blueberryjuiceitem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.1442086547613144,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "brewcraft:redbeeritem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.16315889358520508,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "brewcraft:bluebeeritem",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.35883715748786926,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "harvestcraft:colasodaitem",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": ""
+}

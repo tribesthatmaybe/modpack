@@ -1,9 +1,14 @@
 import crafttweaker.item.IItemStack;
 // vanilla shield
-recipes.remove(<minecraft:shield>);
-recipes.addShaped(<minecraft:shield>, [[null, null, <conarm:armor_plate>.withTag({Material: "wood"})],
-				       [null, <tconstruct:binding>.withTag({Material: "wood"}), <conarm:armor_trim>.withTag({Material: "wood"})],
-				       [null, <tconstruct:tool_rod>.withTag({Material: "iron"}), <conarm:armor_plate>.withTag({Material: "wood"})]]);
+scripts.shared.recipeRemapShaped(<minecraft:shield>, [[null,
+							null,
+							<conarm:armor_plate>.withTag({Material: "wood"})],
+				 		     [null,
+							<tconstruct:binding>.withTag({Material: "wood"}),
+							<conarm:armor_trim>.withTag({Material: "wood"})],
+				       		     [null,
+							<tconstruct:tool_rod>.withTag({Material: "iron"}),
+							<conarm:armor_plate>.withTag({Material: "wood"})]]);
 recipes.remove(<botania:manasteelhelm>);
 recipes.addShaped(<botania:manasteelhelm>, [[null, null, null],
 					    [<botania:manaresource>, <conarm:helmet_core>.withTag({Material: "manasteel"}), <botania:manaresource:7>],

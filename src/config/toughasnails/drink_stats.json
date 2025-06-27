@@ -1141,5 +1141,14 @@
     "thirst": 12,
     "hydration": 0.0,
     "poisonChance": 15
+  },
+  {
+    "item": {
+      "name": "harvestcraft:cactusfruititem",
+      "metadata": 0
+    },
+    "thirst": 1,
+    "hydration": 1,
+    "poisonChance": 15
   }
 ]

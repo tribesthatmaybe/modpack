@@ -9,18 +9,23 @@ import crafttweaker.item.IItemStack;
 
 // c'mon now it's 2020
 <storagedrawers:controllerslave>.displayName = "Drawer Interface";
+
 // comedy tho
 <alchemistry:evaporator>.displayName = "Evap Pond";
 
 // hard to find dirt in the desert y'know
-recipes.addShaped(<minecraft:dirt> * 4, [[<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>],
-				         [<minecraft:rotten_flesh>, <ore:logWood>, <minecraft:rotten_flesh>],
-					 [<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>]]);
+recipes.addShaped(<minecraft:dirt> * 4, [
+    [<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>],
+    [<minecraft:rotten_flesh>, <ore:logWood>, <minecraft:rotten_flesh>],
+    [<minecraft:clay_ball>, <minecraft:rotten_flesh>, <minecraft:clay_ball>]
+]);
 
 // hard to find hops too
-recipes.addShaped(<brewcraft:hopsseeditem> * 4, [[<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>],
-					         [<mysticalagriculture:nature_essence>, <mysticalagriculture:crafting:18>, <mysticalagriculture:nature_essence>],
-						 [<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>]]);
+recipes.addShaped(<brewcraft:hopsseeditem> * 4, [
+    [<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>],
+    [<mysticalagriculture:nature_essence>, <mysticalagriculture:crafting:18>, <mysticalagriculture:nature_essence>],
+    [<minecraft:wheat_seeds>, <mysticalagriculture:crafting:6>, <minecraft:wheat_seeds>]
+]);
 
 // consistent leather recipes
 furnace.remove(<minecraft:leather>, <minecraft:rotten_flesh>);
@@ -150,8 +155,15 @@ scripts.shared.recipeRemapShaped(<sereneseasons:season_sensor_autumn>, [[<minecr
 scripts.shared.recipeRemapShaped(<sereneseasons:season_sensor_winter>, [[<minecraft:redstone>, <botania:rune:7>, <minecraft:redstone>],
 							 [<minecraft:redstone>, <sereneseasons:season_clock>, <minecraft:redstone>],
 							 [<minecraft:redstone>, <opencomputers:material:4>, <minecraft:redstone>]]);
+
 // lol. lmao.
-mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:gas_cartridge>, <immersiveengineering:metal:38>, <contenttweaker:gas_cartridge_plate>, 500);
-mods.immersiveengineering.Blueprint.addRecipe("Metal Press Molds", <contenttweaker:gas_cartridge_plate>, [<immersiveengineering:metal:38>, <immersiveengineering:metal:38>,
-						     	   <immersiveengineering:metal:38>, <immersiveengineering:metal:38>,
-							   <immersiveengineering:metal:38>]);
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:gas_cartridge>,
+					       <immersiveengineering:metal:38>,
+					       <contenttweaker:gas_cartridge_plate>,
+					       500);
+mods.immersiveengineering.Blueprint.addRecipe("Metal Press Molds",
+					      <contenttweaker:gas_cartridge_plate>, [
+						  <immersiveengineering:metal:38>, <immersiveengineering:metal:38>,
+						  <immersiveengineering:metal:38>, <immersiveengineering:metal:38>,
+						  <immersiveengineering:metal:38>
+					      ]);

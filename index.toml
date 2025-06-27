@@ -30,7 +30,7 @@ hash = "13777cab2080e25b65cd7289f1eba5054af2b8516f79b368e1af64d7d9754693"
 
 [[files]]
 file = "Makefile"
-hash = "80ff3064f987d0b7b5741df58f50afb694988b58b176f3e8897cbceac3701078"
+hash = "40a416541240e91895194ceca20ece684fcfcd4f58ba0e8320999e75348af2fa"
 
 [[files]]
 file = "README.md"
@@ -38,7 +38,7 @@ hash = "b2d5c304356092f068decdc7adfcb0ef0d6a74195967f0d2759ac796c72f0534"
 
 [[files]]
 file = "artifacts/ttmb-client-2.2.1-alpha.1+cb5c5e9a.542326503.319.zip"
-hash = "d847f0400634fbf78f7260af82b93b83ee8428f87a4ac7ff2e537d775cb4126c"
+hash = "90dca3defc043d3b59dbdc691fab5ea00351df23c7e443745d0cb89fe9496b8b"
 
 [[files]]
 file = "build/pack/config/AnimalBikes.cfg"
@@ -202,7 +202,7 @@ hash = "80c10e557c5c1b7573f3e0893541607f6e6dfca04ced6ad94ac14261bb45cf43"
 
 [[files]]
 file = "build/pack/config/betterquesting/DefaultQuests.json"
-hash = "b5f9ae3e3f2602e1fe2bf704be2c2ceff909ba6ed6a4859e6331ceed80684d20"
+hash = "2b95729f9f976de730d81113499d9f68b72608a739e3182427867aa1971b9807"
 
 [[files]]
 file = "build/pack/config/betterquesting/questbook.cfg"
@@ -689,10 +689,6 @@ file = "build/pack/config/loreexpansion/lore/412e9f38a404657d79a2cc5f3c91228fe4e
 hash = "5ab1b110dcee93d5540f6c2c0a85f3599937d9e3f72caf3af8f2bf6409dd6c7a"
 
 [[files]]
-file = "build/pack/config/loreexpansion/lore/41e676eee878e18b64867dd31a87a68670915aacb5e38506ffa322e87d76f8c0.json"
-hash = "a92de0f79cf73f489791947d475f8a43ea8222b75f411daa936f6f694833eb6d"
-
-[[files]]
 file = "build/pack/config/loreexpansion/lore/42c1c362d133d1502af7f707e4e03ed0c39b57947af2b8fa60e14a77a762bd2e.json"
 hash = "d37bad4b772b5b699d5b8bf7d3b0d6237992c5c780bad63c56cf25aec7f0b285"
 
@@ -701,8 +697,16 @@ file = "build/pack/config/loreexpansion/lore/4383bab6dd7c25834b427bcb63008a12dc5
 hash = "1ab38f27a9fbeead485e4996b610d39eea7941abcff183b012de92c84222dc3e"
 
 [[files]]
+file = "build/pack/config/loreexpansion/lore/45cf46c47d6c52abbd5492b1833b81f5496f810a4cdc670f923e571008b38855.json"
+hash = "490ac27303642568954ec68ffc2f5c73d2eaf6f88d2f320b92a35bd106280128"
+
+[[files]]
 file = "build/pack/config/loreexpansion/lore/45f9dd70d84bba2c9556f241b70bd04c4d534d2bbea9cafc15922c2e838e96cf.json"
 hash = "ad6fde24a9a3f7711187780e78433387f13416cbfe421013aba3d3d641aab3f5"
+
+[[files]]
+file = "build/pack/config/loreexpansion/lore/466119b1e597c3a4d3dd40a54157627375c196646a10e41ba66809b5712ce3f9.json"
+hash = "8e8179b38d327ab7c44db8dc93b5b787ccaecb3f3fc12468ccb391f8142a7d6c"
 
 [[files]]
 file = "build/pack/config/loreexpansion/lore/4a241fd79a595ce6c5436ec331232f6c95802511fdf167414f3dd94519fd8a05.json"
@@ -735,6 +739,10 @@ hash = "faeede3d8e1105464f10c75232a58165104686023a8156fc82e41fd389ece0b8"
 [[files]]
 file = "build/pack/config/loreexpansion/lore/63ae3ad40eaeb3665195d75b4cf659a8c439067aa7a398bcc6e9b37d48a9564d.json"
 hash = "0c06042e7eb0da9030c74949dd7970a6b37a7799782d4da324e6255362d1b74c"
+
+[[files]]
+file = "build/pack/config/loreexpansion/lore/6e4d50993b9baefe1301600a306482c9320c70cc3d6c6d928505ae45d3656b9d.json"
+hash = "3f1c85ba4f2e37d64a877465086d99fe312ce2010baa96e7968c1a4daa33e175"
 
 [[files]]
 file = "build/pack/config/loreexpansion/lore/7701ddeb8f005c3fb8474e6c7920dd905e6a5e0c65dbe8f78204e03096d09509.json"
@@ -830,7 +838,7 @@ hash = "65b1681a73b5b3289e8a06d6b1f211e8998e74b581ea6dccd6bf77ace26d47dc"
 
 [[files]]
 file = "build/pack/config/loreexpansion/lore/e20bcc6852ce9267cb15751f265b207cec83b0872b8e4e71042b56ba24ab979f.json"
-hash = "06a2f8227283cdb70fd743054ede2280c3d81a30a0de5f55b9db454a68446641"
+hash = "0b698d54f96f580e938f1bdd8ae3b88a484333566531af745195ee112d844f03"
 
 [[files]]
 file = "build/pack/config/loreexpansion/lore/e82f1177efb19efa3bbda13e05a03109fd009d2ca39932c96567a414f5a72ebe.json"
@@ -926,11 +934,11 @@ hash = "044692b784fe139d569c49c84ba1f30bebaa4b8357bf8af6886e442956dbee8c"
 
 [[files]]
 file = "build/pack/config/railcraft/blocks.cfg"
-hash = "bf35f04ddeb59e130058ddbe52352e29858faca71f1ba8eaeb682dddab130e6d"
+hash = "2893bd9c208d3ab9710075078ba29aed4141058012769ad7a006f59a358e4f71"
 
 [[files]]
 file = "build/pack/config/railcraft/items.cfg"
-hash = "4b99b662971ceab4f3770479ef83c9b22ef578ca97a4735d5535445613792636"
+hash = "6f26fe2c891f0b6e56954886795c26c035caa42569cfaf047eb8cdfab5d7fc14"
 
 [[files]]
 file = "build/pack/config/railcraft/modules.cfg"
@@ -974,7 +982,7 @@ hash = "679e50a621a062cb48179956e90825f1e797783a72c55a2f5d18261afbe5e89d"
 
 [[files]]
 file = "build/pack/config/storagedrawers.cfg"
-hash = "e8dbb51929e2fc9ac86e0521eb5152de54d290fe676005ebeae8c9e72508c054"
+hash = "6b09ad81af611d0ce3ac5239311e70c6b5eb4177c34d60ce09abe569aef55ecb"
 
 [[files]]
 file = "build/pack/config/tconstruct.cfg"
@@ -998,7 +1006,7 @@ hash = "c8b7e0430c8fcbcd90fb577b7b9c7b036dba83dea9af05865fe51c60d5433f79"
 
 [[files]]
 file = "build/pack/config/toughasnails/drink_stats.json"
-hash = "1564b0bc0e0bd0f4890f0e62b7e00e2b37f8c59aa06d2088cc2929746e615d8d"
+hash = "a3b1d3b0c4aa2cd2a01f69b453e16458a0c901653c8d2147b1dba029d8ff35d2"
 
 [[files]]
 file = "build/pack/config/toughasnails/gameplay.cfg"
@@ -1042,7 +1050,7 @@ hash = "70a7d9140262f70b51804b0894c338a303710d37f0c6609208dfec62a26fe56d"
 
 [[files]]
 file = "build/pack/index.toml"
-hash = "90a3e956d9c7d801829ace69ddad040147838d566f55a4c6e4e79e718af8eccd"
+hash = "e27afd5bdcefd792149a01d649332c49cb8d86a8369df501dbd572dce73ce99a"
 
 [[files]]
 file = "build/pack/mods/BetterRecords-1.12.2-1.6.2.jar"
@@ -1053,13 +1061,28 @@ file = "build/pack/mods/CustomNPCs_1.12.2-14Jan21snapshot.jar"
 hash = "0157cb2bc273be9e955a2698d52b11f5632c76c06717117431f7895d7f74ac8f"
 
 [[files]]
+file = "build/pack/mods/abyssalcraft-integration.pw.toml"
+hash = "6a97c7f602431520bfeb8ba415c17ab6f03fd6bb0cac1077713aef15de895cf1"
+metafile = true
+
+[[files]]
 file = "build/pack/mods/abyssalcraft.pw.toml"
-hash = "0d10d4514d5645f34814147e7191f610260a1606da388d78d2c054745f6bc801"
+hash = "79b4cb5d5f8e9a0d54c2fd578243e725070a06820df9b85648a684cb62d2b800"
 metafile = true
 
 [[files]]
 file = "build/pack/mods/actually-additions.pw.toml"
 hash = "047ea8e0c2ab84aab7e185357a6e5f2dbb75059ba7a0044cd4a22a98dbbcdb84"
+metafile = true
+
+[[files]]
+file = "build/pack/mods/additional-lanterns.pw.toml"
+hash = "df64d297bb45771bee858095719133f00c1223974878fc0ec016ac283a347536"
+metafile = true
+
+[[files]]
+file = "build/pack/mods/ae-additions-extra-cells-2-fork.pw.toml"
+hash = "ec57ba40845c668483e987f4329ad90eeaefc51df4660a3b84a02118c9fcdfb1"
 metafile = true
 
 [[files]]
@@ -1150,6 +1173,11 @@ metafile = true
 [[files]]
 file = "build/pack/mods/better-loading-screen.pw.toml"
 hash = "c845fd7adae913d0526ca02bac3ec53e3c2cbc9088ed649a1a72fca9c3907306"
+metafile = true
+
+[[files]]
+file = "build/pack/mods/better-questing-npc-integration.pw.toml"
+hash = "d1353727d3fa02730da5d6424a2ce02109175d4f86d6468913164ee2aed77220"
 metafile = true
 
 [[files]]
@@ -1393,6 +1421,11 @@ hash = "e269b797f696ea4a422384260a9ace0318e921b2ab3755310e7e60414ac7cf18"
 metafile = true
 
 [[files]]
+file = "build/pack/mods/exchangers.pw.toml"
+hash = "05e7f5a83815dc6ef05d90b280a0ed4f2c93d0deaca08d82182b076421324863"
+metafile = true
+
+[[files]]
 file = "build/pack/mods/extra-utilities.pw.toml"
 hash = "751db9d136970e9b4744ce00eea1937644f10710173c82dfde06b373748e5a57"
 metafile = true
@@ -1478,6 +1511,11 @@ hash = "40525a0019de048f77412dce6dbe44400c6893c450d0c605c1f02ac81cf89b40"
 metafile = true
 
 [[files]]
+file = "build/pack/mods/immersive-cables.pw.toml"
+hash = "cd34b6d93fe3cd7e1195ffc74047473a8cf5d15d31e2ad39065016028701d989"
+metafile = true
+
+[[files]]
 file = "build/pack/mods/immersive-engineering.pw.toml"
 hash = "0764bde575aca6b60f2e211552e354ec5c7db203e678aedc9b7c1b411690b9d8"
 metafile = true
@@ -1520,6 +1558,11 @@ metafile = true
 [[files]]
 file = "build/pack/mods/jei.pw.toml"
 hash = "49cfa6cc9199acf8160d8d4d5c7c0be5f6b5ac2d3e113a7d1f27a91fb237fd9c"
+metafile = true
+
+[[files]]
+file = "build/pack/mods/jeid.pw.toml"
+hash = "03caa2eb930e892f0fe87adc97b2c36bd203afa3be7a38ffaefcc94d1fee887f"
 metafile = true
 
 [[files]]
@@ -1593,6 +1636,11 @@ hash = "df210172539a4f8d42e93e6d8c309cad92645abac12b57f7d99c782d559a5128"
 metafile = true
 
 [[files]]
+file = "build/pack/mods/mct-immersive-technology.pw.toml"
+hash = "c6894c7391b8f50ce5d6792fe1b1a9e361b98198c5453b2b3bcb383ff16a0378"
+metafile = true
+
+[[files]]
 file = "build/pack/mods/mekanism-generators.pw.toml"
 hash = "23a8d6b69e0153452509b57edb45472a327acfdd87242d0ea52dcda0b1439e5f"
 metafile = true
@@ -1600,6 +1648,11 @@ metafile = true
 [[files]]
 file = "build/pack/mods/mekanism.pw.toml"
 hash = "c2c9d866c1bc629a6b126b9ea138c9ebf1dd18afc9ce7297740ddcd7866ac7b1"
+metafile = true
+
+[[files]]
+file = "build/pack/mods/mekatweaker.pw.toml"
+hash = "7c775b7242284a7422b88a8becaeaeed760527ad5f3f488442cd2662de7d7073"
 metafile = true
 
 [[files]]
@@ -1705,6 +1758,11 @@ metafile = true
 [[files]]
 file = "build/pack/mods/openmodslib.pw.toml"
 hash = "c9b95c504f693a9f7e7b1a91ae7181a882fb79bab07304c216a1b18d3424b8c2"
+metafile = true
+
+[[files]]
+file = "build/pack/mods/openprinter.pw.toml"
+hash = "fff48f6fbf7e08872458a8e7f93873d03077b5db3bfdf32ee8bc38438ecb5bc9"
 metafile = true
 
 [[files]]
@@ -1873,6 +1931,11 @@ hash = "1976cfb3222e1f141aa56af5824be673771a9db93b49c7e48fa2cca3f58aef02"
 metafile = true
 
 [[files]]
+file = "build/pack/mods/supermartijn642s-core-lib.pw.toml"
+hash = "dd3da3ca6c83e6994a0e7e3df3403f8b52c0a802b96ba4091ec2d7ea0a83b114"
+metafile = true
+
+[[files]]
 file = "build/pack/mods/tellme.pw.toml"
 hash = "4021df31f9c7d3c3af31695df69eb2d8ae18f735cd9b0fd0631662fa9e6d8877"
 metafile = true
@@ -1977,6 +2040,10 @@ file = "build/pack/options.txt"
 hash = "a5d09bfcde45e2def28867bc687304e20e38aab9ceeccdcae829d3f517c370f8"
 
 [[files]]
+file = "build/pack/pack.toml"
+hash = "23b29d06f0a54484c2464cf5c42312f66c0da7124f2802378fcbf10abf3f195e"
+
+[[files]]
 file = "build/pack/resources/contenttweaker/lang/en_us.lang"
 hash = "56dc06303fd171f64f9800edf2d4d2bc3ca1cf8bf0478616fe5030dec7d8a8a9"
 
@@ -2066,7 +2133,7 @@ hash = "db85e198f5502147b4648e1d527e36eed90117d660b83edf4e3a31bd77c80956"
 
 [[files]]
 file = "build/pack/resources/ttmb/texts/splashes.txt"
-hash = "68786350bb6b8ccb6b379a63d2ee8a139010aa5bdc89c06c357f2e2a8109df55"
+hash = "e7db35620da5a73678f7ade29901539a3293a27054e5c8586d765951941e84e5"
 
 [[files]]
 file = "build/pack/resources/ttmb/textures/gui/title/background/panorama_0.png"
@@ -2106,15 +2173,15 @@ hash = "85c63987bb4414309261c40952cc245d74b9bc704b7b0984cb98f0e38d971dd0"
 
 [[files]]
 file = "build/pack/scripts/alchemistry.zs"
-hash = "0d349222aeddfb83c2dcff9f96442bf502150d1ef3d2e5b81b070b42d06b43bf"
+hash = "a42c4fde18573a7d77c9163cfde1a517903b44890d4698f7fcd2bd0dc7b0fb30"
 
 [[files]]
 file = "build/pack/scripts/balance.zs"
-hash = "352a8ead73d91dba7dbd3ebaca416727c1112476209f48b1e1aac9d34951d5ba"
+hash = "005b5714c610e402213ad9df41fa27f16bb373288f93b067b2064f974b7df802"
 
 [[files]]
 file = "build/pack/scripts/balance_drops.zs"
-hash = "90f150464ecc1e789442b83c6276867bae16e50a122e6c17078cacfd3fa86cef"
+hash = "a28cee7c421d5d685e01216b3a7462ebacbf00c77101a4258a8eabcb6d0c83a8"
 
 [[files]]
 file = "build/pack/scripts/balance_snacks.zs"
@@ -2122,15 +2189,15 @@ hash = "9188beb7d212449f47ac286a1995f880407b502294e23e8d9bbd9bc9ce179cb6"
 
 [[files]]
 file = "build/pack/scripts/biomass.zs"
-hash = "4b22b8b2c7dc9d16689ab867088510bb7e967db28dd01818854a7d729abe9743"
+hash = "1c4118fd7d61be1e6fa135437cc2b654d71c18ad16bce2b5ca71d2a1df6bd847"
 
 [[files]]
 file = "build/pack/scripts/block_recipes.zs"
-hash = "10fc40bfe81da0a9bb72fb6f6d3f0cd63f603e2860e2172639d68cdfb3af3707"
+hash = "4063180b34be637b33b1bd14889328ad78ee956ae6882394f95904b18784d83d"
 
 [[files]]
 file = "build/pack/scripts/blocks.zs"
-hash = "fa51b89c2d9f84e2caa0f7bab74552c0b986478db8b37915168e7098bc739b2f"
+hash = "36f01a1946767bbe42766b4a9ed2687b00870a07d6dc11859e668012cc5aa96f"
 
 [[files]]
 file = "build/pack/scripts/botania_materials_contenttweaker.zs"
@@ -2150,7 +2217,7 @@ hash = "fd8a7ca008493323347af7e86b9c2fc7f00f6b2caa622e80621ff51b18c419cb"
 
 [[files]]
 file = "build/pack/scripts/defense.zs"
-hash = "805ed0a6aaffd9de2755a8755c3adb8d57deb611836fa7e9a06fd0844d627c54"
+hash = "2a4eb0c4f53223485cfd9f49d09988a689ea9e83d33ebe1bfaab6b4342f56bfe"
 
 [[files]]
 file = "build/pack/scripts/droplist.zs"
@@ -2158,15 +2225,15 @@ hash = "ad66949d7b66aa1bea66b34e13a8720e2d8a951ced05137ab3a3907a92e363bf"
 
 [[files]]
 file = "build/pack/scripts/eldritch.zs"
-hash = "f248fca55f194cd981aeb9b51fdc25e5fd9ccdab7f4c3b4772d34a76639fde49"
+hash = "dd410365e17e58f7ded1827a8c603cf9f2c33ec5cf7204b13e589465ba9f4bbc"
 
 [[files]]
 file = "build/pack/scripts/elements.zs"
-hash = "bdbdccc03d47c4c3553c402779454058823095b7f1477d89f8f3e2caadb92c23"
+hash = "3fadadc749c530cae3ee927469ee277c42c3c2f14688fd95c5cb27b2447caca9"
 
 [[files]]
 file = "build/pack/scripts/equipment.zs"
-hash = "0375cabd20141c69bbaf438b335f7bcc21c71be1ce4dc47f0ab03b1e4685867d"
+hash = "37a8ccfddf246520a1e93a99d71ad9468642c5717a3b8a5fa8d035b16124cdb4"
 
 [[files]]
 file = "build/pack/scripts/extras.zs"
@@ -2174,19 +2241,19 @@ hash = "6ea6d2dbfefdc1350c1f682e5994a90fa89261b87daaf2ce71e548f1ebb80cc9"
 
 [[files]]
 file = "build/pack/scripts/extrautils_drop.zs"
-hash = "40d9b6367a22946cb812c163e69ba1cf0863a9f747fa575c5af6435f85a830fc"
+hash = "4ac01c04c5fb7120c302a01ca1ea22c300217e9ff17f7c5ddbec91edc6c61538"
 
 [[files]]
 file = "build/pack/scripts/leafblower.zs"
-hash = "baea8f7a64bffcffbb66be94c1292c115507aedaead4048fd2869e2e3ceaa0e4"
+hash = "69ff3dd81ec6eebef1aaa0fc1d3ce97b4699ba1acf39317acaf8a17937c3d363"
 
 [[files]]
 file = "build/pack/scripts/lighting.zs"
-hash = "3946546eeb2e6d02261aff12cf55c138d11f656a33a41e57939cdb29ea92c8a0"
+hash = "a601d1390e329a2ec47e0e1fc14dfc8a895fda9e4909b16db2348446bf1ebf45"
 
 [[files]]
 file = "build/pack/scripts/magic.zs"
-hash = "98de5ba7ff9b1b61ad8c8ad4e7d0715f9362a1177de734e0d092d9a0068171d9"
+hash = "db814810e9ca947e2fc03b25d8cede4f33983f2e4e7df331f6b360e40eb5be3f"
 
 [[files]]
 file = "build/pack/scripts/malisis_fixes.zs"
@@ -2194,7 +2261,7 @@ hash = "b335e59d309268a2936e7b2f2696fda05135a7e4252fba8d54cfc1db380d6f42"
 
 [[files]]
 file = "build/pack/scripts/narrative.zs"
-hash = "2ce4133ff46481bbc347cf3d7330024f7106893e2cc729c361d58bcf9d066e12"
+hash = "26c07fb13fe098d803b5ae0749f2335ebb3b1e205108e778547a0e42e9cc87f9"
 
 [[files]]
 file = "build/pack/scripts/resources.zs"
@@ -2202,7 +2269,7 @@ hash = "f51cf9149b65015f6473d23bd37503567538749d3a57a45636ea3bdb27439315"
 
 [[files]]
 file = "build/pack/scripts/shared.zs"
-hash = "1c57e2afac9052c1230c894d898f032ac8fd0e0421c9575dd665dc45d41ded72"
+hash = "4be56dbb91586cae7595e63287a53d67f0443f586fe1f5a7a413a30c6cf12ace"
 
 [[files]]
 file = "build/pack/scripts/storage.zs"
@@ -2210,7 +2277,7 @@ hash = "1180abe5ab69f458f2fbea3d49749da6c63099fc503ffb7f60963a15188cff37"
 
 [[files]]
 file = "build/pack/scripts/survival.zs"
-hash = "e956263a5798ac85d25e7b2d7b0703dd7d8223fe4c0c06b7c85e3887b04cc40b"
+hash = "445bc22527a900181e4d1a84d9d3997a4fb02a791e001cc7294a91f60dced8ad"
 
 [[files]]
 file = "build/pack/scripts/tc_fixes.zs"
@@ -2218,11 +2285,11 @@ hash = "f871853456e98692bd02e94664fbc304f7a6d057086b8af81be372d7f9bef4ae"
 
 [[files]]
 file = "build/pack/scripts/teleport.zs"
-hash = "f5bf4c62d937e452b6694cafcb84d7eee3f158afc9dfe579ec6d71791ebb9149"
+hash = "ef7114837c4ca58603ed17b65f2a8b02ea3409a902833a1b4164528d2fb10a9d"
 
 [[files]]
 file = "build/pack/scripts/trains.zs"
-hash = "d84b1485ca65edb73fef54fdd65e669d0e2a4dea0a6c2101f86b8bb3a65bca1d"
+hash = "5f3e0bf9de749d7d9a0bf28c1c03fcd289d33208f623259b65b29e3a4133885e"
 
 [[files]]
 file = "build/pack/scripts/trinkets.zs"
@@ -2234,7 +2301,7 @@ hash = "79b0ddab15337ca59fb2bef708e8c1da44146f3a6094215171e5218ca3a0c243"
 
 [[files]]
 file = "build/pack/scripts/vice.zs"
-hash = "60065a06ac9cb3e275f97f79897c4a79f6cdd857476c80a75d6c4ca1f6748300"
+hash = "e9e0cccc01b5f3eaaa19c43789bc08feed272088bce33a40c9134aed2f8fcddc"
 
 [[files]]
 file = "build/pack/scripts/weapons.zs"
@@ -2242,7 +2309,7 @@ hash = "9070a8076c4ba5c8852195734af74aa4d2e8fd59c08350088676d1f3859ba688"
 
 [[files]]
 file = "build/pack/scripts/xp.zs"
-hash = "b6cdf103a6f74170144a5082e2c06871af15b65223bfec4b64bd8aa1a8d56bbc"
+hash = "a34a0048af7bd210a1e89e1aef8e317095080858eea729fd0b41c3f20ea57996"
 
 [[files]]
 file = "build/pack/structures/active/10mph_sign.rcst"
@@ -2251,6 +2318,10 @@ hash = "e559158222881fc471c16a8f83eda50711d0f24551ba1a080ec452235829064d"
 [[files]]
 file = "build/pack/structures/active/AgedSculptures.rcmt"
 hash = "6f4cf2b7295335af10142f1551ccd4768e45682359f58a54f1c87bd92153563a"
+
+[[files]]
+file = "build/pack/structures/active/BRD_Hydration.rcig"
+hash = "0186217e1a650cf15d1a66a256ce447cd2ae04f4cc1dfb6cca59c15b06a59b35"
 
 [[files]]
 file = "build/pack/structures/active/BRD_RC_Bridge_adventure.rcst"
@@ -2474,7 +2545,7 @@ hash = "d5d091a99cf754865543fc257015117926a2e4a27ee2a06c4aabfd108501ab43"
 
 [[files]]
 file = "build/pack/structures/active/PassiveLightTower.rcst"
-hash = "781f9464a6662047aeb9f62decfd65902c70e12ae4e9d06f257028c7716447f9"
+hash = "cb3e5f9ec9b471690172b0c3ce4e3bfa6b4f4ae7fac855c67e9df23fe2e0fb3b"
 
 [[files]]
 file = "build/pack/structures/active/SomeCamp_small.rcst"
@@ -2598,7 +2669,7 @@ hash = "c8a9eb7a419267bf3ab11c3e258629ce6176097816ed64cc15c4be294195a034"
 
 [[files]]
 file = "build/pack/structures/active/lore_Equipment.rcig"
-hash = "b84c1cff14a12bf11a7731c62aeef347d0996f427a114f0b5bb09d4f083c4a74"
+hash = "cb57df3b0c5bb908ddfa071359ccdc0ac7fc182cfd2d24ef2ff3a9bbfc4a529d"
 
 [[files]]
 file = "build/pack/structures/active/lore_Gameplay.rcig"
@@ -2606,7 +2677,7 @@ hash = "d3720415cfbed00cdf6fbdba09716add713410961a1b5ac5927ff1223235fd67"
 
 [[files]]
 file = "build/pack/structures/active/lore_HOWTO.rcig"
-hash = "1416f8d2071564f0afc9ba7ef5d78fdbe9cea48a733542e61116b2a3730df61c"
+hash = "6a5c457e3807efa21d5751c160f205c2f03e3ed46a9d5486f8f8a25804c1b6a5"
 
 [[files]]
 file = "build/pack/structures/active/lore_Stories_from_the_dust.rcig"
@@ -2698,7 +2769,7 @@ hash = "f4b505dd4e43834187d8e5e8aa44c40021e4775778c40655c89497413902ad73"
 
 [[files]]
 file = "build/pack/structures/inactive/BlockHoleBar.rcst"
-hash = "476e0152923383933fe0714a514c6c741f747ddcf30efa7d7ccf577828792c11"
+hash = "1ccb40894e1ad92704e1cd1b4ec9304f939da40994034962e53ecfefba7d9da9"
 
 [[files]]
 file = "build/pack/structures/inactive/BoxQuarters_East.rcst"
@@ -2722,19 +2793,27 @@ hash = "98ee3292d17f2b02ae57c62dd9b2321c690f150b5db1c0fde4950d2f2dbf0325"
 
 [[files]]
 file = "build/pack/structures/inactive/ContainerYard_dev.rcst"
-hash = "d841bf876abd9053b0339e1bb64317d5fd70b2a39b33256141bd0f5ccc41e8b3"
+hash = "14a96c133ddfc7b30d2fbcaf0d2f554ce875b15f421e66ee72f9736fc083a0ac"
 
 [[files]]
 file = "build/pack/structures/inactive/ContainerYard_dev_reset.rcst"
 hash = "2a044c47d1f66dd89f0ef9ed12de683e9d58abfefbca7f8d5fee51005bbd0b1e"
 
 [[files]]
+file = "build/pack/structures/inactive/DevBlastFurnace.rcst"
+hash = "808f1bca30f7b6464820677ef2cea11bd19a854df74bcb1b3fccb3fac1cf6689"
+
+[[files]]
 file = "build/pack/structures/inactive/DevContainer_admin.rcst"
-hash = "4c5b1b352c14f9c30bd132228889f6f96c316b126bad37afe5e796ec6f9e505e"
+hash = "672093327b78720b4b770fb0b48ea0f1e0ee17384681821cb5394dca8669a4b9"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_ae2.rcst"
-hash = "9c086dc546abd5204b6368c814a2927cd82ae76b78126fbe842d10834fca22ed"
+hash = "d5035c5d42bb2b3db12ac447068188166f1bfaa49f7447fe14f664bc1bd59b7c"
+
+[[files]]
+file = "build/pack/structures/inactive/DevContainer_ae2_crafting.rcst"
+hash = "c3f6a743d846a2a5df1faf4ede7ced2fa2e14810e127a4a0c926e8a5d7ad962f"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_ae2_furnace.rcst"
@@ -2742,19 +2821,15 @@ hash = "c803d322a68c88b542d44f59b66c2702fa29bdd7dea236967735df7f7c534ac9"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_alchemistry.rcst"
-hash = "e5e676e819423ed56228b140dc1526b5d5dd3ea722b1e3c250feb85184a3bc45"
+hash = "c53de318909c961b5f3270a6345b61997f9afc0658aff99cb1c80f273db39977"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_archaeology.rcst"
-hash = "cb9a1cc56d33e4d154810cd68a301e819e1a01e80577d9c4972eac492eef51e2"
+hash = "938b80451c01355bb71ed63e72f23d9ca8403c4a2e4619533850ea43035095ce"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_autoshop.rcst"
-hash = "be50027c65446c3c93bca532fde3cca52764a88f4e963cc46df2712d963b032f"
-
-[[files]]
-file = "build/pack/structures/inactive/DevContainer_blastoven.rcst"
-hash = "e6edb2c441e4cd6c93026a9b97aa14167f6bdd894df763946db57610d2922590"
+hash = "068862b6c8407963b7e8b465b947015f075a75c7d3cefb09abc05b84638bcb36"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_botania.rcst"
@@ -2762,23 +2837,23 @@ hash = "afd0d7a0b278d0829ec54b2518ae5682af129f708cabdb9263e55e294b09f120"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_cloche.rcst"
-hash = "878b6e37a504da512f6ca77780f44db077624fabde02da00dcd4806a65d4910b"
+hash = "6ff562b1a0b4d1782ec0139ae21345e283af4e3294e164713e9762831ff46fc8"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_cokeoven.rcst"
-hash = "575969abd089289e46abfdad82916b14ef52143423c50057b41ad507b0eb43df"
+hash = "05bc82e14f65e77c37e0388ce3e4a37067c97a8ba62deae97998f384b4d16bd8"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_commands.rcst"
-hash = "eaf67cd5e0618b9ae2f7a675f6dfb836e6a54e96f223a0637a0eb66c57bfdc89"
+hash = "78087af5cb6e26302c34e68eb91f700b5f347aad0d32fe93ef20da9a341c324c"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_common.rcst"
-hash = "91f00c94b24e791e05f1a04b654b07d46563e6e25873c16f81818ee4a2fa5318"
+hash = "84c656e893427ce93fb9f2d71bc73853c481a2a433cf21de6678c6480c70ad8c"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_greenhouse.rcst"
-hash = "58c3549a99374e99dd987f2bb1e0bc3c420e5c178702d744f0c721dc9af37ee3"
+hash = "c35009071aa42215953561fb73ee3b791cce5c655060c4d47aecdcd7f80f1722"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_printshop.rcst"
@@ -2786,15 +2861,15 @@ hash = "cdb806d272e69a50c90ec9c23083ee24e72a17a31e63318ea5cb64dde81b3f82"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_workshop.rcst"
-hash = "63c6bc43cca650225378fab034b794a46f10c5e862e29bc83a45e6951206a6d2"
+hash = "e11d39a99b48bfb1d5d98f738812aad63e2252047ecf1dfef01cbbcc0ee493cf"
 
 [[files]]
 file = "build/pack/structures/inactive/DevContainer_xp.rcst"
-hash = "8080f5b17d5bcc34b9868fc83b3a79d22484a171c31a3b76cf38ba2ace14c4ba"
+hash = "a4a335733a62456bc537ee2efe42786b7e323d95a30c8eee37967e610a828e10"
 
 [[files]]
 file = "build/pack/structures/inactive/DevSmeltery.rcst"
-hash = "baa807d9fba260fa1f1c336a9321e537e118b59f6b20872a4569d1b271e2c5ca"
+hash = "6d24321dd8af3d047c56ef7d74df4e76ea556a701d57cb983e6a5913b4ec2ce6"
 
 [[files]]
 file = "build/pack/structures/inactive/FloodLamp.rcst"
@@ -2814,11 +2889,11 @@ hash = "890f89e9905b5221693e112cfe8c9c83c80a52a12623fbd1bd9563fb71281c4e"
 
 [[files]]
 file = "build/pack/structures/inactive/LivingContainer_empty.rcst"
-hash = "30d8d0ed39ad79eb89c49d13f24ca2a628ed8f1a074bea3f9291b41d6b939083"
+hash = "89cb435222dddd1ebea2083f0e2a52dfd5c070ae0e2830f091d1bc59fbcac88e"
 
 [[files]]
 file = "build/pack/structures/inactive/OreProcessing.rcst"
-hash = "00446823fe289e47dd3417d118e82e9b85ecd7afd6bffb7e8ae7c705a0097705"
+hash = "5807866a078b2e062a951ba978538b149169dd291dd672f64fdd9645239fcae2"
 
 [[files]]
 file = "build/pack/structures/inactive/PowerPole.rcst"
@@ -2838,7 +2913,7 @@ hash = "4c0e03c9f12c510b7be0567da15666ae0279c97eacb5a98ea76495d6d8af570b"
 
 [[files]]
 file = "build/release/ttmb-client-2.2.1-alpha.1+cb5c5e9a.542326503.319.zip"
-hash = "6a5dcb1cac794a48e058e55342657477b33c8b3cf90381a89484902cb94e8376"
+hash = "90dca3defc043d3b59dbdc691fab5ea00351df23c7e443745d0cb89fe9496b8b"
 
 [[files]]
 file = "config.yml"
@@ -2925,6 +3000,10 @@ file = "ipython_config.json"
 hash = "773ee78082b4a2b1daf494a44747f521468fa13f1fa42191524d46feefecc8d4"
 
 [[files]]
+file = "lore/equipment/akashic_tome.yml"
+hash = "118d6e57598d49fdea9c787588c7a906f5cc83e9660cfc58106dd85a41bc257a"
+
+[[files]]
 file = "lore/equipment/atomic_reconstructor.txt"
 hash = "babeeb83baf7d5b9f563e9be82c4cb8f7bc0fb1c6b4b8cea6fd12a3d368c26ed"
 
@@ -2978,7 +3057,7 @@ hash = "b2fb2fdd784c404b11f140d6026d1974ffc266c148947647823e0df0a792aeff"
 
 [[files]]
 file = "lore/equipment/toolbelt.yml"
-hash = "addbd4bdfaa8cd56753d4e6d7f337a11e97ac5263f88fef8a52dc7ace86bb50f"
+hash = "6f691fb1da7b59944fef44c922b17a2cafaaf75d7288350913f8489525425f20"
 
 [[files]]
 file = "lore/equipment/tv.yml"
@@ -2986,7 +3065,7 @@ hash = "6182cdf5eea3f2918bb119f54f40a34a06c0b4e4e4fe9501b40cd824e634ce8f"
 
 [[files]]
 file = "lore/equipment/wateringcan.yml"
-hash = "5efa582556a29bdc4e6d4ff60692c5063ccab382bf1d7738c36eaaaf442383ce"
+hash = "f858b049861c1655e1c7943c738d02118909f0d36ff4553e5be8ae8f17485b7c"
 
 [[files]]
 file = "lore/footprinters/bunker1.yml"
@@ -3003,6 +3082,10 @@ hash = "0d7021a92cc1037e1c06a5f212b99f7e53be366cb16efa39638b30f60d540e4d"
 [[files]]
 file = "lore/gameplay/chunks.yml"
 hash = "e7726f238939450eb44f9f205d82b91087caf6295a62bf5778b613e2f0855eb5"
+
+[[files]]
+file = "lore/gameplay/light.yml"
+hash = "52850910f139c01de49f7e4d8781da464f0a13f1fef14dcae0b62c48f78432a2"
 
 [[files]]
 file = "lore/gameplay/movement.yml"
@@ -4165,7 +4248,7 @@ hash = "5b0605cc4f00130ef389d338e205dbde2d67ca4d9244c295fba7ae3cd9f582d4"
 
 [[files]]
 file = "scripts/entrypoint.sh"
-hash = "0b5b2ebf7ceca92340cc2ca17632b4833737c19bf8b287909c7062a8fb1fb24b"
+hash = "9f01b12ab0796b55545d3b1590513a94f53f2aa4debca798716ce19a135fda0d"
 
 [[files]]
 file = "scripts/fetch"
@@ -4345,7 +4428,7 @@ hash = "80c10e557c5c1b7573f3e0893541607f6e6dfca04ced6ad94ac14261bb45cf43"
 
 [[files]]
 file = "src/config/betterquesting/DefaultQuests.json"
-hash = "b5f9ae3e3f2602e1fe2bf704be2c2ceff909ba6ed6a4859e6331ceed80684d20"
+hash = "2b95729f9f976de730d81113499d9f68b72608a739e3182427867aa1971b9807"
 
 [[files]]
 file = "src/config/betterquesting/questbook.cfg"
@@ -4832,10 +4915,6 @@ file = "src/config/loreexpansion/lore/412e9f38a404657d79a2cc5f3c91228fe4ea25e877
 hash = "5ab1b110dcee93d5540f6c2c0a85f3599937d9e3f72caf3af8f2bf6409dd6c7a"
 
 [[files]]
-file = "src/config/loreexpansion/lore/41e676eee878e18b64867dd31a87a68670915aacb5e38506ffa322e87d76f8c0.json"
-hash = "a92de0f79cf73f489791947d475f8a43ea8222b75f411daa936f6f694833eb6d"
-
-[[files]]
 file = "src/config/loreexpansion/lore/42c1c362d133d1502af7f707e4e03ed0c39b57947af2b8fa60e14a77a762bd2e.json"
 hash = "d37bad4b772b5b699d5b8bf7d3b0d6237992c5c780bad63c56cf25aec7f0b285"
 
@@ -4844,8 +4923,16 @@ file = "src/config/loreexpansion/lore/4383bab6dd7c25834b427bcb63008a12dc5f28b1ac
 hash = "1ab38f27a9fbeead485e4996b610d39eea7941abcff183b012de92c84222dc3e"
 
 [[files]]
+file = "src/config/loreexpansion/lore/45cf46c47d6c52abbd5492b1833b81f5496f810a4cdc670f923e571008b38855.json"
+hash = "490ac27303642568954ec68ffc2f5c73d2eaf6f88d2f320b92a35bd106280128"
+
+[[files]]
 file = "src/config/loreexpansion/lore/45f9dd70d84bba2c9556f241b70bd04c4d534d2bbea9cafc15922c2e838e96cf.json"
 hash = "ad6fde24a9a3f7711187780e78433387f13416cbfe421013aba3d3d641aab3f5"
+
+[[files]]
+file = "src/config/loreexpansion/lore/466119b1e597c3a4d3dd40a54157627375c196646a10e41ba66809b5712ce3f9.json"
+hash = "8e8179b38d327ab7c44db8dc93b5b787ccaecb3f3fc12468ccb391f8142a7d6c"
 
 [[files]]
 file = "src/config/loreexpansion/lore/4a241fd79a595ce6c5436ec331232f6c95802511fdf167414f3dd94519fd8a05.json"
@@ -4878,6 +4965,10 @@ hash = "faeede3d8e1105464f10c75232a58165104686023a8156fc82e41fd389ece0b8"
 [[files]]
 file = "src/config/loreexpansion/lore/63ae3ad40eaeb3665195d75b4cf659a8c439067aa7a398bcc6e9b37d48a9564d.json"
 hash = "0c06042e7eb0da9030c74949dd7970a6b37a7799782d4da324e6255362d1b74c"
+
+[[files]]
+file = "src/config/loreexpansion/lore/6e4d50993b9baefe1301600a306482c9320c70cc3d6c6d928505ae45d3656b9d.json"
+hash = "3f1c85ba4f2e37d64a877465086d99fe312ce2010baa96e7968c1a4daa33e175"
 
 [[files]]
 file = "src/config/loreexpansion/lore/7701ddeb8f005c3fb8474e6c7920dd905e6a5e0c65dbe8f78204e03096d09509.json"
@@ -4973,7 +5064,7 @@ hash = "65b1681a73b5b3289e8a06d6b1f211e8998e74b581ea6dccd6bf77ace26d47dc"
 
 [[files]]
 file = "src/config/loreexpansion/lore/e20bcc6852ce9267cb15751f265b207cec83b0872b8e4e71042b56ba24ab979f.json"
-hash = "06a2f8227283cdb70fd743054ede2280c3d81a30a0de5f55b9db454a68446641"
+hash = "0b698d54f96f580e938f1bdd8ae3b88a484333566531af745195ee112d844f03"
 
 [[files]]
 file = "src/config/loreexpansion/lore/e82f1177efb19efa3bbda13e05a03109fd009d2ca39932c96567a414f5a72ebe.json"
@@ -5069,11 +5160,11 @@ hash = "044692b784fe139d569c49c84ba1f30bebaa4b8357bf8af6886e442956dbee8c"
 
 [[files]]
 file = "src/config/railcraft/blocks.cfg"
-hash = "bf35f04ddeb59e130058ddbe52352e29858faca71f1ba8eaeb682dddab130e6d"
+hash = "2893bd9c208d3ab9710075078ba29aed4141058012769ad7a006f59a358e4f71"
 
 [[files]]
 file = "src/config/railcraft/items.cfg"
-hash = "4b99b662971ceab4f3770479ef83c9b22ef578ca97a4735d5535445613792636"
+hash = "6f26fe2c891f0b6e56954886795c26c035caa42569cfaf047eb8cdfab5d7fc14"
 
 [[files]]
 file = "src/config/railcraft/modules.cfg"
@@ -5117,7 +5208,7 @@ hash = "679e50a621a062cb48179956e90825f1e797783a72c55a2f5d18261afbe5e89d"
 
 [[files]]
 file = "src/config/storagedrawers.cfg"
-hash = "e8dbb51929e2fc9ac86e0521eb5152de54d290fe676005ebeae8c9e72508c054"
+hash = "6b09ad81af611d0ce3ac5239311e70c6b5eb4177c34d60ce09abe569aef55ecb"
 
 [[files]]
 file = "src/config/tconstruct.cfg"
@@ -5141,7 +5232,7 @@ hash = "c8b7e0430c8fcbcd90fb577b7b9c7b036dba83dea9af05865fe51c60d5433f79"
 
 [[files]]
 file = "src/config/toughasnails/drink_stats.json"
-hash = "1564b0bc0e0bd0f4890f0e62b7e00e2b37f8c59aa06d2088cc2929746e615d8d"
+hash = "a3b1d3b0c4aa2cd2a01f69b453e16458a0c901653c8d2147b1dba029d8ff35d2"
 
 [[files]]
 file = "src/config/toughasnails/gameplay.cfg"
@@ -5285,7 +5376,7 @@ hash = "db85e198f5502147b4648e1d527e36eed90117d660b83edf4e3a31bd77c80956"
 
 [[files]]
 file = "src/resources/ttmb/texts/splashes.txt"
-hash = "68786350bb6b8ccb6b379a63d2ee8a139010aa5bdc89c06c357f2e2a8109df55"
+hash = "e7db35620da5a73678f7ade29901539a3293a27054e5c8586d765951941e84e5"
 
 [[files]]
 file = "src/resources/ttmb/textures/gui/title/background/panorama_0.png"
@@ -5325,15 +5416,15 @@ hash = "85c63987bb4414309261c40952cc245d74b9bc704b7b0984cb98f0e38d971dd0"
 
 [[files]]
 file = "src/scripts/alchemistry.zs"
-hash = "0d349222aeddfb83c2dcff9f96442bf502150d1ef3d2e5b81b070b42d06b43bf"
+hash = "a42c4fde18573a7d77c9163cfde1a517903b44890d4698f7fcd2bd0dc7b0fb30"
 
 [[files]]
 file = "src/scripts/balance.zs"
-hash = "352a8ead73d91dba7dbd3ebaca416727c1112476209f48b1e1aac9d34951d5ba"
+hash = "005b5714c610e402213ad9df41fa27f16bb373288f93b067b2064f974b7df802"
 
 [[files]]
 file = "src/scripts/balance_drops.zs"
-hash = "90f150464ecc1e789442b83c6276867bae16e50a122e6c17078cacfd3fa86cef"
+hash = "a28cee7c421d5d685e01216b3a7462ebacbf00c77101a4258a8eabcb6d0c83a8"
 
 [[files]]
 file = "src/scripts/balance_snacks.zs"
@@ -5341,15 +5432,15 @@ hash = "9188beb7d212449f47ac286a1995f880407b502294e23e8d9bbd9bc9ce179cb6"
 
 [[files]]
 file = "src/scripts/biomass.zs"
-hash = "4b22b8b2c7dc9d16689ab867088510bb7e967db28dd01818854a7d729abe9743"
+hash = "1c4118fd7d61be1e6fa135437cc2b654d71c18ad16bce2b5ca71d2a1df6bd847"
 
 [[files]]
 file = "src/scripts/block_recipes.zs"
-hash = "10fc40bfe81da0a9bb72fb6f6d3f0cd63f603e2860e2172639d68cdfb3af3707"
+hash = "4063180b34be637b33b1bd14889328ad78ee956ae6882394f95904b18784d83d"
 
 [[files]]
 file = "src/scripts/blocks.zs"
-hash = "fa51b89c2d9f84e2caa0f7bab74552c0b986478db8b37915168e7098bc739b2f"
+hash = "36f01a1946767bbe42766b4a9ed2687b00870a07d6dc11859e668012cc5aa96f"
 
 [[files]]
 file = "src/scripts/botania_materials_contenttweaker.zs"
@@ -5369,7 +5460,7 @@ hash = "fd8a7ca008493323347af7e86b9c2fc7f00f6b2caa622e80621ff51b18c419cb"
 
 [[files]]
 file = "src/scripts/defense.zs"
-hash = "805ed0a6aaffd9de2755a8755c3adb8d57deb611836fa7e9a06fd0844d627c54"
+hash = "2a4eb0c4f53223485cfd9f49d09988a689ea9e83d33ebe1bfaab6b4342f56bfe"
 
 [[files]]
 file = "src/scripts/droplist.zs"
@@ -5377,15 +5468,15 @@ hash = "ad66949d7b66aa1bea66b34e13a8720e2d8a951ced05137ab3a3907a92e363bf"
 
 [[files]]
 file = "src/scripts/eldritch.zs"
-hash = "f248fca55f194cd981aeb9b51fdc25e5fd9ccdab7f4c3b4772d34a76639fde49"
+hash = "dd410365e17e58f7ded1827a8c603cf9f2c33ec5cf7204b13e589465ba9f4bbc"
 
 [[files]]
 file = "src/scripts/elements.zs"
-hash = "bdbdccc03d47c4c3553c402779454058823095b7f1477d89f8f3e2caadb92c23"
+hash = "3fadadc749c530cae3ee927469ee277c42c3c2f14688fd95c5cb27b2447caca9"
 
 [[files]]
 file = "src/scripts/equipment.zs"
-hash = "0375cabd20141c69bbaf438b335f7bcc21c71be1ce4dc47f0ab03b1e4685867d"
+hash = "37a8ccfddf246520a1e93a99d71ad9468642c5717a3b8a5fa8d035b16124cdb4"
 
 [[files]]
 file = "src/scripts/extras.zs"
@@ -5393,19 +5484,19 @@ hash = "6ea6d2dbfefdc1350c1f682e5994a90fa89261b87daaf2ce71e548f1ebb80cc9"
 
 [[files]]
 file = "src/scripts/extrautils_drop.zs"
-hash = "40d9b6367a22946cb812c163e69ba1cf0863a9f747fa575c5af6435f85a830fc"
+hash = "4ac01c04c5fb7120c302a01ca1ea22c300217e9ff17f7c5ddbec91edc6c61538"
 
 [[files]]
 file = "src/scripts/leafblower.zs"
-hash = "baea8f7a64bffcffbb66be94c1292c115507aedaead4048fd2869e2e3ceaa0e4"
+hash = "69ff3dd81ec6eebef1aaa0fc1d3ce97b4699ba1acf39317acaf8a17937c3d363"
 
 [[files]]
 file = "src/scripts/lighting.zs"
-hash = "3946546eeb2e6d02261aff12cf55c138d11f656a33a41e57939cdb29ea92c8a0"
+hash = "a601d1390e329a2ec47e0e1fc14dfc8a895fda9e4909b16db2348446bf1ebf45"
 
 [[files]]
 file = "src/scripts/magic.zs"
-hash = "98de5ba7ff9b1b61ad8c8ad4e7d0715f9362a1177de734e0d092d9a0068171d9"
+hash = "db814810e9ca947e2fc03b25d8cede4f33983f2e4e7df331f6b360e40eb5be3f"
 
 [[files]]
 file = "src/scripts/malisis_fixes.zs"
@@ -5413,7 +5504,7 @@ hash = "b335e59d309268a2936e7b2f2696fda05135a7e4252fba8d54cfc1db380d6f42"
 
 [[files]]
 file = "src/scripts/narrative.zs"
-hash = "2ce4133ff46481bbc347cf3d7330024f7106893e2cc729c361d58bcf9d066e12"
+hash = "26c07fb13fe098d803b5ae0749f2335ebb3b1e205108e778547a0e42e9cc87f9"
 
 [[files]]
 file = "src/scripts/resources.zs"
@@ -5421,7 +5512,7 @@ hash = "f51cf9149b65015f6473d23bd37503567538749d3a57a45636ea3bdb27439315"
 
 [[files]]
 file = "src/scripts/shared.zs"
-hash = "1c57e2afac9052c1230c894d898f032ac8fd0e0421c9575dd665dc45d41ded72"
+hash = "4be56dbb91586cae7595e63287a53d67f0443f586fe1f5a7a413a30c6cf12ace"
 
 [[files]]
 file = "src/scripts/storage.zs"
@@ -5429,7 +5520,7 @@ hash = "1180abe5ab69f458f2fbea3d49749da6c63099fc503ffb7f60963a15188cff37"
 
 [[files]]
 file = "src/scripts/survival.zs"
-hash = "e956263a5798ac85d25e7b2d7b0703dd7d8223fe4c0c06b7c85e3887b04cc40b"
+hash = "445bc22527a900181e4d1a84d9d3997a4fb02a791e001cc7294a91f60dced8ad"
 
 [[files]]
 file = "src/scripts/tc_fixes.zs"
@@ -5437,11 +5528,11 @@ hash = "f871853456e98692bd02e94664fbc304f7a6d057086b8af81be372d7f9bef4ae"
 
 [[files]]
 file = "src/scripts/teleport.zs"
-hash = "f5bf4c62d937e452b6694cafcb84d7eee3f158afc9dfe579ec6d71791ebb9149"
+hash = "ef7114837c4ca58603ed17b65f2a8b02ea3409a902833a1b4164528d2fb10a9d"
 
 [[files]]
 file = "src/scripts/trains.zs"
-hash = "d84b1485ca65edb73fef54fdd65e669d0e2a4dea0a6c2101f86b8bb3a65bca1d"
+hash = "5f3e0bf9de749d7d9a0bf28c1c03fcd289d33208f623259b65b29e3a4133885e"
 
 [[files]]
 file = "src/scripts/trinkets.zs"
@@ -5453,7 +5544,7 @@ hash = "79b0ddab15337ca59fb2bef708e8c1da44146f3a6094215171e5218ca3a0c243"
 
 [[files]]
 file = "src/scripts/vice.zs"
-hash = "60065a06ac9cb3e275f97f79897c4a79f6cdd857476c80a75d6c4ca1f6748300"
+hash = "e9e0cccc01b5f3eaaa19c43789bc08feed272088bce33a40c9134aed2f8fcddc"
 
 [[files]]
 file = "src/scripts/weapons.zs"
@@ -5461,7 +5552,7 @@ hash = "9070a8076c4ba5c8852195734af74aa4d2e8fd59c08350088676d1f3859ba688"
 
 [[files]]
 file = "src/scripts/xp.zs"
-hash = "b6cdf103a6f74170144a5082e2c06871af15b65223bfec4b64bd8aa1a8d56bbc"
+hash = "a34a0048af7bd210a1e89e1aef8e317095080858eea729fd0b41c3f20ea57996"
 
 [[files]]
 file = "src/structures/active/10mph_sign.rcst"
@@ -5470,6 +5561,10 @@ hash = "e559158222881fc471c16a8f83eda50711d0f24551ba1a080ec452235829064d"
 [[files]]
 file = "src/structures/active/AgedSculptures.rcmt"
 hash = "6f4cf2b7295335af10142f1551ccd4768e45682359f58a54f1c87bd92153563a"
+
+[[files]]
+file = "src/structures/active/BRD_Hydration.rcig"
+hash = "0186217e1a650cf15d1a66a256ce447cd2ae04f4cc1dfb6cca59c15b06a59b35"
 
 [[files]]
 file = "src/structures/active/BRD_RC_Bridge_adventure.rcst"
@@ -5693,7 +5788,7 @@ hash = "d5d091a99cf754865543fc257015117926a2e4a27ee2a06c4aabfd108501ab43"
 
 [[files]]
 file = "src/structures/active/PassiveLightTower.rcst"
-hash = "781f9464a6662047aeb9f62decfd65902c70e12ae4e9d06f257028c7716447f9"
+hash = "cb3e5f9ec9b471690172b0c3ce4e3bfa6b4f4ae7fac855c67e9df23fe2e0fb3b"
 
 [[files]]
 file = "src/structures/active/SomeCamp_small.rcst"
@@ -5817,7 +5912,7 @@ hash = "c8a9eb7a419267bf3ab11c3e258629ce6176097816ed64cc15c4be294195a034"
 
 [[files]]
 file = "src/structures/active/lore_Equipment.rcig"
-hash = "b84c1cff14a12bf11a7731c62aeef347d0996f427a114f0b5bb09d4f083c4a74"
+hash = "cb57df3b0c5bb908ddfa071359ccdc0ac7fc182cfd2d24ef2ff3a9bbfc4a529d"
 
 [[files]]
 file = "src/structures/active/lore_Gameplay.rcig"
@@ -5825,7 +5920,7 @@ hash = "d3720415cfbed00cdf6fbdba09716add713410961a1b5ac5927ff1223235fd67"
 
 [[files]]
 file = "src/structures/active/lore_HOWTO.rcig"
-hash = "1416f8d2071564f0afc9ba7ef5d78fdbe9cea48a733542e61116b2a3730df61c"
+hash = "6a5c457e3807efa21d5751c160f205c2f03e3ed46a9d5486f8f8a25804c1b6a5"
 
 [[files]]
 file = "src/structures/active/lore_Stories_from_the_dust.rcig"
@@ -5917,7 +6012,7 @@ hash = "f4b505dd4e43834187d8e5e8aa44c40021e4775778c40655c89497413902ad73"
 
 [[files]]
 file = "src/structures/inactive/BlockHoleBar.rcst"
-hash = "476e0152923383933fe0714a514c6c741f747ddcf30efa7d7ccf577828792c11"
+hash = "1ccb40894e1ad92704e1cd1b4ec9304f939da40994034962e53ecfefba7d9da9"
 
 [[files]]
 file = "src/structures/inactive/BoxQuarters_East.rcst"
@@ -5941,19 +6036,27 @@ hash = "98ee3292d17f2b02ae57c62dd9b2321c690f150b5db1c0fde4950d2f2dbf0325"
 
 [[files]]
 file = "src/structures/inactive/ContainerYard_dev.rcst"
-hash = "d841bf876abd9053b0339e1bb64317d5fd70b2a39b33256141bd0f5ccc41e8b3"
+hash = "14a96c133ddfc7b30d2fbcaf0d2f554ce875b15f421e66ee72f9736fc083a0ac"
 
 [[files]]
 file = "src/structures/inactive/ContainerYard_dev_reset.rcst"
 hash = "2a044c47d1f66dd89f0ef9ed12de683e9d58abfefbca7f8d5fee51005bbd0b1e"
 
 [[files]]
+file = "src/structures/inactive/DevBlastFurnace.rcst"
+hash = "808f1bca30f7b6464820677ef2cea11bd19a854df74bcb1b3fccb3fac1cf6689"
+
+[[files]]
 file = "src/structures/inactive/DevContainer_admin.rcst"
-hash = "4c5b1b352c14f9c30bd132228889f6f96c316b126bad37afe5e796ec6f9e505e"
+hash = "672093327b78720b4b770fb0b48ea0f1e0ee17384681821cb5394dca8669a4b9"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_ae2.rcst"
-hash = "9c086dc546abd5204b6368c814a2927cd82ae76b78126fbe842d10834fca22ed"
+hash = "d5035c5d42bb2b3db12ac447068188166f1bfaa49f7447fe14f664bc1bd59b7c"
+
+[[files]]
+file = "src/structures/inactive/DevContainer_ae2_crafting.rcst"
+hash = "c3f6a743d846a2a5df1faf4ede7ced2fa2e14810e127a4a0c926e8a5d7ad962f"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_ae2_furnace.rcst"
@@ -5961,19 +6064,15 @@ hash = "c803d322a68c88b542d44f59b66c2702fa29bdd7dea236967735df7f7c534ac9"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_alchemistry.rcst"
-hash = "e5e676e819423ed56228b140dc1526b5d5dd3ea722b1e3c250feb85184a3bc45"
+hash = "c53de318909c961b5f3270a6345b61997f9afc0658aff99cb1c80f273db39977"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_archaeology.rcst"
-hash = "cb9a1cc56d33e4d154810cd68a301e819e1a01e80577d9c4972eac492eef51e2"
+hash = "938b80451c01355bb71ed63e72f23d9ca8403c4a2e4619533850ea43035095ce"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_autoshop.rcst"
-hash = "be50027c65446c3c93bca532fde3cca52764a88f4e963cc46df2712d963b032f"
-
-[[files]]
-file = "src/structures/inactive/DevContainer_blastoven.rcst"
-hash = "e6edb2c441e4cd6c93026a9b97aa14167f6bdd894df763946db57610d2922590"
+hash = "068862b6c8407963b7e8b465b947015f075a75c7d3cefb09abc05b84638bcb36"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_botania.rcst"
@@ -5981,23 +6080,23 @@ hash = "afd0d7a0b278d0829ec54b2518ae5682af129f708cabdb9263e55e294b09f120"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_cloche.rcst"
-hash = "878b6e37a504da512f6ca77780f44db077624fabde02da00dcd4806a65d4910b"
+hash = "6ff562b1a0b4d1782ec0139ae21345e283af4e3294e164713e9762831ff46fc8"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_cokeoven.rcst"
-hash = "575969abd089289e46abfdad82916b14ef52143423c50057b41ad507b0eb43df"
+hash = "05bc82e14f65e77c37e0388ce3e4a37067c97a8ba62deae97998f384b4d16bd8"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_commands.rcst"
-hash = "eaf67cd5e0618b9ae2f7a675f6dfb836e6a54e96f223a0637a0eb66c57bfdc89"
+hash = "78087af5cb6e26302c34e68eb91f700b5f347aad0d32fe93ef20da9a341c324c"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_common.rcst"
-hash = "91f00c94b24e791e05f1a04b654b07d46563e6e25873c16f81818ee4a2fa5318"
+hash = "84c656e893427ce93fb9f2d71bc73853c481a2a433cf21de6678c6480c70ad8c"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_greenhouse.rcst"
-hash = "58c3549a99374e99dd987f2bb1e0bc3c420e5c178702d744f0c721dc9af37ee3"
+hash = "c35009071aa42215953561fb73ee3b791cce5c655060c4d47aecdcd7f80f1722"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_printshop.rcst"
@@ -6005,15 +6104,15 @@ hash = "cdb806d272e69a50c90ec9c23083ee24e72a17a31e63318ea5cb64dde81b3f82"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_workshop.rcst"
-hash = "63c6bc43cca650225378fab034b794a46f10c5e862e29bc83a45e6951206a6d2"
+hash = "e11d39a99b48bfb1d5d98f738812aad63e2252047ecf1dfef01cbbcc0ee493cf"
 
 [[files]]
 file = "src/structures/inactive/DevContainer_xp.rcst"
-hash = "8080f5b17d5bcc34b9868fc83b3a79d22484a171c31a3b76cf38ba2ace14c4ba"
+hash = "a4a335733a62456bc537ee2efe42786b7e323d95a30c8eee37967e610a828e10"
 
 [[files]]
 file = "src/structures/inactive/DevSmeltery.rcst"
-hash = "baa807d9fba260fa1f1c336a9321e537e118b59f6b20872a4569d1b271e2c5ca"
+hash = "6d24321dd8af3d047c56ef7d74df4e76ea556a701d57cb983e6a5913b4ec2ce6"
 
 [[files]]
 file = "src/structures/inactive/FloodLamp.rcst"
@@ -6033,11 +6132,11 @@ hash = "890f89e9905b5221693e112cfe8c9c83c80a52a12623fbd1bd9563fb71281c4e"
 
 [[files]]
 file = "src/structures/inactive/LivingContainer_empty.rcst"
-hash = "30d8d0ed39ad79eb89c49d13f24ca2a628ed8f1a074bea3f9291b41d6b939083"
+hash = "89cb435222dddd1ebea2083f0e2a52dfd5c070ae0e2830f091d1bc59fbcac88e"
 
 [[files]]
 file = "src/structures/inactive/OreProcessing.rcst"
-hash = "00446823fe289e47dd3417d118e82e9b85ecd7afd6bffb7e8ae7c705a0097705"
+hash = "5807866a078b2e062a951ba978538b149169dd291dd672f64fdd9645239fcae2"
 
 [[files]]
 file = "src/structures/inactive/PowerPole.rcst"

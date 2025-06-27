@@ -1,4 +1,4 @@
-.PHONY: container_build container_shell build server clean distclean client github_client github_server loregen versiongen update
+.PHONY: container_build container_shell build server clean distclean client loregen versiongen update
 
 ARTIFACTS=$(shell pwd)/artifacts
 ifndef VIRTUAL_ENV
@@ -82,16 +82,6 @@ clean:
 
 distclean: clean
 	rm -rf build curseforge.db config.yml .venv artifacts
-
-github_client: client
-	mkdir -p artifacts/github/client
-	VERSION=$$(cat $(shell pwd)/.version) ; \
-	cd $(ARTIFACTS)/github/client && unzip $(ARTIFACTS)/ttmb-client-$${VERSION}.zip
-
-github_server: server
-	mkdir -p artifacts/github/server
-	VERSION=$$(cat $(shell pwd)/.version) ; \
-	cd $(ARTIFACTS)/github/server && unzip $(ARTIFACTS)/ttmb-server-$${VERSION}.zip
 
 loregen: container_build
 	rm -rf src/config/loreexpansion/lore/*.json src/structures/active/lore_*.rcig

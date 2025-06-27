@@ -13,6 +13,16 @@ gen_configs() {
 	/mnt/templates/pack.toml.j2
 }
 
+build_common() {
+    gen_configs
+    cd /mnt/build/pack
+    if [ ! -d "/mnt/build/release" ] ; then
+	mkdir -p "/mnt/build/release"
+    fi
+    cp /mnt/index.toml /mnt/build/pack
+    packwiz refresh
+}
+
 ACTION="shell"
 if [ $# -gt 0 ] ; then
     ACTION="$1"
@@ -30,15 +40,15 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
 if [ "$ACTION" == "client" ] ; then
-    gen_configs
-    cd /mnt/build/pack
-    if [ ! -d "/mnt/build/release" ] ; then
-	mkdir -p "/mnt/build/release"
-    fi
-    cp /mnt/index.toml /mnt/build/pack
-    packwiz refresh
+    build_common
     packwiz curseforge export \
+	    --side client \
 	    --output "/mnt/build/release/ttmb-client-$(cat /mnt/.version).zip"
+elif [ "$ACTION" == "server" ] ; then
+    build_common
+    packwiz curseforge export \
+	    --side server \
+	    --output "/mnt/build/release/ttmb-server-$(cat /mnt/.version).zip"
 elif [ "$ACTION" == "loregen" ] ; then
     cd /mnt
     ./scripts/loregen.py
