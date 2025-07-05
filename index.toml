@@ -3767,6 +3767,11 @@ hash = "3529c0f92f6648a6a20ca80cf4ca9215194db4d9aceeabe2abc236cbec608c4e"
 metafile = true
 
 [[files]]
+file = "mods/just-enough-resources-jer.pw.toml"
+hash = "80d3649857b9a454a12348abdb6fcc45a1d09d4ed7ce40d8034db113e91d7020"
+metafile = true
+
+[[files]]
 file = "mods/laggoggles.pw.toml"
 hash = "2aec74c6dd668ddaca814969e6280f58c3b751ba75379d508a32c0b3f29dbf40"
 metafile = true

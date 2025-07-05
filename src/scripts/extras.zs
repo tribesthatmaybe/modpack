@@ -34,6 +34,13 @@ recipes.addShaped(<chisel:bookshelf_darkoak>, [[<plants2:black_kauri_stairs>, nu
 					       [<minecraft:book>, <minecraft:book>, <minecraft:book>],
 					       [<plants2:black_kauri_stairs>, null, <plants2:black_kauri_stairs>]]);
 
+// bibliocraft bookcase
+recipes.addShaped(<bibliocraft:bookcase:5>, [
+    [<plants2:planks:2>, <plants2:black_kauri_slab>, <plants2:planks:2>],
+    [<plants2:planks:2>, <plants2:black_kauri_slab>, <plants2:planks:2>],
+    [<plants2:planks:2>, <plants2:black_kauri_slab>, <plants2:planks:2>]
+]);
+
 // maccaws bridges stuff
 recipes.addShaped(<mcwbridges:dark_oak_log_bridge_middle> * 4, [[null, null, null],
 							        [<minecraft:dark_oak_fence>, null, <minecraft:dark_oak_fence>],

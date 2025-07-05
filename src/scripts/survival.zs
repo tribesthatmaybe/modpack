@@ -138,10 +138,13 @@ recipes.remove(<cookingforblockheads:preservation_chamber>);
 recipes.addShaped(<cookingforblockheads:preservation_chamber>, [[null, null, null],
 							        [<projectred-core:resource_item:103>, <minecraft:chest>, <projectred-core:resource_item:103>],
 								[<mysticalagriculture:crafting>, <mysticalagriculture:crafting>, <mysticalagriculture:crafting>]]);
-recipes.remove(<harvestcraft:cuttingboarditem>);
-recipes.addShaped(<harvestcraft:cuttingboarditem>, [[null, null, null],
-						    [null, <actuallyadditions:item_misc:2>, null],
-						    [<actuallyadditions:item_misc:3>, null, <tconstruct:sign_head>.withTag({Material: "wood"})]]);
+
+scripts.shared.recipeRemapShaped(<harvestcraft:cuttingboarditem>, [
+    [null, null, null],
+    [null, <actuallyadditions:item_misc:2>, null],
+    [<actuallyadditions:item_misc:3>, null, <tconstruct:sign_head>.withTag({Material: "wood"})]
+]);
+
 recipes.remove(<harvestcraft:saucepanitem>);
 recipes.addShaped(<harvestcraft:saucepanitem>, [[null, null, <microblockcbe:stone_rod>],
 					        [null, <tconstruct:pan_head>.withTag({Material: "iron"}), null],

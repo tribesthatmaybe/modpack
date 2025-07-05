@@ -213,8 +213,9 @@ scripts.shared.recipeRemapShaped(<cyclicmagic:ender_blaze>, [[null, <mysticalagr
 					      [<tconstruct:tough_tool_rod>.withTag({Material: "elementium"}), <mysticalagriculture:fire_essence>, null]]);
 
 // cyclic baubles
-recipes.remove(<cyclicmagic:charm_antidote>);
-mods.botania.RuneAltar.addRecipe(<cyclicmagic:charm_antidote>, [<hooked:microcrafting:3>, <bountifulbaubles:trinketbezoar>,  <minecraft:lever>, <botania:rune:10>], 1000);
+scripts.shared.recipeRemapRuneAltar(<cyclicmagic:charm_antidote>, [
+    <hooked:microcrafting:3>, <bountifulbaubles:trinketbezoar>,
+    <minecraft:lever>, <botania:rune:10>], 1000);
 recipes.remove(<cyclicmagic:charm_water>);
 mods.botania.RuneAltar.addRecipe(<cyclicmagic:charm_water>, [<hooked:microcrafting:3>, <tconstruct:pan_head>.withTag({Material: "prismarine"}), <botania:manaresource:1>,
 							     <botania:rune>], 1000);
@@ -243,8 +244,18 @@ scripts.shared.recipeRemapShaped(<botania:tinyplanet>, [[<botania:livingrock:1>,
 							    [<mysticalagriculture:crafting:32>, <botania:manaresource:1>, <mysticalagriculture:crafting:32>],
 							    [<botania:livingrock:1>, <mysticalagriculture:crafting:32>, <botania:livingrock:1>]]);
 // gold and silver rings as a base part
-scripts.shared.recipeRemapShaped(<actuallyadditions:item_misc:6>, [[null, <immersiveposts:metal_rods>, null],[<immersiveposts:metal_rods>, null, <immersiveposts:metal_rods>], [null, <immersiveposts:metal_rods>, null]]);
-scripts.shared.recipeRemapShaped(<bountifulbaubles:ringiron>, [[null, <immersiveengineering:material:1>, null],[<immersiveengineering:material:1>, null, <immersiveengineering:material:1>], [null, <immersiveengineering:material:1>, null]]);
+// aa gold ring
+scripts.shared.recipeRemapShaped(<actuallyadditions:item_misc:6> * 4, [
+    [null, <immersiveposts:metal_rods>, null],
+    [<immersiveposts:metal_rods>, null, <immersiveposts:metal_rods>],
+    [<vehicle:hammer>.reuse(), <immersiveposts:metal_rods>, null]
+]);
+scripts.shared.recipeRemapShaped(<bountifulbaubles:ringiron> * 4, [
+    [null, <immersiveengineering:material:1>, null],
+    [<immersiveengineering:material:1>, null, <immersiveengineering:material:1>],
+    [<vehicle:hammer>.reuse(), <immersiveengineering:material:1>, null]
+]);
+
 scripts.shared.recipeRemapShaped(<botania:manaring>, [[<botania:manatablet>, <tconstruct:binding>.withTag({Material: "manasteel"}), null],
 						      [<tconstruct:binding>.withTag({Material: "manasteel"}), <bountifulbaubles:ringiron>, <tconstruct:binding>.withTag({Material: "manasteel"})],
 						      [null, <tconstruct:binding>.withTag({Material: "manasteel"}), null]]);

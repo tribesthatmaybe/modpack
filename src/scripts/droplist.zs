@@ -316,9 +316,7 @@ var tooManyTools = [
     <bountifulbaubles:flaregun>,
     <bountifulbaubles:flare_red>,
     <bountifulbaubles:ringflywheel>,
-    <bountifulbaubles:ringflywheeladvanced>,
-    <railcraft:tool_axe_steel>,
-    <railcraft:tool_hoe_steel>
+    <bountifulbaubles:ringflywheeladvanced>
 ] as IItemStack[];
 
 for widget in tooManyTools {
@@ -581,7 +579,7 @@ var ripBibliocraft = [
     <bibliocraft:label:*>,
     <bibliocraft:case:*>,
     <bibliocraft:shelf:*>,
-//    <bibliocraft:bookcasecreative:*>,
+    <bibliocraft:bookcasecreative:*>,
     <bibliocraft:swordpedestal:*>
 ] as IItemStack[];
 for widget in ripBibliocraft {

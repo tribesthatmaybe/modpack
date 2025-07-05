@@ -40,6 +40,7 @@ recipes.addShaped(<minecraft:book>, [[<minecraft:paper>, <minecraft:paper>, <min
 scripts.shared.recipeRemapShaped(<naturescompass:naturescompass>, [[<botania:manaresource:3>, <mysticalagriculture:crafting:22>, <botania:manaresource:3>],
 								   [<ore:plant>, <minecraft:compass>, <ore:plant>],
 								   [<botania:manaresource:3>, <mysticalagriculture:crafting:22>, <botania:manaresource:3>]]);
+
 // more leather sources
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<fossil:triceratops_cooked>, 12000);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<fossil:allosaurus_cooked>, 12000);
@@ -136,6 +137,7 @@ var secretTentParts = [
 for widget in secretTentParts {
   mods.jei.JEI.removeAndHide(widget);
 }
+
 //// seasons tho
 scripts.shared.recipeRemapShaped(<sereneseasons:greenhouse_glass> * 8, [[<minecraft:glass>, <ore:dyeCyan>, <minecraft:glass>],
 						         [<ore:dyeCyan>, <actuallyadditions:block_misc:4>, <ore:dyeCyan>],

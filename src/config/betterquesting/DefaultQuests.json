@@ -166,7 +166,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "No Place Like.......",
-          "desc:8": "You found a waystone and tried to use it without even knowing what you were getting into. This sounds about right, for someone wandering through the Block Rock Desert.\n\nWaystones sometimes appear at villages, and sometimes in other places too. Once you get far enough along you can make them on your own. Travel past a certain distance (or between dimensions) will cost you XP. \n\nAs your reward you can choose between your own waystone (choose where you place it carefully!) or a warpscroll is a single use item which will allow you to go to any waystone you have activated. To use the warp scroll hold down right click until the memu pops up."
+          "desc:8": "You found a waystone and tried to use it without even knowing what you were getting into. This sounds about right, for someone wandering through the Block Rock Desert.\n\nWaystones sometimes appear at villages, and sometimes in other places too. Once you get far enough along you can make them on your own. Travel past a certain distance (or between dimensions) will cost you XP. \n\nAs your reward you can choose between your own waystone (choose where you place it carefully, they can never be removed!) or a warpscroll is a single use item which will allow you to go to any waystone you have activated. To use the warp scroll hold down right click until the memu pops up."
         }
       },
       "tasks:9": {
@@ -823,24 +823,6 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "mysticalagriculture:crafting",
-              "Count:3": 1,
-              "Damage:2": 16,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "mysticalagriculture:crafting",
-              "Count:3": 1,
-              "Damage:2": 17,
-              "OreDict:8": ""
-            },
-            "2:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
               "id:8": "mysticalagriculture:water_seeds",
               "Count:3": 1,
               "Damage:2": 0,
@@ -1014,6 +996,27 @@
               "id:8": "bibliocraft:bookcase",
               "Count:3": 1,
               "Damage:2": 2,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "akashictome",
+                  "category:8": "Equipment"
+                }
+              },
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           }
@@ -1537,7 +1540,7 @@
     "19:10": {
       "questID:3": 19,
       "preRequisites:11": [
-        79
+        27
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3804,7 +3807,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Sleep The Day Away",
-          "desc:8": "The only thing better than a good nights sleep is spending the day in a hammock.\n\nTo hang a hammock you need two rope \u0026 nails. And some hammock cloth. And some trees.\n\nYou can place the role and nail into some logs. Trees make a good target. Make sure there is a straight line between them (along the N/S or E/W axis). Once you\u0027ve done that, right click with the hammock cloth on one of the nails. The max distance is about five blocks. Note that while you can put the nails in other blocks, you can\u0027t make a hammock that way.\n\nSweet day dreams."
+          "desc:8": "The only thing better than a good nights sleep is spending the day in a hammock.\n\nTo hang a hammock you need two rope \u0026 nails. And some hammock cloth. And some trees.\n\nYou can place the rope and nail into some logs. Trees make a good target. Make sure there is a straight line between them (along the N/S or E/W axis). Once you\u0027ve done that, right click with the hammock cloth on one of the nails. The max distance is about five blocks. Note that while you can put the nails in other blocks, you can\u0027t make a hammock that way.\n\nSweet day dreams."
         }
       },
       "tasks:9": {
@@ -4980,6 +4983,21 @@
               "Count:3": 1,
               "Damage:2": 0,
               "OreDict:8": ""
+            },
+            "2:10": {
+              "ForgeCaps:10": {
+                "customnpcs:itemscripteddata:10": {}
+              },
+              "id:8": "loreexpansion:lore_scrap",
+              "Count:3": 1,
+              "tag:10": {
+                "lore:10": {
+                  "id:8": "light",
+                  "category:8": "HOWTO"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
             }
           }
         },
@@ -5141,7 +5159,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "More Things",
-          "desc:8": "You will eventually fill up your drawers. Fortunately they can be upgraded for more storage, or more features.\n\nLet\u0027s start with more storage.\n\nCraft a basic storage upgrade."
+          "desc:8": "You will eventually fill up your drawers. Fortunately they can be upgraded for more storage, or more features.\n\nLet\u0027s start with more storage. Craft a basic storage upgrade.\n\nOther storage upgrades are available to you....."
         }
       },
       "tasks:9": {
@@ -5181,6 +5199,24 @@
               "OreDict:8": ""
             }
           }
+        },
+        "1:10": {
+          "Sender:8": "Materials Guild",
+          "rewardID:8": "bq_npc_integration:npc_mail",
+          "BeenRead:1": 0,
+          "Message:10": {
+            "pages:9": {
+              "0:8": "We have heard from travellers that you have started living in this blasted desert with us. They have said you are adapting quite well, or at least you aren\u0027t completely dead yet.",
+              "1:8": "Finding transmogrified materials has become increasingly complicated for us, and we do hope that you can help us with our enori star shortage.",
+              "2:8": "\nPlease make some enori stars, and turn them in to any Materials Guild member.\n\nThank you."
+            }
+          },
+          "MailItems:9": {},
+          "MailQuest:3": -1,
+          "TimePast:4": 1751354560993,
+          "index:3": 1,
+          "Time:4": 0,
+          "Subject:8": "Enori Shortage"
         }
       }
     },
@@ -5843,7 +5879,8 @@
       "questID:3": 64,
       "preRequisites:11": [
         43,
-        73
+        73,
+        714
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -6207,7 +6244,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "A Place to Display Things",
-          "desc:8": "You can put things you would like to show off in the item frame.  You can dye the frame if you would like.\n\nYou can place an item in the frame by holding the item in your hand and right clicking on the placed frame. You can then rotate the item by right clicking it. If you would like to get the item back then punch it.\n\nPunching an empty frame will knock if off the wall. If you find yourself doing this often you may wish to speak to a therapist.\n\nThe reward for this quest is a painting. Upon placing it on the wall you get to choose the art."
+          "desc:8": "You can put things you would like to show off in the item frame.  You can dye the frame if you would like.\n\nYou can place an item in the frame by holding the item in your hand and right clicking on the placed frame. You can then rotate the item by right clicking it. If you would like to get the item back then punch it.\n\nPunching an empty frame will knock if off the wall. If you find yourself doing this often you may wish to speak to a therapist.\n\nThe reward for this quest is a painting. Upon placing it on the wall a random painting will be chosen."
         }
       },
       "tasks:9": {
@@ -6646,7 +6683,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Full Kitchen",
-          "desc:8": "The Cooking for Blockheads mod gives you all kinds of blocks you can use to make your kitchen more usable. The blocks, when placed together, are easily accessible. The key block is the Cooking Table. This block ends up connected to the other blocks and can make use of their functionality from it\u0027s interface. You can dye these blocks to make the kitchen of your dreams.\n\n* The fridge (can stack and can be dyed) is used to store ingredients. Shift right click to open and look at the contents like the indecisive punk you are.\n* The oven will cook food. You need to supply it with fuel.\n* The counters and cabinets can be used to store ingredients.\n* The tool rack can be used to store various cooking implements from Pam\u0027s Harvestcraft\n* The spice rack can be used to store spices\n"
+          "desc:8": "The Cooking for Blockheads mod gives you all kinds of blocks you can use to make your kitchen more usable. The blocks, when placed together, are easily accessible. The key block is the Cooking Table. This block ends up connected to the other blocks and can make use of their functionality from it\u0027s interface. You can dye these blocks to make the kitchen of your dreams. §cWarning§f §rthe book will be consumed, so do not put your akashic tome in here!§0§r\n\n\n* The fridge (can stack and can be dyed) is used to store ingredients. Shift right click to open and look at the contents like the indecisive punk you are.\n* The oven will cook food. You need to supply it with fuel.\n* The counters and cabinets can be used to store ingredients.\n* The tool rack can be used to store various cooking implements from Pam\u0027s Harvestcraft\n* The spice rack can be used to store spices\n"
         }
       },
       "tasks:9": {
@@ -7549,7 +7586,7 @@
     "78:10": {
       "questID:3": 78,
       "preRequisites:11": [
-        30
+        90
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8044,9 +8081,9 @@
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "mysticalagriculture:crafting",
-              "Count:3": 16,
-              "Damage:2": 1,
+              "id:8": "mysticalagriculture:tier2_inferium_seeds",
+              "Count:3": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             },
             "2:10": {
@@ -8056,15 +8093,6 @@
               "id:8": "mysticalagriculture:crafting",
               "Count:3": 1,
               "Damage:2": 18,
-              "OreDict:8": ""
-            },
-            "3:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "mysticalagriculture:tier2_inferium_seeds",
-              "Count:3": 1,
-              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -8513,7 +8541,8 @@
     "88:10": {
       "questID:3": 88,
       "preRequisites:11": [
-        15
+        15,
+        28
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -8676,7 +8705,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Make a Hammer",
-          "desc:8": "We are going to make a hammer today. The hammer mines out a 3x3 section of space and makes a decent weapon against skeletons.\n\n Before doing so, let\u0027s collect all the pieces we need.\n\n* A Tinkers Workshop including\n  * A built and working smeltery filled with lava and a casting table attached.\n* A Tough Tool Rod pattern\n* Casts for Tough Tool Binding, Hammer Head, and Large Plates\n\nThrow enough iron ore in the smeltery to craft all the parts. Fourteen blocks of iron ore should do it - the smeltery has a doubling effect on ore. Unlike plain furnaces, one piece of ore results in two ingots worth of material which can be used. It will take a few moments to melt the iron - different materials have different melting points.\n\nOnce the iron is melted, make the parts. Place the tough tool binding on your casting table and right click on the faucet. Repeat for the hammer head and the two large plates. You can create the tough tool rod in the part station.\n\nAny tool which incorporates parts from the smeltery needs to be assembled in the Tool Forge."
+          "desc:8": "We are going to make a hammer today. The hammer mines out a 3x3 section of space and makes a decent weapon against skeletons.\n\n Before doing so, let\u0027s collect all the pieces we need.\n\n* A Tinkers Workshop including\n  * A built and working smeltery filled with lava and a casting table attached.\n* A Tough Tool Rod pattern\n* Casts for  Hammer Head, and Large Plates\n\nThrow enough iron ore in the smeltery to craft all the parts. Fourteen blocks of iron ore should do it - the smeltery has a doubling effect on ore. Unlike plain furnaces, one piece of ore results in two ingots worth of material which can be used. It will take a few moments to melt the iron - different materials have different melting points.\n\nOnce the iron is melted, make the parts. Place  the hammer head and the two large plates on the casting table and right click the faucet. You can create the tough tool rod in the part station.\n\nAny tool which incorporates parts from the smeltery needs to be assembled in the Tool Forge."
         }
       },
       "tasks:9": {
@@ -8717,18 +8746,6 @@
                 "customnpcs:itemscripteddata:10": {}
               },
               "id:8": "tconstruct:hammer_head",
-              "Count:3": 1,
-              "tag:10": {
-                "Material:8": "iron"
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "3:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "tconstruct:tough_binding",
               "Count:3": 1,
               "tag:10": {
                 "Material:8": "iron"
@@ -9148,17 +9165,17 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "A Nice Blend",
-          "desc:8": "The smeltery can be used to combine materials and create alloys. The first alloy we will make is aluminum brass as it can be used to create casts which do not get consumed. It takes a 3:1 ratio of Aluminum (found in Bauxite deposits) and Copper (found in Malachite and Azurite deposits). Remember the doubling effect of the smeltery on ore when creating alloys.\n\nPut all the materials in to the smeltery and wait for them to melt. Once that has occured then you need to wait for the alloying to happen. Once that has occured you can use resulting alloy to cast things. You should start by making a plate cast."
+          "desc:8": "The smeltery can be used to combine materials and create alloys. The first alloy we will make is aluminum brass as it can be used to create casts which do not get consumed. It takes a 3:1 ratio of Aluminum (found in Bauxite deposits) and Copper (found in Malachite and Azurite deposits). Remember the doubling effect of the smeltery on ore when creating alloys.\n\nPut all the materials in to the smeltery and wait for them to melt. Once that has occured then you need to wait for the alloying to happen. Once that has occured you can use resulting alloy to cast things. You should start by making a plate cast. Unless you have found, and kept, some metal plates you will need to create a lead plate (in order to make the cast) by pouring lead over a fancy item frame in the casting table. Note this is the only plate which be made this way..."
         }
       },
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "allowSmelt:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "ForgeCaps:10": {
@@ -9179,7 +9196,7 @@
               "OreDict:8": ""
             }
           },
-          "taskID:8": "bq_standard:crafting"
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {
@@ -9322,11 +9339,11 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "allowSmelt:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "ForgeCaps:10": {
@@ -9338,7 +9355,7 @@
               "OreDict:8": ""
             }
           },
-          "taskID:8": "bq_standard:crafting"
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {
@@ -9778,7 +9795,8 @@
     "98:10": {
       "questID:3": 98,
       "preRequisites:11": [
-        57
+        57,
+        451
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9860,7 +9878,8 @@
     "99:10": {
       "questID:3": 99,
       "preRequisites:11": [
-        57
+        57,
+        222
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -9969,7 +9988,8 @@
     "100:10": {
       "questID:3": 100,
       "preRequisites:11": [
-        57
+        57,
+        222
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10051,7 +10071,8 @@
     "101:10": {
       "questID:3": 101,
       "preRequisites:11": [
-        57
+        57,
+        222
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10524,7 +10545,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Garden Building",
-          "desc:8": "You are going to want to grow most of your crops in a greenhouse. This is both to keep them protected from the elements (playa dust and tumbleweeds, let alone creepers, can interfere with your garden) but also to ensure that you can grow any crop any time of the year. You will want the greenhouse glass at least 3 blocks above your farmland. I don\u0027t think there is a max height.\n\nYou are going to need glass, which can be made by smelting sand. You are going to also need cyan dye, which can be made by combining green dye and lapis lazulli."
+          "desc:8": "You are going to want to grow most of your crops in a greenhouse. This is both to keep them protected from the elements (playa dust and tumbleweeds, let alone creepers, can interfere with your garden) but also to ensure that you can grow any crop any time of the year. You will want the greenhouse glass at least 3 blocks above your farmland. I don\u0027t think there is a max height.\n\nYou are going to need glass, which can be made by smelting sand. Sometimes the playa dust will turn up sand, and you can grind down sandstone. Otherwise you should just build sand out of eight playa dust pieces.\n\nYou are going to also need cyan dye, which can be made by combining green dye and lapis lazulli."
         }
       },
       "tasks:9": {
@@ -10588,7 +10609,8 @@
     "106:10": {
       "questID:3": 106,
       "preRequisites:11": [
-        85
+        85,
+        131
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -10597,7 +10619,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -10615,7 +10637,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "There is a Season for That",
-          "desc:8": "Not every crop can grow every time of the year. While you can make a proper green house in order to avoid this, you can also do seasonal planting. If you make a Season Clock you can know what part of the season you are in. Not the season itself.\n\nI don\u0027t know, it\u0027s confusing. You should just make a greenhouse."
+          "desc:8": "Not every crop can grow every time of the year. While you can make a proper green house in order to avoid this, you can also do seasonal planting. If you make a Season Clock you can know what part of the season you are in. Not the season itself.\n\nI don\u0027t know, it\u0027s confusing. It is just easier to make a greenhouse."
         }
       },
       "tasks:9": {
@@ -10664,7 +10686,6 @@
     "107:10": {
       "questID:3": 107,
       "preRequisites:11": [
-        106,
         105,
         79
       ],
@@ -11071,7 +11092,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "ForgeCaps:10": {
@@ -11105,75 +11126,6 @@
               "Count:3": 1,
               "tag:10": {
                 "Material:8": "string"
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "3:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "tconstruct:bolt",
-              "Count:3": 1,
-              "tag:10": {
-                "StatsOriginal:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
-                  "Accuracy:5": 1.0,
-                  "MiningSpeed:5": 6.0,
-                  "FreeModifiers:3": 3,
-                  "Durability:3": 163,
-                  "HarvestLevel:3": 2,
-                  "Attack:5": 4.0
-                },
-                "Stats:10": {
-                  "AttackSpeedMultiplier:5": 1.0,
-                  "Accuracy:5": 1.0,
-                  "MiningSpeed:5": 6.0,
-                  "FreeModifiers:3": 3,
-                  "Durability:3": 163,
-                  "HarvestLevel:3": 2,
-                  "Attack:5": 4.0
-                },
-                "Special:10": {
-                  "Categories:9": {
-                    "0:8": "projectile",
-                    "1:8": "no_melee",
-                    "2:8": "tool"
-                  }
-                },
-                "TinkerData:10": {
-                  "Materials:9": {
-                    "0:8": "wood",
-                    "1:8": "iron",
-                    "2:8": "feather"
-                  },
-                  "Modifiers:9": {
-                    "0:8": "toolleveling"
-                  }
-                },
-                "Modifiers:9": {
-                  "0:10": {
-                    "identifier:8": "ecological",
-                    "color:3": -7444965,
-                    "level:3": 1
-                  },
-                  "1:10": {
-                    "identifier:8": "magnetic",
-                    "color:3": -3487030,
-                    "level:3": 2,
-                    "magnetic2:1": 1
-                  },
-                  "2:10": {
-                    "identifier:8": "toolleveling",
-                    "color:3": 16777215,
-                    "level:3": 1
-                  }
-                },
-                "Traits:9": {
-                  "0:8": "ecological",
-                  "1:8": "magnetic2",
-                  "2:8": "toolleveling"
-                }
               },
               "Damage:2": 0,
               "OreDict:8": ""
@@ -12099,7 +12051,7 @@
       "questID:3": 122,
       "preRequisites:11": [
         61,
-        79
+        129
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12316,7 +12268,7 @@
     "125:10": {
       "questID:3": 125,
       "preRequisites:11": [
-        76
+        75
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -12829,89 +12781,14 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "To heck with it all",
-          "desc:8": "We are going to need to go deeper than bedrock to get some materials. This requires an obsidian Nether Portal. It requires twelve obsidian blocks. The portal should be blocks wide and five blocks tall, leaving a two by three opening between the obsidian. Once you have created the portal, right click on one of the lower corners with an empty hand  for this quest to complete.\n\nWhen you are ready to go to the nether, light the ground of the opening itself on fire with a flint and steel by right clicking.  A purple portal will appear. If you stand still in it, you will be teleported to the nether to a paired portal. It\u0027s generally a good idea to bring supplies (including whatever you need to survive in the nether and enough to make a new portal home) on your first trip."
+          "desc:8": "We are going to need to go deeper than bedrock to get some materials. This requires an obsidian Nether Portal. It requires twelve obsidian blocks. The portal should be blocks wide and five blocks tall, leaving a two by three opening between the obsidian. Once you have created the portal, right click on one of the lower corners with an empty hand  for this quest to complete. Obsidian can be found down near the lava pools which appear near bedrock. If you cannot find any, pour water on lava.\n\nWhen you are ready to go to the nether, light the ground of the opening itself on fire with a flint and steel by right clicking.  A purple portal will appear. If you stand still in it, you will be teleported to the nether to a paired portal. It\u0027s generally a good idea to bring supplies (including whatever you need to survive in the nether and enough to make a new portal home) on your first trip."
         }
       },
       "tasks:9": {
         "0:10": {
-          "item:10": {
-            "ForgeCaps:10": {
-              "customnpcs:itemscripteddata:10": {}
-            },
-            "id:8": "minecraft:air",
-            "Count:3": 0,
-            "tag:10": {
-              "x:3": -25,
-              "y:3": 70,
-              "ForgeCaps:10": {
-                "fairylights:fastener:10": {
-                  "connections:9": {
-                    "0:10": {
-                      "connection:10": {
-                        "slack:5": 1.0,
-                        "destination:10": {
-                          "data:10": {
-                            "X:3": -9,
-                            "Y:3": 71,
-                            "Z:3": 27
-                          },
-                          "type:8": "block"
-                        },
-                        "jinglePlayer:10": {
-                          "data:10": {},
-                          "state:8": "not_playing"
-                        },
-                        "isOn:1": 1,
-                        "logic:10": {
-                          "twinkle:1": 0,
-                          "pattern:9": {
-                            "0:10": {
-                              "color:1": 15,
-                              "light:3": 0
-                            }
-                          },
-                          "tight:1": 0
-                        },
-                        "isOrigin:1": 0
-                      },
-                      "type:1": 0,
-                      "uuid:10": {
-                        "L:4": -8033380084183413177,
-                        "M:4": 5617947907434303096
-                      }
-                    }
-                  }
-                },
-                "abyssalcraft:itemtransfer:10": {
-                  "isRunning:1": 0,
-                  "configurations:9": {}
-                }
-              },
-              "z:3": 19,
-              "id:8": "fairylights:fastener"
-            },
-            "Damage:2": 0,
-            "OreDict:8": ""
-          },
-          "wildcardOptimization:1": 1,
-          "length:3": 1,
+          "advancement_id:8": "minecraft:story/enter_the_nether",
           "index:3": 0,
-          "imageLocation:8": "",
-          "gameStageCompat:1": 0,
-          "useImage:1": 0,
-          "width:3": 4,
-          "name:8": "Nether Portal",
-          "block:10": {
-            "blockID:8": "minecraft:obsidian",
-            "nbt:10": {},
-            "amount:3": 1,
-            "oreDict:8": "",
-            "meta:3": -1
-          },
-          "gameStageName:8": "",
-          "fileNames:8": "heckportal.txt",
-          "taskID:8": "bq_msi:multiblock",
-          "height:3": 5
+          "taskID:8": "bq_standard:advancement"
         }
       },
       "rewards:9": {
@@ -14421,7 +14298,7 @@
             }
           },
           "MailQuest:3": -1,
-          "TimePast:4": 1750975139264,
+          "TimePast:4": 1751354560994,
           "index:3": 0,
           "Time:4": 0,
           "Subject:8": "Trade Opportunity"
@@ -15406,7 +15283,7 @@
           },
           "MailItems:9": {},
           "MailQuest:3": -1,
-          "TimePast:4": 1750975139264,
+          "TimePast:4": 1751354560994,
           "index:3": 0,
           "Time:4": 0,
           "Subject:8": "A modest request"
@@ -15758,8 +15635,8 @@
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "allowSmelt:1": 1,
-          "ignoreNBT:1": 0,
+          "allowSmelt:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "allowCraft:1": 1,
           "allowAnvil:1": 0,
@@ -16532,9 +16409,7 @@
     },
     "198:10": {
       "questID:3": 198,
-      "preRequisites:11": [
-        68
-      ],
+      "preRequisites:11": [],
       "properties:10": {
         "betterquesting:10": {
           "issilent:1": 0,
@@ -16542,18 +16417,14 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "COMPLETED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
               "customnpcs:itemscripteddata:10": {}
             },
-            "id:8": "betterquesting:placeholder",
+            "id:8": "minecraft:redstone",
             "Count:3": 1,
-            "tag:10": {
-              "orig_meta:3": 0,
-              "orig_id:8": "betterdisplays:display_case"
-            },
             "Damage:2": 0,
             "OreDict:8": ""
           },
@@ -16563,64 +16434,43 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Showing off",
-          "desc:8": "There are even fancier display cases, for those very special items you want to show off. These display cases allow for items to be positioned in a variety of ways,. And they are much nicer to look at."
+          "name:8": "Plausibly Magical",
+          "desc:8": "Redstone can be found throughout these worlds, generally towards bedrock. It is used to create various forms of machinery and magic and such. In addition, it can be used to create \"redstone circuits\" by placing redstone directly on a block. This is quite delicate, so consider using some of the more permanent pathways (or whatever they are called)\n\nNow that you have found some, you will be able to create all kinds of wonders....."
         }
       },
       "tasks:9": {
         "0:10": {
           "partialMatch:1": 1,
-          "allowSmelt:1": 0,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "allowCraft:1": 1,
-          "allowAnvil:1": 0,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "betterquesting:placeholder",
+              "id:8": "minecraft:redstone",
               "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "betterdisplays:display_case"
-              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
           },
-          "taskID:8": "bq_standard:crafting"
+          "taskID:8": "bq_standard:retrieval"
         }
       },
       "rewards:9": {
         "0:10": {
-          "rewardID:8": "bq_standard:choice",
+          "rewardID:8": "bq_standard:item",
           "index:3": 0,
-          "choices:9": {
+          "rewards:9": {
             "0:10": {
               "ForgeCaps:10": {
                 "customnpcs:itemscripteddata:10": {}
               },
-              "id:8": "betterquesting:placeholder",
+              "id:8": "minecraft:redstone_torch",
               "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "betterdisplays:display_case_small"
-              },
-              "Damage:2": 0,
-              "OreDict:8": ""
-            },
-            "1:10": {
-              "ForgeCaps:10": {
-                "customnpcs:itemscripteddata:10": {}
-              },
-              "id:8": "betterquesting:placeholder",
-              "Count:3": 1,
-              "tag:10": {
-                "orig_meta:3": 0,
-                "orig_id:8": "betterdisplays:display_case_small_framed"
-              },
               "Damage:2": 0,
               "OreDict:8": ""
             }
@@ -17606,7 +17456,9 @@
     "219:10": {
       "questID:3": 219,
       "preRequisites:11": [
-        108
+        108,
+        105,
+        132
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -19734,7 +19586,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "ForgeCaps:10": {
@@ -20192,7 +20044,8 @@
     "267:10": {
       "questID:3": 267,
       "preRequisites:11": [
-        139
+        139,
+        129
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -22913,7 +22766,8 @@
     "317:10": {
       "questID:3": 317,
       "preRequisites:11": [
-        73
+        73,
+        714
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -25693,7 +25547,9 @@
     "375:10": {
       "questID:3": 375,
       "preRequisites:11": [
-        9
+        9,
+        714,
+        139
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -25702,7 +25558,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -26030,7 +25886,7 @@
           },
           "MailItems:9": {},
           "MailQuest:3": -1,
-          "TimePast:4": 1750975139264,
+          "TimePast:4": 1751354560994,
           "index:3": 0,
           "Time:4": 0,
           "Subject:8": "Ingots 4 Beer"
@@ -35620,7 +35476,7 @@
     "558:10": {
       "questID:3": 558,
       "preRequisites:11": [
-        30
+        90
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -39881,7 +39737,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "COMPLETED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -41537,7 +41393,8 @@
     "674:10": {
       "questID:3": 674,
       "preRequisites:11": [
-        79
+        79,
+        198
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -41546,7 +41403,7 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "simultaneous:1": 0,
           "icon:10": {
             "ForgeCaps:10": {
@@ -42144,7 +42001,7 @@
           },
           "MailItems:9": {},
           "MailQuest:3": -1,
-          "TimePast:4": 1750975139265,
+          "TimePast:4": 1751354560995,
           "index:3": 1,
           "Time:4": 0,
           "Subject:8": "Ethical Kiwi Sourcing"
@@ -43597,7 +43454,7 @@
       "questID:3": 714,
       "preRequisites:11": [
         82,
-        129
+        5
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -43883,8 +43740,9 @@
     "714:10": {
       "questID:3": 718,
       "preRequisites:11": [
-        129,
-        717
+        717,
+        5,
+        122
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -44486,7 +44344,7 @@
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -84,
+          "x:3": -120,
           "y:3": -168,
           "id:3": 66,
           "sizeY:3": 24
@@ -44522,123 +44380,116 @@
         "12:10": {
           "sizeX:3": 24,
           "x:3": -84,
-          "y:3": -132,
+          "y:3": -168,
           "id:3": 135,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -84,
+          "x:3": -120,
           "y:3": -204,
           "id:3": 143,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": -168,
-          "id:3": 198,
-          "sizeY:3": 24
-        },
-        "15:10": {
-          "sizeX:3": 24,
           "x:3": -192,
           "y:3": -204,
           "id:3": 199,
           "sizeY:3": 24
         },
-        "16:10": {
+        "15:10": {
           "sizeX:3": 24,
           "x:3": -156,
           "y:3": -204,
           "id:3": 201,
           "sizeY:3": 24
         },
-        "17:10": {
+        "16:10": {
           "sizeX:3": 24,
           "x:3": -192,
           "y:3": -240,
           "id:3": 205,
           "sizeY:3": 24
         },
-        "18:10": {
+        "17:10": {
           "sizeX:3": 24,
           "x:3": -84,
-          "y:3": -96,
+          "y:3": -132,
           "id:3": 214,
           "sizeY:3": 24
         },
-        "19:10": {
+        "18:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -96,
           "id:3": 261,
           "sizeY:3": 24
         },
-        "20:10": {
+        "19:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": -132,
           "id:3": 264,
           "sizeY:3": 24
         },
-        "21:10": {
+        "20:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -168,
           "id:3": 272,
           "sizeY:3": 24
         },
-        "22:10": {
+        "21:10": {
           "sizeX:3": 24,
-          "x:3": -264,
+          "x:3": -300,
           "y:3": -204,
           "id:3": 276,
           "sizeY:3": 24
         },
-        "23:10": {
+        "22:10": {
           "sizeX:3": 24,
-          "x:3": -120,
-          "y:3": -204,
+          "x:3": -156,
+          "y:3": -240,
           "id:3": 291,
           "sizeY:3": 24
         },
-        "24:10": {
+        "23:10": {
           "sizeX:3": 24,
           "x:3": -264,
-          "y:3": -240,
+          "y:3": -204,
           "id:3": 308,
           "sizeY:3": 24
         },
-        "25:10": {
+        "24:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": -240,
           "id:3": 376,
           "sizeY:3": 24
         },
-        "26:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": -96,
           "id:3": 552,
           "sizeY:3": 24
         },
-        "27:10": {
+        "26:10": {
           "sizeX:3": 24,
           "x:3": -264,
           "y:3": -132,
           "id:3": 559,
           "sizeY:3": 24
         },
-        "28:10": {
+        "27:10": {
           "sizeX:3": 24,
           "x:3": -228,
           "y:3": -168,
           "id:3": 632,
           "sizeY:3": 24
         },
-        "29:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": -300,
           "y:3": -168,
@@ -44671,29 +44522,29 @@
       "quests:9": {
         "0:10": {
           "sizeX:3": 24,
-          "x:3": -396,
-          "y:3": -12,
+          "x:3": -576,
+          "y:3": -228,
           "id:3": 5,
           "sizeY:3": 24
         },
         "1:10": {
           "sizeX:3": 24,
-          "x:3": -360,
-          "y:3": -12,
+          "x:3": -432,
+          "y:3": -84,
           "id:3": 15,
           "sizeY:3": 24
         },
         "2:10": {
           "sizeX:3": 24,
-          "x:3": -396,
-          "y:3": -120,
+          "x:3": -468,
+          "y:3": -48,
           "id:3": 19,
           "sizeY:3": 24
         },
         "3:10": {
           "sizeX:3": 24,
-          "x:3": -360,
-          "y:3": -48,
+          "x:3": -468,
+          "y:3": -84,
           "id:3": 27,
           "sizeY:3": 24
         },
@@ -44706,246 +44557,246 @@
         },
         "5:10": {
           "sizeX:3": 24,
-          "x:3": -432,
-          "y:3": -120,
+          "x:3": -468,
+          "y:3": -156,
           "id:3": 32,
           "sizeY:3": 24
         },
         "6:10": {
           "sizeX:3": 24,
-          "x:3": -360,
+          "x:3": -504,
           "y:3": -84,
           "id:3": 74,
           "sizeY:3": 24
         },
         "7:10": {
           "sizeX:3": 24,
-          "x:3": -288,
-          "y:3": -120,
+          "x:3": -540,
+          "y:3": -48,
           "id:3": 75,
           "sizeY:3": 24
         },
         "8:10": {
           "sizeX:3": 24,
-          "x:3": -324,
-          "y:3": -120,
+          "x:3": -540,
+          "y:3": -84,
           "id:3": 76,
           "sizeY:3": 24
         },
         "9:10": {
           "sizeX:3": 24,
-          "x:3": -396,
-          "y:3": -84,
+          "x:3": -504,
+          "y:3": -120,
           "id:3": 79,
           "sizeY:3": 24
         },
         "10:10": {
           "sizeX:3": 24,
-          "x:3": -324,
-          "y:3": -48,
+          "x:3": -432,
+          "y:3": -120,
           "id:3": 88,
           "sizeY:3": 24
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": -432,
-          "y:3": -12,
+          "x:3": -576,
+          "y:3": -156,
           "id:3": 89,
           "sizeY:3": 24
         },
         "12:10": {
           "sizeX:3": 24,
-          "x:3": -432,
-          "y:3": -48,
+          "x:3": -540,
+          "y:3": -120,
           "id:3": 91,
           "sizeY:3": 24
         },
         "13:10": {
           "sizeX:3": 24,
-          "x:3": -396,
-          "y:3": 24,
+          "x:3": -576,
+          "y:3": -192,
           "id:3": 92,
           "sizeY:3": 24
         },
         "14:10": {
           "sizeX:3": 24,
-          "x:3": -324,
-          "y:3": -84,
+          "x:3": -468,
+          "y:3": -120,
           "id:3": 94,
           "sizeY:3": 24
         },
         "15:10": {
           "sizeX:3": 24,
-          "x:3": -324,
-          "y:3": -12,
+          "x:3": -396,
+          "y:3": -156,
           "id:3": 95,
           "sizeY:3": 24
         },
         "16:10": {
           "sizeX:3": 24,
-          "x:3": -468,
-          "y:3": -48,
+          "x:3": -576,
+          "y:3": -120,
           "id:3": 102,
           "sizeY:3": 24
         },
         "17:10": {
           "sizeX:3": 24,
-          "x:3": -468,
-          "y:3": -12,
+          "x:3": -612,
+          "y:3": -156,
           "id:3": 103,
           "sizeY:3": 24
         },
         "18:10": {
           "sizeX:3": 24,
-          "x:3": -468,
-          "y:3": 24,
+          "x:3": -612,
+          "y:3": -120,
           "id:3": 110,
           "sizeY:3": 24
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": -396,
+          "x:3": -432,
           "y:3": -48,
           "id:3": 114,
           "sizeY:3": 24
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": -360,
-          "y:3": -120,
+          "x:3": -504,
+          "y:3": -48,
           "id:3": 124,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": -324,
-          "y:3": -156,
+          "x:3": -504,
+          "y:3": -12,
           "id:3": 125,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": -360,
-          "y:3": -156,
+          "x:3": -468,
+          "y:3": -12,
           "id:3": 126,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": -360,
-          "y:3": 24,
+          "x:3": -540,
+          "y:3": -192,
           "id:3": 129,
           "sizeY:3": 24
         },
         "24:10": {
           "sizeX:3": 24,
-          "x:3": -288,
-          "y:3": -84,
+          "x:3": -504,
+          "y:3": -156,
           "id:3": 134,
           "sizeY:3": 24
         },
         "25:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": -48,
+          "x:3": -504,
+          "y:3": -192,
           "id:3": 139,
           "sizeY:3": 24
         },
         "26:10": {
           "sizeX:3": 24,
-          "x:3": -288,
-          "y:3": -156,
+          "x:3": -576,
+          "y:3": -48,
           "id:3": 160,
           "sizeY:3": 24
         },
         "27:10": {
           "sizeX:3": 24,
-          "x:3": -288,
-          "y:3": -12,
+          "x:3": -468,
+          "y:3": -228,
           "id:3": 267,
           "sizeY:3": 24
         },
         "28:10": {
           "sizeX:3": 24,
-          "x:3": -324,
-          "y:3": 24,
+          "x:3": -504,
+          "y:3": -228,
           "id:3": 367,
           "sizeY:3": 24
         },
         "29:10": {
           "sizeX:3": 24,
-          "x:3": -288,
-          "y:3": 24,
+          "x:3": -540,
+          "y:3": -228,
           "id:3": 370,
           "sizeY:3": 24
         },
         "30:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": -156,
+          "x:3": -576,
+          "y:3": -12,
           "id:3": 474,
           "sizeY:3": 24
         },
         "31:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": -120,
+          "x:3": -540,
+          "y:3": -12,
           "id:3": 490,
           "sizeY:3": 24
         },
         "32:10": {
           "sizeX:3": 24,
-          "x:3": -432,
-          "y:3": 24,
+          "x:3": -612,
+          "y:3": -192,
           "id:3": 515,
           "sizeY:3": 24
         },
         "33:10": {
           "sizeX:3": 24,
-          "x:3": -468,
+          "x:3": -576,
           "y:3": -84,
           "id:3": 524,
           "sizeY:3": 24
         },
         "34:10": {
           "sizeX:3": 24,
-          "x:3": -468,
-          "y:3": -120,
+          "x:3": -612,
+          "y:3": -84,
           "id:3": 526,
           "sizeY:3": 24
         },
         "35:10": {
           "sizeX:3": 24,
-          "x:3": -468,
-          "y:3": -156,
+          "x:3": -612,
+          "y:3": -48,
           "id:3": 527,
           "sizeY:3": 24
         },
         "36:10": {
           "sizeX:3": 24,
-          "x:3": -252,
-          "y:3": -84,
+          "x:3": -468,
+          "y:3": -192,
           "id:3": 546,
           "sizeY:3": 24
         },
         "37:10": {
           "sizeX:3": 24,
-          "x:3": -396,
-          "y:3": -156,
+          "x:3": -432,
+          "y:3": -12,
           "id:3": 639,
           "sizeY:3": 24
         },
         "38:10": {
           "sizeX:3": 24,
-          "x:3": -432,
-          "y:3": -84,
+          "x:3": -540,
+          "y:3": -156,
           "id:3": 674,
           "sizeY:3": 24
         },
         "39:10": {
           "sizeX:3": 24,
-          "x:3": -288,
-          "y:3": -48,
+          "x:3": -432,
+          "y:3": -192,
           "id:3": 687,
           "sizeY:3": 24
         }
@@ -45347,7 +45198,7 @@
         "29:10": {
           "sizeX:3": 24,
           "x:3": -360,
-          "y:3": -72,
+          "y:3": -108,
           "id:3": 93,
           "sizeY:3": 24
         },
@@ -45388,33 +45239,40 @@
         },
         "35:10": {
           "sizeX:3": 24,
+          "x:3": -396,
+          "y:3": -216,
+          "id:3": 198,
+          "sizeY:3": 24
+        },
+        "36:10": {
+          "sizeX:3": 24,
           "x:3": -420,
           "y:3": -324,
           "id:3": 383,
           "sizeY:3": 24
         },
-        "36:10": {
+        "37:10": {
           "sizeX:3": 24,
           "x:3": -360,
-          "y:3": -108,
+          "y:3": -72,
           "id:3": 558,
           "sizeY:3": 24
         },
-        "37:10": {
+        "38:10": {
           "sizeX:3": 24,
           "x:3": -216,
           "y:3": -180,
           "id:3": 641,
           "sizeY:3": 24
         },
-        "38:10": {
+        "39:10": {
           "sizeX:3": 24,
           "x:3": -288,
           "y:3": -108,
           "id:3": 677,
           "sizeY:3": 24
         },
-        "39:10": {
+        "40:10": {
           "sizeX:3": 24,
           "x:3": -360,
           "y:3": -144,
@@ -45957,7 +45815,7 @@
         },
         "11:10": {
           "sizeX:3": 24,
-          "x:3": -48,
+          "x:3": -12,
           "y:3": 108,
           "id:3": 106,
           "sizeY:3": 24
@@ -46013,7 +45871,7 @@
         },
         "19:10": {
           "sizeX:3": 24,
-          "x:3": -12,
+          "x:3": 24,
           "y:3": 108,
           "id:3": 380,
           "sizeY:3": 24
@@ -46027,7 +45885,7 @@
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 24,
+          "x:3": 60,
           "y:3": 108,
           "id:3": 434,
           "sizeY:3": 24
@@ -46350,7 +46208,7 @@
       "lineID:3": 12,
       "properties:10": {
         "betterquesting:10": {
-          "visibility:8": "NORMAL",
+          "visibility:8": "UNLOCKED",
           "name:8": "Fight, Flight, Fawn, or Flee",
           "icon:10": {
             "ForgeCaps:10": {

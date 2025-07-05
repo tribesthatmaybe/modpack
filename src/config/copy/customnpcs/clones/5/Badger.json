@@ -214,6 +214,16 @@
     "ImmuneToFire": 0b,
     "NpcKilledLines": {
         "Lines": [
+            {
+                "Line": "Well, shit.",
+                "Song": "",
+                "Slot": 0
+            },
+            {
+                "Line": "I had a dream about this.",
+                "Song": "",
+                "Slot": 1
+            }
         ]
     },
     "Fire": -1s,
@@ -233,13 +243,28 @@
     "NpcInteractLines": {
         "Lines": [
             {
-                "Line": "Woah, who are you?",
+                "Line": "You don't mess with me, I won't mess with you.",
                 "Song": "",
                 "Slot": 0
+            },
+            {
+                "Line": "That is a little close.",
+                "Song": "",
+                "Slot": 1
+            },
+            {
+                "Line": "Let me tell you about negotiation.",
+                "Song": "",
+                "Slot": 2
+            },
+            {
+                "Line": "You got some spunk, kid.",
+                "Song": "",
+                "Slot": 3
             }
         ]
     },
-    "HurtByTimestamp": 5882,
+    "HurtByTimestamp": 7870,
     "pSpin": 0b,
     "NpcHurtSound": "minecraft:entity.player.hurt",
     "pTrail": 0,
@@ -342,11 +367,11 @@
     "DirectLOS": 0b,
     "HealthRegen": 1,
     "ForgeCaps": {
-        "tinkertoolleveling:entityxp": [
-        ],
         "dsurround:data": {
             "a": 0b,
             "f": 0b
+        },
+        "llibrary:extendedentitydatacapability": {
         }
     },
     "HandDropChances": [
@@ -411,6 +436,39 @@
             "ScaleY": 1.0f,
             "ScaleX": 1.0f
         }
+    },
+    "VisibleAvailability": {
+        "AvailabilityQuestId": -1,
+        "AvailabilityScoreboardType": 1,
+        "AvailabilityFactionStance": 0,
+        "AvailabilityScoreboard2Value": 1,
+        "AvailabilityQuest": 0,
+        "AvailabilityDialog4": 0,
+        "AvailabilityScoreboardObjective": "",
+        "AvailabilityDialog3": 0,
+        "AvailabilityQuest2": 0,
+        "AvailabilityQuest3": 0,
+        "AvailabilityScoreboard2Objective": "",
+        "AvailabilityQuest4": 0,
+        "ModRev": 18,
+        "AvailabilityDialog2": 0,
+        "AvailabilityDayTime": 0,
+        "AvailabilityFaction2Id": -1,
+        "AvailabilityScoreboardValue": 1,
+        "AvailabilityFaction": 0,
+        "AvailabilityDialog": 0,
+        "AvailabilityScoreboard2Type": 1,
+        "AvailabilityFaction2": 0,
+        "AvailabilityFactionId": -1,
+        "AvailabilityFaction2Stance": 0,
+        "AvailabilityDialogId": -1,
+        "AvailabilityQuest4Id": -1,
+        "AvailabilityQuest3Id": -1,
+        "AvailabilityQuest2Id": -1,
+        "AvailabilityDialog2Id": -1,
+        "AvailabilityDialog3Id": -1,
+        "AvailabilityDialog4Id": -1,
+        "AvailabilityMinPlayerLevel": 0
     },
     "minDelay": 20,
     "DoorInteract": 1,
@@ -536,9 +594,9 @@
     "NpcDeathSound": "minecraft:entity.player.hurt",
     "FactionID": 0,
     "Title": "Some Bloke with a Shotgun",
-    "TotalTicksAlive": 414888L,
+    "TotalTicksAlive": 422997L,
     "Rotation": [
-        49.180252f,
+        360.0f,
         0.0f
     ],
     "ShowName": 1,

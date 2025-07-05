@@ -274,3 +274,16 @@ recipes.remove(<mysticalagriculture:master_infusion_crystal>);
 recipes.addShaped(<mysticalagriculture:master_infusion_crystal>, [[<mysticalagriculture:crafting:4>, <mysticalagriculture:crafting:5>, <mysticalagriculture:crafting:4>],
 								  [<mysticalagriculture:crafting:5>, <botania:manaresource:2>, <mysticalagriculture:crafting:5>],
 								  [<mysticalagriculture:crafting:4>, <mysticalagriculture:crafting:5>, <mysticalagriculture:crafting:4>]]);
+
+// kitchen stuff
+scripts.shared.recipeRemapShaped(<harvestcraft:juiceritem>, [
+    [<immersiveengineering:tool>, null, null],
+    [<minecraft:hardened_clay>, <railcraft:gear:1>, <minecraft:hardened_clay>],
+    [<minecraft:hardened_clay>, <actuallyadditions:block_misc:9>, <minecraft:hardened_clay>]
+]);
+
+scripts.shared.recipeRemapShaped(<cfm:item_cup> * 2, [
+    [null, null, null],
+    [<minecraft:glass_pane>, null, <minecraft:glass_pane>],
+    [null, <minecraft:glass_pane>, null]
+]);

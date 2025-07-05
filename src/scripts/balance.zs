@@ -42,8 +42,16 @@ recipes.addShapeless(<minecraft:paper>, [<openprinter:paper_shreds>, <minecraft:
 recipes.remove(<bibliocraft:biblioclipboard>);
 recipes.addShaped(<bibliocraft:biblioclipboard>, [[null, null, <mysticalagriculture:crafting:24>],
 						 [null, <tconstruct:pattern>, <immersiveengineering:material:1>],
-						 [null, <minecraft:book>, <mystcraft:vial>]]);
-// rice
+						  [null, <minecraft:book>, <mystcraft:vial>]]);
+
+scripts.shared.recipeRemapShaped(<minecraft:writable_book>, [
+    [<minecraft:book>, <mysticalworld:ink_bottle>, null],
+    [<minecraft:feather>, <tconstruct:bow_string>.withTag({Material: "string"}), null],
+    [null, null, null]
+]);
+
+
+// paper from rice
 recipes.addShaped(<minecraft:paper> * 3, [[null, null, null],[<harvestcraft:riceitem>, <harvestcraft:riceitem>, <harvestcraft:riceitem>], [null, null, null]]);
 
 // string consistency
@@ -326,15 +334,23 @@ recipes.addShaped(<cfm:cabinet_stone>, [[<minecraft:cobblestone>, <bibliocraft:f
 // steel is gated exclusively on blast furnace
 mods.mekanism.infuser.removeRecipe(<mekanism:enrichediron>, <minecraft:iron_ingot>, "CARBON");
 mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:1>, <mekanism:enrichediron>, "CARBON");
+
 // aesthetic hammer tuning
-recipes.remove(<vehicle:hammer>);
-recipes.addShaped(<vehicle:hammer>, [[<tconstruct:hammer_head>.withTag({Material: "iron"}), <mekanism:ingot:1>, <tconstruct:hammer_head>.withTag({Material: "iron"})],
-				    [null, <immersiveengineering:material:1>, null],
-				    [null, <immersiveengineering:material:1>, null]]);
-recipes.remove(<architecturecraft:hammer>);
-recipes.addShaped(<architecturecraft:hammer>, [[<tconstruct:hammer_head>.withTag({Material: "iron"}), <immersiveengineering:metal:39>, <immersiveengineering:material:1>],
-					      [null, <tconstruct:tool_rod>.withTag({Material: "treatedwood"}), null],
-					      [null, <tconstruct:tool_rod>.withTag({Material: "treatedwood"}), null]]);
+scripts.shared.recipeRemapShaped(<vehicle:hammer>, [
+    [<tconstruct:hammer_head>.withTag({Material: "iron"}),
+     <mekanism:ingot:1>,
+     <tconstruct:hammer_head>.withTag({Material: "iron"})],
+    [null, <immersiveengineering:material:1>, null],
+    [null, <immersiveengineering:material:1>, null]
+]);
+
+scripts.shared.recipeRemapShaped(<architecturecraft:hammer>, [
+    [<tconstruct:hammer_head>.withTag({Material: "iron"}),
+     <immersiveengineering:metal:39>,
+     <immersiveengineering:material:1>],
+    [null, <tconstruct:tool_rod>.withTag({Material: "treatedwood"}), null],
+    [null, <tconstruct:tool_rod>.withTag({Material: "treatedwood"}), null]
+]);
 
 // so many tools
 recipes.remove(<extrautils2:wateringcan:1000>);
@@ -487,10 +503,12 @@ recipes.addShaped(<cyclicmagic:moon_sensor>, [[<appliedenergistics2:material> | 
 						 <appliedenergistics2:material> | <appliedenergistics2:material:10>],
 					      [<ore:slabWood>, <minecraft:daylight_detector>, <ore:slabWood>],
 					      [null, null, null]]);
-recipes.remove(<cyclicmagic:block_soundproofing>);
-recipes.addShaped(<cyclicmagic:block_soundproofing>, [[<ore:blockWool>, <ore:blockWool>, <ore:blockWool>],
-						      [<ore:blockWool>, <actuallyadditions:block_misc:4>, <ore:blockWool>],
-						      [<ore:blockWool>, <tconstruct:large_plate>.withTag({Material: "bone"}), <ore:blockWool>]]);
+scripts.shared.recipeRemapShaped(<cyclicmagic:block_soundproofing>, [
+    [<ore:blockWool>, <actuallyadditions:item_crystal:3>, <ore:blockWool>],
+    [<ore:blockWool>, <actuallyadditions:block_misc:4>, <ore:blockWool>],
+    [<ore:blockWool>, <tconstruct:large_plate>.withTag({Material: "bone"}), <ore:blockWool>]
+]);
+
 recipes.remove(<cyclicmagic:block_enchanter>);
 recipes.addShaped(<cyclicmagic:block_enchanter>, [[null, <minecraft:enchanting_table>, null],
 						  [<actuallyadditions:item_crystal_empowered:4>, <mekanism:basicblock:8>, <actuallyadditions:item_crystal_empowered:4>],
@@ -808,6 +826,25 @@ mods.immersivetechnology.MeltingCrucible.addRecipe(<liquid:xpjuice>, <actuallyad
 recipes.remove(<railcraft:track_parts>);
 mods.mekanism.combiner.addRecipe(<immersiveengineering:metal:6>, <immersiveengineering:material:1>, <railcraft:track_parts> * 4);
 <railcraft:track_parts>.displayName = "Assorted Parts";
+
+// gold / iron rings
+scripts.shared.recipeRemapShaped(<actuallyadditions:item_misc:6> * 4, [
+    [null, <immersiveposts:metal_rods>, null],
+    [<immersiveposts:metal_rods>, null, <immersiveposts:metal_rods>],
+    [<vehicle:hammer>.reuse(), <immersiveposts:metal_rods>, null]
+]);
+
+scripts.shared.recipeRemapShaped(<bountifulbaubles:ringiron> * 4, [
+    [null, <immersiveengineering:material:1>, null],
+    [<immersiveengineering:material:1>, null, <immersiveengineering:material:1>],
+    [<vehicle:hammer>.reuse(), <immersiveengineering:material:1>, null]
+]);
+
+recipes.remove(<railcraft:gear:3>, [
+    [null, <mekanism:ingot:5>, null],
+    [<minecraft:redstone>, <tconstruct:binding>.withTag({Material: "iron"}), <bountifulbaubles:ringiron>],
+    [null, <immersiveengineering:tool>, null]
+], 8);
 
 // empowered thing
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered>);
@@ -1211,3 +1248,10 @@ mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 10, <mine
 mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 10, <harvestcraft:barleyitem>, 128);
 mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 10, <harvestcraft:ryeitem>, 128);
 mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol> * 10, <minecraft:reeds>, 128);
+
+recipes.remove(<immersiveengineering:stone_decoration>);
+recipes.addShaped(<immersiveengineering:stone_decoration> * 4, [
+    [<tconstruct:materials>, <minecraft:brick>, <tconstruct:materials>],
+    [<minecraft:brick>, <tconstruct:soil>, <minecraft:brick>],
+    [<tconstruct:materials>, <minecraft:brick>, <tconstruct:materials>]
+]);

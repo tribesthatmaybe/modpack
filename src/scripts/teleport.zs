@@ -29,24 +29,31 @@ scripts.shared.recipeRemapShaped(<mekanism:portableteleporter>, [
 ]);
 
 recipes.remove(<actuallyadditions:item_tele_staff>);
-mods.botania.RuneAltar.addRecipe(<actuallyadditions:item_tele_staff>, [<actuallyadditions:item_crystal_empowered:2>, <waystones:warp_stone>, <tconstruct:binding>.withTag({Material: "livingwood"}),
-								      <tconstruct:tough_tool_rod>, <actuallyadditions:item_crystal_empowered:5>, null, <botania:rune:8>], 15000);
+mods.botania.RuneAltar.addRecipe(<actuallyadditions:item_tele_staff>, [
+    <actuallyadditions:item_crystal_empowered:2>, <waystones:warp_stone>,
+    <tconstruct:binding>.withTag({Material: "livingwood"}),
+    <tconstruct:tough_tool_rod>, <actuallyadditions:item_crystal_empowered:5>,
+    null, <botania:rune:8>
+], 15000);
 
 recipes.remove(<waystones:warp_scroll>);
-mods.botania.RuneAltar.addRecipe(<waystones:warp_scroll>, [<botania:manaresource:16>, <minecraft:paper>, <botania:manaresource:16>, <minecraft:paper>, <waystones:warp_stone>,
-							  <minecraft:paper>, <botania:rune:4>], 3000);
+mods.botania.RuneAltar.addRecipe(<waystones:warp_scroll>, [
+    <botania:manaresource:16>, <minecraft:paper>, <botania:manaresource:16>,
+    <minecraft:paper>, <waystones:warp_stone>, <minecraft:paper>, <botania:rune:4>
+], 3000);
+
 recipes.remove(<waystones:return_scroll>);
 mods.botania.RuneAltar.addRecipe(<waystones:return_scroll>, [<botania:manaresource:16>, <minecraft:paper>, <botania:manaresource:16>, <minecraft:paper>, <botania:manaresource:8>,
-							     <minecraft:paper>, <botania:rune:4>], 3000);
+                                                             <minecraft:paper>, <botania:rune:4>], 3000);
 recipes.remove(<waystones:bound_scroll>);
 mods.botania.RuneAltar.addRecipe(<waystones:bound_scroll>, [<botania:manaresource:16>, <minecraft:paper>, <botania:manaresource:16>, <minecraft:paper>, <botania:manaresource:8>,
-							     <minecraft:paper>, <botania:rune:9>], 3000);
+                                                            <minecraft:paper>, <botania:rune:9>], 3000);
 recipes.remove(<bountifulbaubles:magicmirror>);
 mods.botania.RuneAltar.addRecipe(<bountifulbaubles:magicmirror>, [<cfm:mirror>, <bountifulbaubles:spectralsilt>, <waystones:warp_stone>, <bountifulbaubles:spectralsilt>,
-								 <mekanism:glowplasticblock:15>], 5000);
+                                                                  <mekanism:glowplasticblock:15>], 5000);
 recipes.remove(<bountifulbaubles:wormholemirror>);
 mods.botania.RuneAltar.addRecipe(<bountifulbaubles:wormholemirror>, [<botania:rune:14>, <appliedenergistics2:material:46>, <bountifulbaubles:magicmirror>, <appliedenergistics2:material:46>,
-								    <mekanism:reinforcedplasticblock:5>], 500);
+                                                                     <mekanism:reinforcedplasticblock:5>], 500);
 
 // consumables
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:thick"}), <waystones:warp_stone>);
@@ -80,9 +87,9 @@ recipes.addShaped(<mekanism:machineblock:11>, [
 // deep dark portal technically counts?
 recipes.remove(<extrautils2:teleporter:1>);
 mods.botania.RuneAltar.addRecipe(<extrautils2:teleporter:1>, [<minecraft:ghast_tear>, <immersiveengineering:metal:32>,<immersiveengineering:metal:37>,
-							     <botania:manaresource:8>, <mysticalagriculture:storage:1>,
-							     <actuallyadditions:item_crystal_empowered>], 2000);
+                                                              <botania:manaresource:8>, <mysticalagriculture:storage:1>,
+                                                              <actuallyadditions:item_crystal_empowered>], 2000);
 // mystcraft portal "controller"
 recipes.remove(<mystcraft:blockbookreceptacle>);
 mods.botania.RuneAltar.addRecipe(<mystcraft:blockbookreceptacle>, [<mystcraft:blockcrystal>, <botania:manaresource>, <botania:manaresource:8>, <immersiveengineering:metal:37>,
-								   <mystcraft:blockcrystal>, <mysticalagriculture:storage:2>], 2500);
+                                                                   <mystcraft:blockcrystal>, <mysticalagriculture:storage:2>], 2500);

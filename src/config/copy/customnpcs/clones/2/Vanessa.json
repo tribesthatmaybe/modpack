@@ -1,6 +1,36 @@
 {
     "ReturnToStart": 1b,
     "NpcInv": [
+        {
+            "Slot": 0b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "harvestcraft:garlicseeditem",
+            "Count": 1b,
+            "Damage": 0s
+        },
+        {
+            "Slot": 1b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "harvestcraft:chilipepperseeditem",
+            "Count": 1b,
+            "Damage": 0s
+        },
+        {
+            "Slot": 2b,
+            "ForgeCaps": {
+                "customnpcs:itemscripteddata": {
+                }
+            },
+            "id": "harvestcraft:mustardseeditem",
+            "Count": 1b,
+            "Damage": 0s
+        }
     ],
     "BossColor": 0,
     "PotionEffect": 0,
@@ -83,6 +113,16 @@
                 "Damage": 0s
             },
             {
+                "Slot": 2b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "harvestcraft:sesameseedsitem",
+                "Count": 2b,
+                "Damage": 0s
+            },
+            {
                 "Slot": 3b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
@@ -99,6 +139,16 @@
                     }
                 },
                 "id": "harvestcraft:gingerseeditem",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 5b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "harvestcraft:chilipepperseeditem",
                 "Count": 1b,
                 "Damage": 0s
             },
@@ -123,6 +173,16 @@
                 "Damage": 0s
             },
             {
+                "Slot": 8b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "harvestcraft:scallionseeditem",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
                 "Slot": 9b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
@@ -143,6 +203,16 @@
                 "Damage": 0s
             },
             {
+                "Slot": 11b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "harvestcraft:okraseeditem",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
                 "Slot": 12b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
@@ -153,12 +223,52 @@
                 "Damage": 0s
             },
             {
+                "Slot": 13b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "harvestcraft:mustardseeditem",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 14b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "harvestcraft:agaveseeditem",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
                 "Slot": 15b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
                     }
                 },
                 "id": "harvestcraft:garlicseeditem",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 16b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "harvestcraft:taroseeditem",
+                "Count": 1b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 17b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "harvestcraft:brusselsproutseeditem",
                 "Count": 1b,
                 "Damage": 0s
             }
@@ -261,71 +371,101 @@
         "Lines": [
         ]
     },
-    "HurtByTimestamp": 54757,
+    "HurtByTimestamp": 31995,
     "TraderCurrency": {
         "NpcMiscInv": [
             {
-                "Slot": 0b,
+                "Slot": 18b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:emerald",
-                "Count": 1b,
-                "Damage": 0s
+                "id": "immersiveengineering:metal",
+                "Count": 4b,
+                "Damage": 27s
             },
             {
-                "Slot": 1b,
+                "Slot": 19b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:emerald",
-                "Count": 1b,
-                "Damage": 0s
+                "id": "botania:manaresource",
+                "Count": 4b,
+                "Damage": 17s
             },
             {
-                "Slot": 3b,
+                "Slot": 20b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:emerald",
-                "Count": 1b,
-                "Damage": 0s
+                "id": "immersiveengineering:metal",
+                "Count": 4b,
+                "Damage": 27s
             },
             {
-                "Slot": 4b,
+                "Slot": 21b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:emerald",
-                "Count": 1b,
-                "Damage": 0s
+                "id": "immersiveengineering:metal",
+                "Count": 4b,
+                "Damage": 26s
             },
             {
-                "Slot": 6b,
+                "Slot": 22b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:emerald",
-                "Count": 1b,
-                "Damage": 0s
+                "id": "immersiveengineering:metal",
+                "Count": 4b,
+                "Damage": 26s
             },
             {
-                "Slot": 7b,
+                "Slot": 23b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:emerald",
-                "Count": 1b,
+                "id": "botania:manaresource",
+                "Count": 4b,
+                "Damage": 17s
+            },
+            {
+                "Slot": 24b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:gold_nugget",
+                "Count": 4b,
                 "Damage": 0s
             },
             {
-                "Slot": 9b,
+                "Slot": 25b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:gold_nugget",
+                "Count": 4b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 26b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:gold_nugget",
+                "Count": 4b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 27b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
                     }
@@ -335,114 +475,24 @@
                 "Damage": 4s
             },
             {
-                "Slot": 10b,
-                "ForgeCaps": {
-                    "customnpcs:itemscripteddata": {
-                    }
-                },
-                "id": "minecraft:emerald",
-                "Count": 1b,
-                "Damage": 0s
-            },
-            {
-                "Slot": 12b,
-                "ForgeCaps": {
-                    "customnpcs:itemscripteddata": {
-                    }
-                },
-                "id": "minecraft:emerald",
-                "Count": 1b,
-                "Damage": 0s
-            },
-            {
-                "Slot": 15b,
-                "ForgeCaps": {
-                    "customnpcs:itemscripteddata": {
-                    }
-                },
-                "id": "minecraft:emerald",
-                "Count": 1b,
-                "Damage": 0s
-            },
-            {
-                "Slot": 18b,
-                "ForgeCaps": {
-                    "customnpcs:itemscripteddata": {
-                    }
-                },
-                "id": "minecraft:gold_ingot",
-                "Count": 1b,
-                "Damage": 0s
-            },
-            {
-                "Slot": 19b,
-                "ForgeCaps": {
-                    "customnpcs:itemscripteddata": {
-                    }
-                },
-                "id": "minecraft:gold_ingot",
-                "Count": 1b,
-                "Damage": 0s
-            },
-            {
-                "Slot": 21b,
-                "ForgeCaps": {
-                    "customnpcs:itemscripteddata": {
-                    }
-                },
-                "id": "minecraft:gold_ingot",
-                "Count": 1b,
-                "Damage": 0s
-            },
-            {
-                "Slot": 22b,
-                "ForgeCaps": {
-                    "customnpcs:itemscripteddata": {
-                    }
-                },
-                "id": "minecraft:gold_ingot",
-                "Count": 1b,
-                "Damage": 0s
-            },
-            {
-                "Slot": 24b,
-                "ForgeCaps": {
-                    "customnpcs:itemscripteddata": {
-                    }
-                },
-                "id": "minecraft:gold_ingot",
-                "Count": 1b,
-                "Damage": 0s
-            },
-            {
-                "Slot": 25b,
-                "ForgeCaps": {
-                    "customnpcs:itemscripteddata": {
-                    }
-                },
-                "id": "minecraft:gold_ingot",
-                "Count": 1b,
-                "Damage": 0s
-            },
-            {
-                "Slot": 27b,
-                "ForgeCaps": {
-                    "customnpcs:itemscripteddata": {
-                    }
-                },
-                "id": "minecraft:gold_ingot",
-                "Count": 1b,
-                "Damage": 0s
-            },
-            {
                 "Slot": 28b,
                 "ForgeCaps": {
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:gold_ingot",
-                "Count": 1b,
+                "id": "minecraft:gold_nugget",
+                "Count": 4b,
                 "Damage": 0s
+            },
+            {
+                "Slot": 29b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "immersiveengineering:metal",
+                "Count": 4b,
+                "Damage": 26s
             },
             {
                 "Slot": 30b,
@@ -450,7 +500,17 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:gold_ingot",
+                "id": "minecraft:gold_nugget",
+                "Count": 4b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 32b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:iron_nugget",
                 "Count": 1b,
                 "Damage": 0s
             },
@@ -460,8 +520,28 @@
                     "customnpcs:itemscripteddata": {
                     }
                 },
-                "id": "minecraft:gold_ingot",
-                "Count": 1b,
+                "id": "immersiveengineering:metal",
+                "Count": 4b,
+                "Damage": 27s
+            },
+            {
+                "Slot": 34b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:gold_nugget",
+                "Count": 4b,
+                "Damage": 0s
+            },
+            {
+                "Slot": 35b,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                },
+                "id": "minecraft:gold_nugget",
+                "Count": 4b,
                 "Damage": 0s
             }
         ]
@@ -555,8 +635,6 @@
     "DirectLOS": 1b,
     "HealthRegen": 1,
     "ForgeCaps": {
-        "tinkertoolleveling:entityxp": [
-        ],
         "dsurround:data": {
             "a": 0b,
             "f": 0b
@@ -679,15 +757,15 @@
     "Role": 1,
     "DropChance": [
         {
-            "Integer": 100,
+            "Integer": 26,
             "Slot": 0
         },
         {
-            "Integer": 100,
+            "Integer": 42,
             "Slot": 1
         },
         {
-            "Integer": 100,
+            "Integer": 11,
             "Slot": 2
         },
         {
@@ -755,7 +833,7 @@
     "OnAttack": 2,
     "TacticalRadius": 8,
     "FallFlying": 0b,
-    "MaxExp": 0,
+    "MaxExp": 50,
     "OrderedLines": 0b,
     "PortalCooldown": 0,
     "pGlows": 0b,
@@ -765,7 +843,7 @@
     "FiringSound": "minecraft:entity.arrow.shoot",
     "ModRev": 18,
     "Accuracy": 60,
-    "MinExp": 0,
+    "MinExp": 10,
     "Armor": [
     ],
     "CloakTexture": "",
@@ -781,15 +859,15 @@
     "NpcDeathSound": "minecraft:entity.player.hurt",
     "FactionID": 0,
     "Title": "Merchant",
-    "TotalTicksAlive": 104223L,
+    "TotalTicksAlive": 136251L,
     "Rotation": [
-        234.18762f,
+        152.1393f,
         0.0f
     ],
     "ShowName": 1,
     "npcInteracting": 1b,
     "UpdateBlocked": 0b,
-    "AvoidsWater": 0b,
+    "AvoidsWater": 1b,
     "NoLivingAnimation": 0b,
     "SpawnCycle": 3
 }

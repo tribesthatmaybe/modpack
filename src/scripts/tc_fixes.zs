@@ -11,6 +11,6 @@ val trafficWidgets = [
 ] as IItemStack[];
 
 for widget in trafficWidgets {
-   val a_widget as IItemStack = widget;
-   a_widget.hardness = 1;
+    val a_widget as IItemStack = widget;
+    a_widget.hardness = 1;
 }

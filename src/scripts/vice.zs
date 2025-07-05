@@ -292,21 +292,20 @@ zenClass ttmbVice {
 
 
 // cocktails can have consequences
-val hardLiquor =
-    [
-        <brewcraft:totalvodkaitem>,
-        <brewcraft:handmadevodkaitem>,
-        <brewcraft:cherryvodkaitem>,
-        <brewcraft:beachrumitem>,
-        <brewcraft:coconutrumitem>,
-        <brewcraft:spicedrumitem>,
-        <brewcraft:uglyavocadoginitem>,
-        <brewcraft:blackholewhiskeyitem>,
-        <brewcraft:borgiaabsintheitem>,
-        <brewcraft:goldschlageritem>,
-        <brewcraft:malortitem>,
-        <brewcraft:pointthreeryeitem>
-    ] as IItemStack[];
+val hardLiquor = [
+    <brewcraft:totalvodkaitem>,
+    <brewcraft:handmadevodkaitem>,
+    <brewcraft:cherryvodkaitem>,
+    <brewcraft:beachrumitem>,
+    <brewcraft:coconutrumitem>,
+    <brewcraft:spicedrumitem>,
+    <brewcraft:uglyavocadoginitem>,
+    <brewcraft:blackholewhiskeyitem>,
+    <brewcraft:borgiaabsintheitem>,
+    <brewcraft:goldschlageritem>,
+    <brewcraft:malortitem>,
+    <brewcraft:pointthreeryeitem>
+] as IItemStack[];
 // marathon not a sprint
 val refreshingBooze = [
     <brewcraft:hardapplecideritem>,
